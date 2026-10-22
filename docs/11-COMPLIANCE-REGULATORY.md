@@ -1,0 +1,45 @@
+# WiseQ Compliance & Regulatory Map — 2026-10-22
+
+*The certifications, marks, and bodies that govern WiseQ's product categories — and the gaps to check. Researched from public sources; every item is a conversation-opener with Rob, not an accusation.*
+
+## 1. Product-safety certifications (the electronics)
+
+| Requirement | Scope | Status question for WiseQ |
+|---|---|---|
+| **EN 71-1/-2/-3** (Toy Safety Directive 2009/48/EC) | Products aimed at/usable by children <14 — WiseQ's entire catalog by positioning | Are class sets marketed as "voor kinderen" tested & documented per EN 71? |
+| **EN IEC 62115** | Electric/electronic toys — harmonized with the Toy Safety Directive; covers electrical safety for kids' electronic products | Headphones/tablets/trackers with child positioning fall here |
+| **Radio Equipment Directive (RED) 2014/53/EU** | Bluetooth headphones, GPS watches, wireless chargers — **legally mandatory CE**; since **Aug 2025 includes cybersecurity requirements** (RED Delegated Act 2022/30: secure updates, no vulnerabilities, personal-data protection) | The 2025 RED cybersecurity layer is NEW — products certified before it may need file updates. GPS trackers (child location data!) are squarely in scope |
+| **85 dB volume limiting** | Not a formal EN standard by itself, but the de-facto market norm (every competitor markets "85 dB"); WiseQ already claims it — keep test evidence per SKU family |
+| **GPSR (EU) 2023/988** | General Product Safety Regulation (applies since Dec 2024): EU responsible-person contact on product/listings, traceability, recall readiness | Check: is the responsible-person info on all Amazon/bol listings? |
+
+**Why this matters for the pitch:** certification evidence per SKU family (EN 71 / 62115 / RED files) is ALSO a content asset — "getest volgens EN 62115" on product pages converts parent-trust into listings. An agent maintaining a cert-evidence library per SKU = compliance + marketing in one table.
+
+## 2. Trust marks & organizations (the shop)
+
+| Body | Cost | Value |
+|---|---|---|
+| **Thuiswinkel Waarborg** | **€75 one-time + €390/yr certification + contribution** | 92-96% consumer recognition; the direct counter to the Scamadviser-0 trust suppressor; also requires the disputes-committee (Geschillencommissie) process |
+| **bol CPOP certified partner** | Application-based | Post-integration credibility; bol lists certified integrators/service providers |
+| **GS1 Nederland** | 10 EAN-pack ~€61 + annual licence | The 0/230 EAN fix (see doc 08) |
+| **Trustpilot** | Free tier + paid plans | Review engine target (25 reviews → automated D+1 flow) |
+| **KvK / ILT / NVWA** | — | Market-surveillance bodies for toy-safety/e-com compliance; low risk but the cert files above are their ask |
+
+## 3. Regional & channel organizations (the network)
+
+- **Stichting Westelijke Tuinsteden** (Amsterdam-West public primary education) and the other **640+ school boards** in our lead-gen dataset — the board layer is the volume B2B channel (doc 02-WHAT-WE-DID).
+- **School inkoopcollectieven** (Onderwijs Inkoop Groep, Contractables) — collective catalogs; listing = many schools at contract prices (doc 08 §3).
+- **Beverwijk/Grootebroek region**: 7 nearby schools in the contact set — the local-walk-in pilot list for WiseQ's own backyard.
+- **Educatheek** (wholesaler already stocking WiseQ products) — deepen or compete; either way, monitor.
+
+## 4. Data-protection layer
+
+- **GDPR/AVG** (already law, unlike PY's 7593/2025): shop customers + school-contact outreach both in scope. Our privacy-agent design (consent registry, DSR handling, 72h breach protocol) ships in EU flavor.
+- **RED cybersecurity clause** overlaps: kids' GPS/location data = sensitive-adjacent; evidence of secure handling strengthens both RED and GDPR posture.
+
+## 5. Actions this adds to the backlog
+
+1. Cert-evidence library per SKU family (EN 71 / 62115 / RED) — agent-maintained, marketing-usable
+2. RED-2025 file audit on the GPS-tracker line (child location data = highest scrutiny)
+3. Thuiswinkel Waarborg application (€465 year one) — paired with review engine
+4. Responsible-person field check across Amazon/bol listings (GPSR)
+5. Outreach wave to 3 regional boards (West Friesland backyard first)

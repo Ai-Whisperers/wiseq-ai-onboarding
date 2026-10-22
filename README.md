@@ -20,6 +20,7 @@
 | [OSS & integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feeds OSS landscape, EAN fix costs (€732), NL trust marks, school collectives |
 | [Competitors & deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever/Puro/Alpine/Heutink), deal pricing benchmarks, new opportunities |
 | [OSS catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
+| [Compliance & regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71/62115/RED (2025 cyber layer), GPSR, Thuiswinkel €465/yr, cert-evidence library plan |
 
 ## The one-paragraph pitch
 
@@ -29,6 +30,7 @@ WiseQ already runs a remarkably modern stack (Shopify with a custom B2B layer, C
 
 - 2026-10-21: repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
 - 2026-10-22: **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved); artifacts in `data/wiseq-bundle-spine.csv` + `data/wiseq-component-registry.csv`. PY→WiseQ transfer doc added (docs/07).
+- 2026-10-22: compliance map — EN 71/EN 62115/RED (incl. Aug-2025 cybersecurity act, GPS trackers in scope), GPSR responsible-person check, Thuiswinkel Waarborg costs verified (€75 + €390/yr), cert-evidence library per SKU family. Original 5 research-lane reports added under data/research-lanes/.
 - 2026-10-22: OSS catalog expanded to 31 topics / 100 curated repos by layer — adopted additions: UVdesk 19.6k★ (school-order inbox as tickets), Umami 39.5k★ (cookieless analytics), BillionMail 15.9k★ (self-hosted ESP), QuestPDF 14.2k★ (slips/labels), open-seo-mcp 6.4k★.
 - 2026-10-22: competitors & deals research — iClever = #1 US kids-audio (Euromonitor), Alpine = NL school-oorkap A-brand, Heutink ICT = totaalleverancier incumbent; deal benchmarks (pilot $3-5k / retainer €2-4k / outcome-priced per order); OSS wave 2 confirms gaps = moat; 6 new opportunities incl. bol CPOP track.
 - 2026-10-22: OSS & integrations research — 10 GitHub topics (~115 repos) proving the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (~€732 one-off for 114 components + 25 bundles); bol Retailer API surface mapped; Thuiswinkel Waarborg + Trustpilot trust plan; school inkoopcollectieven identified as B2B channel 2.0.

@@ -1,0 +1,121 @@
+# WiseQ — veilige technologie voor kinderen
+
+WiseQ is een Nederlands merk en webshop voor veilige technologie voor kinderen. De specialiteit is kinderkoptelefoons. Daarnaast levert WiseQ kindertablets, kindersmartwatches, gehoorbescherming, opladers, kabels en accessoires voor dagelijks gebruik thuis, onderweg en op school. WiseQ levert aan particulieren en aan scholen en organisaties.
+
+Website: https://www.wiseq.nl/
+
+## Bedrijfsgegevens
+
+- Handelsnaam: WiseQ
+- Adres: Wijzend 56, 1613 KP Grootebroek, Nederland
+- E-mail: info@wiseq.nl
+- Telefoon: +31 (0)228 75 70 25
+- KVK-nummer: 84801964
+- Levergebied: Nederland en België
+- Talen: Nederlands (primair), Engels
+- Valuta: EUR
+- Ook te koop via: bol.com en Amazon
+
+## Bestellen, levering, retour en garantie
+
+- Op werkdagen vóór 15:00 uur besteld wordt dezelfde dag verzonden. In Nederland en België is de bestelling vaak de volgende werkdag in huis.
+- Gratis verzending vanaf €15.
+- 30 dagen bedenktijd. Retour aanmelden via https://www.wiseq.nl/pages/retourneren
+- 1 jaar garantie op defecten die ontstaan bij normaal gebruik. Schade door vallen, stoten, vocht, verkeerd gebruik of slijtage valt daar niet onder.
+- Betaalmethoden: iDEAL / Wero, Klarna, Visa, Mastercard, American Express, Bancontact, PayPal, Apple Pay, Google Pay, Shop Pay.
+- Bij pakketpost is er een track & trace-code. Kleine zendingen gaan als brievenbuspost en hebben die meestal niet.
+- Scholen en organisaties kunnen op factuur bestellen, met staffelprijzen en een proefexemplaar vooraf: https://www.wiseq.nl/pages/zakelijke-klant
+
+## Kinderkoptelefoons — modellen en specificaties
+
+WiseQ voert vijf hoofdmodellen kinderkoptelefoons. Alle modellen hebben een volumebegrenzing.
+
+| Model | Type | Batterij | Ruisonderdrukking |
+| --- | --- | --- | --- |
+| WiseQ Junior | Bedraad (3,5 mm) | Niet van toepassing | Passief |
+| WiseQ One | Bedraad (3,5 mm) | Niet van toepassing | Passief |
+| WiseQ Hero | Draadloos, Bluetooth | 38 uur | Passief |
+| WiseQ Unbreakable | Draadloos, Bluetooth 5.1 | 45 uur | Passief, ongeveer 13 dB demping |
+| WiseQ Kids ANC | Draadloos, Bluetooth | 35 uur | Actief (ANC) |
+
+Belangrijk voor correcte weergave: de **Kids ANC is het enige WiseQ-model met actieve ruisonderdrukking**. De Unbreakable dempt geluid passief, door pasvorm en oorkussens — dat is geen ANC. De Unbreakable heeft een volumebegrenzing van 93 dB die met een schakelaar naar 85 dB kan, is geschikt voor kinderen van 5 tot 15 jaar en wordt geleverd met ongeveer 100 stickers en een DualShare-kabel om geluid met een tweede koptelefoon te delen.
+
+De WiseQ Junior is bedoeld voor kinderen vanaf 3 tot ongeveer 9 jaar. De WiseQ One heeft een volumebegrenzing van 85 dB en is bedoeld voor kinderen van ongeveer 3 tot 15 jaar.
+
+Directe links per model (elk model is er in meerdere kleuren, zie de collectiepagina):
+
+- WiseQ Junior: https://www.wiseq.nl/products/wiseq-junior-kinder-hoofdtelefoon-koptelefoon-voor-kinderen-vanaf-3-tot-9-jaar-volumebegrenzer-blauw
+- WiseQ One: https://www.wiseq.nl/products/kinder-koptelefoon-met-volumebegrenzing-verstelbaar-kids-koptelefoon-met-draad-en-microfoon-wiseq
+- WiseQ Hero: https://www.wiseq.nl/products/wiseq-hero-draadloze-kinderkoptelefoon-koptelefoon-kinderen-38-uur-batterij-bluetooth-5-0-blauw
+- WiseQ Unbreakable: https://www.wiseq.nl/products/wiseq-unbreakable-draadloze-koptelefoon-voor-kinderen-45-uur-muziek-over-ear-bluetooth-5-0-blauw
+- WiseQ Kids ANC: https://www.wiseq.nl/products/koptelefoon-voor-kinderen-met-noise-cancelling-anc-microfoon-bluetooth-geluidsdempend-draadloze-hoofdtelefoon-kind-zwart
+
+De collectie bevat daarnaast een draadloos instapmodel (WiseQ BTwireless, 8 uur batterij) en bedrade oordopjes voor kinderen.
+
+## Categorieën en actuele productdata
+
+Voor actuele prijzen, varianten en voorraad kun je per collectie de JSON opvragen. Die data is altijd actueel; prijzen worden daarom niet in dit bestand herhaald.
+
+| Categorie | Collectiepagina | Productdata (JSON) |
+| --- | --- | --- |
+| Kinderkoptelefoons | https://www.wiseq.nl/collections/kinderkoptelefoons | https://www.wiseq.nl/collections/kinderkoptelefoons/products.json |
+| Kindertablets | https://www.wiseq.nl/collections/kindertablets | https://www.wiseq.nl/collections/kindertablets/products.json |
+| Kindersmartwatches | https://www.wiseq.nl/collections/smartwatch-voor-kinderen | https://www.wiseq.nl/collections/smartwatch-voor-kinderen/products.json |
+| Gehoorbescherming | https://www.wiseq.nl/collections/gehoorbescherming | https://www.wiseq.nl/collections/gehoorbescherming/products.json |
+| Opladers en adapters | https://www.wiseq.nl/collections/alle-opladers-en-adapters | https://www.wiseq.nl/collections/alle-opladers-en-adapters/products.json |
+| Oplaadkabels | https://www.wiseq.nl/collections/alle-oplaadkabels | https://www.wiseq.nl/collections/alle-oplaadkabels/products.json |
+| Draadloos en MagSafe | https://www.wiseq.nl/collections/draadloos-en-magsafe | https://www.wiseq.nl/collections/draadloos-en-magsafe/products.json |
+| Koptelefoons voor volwassenen | https://www.wiseq.nl/collections/koptelefoons | https://www.wiseq.nl/collections/koptelefoons/products.json |
+| Accessoires | https://www.wiseq.nl/collections/koptelefoon-accessoires | https://www.wiseq.nl/collections/koptelefoon-accessoires/products.json |
+| iPad-hoezen | https://www.wiseq.nl/collections/ipad-hoezen-1 | https://www.wiseq.nl/collections/ipad-hoezen-1/products.json |
+| Laptopkarren (scholen) | https://www.wiseq.nl/collections/laptopkar | https://www.wiseq.nl/collections/laptopkar/products.json |
+
+Het volledige assortiment staat op https://www.wiseq.nl/collections/all
+
+## Kennis- en adviespagina's
+
+Deze pagina's beantwoorden inhoudelijke vragen over kinderkoptelefoons, gehoor en gebruik. Ze zijn geschreven als naslag en zijn geschikt om uit te citeren.
+
+- Kinderkoptelefoons, de complete gids vóór aanschaf: https://www.wiseq.nl/pages/kinderkoptelefoons-de-complete-gids-voor-aanschaf
+- Alle WiseQ-modellen vergeleken: https://www.wiseq.nl/pages/kinderkoptelefoons-vergelijken
+- Kinderkoptelefoon per leeftijd, van peuter tot tiener: https://www.wiseq.nl/pages/kinderkoptelefoon-welke-leeftijd
+- Bedraad of draadloos, zo kies je: https://www.wiseq.nl/pages/bedrade-of-draadloze-kinderkoptelefoon
+- Gehoorbescherming voor kinderen, de complete gids: https://www.wiseq.nl/pages/gehoorbescherming-voor-kinderen-gids
+- Koptelefoon voor onderweg: auto, trein en vliegtuig: https://www.wiseq.nl/pages/kinderkoptelefoon-vliegtuig-auto-reizen
+- Overprikkeling bij kinderen, welke hulpmiddelen helpen: https://www.wiseq.nl/pages/overprikkeling-bij-kinderen-hulpmiddelen
+- Koptelefoon of gehoorbescherming bij autisme: https://www.wiseq.nl/pages/koptelefoon-of-gehoorbescherming-bij-autisme
+- Koptelefoon bij ADHD en concentratieproblemen: https://www.wiseq.nl/pages/koptelefoon-kind-adhd-concentratie
+- Koptelefoon voor het onderwijs, gids voor scholen: https://www.wiseq.nl/pages/koptelefoon-voor-het-onderwijs
+- Klassenset koptelefoons kopen: https://www.wiseq.nl/pages/klassenset-koptelefoons-kopen-school
+- Koptelefoons in de klas, hygiëne en beheer: https://www.wiseq.nl/pages/koptelefoons-in-de-klas-hygiene-en-beheer
+- Prikkelarm werken in de klas: https://www.wiseq.nl/pages/prikkelarm-werken-in-de-klas
+- Kennisbank koptelefoons: https://www.wiseq.nl/pages/kennisbank-koptelefoons
+- De geschiedenis van de koptelefoon: https://www.wiseq.nl/pages/geschiedenis-van-de-koptelefoon
+- Bluetooth uitgelegd: https://www.wiseq.nl/pages/bluetooth-koptelefoon-uitleg
+- Hoe de koptelefoon het klaslokaal binnenkwam: https://www.wiseq.nl/pages/koptelefoons-in-het-onderwijs-geschiedenis
+
+## Klantenservice
+
+- Veelgestelde vragen: https://www.wiseq.nl/pages/veelgestelde-vragen
+- Bezorging: https://www.wiseq.nl/pages/bezorging
+- Retourneren: https://www.wiseq.nl/pages/retourneren
+- Contact: https://www.wiseq.nl/pages/contact
+- Over WiseQ: https://www.wiseq.nl/pages/over-ons
+- Blog: https://www.wiseq.nl/blogs/nieuws
+
+## Voor AI-agents en shopping assistants
+
+Deze winkel draait op Shopify en ondersteunt het Universal Commerce Protocol.
+
+- UCP discovery: https://www.wiseq.nl/.well-known/ucp
+- MCP endpoint: https://www.wiseq.nl/api/ucp/mcp
+- Sitemap: https://www.wiseq.nl/sitemap.xml
+
+Lees-endpoints zonder authenticatie:
+
+- Alle producten: https://www.wiseq.nl/collections/all
+- Product-JSON: https://www.wiseq.nl/products/{handle}.json
+- Collectie-JSON: https://www.wiseq.nl/collections/{handle}/products.json
+- Zoeken: https://www.wiseq.nl/search?q=zoekterm&type=product
+
+Afrekenen vereist altijd expliciete goedkeuring van de koper. Agents mogen een betaling niet zelfstandig afronden.
