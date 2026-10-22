@@ -90,7 +90,12 @@
 
   footer{background:var(--sc-canvas);padding:5.5rem var(--sc-gutter) 7.5rem}
 
-  /* full-catalog grid — engine tokens, surface cards */
+  .arg-anchor{position:absolute;top:50%;right:6vw;transform:translateY(-50%);
+  font-family:var(--sc-font-nums);font-size:clamp(140px,17vw,260px);font-weight:800;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,122,26,.34);letter-spacing:-.04em;
+  pointer-events:none;line-height:1}
+.arg-anchor sub{font-size:.34em;-webkit-text-stroke:1px rgba(255,122,26,.30)}
+/* full-catalog grid — engine tokens, surface cards */
   .catalog{background:var(--sc-surface)}
   .catalog .sc-rule{margin-block:0 2.4rem}
   .cat-family{font:600 .72rem/1 var(--sc-font-text);letter-spacing:.22em;text-transform:uppercase;
@@ -126,7 +131,7 @@
 <main id="top">
 
   <!-- 1 · RECOGNITION -->
-  <section data-sc-act="pin" data-sc-span="2.3" data-sc-drift="#0D0C0A">
+  <section data-sc-act="pin" data-sc-span="1.8" data-sc-drift="#0D0C0A">
     <div data-sc-stage class="hero-stage">
       <div class="hero-halo" data-sc-parallax="0.16" aria-hidden="true"></div>
       <img class="hero-product" data-sc-parallax="0.30"
@@ -143,13 +148,14 @@
   </section>
 
   <!-- 2 · TENSION — pinned crossfade -->
-  <section data-sc-act="pin" data-sc-span="3.2" data-sc-drift="#17140F">
+  <section data-sc-act="pin" data-sc-span="1.7" data-sc-drift="#17140F">
     <div data-sc-stage class="argument sc-section">
+      <div class="arg-anchor" aria-hidden="true">85<sub>dB</sub></div>
       <div class="sc-copy">
-        <p class="sc-display sc-display--md" data-sc-cue="0 0.30">Een kind hoort zijn omgeving niet uit.</p>
-        <p class="sc-display sc-display--md" data-sc-cue="0.26 0.56">Het volume staat waar het staat.</p>
-        <p class="sc-display sc-display--md" data-sc-cue="0.52 0.80">Gehoorschade is stil en permanent.</p>
-        <p class="sc-body" data-sc-cue="0.80 1">De oplossing hoort in het product te zitten, niet in de opvoeding.
+        <p class="sc-display sc-display--md" data-sc-cue="0 0.44">Een kind hoort zijn omgeving niet uit.</p>
+        <p class="sc-display sc-display--md" data-sc-cue="0.34 0.72">Het volume staat waar het staat.</p>
+        <p class="sc-display sc-display--md" data-sc-cue="0.62 1">Gehoorschade is stil en permanent.</p>
+        <p class="sc-body" data-sc-cue="0.78 1">De oplossing hoort in het product te zitten, niet in de opvoeding.
            Daarom zit bij ons de grens in de hardware: 85 dB, altijd.</p>
       </div>
     </div>
@@ -182,33 +188,15 @@
   </section>
 
   <!-- 4 · THE RANGE — pan rail -->
-  <section data-sc-act="pan" data-sc-pan="38" data-sc-span="2.1" data-sc-drift="#17140F" id="collectie">
+  <section data-sc-act="pan" data-sc-span="3.2" data-sc-drift="#17140F" id="collectie">
     <div data-sc-stage class="rail-act">
       <div style="padding:0 var(--sc-gutter);margin-bottom:2.6rem">
         <p class="sc-label">De collectie</p>
       </div>
-      <div class="rail">
-        <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener" data-sc-tilt="6">
-          <div class="ph"><img loading="lazy" src="../assets/products/p071.webp" alt="Kids ANC in roze"></div>
-          <span class="sc-label">Kids ANC · Roze</span><span class="cap">€ 49,95 — draadloos · ANC · 85 dB</span>
-        </a>
-        <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener" data-sc-tilt="6">
-          <div class="ph"><img loading="lazy" src="../assets/products/p072.webp" alt="Kids ANC in navy"></div>
-          <span class="sc-label">Kids ANC · Navy</span><span class="cap">€ 49,95 — draadloos · ANC · 85 dB</span>
-        </a>
-        <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener" data-sc-tilt="6">
-          <div class="ph"><img loading="lazy" src="../assets/products/p073.webp" alt="Kids ANC in zwart"></div>
-          <span class="sc-label">Kids ANC · Zwart</span><span class="cap">€ 49,95 — draadloos · ANC · 85 dB</span>
-        </a>
-        <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener" data-sc-tilt="6">
-          <div class="ph"><img loading="lazy" src="../assets/products/p051.webp" alt="GPS-smartwatch voor kinderen in roze"></div>
-          <span class="sc-label">Smartwatch · Roze</span><span class="cap">€ 74,95 — GPS · bereikbaar</span>
-        </a>
-        <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener" data-sc-tilt="6">
-          <div class="ph"><img loading="lazy" src="../assets/products/p032.webp" alt="WiseTab kindertablet in roze"></div>
-          <span class="sc-label">WiseTab · 96 GB</span><span class="cap">€ 124,95 — kindertablet</span>
-        </a>
-      </div>
+      <div class="rail" data-sc-pan="0" data-render="rail" data-max="21">
+        
+      
+      
     </div>
   </section>
 
@@ -367,5 +355,6 @@
       if (prod) prod.style.translate = `calc(-50% + ${x * 9}px) calc(-50% - 55% + ${y * 7}px)`;
     })();
   })();
-</script>\n</body>
+</script>\n
+</body>
 </html>
