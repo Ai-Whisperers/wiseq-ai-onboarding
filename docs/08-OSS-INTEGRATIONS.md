@@ -25,17 +25,17 @@
 
 ## 2. 🕰️ EAN/GS1 in NL — the concrete fix for 0/230
 
-- **GS1 Nederland**: single EAN ~€36 one-off; **10-pack ~€61**; annual licence fee applies for continued use. (bol's own partner docs recommend buying direct from GS1 and verifying registration in GS1's portal — resold codes often unregistered.)
-- WiseQ needs EANs for **114 components** (see bundle spine) → ~12 × 10-packs ≈ **€732 one-off + modest annual fee**. Every bundle then derives identity from component EANs — no EAN purchase needed for 25 bundles if sold only via own shop, but bol/Amazon require per-listing GTINs → buy for the ~25 bundle SKUs too (≈ €150 more).
+- **GS1 Nederland**: single code pack (1–5) €36 one-off; **code package 10 = €61 PER YEAR** (10 article codes/GTINs + 10 GLNs + 1M SSCC). **GS1 EDI annual contribution: €0 for turnover €0–5M** (categories A–D); €200 at €5–11M. All amounts excl. 21% VAT. (bol's own partner docs recommend buying direct from GS1 and verifying registration in GS1's portal — resold codes often unregistered.)
+- WiseQ needs EANs for **114 components** (see bundle spine) **+ 25 bundles = 139 GTINs** → **14 × €61 = €854/yr, recurring every year** (€1,033 with VAT) — ⚠ an earlier figure in this doc said 12 packs/€733, but 12 packs covers only **120** codes; 139 needs **14**. **Full 230-SKU coverage = 23 packs = €1,403/yr** (€1,698 w/ VAT). ⚠ **Correcting an earlier figure in this repo:** this was written as a "€732 one-off". It is **not one-off** — the 10-pack is an annual product, and the total **repeats every year** while those codes stay registered. bol and Amazon both require a GTIN per listing, so bundle SKUs must be registered too, not just components.
 - Cheap vs. the manual-EAN-Excel hours Rob spends today. **First week one-liner: order GS1 10-packs, assign to the 114-component registry (CSV already delivered), propagate to Shopify variants + ChannelDock.**
 
 ## 3. 💬 Integration surface (verified links)
 
 - **bol Retailer API** — OAuth2 (login.bol.com SSO), endpoints for offers/orders/shipments/product content; dlt-hub documents a Python source. Access via bol Seller Dashboard application.
 - **e-Boekhouden.nl API** — the likely bookkeeping package (NL SMB standard; Rob's transcript mentioned "boekhouden software" generically). Full REST API with webshop/CRM/bank couplings; alternatives Moneybird (API-first, dev-friendly) and Exact Online (heavier, full ERP).
-- **ChannelDock & 5X** — no public API docs found in searches; both are SaaS dashboards. Approach: agent via browser-automation (computer-use) initially, request API access from vendor; both export CSV/XLSX — scheduled exports + parse is the zero-risk first integration.
+- **ChannelDock & 5X** — ⚠ **corrected 2026-10-22: both DO have APIs.** An earlier version of this doc said "no public API docs found in searches"; that was a search failure, not a fact. ChannelDock ships a **REST API + webhooks** from the **Voorraad plan (from €45/mo)** upward — not on the free plan, which caps at 100 products (WiseQ has 230, so they are almost certainly already on a paid plan). **Consequence for scoping:** the browser-automation-first approach described here is no longer the primary path for ChannelDock. Note also that ChannelDock sells a **PIM module (€200/mo)** that advertises "Bundels samenstellen" (bundle composition) — so part of the planned bundle work may be a configuration task rather than a build. **Which plan are they on, and do they already have PIM?** is now a Phase 0 question in [doc 06](06-NEXT-STEPS.md).
 - **Trustpilot** — invitation/business APIs public; D+1 post-delivery invitation flow is standard.
-- **Thuiswinkel Waarborg** — 92-96% consumer recognition, the dominant NL trust mark; ~€500-1,000/yr ballpark for small webshops. Recommended alongside Scamadviser remediation (Trust Score 0 finding) — strongest available counter to the trust gap.
+- **Thuiswinkel Waarborg** — 92-96% consumer recognition, the dominant NL trust mark. **Corrected 2026-10-22 (thuiswinkel.org, verified):** €75 one-time + €390/yr certification **plus a turnover-tiered contribution** — €518/yr at €0–100k turnover, €776 at €100–250k, €1,035 at €250–500k, €1,294 at €500k–1M — so **year 1 is €983–€1,759 depending on turnover class**, plus **€45/yr per extra platform** (they also sell on bol.com and Amazon). The earlier "~€500-1,000/yr ballpark" in this doc was directionally right but hid that it is revenue-tiered. Recommended alongside Scamadviser remediation (Trust Score 0 finding) — strongest available counter to the trust gap.
 - **School collectives** — schools increasingly buy via collectives/inkoopcollectieven (Onderwijs Inkoop Groep, Contractables etc.); WiseQ's B2B layer (staffelprijzen, Bestel op factuur) maps to this market. Getting listed in collective catalogs = volume channel; edtech procurement has no OSS, it's sales work.
 
 ## 4. 📦 OSS shortlist per layer (from `data/oss/`)
@@ -57,3 +57,22 @@
 3. **Trustpilot + Thuiswinkel together**: review engine (D+1 invitations) + the mark fixes the two trust suppressors (25 reviews, Scamadviser 0) in one motion.
 4. **Google Shopping feed**: bol is covered via Retailer API; Google Merchant is the next cheapest channel — feed generated nightly from the canonical spine.
 5. **School collectives as B2B channel 2.0**: staffelprijzen layer exists; next step is getting into 2-3 collective catalogs (sales motion, not software — but our 857-org lead list is the target list).
+
+---
+
+## 📌 In short
+
+The NL e-commerce tooling layer is **thin at the edges and absent in the middle** — Bol, Shopify and GS1 are covered by proprietary incumbents, but nothing coordinates them. That is the moat: orchestration is the gap everyone else ignores. Two corrections landed here on 2026-10-22: **ChannelDock and 5X both do have APIs** (ChannelDock's REST API + webhooks are plan-gated from €45/mo), and the **GS1 €733/yr is recurring, not one-off**.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Catalog 100](10-OSS-CATALOG-100.md)** | 100 curated repos by stack layer |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | Which integrations the blueprint depends on |
+| **[Compliance Regulatory](11-COMPLIANCE-REGULATORY.md)** | The compliance constraints on each choice |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

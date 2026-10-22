@@ -67,3 +67,22 @@ With read-only access (later): ChannelDock + 5X joins, live stock propagation, m
 Building a retailer-grade operation from a standing start — no legacy systems, tight budget, one person wearing several hats — is the same constraint WiseQ has today. Everything we built was designed agent-first: every component speaks an API or a CLI, every decision is logged, and every failure we hit became a structural rule instead of a recurring cleanup project. The EAN lesson is the clearest example: rather than a cleanup project, it became a rule that prevents the failure class entirely.
 
 WiseQ gets that discipline without paying for the scar tissue.
+
+---
+
+## 📌 In short
+
+We built these systems for a harder problem — a multi-branch retail operation in Paraguay with the same school-order and stock-truth shape. **The bundle spine is the headline: 25 bundles decoded into 114 components**, which is precisely the mapping WiseQ does by hand today. Transfer is a capability, not a codebase dump: what moves is the pattern plus the connectors.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | Where each transferred component lands |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | The connectors behind the transfer |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The WiseQ problems these components solve |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

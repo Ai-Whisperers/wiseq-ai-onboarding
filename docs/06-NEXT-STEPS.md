@@ -91,3 +91,22 @@ Whichever you choose: the agents never hold credentials that only they can reach
         ▼
 5. Phase 1: the 4-hour mornings stop  (weeks 3–6)
 ```
+
+---
+
+## 📌 In short
+
+Everything on this list is **bounded, low-risk, and mostly already in WiseQ's hands** — a manual, a software inventory, some anonymised sample orders, and read-only tokens. None of it requires a production change, none of it commits WiseQ to anything, and all of it unblocks a priced Phase 0. **The single most valuable answer is annual online turnover** — it alone sets the Thuiswinkel contribution tier (**€983–1,759/yr**) and changes the compliance quote.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What Phase 0 delivers |
+| **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Deal shape, benchmarked |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | The production-readiness checklist |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

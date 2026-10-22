@@ -57,3 +57,22 @@ Built a full lead-gen pipeline on official DUO open data:
 ## 7. 🔍 Working session (2026-10-21)
 
 First working session with WiseQ leadership — documented in [Meeting Notes](03-MEETING-NOTES-2026-10-21.md). Produced the [AI-stack blueprint](04-AI-STACK-BLUEPRINT.md) and [automation backlog](05-AUTOMATION-BACKLOG.md) from it.
+
+---
+
+## 📌 In short
+
+Everything here was produced **before** we were engaged and **without a production change to WiseQ's systems**. Company research, a market scan, a lead-gen pipeline, working sessions, an OSS landscape, a verified cost baseline, and three built site concepts. The point is not volume — it is that the questions in [doc 06](06-NEXT-STEPS.md) are the *only* ones left, because we already answered the rest.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What the first session produced |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | The OSS landscape in detail |
+| **[Site Concepts](17-SITE-CONCEPTS.md)** | Three built site concepts |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
