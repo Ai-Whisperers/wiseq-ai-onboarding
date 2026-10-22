@@ -8,12 +8,12 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-17-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-16-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
-[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c--the-market--regulation-what-surrounds-the-plan)
+[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
 [![Research%20lanes](https://img.shields.io/badge/research%20lanes-5%20independent%20reports-orange?style=for-the-badge)](#evidence-base)
-[![Hat%20passes](https://img.shields.io/badge/hat%20passes-68%20roles%20audited-pink?style=for-the-badge)](#evidence-base)
+[![Specialist%20passes](https://img.shields.io/badge/specialist%20passes-48%20roles%20reviewed-pink?style=for-the-badge)](#evidence-base)
 [![validate](https://img.shields.io/github/actions/workflow/status/Ai-Whisperers/wiseq-ai-onboarding/validate.yml?branch=main&style=for-the-badge)](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/actions/workflows/validate.yml)
 
 [WiseQ](https://www.wiseq.nl) — the Dutch kids-technology brand from Grootebroek, Netherlands ·
@@ -31,9 +31,9 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 | :--- | :--- | :--- |
 | **Rob Nyari** — E-Commerce CEO, decision-maker | [The one-paragraph pitch](#the-one-paragraph-pitch) → [04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | [06 · Next Steps](docs/06-NEXT-STEPS.md) for the four decisions we need from you |
 | **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/04-AI-STACK-BLUEPRINT.md#cost-model-honest) | [09 · Competitors & Deals](docs/09-COMPETITORS-DEALS.md) for market pricing benchmarks |
-| **An operations / purchase lead** | [05 · Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) — every opportunity, ROI-scored | [07 · PY → WiseQ Transfer](docs/07-PY-TRANSFER-WISEQ.md) for the bundle-spine decode |
-| **A technical evaluator or IT reviewer** | [04 · Architecture](docs/04-AI-STACK-BLUEPRINT.md) + [15 · DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | [13 · Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) for the concrete connector list |
-| **New to this repository** | [Document map](#document-map) — 17 docs, four tracks | Everything else in this table is detail |
+| **An operations / purchase lead** | [05 · Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) — every opportunity, ROI-scored | [07 · Reuse-First](docs/07-PY-TRANSFER-WISEQ.md) for the bundle-spine decode |
+| **A technical evaluator or IT reviewer** | [04 · Architecture](docs/04-AI-STACK-BLUEPRINT.md) + [15 · Delivery Plan](docs/15-DEVOPS-MASTERPLAN.md) | [13 · Tooling & Integration Plan](docs/13-TOOLING-MCP-INSTALLS.md) for the concrete connector list |
+| **New to this repository** | [Document map](#document-map) — 16 docs, four tracks | Everything else in this table is detail |
 
 ---
 
@@ -67,7 +67,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Seventeen documents, four tracks. Each is self-contained and independently verifiable.
+Sixteen documents, four tracks. Each is self-contained and independently verifiable.
 
 ### Track A — The proposal *(what we recommend)*
 
@@ -75,8 +75,7 @@ Seventeen documents, four tracks. Each is self-contained and independently verif
 | :--- | :--- | :--- | :--- |
 | **04** | [AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — architecture, phase-by-phase plan, honest cost model, guardrails | You want the sell. Start here. |
 | **05** | [Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) | 21 automations scored by impact and effort, 🔥 flags on do-first | You want the option list, ranked |
-| **06** | [Next Steps](docs/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for Rob** | You need to unblock us this week |
-| **14** | [Hermes / Jev + AIW Reuse](docs/14-HERMES-JEV-AIW-REUSE.md) | **Jev verdict**, Hermes optimization, full AIW asset inventory (7 org + 81 personal repos) | You want to know what already exists |
+| **06** | [Next Steps](docs/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for WiseQ**, and the four hosting options | You need to unblock us this week |
 
 ### Track B — The company *(who WiseQ is)*
 
@@ -85,7 +84,9 @@ Seventeen documents, four tracks. Each is self-contained and independently verif
 | **01** | [Company Profile](docs/01-COMPANY-PROFILE.md) | Verified registry, timeline, channels, catalog, tech stack |
 | **02** | [What We've Done](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
 | **03** | [Meeting Notes 2026-10-21](docs/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
-| **07** | [PY → WiseQ Transfer](docs/07-PY-TRANSFER-WISEQ.md) | Paraguay build capabilities that solve WiseQ problems — incl. the decoded **bundle spine** |
+| **07** | [Reuse-First](docs/07-PY-TRANSFER-WISEQ.md) | Existing capability mapped to WiseQ problems — incl. the decoded **bundle spine** |
+
+<a id="track-c"></a>
 
 ### Track C — The market & regulation *(what surrounds the plan)*
 
@@ -100,10 +101,10 @@ Seventeen documents, four tracks. Each is self-contained and independently verif
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
-| **12** | [50-Hat Analysis](docs/12-FIFTY-HATS.md) | 15 WiseQ + 15 PY + **20 AIW meta-layer hats** — liability, bol health, CONATEL, Commerce-OS productization, 24-month arc |
-| **13** | [Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified catalog inventory, per-op MCP install lists, docker-compose, week-1 checklist |
-| **15** | [DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades, storage & DB architecture, SLOs, phased masterpiece checklist |
-| **16** | [Dev Team Hats](docs/16-DEV-TEAM-HATS.md) | **18-role full-team audit** — PM to Support Engineer; each flags/praises/fixes; top-10 ranked improvements |
+| **12** | [Specialist Review — 30 Hats](docs/12-FIFTY-HATS.md) | 30 independent passes — product liability, bol account health, B2B credit, incident response, plus engineering and delivery review |
+| **13** | [Tooling & Integration Plan](docs/13-TOOLING-MCP-INSTALLS.md) | Connector install list, three thin wrappers to build, week-by-week checklist |
+| **15** | [Delivery Plan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD, storage & database architecture, SLOs, phased build checklist |
+| **16** | [Delivery Review — How We Build](docs/16-DEV-TEAM-HATS.md) | **18 disciplines** — PM to Support Engineer; each states what it would flag, keep, and build first |
 | **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
 
 ---
@@ -212,7 +213,7 @@ This proposal is not built on assumptions. Every claim traces to a verified arti
 
 ```
 wiseq-ai-onboarding/
-├── docs/                    17 proposal, analysis & showcase documents
+├── docs/                    16 proposal, analysis & showcase documents
 │   ├── 01-COMPANY-PROFILE.md … 17-SITE-CONCEPTS.md
 ├── data/
 │   ├── oss/                 31 raw GitHub-search JSON files (query + results)
@@ -239,10 +240,9 @@ python3 scripts/validate_repo.py
 ## 📌 Status
 
 - **2026-10-21** — repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
-- **2026-10-22** — **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved). PY→WiseQ transfer doc added (docs/07).
-- **2026-10-22** — Hermes/Jev + AIW reuse inventory — Jev verified live, fallback-add flagged as top fix; AIW assets mapped; reuse-first stack defined.
-- **2026-10-22** — tooling & MCP plan — live catalog audit, MCP install lists for both operations, 3 thin wrapper builds queued.
-- **2026-10-22** — 50-hat analysis — 3 domains incl. first-ever AIW meta-layer analysis; 12 actions graduate to the kanban.
+- **2026-10-22** — **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved). Reuse-first mapping added (docs/07).
+- **2026-10-22** — tooling & integration plan — connector install list, three thin wrappers queued, week-by-week checklist.
+- **2026-10-22** — specialist review — 30 independent passes across compliance, risk, engineering and delivery; 12 actions graduate to the build plan.
 - **2026-10-22** — compliance map — EN 71 / 62115 / RED (incl. Aug-2025 cybersecurity act), GPSR responsible-person check, Thuiswinkel costs verified.
 - **2026-10-22** — OSS catalog expanded to 31 topics / 100 curated repos by layer.
 - **2026-10-22** — competitors & deals research — competitor map, deal pricing benchmarks, 6 new opportunities.

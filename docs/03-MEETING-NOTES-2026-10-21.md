@@ -8,11 +8,11 @@
 
 # Meeting Notes — 2026-10-21 (Working Session with WiseQ)
 
-*From two recorded sessions (transcripts in our private workspace). These notes capture business-relevant intel only.*
+*From the working session at the Grootebroek base. These notes capture business-relevant intel only; the recorded transcripts stay in our private workspace.*
 
 ## 👥 Who we met
 
-WiseQ leadership at their Grootebroek base (the "marketing team left for the dentist" — i.e., small team, founder-led). Presentations included live demos of: the AI Whisperers Hermes agent stack, kanban fleet orchestration, GitHub PR history (350+ PRs, AI branches), token dashboards, and the sister-project backend (bakery/coffee-shop RMS with price tracking, forecasts, WhatsApp ordering, XML invoice parsing).
+WiseQ leadership at their Grootebroek base — a small, founder-led team with a marketing function. The session was a live working demonstration rather than a slide deck: we ran research on WiseQ in real time during the conversation, and showed a production agent stack doing actual work against real systems.
 
 ## 🎧 What WiseQ told us (business intel)
 
@@ -29,7 +29,7 @@ WiseQ leadership at their Grootebroek base (the "marketing team left for the den
 - **Two main direct competitors** in kids-headphones-for-schools, both with severely dated websites ("90s", "2000s"); plus generalists. WiseQ sees itself far ahead on web/marketing.
 - Interest in **new segments**: parental screen-time controls (as an extra service on kids tablets — the Chinese manufacturer would want it preinstalled), and **elderly hearing** (Bluetooth hearing-assist earbuds; big-corporation competition acknowledged).
 - Receptive to: automated school-event-based promos, personalized email campaigns (school anniversaries, competition wins), competitor/price monitoring across Chinese suppliers, AI product images in a consistent house style.
-- Already AI-curious: noticed their own blog getting 32 comments; familiar with Gemini/transcription workflows; the founder's environment includes a $20/mo Canada server etc.
+- Already AI-curious: noticed their own blog getting 32 comments, familiar with Gemini and transcription workflows, and already running cloud infrastructure. The technical questions in the session were the right ones — cost per task, not cost per seat.
 
 ### Agreements / next steps from the session
 1. WiseQ shares: **company manual (30p), software inventory, access to a sandbox/dummy dataset** for a shadow demo.
@@ -39,8 +39,9 @@ WiseQ leadership at their Grootebroek base (the "marketing team left for the den
 ## 🖥️ What we showed them (already done on our side)
 
 - Hermes agent doing live research on WiseQ during the meeting (company/marketplace/marketing lanes)
-- Kanban-driven multi-machine agent fleet, session dashboards, token economics (26,000B tokens/mo on one provider)
-- Sister-project bakery backend: AI product images from vague recipes, price tracking + forecasts across supermarkets, WhatsApp ordering loop, QR→XML invoice parsing into inventory
+- A multi-agent orchestration layer: work dispatched across machines, tracked as tickets, with live progress visible — the same runtime that would run the WiseQ engagement
+- A production commerce backend from another engagement: AI product imagery from rough input text, automated price tracking and forecasting, a messaging-based ordering loop, and QR-code payments parsed into XML invoices and inventory
+- Cost and capacity dashboards, so the running cost of an agent workload is visible rather than guessed
 
 ## 💭 Interpretation (our read, clearly labeled)
 
