@@ -53,7 +53,7 @@
 | **Name** | Foundation | Kill the 4-hour mornings | Revenue engines | Compounding advantages |
 | **Goal** | Connect, read, shadow | Automate the painful path | Grow | Defend & extend |
 | **Writes?** | **No — read-only** | Yes, gated | Yes, gated | Yes, gated |
-| **Success test** | Dashboard live, EAN registry v1 | Cycle time 4h → <15min | 25 → 250+ reviews | UCP traffic + new segments |
+| **Success test** | Dashboard live, EAN registry v1 | Cycle time 4h → <15min | Invitation engine live + TrustScore defended | UCP traffic + new segments |
 
 **Every phase is additive.** Phase 0 writes nothing. Phase 1 adds one pipeline. If a phase underperforms, you stop — and keep everything that already works.
 
@@ -104,7 +104,7 @@ Also in this phase:
 
 | # | Engine | What it does | Target |
 | :--- | :--- | :--- | :--- |
-| 1 | **Reputation engine** | Post-delivery review invitations (Trustpilot / Kiyoh); Amazon listing refresh — salvage Hero's 4.4★×45 equity, fix Unbreakable's 2.5★ listing; Scamadviser / Webshopchecker remediation | **25 → 250+ reviews** |
+| 1 | **Reputation engine** | Post-delivery review invitations (Trustpilot / Kiyoh); Amazon listing refresh — salvage Hero's 4.4★×45 equity, fix Unbreakable's 2.5★ listing; Scamadviser / Webshopchecker remediation | **Every order invited; TrustScore defended** |
 | 2 | **B2B outreach** | Campaigns on the 857-org NL contact list + whale networks; event-aware personalization (school anniversaries, jubileums — as sketched in the meeting); unsubscribe / AVG compliant | A working B2B pipeline |
 | 3 | **Content cadence** | Knowledge-hub pages + blog at scale (today ~1/month manually; architecture supports 1/week); listicle/PR outreach to the review sites owning head terms; newsletter flows (no ESP today — pick one, wire abandoned-cart + B2B nurture) | 1 → 4+ per month |
 | 4 | **Marketplace relaunch** | Amazon EU expansion via the existing seller account; price harmonization across bol / shop / Amazon from one rule sheet | One price rule sheet |
@@ -118,19 +118,40 @@ Also in this phase:
 | **New segments** *(from the meeting)* | Screen-time-control service layer on tablets (manufacturer preinstall path); elderly hearing-assist line evaluation | Opens product lines that don't compete on price |
 | **EU expansion** | Flanders register pull, DACH via Amazon.de, FR datasets already banked | Data already collected — this is activation, not research |
 
-## 💶 Cost model (honest)
+## 💶 Cost model — split into *your running costs* and *our fee*
+
+These are **two different budgets** and we have separated them deliberately, because
+conflating them is how proposals end up misunderstood.
+
+### A. What WiseQ pays — the running costs of the automation layer
 
 | Line | Cost | Notes |
 | :--- | :--- | :--- |
-| **Infrastructure** | **€0 – €20/mo** | Depends on the hosting option you choose: a machine you already have, a server we run for you, or shared capacity at a reduced rate. All four options detailed in [06](06-NEXT-STEPS.md#hosting-options). |
-| **AI providers** | **~€90/mo-class** | The same tier discussed in the meeting. Batch jobs on cheap models, reasoning on strong models, `--deliver-only` hooks for zero-LLM alerts |
-| **Shopify API** | €0 | Included in their existing plan |
-| **ChannelDock API** | €0 | Already in their subscription |
-| **Bookkeeping API** | Vendor-dependent | Exact Online / nl. — API or browser-automation fallback |
+| **Infrastructure** | **€0 – €21/mo** | Depends on the hosting option you choose. A real VPS (8 vCPU / 16 GB) is **€16.49–21.49/mo** at Hetzner — EU-hosted, GDPR-friendly, 20 TB traffic included. Options detailed in [06](06-NEXT-STEPS.md#hosting-options). |
+| **AI providers** | **Tier-dependent** | Batch jobs on cheap models, reasoning on strong models. We size this to *your* actual order volume in Phase 0 — it is not a fixed guess. |
+| **Shopify API** | €0 | Included in your existing plan |
+| **ChannelDock API** | €0 incremental | **Already in your subscription** — the REST API is included from the Voorraad plan (from €45/mo). With 230 products you cannot be on the free tier (100-product cap), so you should already have access. ⚠ *To confirm — see question 7 in [06](06-NEXT-STEPS.md).* |
+| **Bookkeeping API** | €0 if native | Exact / e-Boekhouden / Moneybird — API where offered, automation as fallback |
 | **bol.com Seller API** | €0 | Free |
-| **Our engagement** | Phased, fixed scope | Fixed deliverables per phase. **WiseQ owns the repo and all data.** |
 
-> Most connector surfaces are **already-paid** — the marginal cost of the orchestration layer is the AI tier plus a small amount of infrastructure.
+**And the recurring compliance costs, which are separate from the tech stack:**
+
+| Line | Verified cost | Notes |
+| :--- | :--- | :--- |
+| **GS1 codes** | **€854/yr** (139 codes) | 10-pack = €61 **per year**. Covers the 114 components + 25 bundles (139 codes = 14 packs). ⚠ *Full 230-SKU coverage would be 23 packs = €1,403/yr.* See [08](08-OSS-INTEGRATIONS.md). |
+| **Thuiswinkel Waarborg** | **€983–1,759 year 1** | €75 once + €390/yr + revenue-tiered contribution (€518–1,294/yr) + €45/yr per extra platform. **Depends on your turnover — we have asked, not yet known.** |
+| **Review platform** | **$0–799/mo** | Trustpilot's tiers cap the monthly *invitation allowance*; a review still only happens if a buyer writes one. Sized in Phase 0. |
+| **Lab testing (EN 71 / 62115 / RED)** | **Unknown — get quotes** | ⚠ **The largest uncosted item in this proposal.** Typically hundreds to low-thousands per SKU family. We will not quote a total without real lab figures. |
+
+### B. What AI Whisperers charges
+
+| Line | Cost | Notes |
+| :--- | :--- | :--- |
+| **Our engagement** | **Agreed in writing before any work starts** | Fixed deliverables per phase, with a named stop/go decision at each boundary. We publish no price card here. **WiseQ owns the repo, the code, and all data** (see [18](18-TERMS-OWNERSHIP-CONTINUITY.md)). |
+
+> **On honesty about the AI tier:** the number is scoped to your order volume in Phase 0, not
+> assumed. We would rather measure it than guess — and if the measured cost is lower than
+> expected, that is information you should have.
 
 ## 🛡️ Guardrails
 
@@ -142,3 +163,23 @@ Also in this phase:
 | **GDPR discipline** | B2B role-address outreach under legitimate interest; named-person emails need a lawful basis; unsubscribe in every send |
 | **Kill switch** | Every automation is a cron job or webhook that can be paused in one command |
 | **Ownership** | WiseQ owns the repository, the data, and the credentials. We build inside your estate, not ours. |
+
+---
+
+## 📌 In short
+
+One 24/7 AI-operations layer, built on open-source [Hermes Agent](https://github.com/NousResearch/hermes-agent) plus MCP connectors, sitting **across** WiseQ's existing tools rather than replacing any of them. Every phase is additive, reversible and measurable — nothing here is a rip-and-replace, and the cheapest entry point ([doc 06](06-NEXT-STEPS.md)) costs WiseQ nothing but a few answers and a sandbox.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | The scored backlog this blueprint is built from |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | CI/CD, storage and SLOs behind the stack |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | The concrete connectors, per operation |
+| **[Site Concepts](17-SITE-CONCEPTS.md)** | Three working site concepts built against the real catalog |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

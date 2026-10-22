@@ -46,3 +46,22 @@ WiseQ leadership at their Grootebroek base — a small, founder-led team with a 
 ## 💭 Interpretation (our read, clearly labeled)
 
 WiseQ is an ideal Phase-0 client: process pain is concrete and measurable (4h mornings, manual EAN Excel, bundle re-keying), infrastructure is modern (Shopify+UCP, ChannelDock, 5X, 24/7 machine), the founder personally gets AI (asked the right questions about MCPs, tokens, server costs), and there's an explicit ask ("if you have an AI do stuff in my mailbox, that would be great — save a lot of time").
+
+---
+
+## 📌 In short
+
+The first session confirmed the thesis and produced the numbers behind it: **school orders cost ~4 hours of manual work**, bundle stock is re-tracked by hand in Excel, and the site under-performs its traffic. Everything labelled *our read* is inference, not a commitment by WiseQ — the raw notes are the record.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Deal pricing benchmarks and the competitive map |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | Every automation opportunity we found, scored |
+| **[Next Steps](06-NEXT-STEPS.md)** | What we need from WiseQ to start |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

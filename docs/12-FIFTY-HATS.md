@@ -143,3 +143,22 @@ Rob is the user *and* the owner. (a) Ship one automation he feels weekly — the
 - **Voice-based ordering in a second language** (hat 21 adjacent): interesting, not ROI-positive yet; revisit when volume justifies it.
 - **Trademarking a product name now** (hat 26): name it when the second client signs, not before.
 - **Rewriting the ERP** (from the tooling pass): nothing gets replaced. Every phase is additive and reversible.
+
+---
+
+## 📌 In short
+
+**30 structured passes** across the WiseQ engagement, compliance and risk, and engineering and delivery. They change the plan in specific, checkable ways — bundle scope, the 24-month arc, B2B credit handling, incident response. Discards are listed explicitly so the argument has a floor, not just a ceiling, and the synthesis section says which findings actually graduate into delivery work.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Dev Team Hats](16-DEV-TEAM-HATS.md)** | The same treatment from the build team's side |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What the review changes about the plan |
+| **[Next Steps](06-NEXT-STEPS.md)** | The decisions the review actually moves |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

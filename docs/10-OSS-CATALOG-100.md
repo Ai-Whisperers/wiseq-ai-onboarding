@@ -165,3 +165,22 @@
 | [jasewarner/gulp-shopify](https://github.com/jasewarner/gulp-shopify) | 184 | Liquid | shopify-cli | Blank slate Shopify theme for Developers, packaged with Gulp.js for processing S |
 
 *Total shown: 100 curated repos of 416 candidates across 31 topics.*
+
+---
+
+## 📌 In short
+
+**420 repositories found, 100 curated** across 31 topics and 9 stack layers — each assigned to the layer of the blueprint in [doc 04](04-AI-STACK-BLUEPRINT.md) that would adopt it. Four are already named for Phase 1 (UVdesk, Umami, BillionMail, QuestPDF). The adoption rule is deliberately conservative: **official API first, proven OSS second, custom thin build only as a last resort** — the catalog is a menu, not a shopping list.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Why orchestration is the moat |
+| **[Py Transfer Wiseq](07-PY-TRANSFER-WISEQ.md)** | What we already run in-house |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | Which catalog entries enter the stack |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

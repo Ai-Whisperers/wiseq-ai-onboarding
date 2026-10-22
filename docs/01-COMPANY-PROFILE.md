@@ -68,3 +68,22 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 - Two main direct competitors (per founder, 2026-10-21): small specialists with outdated websites ("90s" / "2000s"); plus big generalists (MediaMarkt, bol own-listings, Amazon)
 - SEO: owns the long tail (autism/ADHD/schools guides), absent from head-term listicles
 - EU expansion asset: ships NL+BE; Amazon EU seller account carries listings across .de/.fr/.it/.es
+
+---
+
+## 📌 In short
+
+WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs, Grootebroek) that already owns more modern infrastructure than most of its Dutch competitors — Shopify with a custom B2B layer, ChannelDock for fulfilment, agentic-commerce endpoints. The verified gaps are narrow and specific: **zero EAN codes across 230 SKUs**, and process work happening in Excel and the inbox. That combination is why we are proposing an *orchestration layer*, not a replatform.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Where the current stack meets the open-source layer |
+| **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Who else serves Dutch schools, and at what price |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What we propose to build on top of this |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

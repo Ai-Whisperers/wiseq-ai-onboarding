@@ -49,7 +49,12 @@ The baseline is deliberately in place before any application code exists. Gates 
 | Bundle spine / registry (reference) | git CSV | git CSV (SSOT) + DB mirror at deploy |
 | Lead-gen contacts (GDPR) | private workspace | **never git** — encrypted store + access log |
 | Images / assets | none yet | Object storage — git-free |
-| Backups | none | Nightly encrypted off-site copy, 30-day retention |
+| Backups | none | Nightly encrypted off-site copy, 30-day retention, **with a scheduled monthly restore test** |
+
+> ⚠ **A backup nobody has restored is a hope, not a control.** The monthly restore job pulls
+> a snapshot back into a scratch directory, verifies integrity and row counts, and records
+> the result. It is part of the deliverable, not an optional extra — if we cannot prove a
+> restore works, we do not claim you can recover.
 
 **The database plan (Phase 1):** one Postgres for this engagement — products / offers / prices / orders-cache / reviews. SQLite for local development, Postgres in production, **same schema in both**. Numbered migrations in a `migrations/` directory, with an up/down smoke test in CI so a migration that breaks is caught before it runs. Nightly ETL moves snapshots into the `prices` table; the repository then carries the schema and the docs, not the history.
 
@@ -107,3 +112,22 @@ Alerting rides one rail for both digests and failure notices, so there is a sing
 - **Infrastructure-as-code** for three cloud resources — a compose file and the provider dashboards cover it; revisit at ten or more resources.
 - **A monorepo merge** — client-facing and internal material serve different audiences and different confidentiality levels; cross-references beat a shared tree.
 - **Self-hosted CI** — managed Actions on a public repository costs nothing, and that is the entire reason the infrastructure budget is €0.
+
+---
+
+## 📌 In short
+
+Production-readiness, decided in advance: CI hardening, **storage & database architecture**, observability and explicit SLOs, plus the two platform traps worth avoiding. The point of writing it before the build is that **operability is a design input, not an afterthought** — and the phased build checklist that falls out of it is what each phase is measured against.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | What gets installed |
+| **[Dev Team Hats](16-DEV-TEAM-HATS.md)** | The build team's ranked improvements |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | The stack this plan hardens |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

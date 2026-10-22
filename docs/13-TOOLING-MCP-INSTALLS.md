@@ -88,3 +88,22 @@ Where the WiseQ stack has no official connector, we build a **thin wrapper** —
 <div align="center">
 <sub>Every connector above is scoped read-only until a specific automation justifies write access.</sub>
 </div>
+
+---
+
+## 📌 In short
+
+A **verified** connector inventory with per-operation install lists, the three thin wrappers we would build ourselves, and an explicit list of what we will **not** install. The week-by-week checklist is deliberately small: connect, read, summarise, ask a human before anything writes. No production credentials in the first week.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Py Transfer Wiseq](07-PY-TRANSFER-WISEQ.md)** | The reuse-first decision behind this list |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | Hosting and storage for these services |
+| **[Next Steps](06-NEXT-STEPS.md)** | The week-1 checklist |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

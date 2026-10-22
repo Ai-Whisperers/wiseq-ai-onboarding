@@ -28,7 +28,7 @@
 |---|---|---|
 | **Thuiswinkel Waarborg** | **€75 one-time + €390/yr certification + contribution** | 92-96% consumer recognition; the direct counter to the Scamadviser-0 trust suppressor; also requires the disputes-committee (Geschillencommissie) process |
 | **bol CPOP certified partner** | Application-based | Post-integration credibility; bol lists certified integrators/service providers |
-| **GS1 Nederland** | 10 EAN-pack ~€61 + annual licence | The 0/230 EAN fix (see doc 08) |
+| **GS1 Nederland** | **10-pack = €61 PER YEAR** · EDI licence €0 below €5M turnover | The 0/230 EAN fix. 139 codes (114 components + 25 bundles) = **€854/yr**; all 230 = **€1,403/yr** (see doc 08) |
 | **Trustpilot** | Free tier + paid plans | Review engine target (25 reviews → automated D+1 flow) |
 | **KvK / ILT / NVWA** | — | Market-surveillance bodies for toy-safety/e-com compliance; low risk but the cert files above are their ask |
 
@@ -48,6 +48,25 @@
 
 1. Cert-evidence library per SKU family (EN 71 / 62115 / RED) — agent-maintained, marketing-usable
 2. RED-2025 file audit on the GPS-tracker line (child location data = highest scrutiny)
-3. Thuiswinkel Waarborg application (€465 year one) — paired with review engine
+3. Thuiswinkel Waarborg application (€983–€1,759 year one, depending on turnover tier) — paired with review engine
 4. Responsible-person field check across Amazon/bol listings (GPSR)
 5. Outreach wave to 3 regional boards (West Friesland backyard first)
+
+---
+
+## 📌 In short
+
+Compliance here is **cheap if done early and expensive if discovered late**. The corrected numbers: **GS1 is €854/yr recurring for 139 codes** (€1,403/yr to cover all 230), and **Thuiswinkel is €983–€1,759 in year 1** depending on turnover tier, not the €465 previously quoted — WiseQ's own turnover band settles it. The most time-sensitive item is **EU AI Act Article 4**: it has applied since February 2025 and supervision began in **August 2026**, making it *now*, not future. It prescribes no course or certificate — an internal literacy register satisfies it in a few hours.
+
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | NL trust marks and feed compliance |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The product certifications already held |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | Compliance gates built into the phases |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
