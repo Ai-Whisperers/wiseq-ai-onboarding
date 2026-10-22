@@ -1,0 +1,167 @@
+{
+ "query": "invoice+pdf+generation",
+ "total_count": 1132,
+ "items": [
+  {
+   "full_name": "QuestPDF/QuestPDF",
+   "url": "https://github.com/QuestPDF/QuestPDF",
+   "stars": 14209,
+   "lang": "C#",
+   "desc": "QuestPDF is a modern library for PDF document generation. Its fluent C# API lets you design complex layouts with clean, readable code. Create documents using a"
+  },
+  {
+   "full_name": "ComPDFKit/compdf-generation",
+   "url": "https://github.com/ComPDFKit/compdf-generation",
+   "stars": 362,
+   "lang": "TypeScript",
+   "desc": "Generate PDFs effortlessly with the open-source ComPDF Generation SDK. Design HTML-based templates to produce business-critical documents, such as contracts, in"
+  },
+  {
+   "full_name": "stemword/php-inventory-management-system",
+   "url": "https://github.com/stemword/php-inventory-management-system",
+   "stars": 292,
+   "lang": "PHP",
+   "desc": "Open source inventory management system with php and mysql Invoice generation and easy to download invoice in PDF format Lightweight and easy to use Order manag"
+  },
+  {
+   "full_name": "kirilkirkov/Electronic-Invoicing-And-Warehouse-Management-System",
+   "url": "https://github.com/kirilkirkov/Electronic-Invoicing-And-Warehouse-Management-System",
+   "stars": 207,
+   "lang": "PHP",
+   "desc": "A self-hosted open-source application built with CodeIgniter and Bootstrap. Features include electronic invoicing, PDF generation, invoice status tracking, clie"
+  },
+  {
+   "full_name": "anvilco/html-pdf-invoice-template",
+   "url": "https://github.com/anvilco/html-pdf-invoice-template",
+   "stars": 96,
+   "lang": "CSS",
+   "desc": "An HTML invoice template for use in a browser and with HTML to PDF generation."
+  },
+  {
+   "full_name": "fullbleed-engine/fullbleed-official",
+   "url": "https://github.com/fullbleed-engine/fullbleed-official",
+   "stars": 91,
+   "lang": "Rust",
+   "desc": "PDF generation with Python, JavaScript/JSX and C# components or HTML/CSS. Deterministic Rust engine for reports, invoices and variable-data documents. MIT licen"
+  },
+  {
+   "full_name": "ngdevelop-tech/angular-pdfmake-invoice-generator",
+   "url": "https://github.com/ngdevelop-tech/angular-pdfmake-invoice-generator",
+   "stars": 68,
+   "lang": "TypeScript",
+   "desc": "Invoice Generator is a sample application created for demonstrating client side pdf generation in angular application"
+  },
+  {
+   "full_name": "jino-shaji/jsPDF-GST-Invoice",
+   "url": "https://github.com/jino-shaji/jsPDF-GST-Invoice",
+   "stars": 25,
+   "lang": "JavaScript",
+   "desc": "Sample Invoice generation using JSPDF library. It's flexible to customize to our own format based on our requirement."
+  },
+  {
+   "full_name": "venkatvkpt/Invoice-PDF-ITEXT-",
+   "url": "https://github.com/venkatvkpt/Invoice-PDF-ITEXT-",
+   "stars": 19,
+   "lang": "Java",
+   "desc": "Mobile Store  Invoice PDF Generation using ITEXT"
+  },
+  {
+   "full_name": "HongDiep18/commercial-advertising-management-be",
+   "url": "https://github.com/HongDiep18/commercial-advertising-management-be",
+   "stars": 16,
+   "lang": "TypeScript",
+   "desc": "The enterprise REST API backend for a B2B directory platform built with NestJS 11, TypeScript, PostgreSQL 17, and Prisma 7 ORM. Features automated RSS news craw"
+  },
+  {
+   "full_name": "BigBill1418/DroneOpsCommand",
+   "url": "https://github.com/BigBill1418/DroneOpsCommand",
+   "stars": 12,
+   "lang": "Python",
+   "desc": "Self-hosted mission management platform for commercial drone operators. AI report generation (Ollama/Mistral), invoicing, flight log import, PDF export, CRM, we"
+  },
+  {
+   "full_name": "er-arunyadav/User-Management-Admin-Panel",
+   "url": "https://github.com/er-arunyadav/User-Management-Admin-Panel",
+   "stars": 11,
+   "lang": "PHP",
+   "desc": "Im using ADMIN LITE  Powerfull Codeigniter Admin Panel . In this project i'm created User Roles and Permissions, Export Data in PDF & CSV FORMAT,Login Authentic"
+  },
+  {
+   "full_name": "casoon/typst-business-templates",
+   "url": "https://github.com/casoon/typst-business-templates",
+   "stars": 8,
+   "lang": "Typst",
+   "desc": "Professional business document templates for Typst - invoices, offers, credentials, concepts. Includes Rust CLI for easy document generation."
+  },
+  {
+   "full_name": "codermannan/Property-Management-Software",
+   "url": "https://github.com/codermannan/Property-Management-Software",
+   "stars": 8,
+   "lang": "PHP",
+   "desc": "Module: ---------- 1. Dashboard 2. Administrative Login Roles for (Property Manager, Tenant, \"Owner/Landlord\" and Service Providers ) 3. Create Property/Units ("
+  },
+  {
+   "full_name": "Its-Nishant-10/invoice_automation_pdf",
+   "url": "https://github.com/Its-Nishant-10/invoice_automation_pdf",
+   "stars": 7,
+   "lang": null,
+   "desc": "A complete solution for PDF invoice automation \u2014 including data extraction, validation, and reporting. Features smart parsing, structured storage, and financial"
+  },
+  {
+   "full_name": "mborchuk/ContaAutonomo",
+   "url": "https://github.com/mborchuk/ContaAutonomo",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Self-hosted invoicing & finance manager for freelancers. Multi-currency, PDF generation, digital signatures (DocuSign verification), modular tax system (Spain,"
+  },
+  {
+   "full_name": "shayyz-code/invoice-rs",
+   "url": "https://github.com/shayyz-code/invoice-rs",
+   "stars": 7,
+   "lang": "Rust",
+   "desc": "A terminal-based Invoice Management System with unique invoice number built in Rust using Ratatui. a TUI interface for managing invoices, and PDF invoice genera"
+  },
+  {
+   "full_name": "AyaanplayszYT/SmartBills",
+   "url": "https://github.com/AyaanplayszYT/SmartBills",
+   "stars": 7,
+   "lang": "JavaScript",
+   "desc": "A modern, professional frontend web app for managing invoices and payments. Fully responsive, glassmorphism UI, local storage, and PDF generation."
+  },
+  {
+   "full_name": "MAHMOUDELSAYED7/SliceMaster-Pro",
+   "url": "https://github.com/MAHMOUDELSAYED7/SliceMaster-Pro",
+   "stars": 7,
+   "lang": "Dart",
+   "desc": "Flutter desktop app for pizza shop management, invoicing, and exports, using Hive, PDF generation, Excel export, MVVM Architecture and Cubit/Bloc state manageme"
+  },
+  {
+   "full_name": "carboneio/carbone-sdk-java",
+   "url": "https://github.com/carboneio/carbone-sdk-java",
+   "stars": 6,
+   "lang": "Java",
+   "desc": "Generate documents with Carbone, using templates and JSON data-set. Create invoices, reports, certificates, contracts, financial statements, documents like Word"
+  },
+  {
+   "full_name": "wadobo/winvo",
+   "url": "https://github.com/wadobo/winvo",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Invoice generation in pdf using .ini files as source"
+  },
+  {
+   "full_name": "kripikroli/invoicex_d",
+   "url": "https://github.com/kripikroli/invoicex_d",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Backend for InvoiceX \u2014 A modern Django REST API for professional invoice management. Built with Django REST Framework, Djoser authentication, and xhtml2pdf for"
+  },
+  {
+   "full_name": "rockdaboot/invoice-html5-to-pdf",
+   "url": "https://github.com/rockdaboot/invoice-html5-to-pdf",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Batch HTML5 to PDF invoice generation on the command line"
+  }
+ ]
+}

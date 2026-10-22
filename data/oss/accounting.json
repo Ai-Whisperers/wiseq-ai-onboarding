@@ -1,0 +1,125 @@
+{
+ "query": "accounting+bookkeeping+self-hosted",
+ "total_count": 67,
+ "items": [
+  {
+   "full_name": "mayswind/ezbookkeeping",
+   "url": "https://github.com/mayswind/ezbookkeeping",
+   "stars": 5796,
+   "lang": "Go",
+   "desc": "ezBookkeeping is an open source, powerful, self-hosted personal finance app that is easy to use."
+  },
+  {
+   "full_name": "TNT-Likely/BeeCount",
+   "url": "https://github.com/TNT-Likely/BeeCount",
+   "stars": 2609,
+   "lang": "Dart",
+   "desc": "Local-first bookkeeping for iOS/Android/Web \u00b7 Self-hosted cloud + iCloud/WebDAV/S3 sync \u00b7 AI capture \u00b7 MCP | \u672c\u5730\u4f18\u5148\u7684\u8de8\u7aef\u8bb0\u8d26 \u00b7 \u81ea\u5efa\u4e91 + iCloud/WebDAV/S3 \u540c\u6b65 \u00b7 AI \u8bb0\u8d26 \u00b7 MCP"
+  },
+  {
+   "full_name": "VonHoltenCodes/SlowBooks-Pro-2026",
+   "url": "https://github.com/VonHoltenCodes/SlowBooks-Pro-2026",
+   "stars": 804,
+   "lang": "Python",
+   "desc": "Free, source-available accounting: double-entry bookkeeping, invoicing, US payroll, inventory, bank feeds - desktop app with built-in multi-user Server Edition"
+  },
+  {
+   "full_name": "erp-mafia/accounted",
+   "url": "https://github.com/erp-mafia/accounted",
+   "stars": 426,
+   "lang": "TypeScript",
+   "desc": "The Open Source ERP Built for Agents"
+  },
+  {
+   "full_name": "TNT-Likely/BeeCount-Cloud",
+   "url": "https://github.com/TNT-Likely/BeeCount-Cloud",
+   "stars": 180,
+   "lang": "TypeScript",
+   "desc": "Self-hosted cloud for BeeCount \u2014 one Docker image runs the sync server + web app \u00b7 multi-device realtime sync \u00b7 shared ledgers | \u871c\u8702\u8bb0\u8d26\u81ea\u5efa\u4e91:\u4e00\u4e2a Docker \u955c\u50cf\u8dd1\u9f50\u540c\u6b65\u670d\u52a1\u4e0e Web"
+  },
+  {
+   "full_name": "Gemma41/Onchain-Accounting",
+   "url": "https://github.com/Gemma41/Onchain-Accounting",
+   "stars": 78,
+   "lang": "Python",
+   "desc": "Privacy-first, self-hosted crypto accounting app with zero cloud data sharing. Aggregates exchange, wallet and multi-chain history, calculates FIFO/LIFO/HIFO co"
+  },
+  {
+   "full_name": "machulav/accountant24",
+   "url": "https://github.com/machulav/accountant24",
+   "stars": 62,
+   "lang": "TypeScript",
+   "desc": "Open source AI agent for personal finance"
+  },
+  {
+   "full_name": "dubbl-org/dubbl",
+   "url": "https://github.com/dubbl-org/dubbl",
+   "stars": 56,
+   "lang": "TypeScript",
+   "desc": "A full-featured, open-source alternative to Xero and QuickBooks. It is API-first, developer-friendly, and built for teams that want full control over their fina"
+  },
+  {
+   "full_name": "marselsel/Lexware-MCP-Server",
+   "url": "https://github.com/marselsel/Lexware-MCP-Server",
+   "stars": 42,
+   "lang": "TypeScript",
+   "desc": "Self-hostable MCP server with OAuth 2.1 \u2014 connect Claude, ChatGPT, or any other MCP-capable AI to your Lexware Office bookkeeping."
+  },
+  {
+   "full_name": "phpledger/phpledger",
+   "url": "https://github.com/phpledger/phpledger",
+   "stars": 36,
+   "lang": "PHP",
+   "desc": "Open-source, self-hosted double-entry accounting. PHP 8.2+, MySQL and MariaDB. Cash POS, invoicing, inventory and bank reconciliation. Browser installer and sig"
+  },
+  {
+   "full_name": "manganate006/openlmnp",
+   "url": "https://github.com/manganate006/openlmnp",
+   "stars": 12,
+   "lang": "PHP",
+   "desc": "OpenLMNP \u2014 Logiciel open source de comptabilit\u00e9 LMNP (Location Meubl\u00e9e Non Professionnelle). Laravel 13 + Filament 5."
+  },
+  {
+   "full_name": "firsttris/haben",
+   "url": "https://github.com/firsttris/haben",
+   "stars": 11,
+   "lang": "TypeScript",
+   "desc": "Selbst gehostete Buchhaltung f\u00fcr Freiberufler, Selbstst\u00e4ndige und Kleinunternehmer: E-Rechnung mit ZUGFeRD und XRechnung, Belege, Bankabgleich, E\u00dcR, Umsatzsteue"
+  },
+  {
+   "full_name": "jeffjjohnston/counterpoise-ledger",
+   "url": "https://github.com/jeffjjohnston/counterpoise-ledger",
+   "stars": 8,
+   "lang": "TypeScript",
+   "desc": "Self-hosted double-entry personal finance: multiple books, investments with FIFO lots, Plaid bank sync, and an MCP server. Rust and SQLite."
+  },
+  {
+   "full_name": "managerhq/Manager",
+   "url": "https://github.com/managerhq/Manager",
+   "stars": 6,
+   "lang": "C#",
+   "desc": "Free accounting software for small businesses. Runs offline on Windows, macOS, and Linux \u2014 desktop for one user, or self-hosted server for your whole team in a"
+  },
+  {
+   "full_name": "lazarusvc/vouchcast_mvc5",
+   "url": "https://github.com/lazarusvc/vouchcast_mvc5",
+   "stars": 5,
+   "lang": null,
+   "desc": "VOUCHCAST // Self-Hosted ERP/Accounting Software based on ASP.NET (MVC5) web technology"
+  },
+  {
+   "full_name": "openboek-io/openboek",
+   "url": "https://github.com/openboek-io/openboek",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Self-hosted bookkeeping for Dutch small businesses. Privacy-first, AI-powered, open source."
+  },
+  {
+   "full_name": "jonalemndi2/ALdia",
+   "url": "https://github.com/jonalemndi2/ALdia",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Open-source business engine for AI agents. Invoicing, payments, inventory, checks and cash as permission-controlled MCP tools \u2014 with idempotency, structured err"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "query": "warehouse+management+lightweight",
+ "total_count": 62,
+ "items": [
+  {
+   "full_name": "gavindsouza/inventory-management-system",
+   "url": "https://github.com/gavindsouza/inventory-management-system",
+   "stars": 73,
+   "lang": "Jinja",
+   "desc": "Insanely lightweight Inventory tracker"
+  },
+  {
+   "full_name": "vivek-mistry/laravel-inventory-core",
+   "url": "https://github.com/vivek-mistry/laravel-inventory-core",
+   "stars": 15,
+   "lang": "PHP",
+   "desc": "A lightweight, extensible inventory management core for Laravel applications. Built for e-commerce, POS, ERP, invoicing, and warehouse systems."
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "query": "workflow+approval+human+in+the+loop",
+ "total_count": 555,
+ "items": [
+  {
+   "full_name": "edwinkys/phantasm",
+   "url": "https://github.com/edwinkys/phantasm",
+   "stars": 197,
+   "lang": "Svelte",
+   "desc": "Toolkits to create a human-in-the-loop approval layer to monitor and guide AI agents workflow in real-time."
+  },
+  {
+   "full_name": "escapeboy/agent-fleet-o",
+   "url": "https://github.com/escapeboy/agent-fleet-o",
+   "stars": 76,
+   "lang": "PHP",
+   "desc": "Open-source AI agent orchestration platform \u2014 self-hosted mission control for autonomous multi-agent systems. Visual DAG workflows, 670+ MCP tools, human-in-the"
+  },
+  {
+   "full_name": "polos-dev/polos",
+   "url": "https://github.com/polos-dev/polos",
+   "stars": 36,
+   "lang": "TypeScript",
+   "desc": "The open-source runtime for AI agents. Sandboxed execution with built-in tools, human-in-the-loop approvals, Slack integration, and durable workflows with autom"
+  },
+  {
+   "full_name": "jordigilh/kubernaut",
+   "url": "https://github.com/jordigilh/kubernaut",
+   "stars": 35,
+   "lang": "Go",
+   "desc": "An AIOps platform that closes the loop from Kubernetes alert to automated remediation: An AI Agent investigates via MCP tools, selects a fix from a pre-seeded w"
+  },
+  {
+   "full_name": "Theepankumargandhi/Multi-Agent-Orchestration",
+   "url": "https://github.com/Theepankumargandhi/Multi-Agent-Orchestration",
+   "stars": 22,
+   "lang": "Python",
+   "desc": "AgentForge  a multi-agent AI platform for evidence-backed RAG and verified coding workflows. Built with LangGraph, FastAPI and React, featuring multimodal docum"
+  },
+  {
+   "full_name": "agruai/multiagent-business-automation",
+   "url": "https://github.com/agruai/multiagent-business-automation",
+   "stars": 21,
+   "lang": "Python",
+   "desc": "Multi Agent for Business Automation is a multi-agent orchestration platform for business automation and decision support. It coordinates specialized AI agents\u2014e"
+  },
+  {
+   "full_name": "mrveiss/AutoBot-AI",
+   "url": "https://github.com/mrveiss/AutoBot-AI",
+   "stars": 17,
+   "lang": "Python",
+   "desc": "Self-hosted, agentic AI you own \u2014 voice, vision-driven browser & computer control, visual workflows, human-in-the-loop approvals, multi-user RBAC, and a knowled"
+  },
+  {
+   "full_name": "kyungseo/ai-workflow-harness",
+   "url": "https://github.com/kyungseo/ai-workflow-harness",
+   "stars": 14,
+   "lang": "Shell",
+   "desc": "A manual-first, human-in-the-loop workflow harness for AI-assisted development\u2014aligns plans, approval gates, validation, and project state across Claude Code, C"
+  },
+  {
+   "full_name": "abhishekpan5/agentic-ai-predictive-maintenance-oil-and-gas",
+   "url": "https://github.com/abhishekpan5/agentic-ai-predictive-maintenance-oil-and-gas",
+   "stars": 12,
+   "lang": "Python",
+   "desc": "> An AI-powered predictive maintenance platform for oil & gas equipment. > Features real-time anomaly detection, agentic AI workflows, human-in-the-loop approva"
+  },
+  {
+   "full_name": "deepset-ai/hitl-hayhooks-redis-openwebui",
+   "url": "https://github.com/deepset-ai/hitl-hayhooks-redis-openwebui",
+   "stars": 11,
+   "lang": "Python",
+   "desc": "A Redis-based Human-in-the-Loop implementation for Haystack Agents, integrated with Open WebUI for interactive tool approval workflows."
+  },
+  {
+   "full_name": "kennethleungty/Human-in-the-Loop-Workflow-LangGraph",
+   "url": "https://github.com/kennethleungty/Human-in-the-Loop-Workflow-LangGraph",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "Setup of basic human-in-the-loop (HITL) workflows with review and approval process in LangGraph"
+  },
+  {
+   "full_name": "goncy/nextjs-human-approval-workflow",
+   "url": "https://github.com/goncy/nextjs-human-approval-workflow",
+   "stars": 8,
+   "lang": "TypeScript",
+   "desc": "A workflow with human-in-the-loop approval using Vercel WDK and Supabase"
+  },
+  {
+   "full_name": "alphaparkinc/genpark-approval-first-agent-operating-system-skill",
+   "url": "https://github.com/alphaparkinc/genpark-approval-first-agent-operating-system-skill",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "Approval-first AI agent OS for human-in-the-loop autonomous workflows (Soloop style)"
+  },
+  {
+   "full_name": "JoelJohnsonThomas/ForgeFlow",
+   "url": "https://github.com/JoelJohnsonThomas/ForgeFlow",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Production-grade multi-agent workflow orchestrator built with LangGraph, MCP (Model Context Protocol), A2A protocol, and PostgreSQL+pgvector. Features superviso"
+  },
+  {
+   "full_name": "VAIXLNS/VAIXLNS",
+   "url": "https://github.com/VAIXLNS/VAIXLNS",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u0623\u0631\u0649 \u0623\u0646 \u0647\u0630\u0627 \u0623\u0635\u0628\u062d \u0623\u0642\u0631\u0628 \u0625\u0644\u0649 Blueprint \u0633\u064a\u0627\u062f\u064a \u0648\u0644\u064a\u0633 \u0645\u062c\u0631\u062f \u0645\u062e\u0637\u0637 \u0646\u0638\u0627\u0645. \u0648\u0645\u0639 \u0630\u0644\u0643\u060c \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0623\u0646 \u064a\u0643\u0648\u0646 \u0647\u0630\u0627 \u0627\u0644\u0631\u0633\u0645 \u0627\u0644\u0645\u0631\u062c\u0639\u064a \u0627\u0644\u0646\u0647\u0627\u0626\u064a (Mas"
+  },
+  {
+   "full_name": "sanmaxdev/legate-agent",
+   "url": "https://github.com/sanmaxdev/legate-agent",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Self-hosted AI agents and workflow automation with human-in-the-loop approvals, a policy engine, connectors, MCP, and a hash-chained audit log."
+  }
+ ]
+}

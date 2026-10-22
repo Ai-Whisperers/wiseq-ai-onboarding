@@ -1,0 +1,125 @@
+{
+ "query": "marketplace+integration+listing",
+ "total_count": 212,
+ "items": [
+  {
+   "full_name": "Sfedfcv/redesigned-pancake",
+   "url": "https://github.com/Sfedfcv/redesigned-pancake",
+   "stars": 268,
+   "lang": null,
+   "desc": "Skip to content github / docs Code Issues 80 Pull requests 35 Discussions Actions Projects 2 Security Insights Merge branch 'main' into 1862-Add-Travis-CI-migra"
+  },
+  {
+   "full_name": "aws-samples/aws-marketplace-serverless-saas-integration",
+   "url": "https://github.com/aws-samples/aws-marketplace-serverless-saas-integration",
+   "stars": 156,
+   "lang": "JavaScript",
+   "desc": "Example of serverless integration for SaaS products listed on the AWS Marketplace."
+  },
+  {
+   "full_name": "jaityron/new-pac-wiki",
+   "url": "https://github.com/jaityron/new-pac-wiki",
+   "stars": 84,
+   "lang": null,
+   "desc": "<!DOCTYPE html> <html lang=\"en\">   <head>     <meta charset=\"utf-8\">   <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">   <link rel=\"dns-prefetc"
+  },
+  {
+   "full_name": "Rastaman4e/-1",
+   "url": "https://github.com/Rastaman4e/-1",
+   "stars": 78,
+   "lang": null,
+   "desc": "NICEHASH PLATFORM TERMS OF USE AND NICEHASH MINING TERMS OF SERVICE   PLEASE READ THESE NICEHASH PLATFORM TERMS OF USE AND NICEHASH MINING TERMS OF SERVICE (\u201cTe"
+  },
+  {
+   "full_name": "chikitang/A",
+   "url": "https://github.com/chikitang/A",
+   "stars": 76,
+   "lang": null,
+   "desc": "!DOCTYPE html> <html lang=\"en\" data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\" data-a11y-animated-images=\"system\">   <head>     <meta cha"
+  },
+  {
+   "full_name": "NhaPhatHanh/github",
+   "url": "https://github.com/NhaPhatHanh/github",
+   "stars": 65,
+   "lang": null,
+   "desc": "<!DOCTYPE html> <html lang=\"en\" data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\">   <head>     <meta charset=\"utf-8\">   <link rel=\"dns-"
+  },
+  {
+   "full_name": "BabyJ723/blast-ON",
+   "url": "https://github.com/BabyJ723/blast-ON",
+   "stars": 50,
+   "lang": null,
+   "desc": "# Awesome Keycloak [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindres"
+  },
+  {
+   "full_name": "Buildsoftwaresphere/Window",
+   "url": "https://github.com/Buildsoftwaresphere/Window",
+   "stars": 16,
+   "lang": null,
+   "desc": "window.hjSiteSettings = {\"forms\":[],\"record\":true,\"polls\":[],\"r\":1.0,\"record_targeting_rules\":[],\"deferred_page_contents\":[{\"targeting\":[{\"pattern\":\"http:\\/\\/ww"
+  },
+  {
+   "full_name": "alexisssol/ordinal-marketplace",
+   "url": "https://github.com/alexisssol/ordinal-marketplace",
+   "stars": 13,
+   "lang": "TypeScript",
+   "desc": "RESTful API endpoints for managing marketplace listings and offers, featuring configuration through environment variables, middleware integration, and detailed"
+  },
+  {
+   "full_name": "brunoroeder/marketplace-facebook-livechat",
+   "url": "https://github.com/brunoroeder/marketplace-facebook-livechat",
+   "stars": 12,
+   "lang": null,
+   "desc": "# 1. MAGENTO 2 MARKETPLACE FACEBOOK LIVECHAT  Facebook has taken the world by storm and become an important element in the field of communications. For business"
+  },
+  {
+   "full_name": "jennywelson123/8-Best-Online-Payment-Solutions-For-Your-E-Commerce-Website",
+   "url": "https://github.com/jennywelson123/8-Best-Online-Payment-Solutions-For-Your-E-Commerce-Website",
+   "stars": 11,
+   "lang": null,
+   "desc": "E-commerce company owners of today have the challenge of picking the best online payment system from among hundreds of options available to them. When it comes"
+  },
+  {
+   "full_name": "taraldefi/nft-marketplace",
+   "url": "https://github.com/taraldefi/nft-marketplace",
+   "stars": 10,
+   "lang": "TypeScript",
+   "desc": "Stacks blockchain NFT marketplace written in clarity with chainhook integration (clarinet) and NestJS backend subscribing to the chainhook updates"
+  },
+  {
+   "full_name": "rishabh3562/BotHive",
+   "url": "https://github.com/rishabh3562/BotHive",
+   "stars": 8,
+   "lang": "TypeScript",
+   "desc": "A platform for AI builders to list, sell, and promote AI agents, while businesses can discover, purchase, and integrate these solutions\u2014or hire builders for cus"
+  },
+  {
+   "full_name": "solguru310/ordinals-marketplace-be",
+   "url": "https://github.com/solguru310/ordinals-marketplace-be",
+   "stars": 6,
+   "lang": "TypeScript",
+   "desc": "The Ordinal Marketplace Backend is a Node.js project that provides RESTful API endpoints for managing marketplace listings and offers with MongoDB. It integrate"
+  },
+  {
+   "full_name": "vedantbhoj/MarktPlatz",
+   "url": "https://github.com/vedantbhoj/MarktPlatz",
+   "stars": 6,
+   "lang": "CSS",
+   "desc": "An e-commerce marketplace web application with features like easy check-out of products from multiple vendors, search products based on multiple factors, wish"
+  },
+  {
+   "full_name": "harmindersinghnijjar/fb-marketplace-smartproxy-scraper",
+   "url": "https://github.com/harmindersinghnijjar/fb-marketplace-smartproxy-scraper",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "A Python-based web scraping tool designed for extracting vehicle listings from Facebook Marketplace, specifically tailored for Canadian cities. This scraper lev"
+  },
+  {
+   "full_name": "alfa155518/multi-vendors-e-commerce",
+   "url": "https://github.com/alfa155518/multi-vendors-e-commerce",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "A multi-vendor e-commerce platform enables multiple sellers to list and sell their products through a single marketplace, providing customers with a wide vari"
+  }
+ ]
+}

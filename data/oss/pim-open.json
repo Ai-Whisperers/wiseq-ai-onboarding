@@ -1,0 +1,97 @@
+{
+ "query": "PIM+product+information",
+ "total_count": 138,
+ "items": [
+  {
+   "full_name": "unopim/unopim",
+   "url": "https://github.com/unopim/unopim",
+   "stars": 11042,
+   "lang": "PHP",
+   "desc": "Open source Product Information Management (PIM) and Digital Asset Management (DAM) platform built on Laravel \u2014 manage, enrich, and scale product data and digit"
+  },
+  {
+   "full_name": "akeneo/pim-community-dev",
+   "url": "https://github.com/akeneo/pim-community-dev",
+   "stars": 1046,
+   "lang": "PHP",
+   "desc": "[Community Development Repository] The open source Product Information Management (PIM)"
+  },
+  {
+   "full_name": "akeneo/pim-community-standard",
+   "url": "https://github.com/akeneo/pim-community-standard",
+   "stars": 436,
+   "lang": null,
+   "desc": "[Community Standard Edition] The open source Product Information Management (PIM) - please raise issues in https://github.com/akeneo/pim-community-dev/issues"
+  },
+  {
+   "full_name": "atrocore/atrocore",
+   "url": "https://github.com/atrocore/atrocore",
+   "stars": 240,
+   "lang": "JavaScript",
+   "desc": "AtroCore is an enterprise-ready, highly configurable Business Application Platform for managing complex data, integrating systems, and building custom business"
+  },
+  {
+   "full_name": "atrocore/atropim",
+   "url": "https://github.com/atrocore/atropim",
+   "stars": 210,
+   "lang": "PHP",
+   "desc": "AtroPIM is a flexible, highly configurable, modular, open-source product information management (PIM) system that extends the AtroCore data management and syste"
+  },
+  {
+   "full_name": "akeneo/pim-docs",
+   "url": "https://github.com/akeneo/pim-docs",
+   "stars": 62,
+   "lang": "CSS",
+   "desc": "[Community Documentation Repository] The open source Product Information Management (PIM)"
+  },
+  {
+   "full_name": "tmjeee/fuyuko",
+   "url": "https://github.com/tmjeee/fuyuko",
+   "stars": 54,
+   "lang": "TypeScript",
+   "desc": "An open source Master Data Management / Product Information Management application. Contributions are welcomed.   :-)"
+  },
+  {
+   "full_name": "autopartsource/sandpim",
+   "url": "https://github.com/autopartsource/sandpim",
+   "stars": 25,
+   "lang": "PHP",
+   "desc": "Simple LAMP auto parts Product Information Manager (PIM) system."
+  },
+  {
+   "full_name": "pimify/pimify",
+   "url": "https://github.com/pimify/pimify",
+   "stars": 23,
+   "lang": "Python",
+   "desc": "Pimify is an open-source product information management software built on the simple stack of Django and SQLite."
+  },
+  {
+   "full_name": "geetools/geeCommerce-Java-Shop-Software-and-PIM",
+   "url": "https://github.com/geetools/geeCommerce-Java-Shop-Software-and-PIM",
+   "stars": 11,
+   "lang": "Java",
+   "desc": "geeCommerce is an enterprise quality Java shop software and product information management tool (PIM). geeCommerce also includes a media asset management system"
+  },
+  {
+   "full_name": "kennersoft/kennerpim",
+   "url": "https://github.com/kennersoft/kennerpim",
+   "stars": 8,
+   "lang": "PHP",
+   "desc": "Kenner PIM is a single page application (SPA) with an API-centric architecture and flexible data model based on entities, entity attributes and relations of all"
+  },
+  {
+   "full_name": "aunebakk/nor-pim",
+   "url": "https://github.com/aunebakk/nor-pim",
+   "stars": 7,
+   "lang": "C#",
+   "desc": "Nor-Pim is a Product Information Management System written for enterprise cloud environments with user interfaces tailored for PC, Web and Mobile. It is centere"
+  },
+  {
+   "full_name": "macopedia/akeneo-openai-translator",
+   "url": "https://github.com/macopedia/akeneo-openai-translator",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Akeneo OpenAI Translator is an extension for Akeneo PIM that allows seamless translation of text attribute values using the OpenAI API. This tool enhances your"
+  }
+ ]
+}

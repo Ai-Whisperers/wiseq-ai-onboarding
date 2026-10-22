@@ -1,0 +1,209 @@
+{
+ "query": "seo+audit",
+ "total_count": 5747,
+ "items": [
+  {
+   "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
+   "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
+   "stars": 6378,
+   "lang": "Shell",
+   "desc": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data"
+  },
+  {
+   "full_name": "zubair-trabzada/ai-marketing-claude",
+   "url": "https://github.com/zubair-trabzada/ai-marketing-claude",
+   "stars": 2780,
+   "lang": "Python",
+   "desc": "AI Marketing Suite for Claude Code. 15 marketing skills with parallel subagents \u2014 audit any website, generate copy, email sequences, ad campaigns, content calen"
+  },
+  {
+   "full_name": "JustinBeckwith/linkinator",
+   "url": "https://github.com/JustinBeckwith/linkinator",
+   "stars": 1276,
+   "lang": "TypeScript",
+   "desc": "Broken link checker that crawls websites and validates links. Find broken links, dead links, and invalid URLs in websites, documentation, and local files. Perfe"
+  },
+  {
+   "full_name": "Auriti-Labs/geo-optimizer-skill",
+   "url": "https://github.com/Auriti-Labs/geo-optimizer-skill",
+   "stars": 1145,
+   "lang": "Python",
+   "desc": "Open-source Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) toolkit \u2014 audit, optimize & track whether ChatGPT, Perplexity, Gemini & Goog"
+  },
+  {
+   "full_name": "rampstackco/claude-skills",
+   "url": "https://github.com/rampstackco/claude-skills",
+   "stars": 985,
+   "lang": "JavaScript",
+   "desc": "Stack-agnostic Claude Skills covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Build, ship, audit, optimize."
+  },
+  {
+   "full_name": "janreges/siteone-crawler",
+   "url": "https://github.com/janreges/siteone-crawler",
+   "stars": 970,
+   "lang": "Rust",
+   "desc": "SiteOne Crawler is a cross-platform website crawler and analyzer for SEO, security, accessibility, and performance optimization\u2014ideal for developers, DevOps, QA"
+  },
+  {
+   "full_name": "leopard627/fire-your-seo-agency",
+   "url": "https://github.com/leopard627/fire-your-seo-agency",
+   "stars": 874,
+   "lang": "Python",
+   "desc": "Fire your SEO\u00b7GEO agency \ud83d\udd25 A Claude Code skill that audits and optimizes SEO\u00b7AEO\u00b7GEO\u00b7LLMO\u00b7NEO(Naver) by itself \u2014 \uc6d4 50~350\ub9cc \uc6d0\uc9dc\ub9ac 'AI \uac80\uc0c9 \ucd5c\uc801\ud654' \ub300\ud589, AI \uc5d0\uc774\uc804\ud2b8\uac00 \ub300\uccb4\ud569\ub2c8\ub2e4"
+  },
+  {
+   "full_name": "StJudeWasHere/seonaut",
+   "url": "https://github.com/StJudeWasHere/seonaut",
+   "stars": 823,
+   "lang": "Go",
+   "desc": "Open source SEO audit tool."
+  },
+  {
+   "full_name": "StanGirard/seo-audits-toolkit",
+   "url": "https://github.com/StanGirard/seo-audits-toolkit",
+   "stars": 822,
+   "lang": "Python",
+   "desc": "SEO & Security Audit for Websites. Lighthouse & Security Headers crawler, Sitemap/Keywords/Images Extractor,  Summarizer, etc ..."
+  },
+  {
+   "full_name": "JeffLi1993/seo-audit-skill",
+   "url": "https://github.com/JeffLi1993/seo-audit-skill",
+   "stars": 769,
+   "lang": "Python",
+   "desc": "SEO agent skill for OpenClaw,Claude Code, and AI agents. Generate beginner SEO audits and advanced technical SEO reports for any page."
+  },
+  {
+   "full_name": "AgriciDaniel/jev-seo",
+   "url": "https://github.com/AgriciDaniel/jev-seo",
+   "stars": 696,
+   "lang": "Python",
+   "desc": "Live SEO audit for any website from one homepage URL, judged by Jev. PDF, XLSX and Markdown reports."
+  },
+  {
+   "full_name": "seo-skills/seo-audit-skill",
+   "url": "https://github.com/seo-skills/seo-audit-skill",
+   "stars": 641,
+   "lang": "TypeScript",
+   "desc": "A comprehensive SEO audit command-line tool with 332 audit rules across 20 categories. Analyze any website for SEO best practices, Core Web Vitals, security hea"
+  },
+  {
+   "full_name": "unifapi-agent/agents",
+   "url": "https://github.com/unifapi-agent/agents",
+   "stars": 597,
+   "lang": "JavaScript",
+   "desc": "Open-source marketing agents for Claude, ChatGPT, Codex, OpenClaw & Hermes. One plugin: SEO audits, GEO / AI-visibility, local SEO, KOL pricing, social listenin"
+  },
+  {
+   "full_name": "umutxyp/Seo-Promt-Master",
+   "url": "https://github.com/umutxyp/Seo-Promt-Master",
+   "stars": 564,
+   "lang": "JavaScript",
+   "desc": "\ud83d\udd0d Google SEO's full docs as an AI prompt machine \u2014 drop it into your AI assistant to map every public route, audit each page against Google's rules, and fix the"
+  },
+  {
+   "full_name": "Yuzzyuk/marketing-os",
+   "url": "https://github.com/Yuzzyuk/marketing-os",
+   "stars": 560,
+   "lang": null,
+   "desc": "An entire marketing department as one Claude skill. 14 modules: audits scored 0-100, an 18-tactic hook engine, copy graded before you see it, ad diagnosis, GEO,"
+  },
+  {
+   "full_name": "foo-software/lighthouse-check-action",
+   "url": "https://github.com/foo-software/lighthouse-check-action",
+   "stars": 513,
+   "lang": "TypeScript",
+   "desc": "GitHub Action for running @GoogleChromeLabs Lighthouse audits with all the bells and whistles \ud83d\udd14 Multiple audits, Slack notifications, and more!"
+  },
+  {
+   "full_name": "AgriciDaniel/claude-youtube",
+   "url": "https://github.com/AgriciDaniel/claude-youtube",
+   "stars": 506,
+   "lang": "Python",
+   "desc": "Claude Code skill for YouTube creators \u2014 channel audits, video SEO, retention scripts, thumbnails, content strategy, Shorts optimization, analytics, monetizatio"
+  },
+  {
+   "full_name": "elmohq/elmo",
+   "url": "https://github.com/elmohq/elmo",
+   "stars": 479,
+   "lang": "TypeScript",
+   "desc": "Open-source Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) platform. Track how ChatGPT, Claude, Perplexity, Gemini, Copilot, Grok, an"
+  },
+  {
+   "full_name": "joeseesun/qiaomu-seo",
+   "url": "https://github.com/joeseesun/qiaomu-seo",
+   "stars": 458,
+   "lang": "Python",
+   "desc": "Audit, diagnose, research, plan, implement, experiment on, and verify website SEO across Google, Bing, and AI-search surfaces. Use for technical SEO,"
+  },
+  {
+   "full_name": "inhouseseo/superseo-skills",
+   "url": "https://github.com/inhouseseo/superseo-skills",
+   "stars": 363,
+   "lang": null,
+   "desc": "11 Claude skills for SEO: page audits, linkbuilding, article writing, E-E-A-T audits, semantic gap analysis, link building. Methodology from Koray   Tu\u011fberk, Ky"
+  },
+  {
+   "full_name": "kennyzir/7deer_skills",
+   "url": "https://github.com/kennyzir/7deer_skills",
+   "stars": 328,
+   "lang": "Python",
+   "desc": "Composable, auditable Agent Skills for building Roblox game sites\u2014from opportunity and keyword research to content, SEO, updates, and backlinks."
+  },
+  {
+   "full_name": "viasite/site-audit-seo",
+   "url": "https://github.com/viasite/site-audit-seo",
+   "stars": 304,
+   "lang": "JavaScript",
+   "desc": "Web service and CLI tool for SEO site audit: crawl site, lighthouse all pages, view public reports in browser. Also output to console, json, csv, xlsx"
+  },
+  {
+   "full_name": "squirrelscan/squirrelscan",
+   "url": "https://github.com/squirrelscan/squirrelscan",
+   "stars": 289,
+   "lang": "TypeScript",
+   "desc": "The website QA tool for your coding agent. 300+ audit rules across SEO, performance, security, accessibility and agent experience."
+  },
+  {
+   "full_name": "abhinaba-ghosh/playwright-lighthouse",
+   "url": "https://github.com/abhinaba-ghosh/playwright-lighthouse",
+   "stars": 284,
+   "lang": "JavaScript",
+   "desc": ":performing_arts:: Playwright Lighthouse Audit"
+  },
+  {
+   "full_name": "SNLabat/SEO-GEO-AEO-Skill",
+   "url": "https://github.com/SNLabat/SEO-GEO-AEO-Skill",
+   "stars": 256,
+   "lang": null,
+   "desc": "SEO/GEO/AEO Audit Skill for Claude"
+  },
+  {
+   "full_name": "patrickgwsmith/Lantern",
+   "url": "https://github.com/patrickgwsmith/Lantern",
+   "stars": 250,
+   "lang": "Swift",
+   "desc": "Mac app for website auditing and crawling"
+  },
+  {
+   "full_name": "Asqatasun/Asqatasun",
+   "url": "https://github.com/Asqatasun/Asqatasun",
+   "stars": 241,
+   "lang": "Java",
+   "desc": "Mirror of Asqatasun ---> we've moved to GITLAB https://gitlab.com/asqatasun/Asqatasun - Opensource web site analyser, used for web accessibility \"a11y\""
+  },
+  {
+   "full_name": "zupcode-com/awesome-free-services-for-your-next-startup-or-saas",
+   "url": "https://github.com/zupcode-com/awesome-free-services-for-your-next-startup-or-saas",
+   "stars": 228,
+   "lang": null,
+   "desc": "Build your next startup for FREE with services ranging from website design, app development, idea validation, user testing, saas feedback, seo audit, marketing"
+  },
+  {
+   "full_name": "seranking/seo-skills",
+   "url": "https://github.com/seranking/seo-skills",
+   "stars": 181,
+   "lang": "Python",
+   "desc": "Claude SEO Skills \u2014 production Claude Agent Skills for the SE Ranking MCP server. Content briefs, AI Search share of voice, audits, backlink gaps, keyword clust"
+  }
+ ]
+}

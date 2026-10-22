@@ -1,0 +1,153 @@
+{
+ "query": "translation+management+i18n",
+ "total_count": 120,
+ "items": [
+  {
+   "full_name": "ever-co/ever-traduora",
+   "url": "https://github.com/ever-co/ever-traduora",
+   "stars": 2138,
+   "lang": "JavaScript",
+   "desc": "Ever\u00ae Traduora\u2122 - Open Translation Management Platform - https://traduora.co"
+  },
+  {
+   "full_name": "opral/inlang",
+   "url": "https://github.com/opral/inlang",
+   "stars": 2007,
+   "lang": "TypeScript",
+   "desc": "Open format TMS (translation management system)"
+  },
+  {
+   "full_name": "txty-io/texterify",
+   "url": "https://github.com/txty-io/texterify",
+   "stars": 203,
+   "lang": "TypeScript",
+   "desc": "The translation and localization management system."
+  },
+  {
+   "full_name": "OpenLucasKaka/i18n-workflow-helper",
+   "url": "https://github.com/OpenLucasKaka/i18n-workflow-helper",
+   "stars": 194,
+   "lang": "TypeScript",
+   "desc": "A VS Code i18n workflow plugin for React, Vue, JavaScript, and TypeScript projects, focusing on solving text extraction, locale synchronization, issue scanning,"
+  },
+  {
+   "full_name": "jettbrains/-L-",
+   "url": "https://github.com/jettbrains/-L-",
+   "stars": 166,
+   "lang": null,
+   "desc": "W3C Strategic Highlights  September 2019  This report was prepared for the September 2019 W3C Advisory Committee Meeting (W3C Member link). See the accompanying"
+  },
+  {
+   "full_name": "chejen/keys-translations-manager",
+   "url": "https://github.com/chejen/keys-translations-manager",
+   "stars": 101,
+   "lang": "JavaScript",
+   "desc": "[MERN Stack] KTM, a locale management web app, lets you manage and control locales in one place. Useful for multiple i18n/l10n projects."
+  },
+  {
+   "full_name": "Lessify/localess",
+   "url": "https://github.com/Lessify/localess",
+   "stars": 74,
+   "lang": "TypeScript",
+   "desc": "Localess is a powerful translation management tool and content management system built using Angular and Firebase. With Localess, you can easily manage and tran"
+  },
+  {
+   "full_name": "ChristianIvicevic/intl-watcher",
+   "url": "https://github.com/ChristianIvicevic/intl-watcher",
+   "stars": 58,
+   "lang": "TypeScript",
+   "desc": "Automated translation key extraction and dictionary management plugin for Next.js"
+  },
+  {
+   "full_name": "SELISEdigitalplatforms/blocks-localization",
+   "url": "https://github.com/SELISEdigitalplatforms/blocks-localization",
+   "stars": 46,
+   "lang": "TypeScript",
+   "desc": "Localization and translation management for SELISE Blocks: languages, translation keys and resource delivery."
+  },
+  {
+   "full_name": "alec-c4/inertia_i18n",
+   "url": "https://github.com/alec-c4/inertia_i18n",
+   "stars": 33,
+   "lang": "Ruby",
+   "desc": "Translation management for Inertia.js applications with Rails backend"
+  },
+  {
+   "full_name": "stifskere/translatable",
+   "url": "https://github.com/stifskere/translatable",
+   "stars": 33,
+   "lang": "Rust",
+   "desc": "A robust internationalization solution for Rust featuring compile-time validation, ISO 639-1 compliance, and TOML-based translation management."
+  },
+  {
+   "full_name": "samk-dev/nuxt-translation-manager",
+   "url": "https://github.com/samk-dev/nuxt-translation-manager",
+   "stars": 19,
+   "lang": "TypeScript",
+   "desc": "Simple and easy to use translation manager for Nuxt and Nuxt-i18n that allows translation management from a single CSV file."
+  },
+  {
+   "full_name": "i18n-studio/i18n-studio",
+   "url": "https://github.com/i18n-studio/i18n-studio",
+   "stars": 15,
+   "lang": "TypeScript",
+   "desc": "i18n-Studio is a self-hosted solution for managing translation files"
+  },
+  {
+   "full_name": "maasasia/donggu",
+   "url": "https://github.com/maasasia/donggu",
+   "stars": 13,
+   "lang": "Go",
+   "desc": "Lightweight, production-ready CLI for translation data (i18n) management"
+  },
+  {
+   "full_name": "gtrias/i18next-mcp-server",
+   "url": "https://github.com/gtrias/i18next-mcp-server",
+   "stars": 12,
+   "lang": "TypeScript",
+   "desc": "A comprehensive Model Context Protocol (MCP) server that provides automated translation management capabilities for Cursor and other AI assistants, enabling dir"
+  },
+  {
+   "full_name": "YAMLFish/yamlfish-cli",
+   "url": "https://github.com/YAMLFish/yamlfish-cli",
+   "stars": 11,
+   "lang": "Ruby",
+   "desc": "CLI for YAMLFish: the Free Localization & Translation Management Tool for Developers and Product Teams"
+  },
+  {
+   "full_name": "resamsel/translatr",
+   "url": "https://github.com/resamsel/translatr",
+   "stars": 8,
+   "lang": "TypeScript",
+   "desc": "I18n Translation Management"
+  },
+  {
+   "full_name": "Seiger/sLang",
+   "url": "https://github.com/Seiger/sLang",
+   "stars": 8,
+   "lang": "PHP",
+   "desc": "Multi-language management module for Evolution CMS based on Laravel localization features."
+  },
+  {
+   "full_name": "localazy/react-i18next-example",
+   "url": "https://github.com/localazy/react-i18next-example",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": "An example repository showing how to use Localazy with react and i18next library for translation management and localization."
+  },
+  {
+   "full_name": "muhammadahmad665/Localization-Converter",
+   "url": "https://github.com/muhammadahmad665/Localization-Converter",
+   "stars": 6,
+   "lang": "Go",
+   "desc": "A Go command-line tool for converting Xcode .xcstrings localization files to CSV and back, simplifying iOS translation management."
+  },
+  {
+   "full_name": "MAJigsaw77/kotoba",
+   "url": "https://github.com/MAJigsaw77/kotoba",
+   "stars": 5,
+   "lang": "Haxe",
+   "desc": "A lightweight Haxe library for XML-based language configuration and translation management."
+  }
+ ]
+}

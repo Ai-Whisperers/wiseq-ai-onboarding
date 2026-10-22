@@ -1,0 +1,111 @@
+{
+ "query": "barcode+label+printer",
+ "total_count": 153,
+ "items": [
+  {
+   "full_name": "lukevp/ESC-POS-.NET",
+   "url": "https://github.com/lukevp/ESC-POS-.NET",
+   "stars": 671,
+   "lang": "C#",
+   "desc": "Efficient, Easy to Use Thermal Printing & POS (Windows/Linux/OSX, WiFi/BT/USB/Ethernet)"
+  },
+  {
+   "full_name": "mrothenbuecher/zpl-rest",
+   "url": "https://github.com/mrothenbuecher/zpl-rest",
+   "stars": 122,
+   "lang": "EJS",
+   "desc": "Self-hosted print server for Zebra label printers. REST API and web UI for ZPL templates with live preview."
+  },
+  {
+   "full_name": "u8array/ZPLab",
+   "url": "https://github.com/u8array/ZPLab",
+   "stars": 69,
+   "lang": "TypeScript",
+   "desc": "Visual ZPL label designer for ZPL-compatible printers. Design, import, and export labels in your browser or as a local desktop app."
+  },
+  {
+   "full_name": "tomLadder/thermoprint",
+   "url": "https://github.com/tomLadder/thermoprint",
+   "stars": 60,
+   "lang": "TypeScript",
+   "desc": "\ud83d\udda8\ufe0f Design and print labels for Marklife/Pristar P15, P12, P7 and other Bluetooth thermal printers. Visual drag-and-drop label editor in the browser, CLI for ter"
+  },
+  {
+   "full_name": "labelle-org/labelle-web",
+   "url": "https://github.com/labelle-org/labelle-web",
+   "stars": 48,
+   "lang": "Python",
+   "desc": "A web interface for labelle DYMO label printers. Compose labels with text, QR codes, and barcodes in your browser, with a live preview and one-click printing."
+  },
+  {
+   "full_name": "prashanta/godex-printer",
+   "url": "https://github.com/prashanta/godex-printer",
+   "stars": 23,
+   "lang": "JavaScript",
+   "desc": "A npm Module to  print lables on GoDex label printers via serial port."
+  },
+  {
+   "full_name": "Daylily-Informatics/zebra_day",
+   "url": "https://github.com/Daylily-Informatics/zebra_day",
+   "stars": 18,
+   "lang": "Python",
+   "desc": "Zebra Label Printing library & API (for network connected printers).  Manage 100s of printers and ZPL label templates in one place."
+  },
+  {
+   "full_name": "carterapp/barcoder",
+   "url": "https://github.com/carterapp/barcoder",
+   "stars": 15,
+   "lang": "Go",
+   "desc": "Generate ZPL for Zebra label printers"
+  },
+  {
+   "full_name": "ZJ69719496/LabelPrinter",
+   "url": "https://github.com/ZJ69719496/LabelPrinter",
+   "stars": 13,
+   "lang": null,
+   "desc": "\u901a\u7528\u5de5\u4e1a\u6807\u7b7e\u8bbe\u8ba1\u6253\u5370\u5de5\u5177\uff0c\u8be5\u5de5\u5177\u53ef\u4ee5\u5b9e\u73b0\u6807\u7b7e\u8bbe\u8ba1\u548c\u6253\u5370\u529f\u80fd\uff0c\u901a\u8fc7\u81ea\u5b9a\u4e49\u534f\u8bae\uff0c\u53ef\u4ee5\u7528\u6765\u8fdc\u7a0b\u4e91\u6253\u5370\uff0c\u652f\u6301\u6240\u6709\u6253\u5370\u673a"
+  },
+  {
+   "full_name": "riCompro/Dymo-Web-Label-Printer",
+   "url": "https://github.com/riCompro/Dymo-Web-Label-Printer",
+   "stars": 10,
+   "lang": "JavaScript",
+   "desc": "Use the Dymo 3.0 Web SDK to print labels with Barcode and Preview the labels before printing."
+  },
+  {
+   "full_name": "ravithb/open-labels",
+   "url": "https://github.com/ravithb/open-labels",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "A utility to print barcode and other labels on the Bixolon SLP-T400 Label printer on Linux written in Python"
+  },
+  {
+   "full_name": "jesusbmx/react-native-zpl-code",
+   "url": "https://github.com/jesusbmx/react-native-zpl-code",
+   "stars": 6,
+   "lang": "Swift",
+   "desc": "This TypeScript library provides a builder pattern for generating Zebra Programming Language (ZPL) commands for label printing. It is designed to simplify the c"
+  },
+  {
+   "full_name": "abakus-it-old/stock_barcode_interface",
+   "url": "https://github.com/abakus-it-old/stock_barcode_interface",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "New interface for stock management on thin client with barcode scanner and labels printer"
+  },
+  {
+   "full_name": "catdogmaus/D30printerPWA",
+   "url": "https://github.com/catdogmaus/D30printerPWA",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "Free Web Bluetooth PWA label printer app for Phomemo D30 and D30C. Print custom text, images, barcodes, and QR codes directly from your browser."
+  },
+  {
+   "full_name": "slastra/printrow",
+   "url": "https://github.com/slastra/printrow",
+   "stars": 5,
+   "lang": "Svelte",
+   "desc": "Browser label designer for KNAON Y50P and NIIMBOT B1 thermal printers. Bind {{vars}} to CSV columns and batch-print over Web Bluetooth. No drivers, no installs,"
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+{
+ "query": "helpdesk+support+ticket",
+ "total_count": 1569,
+ "items": [
+  {
+   "full_name": "uvdesk/community-skeleton",
+   "url": "https://github.com/uvdesk/community-skeleton",
+   "stars": 19640,
+   "lang": "CSS",
+   "desc": "UVdesk Open Source Community Helpdesk is a comprehensive ticketing support system designed for everyone, offering robust features to streamline customer support"
+  },
+  {
+   "full_name": "helpyio/helpy",
+   "url": "https://github.com/helpyio/helpy",
+   "stars": 2469,
+   "lang": "Ruby",
+   "desc": "Helpy is a modern, open source helpdesk customer support application. Features include knowledgebase, community discussions and support tickets integrated with"
+  },
+  {
+   "full_name": "Django-CRM/Django-CRM",
+   "url": "https://github.com/Django-CRM/Django-CRM",
+   "stars": 2456,
+   "lang": "Python",
+   "desc": "BottleCRM: free, open-source (MIT) CRM with sales, support tickets and invoicing in one app. Unlimited users; self-host or use the hosted app."
+  },
+  {
+   "full_name": "django-helpdesk/django-helpdesk",
+   "url": "https://github.com/django-helpdesk/django-helpdesk",
+   "stars": 1692,
+   "lang": "Python",
+   "desc": "A Django application to manage tickets for an internal helpdesk. Formerly known as Jutda Helpdesk."
+  },
+  {
+   "full_name": "polonel/trudesk",
+   "url": "https://github.com/polonel/trudesk",
+   "stars": 1499,
+   "lang": "JavaScript",
+   "desc": ":coffee: :seedling: Trudesk is an open-source help desk/ticketing solution."
+  },
+  {
+   "full_name": "opensupports/opensupports",
+   "url": "https://github.com/opensupports/opensupports",
+   "stars": 1038,
+   "lang": "JavaScript",
+   "desc": "OpenSupports is a simple and beautiful open source ticket system"
+  },
+  {
+   "full_name": "znuny/Znuny",
+   "url": "https://github.com/znuny/Znuny",
+   "stars": 605,
+   "lang": "Perl",
+   "desc": "Znuny is a free, open-source, and versatile web-based ticketing system for Customer Service, Help Desk, IT Service Management, and more. It is built for transpa"
+  },
+  {
+   "full_name": "Bytedesk/bytedesk",
+   "url": "https://github.com/Bytedesk/bytedesk",
+   "stars": 511,
+   "lang": "JavaScript",
+   "desc": "Open Souce IM with AI powered live-chat, email, ticket support, omni-channel customer service\uff0calternative to slack + zendesk/intercom/hubspot/ada/decagon/sierra"
+  },
+  {
+   "full_name": "coderflexx/laravel-ticket",
+   "url": "https://github.com/coderflexx/laravel-ticket",
+   "stars": 445,
+   "lang": "PHP",
+   "desc": "A full-featured support ticket system for Laravel with Eloquent models and a clean API"
+  },
+  {
+   "full_name": "go2ismail/DotnetDesk",
+   "url": "https://github.com/go2ismail/DotnetDesk",
+   "stars": 213,
+   "lang": "C#",
+   "desc": "Asp.Net Example web application showing the capabilities of ASP.NET Core 2 MVC, EF (Entity Framework), Web API, Bootstrap, jQuery, datatables, adminlte template"
+  },
+  {
+   "full_name": "tikajhq/tiket",
+   "url": "https://github.com/tikajhq/tiket",
+   "stars": 100,
+   "lang": "JavaScript",
+   "desc": "TIKET is a ticketing/helpdesk system to support and help you deal with issues/incidents in your organization or from customers."
+  },
+  {
+   "full_name": "helpdesk-z/helpdeskz-dev",
+   "url": "https://github.com/helpdesk-z/helpdeskz-dev",
+   "stars": 98,
+   "lang": "PHP",
+   "desc": "HelpDeskZ is a free PHP based software which allows you to manage your site's support with a web-based support ticket system."
+  },
+  {
+   "full_name": "danielbrendel/dnyHelpRealm",
+   "url": "https://github.com/danielbrendel/dnyHelpRealm",
+   "stars": 46,
+   "lang": "PHP",
+   "desc": "Lightweight support ticket system as SaaS solution. Support customers via E-Mail, ticketing forms and API."
+  },
+  {
+   "full_name": "Maher-Amara/livezilla-server",
+   "url": "https://github.com/Maher-Amara/livezilla-server",
+   "stars": 38,
+   "lang": "PHP",
+   "desc": "LiveZilla includes a live chat software with multi-website support, visitor monitoring and a help desk system that allows you to not only integrate emails that"
+  },
+  {
+   "full_name": "shameemreza/helpdesk",
+   "url": "https://github.com/shameemreza/helpdesk",
+   "stars": 37,
+   "lang": "PHP",
+   "desc": "Support Ticket System"
+  },
+  {
+   "full_name": "verygoodplugins/mcp-freescout",
+   "url": "https://github.com/verygoodplugins/mcp-freescout",
+   "stars": 29,
+   "lang": "TypeScript",
+   "desc": "An MCP (Model Context Protocol) server for FreeScout helpdesk ticket management and workflow automation. This server provides tools to interact with FreeScout t"
+  },
+  {
+   "full_name": "liuggio/HelpDeskBundle",
+   "url": "https://github.com/liuggio/HelpDeskBundle",
+   "stars": 24,
+   "lang": "JavaScript",
+   "desc": "NOT MANTAINED!!!! Open source support ticket system. (Symfony2 bundle)"
+  },
+  {
+   "full_name": "jeffcaldwellca/scout-portal",
+   "url": "https://github.com/jeffcaldwellca/scout-portal",
+   "stars": 24,
+   "lang": "PHP",
+   "desc": "Scout Portal \u2014 a friendly, self-hosted end-user portal for FreeScout: dynamic ticket forms, LDAP/local auth, file uploads, and a status dashboard."
+  },
+  {
+   "full_name": "melihgulec/codeigniter-ticket-system",
+   "url": "https://github.com/melihgulec/codeigniter-ticket-system",
+   "stars": 20,
+   "lang": "PHP",
+   "desc": "Ticket System written in PHP (codeIgniter) with support for MySQL"
+  },
+  {
+   "full_name": "shankstee/TheHelpDeskExperience",
+   "url": "https://github.com/shankstee/TheHelpDeskExperience",
+   "stars": 18,
+   "lang": "TypeScript",
+   "desc": "Built a Helpdesk support ticketing web application using React, TypeScript, & Office UI."
+  },
+  {
+   "full_name": "danielknng/zd-ticket-portal",
+   "url": "https://github.com/danielknng/zd-ticket-portal",
+   "stars": 10,
+   "lang": "JavaScript",
+   "desc": "A modern, modular, community-made front-end modal for Zammad ticketing - features persistent caching, advanced filtering, and a user-friendly UI for managing su"
+  },
+  {
+   "full_name": "debajyotiguha11/HelpDesk",
+   "url": "https://github.com/debajyotiguha11/HelpDesk",
+   "stars": 8,
+   "lang": "PHP",
+   "desc": "Ticketing software for effortless customer support"
+  },
+  {
+   "full_name": "KHALEDNOAMAN/HelpDesk-AI",
+   "url": "https://github.com/KHALEDNOAMAN/HelpDesk-AI",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "HelpDesk AI - Smart customer support chatbot with ticket management, FAQ knowledge base, priority routing & Groq AI"
+  },
+  {
+   "full_name": "ShaneCunn/Support-Ticket-system",
+   "url": "https://github.com/ShaneCunn/Support-Ticket-system",
+   "stars": 7,
+   "lang": "PHP",
+   "desc": "Simple IT helpdesk written in laravel and runs on PHP 7.0"
+  },
+  {
+   "full_name": "pronet-systems/tanss-mcp-server",
+   "url": "https://github.com/pronet-systems/tanss-mcp-server",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Model Context Protocol (MCP) server for the TANSS API: 237 tools for tickets, time tracking, assets and remote support \u2014 for Claude, n8n and other AI assistants"
+  },
+  {
+   "full_name": "anshdedha7/Customer-Support-IT-Helpdesk-Chatbot",
+   "url": "https://github.com/anshdedha7/Customer-Support-IT-Helpdesk-Chatbot",
+   "stars": 5,
+   "lang": "C#",
+   "desc": "An IT helpdesk chatbot which is integrated with servicenow. Users can ask the bot to perform tasks such as create a ticket, reset password, show pending approva"
+  },
+  {
+   "full_name": "Rashid004/HelpDesk-Live",
+   "url": "https://github.com/Rashid004/HelpDesk-Live",
+   "stars": 5,
+   "lang": "TypeScript",
+   "desc": "A real-time customer-support ticketing platform"
+  },
+  {
+   "full_name": "imaradesk/imaradesk-os",
+   "url": "https://github.com/imaradesk/imaradesk-os",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "Imaradesk is the open-source edition of Imaradesk focused on customer support ticketing and email-to-ticket workflows.  It is built for businesses and developer"
+  },
+  {
+   "full_name": "detain/kayako-php-api-library",
+   "url": "https://github.com/detain/kayako-php-api-library",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "The official Kayako PHP API library."
+  }
+ ]
+}

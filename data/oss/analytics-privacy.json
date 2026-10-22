@@ -1,0 +1,195 @@
+{
+ "query": "privacy+analytics+self-hosted",
+ "total_count": 379,
+ "items": [
+  {
+   "full_name": "umami-software/umami",
+   "url": "https://github.com/umami-software/umami",
+   "stars": 39515,
+   "lang": "TypeScript",
+   "desc": "Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place \u2014 no cookies, no surveillance, self-hosted or i"
+  },
+  {
+   "full_name": "plausible/analytics",
+   "url": "https://github.com/plausible/analytics",
+   "stars": 29593,
+   "lang": "Elixir",
+   "desc": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud."
+  },
+  {
+   "full_name": "Openpanel-dev/openpanel",
+   "url": "https://github.com/Openpanel-dev/openpanel",
+   "stars": 7180,
+   "lang": "TypeScript",
+   "desc": "OpenPanel is an open-source web and product analytics platform, an open-source alternative to Mixpanel with optional self-hosting."
+  },
+  {
+   "full_name": "electerious/Ackee",
+   "url": "https://github.com/electerious/Ackee",
+   "stars": 4718,
+   "lang": "JavaScript",
+   "desc": "Self-hosted, Node.js based analytics tool for those who care about privacy."
+  },
+  {
+   "full_name": "milesmcc/shynet",
+   "url": "https://github.com/milesmcc/shynet",
+   "stars": 3156,
+   "lang": "Python",
+   "desc": "Modern, privacy-friendly, and detailed web analytics that works without cookies or JS."
+  },
+  {
+   "full_name": "obsei/obsei",
+   "url": "https://github.com/obsei/obsei",
+   "stars": 1440,
+   "lang": "Python",
+   "desc": "Open source, privacy-first Voice of Customer analytics. A self-hosted alternative to Enterpret and Unwrap that strips PII from feedback before any LLM sees it."
+  },
+  {
+   "full_name": "Swetrix/swetrix",
+   "url": "https://github.com/Swetrix/swetrix",
+   "stars": 1212,
+   "lang": "TypeScript",
+   "desc": "\ud83d\udcc8 Open source, privacy-first web analytics \u2014 a cookie-less Google Analytics alternative with built-in error tracking and performance monitoring. Self-host it or"
+  },
+  {
+   "full_name": "offen/offen",
+   "url": "https://github.com/offen/offen",
+   "stars": 982,
+   "lang": "JavaScript",
+   "desc": "Offen Fair Web Analytics"
+  },
+  {
+   "full_name": "OpenLabs-so/openanalytics",
+   "url": "https://github.com/OpenLabs-so/openanalytics",
+   "stars": 636,
+   "lang": "TypeScript",
+   "desc": "Open-source, privacy-first and cookieless web analytics with revenue attribution and an MCP server."
+  },
+  {
+   "full_name": "sheshbabu/freshlytics",
+   "url": "https://github.com/sheshbabu/freshlytics",
+   "stars": 362,
+   "lang": "TypeScript",
+   "desc": "Open source privacy-friendly analytics"
+  },
+  {
+   "full_name": "th0th/poeticmetric",
+   "url": "https://github.com/th0th/poeticmetric",
+   "stars": 268,
+   "lang": "TypeScript",
+   "desc": "PoeticMetric is a free as in freedom, open source, privacy-first, regulation-compliant, and blazingly fast Google Analytics alternative. This is a mirror of Poe"
+  },
+  {
+   "full_name": "OmniRise/LinkBreeze",
+   "url": "https://github.com/OmniRise/LinkBreeze",
+   "stars": 256,
+   "lang": "TypeScript",
+   "desc": "The self-hosted Linktree alternative. Import from any competitor in 30 seconds. Multi-page, privacy-respecting analytics, one-line install."
+  },
+  {
+   "full_name": "shafy/fugu",
+   "url": "https://github.com/shafy/fugu",
+   "stars": 214,
+   "lang": "Ruby",
+   "desc": "Free, privacy-friendly, simple, open-source and self-hostable product analytics."
+  },
+  {
+   "full_name": "shivamanupadi/traks",
+   "url": "https://github.com/shivamanupadi/traks",
+   "stars": 172,
+   "lang": "TypeScript",
+   "desc": "Self-hosted, privacy-friendly web analytics that deploys into your own Cloudflare account in two minutes. Free forever, MIT."
+  },
+  {
+   "full_name": "prismelabs/analytics",
+   "url": "https://github.com/prismelabs/analytics",
+   "stars": 134,
+   "lang": "TypeScript",
+   "desc": "\u25e2 High-perfomance, self-hosted and privacy-focused web analytics service. Written in Go."
+  },
+  {
+   "full_name": "FJRG2007/polaris",
+   "url": "https://github.com/FJRG2007/polaris",
+   "stars": 123,
+   "lang": "TypeScript",
+   "desc": "\u2737 Self-hosted control plane for your own hardware: Railway-style deploys, Slack/Discord-style chat with calls, ClickUp-style tasks, CI runners, a Bitwarden-comp"
+  },
+  {
+   "full_name": "Rtarun3606k/TakaTime",
+   "url": "https://github.com/Rtarun3606k/TakaTime",
+   "stars": 104,
+   "lang": "Go",
+   "desc": "TakaTime is a blazingly fast, privacy-first coding activity tracker and the open-source, self-hosted alternative to WakaTime.  Track your development activity a"
+  },
+  {
+   "full_name": "AngusKit/AngusInsight",
+   "url": "https://github.com/AngusKit/AngusInsight",
+   "stars": 85,
+   "lang": null,
+   "desc": "Lightweight, self-hostable product analytics platform for visit and user-behavior tracking, with zero third-party data egress."
+  },
+  {
+   "full_name": "Swetrix/selfhosting",
+   "url": "https://github.com/Swetrix/selfhosting",
+   "stars": 76,
+   "lang": "Shell",
+   "desc": "Docker Compose setup to self-host Swetrix CE - a privacy-focused, cookieless web analytics platform"
+  },
+  {
+   "full_name": "YuriCrystal/relay",
+   "url": "https://github.com/YuriCrystal/relay",
+   "stars": 68,
+   "lang": "HTML",
+   "desc": "Self-hosted link shortener with privacy-first click analytics & cookieless conversion tracking, on Cloudflare Workers + D1. A/B split, device & geo routing, /su"
+  },
+  {
+   "full_name": "seuros/kaunta",
+   "url": "https://github.com/seuros/kaunta",
+   "stars": 63,
+   "lang": "Rust",
+   "desc": "Privacy-focused web analytics. Single binary, self-hosted."
+  },
+  {
+   "full_name": "paoloronco/OrbitPage",
+   "url": "https://github.com/paoloronco/OrbitPage",
+   "stars": 59,
+   "lang": "TypeScript",
+   "desc": "Open-source public page builder for links, media, profiles, venues, and events. Self-host with Docker or use the managed OrbitPage service."
+  },
+  {
+   "full_name": "respectlytics/respectlytics",
+   "url": "https://github.com/respectlytics/respectlytics",
+   "stars": 41,
+   "lang": "Python",
+   "desc": "Privacy-first mobile analytics. Self-hosted, session-based, 5-field storage. No personal data retained."
+  },
+  {
+   "full_name": "PercevalFox/discord-sentinel",
+   "url": "https://github.com/PercevalFox/discord-sentinel",
+   "stars": 41,
+   "lang": "Python",
+   "desc": "\ud83d\udee1\ufe0fSelf-hosted security analytics & threat detection for Discord servers. Real-time phishing, raids, spam detection. Privacy-first with GDPR commands."
+  },
+  {
+   "full_name": "SagarBiswas-MultiHAT/promptVault",
+   "url": "https://github.com/SagarBiswas-MultiHAT/promptVault",
+   "stars": 31,
+   "lang": "TypeScript",
+   "desc": "The Military-Grade Memory Hygiene, private, offline-first prompt manager for AI Agent power users. Features AES-256 encrypted local storage, a built-in AI Libra"
+  },
+  {
+   "full_name": "MerlinStacks/overseek",
+   "url": "https://github.com/MerlinStacks/overseek",
+   "stars": 29,
+   "lang": "TypeScript",
+   "desc": "OverSeek is your open-source command center\u2014a self-hosted, privacy-first platform that unifies analytics, automation, inventory, and customer intelligence into"
+  },
+  {
+   "full_name": "CalmBookkeeperSee/Ghostfolio-Desktop-Self-Hosted-Dashboard",
+   "url": "https://github.com/CalmBookkeeperSee/Ghostfolio-Desktop-Self-Hosted-Dashboard",
+   "stars": 29,
+   "lang": null,
+   "desc": "Track your investments, asset allocation, and financial analytics in one privacy-focused dashboard. Easy setup and direct downloads."
+  }
+ ]
+}

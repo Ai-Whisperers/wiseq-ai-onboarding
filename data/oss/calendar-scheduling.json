@@ -1,0 +1,216 @@
+{
+ "query": "scheduling+booking",
+ "total_count": 10907,
+ "items": [
+  {
+   "full_name": "neuronetio/gantt-schedule-timeline-calendar",
+   "url": "https://github.com/neuronetio/gantt-schedule-timeline-calendar",
+   "stars": 3636,
+   "lang": "TypeScript",
+   "desc": "Gantt Gantt Gantt Timeline Schedule Calendar [ javascript gantt, js gantt, projects gantt, timeline, scheduler, gantt timeline, reservation timeline, react gant"
+  },
+  {
+   "full_name": "HashenUdara/edoc-doctor-appointment-system",
+   "url": "https://github.com/HashenUdara/edoc-doctor-appointment-system",
+   "stars": 582,
+   "lang": "PHP",
+   "desc": "This PHP-based open source project is a web application for booking medical appointments. Patients can use the platform to easily schedule appointments with the"
+  },
+  {
+   "full_name": "nateherkai/snagtime",
+   "url": "https://github.com/nateherkai/snagtime",
+   "stars": 392,
+   "lang": "TypeScript",
+   "desc": "Free, self-hostable scheduling app with booking links, Google Calendar sync, SMTP notifications, and Stripe test payments."
+  },
+  {
+   "full_name": "shashirajraja/Train-Ticket-Reservation-System",
+   "url": "https://github.com/shashirajraja/Train-Ticket-Reservation-System",
+   "stars": 317,
+   "lang": "Java",
+   "desc": "This is the website build for searching the Train Schedule , Seat Availability, Train Timings, Fare Enquiry, Trains Between Stations and Booking seats online."
+  },
+  {
+   "full_name": "Project-Based-Learning-IT/healthcare-appointment-scheduling-app",
+   "url": "https://github.com/Project-Based-Learning-IT/healthcare-appointment-scheduling-app",
+   "stars": 145,
+   "lang": "JavaScript",
+   "desc": "\u2022 This is a patient doctor appointment booking WebApp. Patient signs in using google account and Doctor needs to register prior in the system to login. \u2022 Patien"
+  },
+  {
+   "full_name": "Calnode/calnode",
+   "url": "https://github.com/Calnode/calnode",
+   "stars": 121,
+   "lang": "Go",
+   "desc": "Lean, self-hostable Calendly & Cal.com alternative \u2014 a single Go binary + SQLite, API-first and MCP-native. Apache-2.0."
+  },
+  {
+   "full_name": "CCCrafts/punctual",
+   "url": "https://github.com/CCCrafts/punctual",
+   "stars": 121,
+   "lang": "TypeScript",
+   "desc": "Scheduling that shows up on time \u2014 an open, edge-native Calendly alternative on Cloudflare Workers. MIT, no seat limits, ever."
+  },
+  {
+   "full_name": "dayschedule/dayschedule-widget",
+   "url": "https://github.com/dayschedule/dayschedule-widget",
+   "stars": 102,
+   "lang": "TypeScript",
+   "desc": "Appointment scheduling widget to embed the booking calendar on your website for 1:1, round-robin and group bookings with Google meet, Zoom and MS Teams integrat"
+  },
+  {
+   "full_name": "vfixtechnology/appointment-booking-system",
+   "url": "https://github.com/vfixtechnology/appointment-booking-system",
+   "stars": 72,
+   "lang": "Blade",
+   "desc": "A customizable appointment booking system for astrologers, doctors, salons, tutors, coaches, home services, and more. Features include calendar scheduling, mult"
+  },
+  {
+   "full_name": "himanshugoyal77/salon_booking_app",
+   "url": "https://github.com/himanshugoyal77/salon_booking_app",
+   "stars": 63,
+   "lang": "Dart",
+   "desc": "Salon booking app with flutter and firebase makes the process of scheduling appointments easier."
+  },
+  {
+   "full_name": "clawnify/OpenSalon",
+   "url": "https://github.com/clawnify/OpenSalon",
+   "stars": 60,
+   "lang": "TypeScript",
+   "desc": "Open-source Salonist/Fresha alternative \u2014 appointment booking & scheduling for salons, spas, barbershops, tattoo studios, pet groomers, yoga studios & any appoi"
+  },
+  {
+   "full_name": "raj-rathod/Travelling_Managment",
+   "url": "https://github.com/raj-rathod/Travelling_Managment",
+   "stars": 53,
+   "lang": "JavaScript",
+   "desc": "The Online Bus Ticket Booking System for Travel Management is a mini project that aims to provide a convenient and user-friendly platform for travelers to searc"
+  },
+  {
+   "full_name": "mjunaidca/appointment-agent",
+   "url": "https://github.com/mjunaidca/appointment-agent",
+   "stars": 51,
+   "lang": "Jupyter Notebook",
+   "desc": "A modular and AI-powered appointment booking agent designed to streamline scheduling for businesses, starting with dental clinics. Built with LangGraph, Composi"
+  },
+  {
+   "full_name": "Dayotter/dayotter",
+   "url": "https://github.com/Dayotter/dayotter",
+   "stars": 48,
+   "lang": "TypeScript",
+   "desc": "The AI-native, open-source scheduling platform. Otter books meetings, protects your focus, and clears the back-and-forth \u2014 confirm-first. Self-host it all under"
+  },
+  {
+   "full_name": "Hazrat-Ali9/Car-Service-Backend",
+   "url": "https://github.com/Hazrat-Ali9/Car-Service-Backend",
+   "stars": 47,
+   "lang": "JavaScript",
+   "desc": "\ud83d\ude82 Car Service \ud83d\ude83 Backend is a \ud83d\ude8b robust and \ud83d\ude92 scalable solution \ud83d\udefc designed \ud83d\ude84 managing car \ud83d\ude9e maintenance \u2708 and service \ud83d\ude9f booking \ud83d\ude81 platforms \ud83d\ude80 building a \ud83d\udef8 vehicle"
+  },
+  {
+   "full_name": "glory-kasongo-03/Doctor_appointment_booking_system",
+   "url": "https://github.com/glory-kasongo-03/Doctor_appointment_booking_system",
+   "stars": 39,
+   "lang": "HTML",
+   "desc": "This is a basic doctor appointment booking system, a web and mobile-based app allowing patients to schedule medical appointments online, manage bookings, and re"
+  },
+  {
+   "full_name": "elghaied/payload-reserve",
+   "url": "https://github.com/elghaied/payload-reserve",
+   "stars": 38,
+   "lang": "TypeScript",
+   "desc": "A full-featured, reusable reservation/booking plugin for Payload CMS 3.x. Designed for salons, clinics, consultants, and any business that needs appointment sch"
+  },
+  {
+   "full_name": "SeanChangX/THSR-Sniper",
+   "url": "https://github.com/SeanChangX/THSR-Sniper",
+   "stars": 38,
+   "lang": "Python",
+   "desc": "\u53f0\u7063\u9ad8\u9435\u81ea\u52d5\u5316\u8a02\u7968\u5de5\u5177 Automated Taiwan High Speed Rail (THSR) ticket booking tool with OCR captcha recognition, scheduler & API service."
+  },
+  {
+   "full_name": "Hazrat-Ali9/Convention-Center",
+   "url": "https://github.com/Hazrat-Ali9/Convention-Center",
+   "stars": 37,
+   "lang": "HTML",
+   "desc": "Convention Center is a modern and fully responsive event management and venue booking platform designed to simplify conference, seminar, wedding, corporate even"
+  },
+  {
+   "full_name": "theaifutureguy/Meeting-Room-Booking-AI-Agent",
+   "url": "https://github.com/theaifutureguy/Meeting-Room-Booking-AI-Agent",
+   "stars": 32,
+   "lang": "Python",
+   "desc": "An intelligent AI-powered meeting room booking system built with LangGraph and advanced natural language processing capabilities. It provides seamless room rese"
+  },
+  {
+   "full_name": "antoni-codes/Barber_Booking-UI-Flutter_App",
+   "url": "https://github.com/antoni-codes/Barber_Booking-UI-Flutter_App",
+   "stars": 29,
+   "lang": "Dart",
+   "desc": "Barber Booking App made with Dart at the flutter SDK - App to schedule appointment with a barber shop, see the barbers works, see the barbers ratings made by th"
+  },
+  {
+   "full_name": "TRADLY-PLATFORM/Butterflies",
+   "url": "https://github.com/TRADLY-PLATFORM/Butterflies",
+   "stars": 28,
+   "lang": "JavaScript",
+   "desc": "Marketplace Kit built on NextJS + Tailwind. It connects Tradly API to provide features like Ticket types, schedules, booking, collection api, add events, etc."
+  },
+  {
+   "full_name": "Gribadan/RentTools.io",
+   "url": "https://github.com/Gribadan/RentTools.io",
+   "stars": 26,
+   "lang": "TypeScript",
+   "desc": "Free, open-source property manager for short-term rental hosts. Sync Airbnb + Booking.com calendars, automate cleaning schedules, extract guest passport data. L"
+  },
+  {
+   "full_name": "NAVIN0507/sheartime",
+   "url": "https://github.com/NAVIN0507/sheartime",
+   "stars": 26,
+   "lang": "TypeScript",
+   "desc": "ShearTime \u2013 Smart Barber Booking SaaS  ShearTime is a modern SaaS platform that makes booking barber appointments seamless.Customers can schedule slots, make se"
+  },
+  {
+   "full_name": "one-zero-eight/website",
+   "url": "https://github.com/one-zero-eight/website",
+   "stars": 25,
+   "lang": "TypeScript",
+   "desc": "InNoHassle website for accessing ecosystem services at Innopolis University. Student dashboard, personal schedule, room booking, interactive maps, and more: htt"
+  },
+  {
+   "full_name": "luckypenny1632333/Schedule-Meeting-AI-agent",
+   "url": "https://github.com/luckypenny1632333/Schedule-Meeting-AI-agent",
+   "stars": 25,
+   "lang": "Python",
+   "desc": "An intelligent AI-powered meeting room booking system built with LangGraph and advanced natural language processing capabilities. The system provides seamless r"
+  },
+  {
+   "full_name": "alam025/ai-voice-assistant-appointment-booking",
+   "url": "https://github.com/alam025/ai-voice-assistant-appointment-booking",
+   "stars": 24,
+   "lang": "Python",
+   "desc": "Enterprise-grade AI voice assistant for automated appointment scheduling using FastAPI, Twilio, and AWS Polly with natural language processing"
+  },
+  {
+   "full_name": "prajwal714/Movie-Booking-and-Recommendation-Website",
+   "url": "https://github.com/prajwal714/Movie-Booking-and-Recommendation-Website",
+   "stars": 24,
+   "lang": "EJS",
+   "desc": "Movie Booking Website. Explore Movies, See available Seats, Book Tickets, Generate Invoice, Get History of Bookings, etc. Admin Panel Include Managing Screens,"
+  },
+  {
+   "full_name": "NAVIN0507/project_careplus",
+   "url": "https://github.com/NAVIN0507/project_careplus",
+   "stars": 24,
+   "lang": "TypeScript",
+   "desc": "CarePulse is a seamless appointment booking web application that allows patients to effortlessly schedule doctor visits, while giving admins powerful tools to"
+  },
+  {
+   "full_name": "gauravsonii/trillo",
+   "url": "https://github.com/gauravsonii/trillo",
+   "stars": 24,
+   "lang": "SCSS",
+   "desc": "Trill is a full-stack travel booking platform where users can explore destinations, book hotels, and schedule flights with ease. Built using modern frameworks,"
+  }
+ ]
+}

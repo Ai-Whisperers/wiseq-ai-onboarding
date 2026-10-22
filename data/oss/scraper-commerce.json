@@ -1,0 +1,209 @@
+{
+ "query": "scraper+ecommerce+product",
+ "total_count": 581,
+ "items": [
+  {
+   "full_name": "SwatiModi/e-commerce-web-scraper",
+   "url": "https://github.com/SwatiModi/e-commerce-web-scraper",
+   "stars": 63,
+   "lang": "Python",
+   "desc": "Scraping details of products from ecommerce websites using python"
+  },
+  {
+   "full_name": "davide97l/ecommerce_price_scraper",
+   "url": "https://github.com/davide97l/ecommerce_price_scraper",
+   "stars": 33,
+   "lang": "Python",
+   "desc": "Scrape the prices of a set of products from different vendors via e-commerce websites such as Taobao \u6dd8\u5b9d, Tmall \u5929\u732b, and Jingdong \u4eac\u4e1c."
+  },
+  {
+   "full_name": "Shetty073/amazon-top-deals-python",
+   "url": "https://github.com/Shetty073/amazon-top-deals-python",
+   "stars": 32,
+   "lang": "Python",
+   "desc": "A program to find the top 5 best deals fro any given product on amazon"
+  },
+  {
+   "full_name": "scrape-do/amazon-scraper",
+   "url": "https://github.com/scrape-do/amazon-scraper",
+   "stars": 25,
+   "lang": "JavaScript",
+   "desc": "Scrape Product Data, Search Results, Ads, Reviews, and More From Amazon"
+  },
+  {
+   "full_name": "eneiromatos/TS-Walmart-Scraper",
+   "url": "https://github.com/eneiromatos/TS-Walmart-Scraper",
+   "stars": 22,
+   "lang": "TypeScript",
+   "desc": "This is the ultimate web scraping tool for extracting the most relevant data points from products on Walmart.com! this powerful scraper is built on top of the C"
+  },
+  {
+   "full_name": "jonstuebe/product-scraper",
+   "url": "https://github.com/jonstuebe/product-scraper",
+   "stars": 21,
+   "lang": "JavaScript",
+   "desc": "Node.js based scraper for ecommerce sites"
+  },
+  {
+   "full_name": "wfgsss/pinduoduo-scraper-example",
+   "url": "https://github.com/wfgsss/pinduoduo-scraper-example",
+   "stars": 15,
+   "lang": "JavaScript",
+   "desc": "Scrape product data from Pinduoduo (\u62fc\u591a\u591a) - China's largest group-buying e-commerce platform. Extract prices, sales volume, product images, and seller info."
+  },
+  {
+   "full_name": "the-ai-entrepreneur-ai-hub/tiktok-shop-scraper",
+   "url": "https://github.com/the-ai-entrepreneur-ai-hub/tiktok-shop-scraper",
+   "stars": 11,
+   "lang": null,
+   "desc": "TikTok Shop Affiliate Scraper. Find creators promoting any product with verified data (product name, price, sales, creator followers). Apify actor."
+  },
+  {
+   "full_name": "anubhab1710/LaptopsDirect-Data-Scraper",
+   "url": "https://github.com/anubhab1710/LaptopsDirect-Data-Scraper",
+   "stars": 11,
+   "lang": "Jupyter Notebook",
+   "desc": "This project is aimed to implement basic web scraping using Python's BeautifulSoup library to create an informative dataset of available products from an E-Comm"
+  },
+  {
+   "full_name": "2scraper/amazon-scraper",
+   "url": "https://github.com/2scraper/amazon-scraper",
+   "stars": 11,
+   "lang": "Python",
+   "desc": "Amazon scraper: search results, best sellers, product pages and reviews across 21 marketplaces (Playwright, Selenium, Puppeteer, or the 2Captcha Scraping Browse"
+  },
+  {
+   "full_name": "ShauryaSwarup/Ecommerce-Scraper",
+   "url": "https://github.com/ShauryaSwarup/Ecommerce-Scraper",
+   "stars": 9,
+   "lang": "Python",
+   "desc": "This project uses Scrapy to scrape Amazon & Flipkart. Spider in Python, can be easily scheduled to run daily. Scraped data incl. product details, price, image,"
+  },
+  {
+   "full_name": "abhinav26966/EcommercePriceScraper",
+   "url": "https://github.com/abhinav26966/EcommercePriceScraper",
+   "stars": 9,
+   "lang": "Python",
+   "desc": "This Web Scrapper tool extracts product prices from e-commerce websites (Amazon, Flipkart) to facilitate price comparison for users."
+  },
+  {
+   "full_name": "2scraper/tokopedia-scraper",
+   "url": "https://github.com/2scraper/tokopedia-scraper",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "Tokopedia product scraper (Playwright, Selenium, pyppeteer, or the 2Captcha Scraping Browser API over CDP) \u2014 search grids, category listings, product pages, laz"
+  },
+  {
+   "full_name": "2scraper/lidl-scraper",
+   "url": "https://github.com/2scraper/lidl-scraper",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "Open-source grocery scraper for lidl.com (Lidl US) \u2014 Playwright, Selenium & Puppeteer engines, JSON/CSV output, your own infrastructure by default, 2Captcha's p"
+  },
+  {
+   "full_name": "lastuchiha/ecommerce-scraper",
+   "url": "https://github.com/lastuchiha/ecommerce-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "This repository contains a Python script that utilizes Beautiful Soup, a popular web scraping library, to extract product details from an e-commerce website. Th"
+  },
+  {
+   "full_name": "2scraper/stockx-scraper",
+   "url": "https://github.com/2scraper/stockx-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "StockX listing and product-page scraper (Playwright, Selenium, Puppeteer, or the 2Captcha Scraping Browser API via CDP) \u2014 search and category listings, single p"
+  },
+  {
+   "full_name": "2scraper/mediamarkt-scraper",
+   "url": "https://github.com/2scraper/mediamarkt-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "MediaMarkt listing and product-page scraper (Playwright, Selenium, pyppeteer, or the 2Captcha Scraping Browser API via CDP) \u2014 JSON-LD parsing, proxies, captcha"
+  },
+  {
+   "full_name": "2scraper/shein-scraper",
+   "url": "https://github.com/2scraper/shein-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "SHEIN listing scraper (Playwright, Selenium, Puppeteer, or the 2Captcha Scraping Browser API via CDP): search, category and product pages to JSON/CSV, captcha s"
+  },
+  {
+   "full_name": "2scraper/givenchy-scraper",
+   "url": "https://github.com/2scraper/givenchy-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Givenchy Beauty product and price scraper \u2014 Playwright, Selenium, Puppeteer or the 2Captcha Scraping Browser API via CDP; tile microdata and JSON-LD parsing, ca"
+  },
+  {
+   "full_name": "2scraper/woolworths-scraper",
+   "url": "https://github.com/2scraper/woolworths-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Woolworths Online product scraper (Playwright, Selenium, pyppeteer, or the 2Captcha Scraping Browser API over CDP) \u2014 search and category listings, prices, unit"
+  },
+  {
+   "full_name": "DrProgrammerGabs/Ebay-Web-Scraper",
+   "url": "https://github.com/DrProgrammerGabs/Ebay-Web-Scraper",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Web scraper to get products from Aliexpress, Ebay and other ecommerce sites. Works with Beautiful soup"
+  },
+  {
+   "full_name": "18520339/puppeteer-ecommerce-scraper",
+   "url": "https://github.com/18520339/puppeteer-ecommerce-scraper",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": "A npm package for Client-side rendering approach to extract product data from ecommerce websites using undetectable puppeteer-cluster with pagination support"
+  },
+  {
+   "full_name": "MoinDalvs/Assignment_Web_Scraping_Emotion_Mining",
+   "url": "https://github.com/MoinDalvs/Assignment_Web_Scraping_Emotion_Mining",
+   "stars": 6,
+   "lang": "Jupyter Notebook",
+   "desc": "Extract reviews of any product from ecommerce website like amazon"
+  },
+  {
+   "full_name": "2scraper/potterybarn-scraper",
+   "url": "https://github.com/2scraper/potterybarn-scraper",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Pottery Barn listing and per-SKU product scraper \u2014 the site's own listing API (no proxy), product pages over curl, Playwright/Selenium/Puppeteer or the 2Captcha"
+  },
+  {
+   "full_name": "scraper-bank/Etsy.com-Scrapers",
+   "url": "https://github.com/scraper-bank/Etsy.com-Scrapers",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": "Production-ready Etsy web scrapers for product data, product search, and category pages. Python and Node.js with BeautifulSoup, Playwright, Selenium, Cheerio, P"
+  },
+  {
+   "full_name": "2scraper/homedepot-scraper",
+   "url": "https://github.com/2scraper/homedepot-scraper",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Home Depot listing and product scraper (HTTP, Playwright, Selenium, Puppeteer, or the 2Captcha Scraping Browser API via CDP) \u2014 Apollo-state and JSON-LD parsing,"
+  },
+  {
+   "full_name": "2scraper/bershka-scraper",
+   "url": "https://github.com/2scraper/bershka-scraper",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Bershka product scraper \u2014 Playwright, Selenium, pyppeteer or the 2Captcha Scraping Browser API via CDP; Inditex /itxrest API, one row per SKU, Akamai interstiti"
+  },
+  {
+   "full_name": "2scraper/kose-scraper",
+   "url": "https://github.com/2scraper/kose-scraper",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Maison KOS\u00c9 (maison.kose.co.jp) listing-page scraper \u2014 no browser needed: plain HTTP, or Playwright, Selenium, Puppeteer and the 2Captcha Scraping Browser API v"
+  },
+  {
+   "full_name": "aon082910/shopping-hub",
+   "url": "https://github.com/aon082910/shopping-hub",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "Cross-marketplace product aggregation: crawls AliExpress, Alibaba, DHgate, Banggood, Made-in-China and eBay, matches identical products across them, and compare"
+  }
+ ]
+}
