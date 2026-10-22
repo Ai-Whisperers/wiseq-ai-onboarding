@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track C · Document 08* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # WiseQ OSS & Integrations Catalog — researched 2026-10-22
 
 *Companion to the AI-stack blueprint (04). Raw GitHub-search data in `data/oss/` (10 topics, ~115 repos, ≥5★, non-archived). The insight up front: **the Dutch e-com tooling layer is thin — the moat is orchestration, not tools.** The searches below prove it.*
 
-## 1. Stack-gap analysis (what the research showed)
+## 1. 🧭 Stack-gap analysis (what the research showed)
 
 | Layer | Finding | Consequence |
 |---|---|---|
@@ -15,13 +23,13 @@
 | **GS1/EAN** | zint/zint (821★, barcode lib). | EAN purchasing is the business step (see §2); barcode rendering is trivial OSS. |
 | **Edtech procurement** | Zero OSS. | School collectives (below) are relationship work + B2B portal, not software. |
 
-## 2. EAN/GS1 in NL — the concrete fix for 0/230
+## 2. 🕰️ EAN/GS1 in NL — the concrete fix for 0/230
 
 - **GS1 Nederland**: single EAN ~€36 one-off; **10-pack ~€61**; annual licence fee applies for continued use. (bol's own partner docs recommend buying direct from GS1 and verifying registration in GS1's portal — resold codes often unregistered.)
 - WiseQ needs EANs for **114 components** (see bundle spine) → ~12 × 10-packs ≈ **€732 one-off + modest annual fee**. Every bundle then derives identity from component EANs — no EAN purchase needed for 25 bundles if sold only via own shop, but bol/Amazon require per-listing GTINs → buy for the ~25 bundle SKUs too (≈ €150 more).
 - Cheap vs. the manual-EAN-Excel hours Rob spends today. **First week one-liner: order GS1 10-packs, assign to the 114-component registry (CSV already delivered), propagate to Shopify variants + ChannelDock.**
 
-## 3. Integration surface (verified links)
+## 3. 💬 Integration surface (verified links)
 
 - **bol Retailer API** — OAuth2 (login.bol.com SSO), endpoints for offers/orders/shipments/product content; dlt-hub documents a Python source. Access via bol Seller Dashboard application.
 - **e-Boekhouden.nl API** — the likely bookkeeping package (NL SMB standard; Rob's transcript mentioned "boekhouden software" generically). Full REST API with webshop/CRM/bank couplings; alternatives Moneybird (API-first, dev-friendly) and Exact Online (heavier, full ERP).
@@ -30,7 +38,7 @@
 - **Thuiswinkel Waarborg** — 92-96% consumer recognition, the dominant NL trust mark; ~€500-1,000/yr ballpark for small webshops. Recommended alongside Scamadviser remediation (Trust Score 0 finding) — strongest available counter to the trust gap.
 - **School collectives** — schools increasingly buy via collectives/inkoopcollectieven (Onderwijs Inkoop Groep, Contractables etc.); WiseQ's B2B layer (staffelprijzen, Bestel op factuur) maps to this market. Getting listed in collective catalogs = volume channel; edtech procurement has no OSS, it's sales work.
 
-## 4. OSS shortlist per layer (from `data/oss/`)
+## 4. 📦 OSS shortlist per layer (from `data/oss/`)
 
 | Layer | Repo | ★ | Use |
 |---|---|---|---|
@@ -42,7 +50,7 @@
 
 *(Full lists in `data/oss/*.json`; search was GitHub API, ≥5★, non-archived, 2026-10-22.)*
 
-## 5. Additional considerations surfaced
+## 5. 🧱 Additional considerations surfaced
 
 1. **Bol drift audit** (312 vs 230): the picqer client + Retailer API makes a full offers-list export a one-day job → diff vs Shopify → kill/merge the 82 ghosts.
 2. **Moneybird vs e-Boekhouden**: if Rob's bookkeeping is up for renewal, Moneybird's API-first design makes the agent integration cleaner; otherwise stay with e-Boekhouden (couplings exist).

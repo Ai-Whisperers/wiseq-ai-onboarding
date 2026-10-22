@@ -1,3 +1,11 @@
+<div align="center">
+<img src="../../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="30">
+</div>
+
+<sub>Evidence base · Original research report</sub>
+
+---
+
 # WiseQ — Marketing, Content, Tech Stack, SEO & Competitive Landscape
 
 **Lane:** Marketing/content/tech-stack/SEO/socials/B2B/competition (parent-side recovery — dispatched subagent died to an instant HTTP 429; this report was produced by the parent session directly).
@@ -5,13 +13,13 @@
 
 ---
 
-## 1. Executive summary
+## 🎯 1. Executive summary
 
 WiseQ's marketing operation is **far more sophisticated than a 1-person home-office webshop has any right to be**. They run a 45-page SEO knowledge hub (buying guides, condition-specific pages for autism/ADHD/overstimulation, education hubs), a custom-built B2B wholesale layer with tiered pricing and invoice ordering inside the Shopify theme, and — most striking — **an AI-agents strategy**: a published `agents.md` (LLM-readable store manual with model comparison tables and anti-hallucination corrections), an `agentic sitemap`, and a live **Universal Commerce Protocol (UCP) discovery endpoint with an MCP shopping server**. They are actively positioning for a world where AI shopping assistants choose retailers on behalf of parents. Gaps: social presence is thin (Facebook 1.6K, niche Instagram), review volume is tiny (25 on Trustpilot), and no email ESP or review app is detectable in the stack.
 
 ---
 
-## 2. Content marketing & SEO posture
+## 🏛️ 2. Content marketing & SEO posture
 
 ### Blog ("nieuws") — 12 articles
 
@@ -50,7 +58,7 @@ Beyond utility pages, a deliberate **topic-cluster architecture**:
 - In "beste kinderkoptelefoon" searches, WiseQ does not yet surface on page 1 — the top-10 listicles (babyplus.nl, productadviseurs.nl, oudersvannu.nl, babymelk.com) dominate. **The listicle/PR gap is their #1 SEO weakness**: they own the long-tail (autism/ADHD/schools) but not the head terms, and they're absent from the review sites parents actually consult.
 - Homepage logo wall "Vertrouwd door klanten en partners" (Canon, bol, Amazon, MediaMarkt, PhoneHouse, Vodafone, Koninklijk Paleis Amsterdam) — near-certainly **marketplace/supplier/compatibility logos rather than customer logos**; as social proof it's decorative, not verifiable.
 
-## 3. AI-agent readiness (the standout finding)
+## 🌐 3. AI-agent readiness (the standout finding)
 
 | Artifact | Status | Evidence |
 |---|--- |---|
@@ -63,7 +71,7 @@ The agents.md includes **explicit anti-hallucination corrections** ("the Kids AN
 
 **Implication:** they are already invested in agentic commerce before most NL retailers know it exists. Any AI/automation pitch should build ON this (e.g., agent-side analytics, UCP traffic monitoring, structured-data QA), not start from scratch.
 
-## 4. Tech stack (verified from page source)
+## 📅 4. Tech stack (verified from page source)
 
 | Layer | Finding |
 |---|---|
@@ -78,14 +86,14 @@ The agents.md includes **explicit anti-hallucination corrections** ("the Kids AN
 | AI images | Confirmed: CDN filenames `ChatGPT_Image_18_mei_2026…` and `Gemini_Generated_Image_…` (hero + category images) |
 | Socials | facebook.com/wiseq.wireless (1.6K), instagram.com/wiseq.kidsheadphones (niche handle) |
 
-## 5. B2B/wholesale angle (verified)
+## 📈 5. B2B/wholesale angle (verified)
 
 - Dedicated flow: Zakelijke-klant page + "Proefexemplaar aanvragen" (free sample) + staffel pricing + invoice ordering — all custom theme work.
 - Product types in catalog: `Schoolbestelling` (school order), `Laptopkar` (laptop cart, 3 products) — physical goods aimed at classrooms.
 - Education landing pages (see §2) + educatheek.nl reselling (see RESEARCH_MARKETPLACES.md §5).
 - The theme experiment name "B2B meetbaar 17-10" says it directly: **B2B conversion is what they're actively optimizing right now** (October 2026).
 
-## 6. Competitive landscape (snapshot)
+## 🧭 6. Competitive landscape (snapshot)
 
 | Competitor type | Players found | WiseQ position |
 |---|---|---|
@@ -95,7 +103,7 @@ The agents.md includes **explicit anti-hallucination corrections** ("the Kids AN
 | Review/listicle gatekeepers | babyplus.nl, productadviseurs.nl, oudersvannu.nl, babymelk.com | **WiseQ absent** — the head-term SEO battle is lost to content affiliates for now |
 | Platform own-listings | bol.com/Amazon generic kids headphones | Price + review volume wins there; WiseQ's 9.2 bol score (42 reviews) is decent but thin |
 
-## 7. Synthesis — what this means for the AI/automation engagement
+## 🔗 7. Synthesis — what this means for the AI/automation engagement
 
 1. **They are already AI-forward** (agents.md, UCP/MCP, AI-generated imagery, experiment-versioned theme). The pitch is not "introduce AI" but "operationalize what you've started": UCP/agent traffic analytics, AI-image consistency passes, structured-data QA, agents.md freshness automation.
 2. **The marketing gaps are classic scale-up gaps, all automatable**: no ESP (newsletter flows, abandoned-cart, review requests unbuilt), no review app, absent from listicles (digital-PR outreach is agent-automatable), thin socials.

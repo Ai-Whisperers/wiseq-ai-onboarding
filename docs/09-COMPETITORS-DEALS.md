@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track C · Document 09* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # WiseQ Competitive Landscape & Deal-Model Research — 2026-10-22
 
 *Third research wave: who WiseQ really competes with, how comparable AI-automation engagements are priced, and the tooling gaps confirmed by OSS search. Sources cited per section.*
 
-## 1. The real competitor map (not just headphone brands)
+## 1. 🧭 The real competitor map (not just headphone brands)
 
 WiseQ's fight is on **three fronts**, and the research shows each has a different leader:
 
@@ -23,7 +31,7 @@ WiseQ's fight is on **three fronts**, and the research shows each has a differen
 **Front C — the trust battlefield:**
 Alpine has decades of brand trust; iClever has Amazon volume. WiseQ's levers: price (€19-28), agentic B2B UX, and the review engine + Thuiswinkel Waarborg plan (doc 08) to close the credibility gap.
 
-## 2. How similar deals are structured (the pricing research)
+## 2. 🕰️ How similar deals are structured (the pricing research)
 
 What agencies charge for comparable work in 2026:
 
@@ -37,13 +45,13 @@ What agencies charge for comparable work in 2026:
 
 **Recommended deal shape for WiseQ (from the research):** paid pilot ($3-5k: bundle spine + EAN fix + bol drift report + review engine live) → retainer (€2-4k/mo: orchestration ops + content + outreach) with **outcome components** (per school-order processed, per review captured). This matches the market's proven tiers while our cost basis (Hermes self-hosted, agent labor) runs 50-70% gross margin per the agency-economics research.
 
-## 3. OSS wave 2 — the gaps that remain gaps
+## 3. 💬 OSS wave 2 — the gaps that remain gaps
 
 Six more GitHub topics searched (data in `data/oss/`): order-to-cash (28 repos, top 285★ — reference apps, no production-ready O2C), email automation (**BillionMail 15.9k★** — self-hosted, fixes the no-ESP finding), invoice parsing (0 repos ≥5★ → UBL/e-boekhouden parsing is custom agent work), product matching (0 repos → the bundle-spine matcher stays proprietary), Shopify CLI/theme (healthy), price intelligence (3 thin repos).
 
 **Net insight:** every layer WiseQ needs either (a) doesn't exist as OSS → we build it thin and own it, or (b) exists as official API → we integrate it. Combined with wave 1 (doc 08): **the WiseQ stack has no installable competitor — which is precisely the moat we're selling.**
 
-## 4. What WiseQ could do — the consolidated opportunity list
+## 4. 📦 What WiseQ could do — the consolidated opportunity list
 
 New opportunities this research adds to the backlog:
 
@@ -54,6 +62,6 @@ New opportunities this research adds to the backlog:
 5. **iClever counter-positioning on Amazon.nl**: their US strength = their EU complacency; refreshed listings (title/bullets/A+ content) + review velocity can win the .nl search shelf.
 6. **Heutink counter-strategy**: don't out-catalog — out-deliver: 24h class-set delivery, invoice terms, agentic reordering (UCP endpoint lets school procurement agents reorder automatically — Heutink can't).
 
-## 5. Deal-prep artifacts ready to send
+## 5. 🧱 Deal-prep artifacts ready to send
 
 Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €732), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.

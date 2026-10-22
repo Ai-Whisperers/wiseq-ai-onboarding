@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track C · Document 10* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # WiseQ OSS Catalog — 31 topics · 100 curated repos
 
 *GitHub Search API, 2026-10-22, ≥5★, non-archived, junk-filtered, deduped across topics (raw: `data/oss/`, 31 files). Assigned to the stack layers of the AI blueprint (doc 04). Adoption rules: same as doc 08 §1 — official API first, OSS second, custom thin build third.*
 
-## The adopted additions (beyond doc 08)
+## ⭐ The adopted additions (beyond doc 08)
 
 | Layer | Repo | ★ | Why |
 |---|---|---|---|

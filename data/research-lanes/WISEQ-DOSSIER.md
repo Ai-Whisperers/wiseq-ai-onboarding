@@ -1,3 +1,11 @@
+<div align="center">
+<img src="../../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="30">
+</div>
+
+<sub>Evidence base · Original research report</sub>
+
+---
+
 # WiseQ — Consolidated Research Dossier
 
 **Date:** 2026-10-21 · **Target:** https://www.wiseq.nl (Wiseq B.V., KVK 84801964, Grootebroek NL)
