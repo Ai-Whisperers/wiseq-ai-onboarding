@@ -65,3 +65,15 @@ With read-only access (later): ChannelDock + 5X joins, live stock propagation, m
 ## 5. 🧱 Why this pattern works
 
 The PY operation forced us to build retailer-grade automation with zero budget and zero legacy — the same constraints as WiseQ's home-office operation, one person, many channels. Everything was designed agent-first: every component speaks API/CLI, every decision is logged, every data leak (the 0/230 EAN lesson) becomes a structural rule instead of a cleanup project. WiseQ gets the benefit of that discipline without paying for the scar tissue.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | Where each transferred component lands |
+| **[Hermes Jev Aiw Reuse](14-HERMES-JEV-AIW-REUSE.md)** | The full asset inventory behind this transfer |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The WiseQ problems these components solve |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

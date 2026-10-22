@@ -95,3 +95,15 @@ open index.html            # or: python3 -m http.server 8000
 - **Not a pitch for a redesign.** WiseQ did not ask for a new visual identity, and this doc does not propose one. These are *demonstrations of craft* — evidence of what the team can ship.
 - **Not wireframes.** Every concept is production-quality HTML/CSS/JS against the real catalog.
 - **Not committed work.** Nothing here is deployed, and nothing here overrides the live site. If WiseQ likes one, it becomes a Phase-3 conversation with its own scope and price — never a bundled extra.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | The stack these concepts plug into |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | Why the storefront is a backlog item |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The catalog and brand these were built from |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

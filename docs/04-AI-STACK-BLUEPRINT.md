@@ -53,7 +53,7 @@
 | **Name** | Foundation | Kill the 4-hour mornings | Revenue engines | Compounding advantages |
 | **Goal** | Connect, read, shadow | Automate the painful path | Grow | Defend & extend |
 | **Writes?** | **No — read-only** | Yes, gated | Yes, gated | Yes, gated |
-| **Success test** | Dashboard live, EAN registry v1 | Cycle time 4h → <15min | 25 → 250+ reviews | UCP traffic + new segments |
+| **Success test** | Dashboard live, EAN registry v1 | Cycle time 4h → <15min | Invitation engine live + TrustScore held ≥4.4 | UCP traffic + new segments |
 
 **Every phase is additive.** Phase 0 writes nothing. Phase 1 adds one pipeline. If a phase underperforms, you stop — and keep everything that already works.
 
@@ -142,3 +142,16 @@ Also in this phase:
 | **GDPR discipline** | B2B role-address outreach under legitimate interest; named-person emails need a lawful basis; unsubscribe in every send |
 | **Kill switch** | Every automation is a cron job or webhook that can be paused in one command |
 | **Ownership** | WiseQ owns the repository, the data, and the credentials. We build inside your estate, not ours. |
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | The scored backlog this blueprint is built from |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | CI/CD, storage and SLOs behind the stack |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | The concrete MCP installs, per operation |
+| **[Site Concepts](17-SITE-CONCEPTS.md)** | Three working site concepts built against the real catalog |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

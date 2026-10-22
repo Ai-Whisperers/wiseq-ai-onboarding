@@ -194,3 +194,15 @@ Document near-misses: (a) the OSS-catalog build bug (assert-caught); (b) the Fla
 - **PY own-importer registration in phase 0-1** (hat 23): courier consignment covers it until ~Gs. 40M/mo volume.
 - **Trademark now** (hat 36): name the Commerce-OS line when client #2 signs; not before.
 - **Guaraní TTS voice** (hat 21 adjacent): interesting, not ROI-positive yet; revisit at 500 orders/mo.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Dev Team Hats](16-DEV-TEAM-HATS.md)** | The same treatment from the build team's side |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What the 24-month arc proposes |
+| **[Next Steps](06-NEXT-STEPS.md)** | The decisions the hats actually change |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
