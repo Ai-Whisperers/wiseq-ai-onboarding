@@ -1,0 +1,202 @@
+{
+ "query": "order+management+ecommerce",
+ "total_count": 5285,
+ "items": [
+  {
+   "full_name": "kaloraat/react-node-ecommerce",
+   "url": "https://github.com/kaloraat/react-node-ecommerce",
+   "stars": 285,
+   "lang": "JavaScript",
+   "desc": "React Node Ecommerce with Paypal and Credit Card payments with Admin Order Management System"
+  },
+  {
+   "full_name": "superjack2050/1688-cli",
+   "url": "https://github.com/superjack2050/1688-cli",
+   "stars": 119,
+   "lang": "TypeScript",
+   "desc": "1688 CLI is an AI-agent-friendly command-line tool for 1688 sourcing, product research, supplier evaluation, procurement Inquire, and order management.helping d"
+  },
+  {
+   "full_name": "ZonCon/Ecommerce-Retronight-Android",
+   "url": "https://github.com/ZonCon/Ecommerce-Retronight-Android",
+   "stars": 60,
+   "lang": "Java",
+   "desc": "Native Android Application for Ecommerce (online shopping). Features - Product Catalogue Builder, Product Categories & Product Items, Secure Shopping Cart, Paym"
+  },
+  {
+   "full_name": "Mohamed-Hamdy/microservices-ecommerce-system",
+   "url": "https://github.com/Mohamed-Hamdy/microservices-ecommerce-system",
+   "stars": 54,
+   "lang": "Java",
+   "desc": "Microservices-based eCommerce system built with Spring Boot. This project follows a modular architecture with independent services for user management, product"
+  },
+  {
+   "full_name": "AbdeIkader/eCommerce-Backend",
+   "url": "https://github.com/AbdeIkader/eCommerce-Backend",
+   "stars": 49,
+   "lang": "JavaScript",
+   "desc": "The E-Commerce Backend is a robust Node.js application utilizing Express.js and MongoDB. It enables seamless online shopping experiences with authentication, pr"
+  },
+  {
+   "full_name": "TranHuuDat2004/BrickShop",
+   "url": "https://github.com/TranHuuDat2004/BrickShop",
+   "stars": 45,
+   "lang": "CSS",
+   "desc": "Engineered an e-commerce hub for building block fans (Qman, Keeppley, LEGO). Key features include seamless product browsing, secure checkout, order management,"
+  },
+  {
+   "full_name": "shakti177/uomo-ecommerce-website-reactjs",
+   "url": "https://github.com/shakti177/uomo-ecommerce-website-reactjs",
+   "stars": 39,
+   "lang": "JavaScript",
+   "desc": "Discover Uomo Ecommerce, where sleek design meets seamless functionality. Powered by ReactJS, React Router DOM, Material UI, Redux Toolkit, and SwiperJS, our si"
+  },
+  {
+   "full_name": "lyes-mersel/megashop",
+   "url": "https://github.com/lyes-mersel/megashop",
+   "stars": 33,
+   "lang": "TypeScript",
+   "desc": "A comprehensive e-commerce platform featuring a multi-vendor marketplace, chatbot support, order tracking, advanced analytics, and full customer, vendor, and ad"
+  },
+  {
+   "full_name": "naemazam/Ecommerce-WebApp",
+   "url": "https://github.com/naemazam/Ecommerce-WebApp",
+   "stars": 31,
+   "lang": "HTML",
+   "desc": "E-Commerce site project in Python Django focuses mainly on dealing with online shopping, and order management"
+  },
+  {
+   "full_name": "Cryptoaj-hack/DFDTOKEN",
+   "url": "https://github.com/Cryptoaj-hack/DFDTOKEN",
+   "stars": 31,
+   "lang": null,
+   "desc": "Decentralized Finance (DeFi) Development Services & Solutions Eliminate the role of a middleman by availing decentralized finance (DEFI) development services &"
+  },
+  {
+   "full_name": "Zwernemann/magento2-withdrawl",
+   "url": "https://github.com/Zwernemann/magento2-withdrawl",
+   "stars": 30,
+   "lang": "PHP",
+   "desc": "Magento 2 module providing a compliant EU withdrawal button required from June 19, 2026 (\u00a7356a BGB / Directive (EU) 2023/2673). Enables customers and guests to"
+  },
+  {
+   "full_name": "SajaAbdullah/Cake-Shop-Website-With-Admin-Panel",
+   "url": "https://github.com/SajaAbdullah/Cake-Shop-Website-With-Admin-Panel",
+   "stars": 26,
+   "lang": "JavaScript",
+   "desc": "Ecommerce website for cake shop that enable users to design their own cakes and order it online. the website has admin control panel for management activates. U"
+  },
+  {
+   "full_name": "mvillarrealb/order-management-system",
+   "url": "https://github.com/mvillarrealb/order-management-system",
+   "stars": 25,
+   "lang": "TypeScript",
+   "desc": "Ecommerce demo microservice platform, a proof of concept for microservices architecture"
+  },
+  {
+   "full_name": "ptibogxiv/doliconnect",
+   "url": "https://github.com/ptibogxiv/doliconnect",
+   "stars": 25,
+   "lang": "JavaScript",
+   "desc": "This plugin will interface your Dolibarr within a customer interface in WordPress"
+  },
+  {
+   "full_name": "tomlin7/ecommerce-chatbot",
+   "url": "https://github.com/tomlin7/ecommerce-chatbot",
+   "stars": 24,
+   "lang": "TypeScript",
+   "desc": "E-commerce platform powered by agents with vector search, recommendations, order/cart management capabilities."
+  },
+  {
+   "full_name": "timothyjacque/oshop",
+   "url": "https://github.com/timothyjacque/oshop",
+   "stars": 20,
+   "lang": "TypeScript",
+   "desc": "Online organic eCommerce website using Angular and Bootstrap. Includes sliding carousel, font awesome, bootstrap tabs, dark overlay of images, angular material"
+  },
+  {
+   "full_name": "MAGESH-K21/E-Cafe-Management-System-Web-Application",
+   "url": "https://github.com/MAGESH-K21/E-Cafe-Management-System-Web-Application",
+   "stars": 20,
+   "lang": "PHP",
+   "desc": "SaiCafe is a Online canteen food ordering and management system based on a scenario at Sri Sairam Engineering College, Chennai. We have been observing that in m"
+  },
+  {
+   "full_name": "ArmanKhanTech/Medicomm",
+   "url": "https://github.com/ArmanKhanTech/Medicomm",
+   "stars": 20,
+   "lang": "JavaScript",
+   "desc": "Medicomm is a e-pharmacy website built with HTML, CSS, JavaScript, Node.js, Express, and Firebase. It supports medicine sales, online payments, inventory manage"
+  },
+  {
+   "full_name": "lambiengcode/flutter-ecommerce-app",
+   "url": "https://github.com/lambiengcode/flutter-ecommerce-app",
+   "stars": 19,
+   "lang": "Dart",
+   "desc": "Open-source e-commerce mobile app built with Flutter \u2014 product listings, shopping cart, checkout flow, and   order management."
+  },
+  {
+   "full_name": "s4kibs4mi/jally-commerce-bot",
+   "url": "https://github.com/s4kibs4mi/jally-commerce-bot",
+   "stars": 17,
+   "lang": "SCSS",
+   "desc": "A bot for automating order management systems on social media & messaging platforms."
+  },
+  {
+   "full_name": "Annkkitaaa/Ecommerce-RAG-Chatbot",
+   "url": "https://github.com/Annkkitaaa/Ecommerce-RAG-Chatbot",
+   "stars": 16,
+   "lang": "Python",
+   "desc": "A Retrieval-Augmented Generation (RAG) based chatbot system for e-commerce product search and order management. The system provides semantic search capabilities"
+  },
+  {
+   "full_name": "Markcus0526/mark-ecommerce-spring-boot-react-native",
+   "url": "https://github.com/Markcus0526/mark-ecommerce-spring-boot-react-native",
+   "stars": 16,
+   "lang": "Java",
+   "desc": "This Java Spring Boot e-commerce project utilizes Spring Security for authentication, Spring Data JPA for database persistence, and Maven for dependency managem"
+  },
+  {
+   "full_name": "eeshsaxena/ecommerce-mern-shophub",
+   "url": "https://github.com/eeshsaxena/ecommerce-mern-shophub",
+   "stars": 16,
+   "lang": "JavaScript",
+   "desc": "Complete E-Commerce Platform built with MERN Stack - Product catalog, shopping cart, checkout, user authentication, order management"
+  },
+  {
+   "full_name": "ZonCon/Ecommerce-Morningmist-Android",
+   "url": "https://github.com/ZonCon/Ecommerce-Morningmist-Android",
+   "stars": 15,
+   "lang": "Java",
+   "desc": "Native Android Application for Ecommerce (online shopping). Features - Product Catalogue Builder, Product Categories & Product Items, Secure Shopping Cart, Paym"
+  },
+  {
+   "full_name": "goelraghav002/plant-ecommerce",
+   "url": "https://github.com/goelraghav002/plant-ecommerce",
+   "stars": 15,
+   "lang": "JavaScript",
+   "desc": "This is a plant e-commerce website built with PHP and MySQL. The website features a catalog of plants that users can browse and purchase online. It also include"
+  },
+  {
+   "full_name": "mdasharaf07/Springboot-ecommerce",
+   "url": "https://github.com/mdasharaf07/Springboot-ecommerce",
+   "stars": 14,
+   "lang": "Java",
+   "desc": "A Spring Boot e-commerce project demonstrates how to build a real-world web application with features like authentication, product management, and order process"
+  },
+  {
+   "full_name": "iammahesh123/E-Commerce-Backend-Spring-Microservices",
+   "url": "https://github.com/iammahesh123/E-Commerce-Backend-Spring-Microservices",
+   "stars": 14,
+   "lang": "Java",
+   "desc": "This project aims to provide a scalable and modular solution for building an eCommerce platform using microservices architecture. Each microservice handles spec"
+  },
+  {
+   "full_name": "robertobirijnr/MERN-Stack-React-Node-Ecommerce-App",
+   "url": "https://github.com/robertobirijnr/MERN-Stack-React-Node-Ecommerce-App",
+   "stars": 12,
+   "lang": "JavaScript",
+   "desc": "React Node Ecommerce with Paypal and Credit Card payments with Admin Order Management System"
+  }
+ ]
+}

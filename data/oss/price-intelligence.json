@@ -1,0 +1,27 @@
+{
+ "query": "price+intelligence+competitor",
+ "total_count": 382,
+ "items": [
+  {
+   "full_name": "bodapi/e-commerce-data-acquisition-and-scraping-hub",
+   "url": "https://github.com/bodapi/e-commerce-data-acquisition-and-scraping-hub",
+   "stars": 14,
+   "lang": "Python",
+   "desc": "Enterprise-level API fusion for global e-commerce data acquisition. Professional product scraping and real-time market intelligence for Amazon, Facebook, TikTok"
+  },
+  {
+   "full_name": "padosoft/laravel-ai-price-intelligence",
+   "url": "https://github.com/padosoft/laravel-ai-price-intelligence",
+   "stars": 6,
+   "lang": "PHP",
+   "desc": "Enterprise Product Price Intelligence / Competitor Monitoring per e-commerce"
+  },
+  {
+   "full_name": "ArshZaidi/AI-Startup-MCP",
+   "url": "https://github.com/ArshZaidi/AI-Startup-MCP",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "AI-powered MCP server for startup validation, competitor analysis, pricing intelligence, and website audits using LLMs."
+  }
+ ]
+}

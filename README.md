@@ -18,6 +18,7 @@
 | [PY → WiseQ transfer](docs/07-PY-TRANSFER-WISEQ.md) | Capabilities from our Paraguay build that solve WiseQ problems — incl. the decoded **bundle spine** |
 | [Next steps](docs/06-NEXT-STEPS.md) | What we need from WiseQ to start Phase 0 |
 | [OSS & integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feeds OSS landscape, EAN fix costs (€732), NL trust marks, school collectives |
+| [Competitors & deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever/Puro/Alpine/Heutink), deal pricing benchmarks, new opportunities |
 
 ## The one-paragraph pitch
 
@@ -27,4 +28,5 @@ WiseQ already runs a remarkably modern stack (Shopify with a custom B2B layer, C
 
 - 2026-10-21: repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
 - 2026-10-22: **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved); artifacts in `data/wiseq-bundle-spine.csv` + `data/wiseq-component-registry.csv`. PY→WiseQ transfer doc added (docs/07).
+- 2026-10-22: competitors & deals research — iClever = #1 US kids-audio (Euromonitor), Alpine = NL school-oorkap A-brand, Heutink ICT = totaalleverancier incumbent; deal benchmarks (pilot $3-5k / retainer €2-4k / outcome-priced per order); OSS wave 2 confirms gaps = moat; 6 new opportunities incl. bol CPOP track.
 - 2026-10-22: OSS & integrations research — 10 GitHub topics (~115 repos) proving the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (~€732 one-off for 114 components + 25 bundles); bol Retailer API surface mapped; Thuiswinkel Waarborg + Trustpilot trust plan; school inkoopcollectieven identified as B2B channel 2.0.

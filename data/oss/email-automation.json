@@ -1,0 +1,55 @@
+{
+ "query": "email+marketing+newsletter+self-hosted",
+ "total_count": 18,
+ "items": [
+  {
+   "full_name": "Billionmail/BillionMail",
+   "url": "https://github.com/Billionmail/BillionMail",
+   "stars": 15941,
+   "lang": "Go",
+   "desc": "BillionMail gives you open-source MailServer, NewsLetter,  Email Marketing \u2014 fully self-hosted, dev-friendly, and free from monthly fees. Join the discord: http"
+  },
+  {
+   "full_name": "Notifuse/notifuse",
+   "url": "https://github.com/Notifuse/notifuse",
+   "stars": 2255,
+   "lang": "Go",
+   "desc": "Open-source, self-hosted newsletter, email marketing and transactional email platform. Visual MJML editor, Liquid templating, 7 sending providers."
+  },
+  {
+   "full_name": "mettle/sendportal",
+   "url": "https://github.com/mettle/sendportal",
+   "stars": 2179,
+   "lang": "PHP",
+   "desc": "Open-source self-hosted email marketing. Manage your own newsletters at a fraction of the cost."
+  },
+  {
+   "full_name": "Arkhe-Systems/senddock",
+   "url": "https://github.com/Arkhe-Systems/senddock",
+   "stars": 21,
+   "lang": "Go",
+   "desc": "Open-source email marketing platform. Self-hostable, API-first, built with Go and Vue."
+  },
+  {
+   "full_name": "NetSendo/NetSendo",
+   "url": "https://github.com/NetSendo/NetSendo",
+   "stars": 17,
+   "lang": "Vue",
+   "desc": "Self-hosted professional email marketing & automation platform with email, SMS, workflows, CRM, analytics and AI integrations. Built with Laravel, Vue.js and Do"
+  },
+  {
+   "full_name": "osscv/ResumeSender",
+   "url": "https://github.com/osscv/ResumeSender",
+   "stars": 16,
+   "lang": "PHP",
+   "desc": "Resume Sender is a lightweight, self-hosted bulk email engine built on PHP and MySQL. From job applications to marketing campaigns, newsletters, and cold outrea"
+  },
+  {
+   "full_name": "upstackpilot0710/email-campaign-automation-saas",
+   "url": "https://github.com/upstackpilot0710/email-campaign-automation-saas",
+   "stars": 5,
+   "lang": "TypeScript",
+   "desc": "A full-stack email marketing SaaS platform enabling businesses to create, manage, and automate email campaigns. The system includes tools for campaign schedulin"
+  }
+ ]
+}

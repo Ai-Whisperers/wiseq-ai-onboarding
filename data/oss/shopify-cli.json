@@ -1,0 +1,90 @@
+{
+ "query": "shopify+cli+theme",
+ "total_count": 146,
+ "items": [
+  {
+   "full_name": "uicrooks/shopify-theme-lab",
+   "url": "https://github.com/uicrooks/shopify-theme-lab",
+   "stars": 821,
+   "lang": "JavaScript",
+   "desc": "Shopify theme development environment using Liquid, Vue and Tailwind CSS. Built on top of Shopify CLI \ud83e\uddea"
+  },
+  {
+   "full_name": "Shopify/cli",
+   "url": "https://github.com/Shopify/cli",
+   "stars": 762,
+   "lang": "TypeScript",
+   "desc": "Build apps, themes, and hydrogen storefronts for Shopify"
+  },
+  {
+   "full_name": "jasewarner/gulp-shopify",
+   "url": "https://github.com/jasewarner/gulp-shopify",
+   "stars": 184,
+   "lang": "Liquid",
+   "desc": "Blank slate Shopify theme for Developers, packaged with Gulp.js for processing SCSS, JavaScript (ES6), images and fonts. Made to support Online Store 2.0 featur"
+  },
+  {
+   "full_name": "panoply/syncify",
+   "url": "https://github.com/panoply/syncify",
+   "stars": 149,
+   "lang": "Liquid",
+   "desc": "\ud83e\udd1d WIP ~ Shopify theme upload, download and watch development tool."
+  },
+  {
+   "full_name": "polidario/Elizabeth_Clean",
+   "url": "https://github.com/polidario/Elizabeth_Clean",
+   "stars": 115,
+   "lang": "Liquid",
+   "desc": "A clean theme project that you can use with Shopify CLI for creating Shopify themes"
+  },
+  {
+   "full_name": "TheBeyondGroup/shopkeeper",
+   "url": "https://github.com/TheBeyondGroup/shopkeeper",
+   "stars": 65,
+   "lang": "TypeScript",
+   "desc": "A CLI for managing settings and deployments of Shopify store themes."
+  },
+  {
+   "full_name": "montalvomiguelo/theme-extension-vite",
+   "url": "https://github.com/montalvomiguelo/theme-extension-vite",
+   "stars": 44,
+   "lang": "Liquid",
+   "desc": "Template for building a theme extension with Shopify CLI + Vite"
+  },
+  {
+   "full_name": "stylehatch/hatch",
+   "url": "https://github.com/stylehatch/hatch",
+   "stars": 23,
+   "lang": "Liquid",
+   "desc": "Hatch is a minimal tool to help you build Shopify Online Store 2.0 themes using the Shopify CLI"
+  },
+  {
+   "full_name": "mike-diff/webpack-shopify-cli",
+   "url": "https://github.com/mike-diff/webpack-shopify-cli",
+   "stars": 21,
+   "lang": "Liquid",
+   "desc": "Shopify Theme with Webpack and Shopify CLI"
+  },
+  {
+   "full_name": "the-couch/slater-cli",
+   "url": "https://github.com/the-couch/slater-cli",
+   "stars": 10,
+   "lang": "JavaScript",
+   "desc": "Shopify theme development toolkit."
+  },
+  {
+   "full_name": "dlerm/shopify-themecraft",
+   "url": "https://github.com/dlerm/shopify-themecraft",
+   "stars": 9,
+   "lang": "JavaScript",
+   "desc": "\ud83d\udee0\ufe0f A Shopify theme development workflow using Liquid, AlpineJS, Tailwind CSS, Vite & Shopify CLI"
+  },
+  {
+   "full_name": "FelixTellmann/shopify-cms",
+   "url": "https://github.com/FelixTellmann/shopify-cms",
+   "stars": 5,
+   "lang": "TypeScript",
+   "desc": "Use Shopify's popular theme editor to build headless React sites."
+  }
+ ]
+}
