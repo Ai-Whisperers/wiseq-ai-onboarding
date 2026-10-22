@@ -22,6 +22,7 @@
 | [OSS catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
 | [Compliance & regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71/62115/RED (2025 cyber layer), GPSR, Thuiswinkel €465/yr, cert-evidence library plan |
 | [50-hat analysis](docs/12-FIFTY-HATS.md) | 15 WiseQ + 15 PY + **20 AIW meta-layer hats** — liability, bol health, CONATEL, Commerce-OS productization, 24-month arc |
+| [Tooling & MCP installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified Hermes catalog inventory, per-op MCP install lists (Shopify/bol/e-Boekhouden/Trustpilot wrappers), PY docker-compose, week-1 checklist |
 
 ## The one-paragraph pitch
 
@@ -31,6 +32,7 @@ WiseQ already runs a remarkably modern stack (Shopify with a custom B2B layer, C
 
 - 2026-10-21: repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
 - 2026-10-22: **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved); artifacts in `data/wiseq-bundle-spine.csv` + `data/wiseq-component-registry.csv`. PY→WiseQ transfer doc added (docs/07).
+- 2026-10-22: tooling & MCP plan — live catalog audit (27 enabled / square+paypal+n8n-official available), MCP install lists both ops (P0: Shopify Admin custom app + Evolution API MCP), PY docker-compose defined, 3 thin wrapper builds queued (e-Boekhouden, bol, Trustpilot).
 - 2026-10-22: 50-hat analysis — 3 domains incl. first-ever AIW meta-layer analysis (Commerce-OS productization, case-study economics, dual-jurisdiction privacy); new grounded findings: EU Product Liability Directive (kids products), CONATEL homologation for PY Bluetooth imports; 12 actions graduate to kanban.
 - 2026-10-22: compliance map — EN 71/EN 62115/RED (incl. Aug-2025 cybersecurity act, GPS trackers in scope), GPSR responsible-person check, Thuiswinkel Waarborg costs verified (€75 + €390/yr), cert-evidence library per SKU family. Original 5 research-lane reports added under data/research-lanes/.
 - 2026-10-22: OSS catalog expanded to 31 topics / 100 curated repos by layer — adopted additions: UVdesk 19.6k★ (school-order inbox as tickets), Umami 39.5k★ (cookieless analytics), BillionMail 15.9k★ (self-hosted ESP), QuestPDF 14.2k★ (slips/labels), open-seo-mcp 6.4k★.
