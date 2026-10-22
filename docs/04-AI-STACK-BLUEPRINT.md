@@ -41,7 +41,7 @@
 | **Approval gates** | Human sign-off on invoices, POs, campaigns | Flip a config flag |
 | **Audit log** | Who / what / when / why, permanently recorded | — (append-only) |
 
-> **Runs on WiseQ's existing 24/7 office machine or a €20/mo VPS.** Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
+> **Runs wherever you choose** — on a server you own, on a dedicated server we provide, or on shared capacity we already pay for. Every option includes remote installation, updates, monitoring, and fixes. Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned. The four options are laid out in [06 · Next Steps](06-NEXT-STEPS.md#hosting-options).
 
 ---
 
@@ -122,7 +122,7 @@ Also in this phase:
 
 | Line | Cost | Notes |
 | :--- | :--- | :--- |
-| **Infrastructure** | **€0 – €20/mo** | Their existing 24/7 office machine (already paid) **or** a €20/mo VPS |
+| **Infrastructure** | **€0 – €20/mo** | Depends on the hosting option you choose: a machine you already have, a server we run for you, or shared capacity at a reduced rate. All four options detailed in [06](06-NEXT-STEPS.md#hosting-options). |
 | **AI providers** | **~€90/mo-class** | The same tier discussed in the meeting. Batch jobs on cheap models, reasoning on strong models, `--deliver-only` hooks for zero-LLM alerts |
 | **Shopify API** | €0 | Included in their existing plan |
 | **ChannelDock API** | €0 | Already in their subscription |

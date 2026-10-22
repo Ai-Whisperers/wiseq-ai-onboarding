@@ -101,6 +101,25 @@ for f in ROOT.rglob("*"):
             hits.append(f"{f.relative_to(ROOT)}: {m.group(0)[:12]}…")
 check(not hits, "no secret patterns found", f"secrets detected: {hits[:3]}")
 
+print("== 5. in-page anchor integrity")
+# Emoji and punctuation in headings make GitHub's slugger unpredictable, so anchors
+# are pinned explicitly with <a id="...">. Every in-page link must resolve to one.
+anchors = set()
+for md in ROOT.rglob("*.md"):
+    if ".git" in md.parts:
+        continue
+    anchors.update(re.findall(r'<a id="([^"]+)">', md.read_text(encoding="utf-8", errors="ignore")))
+broken_anchors = []
+for md in ROOT.rglob("*.md"):
+    if ".git" in md.parts:
+        continue
+    text = md.read_text(encoding="utf-8", errors="ignore")
+    for target in re.findall(r"\]\(#([a-z0-9][a-z0-9\-]*)\)", text, re.I):
+        if target not in anchors:
+            broken_anchors.append(f"{md.relative_to(ROOT)}->#{target}")
+check(not broken_anchors, f"all in-page anchors resolve ({len(anchors)} pinned)",
+      f"broken anchors: {broken_anchors[:5]}")
+
 print(f"\n{checks} checks run, {len(failures)} failures")
 if failures:
     print("VALIDATION FAILED")
