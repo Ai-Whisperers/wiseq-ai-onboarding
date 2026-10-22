@@ -147,6 +147,13 @@
 
 ---
 
+## 📌 In short
+
+**18 roles, each giving a verdict** — PM to Support Engineer — with flags, praise and fixes, ranked into a **top 10**. It reads as candid because it is: several hats disagree with the current plan. That disagreement is the value; a build team that only agrees is a build team that has not been asked.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

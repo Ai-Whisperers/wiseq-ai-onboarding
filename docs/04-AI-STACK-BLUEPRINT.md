@@ -104,7 +104,7 @@ Also in this phase:
 
 | # | Engine | What it does | Target |
 | :--- | :--- | :--- | :--- |
-| 1 | **Reputation engine** | Post-delivery review invitations (Trustpilot / Kiyoh); Amazon listing refresh — salvage Hero's 4.4★×45 equity, fix Unbreakable's 2.5★ listing; Scamadviser / Webshopchecker remediation | **25 → 250+ reviews** |
+| 1 | **Reputation engine** | Post-delivery review invitations (Trustpilot / Kiyoh); Amazon listing refresh — salvage Hero's 4.4★×45 equity, fix Unbreakable's 2.5★ listing; Scamadviser / Webshopchecker remediation | **Every delivered order invited; TrustScore held ≥4.4** |
 | 2 | **B2B outreach** | Campaigns on the 857-org NL contact list + whale networks; event-aware personalization (school anniversaries, jubileums — as sketched in the meeting); unsubscribe / AVG compliant | A working B2B pipeline |
 | 3 | **Content cadence** | Knowledge-hub pages + blog at scale (today ~1/month manually; architecture supports 1/week); listicle/PR outreach to the review sites owning head terms; newsletter flows (no ESP today — pick one, wire abandoned-cart + B2B nurture) | 1 → 4+ per month |
 | 4 | **Marketplace relaunch** | Amazon EU expansion via the existing seller account; price harmonization across bol / shop / Amazon from one rule sheet | One price rule sheet |
@@ -142,6 +142,13 @@ Also in this phase:
 | **GDPR discipline** | B2B role-address outreach under legitimate interest; named-person emails need a lawful basis; unsubscribe in every send |
 | **Kill switch** | Every automation is a cron job or webhook that can be paused in one command |
 | **Ownership** | WiseQ owns the repository, the data, and the credentials. We build inside your estate, not ours. |
+
+---
+
+## 📌 In short
+
+One 24/7 AI-operations layer, built on open-source [Hermes Agent](https://github.com/NousResearch/hermes-agent) plus MCP connectors, sitting **across** WiseQ's existing tools rather than replacing any of them. Every phase is additive, reversible and measurable — nothing here is a rip-and-replace, and the cheapest entry point ([doc 06](06-NEXT-STEPS.md)) costs WiseQ nothing but a few answers and a sandbox.
+
 
 ---
 

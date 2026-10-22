@@ -68,6 +68,13 @@ The PY operation forced us to build retailer-grade automation with zero budget a
 
 ---
 
+## 📌 In short
+
+We built these systems for a harder problem — a multi-branch retail operation in Paraguay with the same school-order and stock-truth table shape. **The bundle spine is the headline: 25 bundles decoded into 114 components**, which is precisely the mapping WiseQ does by hand today. Transfer is a capability, not a codebase dump; what moves is the pattern plus the connectors.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

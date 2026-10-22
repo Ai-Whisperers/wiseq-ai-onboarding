@@ -112,6 +112,13 @@ Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for 
 
 ---
 
+## 📌 In short
+
+A **verified** inventory against the live Hermes catalog, with per-operation install lists (Shopify, bol, e-Boekhouden, Trustpilot) and an explicit list of what we will **not** install. The week-1 checklist is deliberately small: connect, read, summarise, ask a human before anything writes. No MCP gets production credentials in the first week.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

@@ -58,7 +58,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 | **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry (€733/yr recurring) | 230/230 registered |
 | **77 bundle-products (33%) have no component map** | Same audit — component→bundle mapping lives in human memory | Decoded **bundle spine**: 114 component SKUs + 25 bundles, 0 unresolved | Fully decomposed |
 | **Purchase data assembled by hand in Excel** | 6-month rolling average per EAN, one costly error/year | Nightly purchase-intelligence job | Daily, automatic, correct |
-| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | 25 → 250+ |
+| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | 100% of orders invited; TrustScore held ≥4.4 |
 | **Scamadviser "Trust Score 0" flag** | Algorithmic remediation pending | Trust-profile remediation | Flag cleared |
 
 ---
@@ -104,7 +104,8 @@ Seventeen documents, four tracks. Each is self-contained and independently verif
 | **13** | [Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified catalog inventory, per-op MCP install lists, docker-compose, week-1 checklist |
 | **15** | [DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades, storage & DB architecture, SLOs, phased masterpiece checklist |
 | **16** | [Dev Team Hats](docs/16-DEV-TEAM-HATS.md) | **18-role full-team audit** — PM to Support Engineer; each flags/praises/fixes; top-10 ranked improvements |
-| **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
+| **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine. **A 30-minute-each speed sample, not a showcase** — and it lists the five inputs a real build needs |
+| **18** | [Terms, Ownership & Continuity](docs/18-TERMS-OWNERSHIP-CONTINUITY.md) | **The pre-signature answers** — who owns what, the Art. 28 DPA, the exit plan, and an honest answer to "what if you're unavailable?" |
 
 ---
 
@@ -168,7 +169,7 @@ Read-only dashboard   recombination         Content cadence        Supplier
 
 ## 🎨 Built, not described
 
-*[Site Concept Showcase](docs/17-SITE-CONCEPTS.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Proof that this team ships working software, not slideware.
+*[Site Concept Showcase](docs/17-SITE-CONCEPTS.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Each took about 30 minutes: it is a **speed sample, not a showcase** — evidence of the quality floor and the pace, plus an honest list of the five inputs we need before a real storefront is worth building.
 
 <table>
 <tr>

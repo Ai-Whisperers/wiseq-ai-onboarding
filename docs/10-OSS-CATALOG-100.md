@@ -168,6 +168,13 @@
 
 ---
 
+## 📌 In short
+
+**420 repositories found, 100 curated** across 31 topics and 9 stack layers — each assigned to the layer of the blueprint in [doc 04](04-AI-STACK-BLUEPRINT.md) that would adopt it. Four are already named for Phase 1 (UVdesk, Umami, BillionMail, QuestPDF). The adoption rule is deliberately conservative: **official API first, proven OSS second, custom thin build only as a last resort** — the catalog is a menu, not a shopping list.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

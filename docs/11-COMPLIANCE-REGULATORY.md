@@ -95,6 +95,13 @@ would collapse on inspection.
 
 ---
 
+## 📌 In short
+
+Compliance here is **cheap if done early and expensive if discovered late**. The corrections that matter: **GS1 is €733/yr recurring**, and **Thuiswinkel is €983–€1,759 in year 1** depending on turnover tier, not the €465 previously quoted — WiseQ's own turnover band settles it. The most time-sensitive item is **EU AI Act Article 4**: it has applied since February 2025 and supervision began in **August 2026**, making it *now*, not future. It prescribes no course or certificate — an internal literacy register satisfies it in a few hours.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

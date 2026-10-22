@@ -48,6 +48,13 @@ WiseQ is an ideal Phase-0 client: process pain is concrete and measurable (4h mo
 
 ---
 
+## 📌 In short
+
+The first session confirmed the thesis and produced the numbers behind it: **school orders cost ~4 hours of manual work**, bundle stock is re-tracked by hand in Excel, and the site under-performs its traffic. Everything above labelled *our read* is inference, not a commitment by WiseQ — the raw notes are the record.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |
