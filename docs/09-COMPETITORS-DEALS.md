@@ -43,7 +43,17 @@ What agencies charge for comparable work in 2026:
 | Outcome-based pricing | Pay per resolved ticket / per order processed (Sierra, Nevermined model write-ups) | **The differentiator for our pitch**: price per school-order processed or per listing reconciled — aligns incentives, low risk for Rob |
 | bol certified partners | bol's own CPOP program lists integrators (webwinkelfacturen.nl for e-boekhouden coupling etc.) | Route to become a bol-certified integrator later — credibility + lead source |
 
-**Recommended deal shape for WiseQ (from the research):** paid pilot ($3-5k: bundle spine + EAN fix + bol drift report + review engine live) → retainer (€2-4k/mo: orchestration ops + content + outreach) with **outcome components** (per school-order processed, per review captured). This matches the market's proven tiers while our cost basis (Hermes self-hosted, agent labor) runs 50-70% gross margin per the agency-economics research.
+**Recommended deal shape for WiseQ:** a **paid, tightly-scoped first phase** (bundle spine + EAN fix + bol drift report + review engine live) → an ongoing-ops arrangement with **outcome components** (per school-order processed, per listing reconciled) that align incentives and keep Rob's downside low. Exact figures are agreed in writing before any work starts — this document deliberately does not publish a price card.
+
+> **Two corrections to an earlier draft of this document**, both found by re-checking the
+> underlying research:
+> 1. The **"$6,000–8,000/mo Shopify-specialist median"** is the *enterprise/full-service*
+>    band. It does not describe a 230-product SMB operation, and quoting it would invite
+>    the obvious objection. The €2,000–5,000/mo band for Dutch agencies is the relevant
+>    comparison.
+> 2. A **"50–70% gross margin"** figure was cited here without a source. It has been
+>    removed rather than softened — an unsourced margin claim in a document the client
+>    reads is a liability, not a selling point.
 
 ## 3. 💬 OSS wave 2 — the gaps that remain gaps
 
@@ -65,6 +75,13 @@ New opportunities this research adds to the backlog:
 ## 5. 🧱 Deal-prep artifacts ready to send
 
 Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €733/yr), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.
+
+---
+
+## 📌 In short
+
+Four real competitors serve Dutch schools — iClever, Puro, Alpine, Heutink — and we now hold **priced** benchmarks for how they package it. The opportunity is not to out-feature them but to make WiseQ the **best-operated** specialist retailer in a small, relationship-driven market, where procurement relationships still convert. Deal shape is benchmarked, so the next action is a conversation, not more research.
+
 
 ---
 

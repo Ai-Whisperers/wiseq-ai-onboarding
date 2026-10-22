@@ -64,6 +64,13 @@
 
 ---
 
+## 📌 In short
+
+The NL e-commerce tooling layer is **thin at the edges and absent in the middle** — Bol, Shopify, GS1 and GS1 XML are covered by proprietary incumbents, but nothing coordinates them. That is the moat: orchestration is the gap everyone else ignores. Two corrections landed here on 2026-10-22: **ChannelDock and 5X both do have APIs** (ChannelDock's REST API + webhooks are plan-gated from €45/mo), and the **GS1 €733/yr is recurring, not one-off**.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

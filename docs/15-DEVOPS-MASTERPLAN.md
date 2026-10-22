@@ -47,7 +47,12 @@
 | Bundle spine / registry (reference) | git CSV | git CSV (SSOT) + DB mirror at deploy |
 | Lead-gen contacts (GDPR) | private workspace | **never git** — encrypted store (BWS-adjacent) + access log |
 | Images/assets | none yet | Cloudflare R2 (already have creds) — git-free |
-| Backups | none | restic nightly → R2, 30-day retention |
+| Backups | none | restic nightly → R2, 30-day retention, **with a scheduled monthly restore test** |
+
+> ⚠ **A backup nobody has restored is a hope, not a control.** The monthly restore job
+> pulls a snapshot back into a scratch directory, verifies integrity and row counts, and
+> records the result. It is part of the deliverable, not an optional extra — if we cannot
+> prove a restore works, we do not claim you can recover.
 
 **The DB plan (phase 1):** one Postgres (Neon free tier — MCP already enabled) per operation: `wiseq` (products/offers/prices/orders-cache/reviews) and `pydrop` (catalog/prices/suppliers/orders/cash). SQLite for local dev, Postgres in prod — same schema, migrations via a `migrations/` dir + `alembic`-style numbering, tested in CI (migration up/down smoke — saskia lesson). Nightly ETL: snapshots → `prices` table; the git repo then carries only the doc + schema, not the history.
 
@@ -91,6 +96,7 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - [ ] Artifact jobs (spine/drift-report) + ghcr image for commerce-os wrappers
 - [ ] Branch protection + PR flow at first collaborator
 - [ ] restic → R2 backups, 30d retention
+- [ ] **Monthly restore test** — pull a snapshot back, verify integrity + row counts, record the result
 
 **Phase 2 — scale:**
 - [ ] DuckDB analytics + Monday report automation
@@ -104,6 +110,13 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - **Terraform** for 3 cloud resources — config-as-code in the compose + Neon dashboards; revisit at 10+ resources.
 - **Monorepo merge** — the two repos serve different audiences (client-facing vs internal); cross-repo pointers (already in place) beat Lerna complexity.
 - **Self-hosted GitLab/Gitea** — GitHub Actions free on public repos is the whole reason the pipeline costs €0.
+
+---
+
+## 📌 In short
+
+Production-readiness, decided in advance: CI hardening (zizmor, gitleaks, branch protection), **Neon + DuckDB + R2** for storage, and explicit SLOs. The point of writing it before the build is that **operability is a design input, not an afterthought** — and the checklist that falls out of it is what Phase 1 is measured against.
+
 
 ---
 

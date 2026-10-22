@@ -1,0 +1,63 @@
+name: pages
+
+# Publish the proposal landing page to GitHub Pages.
+#
+# The site is assembled from three already-tracked directories so there is no
+# generated source to drift:
+#   site/index.html      the landing page (committed, hand-written)
+#   assets/              brand banner + demo screenshots
+#   site-demos/          the three working concepts
+#
+# We assemble rather than copy so the repo keeps one canonical copy of every
+# asset and the deployed site can never drift from it.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - site/**
+      - assets/**
+      - site-demos/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. Without this a second push cancels the first
+# mid-upload and can leave Pages serving a half-written directory.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp site/index.html _site/index.html
+          cp -r assets  _site/assets
+          cp -r site-demos _site/site-demos
+          echo "published bytes: $(du -sh _site | cut -f1)"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

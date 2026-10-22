@@ -54,14 +54,45 @@
 
 | # | Automation | Impact | Effort | Notes |
 | :---: | :--- | :--- | :--- | :--- |
-| 🔥 14 | **Review-invitation engine** — post-delivery, shop + bol | **25 → 250+ reviews** | Low | Fastest measurable win |
+| 🔥 14 | **Review-invitation engine** — post-delivery, shop + bol | **100% of delivered orders invited; TrustScore held ≥4.4** | Low | Fastest measurable win — see the honesty note below |
 | 15 | **Amazon listing refresh + compliance blocks** | Salvage 4.4★ equity | Low | Hero 4.4★×45 · Unbreakable 2.5★ |
 | 16 | **Scamadviser / Webshopchecker remediation** | Conversion | Low | Clears the Trust Score 0 flag |
 | 17 | **B2B campaign engine** on lead-gen data (event-aware personalization) | New pipeline | Med | 857 verified-org list |
+
 | 18 | **Newsletter + abandoned-cart flows** (ESP setup) | Recovered revenue | Low | No ESP today — pick one |
 | 19 | **Content cadence agent** (hub pages, listicle outreach) | Organic growth | Med | ~1/month → 1/week |
 | 20 | **Competitor + supplier price monitoring** | Margin defense | Med | |
 | 21 | **UCP / agent traffic analytics** | Extend the agentic lead | Low | Most NL retailers have nothing here |
+
+### 📌 Why the review target is worded the way it is (read this before quoting a number)
+
+An earlier draft of this repo promised **"25 → 250+ reviews."** We removed that number,
+on purpose, because **we cannot deliver it.**
+
+Three things had to be true for it to be honest, and none of them are:
+
+1. **Reviews are not ours to produce.** We control the *invitation* — and the
+   Trustpilot Invitation API is free and unlimited, so sending every invitation costs
+   €0 and is not capped by any paid tier. But a review only exists if a **buyer chooses
+   to write one.** Review response rates are low and we do not control them. Promising
+   250 reviews/month is promising someone else's behaviour.
+2. **The paid tiers do not buy volume.** Trustpilot's plans (Starter $99, Plus $319,
+   Premium $799 per domain/month, on a **12-month commitment**) cap reviews
+   *collected*, not invitations *sent*. Buying a bigger plan does not manufacture reviews.
+3. **A bad review costs more than good ones gain.** TrustScore weights recent reviews
+   most heavily. On a 25-review base: 20 five-star + 5 four-star = **4.65** (comfortably
+   4-star). But 23 five-star + **2 one-star = 4.40** — two angry reviews drop a whole
+   band. For a brand selling GPS watches and headphones to children, one bad review is
+   a realistic event.
+
+**So we promise what we actually control:** *every delivered order is invited, and the
+TrustScore is defended.* Invitation coverage is a hard number we can guarantee and audit.
+TrustScore ≥4.4 is a number we can actively protect by routing complaints before they
+become one-star reviews — which is the more valuable thing anyway.
+
+> If anyone quotes "250+ reviews" from an earlier copy of this document, **that figure is
+> withdrawn.** Ask us for the current target rather than the old one.
+
 
 ---
 
@@ -85,6 +116,13 @@
 | **Exploratory** | 4 | Evaluated in Phase 3 or as separate product lines |
 
 **The lowest-hanging fruit is #14 (review invitations) and #3 (purchase intelligence) — both `Low` effort, both immediately measurable.** They're what we'd build in week 1 if you asked for a quick win before the bigger pipeline work lands.
+
+---
+
+## 📌 In short
+
+**Nine opportunities, three that matter this quarter.** The order is not arbitrary: item 8 (EAN registry) unblocks items 1–3, so the €733/yr GS1 spend is both the highest-ROI line item *and* the dependency. School-order intake (from ~4 hours to minutes) is the headline; review generation and reputation monitoring run continuously behind it at near-zero marginal cost.
+
 
 ---
 

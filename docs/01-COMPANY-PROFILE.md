@@ -71,6 +71,13 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 
 ---
 
+## 📌 In short
+
+WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs, Grootebroek) that already owns more modern infrastructure than most of its Dutch competitors — Shopify with a custom B2B layer, ChannelDock for fulfilment, agentic-commerce endpoints. The verified gaps are narrow and specific: **zero EAN codes on 230 SKUs**, and process work happening in Excel and the inbox. That combination is why we are proposing an *orchestration layer*, not a replatform.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |

@@ -197,6 +197,13 @@ Document near-misses: (a) the OSS-catalog build bug (assert-caught); (b) the Fla
 
 ---
 
+## 📌 In short
+
+**50 structured views, 20 of them from AI Whisperers' own perspective** — including our liability, our capacity, and whether this engagement is good for *us*. The hats change the plan in specific ways: bundle scope, the 24-month arc, and productising the method rather than selling hours. Discards are listed explicitly so the argument has a floor, not a ceiling.
+
+
+---
+
 ## Continue reading
 
 | Next | Why it matters |
