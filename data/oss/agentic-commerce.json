@@ -1,0 +1,209 @@
+{
+ "query": "agentic+commerce+protocol",
+ "total_count": 425,
+ "items": [
+  {
+   "full_name": "alsk1992/CloddsBot",
+   "url": "https://github.com/alsk1992/CloddsBot",
+   "stars": 2990,
+   "lang": "TypeScript",
+   "desc": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans    for"
+  },
+  {
+   "full_name": "agentic-commerce-protocol/agentic-commerce-protocol",
+   "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+   "stars": 1585,
+   "lang": "JavaScript",
+   "desc": "The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connecting buyers, their AI agents, and businesses to complete purchases seaml"
+  },
+  {
+   "full_name": "0xNyk/awesome-agent-cortex",
+   "url": "https://github.com/0xNyk/awesome-agent-cortex",
+   "stars": 226,
+   "lang": "JavaScript",
+   "desc": "Curated map of AI agent frameworks, protocols, runtimes, skills, memory, identity, security, evaluation, and commerce."
+  },
+  {
+   "full_name": "visa/trusted-agent-protocol",
+   "url": "https://github.com/visa/trusted-agent-protocol",
+   "stars": 213,
+   "lang": "Python",
+   "desc": "Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerce."
+  },
+  {
+   "full_name": "daydreamsai/lucid-agents",
+   "url": "https://github.com/daydreamsai/lucid-agents",
+   "stars": 199,
+   "lang": "TypeScript",
+   "desc": "Lucid Agents Commerce SDK. Bootstrap AI agents in 60 seconds that can pay, sell, and participate in agentic commerce supply chains. Our protocol agnostic SDK pr"
+  },
+  {
+   "full_name": "forter/trusted-agentic-commerce-protocol",
+   "url": "https://github.com/forter/trusted-agentic-commerce-protocol",
+   "stars": 180,
+   "lang": "JavaScript",
+   "desc": "A secure authentication and data encryption protocol for AI agents, merchants and merchant vendors."
+  },
+  {
+   "full_name": "jettbrains/-L-",
+   "url": "https://github.com/jettbrains/-L-",
+   "stars": 166,
+   "lang": null,
+   "desc": "W3C Strategic Highlights  September 2019  This report was prepared for the September 2019 W3C Advisory Committee Meeting (W3C Member link). See the accompanying"
+  },
+  {
+   "full_name": "xpaysh/awesome-agentic-commerce",
+   "url": "https://github.com/xpaysh/awesome-agentic-commerce",
+   "stars": 82,
+   "lang": null,
+   "desc": "Curated list of active protocols and implementations for agent-to-merchant commerce (ACP, UCP, AP2, x402, MPP, stablecoins). Every entry earns its line."
+  },
+  {
+   "full_name": "NVIDIA-AI-Blueprints/Retail-Agentic-Commerce",
+   "url": "https://github.com/NVIDIA-AI-Blueprints/Retail-Agentic-Commerce",
+   "stars": 81,
+   "lang": "Python",
+   "desc": "Reference implementation of the Agentic Commerce Protocol (ACP) and Universal Commerce Protocol (UCP)- enabling AI-powered checkout   negotiation while maintain"
+  },
+  {
+   "full_name": "Shopify/ucp-cli",
+   "url": "https://github.com/Shopify/ucp-cli",
+   "stars": 80,
+   "lang": "TypeScript",
+   "desc": "A shopping skill for AI agents, powered by the Universal Commerce Protocol."
+  },
+  {
+   "full_name": "MentionNetwork/awesome-agentic-commerce",
+   "url": "https://github.com/MentionNetwork/awesome-agentic-commerce",
+   "stars": 65,
+   "lang": null,
+   "desc": "A curated list of awesome agentic commerce resources \u2014 protocols, MCP servers, tools, apps, APIs and services for AI agents that shop, sell and transact. For st"
+  },
+  {
+   "full_name": "devlab-group/agent-commerce",
+   "url": "https://github.com/devlab-group/agent-commerce",
+   "stars": 63,
+   "lang": "TypeScript",
+   "desc": "Self-hosted, non-custodial gateway between the API you already run and the protocols AI agents use to discover, call and pay for it"
+  },
+  {
+   "full_name": "rhein1/agoragentic-integrations",
+   "url": "https://github.com/rhein1/agoragentic-integrations",
+   "stars": 41,
+   "lang": "JavaScript",
+   "desc": "Public adapters and discovery catalog for Triptych OS (Agent OS): agent frameworks, MCP/A2A/x402 protocols, workflows, wallets, SDKs, and examples for execute-f"
+  },
+  {
+   "full_name": "nitin27may/e-commerce-agents",
+   "url": "https://github.com/nitin27may/e-commerce-agents",
+   "stars": 33,
+   "lang": "Python",
+   "desc": "6 specialized AI agents collaborating via A2A protocol to power e-commerce \u2014 product discovery, orders, pricing, reviews, inventory & support. Dual-stack (Pytho"
+  },
+  {
+   "full_name": "vercel/acp-handler",
+   "url": "https://github.com/vercel/acp-handler",
+   "stars": 30,
+   "lang": "TypeScript",
+   "desc": "Integrate the Agentic Commerce Protocol (ACP) into your servers"
+  },
+  {
+   "full_name": "legal-context-protocol/legal-context-protocol",
+   "url": "https://github.com/legal-context-protocol/legal-context-protocol",
+   "stars": 27,
+   "lang": null,
+   "desc": "An open standard for discovering the legal context of agentic commerce transactions."
+  },
+  {
+   "full_name": "bitrefill/awesome-agentic-payments",
+   "url": "https://github.com/bitrefill/awesome-agentic-payments",
+   "stars": 24,
+   "lang": null,
+   "desc": "A curated list of protocols, specs, SDKs, and tools powering the emerging agentic commerce stack."
+  },
+  {
+   "full_name": "nekuda-ai/ACP-Checkout-Gateway",
+   "url": "https://github.com/nekuda-ai/ACP-Checkout-Gateway",
+   "stars": 19,
+   "lang": "TypeScript",
+   "desc": "Serverless reference for the Agentic Commerce Protocol (ACP) agentic checkout gateway."
+  },
+  {
+   "full_name": "Nolpak14/agorio",
+   "url": "https://github.com/Nolpak14/agorio",
+   "stars": 15,
+   "lang": "TypeScript",
+   "desc": "The open-source toolkit for building AI commerce agents using UCP and ACP protocols"
+  },
+  {
+   "full_name": "BuyWhere/buywhere-mcp",
+   "url": "https://github.com/BuyWhere/buywhere-mcp",
+   "stars": 15,
+   "lang": "TypeScript",
+   "desc": "BuyWhere MCP server \u2014 search 300M+ products across US, Singapore & SEA via Model Context Protocol. Agents self-register a free key in one POST (no email): api.b"
+  },
+  {
+   "full_name": "run-as-root/ACP-for-Magento-2",
+   "url": "https://github.com/run-as-root/ACP-for-Magento-2",
+   "stars": 13,
+   "lang": "PHP",
+   "desc": "The Agentic Commerce Protocol Integration for Magento 2"
+  },
+  {
+   "full_name": "HA2345567/awesome-autonomus-ai-agents",
+   "url": "https://github.com/HA2345567/awesome-autonomus-ai-agents",
+   "stars": 11,
+   "lang": null,
+   "desc": "Awesome list of AI agents (2026 Edition) \u2014 Curating 400+ frontier frameworks, coding agents, MCP protocols, computer use, and commerce rails \u2014 featuring LangCha"
+  },
+  {
+   "full_name": "aws-samples/sample-agentic-serverless-payments",
+   "url": "https://github.com/aws-samples/sample-agentic-serverless-payments",
+   "stars": 11,
+   "lang": "TypeScript",
+   "desc": "An open-source, serverless reference implementation for agentic commerce: pay-per-use generative AI, physical goods, and digital goods, where embedded wallets a"
+  },
+  {
+   "full_name": "alphaparkinc/openclaw-agentic-commerce-protocol",
+   "url": "https://github.com/alphaparkinc/openclaw-agentic-commerce-protocol",
+   "stars": 11,
+   "lang": null,
+   "desc": "GenPark/OpenClaw skill: Implement OpenAI & Stripe's Agentic Commerce Protocol (ACP) for capability negotiation, cart management, and Stripe Payment Token paymen"
+  },
+  {
+   "full_name": "OrcaQubits/awesome-agentic-commerce",
+   "url": "https://github.com/OrcaQubits/awesome-agentic-commerce",
+   "stars": 9,
+   "lang": null,
+   "desc": "A curated list of awesome Agentic commerce, Universal Commerce Protocol (UCP), Agentic payments protocol (AP2) resources, tools, and implementations."
+  },
+  {
+   "full_name": "alphaparkinc/genpark-ucp",
+   "url": "https://github.com/alphaparkinc/genpark-ucp",
+   "stars": 9,
+   "lang": "Python",
+   "desc": "Unified Commerce Protocol (UCP) - The global standard for Agentic Commerce."
+  },
+  {
+   "full_name": "nlr-ai/agent-exchange-protocol",
+   "url": "https://github.com/nlr-ai/agent-exchange-protocol",
+   "stars": 9,
+   "lang": null,
+   "desc": "An open standard for autonomous AI-to-AI commerce and resource exchange, enabling direct value transfer between artificial agents."
+  },
+  {
+   "full_name": "Soham109/sutra",
+   "url": "https://github.com/Soham109/sutra",
+   "stars": 9,
+   "lang": "HTML",
+   "desc": "GMP/1 - the Group Mandate Protocol. Multi-principal group payments on Prava: N people, N cards, one atomic-enough commit. Agentic Commerce Hackathon 2026."
+  },
+  {
+   "full_name": "A-Comm-Tech/a-comm-evidence-protocol",
+   "url": "https://github.com/A-Comm-Tech/a-comm-evidence-protocol",
+   "stars": 8,
+   "lang": "HTML",
+   "desc": "A-Comm Evidence Protocol (AEP) \u2014 the open, Apache-2.0 evidence standard for agentic commerce: a tamper-evident hash chain of transaction artifacts with dispute-"
+  }
+ ]
+}

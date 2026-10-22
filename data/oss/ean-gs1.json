@@ -1,0 +1,41 @@
+{
+ "query": "EAN+barcode+gs1",
+ "total_count": 43,
+ "items": [
+  {
+   "full_name": "zint/zint",
+   "url": "https://github.com/zint/zint",
+   "stars": 821,
+   "lang": "C",
+   "desc": "A barcode encoding library supporting over 50 symbologies including Code 128, Data Matrix, USPS OneCode, EAN-128, UPC/EAN, ITF, QR Code, Code 16k, PDF417, Micro"
+  },
+  {
+   "full_name": "jshor/symbology",
+   "url": "https://github.com/jshor/symbology",
+   "stars": 230,
+   "lang": "TypeScript",
+   "desc": "\ud83d\udd16 Generates 1D, 2D, or composite barcodes in png, svg, or eps formats. Supports 50+ symbologies."
+  },
+  {
+   "full_name": "mmulqueen/pyStrich",
+   "url": "https://github.com/mmulqueen/pyStrich",
+   "stars": 107,
+   "lang": "Python",
+   "desc": "pyStrich is a fast pure-Python module for generating 1D and 2D barcodes. It supports Code 39, Code 128 (including GS1-128), EAN-13, ITF-14 (and Interleaved 2 of"
+  },
+  {
+   "full_name": "evrythng/scanthng.js",
+   "url": "https://github.com/evrythng/scanthng.js",
+   "stars": 77,
+   "lang": "JavaScript",
+   "desc": "A JS library enabling scanning products directly from (mobile) browsers. Supports Image Recognition and more than 20 barcode types including UPC, EAN, QR, Digim"
+  },
+  {
+   "full_name": "vws-java/Barcode-Lib4J",
+   "url": "https://github.com/vws-java/Barcode-Lib4J",
+   "stars": 19,
+   "lang": "Java",
+   "desc": "GS1-128, GS1-DataMatrix, QR Code, EAN and more. Generates PDF, EPS, SVG, PNG images."
+  }
+ ]
+}

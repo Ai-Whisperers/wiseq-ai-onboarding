@@ -1,0 +1,146 @@
+{
+ "query": "shopify+api+python",
+ "total_count": 269,
+ "items": [
+  {
+   "full_name": "AhmadHassan-BTed/ShopifyAutoAuth",
+   "url": "https://github.com/AhmadHassan-BTed/ShopifyAutoAuth",
+   "stars": 2133,
+   "lang": "Python",
+   "desc": "Enterprise-grade Shopify Admin API authentication adapter \u2014 OAuth 2.0 Client Credentials Grant with automatic token refresh."
+  },
+  {
+   "full_name": "Shopify/shopify_django_app",
+   "url": "https://github.com/Shopify/shopify_django_app",
+   "stars": 504,
+   "lang": "Python",
+   "desc": "Get a Shopify app up and running with Django and Python Shopify API"
+  },
+  {
+   "full_name": "klaviyo/klaviyo-api-python",
+   "url": "https://github.com/klaviyo/klaviyo-api-python",
+   "stars": 50,
+   "lang": "Python",
+   "desc": "Python SDK for Klaviyo API"
+  },
+  {
+   "full_name": "troyshu/shopify-python-api-cheatsheet",
+   "url": "https://github.com/troyshu/shopify-python-api-cheatsheet",
+   "stars": 44,
+   "lang": null,
+   "desc": ""
+  },
+  {
+   "full_name": "kareemelgendy/restock-bot",
+   "url": "https://github.com/kareemelgendy/restock-bot",
+   "stars": 26,
+   "lang": "Python",
+   "desc": "Basic Python script that leverages public endpoints on Shopify stores to track out-of-stock products and attempt to purchase them the moment they become availab"
+  },
+  {
+   "full_name": "fabriciocarraro/runway-shopify-pipeline",
+   "url": "https://github.com/fabriciocarraro/runway-shopify-pipeline",
+   "stars": 25,
+   "lang": "Python",
+   "desc": "Turn any Shopify catalog into product videos with the Runway API. One script, gen4.5 image-to-video."
+  },
+  {
+   "full_name": "bvnghbngfbn/pds-tool",
+   "url": "https://github.com/bvnghbngfbn/pds-tool",
+   "stars": 17,
+   "lang": "Python",
+   "desc": "1688 \u81ea\u52a8\u94fa\u8d27\u5de5\u5177 \u2014 \u4ece\u9009\u54c1\u5230\u94fa\u8d27\u7684\u4e00\u7ad9\u5f0f\u89e3\u51b3\u65b9\u6848\u3002\u652f\u6301 Shopify/\u901a\u7528API/CSV \u591a\u5e73\u53f0\u94fa\u8d27\uff0cCron \u5b9a\u65f6\u8c03\u5ea6\uff0cJWT \u8ba4\u8bc1\uff0c\u767b\u5f55\u5ba1\u8ba1\u3002"
+  },
+  {
+   "full_name": "rushikeshmore/shopify-partner-agent",
+   "url": "https://github.com/rushikeshmore/shopify-partner-agent",
+   "stars": 14,
+   "lang": "Python",
+   "desc": "MCP server for Shopify Partner API analytics - 25 tools for MRR, churn, retention, merchant health, forecasting. Free and open source."
+  },
+  {
+   "full_name": "mardambey/shopify-python-graphql-pagination",
+   "url": "https://github.com/mardambey/shopify-python-graphql-pagination",
+   "stars": 12,
+   "lang": "Python",
+   "desc": "Starter app that fetches orders from a Shopify store (via private app access token) using the GraphQL API."
+  },
+  {
+   "full_name": "ziplokk1/python-shopify-api",
+   "url": "https://github.com/ziplokk1/python-shopify-api",
+   "stars": 10,
+   "lang": "Python",
+   "desc": "Wrapper and parser modules for Shopify's API."
+  },
+  {
+   "full_name": "masom/shopify-trois",
+   "url": "https://github.com/masom/shopify-trois",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Python 3 Shopify API"
+  },
+  {
+   "full_name": "HasData/shopify-api-python",
+   "url": "https://github.com/HasData/shopify-api-python",
+   "stars": 7,
+   "lang": "Python",
+   "desc": ""
+  },
+  {
+   "full_name": "lily176743/python-Shopify-web-app",
+   "url": "https://github.com/lily176743/python-Shopify-web-app",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "an online clothes shopping website using : Django in the backend React semantic UI in the fronted, and rest API"
+  },
+  {
+   "full_name": "christopherbantle/Shopify-Utilities",
+   "url": "https://github.com/christopherbantle/Shopify-Utilities",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Random Python scripts to modify and delete products via the Shopify API."
+  },
+  {
+   "full_name": "kevmaindev/Shopify-Products-Scraper",
+   "url": "https://github.com/kevmaindev/Shopify-Products-Scraper",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "\ud83e\udd16 This Python script allows you to scrape product data from a Shopify store's JSON API (`/products.json` endpoint)"
+  },
+  {
+   "full_name": "ArnavChawla/Python-Shopify",
+   "url": "https://github.com/ArnavChawla/Python-Shopify",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Unnofficial Shopify API for python projects"
+  },
+  {
+   "full_name": "kamalber/shopify-products-api",
+   "url": "https://github.com/kamalber/shopify-products-api",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Bulk upload products to your shopify store using shopify API in python"
+  },
+  {
+   "full_name": "tulayha/shopify-gql-helper-py",
+   "url": "https://github.com/tulayha/shopify-gql-helper-py",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Minimal Python helper for Shopify GraphQL API with pagination and per-store throttling."
+  },
+  {
+   "full_name": "joincodeconda/ai-product-listings",
+   "url": "https://github.com/joincodeconda/ai-product-listings",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "This Python script uses the ShopTag.ai API to generate product listings automatically and save them in a CSV file."
+  },
+  {
+   "full_name": "PO-VINCENT/ai-shopping-audit",
+   "url": "https://github.com/PO-VINCENT/ai-shopping-audit",
+   "stars": 5,
+   "lang": "Python",
+   "desc": "Lighthouse for AI shopping: audit any product page for AI-agent readiness. 0-100 score, evidence-backed fixes, offline, no API key. (CatalogReady)"
+  }
+ ]
+}

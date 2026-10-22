@@ -1,0 +1,20 @@
+{
+ "query": "repricer+marketplace",
+ "total_count": 10,
+ "items": [
+  {
+   "full_name": "victorprogrammist/scrape_marketplaces",
+   "url": "https://github.com/victorprogrammist/scrape_marketplaces",
+   "stars": 6,
+   "lang": "Python",
+   "desc": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0438 \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0438 \u0446\u0435\u043d \u043c\u0430\u0440\u043a\u0435\u0442\u043f\u043b\u0435\u0439\u0441\u043e\u0432."
+  },
+  {
+   "full_name": "smallbrownbike/repricer",
+   "url": "https://github.com/smallbrownbike/repricer",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "Product management tool to help maintain prices across different marketplaces"
+  }
+ ]
+}

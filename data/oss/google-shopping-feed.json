@@ -1,0 +1,146 @@
+{
+ "query": "google+shopping+feed",
+ "total_count": 173,
+ "items": [
+  {
+   "full_name": "ManojKumarPatnaik/Major-project-list",
+   "url": "https://github.com/ManojKumarPatnaik/Major-project-list",
+   "stars": 259,
+   "lang": null,
+   "desc": "A list of practical projects that anyone can solve in any programming language (See solutions). These projects are divided into multiple categories, and each ca"
+  },
+  {
+   "full_name": "5mehulhelp5/MagentoExtensions",
+   "url": "https://github.com/5mehulhelp5/MagentoExtensions",
+   "stars": 120,
+   "lang": "PHP",
+   "desc": "Magento Extension Directory 1> Themes Switcher 2> Default Shipping On Cart 3> Upshare 4> Product Image Optimizer  5> Idealo Product Export  6> magento Google sh"
+  },
+  {
+   "full_name": "lukesnowden/google-shopping-feed",
+   "url": "https://github.com/lukesnowden/google-shopping-feed",
+   "stars": 68,
+   "lang": "PHP",
+   "desc": ""
+  },
+  {
+   "full_name": "NhaPhatHanh/github",
+   "url": "https://github.com/NhaPhatHanh/github",
+   "stars": 65,
+   "lang": null,
+   "desc": "<!DOCTYPE html> <html lang=\"en\" data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\">   <head>     <meta charset=\"utf-8\">   <link rel=\"dns-"
+  },
+  {
+   "full_name": "run-as-root/Magento-2-Google-Shopping-Feed",
+   "url": "https://github.com/run-as-root/Magento-2-Google-Shopping-Feed",
+   "stars": 45,
+   "lang": "PHP",
+   "desc": "A simple and clean Magento 2 Feed Extension for Google Shopping."
+  },
+  {
+   "full_name": "Agoengwew/wew",
+   "url": "https://github.com/Agoengwew/wew",
+   "stars": 33,
+   "lang": null,
+   "desc": "#EXTM3U  ########################################### INDONESIA CHANNEL ################################################## #EXTINF:-1 tvg-logo=\"https://i.imgur.c"
+  },
+  {
+   "full_name": "engripaye/shopping-feedback-system",
+   "url": "https://github.com/engripaye/shopping-feedback-system",
+   "stars": 16,
+   "lang": "Python",
+   "desc": "\ud83d\uded2Collect customer feedback directly from your supermarket floor \u2014 store it instantly in Google Sheets for easy tracking, insights, and better customer satisfact"
+  },
+  {
+   "full_name": "nopSolutions/GoogleShopping-plugin-for-nopcommerce",
+   "url": "https://github.com/nopSolutions/GoogleShopping-plugin-for-nopcommerce",
+   "stars": 13,
+   "lang": "C#",
+   "desc": "nopCommerce plugin for Google Shopping (feed)"
+  },
+  {
+   "full_name": "adampmoss/GoogleShopping",
+   "url": "https://github.com/adampmoss/GoogleShopping",
+   "stars": 13,
+   "lang": "PHP",
+   "desc": "A very simple Google Shopping XML feed"
+  },
+  {
+   "full_name": "mage-os-lab/module-shopping-feed",
+   "url": "https://github.com/mage-os-lab/module-shopping-feed",
+   "stars": 12,
+   "lang": "PHP",
+   "desc": "Product feed generation for Mage-OS and Magento Open Source. Includes Google Shopping, Local Inventory, Promotions, Meta, Microsoft, TikTok, and Pinterest prese"
+  },
+  {
+   "full_name": "magefan/magento-google-shopping-feed",
+   "url": "https://github.com/magefan/magento-google-shopping-feed",
+   "stars": 10,
+   "lang": null,
+   "desc": "Magento Google Shopping Feed is an extension that allows you to auto-generate product feed XML files and auto-update them to keep product data always up-to-date"
+  },
+  {
+   "full_name": "koongo-com/magento2-data-feed-manager",
+   "url": "https://github.com/koongo-com/magento2-data-feed-manager",
+   "stars": 9,
+   "lang": "PHP",
+   "desc": "Koongo is an ultimate product data feed management tool that streamlines the process of product data export from Magento 2 store to any of 500+ price comparison"
+  },
+  {
+   "full_name": "williangringo/magento-google-shopping-feeds",
+   "url": "https://github.com/williangringo/magento-google-shopping-feeds",
+   "stars": 7,
+   "lang": "PHP",
+   "desc": "Magento plugin to create shopping feed"
+  },
+  {
+   "full_name": "themestechnology/magento-google-merchant-center-shopping-feed-atom",
+   "url": "https://github.com/themestechnology/magento-google-merchant-center-shopping-feed-atom",
+   "stars": 7,
+   "lang": "PHP",
+   "desc": "Made for Magento 1.9.0.1+ this script will make an atom xml document for Google's Merchant Center Shopping Feed"
+  },
+  {
+   "full_name": "wearepixel/laravel-google-shopping-feed",
+   "url": "https://github.com/wearepixel/laravel-google-shopping-feed",
+   "stars": 6,
+   "lang": "PHP",
+   "desc": "An XML Product feed implementation for Google Merchant Shopping"
+  },
+  {
+   "full_name": "stuntcoders/stunt_mage_google_shopping_feed",
+   "url": "https://github.com/stuntcoders/stunt_mage_google_shopping_feed",
+   "stars": 6,
+   "lang": "PHP",
+   "desc": "Google Shopping Feed for Magento"
+  },
+  {
+   "full_name": "magenest-dev/module-product-feed",
+   "url": "https://github.com/magenest-dev/module-product-feed",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": "Promote your products by generating product list for Google and Facebook shopping"
+  },
+  {
+   "full_name": "mohdqasim98/google-shopping-product-feed",
+   "url": "https://github.com/mohdqasim98/google-shopping-product-feed",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Google Shopping feed generator in PHP"
+  },
+  {
+   "full_name": "Ads-insights/google-productfeed-enrichment-kit",
+   "url": "https://github.com/Ads-insights/google-productfeed-enrichment-kit",
+   "stars": 5,
+   "lang": null,
+   "desc": "31 AI Skills + Orchestrator for Claude \u2014 Enrich any product feed for Google Shopping in minutes"
+  },
+  {
+   "full_name": "sirEbRaHiM/MHST-WP-plugin-scanner",
+   "url": "https://github.com/sirEbRaHiM/MHST-WP-plugin-scanner",
+   "stars": 5,
+   "lang": null,
+   "desc": "addthis wp-super-cache woocommerce captcha google-analytics-for-wordpress google-analyticator tinymce-advanced wp-pagenavi image-widget wp-maintenance-mode si-c"
+  }
+ ]
+}

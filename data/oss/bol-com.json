@@ -1,0 +1,83 @@
+{
+ "query": "bol.com+api",
+ "total_count": 64,
+ "items": [
+  {
+   "full_name": "picqer/bol-retailer-php-client",
+   "url": "https://github.com/picqer/bol-retailer-php-client",
+   "stars": 29,
+   "lang": "PHP",
+   "desc": "PHP Client library for Bol.com Retailer API"
+  },
+  {
+   "full_name": "devbolcom/bolcom-openapi-php-client",
+   "url": "https://github.com/devbolcom/bolcom-openapi-php-client",
+   "stars": 24,
+   "lang": "PHP",
+   "desc": "PHP library with example for bol.com Open API"
+  },
+  {
+   "full_name": "pennersr/python-bol-api",
+   "url": "https://github.com/pennersr/python-bol-api",
+   "stars": 13,
+   "lang": "Python",
+   "desc": "A wrapper for the bol.com API"
+  },
+  {
+   "full_name": "ho-nl/BolCom_RetailerApi",
+   "url": "https://github.com/ho-nl/BolCom_RetailerApi",
+   "stars": 10,
+   "lang": "PHP",
+   "desc": "Package that talks to the bol.com v8 API"
+  },
+  {
+   "full_name": "best-brands/bol-com-retailer-api",
+   "url": "https://github.com/best-brands/bol-com-retailer-api",
+   "stars": 10,
+   "lang": "PHP",
+   "desc": "A Bol.com API client with full object mapping"
+  },
+  {
+   "full_name": "team-bicep/bol-retailer-api",
+   "url": "https://github.com/team-bicep/bol-retailer-api",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": "Bol.com retailer API for V10"
+  },
+  {
+   "full_name": "homedesignshops/laravel-bol-com-retailer",
+   "url": "https://github.com/homedesignshops/laravel-bol-com-retailer",
+   "stars": 6,
+   "lang": "PHP",
+   "desc": "Laravel Bol.com Retailer API package"
+  },
+  {
+   "full_name": "mennobb/bol.com-plaza-api-clients",
+   "url": "https://github.com/mennobb/bol.com-plaza-api-clients",
+   "stars": 5,
+   "lang": "C#",
+   "desc": "A suite of client classes for the bol.com Plaza API in PHP and C#"
+  },
+  {
+   "full_name": "BartWaardenburg/bol-mcp",
+   "url": "https://github.com/BartWaardenburg/bol-mcp",
+   "stars": 5,
+   "lang": "TypeScript",
+   "desc": "MCP server for bol.com Retailer API automation: orders, offers, shipments, returns, invoices, and seller workflows"
+  },
+  {
+   "full_name": "123lens/bol-retailer-api",
+   "url": "https://github.com/123lens/bol-retailer-api",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Bol.com Retailer API"
+  },
+  {
+   "full_name": "mtmsujan/bol.com_shipment_api",
+   "url": "https://github.com/mtmsujan/bol.com_shipment_api",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Integration bol.com shipments into WordPress to upload invoices"
+  }
+ ]
+}

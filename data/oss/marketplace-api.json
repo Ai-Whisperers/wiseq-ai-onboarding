@@ -1,0 +1,132 @@
+{
+ "query": "marketplace+api+seller",
+ "total_count": 338,
+ "items": [
+  {
+   "full_name": "Sfedfcv/redesigned-pancake",
+   "url": "https://github.com/Sfedfcv/redesigned-pancake",
+   "stars": 268,
+   "lang": null,
+   "desc": "Skip to content github / docs Code Issues 80 Pull requests 35 Discussions Actions Projects 2 Security Insights Merge branch 'main' into 1862-Add-Travis-CI-migra"
+  },
+  {
+   "full_name": "apiguru-app/amazon-scraper-v2",
+   "url": "https://github.com/apiguru-app/amazon-scraper-v2",
+   "stars": 221,
+   "lang": "Python",
+   "desc": "Agent-ready Amazon Scraper API: real-time product details (batch ASIN), offers & stock, reviews, search, best sellers, deals and seller data across 20 marketpla"
+  },
+  {
+   "full_name": "cporter202/ecommerce-intelligence-apis",
+   "url": "https://github.com/cporter202/ecommerce-intelligence-apis",
+   "stars": 105,
+   "lang": "JavaScript",
+   "desc": "A curated directory of ecommerce intelligence APIs for products, prices, reviews, sellers, and marketplaces."
+  },
+  {
+   "full_name": "ilyautov/marketplaces-mcp-ru",
+   "url": "https://github.com/ilyautov/marketplaces-mcp-ru",
+   "stars": 52,
+   "lang": "Python",
+   "desc": "MCP-\u0441\u0435\u0440\u0432\u0435\u0440 \u0434\u043b\u044f \u043a\u0430\u0431\u0438\u043d\u0435\u0442\u043e\u0432 Wildberries, Ozon, \u042f\u043d\u0434\u0435\u043a\u0441 \u041c\u0430\u0440\u043a\u0435\u0442\u0430 \u0438 \u0410\u0432\u0438\u0442\u043e: \u043f\u0440\u043e\u0434\u0430\u0436\u0438, \u0437\u0430\u043a\u0430\u0437\u044b, \u043e\u0441\u0442\u0430\u0442\u043a\u0438, \u0446\u0435\u043d\u044b, \u0444\u0438\u043d\u0430\u043d\u0441\u044b, \u043e\u0442\u0437\u044b\u0432\u044b \u0447\u0435\u0440\u0435\u0437 API \u043d\u0430\u043f\u0440\u044f\u043c\u0443\u044e, \u0431\u0435\u0437 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430. 1022 \u043c\u0435\u0442\u043e\u0434"
+  },
+  {
+   "full_name": "Free-The-Ai/free-ai",
+   "url": "https://github.com/Free-The-Ai/free-ai",
+   "stars": 35,
+   "lang": "Astro",
+   "desc": "FreeTheAI: free AI API and open model marketplace. One OpenAI-compatible endpoint at api.freetheai.org/v1 with free models, paid plans, and sellers listing at t"
+  },
+  {
+   "full_name": "salacoste/ozon-daytona-seller-api",
+   "url": "https://github.com/salacoste/ozon-daytona-seller-api",
+   "stars": 15,
+   "lang": "HTML",
+   "desc": "Complete TypeScript SDK for OZON Seller API with 278 methods across 33 categories. Production-ready with   comprehensive documentation, framework integrations,"
+  },
+  {
+   "full_name": "BaseMax/OnlineMarketplacePHP",
+   "url": "https://github.com/BaseMax/OnlineMarketplacePHP",
+   "stars": 13,
+   "lang": "PHP",
+   "desc": "An online marketplace that allows users to buy and sell products. Users can register for an account, browse products, add products to their cart, and checkout u"
+  },
+  {
+   "full_name": "samueltuoyo15/Marketplace-API",
+   "url": "https://github.com/samueltuoyo15/Marketplace-API",
+   "stars": 11,
+   "lang": "TypeScript",
+   "desc": "A high-performance e-commerce backend architecture built with NestJS, TypeScript, and TypeORM. This system implements a robust role-based access control (RBAC)"
+  },
+  {
+   "full_name": "2scraper/amazon-scraper",
+   "url": "https://github.com/2scraper/amazon-scraper",
+   "stars": 11,
+   "lang": "Python",
+   "desc": "Amazon scraper: search results, best sellers, product pages and reviews across 21 marketplaces (Playwright, Selenium, Puppeteer, or the 2Captcha Scraping Browse"
+  },
+  {
+   "full_name": "jennywelson123/8-Best-Online-Payment-Solutions-For-Your-E-Commerce-Website",
+   "url": "https://github.com/jennywelson123/8-Best-Online-Payment-Solutions-For-Your-E-Commerce-Website",
+   "stars": 11,
+   "lang": null,
+   "desc": "E-commerce company owners of today have the challenge of picking the best online payment system from among hundreds of options available to them. When it comes"
+  },
+  {
+   "full_name": "drbarzaga/walmart-mws",
+   "url": "https://github.com/drbarzaga/walmart-mws",
+   "stars": 8,
+   "lang": "TypeScript",
+   "desc": "Walmart Marketplace SDK is a wrapper sdk around the Walmart Marketplace API to used this sdk you will need an developer account with the ClientId and ClientSecr"
+  },
+  {
+   "full_name": "stores-com/walmart-marketplace",
+   "url": "https://github.com/stores-com/walmart-marketplace",
+   "stars": 8,
+   "lang": "JavaScript",
+   "desc": "The Walmart Marketplace APIs provide resources for sellers to manage their items, orders, prices, promotions, inventory and reports on Walmart.com."
+  },
+  {
+   "full_name": "DeviceIngineering/ozon-mcp-server",
+   "url": "https://github.com/DeviceIngineering/ozon-mcp-server",
+   "stars": 8,
+   "lang": "Python",
+   "desc": "MCP server for the Ozon Seller & Performance API: 156 tools for prices, promotions, ads, orders, returns, finance and analytics. Multi-store, web dashboard, sel"
+  },
+  {
+   "full_name": "2scraper/catawiki-scraper",
+   "url": "https://github.com/2scraper/catawiki-scraper",
+   "stars": 7,
+   "lang": "Python",
+   "desc": "Catawiki auction scraper (Playwright, Selenium, pyppeteer, or the 2Captcha Scraping Browser API over CDP) \u2014 lots, bids, reserves, estimates, sellers, JSON/CSV"
+  },
+  {
+   "full_name": "woyaxnini/mcp-ozon-seller",
+   "url": "https://github.com/woyaxnini/mcp-ozon-seller",
+   "stars": 6,
+   "lang": "TypeScript",
+   "desc": "MCP server for [Ozon Seller API](https://docs.ozon.ru/api/seller/) \u2014 Russia's largest marketplace."
+  },
+  {
+   "full_name": "Arcadier/Marketplace-Report-Generator",
+   "url": "https://github.com/Arcadier/Marketplace-Report-Generator",
+   "stars": 6,
+   "lang": "JavaScript",
+   "desc": ":chart_with_upwards_trend: Dynamic performance reporting. Install to gain easy access to performance reports and visualisation charts showing your top performin"
+  },
+  {
+   "full_name": "BartWaardenburg/bol-mcp",
+   "url": "https://github.com/BartWaardenburg/bol-mcp",
+   "stars": 5,
+   "lang": "TypeScript",
+   "desc": "MCP server for bol.com Retailer API automation: orders, offers, shipments, returns, invoices, and seller workflows"
+  },
+  {
+   "full_name": "chuksjoe/AutoMart",
+   "url": "https://github.com/chuksjoe/AutoMart",
+   "stars": 5,
+   "lang": "JavaScript",
+   "desc": "My Bootcamp ADC. Auto Mart is an online marketplace for automobiles of diverse makes, model or body type. With Auto Mart, users can sell their cars or buy from"
+  }
+ ]
+}

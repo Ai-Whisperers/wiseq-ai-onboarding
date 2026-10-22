@@ -1,0 +1,41 @@
+{
+ "query": "product+feed+merchant",
+ "total_count": 117,
+ "items": [
+  {
+   "full_name": "sebastyuiop/spree_google_merchant",
+   "url": "https://github.com/sebastyuiop/spree_google_merchant",
+   "stars": 19,
+   "lang": "Ruby",
+   "desc": "Live product feed for Google Merchant"
+  },
+  {
+   "full_name": "magefan/magento-google-shopping-feed",
+   "url": "https://github.com/magefan/magento-google-shopping-feed",
+   "stars": 10,
+   "lang": null,
+   "desc": "Magento Google Shopping Feed is an extension that allows you to auto-generate product feed XML files and auto-update them to keep product data always up-to-date"
+  },
+  {
+   "full_name": "noudadrichem/dynamic-feed-validator",
+   "url": "https://github.com/noudadrichem/dynamic-feed-validator",
+   "stars": 7,
+   "lang": "Java",
+   "desc": "\ud83d\udd0d\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb\ufe0fValidates Google Merchant product feeds by streaming XML RSS feeds via Java and push notifications to an Angular front-end via WebSockets."
+  },
+  {
+   "full_name": "wearepixel/laravel-google-shopping-feed",
+   "url": "https://github.com/wearepixel/laravel-google-shopping-feed",
+   "stars": 6,
+   "lang": "PHP",
+   "desc": "An XML Product feed implementation for Google Merchant Shopping"
+  },
+  {
+   "full_name": "rahuldadhich/productxmlfeed",
+   "url": "https://github.com/rahuldadhich/productxmlfeed",
+   "stars": 5,
+   "lang": "PHP",
+   "desc": "Magento 1.x - Product XML feed for Google Merchant Center"
+  }
+ ]
+}
