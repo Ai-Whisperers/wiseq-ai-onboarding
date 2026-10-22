@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track A · Document 14* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # Hermes/Jev Optimization + AIW Asset Reuse Inventory
 
 *2026-10-22. Companion to docs 13 (tooling/MCP). Covers: (A) the Hermes-instance optimization decisions incl. the Jev router verdict, (B) the full inventory of what AIW already owns — org repos, personal repos, running systems, skills — that these two operations will reuse instead of rebuild.*
 
-## A. Jev & Hermes optimization (documented decisions)
+## 🤖 A. Jev & Hermes optimization (documented decisions)
 
 **Jev verdict: keep enabled, target it at the right lanes.**
 - Live status (verified 2026-10-22): enabled, decision model `typesafe/jev-1.13` via OpenRouter's decisions endpoint, confidence threshold 0.5, per-turn routing, ~40k audited decisions, fallback deepseek-v4.1-flash/medium.
@@ -20,7 +28,7 @@
 7. **TUI widget** for the ops dashboard (orders/cash/price alerts) — native Hermes widgets beat checking files.
 8. **AI-observability from day 1** — Langfuse OSS core (MIT; the `ee/` tier stays OFF per standing red line) or Laminar (Apache-2.0, OTel-native) into the PY docker-compose; OpenObserve for token-spend-as-P&L-line.
 
-## B. AIW asset inventory — what we reuse (verified via GitHub API, 2026-10-22)
+## 📦 B. AIW asset inventory — what we reuse (verified via GitHub API, 2026-10-22)
 
 ### Org repos (7 total, all live)
 
@@ -66,7 +74,7 @@ Both operations assemble almost entirely from owned parts:
 
 **What we genuinely build new** (the moat list, unchanged): bundle-spine matcher, school-order parser, CDE price-map agent, WhatsApp closer, repricing engine, Commerce-OS components. Everything else is reuse.
 
-## C. New setups to consider (beyond doc 13)
+## ➕ C. New setups to consider (beyond doc 13)
 
 1. **A third Hermes profile: `aiw-meta`** — the Commerce-OS productization lane (50-hats #31) separated from client work.
 2. **Monorepo question**: the thin MCP wrappers (bol, e-Boekhouden, Trustpilot, changedetection, InvenTree) belong in ONE `commerce-os` repo (product) rather than scattered across client repos — decide before the third wrapper lands.

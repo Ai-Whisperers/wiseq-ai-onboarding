@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track C · Document 11* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # WiseQ Compliance & Regulatory Map — 2026-10-22
 
 *The certifications, marks, and bodies that govern WiseQ's product categories — and the gaps to check. Researched from public sources; every item is a conversation-opener with Rob, not an accusation.*
 
-## 1. Product-safety certifications (the electronics)
+## 1. 🧭 Product-safety certifications (the electronics)
 
 | Requirement | Scope | Status question for WiseQ |
 |---|---|---|
@@ -14,7 +22,7 @@
 
 **Why this matters for the pitch:** certification evidence per SKU family (EN 71 / 62115 / RED files) is ALSO a content asset — "getest volgens EN 62115" on product pages converts parent-trust into listings. An agent maintaining a cert-evidence library per SKU = compliance + marketing in one table.
 
-## 2. Trust marks & organizations (the shop)
+## 2. 🕰️ Trust marks & organizations (the shop)
 
 | Body | Cost | Value |
 |---|---|---|
@@ -24,19 +32,19 @@
 | **Trustpilot** | Free tier + paid plans | Review engine target (25 reviews → automated D+1 flow) |
 | **KvK / ILT / NVWA** | — | Market-surveillance bodies for toy-safety/e-com compliance; low risk but the cert files above are their ask |
 
-## 3. Regional & channel organizations (the network)
+## 3. 💬 Regional & channel organizations (the network)
 
 - **Stichting Westelijke Tuinsteden** (Amsterdam-West public primary education) and the other **640+ school boards** in our lead-gen dataset — the board layer is the volume B2B channel (doc 02-WHAT-WE-DID).
 - **School inkoopcollectieven** (Onderwijs Inkoop Groep, Contractables) — collective catalogs; listing = many schools at contract prices (doc 08 §3).
 - **Beverwijk/Grootebroek region**: 7 nearby schools in the contact set — the local-walk-in pilot list for WiseQ's own backyard.
 - **Educatheek** (wholesaler already stocking WiseQ products) — deepen or compete; either way, monitor.
 
-## 4. Data-protection layer
+## 4. 📦 Data-protection layer
 
 - **GDPR/AVG** (already law, unlike PY's 7593/2025): shop customers + school-contact outreach both in scope. Our privacy-agent design (consent registry, DSR handling, 72h breach protocol) ships in EU flavor.
 - **RED cybersecurity clause** overlaps: kids' GPS/location data = sensitive-adjacent; evidence of secure handling strengthens both RED and GDPR posture.
 
-## 5. Actions this adds to the backlog
+## 5. 🧱 Actions this adds to the backlog
 
 1. Cert-evidence library per SKU family (EN 71 / 62115 / RED) — agent-maintained, marketing-usable
 2. RED-2025 file audit on the GPS-tracker line (child location data = highest scrutiny)

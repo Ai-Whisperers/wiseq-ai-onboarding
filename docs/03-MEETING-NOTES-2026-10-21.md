@@ -1,12 +1,20 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track B · Document 03* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # Meeting Notes — 2026-10-21 (Working Session with WiseQ)
 
 *From two recorded sessions (transcripts in our private workspace). These notes capture business-relevant intel only.*
 
-## Who we met
+## 👥 Who we met
 
 WiseQ leadership at their Grootebroek base (the "marketing team left for the dentist" — i.e., small team, founder-led). Presentations included live demos of: the AI Whisperers Hermes agent stack, kanban fleet orchestration, GitHub PR history (350+ PRs, AI branches), token dashboards, and the sister-project backend (bakery/coffee-shop RMS with price tracking, forecasts, WhatsApp ordering, XML invoice parsing).
 
-## What WiseQ told us (business intel)
+## 🎧 What WiseQ told us (business intel)
 
 ### Operations
 - **Tooling confirmed**: **ChannelDock** (inventory/stock across channels) + **5X** (profitability, segments, advertising, returns-reduction on bol.com). Plus bookkeeping software (offers → invoices → relations), a 24/7 office computer already running.
@@ -28,12 +36,12 @@ WiseQ leadership at their Grootebroek base (the "marketing team left for the den
 2. We build: **a sample automation (school-order pipeline) running on similar test data** — visual, low-risk, "just for you to look at."
 3. Research and document: which MCPs, APIs, tooling exist for their exact stack (ChannelDock, 5X, bookkeeping, bol.com, Shopify).
 
-## What we showed them (already done on our side)
+## 🖥️ What we showed them (already done on our side)
 
 - Hermes agent doing live research on WiseQ during the meeting (company/marketplace/marketing lanes)
 - Kanban-driven multi-machine agent fleet, session dashboards, token economics (26,000B tokens/mo on one provider)
 - Sister-project bakery backend: AI product images from vague recipes, price tracking + forecasts across supermarkets, WhatsApp ordering loop, QR→XML invoice parsing into inventory
 
-## Interpretation (our read, clearly labeled)
+## 💭 Interpretation (our read, clearly labeled)
 
 WiseQ is an ideal Phase-0 client: process pain is concrete and measurable (4h mornings, manual EAN Excel, bundle re-keying), infrastructure is modern (Shopify+UCP, ChannelDock, 5X, 24/7 machine), the founder personally gets AI (asked the right questions about MCPs, tokens, server costs), and there's an explicit ask ("if you have an AI do stuff in my mailbox, that would be great — save a lot of time").
