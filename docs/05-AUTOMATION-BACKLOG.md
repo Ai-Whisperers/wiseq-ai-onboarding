@@ -42,7 +42,7 @@
 | # | Automation | Impact | Effort | Notes |
 | :---: | :--- | :--- | :--- | :--- |
 | 🔥 8 | **Canonical EAN registry** — EAN ↔ SKU ↔ components | **Foundation for #1, #2, #3** | Med | Build this first |
-| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €732 one-off, 139 GTINs |
+| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €733/yr recurring, 139 GTINs |
 | 10 | **Weights + `inventory_policy` backfill** (0/230 today) | Correct shipping calculation | Low | |
 | 11 | **Empty-description rewrite** (20 products) + structured copy for all | Conversion | Low | |
 | 12 | **Variant consolidation** (6 colors → 1 product) A/B | Reviews concentrate, feeds cleaner | Med | Needs a test window |
@@ -85,3 +85,15 @@
 | **Exploratory** | 4 | Evaluated in Phase 3 or as separate product lines |
 
 **The lowest-hanging fruit is #14 (review invitations) and #3 (purchase intelligence) — both `Low` effort, both immediately measurable.** They're what we'd build in week 1 if you asked for a quick win before the bigger pipeline work lands.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | The stack that delivers this backlog |
+| **[Py Transfer Wiseq](07-PY-TRANSFER-WISEQ.md)** | Proven components we can port from the Paraguay build |
+| **[Next Steps](06-NEXT-STEPS.md)** | The questions that unblock the highest-ROI items |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

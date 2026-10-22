@@ -109,3 +109,15 @@ Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for 
 - **Firecrawl SaaS** while Scrapling suffices
 - **WhatsApp Cloud API** official while Evolution covers phase 0-1 volume (cost crossover re-check at ~2k conversations/mo)
 - **Any MCP without a scheduled USE** — the catalog is a menu, not a shopping list; one owner per layer (doc 08 rule 4)
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Hermes Jev Aiw Reuse](14-HERMES-JEV-AIW-REUSE.md)** | The reuse-first decision behind this list |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | Hosting and storage for these services |
+| **[Next Steps](06-NEXT-STEPS.md)** | The week-1 checklist |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

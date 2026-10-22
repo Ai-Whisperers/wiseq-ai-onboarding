@@ -68,3 +68,15 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 - Two main direct competitors (per founder, 2026-10-21): small specialists with outdated websites ("90s" / "2000s"); plus big generalists (MediaMarkt, bol own-listings, Amazon)
 - SEO: owns the long tail (autism/ADHD/schools guides), absent from head-term listicles
 - EU expansion asset: ships NL+BE; Amazon EU seller account carries listings across .de/.fr/.it/.es
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Where the current tech stack meets the open-source layer |
+| **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Who else serves Dutch schools, and at what price |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What we propose to build on top of this |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

@@ -144,3 +144,15 @@
 - The reuse-first stack (doc 14) — no rebuild of what AIW owns.
 - Bilingual discipline: Spanish for PY operations, English for the client-facing WiseQ repo.
 - €0 infra, all pipelines verified live, not described.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Fifty Hats](12-FIFTY-HATS.md)** | The 50-hat cross-view |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | The top-ranked fixes, scheduled |
+| **[Next Steps](06-NEXT-STEPS.md)** | What we need to act on the findings |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

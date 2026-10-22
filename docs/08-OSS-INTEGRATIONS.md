@@ -25,17 +25,21 @@
 
 ## 2. 🕰️ EAN/GS1 in NL — the concrete fix for 0/230
 
-- **GS1 Nederland**: single EAN ~€36 one-off; **10-pack ~€61**; annual licence fee applies for continued use. (bol's own partner docs recommend buying direct from GS1 and verifying registration in GS1's portal — resold codes often unregistered.)
-- WiseQ needs EANs for **114 components** (see bundle spine) → ~12 × 10-packs ≈ **€732 one-off + modest annual fee**. Every bundle then derives identity from component EANs — no EAN purchase needed for 25 bundles if sold only via own shop, but bol/Amazon require per-listing GTINs → buy for the ~25 bundle SKUs too (≈ €150 more).
+- **GS1 Nederland**: **code package 10 = €61 PER YEAR** (10 article codes/GTINs + 10 GLNs + 1M SSCC). Single code pack (1–5) = €36 one-off. **GS1 EDI annual contribution: €0 for turnover €0–5M (category A–D)**; €200 at €5–11M, etc. All amounts **excl. 21% VAT**. (bol's own partner docs recommend buying direct from GS1 and verifying registration in GS1's portal — resold codes often unregistered.)
+- WiseQ needs EANs for **114 components** (see bundle spine) + **25 bundles** = **139 GTINs** → **12 × €61 = €733/yr, recurring every year** (€887 with VAT). ⚠ **Correcting an earlier note in this repo:** this was described as a "€732 one-off" — **it is not one-off; the 10-pack is an annual product.** Also, since WiseQ sells on **both bol.com and Amazon**, per-listing GTINs are required for **all** 139 (the earlier "no EAN needed for bundles if own-shop only" caveat does not apply to them).
+- **Prefix note:** the GTIN must be actively *registered* in Verified by GS1, not merely purchased — required for the live Amazon EU listings (.de/.fr/.it/.es). That's an operational task we can automate.
 - Cheap vs. the manual-EAN-Excel hours Rob spends today. **First week one-liner: order GS1 10-packs, assign to the 114-component registry (CSV already delivered), propagate to Shopify variants + ChannelDock.**
 
 ## 3. 💬 Integration surface (verified links)
 
 - **bol Retailer API** — OAuth2 (login.bol.com SSO), endpoints for offers/orders/shipments/product content; dlt-hub documents a Python source. Access via bol Seller Dashboard application.
 - **e-Boekhouden.nl API** — the likely bookkeeping package (NL SMB standard; Rob's transcript mentioned "boekhouden software" generically). Full REST API with webshop/CRM/bank couplings; alternatives Moneybird (API-first, dev-friendly) and Exact Online (heavier, full ERP).
-- **ChannelDock & 5X** — no public API docs found in searches; both are SaaS dashboards. Approach: agent via browser-automation (computer-use) initially, request API access from vendor; both export CSV/XLSX — scheduled exports + parse is the zero-risk first integration.
+- **ChannelDock & 5X** — **both DO have APIs** (verified 2026-10-22, correcting an earlier note in this repo that said "no public API docs found in searches"):
+  - *ChannelDock*: REST API + webhooks, **included from the "Voorraad" plan (from €45/mo excl. VAT)**, **excluded from the free tier**. Free tier also caps at 100 products / 500 orders per month — so a 230-product operation is necessarily on a paid plan. 213+ live integrations (Shopify, bol.com, Amazon, WooCommerce, …). ChannelDock is a bol.com Bronze Partner. PIM is a separate €200/mo module that includes bundle composition ("Bundels samenstellen"). Inventory sync runs every 15 min.
+  - *5X*: has a first-party **API koppelingen** section (Settings → API Links) that consumes bol.com Client ID/Secret and covers analytics, orders, ads, repricing, inventory and finance exports. 5X is also a native ChannelDock integration.
+  - **Ask in Phase 0:** which ChannelDock plan are they on, and do they already pay for PIM? That determines what we automate and whether the bundle-spine work is partly a configuration task rather than a build.
 - **Trustpilot** — invitation/business APIs public; D+1 post-delivery invitation flow is standard.
-- **Thuiswinkel Waarborg** — 92-96% consumer recognition, the dominant NL trust mark; ~€500-1,000/yr ballpark for small webshops. Recommended alongside Scamadviser remediation (Trust Score 0 finding) — strongest available counter to the trust gap.
+- **Thuiswinkel Waarborg** — 92-96% consumer recognition, the dominant NL trust mark. **Current verified cost (2026-10-22, thuiswinkel.org): €75 one-time + €390/yr certification, PLUS a revenue-tiered contribution — €518/yr at €0–100k turnover, rising to €1,294/yr at €500k–1M; €45/yr per extra platform (bol.com/Amazon).** So realistic year 1 is **€983–€1,759 excl. VAT depending on turnover class.** (This replaces earlier, conflicting figures in this repo of "€465 year one" and "~€500–1,000/yr".) **We do not know WiseQ's turnover — ask them; it sets the tier.** Recommended alongside Scamadviser remediation (Trust Score 0 finding) — strongest available counter to the trust gap.
 - **School collectives** — schools increasingly buy via collectives/inkoopcollectieven (Onderwijs Inkoop Groep, Contractables etc.); WiseQ's B2B layer (staffelprijzen, Bestel op factuur) maps to this market. Getting listed in collective catalogs = volume channel; edtech procurement has no OSS, it's sales work.
 
 ## 4. 📦 OSS shortlist per layer (from `data/oss/`)
@@ -57,3 +61,15 @@
 3. **Trustpilot + Thuiswinkel together**: review engine (D+1 invitations) + the mark fixes the two trust suppressors (25 reviews, Scamadviser 0) in one motion.
 4. **Google Shopping feed**: bol is covered via Retailer API; Google Merchant is the next cheapest channel — feed generated nightly from the canonical spine.
 5. **School collectives as B2B channel 2.0**: staffelprijzen layer exists; next step is getting into 2-3 collective catalogs (sales motion, not software — but our 857-org lead list is the target list).
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Catalog 100](10-OSS-CATALOG-100.md)** | 100 curated repos by stack layer |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | Which integrations the blueprint depends on |
+| **[Compliance Regulatory](11-COMPLIANCE-REGULATORY.md)** | The compliance constraints on each choice |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

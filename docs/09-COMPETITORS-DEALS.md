@@ -64,4 +64,16 @@ New opportunities this research adds to the backlog:
 
 ## 5. 🧱 Deal-prep artifacts ready to send
 
-Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €732), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.
+Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €733/yr), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | WiseQ's verified position in this market |
+| **[Next Steps](06-NEXT-STEPS.md)** | Turning the benchmark into a meeting |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | What we can out-build the incumbents on |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

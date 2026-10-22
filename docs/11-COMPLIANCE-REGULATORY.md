@@ -44,10 +44,63 @@
 - **GDPR/AVG** (already law, unlike PY's 7593/2025): shop customers + school-contact outreach both in scope. Our privacy-agent design (consent registry, DSR handling, 72h breach protocol) ships in EU flavor.
 - **RED cybersecurity clause** overlaps: kids' GPS/location data = sensitive-adjacent; evidence of secure handling strengthens both RED and GDPR posture.
 
+## 4b. ⚠ EU AI Act — applies to **us** as deployers (added 2026-10-22, verified)
+
+**This section was missing from the original map. It is the most time-sensitive item in this document.**
+
+| Fact | Status |
+|---|---|
+| **Article 4 — AI literacy obligation** | **Applies since 2 February 2025.** Providers and deployers must ensure sufficient AI literacy of staff. |
+| **National supervision began** | **August 2026** — i.e. this is **already being enforced now**, not a future requirement. |
+
+**Scope for WiseQ:** they are a **deployer** (they use our agent layer internally).
+We — AI Whisperers — are also a **deployer** of the same systems. Both are in scope.
+
+**What Article 4 actually requires (important, because it is cheap):**
+- It prescribes **no specific course, no certificate, and no minimum number of hours.**
+- The obligation is to ensure staff have sufficient AI literacy, taking into account
+  their knowledge, experience, education, training and context.
+- **An organisation's own records suffice** as evidence — no accredited training
+  provider is required.
+
+**Consequence:** this is a **few hours of Phase 0 work, not a budget line.** It becomes
+a deliverable: an AI-literacy register (who uses AI tools, for what, what training
+was given) that satisfies a Dutch supervisor. Turn a compliance exposure into
+evidence of rigour.
+
+**What we deliberately do NOT claim:** high-risk AI Act obligations (and their
+penalty tiers) apply to systems placed on the market as safety components of
+products, and to certain named use cases. WiseQ's internal ops layer triggers
+**none** of that. Do not use high-risk framing to sell fear to the client — it
+would collapse on inspection.
+
+## 4c. 🧾 Cost corrections in this document (2026-10-22)
+
+| Item | Stated here before | **Verified now** |
+|---|---|---|
+| Thuiswinkel Waarborg | "€75 one-time + €390/yr certification + contribution"; "€465 year one" (§5.3) | **€75 once + €390/yr + revenue-tiered contribution €518–€1,294/yr** (thuiswinkel.org, excl. VAT). Year 1 realistically **€983–€1,759** depending on turnover class, plus **€45/yr per extra platform** (bol.com/Amazon). **We have never asked WiseQ their annual online turnover — it sets the tier.** |
+| GS1 10-pack | "€61 + annual licence"; called a one-off in doc 08 | **€61 is PER YEAR**, not one-off. EDI licence is **€0** below €5M turnover. 139 GTINs needed (114 components + 25 bundles) = **€733/yr recurring (€887 w/ VAT)**. |
+| GPSR responsible person | listed only as a "field check" | A third-party EU Responsible Person costs from **~$500/yr**, but **WiseQ B.V. is an NL-established manufacturer and is its own Responsible Person → €0.** Keep AIW explicitly out of the product chain (contract language: software provider, not goods supplier). |
+| EN 71 / RED testing | not costed anywhere | **Still uncosted and still unknown.** Lab testing per SKU family is typically **hundreds to low-thousands of EUR**. **Get real lab quotes before any total is presented to the client.** |
+
 ## 5. 🧱 Actions this adds to the backlog
 
 1. Cert-evidence library per SKU family (EN 71 / 62115 / RED) — agent-maintained, marketing-usable
 2. RED-2025 file audit on the GPS-tracker line (child location data = highest scrutiny)
-3. Thuiswinkel Waarborg application (€465 year one) — paired with review engine
-4. Responsible-person field check across Amazon/bol listings (GPSR)
-5. Outreach wave to 3 regional boards (West Friesland backyard first)
+3. Thuiswinkel Waarborg application (**€983–€1,759 year 1 excl. VAT, depending on turnover class** — see §4c; needs their turnover figure) — paired with review engine
+4. Responsible-person field check across Amazon/bol listings (GPSR) — WiseQ is its own RP, so this is a *listing-hygiene* task, not a purchase
+5. **EU AI Act Article 4 AI-literacy register** — applies now, costs hours not euros (§4b)
+6. **EN 71 / EN IEC 62115 / RED lab quotes** — obtain real figures; currently the single largest uncosted item in the whole proposal
+7. Outreach wave to 3 regional boards (West Friesland backyard first)
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | NL trust marks and feed compliance |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The product certifications already held |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | Compliance gates built into the phases |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

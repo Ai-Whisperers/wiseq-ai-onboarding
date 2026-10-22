@@ -19,6 +19,9 @@ Everything here is **bounded, low-risk, and mostly already in your hands.** None
 | 3 | **Sandbox / dummy data** | A copy of a few anonymized school orders + the offer→invoice flow, so the shadow demo mirrors reality | 30 min to export | Shadow demo |
 | 4 | **Read-only API access** *(when ready)* | Shopify (read-only collaborator) · ChannelDock (API token) · bol Seller (sandbox) · mailbox (app-password, read-only first) | Issue 4 tokens | Live read-only |
 | 5 | **30 minutes with the purchase manager** | Walkthrough of the EAN/Excel workflow — so we design the replacement against reality, not assumptions | One meeting | Purchase intelligence |
+| 6 | **Your annual online turnover (or a rough band)** | **Sets your Thuiswinkel contribution tier — the difference between €518 and €1,294/yr.** We've never asked, and it changes the number we quote. | One number | Trust-mark costing |
+| 7 | **Which ChannelDock plan are you on?** (Gratis / Voorraad / Volledig WMS) **And do you have the PIM module?** | **Correcting an earlier note in our own docs:** ChannelDock *does* have a REST API + webhooks, included from Voorraad (€45/mo) upward and excluded from the free tier. Since you have 230 products and the free tier caps at 100, you should already be on a paid plan — we need to confirm, because it decides what we can automate. | Two answers | Connector build |
+| 8 | **Do you already use ChannelDock PIM's "Bundels samenstellen"?** | If PIM (€200/mo) already composes bundles, part of what we planned to build is a configuration task, not a build. We'd rather tell you that up front than quote you for it. | One answer | Bundle-scope |
 
 > 🔁 **Items 1–3 need no production access at all.** We can start the stack map and the EAN registry the same day the manual arrives.
 
@@ -72,3 +75,15 @@ Four open decisions. Each has a recommended default — if we don't hear otherwi
         ▼
 5. Phase 1: the 4-hour mornings stop  (weeks 3–6)
 ```
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What Phase 0 delivers |
+| **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Deal shape, benchmarked |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | The production-readiness checklist |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

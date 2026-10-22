@@ -104,3 +104,15 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - **Terraform** for 3 cloud resources — config-as-code in the compose + Neon dashboards; revisit at 10+ resources.
 - **Monorepo merge** — the two repos serve different audiences (client-facing vs internal); cross-repo pointers (already in place) beat Lerna complexity.
 - **Self-hosted GitLab/Gitea** — GitHub Actions free on public repos is the whole reason the pipeline costs €0.
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | What gets installed |
+| **[Dev Team Hats](16-DEV-TEAM-HATS.md)** | The build team's ranked improvements |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | The stack this plan hardens |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

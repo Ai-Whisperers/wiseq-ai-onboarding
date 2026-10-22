@@ -81,3 +81,15 @@ Both operations assemble almost entirely from owned parts:
 3. **paragu-auditor as a living service**: cron-check CONATEL/DINAVISA/SET/DNIT rule changes monthly → updates docs 11 automatically. Turn a research repo into a monitoring service.
 4. **ai-whisperers-hermes-agent adoption for both ops**: wire cron-health + alert-router into the two profiles at setup time (not later) — observability is a day-1 setting per the 50-hats #40.
 5. **Status page per op**: the `status` repo pattern, one page each — trust signal for WiseQ B2B buyers AND PY customers ("sistema monitoreado 24/7").
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Tooling Mcp Installs](13-TOOLING-MCP-INSTALLS.md)** | Per-operation MCP install lists |
+| **[Py Transfer Wiseq](07-PY-TRANSFER-WISEQ.md)** | The specific components worth porting |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | How reuse reshapes the blueprint |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.

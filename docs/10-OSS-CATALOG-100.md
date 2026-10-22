@@ -165,3 +165,15 @@
 | [jasewarner/gulp-shopify](https://github.com/jasewarner/gulp-shopify) | 184 | Liquid | shopify-cli | Blank slate Shopify theme for Developers, packaged with Gulp.js for processing S |
 
 *Total shown: 100 curated repos of 416 candidates across 31 topics.*
+
+---
+
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Why orchestration is the moat |
+| **[Hermes Jev Aiw Reuse](14-HERMES-JEV-AIW-REUSE.md)** | What we already run in-house |
+| **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | Which catalog entries enter the stack |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
