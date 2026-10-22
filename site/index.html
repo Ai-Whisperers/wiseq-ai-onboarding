@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseQ × AI Whisperers — AI Transformation Work Proposal</title>
+<meta name="description" content="An AI transformation proposal for WiseQ: research dossier, automation blueprint, delivery plan, and three built site concepts.">
+<meta property="og:title" content="WiseQ × AI Whisperers — AI Transformation Work Proposal">
+<meta property="og:description" content="Research dossier, automation blueprint, and three built site concepts for WiseQ.">
+<meta property="og:image" content="assets/brand/og-card.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/brand/lockup-ink.png">
+<style>
+  :root{
+    --wq-green:#22c55e; --wq-blue:#1648ad; --ink:#0f172a; --muted:#475569;
+    --line:#e2e8f0; --bg:#ffffff; --soft:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  a{color:var(--wq-blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{border-bottom:1px solid var(--line)}
+  header img{width:100%;display:block}
+  .eyebrow{text-align:center;padding:26px 24px 0;font-size:13px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(28px,4.6vw,46px);line-height:1.15;margin:12px 0 14px;
+    letter-spacing:-.02em;text-align:center}
+  .lede{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:70ch;margin:0 auto 26px}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;
+    overflow:hidden;margin:0 0 56px}
+  .stat{background:var(--soft);padding:20px 14px;text-align:center}
+  .stat b{display:block;font-size:26px;letter-spacing:-.02em}
+  .stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+
+  h2{font-size:clamp(20px,2.6vw,26px);letter-spacing:-.015em;margin:0 0 8px}
+  .sec{margin:0 0 64px}
+  .sec>p{color:var(--muted);max-width:72ch;margin:0 0 22px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    background:var(--bg);transition:border-color .15s,transform .15s}
+  .card:hover{border-color:var(--wq-green);transform:translateY(-2px);text-decoration:none}
+  .card img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;
+    object-position:top;background:var(--soft)}
+  .card div{padding:14px 16px 16px}
+  .card b{display:block;margin-bottom:4px}
+  .card small{color:var(--muted);line-height:1.5;display:block}
+
+  table{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);
+    vertical-align:top}
+  th{background:var(--soft);font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);font-weight:600}
+  tbody tr:hover{background:var(--soft)}
+  .num{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 0}
+  .btn{display:inline-block;padding:12px 22px;border-radius:9px;font-weight:600;
+    font-size:15px;border:1px solid var(--ink)}
+  .btn-p{background:var(--wq-blue);border-color:var(--wq-blue);color:#fff}
+  .btn-s{background:var(--bg);color:var(--ink)}
+  .btn:hover{text-decoration:none;opacity:.92}
+
+  footer{border-top:1px solid var(--line);background:var(--soft);
+    padding:34px 0;font-size:14px;color:var(--muted);margin-top:24px}
+  .note{background:var(--soft);border-left:3px solid var(--wq-blue);
+    padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:15px}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/brand/hero-banner.png" alt="WiseQ × AI Whisperers — AI Transformation Work Proposal">
+</header>
+
+<div class="wrap">
+
+  <p class="eyebrow">WiseQ B.V. · Grootebroek, NL · Prepared for Rob Nyari</p>
+  <h1>An AI-operations layer for a specialist Dutch retailer</h1>
+  <p class="lede">
+    The banner above is the summary. This page is the argument: what we found,
+    what we built against your real catalogue, what it costs, and the five
+    things we need from you to start.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><b>230</b><span>SKUs audited</span></div>
+    <div class="stat"><b>0</b><span>SKUs with an EAN</span></div>
+    <div class="stat"><b>114+25</b><span>Bundle spine decoded</span></div>
+    <div class="stat"><b>229</b><span>Product renders built</span></div>
+    <div class="stat"><b>~4h → min</b><span>Order cycle target</span></div>
+  </div>
+
+  <section class="sec">
+    <h2>Start with the one that matches your role</h2>
+    <p>The full repository is 16 documents deep. These are the entry points.</p>
+    <table>
+      <thead><tr><th>You are</th><th>Read</th><th>You'll get</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Deciding</strong></td>
+            <td><a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/README.md">The one-paragraph pitch</a></td>
+            <td>The whole proposal in 60 seconds</td></tr>
+        <tr><td><strong>Evaluating us</strong></td>
+            <td><a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/01-COMPANY-PROFILE.md">Company profile</a> · <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/09-COMPETITORS-DEALS.md">Competitors &amp; deals</a></td>
+            <td>Verified research and priced benchmarks</td></tr>
+        <tr><td><strong>Technical</strong></td>
+            <td><a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/04-AI-STACK-BLUEPRINT.md">AI stack blueprint</a> · <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/15-DEVOPS-MASTERPLAN.md">Delivery plan</a></td>
+            <td>The architecture, phase by phase</td></tr>
+        <tr><td><strong>Finance</strong></td>
+            <td><a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/11-COMPLIANCE-REGULATORY.md">Compliance &amp; costs</a> · <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/05-AUTOMATION-BACKLOG.md">Automation backlog</a></td>
+            <td>Scored ROI and a verified cost baseline</td></tr>
+        <tr><td><strong>Wants proof</strong></td>
+            <td><a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/17-SITE-CONCEPTS.md">Three built site concepts</a></td>
+            <td>Working code against the real catalog</td></tr>
+      </tbody>
+    </table>
+    <div class="cta">
+      <a class="btn btn-p" href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding">Read the full proposal on GitHub</a>
+      <a class="btn btn-s" href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/06-NEXT-STEPS.md">What we need from WiseQ</a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Built, not described</h2>
+    <p>
+      Three complete, scroll-driven storefronts — production-quality HTML, CSS and
+      JavaScript against WiseQ's real 229-product catalog. No framework, no build step:
+      open the file and it runs. Concept 03 makes the 77-bundle combinatorial problem
+      into the brand's visual language — the constellation <em>is</em> the bundle graph.
+    </p>
+    <div class="grid">
+      <a class="card" href="site-demos/v1-cinematic/">
+        <img src="assets/demos/v1-cinematic.png" alt="Concept 01 — Cinematic">
+        <div><b>01 · Cinematic</b><small>Full-bleed scroll narrative, 26,700 px.
+        The catalogue as a film reel. Best for brand and storytelling.</small></div>
+      </a>
+      <a class="card" href="site-demos/v2-editorial/">
+        <img src="assets/demos/v2-editorial.png" alt="Concept 02 — Editorial">
+        <div><b>02 · Editorial</b><small>Typography-led product journal, 18,800 px.
+        Feels like a specialist catalogue, not a shop.</small></div>
+      </a>
+      <a class="card" href="site-demos/v3-webgl/">
+        <img src="assets/demos/v3-webgl.png" alt="Concept 03 — Constellation">
+        <div><b>03 · Constellation</b><small>Threehei bundle graph as a navigable
+        starfield. The commercial one — makes ordering bundles feel inevitable.</small></div>
+      </a>
+    </div>
+    <div class="note">
+      <strong>These are demonstrations of craft, not a redesign proposal.</strong>
+      Nothing here is deployed and nothing here overrides the live site. If WiseQ
+      likes one, it becomes a scoped conversation with its own price — never a
+      bundled extra.
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>What we found</h2>
+    <table>
+      <thead><tr><th>Finding</th><th>Evidence</th><th>Proposal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>0 of 230 SKUs carry an EAN</strong></td>
+            <td>Programmatic Shopify audit</td>
+            <td>GTIN backfill + GS1 registry — <strong>€733/yr recurring</strong></td></tr>
+        <tr><td><strong>School orders cost ~4 hours</strong></td>
+            <td>Working session 2026-10-21</td>
+            <td>Mailbox-to-invoice agent → minutes</td></tr>
+        <tr><td><strong>Bundle stock tracked in Excel</strong></td>
+            <td>Bundle spine decoded — 25 bundles → 114 components</td>
+            <td>Reusable component registry</td></tr>
+        <tr><td><strong>Thuiswinkel costs more than quoted</strong></td>
+            <td>thuiswinkel.org, verified 2026-10-22</td>
+            <td><strong>€983–1,759</strong> yr 1 by turnover tier</td></tr>
+        <tr><td><strong>EU AI Act Art. 4 applies now</strong></td>
+            <td>Applied Feb 2025; supervision Aug 2026</td>
+            <td>AI-literacy register — hours, not budget</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:18px">
+      <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/01-COMPANY-PROFILE.md">
+        Company profile</a> ·
+      <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/05-AUTOMATION-BACKLOG.md">
+        Automation backlog</a> ·
+      <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/11-COMPLIANCE-REGULATORY.md">
+        Compliance</a> ·
+      <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/12-FIFTY-HATS.md">
+        Specialist review</a>
+    </p>
+  </section>
+
+  <section class="sec">
+    <h2>How we'd start</h2>
+    <p>Nothing on this list requires a production change, and nothing commits WiseQ
+    to anything. It unblocks a priced Phase 0.</p>
+    <table>
+      <thead><tr><th>#</th><th>We need</th><th>From you</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>The company manual</td><td>Send a file</td></tr>
+        <tr><td class="num">2</td><td>Software inventory + ChannelDock plan</td><td>A list</td></tr>
+        <tr><td class="num">3</td><td>Anonymised sample orders</td><td>30 min to export</td></tr>
+        <tr><td class="num">4</td><td>Read-only API tokens</td><td>When ready</td></tr>
+        <tr><td class="num">5</td><td><strong>Annual online turnover</strong></td>
+            <td>One number — sets the Thuiswinkel tier</td></tr>
+      </tbody>
+    </table>
+    <div class="cta">
+      <a class="btn btn-p" href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/06-NEXT-STEPS.md">See the full ask</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by <strong>AI Whisperers</strong> for WiseQ B.V. ·
+    <a href="https://github.com/Ai-Whisperers/wiseq-ai-onboarding">github.com/Ai-Whisperers/wiseq-ai-onboarding</a><br>
+    This repository contains no personal contact data. Lead-generation research is held
+    privately and handed over directly under GDPR-compliant terms.
+  </div>
+</footer>
+
+</body>
+</html>

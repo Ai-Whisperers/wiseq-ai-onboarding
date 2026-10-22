@@ -55,10 +55,10 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 | :--- | :--- | :--- | :--- |
 | **School orders eat 4-hour mornings** | Founder-confirmed in working session | School-order pipeline: email → offer → invoice → ChannelDock booking | **4h → <15 min** human touch |
 | **Bundle recombination pollutes purchase data** | A cable sells inside 4 adapter combinations; ChannelDock can't model it | Component↔bundle graph in a canonical EAN registry | Clean, true purchase data |
-| **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry (€732 one-off) | 230/230 registered |
+| **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry — **€854/yr** for the 139 inventory-critical codes (114 components + 25 bundles), **€1,403/yr** for all 230 | 230/230 registered |
 | **77 bundle-products (33%) have no component map** | Same audit — component→bundle mapping lives in human memory | Decoded **bundle spine**: 114 component SKUs + 25 bundles, 0 unresolved | Fully decomposed |
 | **Purchase data assembled by hand in Excel** | 6-month rolling average per EAN, one costly error/year | Nightly purchase-intelligence job | Daily, automatic, correct |
-| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | 25 → 250+ |
+| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | Every order invited; TrustScore defended |
 | **Scamadviser "Trust Score 0" flag** | Algorithmic remediation pending | Trust-profile remediation | Flag cleared |
 
 ---
@@ -92,10 +92,10 @@ Sixteen documents, four tracks. Each is self-contained and independently verifia
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
-| **08** | [OSS & Integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feed OSS landscape, EAN fix costs (€732), NL trust marks, school collectives |
+| **08** | [OSS & Integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feed OSS landscape, EAN fix costs (€854/yr for 139 codes; €1,403/yr for all 230), NL trust marks, school collectives |
 | **09** | [Competitors & Deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever / Puro / Alpine / Heutink), deal pricing benchmarks, new opportunities |
 | **10** | [OSS Catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
-| **11** | [Compliance & Regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €465/yr, cert-evidence library plan |
+| **11** | [Compliance & Regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €983–1,759/yr, cert-evidence library plan |
 
 ### Track D — Deep analysis *(the stress tests)*
 
@@ -246,7 +246,7 @@ python3 scripts/validate_repo.py
 - **2026-10-22** — compliance map — EN 71 / 62115 / RED (incl. Aug-2025 cybersecurity act), GPSR responsible-person check, Thuiswinkel costs verified.
 - **2026-10-22** — OSS catalog expanded to 31 topics / 100 curated repos by layer.
 - **2026-10-22** — competitors & deals research — competitor map, deal pricing benchmarks, 6 new opportunities.
-- **2026-10-22** — OSS & integrations research — the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (~€732).
+- **2026-10-22** — OSS & integrations research — the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (€854/yr recurring for 139 codes, not one-off).
 
 **Waiting on WiseQ:** the ~30-page company manual, software inventory, sandbox dataset, and read-only access. Full ask-list: **[06 · Next Steps](docs/06-NEXT-STEPS.md)**
 
