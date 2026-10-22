@@ -26,12 +26,14 @@
   /* ---- rail: one hero per family, then distinct fillers up to max ---- */
   function renderRail(host) {
     var max = parseInt(host.getAttribute('data-max') || '14', 10);
+    // curated rail = purchasable products only (samples excluded)
+    var pool = products.filter(function (p) { return p.f !== 'samples' && p.img_local && parseFloat(p.p) > 0; });
     var seen = {}, pick = [];
-    products.forEach(function (p) {
-      if (!seen[p.f] && p.img_local && parseFloat(p.p) > 0) { seen[p.f] = 1; pick.push(p); }
+    pool.forEach(function (p) {
+      if (!seen[p.f]) { seen[p.f] = 1; pick.push(p); }
     });
-    products.forEach(function (p) {
-      if (pick.length < max && pick.indexOf(p) < 0 && p.img_local && parseFloat(p.p) > 0) pick.push(p);
+    pool.forEach(function (p) {
+      if (pick.length < max && pick.indexOf(p) < 0) pick.push(p);
     });
     var frag = document.createDocumentFragment();
     pick.forEach(function (p) {
