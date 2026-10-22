@@ -23,6 +23,8 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ---
 
+<a id="if-you-are"></a>
+
 ## 👋 If you are…
 
 | You are… | Read this first | Then |
@@ -35,6 +37,8 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ---
 
+<a id="the-one-paragraph-pitch"></a>
+
 ## 🎯 The one-paragraph pitch
 
 > WiseQ already runs a remarkably modern stack — **Shopify with a custom B2B layer, ChannelDock, 5X, and live agentic-commerce endpoints.** The gap isn't tools; it's **orchestration**. School orders eat four-hour mornings. Bundle stock is re-tracked by hand in Excel. Review volume is thin and marketing runs below the site's potential.
@@ -42,6 +46,8 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 > We propose **one 24/7 AI-operations layer** — an orchestrated agent runtime that connects the mailbox, bookkeeping, ChannelDock, and the webshop — cutting the school-order process from **~4 hours to minutes**, making EAN-based purchasing automatic, and running reputation, content, and outreach continuously. **Most pieces already exist as connectable services.** Nothing is ripped out and replaced: every phase is additive and measurable.
 
 ---
+
+<a id="the-case-in-one-page"></a>
 
 ## 📊 The case in one page
 
@@ -56,6 +62,8 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 | **Scamadviser "Trust Score 0" flag** | Algorithmic remediation pending | Trust-profile remediation | Flag cleared |
 
 ---
+
+<a id="document-map"></a>
 
 ## 🗺️ Document map
 
@@ -178,6 +186,8 @@ Read-only dashboard   recombination         Content cadence        Supplier
 > **Concept 03 is the commercially interesting one.** WiseQ's audit found 77 combinatorial bundle-products (33% of the catalog) whose component mapping lived only in human memory. That concept makes the bundle graph the *visual language* of the storefront — turning the operational weakness into a brand asset, and reusing the same component registry that would drive purchasing.
 
 ---
+
+<a id="evidence-base"></a>
 
 ## 🔬 Evidence base
 
