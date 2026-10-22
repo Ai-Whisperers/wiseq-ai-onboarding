@@ -76,7 +76,7 @@
   .ch-head .sub{grid-column:2;font:500 .88rem/1.6 var(--sc-font-text);color:var(--sc-ink-soft);
     max-width:56ch;letter-spacing:.02em}
 
-  .spread{display:grid;grid-template-columns:minmax(280px,5fr) minmax(260px,6fr);
+  .spread{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);
     gap:clamp(2rem,5vw,4.5rem);max-width:1150px;align-items:start}
   @media(max-width:860px){.spread{grid-template-columns:1fr}}
   .spread .prose p{font-size:1.02rem;line-height:1.7;color:var(--sc-ink);max-width:58ch;text-wrap:pretty;margin:0 0 1.2rem}
@@ -90,7 +90,7 @@
   .plate figcaption{margin-top:.8rem;font:500 .8rem/1.6 var(--sc-font-text);color:var(--sc-ink-soft)}
   .plate figcaption b{color:var(--sc-ink);font-weight:600}
 
-  .cat-table{width:100%;max-width:1150px;border-collapse:collapse;font:500 .92rem/1.5 var(--sc-font-text)}
+  .cat-table{display:block;width:100%;max-width:1150px;overflow-x:auto;border-collapse:collapse;font:500 .92rem/1.5 var(--sc-font-text);-webkit-overflow-scrolling:touch}
   .cat-table caption{text-align:left;padding-bottom:1.2rem;font:600 .72rem/1 var(--sc-font-text);
     letter-spacing:.2em;text-transform:uppercase;color:var(--sc-accent)}
   .cat-table th{font:600 .7rem/1 var(--sc-font-text);letter-spacing:.16em;text-transform:uppercase;
@@ -112,6 +112,10 @@
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
+<meta property="og:title" content="WiseQ — Het witboek van veilig geluid">
+<meta property="og:description" content="Conceptsites door AI Whisperers — echte WiseQ-productdata, scroll-craft engine en threeui WebGL.">
+<meta property="og:image" content="../assets/social/wiseq-og-v1.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 

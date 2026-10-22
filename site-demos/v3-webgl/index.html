@@ -104,7 +104,30 @@
   .veil.off{opacity:0;pointer-events:none}
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+  /* full-catalog grid — glass object cards */
+  .catalog{background:linear-gradient(180deg,#0A101C,var(--bg))}
+  .catalog h2{font-family:var(--font-display)}
+  .cat-family{font:600 .7rem/1 var(--font-text);letter-spacing:.24em;text-transform:uppercase;
+    color:var(--accent);margin:2.8rem 0 1.1rem}
+  .cat-family:first-child{margin-top:0}
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.1rem}
+  .cat-item{border:1px solid var(--hair);border-radius:14px;background:linear-gradient(160deg,var(--panel),#0A101C);
+    text-decoration:none;color:inherit;display:flex;flex-direction:column;overflow:hidden;
+    transition:transform .3s ease,border-color .3s ease}
+  .cat-item:hover{transform:translateY(-5px);border-color:var(--accent)}
+  .cat-item .im{aspect-ratio:1;display:grid;place-items:center;padding:1.3rem}
+  .cat-item .im img{width:74%;max-height:84%;object-fit:contain;filter:drop-shadow(0 12px 22px rgba(0,0,0,.4))}
+  .cat-item .meta{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;
+    padding:.8rem 1rem;border-top:1px solid var(--hair)}
+  .cat-item .meta b{font:600 .78rem/1.35 var(--font-text);color:var(--ink)}
+  .cat-item .meta i{font:700 .8rem/1 var(--font-text);color:var(--accent);font-style:normal;white-space:nowrap}
+  .cat-item .meta b { display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden }
 </style>
+<meta property="og:title" content="WiseQ — De nachtelijke collectie">
+<meta property="og:description" content="Conceptsites door AI Whisperers — echte WiseQ-productdata, scroll-craft engine en threeui WebGL.">
+<meta property="og:image" content="../assets/social/wiseq-og-v1.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 

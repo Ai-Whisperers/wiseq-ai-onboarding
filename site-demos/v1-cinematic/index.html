@@ -25,6 +25,8 @@
     --sc-font-display: "Archivo", system-ui, sans-serif;
     --sc-font-text:    "Geist", system-ui, sans-serif;
   }
+  html{background:var(--sc-canvas);overflow-x:clip}
+  body{overflow-x:clip}
 
   .site-bar{position:fixed;inset:0 0 auto 0;z-index:40;display:flex;align-items:center;
     justify-content:space-between;padding:1.1rem var(--sc-gutter);
@@ -53,7 +55,7 @@
   .fact .sc-nums sub{font-size:.42em;color:var(--sc-accent);vertical-align:baseline}
   .fact p{margin:.5rem 0 0;color:var(--sc-ink-soft);font-size:.95rem;line-height:1.6;max-width:26ch}
 
-  .rail-act{background:var(--sc-surface)}
+  .rail-act{background:var(--sc-surface);overflow-x:clip}
   .rail{display:flex;gap:clamp(1.4rem,3vw,2.6rem);padding-inline:var(--sc-gutter);width:max-content}
   .obj{width:min(72vw,300px);text-decoration:none;color:inherit}
   .obj .ph{background:var(--sc-canvas);border:1px solid #F4F1EA14;border-radius:14px;
@@ -87,7 +89,29 @@
   @media (prefers-reduced-motion:reduce){.db-rail{display:none}}
 
   footer{background:var(--sc-canvas);padding:5.5rem var(--sc-gutter) 7.5rem}
+
+  /* full-catalog grid — engine tokens, surface cards */
+  .catalog{background:var(--sc-surface)}
+  .catalog .sc-rule{margin-block:0 2.4rem}
+  .cat-family{font:600 .72rem/1 var(--sc-font-text);letter-spacing:.22em;text-transform:uppercase;
+    color:var(--sc-accent);margin:2.8rem 0 1.1rem}
+  .cat-family:first-child{margin-top:0}
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+  .cat-item{border:1px solid #F4F1EA14;border-radius:12px;background:var(--sc-canvas);
+    text-decoration:none;color:inherit;display:flex;flex-direction:column;overflow:hidden;
+    transition:transform .3s ease,border-color .3s ease}
+  .cat-item:hover{transform:translateY(-4px);border-color:var(--sc-accent)}
+  .cat-item .im{aspect-ratio:1;display:grid;place-items:center;padding:1.2rem}
+  .cat-item .im img{width:72%;max-height:82%;object-fit:contain}
+  .cat-item .meta{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;
+    padding:.75rem .95rem;border-top:1px solid #F4F1EA14}
+  .cat-item .meta b{font:600 .78rem/1.35 var(--sc-font-text);color:var(--sc-ink)}
+  .cat-item .meta i{font:700 .8rem/1 var(--sc-font-text);color:var(--sc-accent);font-style:normal;white-space:nowrap}
 </style>
+<meta property="og:title" content="WiseQ — Filmische one-shot">
+<meta property="og:description" content="Conceptsites door AI Whisperers — echte WiseQ-productdata, scroll-craft engine en threeui WebGL.">
+<meta property="og:image" content="../assets/social/wiseq-og-v1.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -323,5 +347,25 @@
     requestAnimationFrame(draw);
   })();
 </script>
-<script src="../products.js"></script>\n<script src="../catalog-render.js"></script>\n</body>
+<script src="../products.js"></script>\n<script src="../catalog-render.js">
+  // fine-pointer depth response (hero-depth.md): planes answer the cursor
+  (function(){
+    if (!matchMedia('(pointer:fine)').matches) return;
+    let tx = 0, ty = 0, x = 0, y = 0;
+    addEventListener('pointermove', e => {
+      tx = (e.clientX / innerWidth - .5) * 2;
+      ty = (e.clientY / innerHeight - .5) * 2;
+    }, {passive:true});
+    (function tick(){
+      requestAnimationFrame(tick);
+      x += (tx - x) * .06; y += (ty - y) * .06;
+      const halo = document.querySelector('.hero-halo');
+      const disc = document.querySelector('.hero-glowdisc');
+      const prod = document.querySelector('.hero-product');
+      if (halo) halo.style.translate = `calc(-50% + ${x * -14}px) calc(-50% + ${y * -10}px)`;
+      if (disc) disc.style.translate = `calc(-50% + ${x * -22}px) calc(-50% + ${y * -16}px)`;
+      if (prod) prod.style.translate = `calc(-50% + ${x * 9}px) calc(-50% - 55% + ${y * 7}px)`;
+    })();
+  })();
+</script>\n</body>
 </html>
