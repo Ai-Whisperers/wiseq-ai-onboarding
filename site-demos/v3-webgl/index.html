@@ -2,164 +2,195 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WiseQ — Veilige technologie voor kinderen</title>
-<meta name="description" content="WiseQ WebGL concept. Kinderkoptelefoons, opladers en smartwatches — veilig luisteren, leren, spelen en bereikbaar blijven.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WiseQ · De nachtelijke collectie</title>
+<meta name="description" content="WiseQ-producten als een wandelbare constellatie: kinderkoptelefoons, smartwatches en opladers in één nachtelijke ruimte.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23070A12'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "three": "https://esm.sh/three@0.165.0",
+    "@designcodeio/threeui": "https://esm.sh/@designcodeio/threeui@1.2.0",
+    "@designcodeio/threeui/style.css": "https://esm.sh/@designcodeio/threeui@1.2.0/style.css"
+  }
+}
+</script>
 <style>
+  /* V3 — Live surface meets gallery · threeui components ARE the hero.
+     Grammar: gallery/collection hybrid — the WebGL stage runs persistent behind,
+     objects in a walkable collection, museum labels not marketing copy.
+     Signature move: the COLLECTION DEPTH HUD — objects layer into the 3D field by
+     price band, scroll advances the depth plane, HUD reads out which band you're in. */
   :root{
-    --bg:#070A12;
-    --panel:#0E1524;
-    --ink:#EDF2FA;
-    --soft:#93A0B8;
-    --accent:#37E6A4;
-    --accent-2:#4EA8FF;
-    --hair:rgba(237,242,250,.13);
+    --bg:#070A12; --panel:#0E1524; --ink:#EDF2FA; --soft:#93A0B8;
+    --accent:#37E6A4; --accent-2:#4EA8FF; --hair:rgba(237,242,250,.13);
+    --gutter:clamp(1.25rem,5vw,5.5rem);
+    --font-display:"Archivo",system-ui,sans-serif;
+    --font-text:"Geist",system-ui,sans-serif;
   }
   *{box-sizing:border-box}
   html{background:var(--bg)}
-  body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--ink)}
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  .nav{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;align-items:center;gap:1.8rem;padding:.85rem clamp(1rem,4vw,2.6rem)}
-  .nav .logo{font-weight:800;font-size:1.2rem;letter-spacing:.1em}
-  .nav .logo i{color:var(--accent);font-style:normal}
-  .nav a.lnk{font-size:.84rem;text-decoration:none;color:var(--soft)}
-  .nav a.lnk:hover{color:var(--ink)}
-  .nav .cta{margin-left:auto;text-decoration:none;font-size:.84rem;font-weight:700;background:var(--accent);color:#04120B;padding:.55rem 1.1rem;border-radius:999px}
-  @media(max-width:640px){.nav a.lnk{display:none}}
+  body{margin:0;color:var(--ink);font-family:var(--font-text)}
+
+  .site-bar{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;
+    justify-content:space-between;padding:1rem var(--gutter);
+    background:linear-gradient(#070A12cc,#070A1200)}
+  .site-bar .mark{font:800 1.05rem/1 var(--font-display);letter-spacing:.14em;color:var(--ink);text-decoration:none}
+  .site-bar .mark i{font-style:normal;color:var(--accent)}
+  .site-bar .cta{font:600 .8rem/1 var(--font-text);color:#04120B;background:var(--accent);
+    padding:.62rem 1.05rem;border-radius:999px;text-decoration:none}
+
+  /* hero: the threeui stage mounts here; copy floats over it */
   .hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden}
-  #stage{position:absolute;inset:0;width:100%;height:100%;display:block}
-  .hero .veil{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 110%, rgba(7,10,18,0) 30%, var(--bg) 92%)}
-  .hero .copy{position:relative;z-index:5;padding:0 clamp(1.2rem,6vw,4rem) clamp(2.6rem,8vh,5rem)}
-  .kicker{font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:700}
-  h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.03;letter-spacing:-.02em;margin:.5rem 0 1.1rem;font-weight:800}
-  h1 span{color:var(--accent-2)}
-  .lede{color:var(--soft);font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.7;max-width:54ch;margin:0 0 1.8rem}
-  .btnrow{display:flex;gap:.9rem;flex-wrap:wrap}
-  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.9rem;padding:.72rem 1.4rem;border-radius:999px}
-  .btn.pri{background:var(--accent);color:#04120B}
-  .btn.sec{border:1px solid var(--hair);color:var(--ink)}
-  .btn.sec:hover{border-color:var(--accent)}
-  .hud{position:absolute;z-index:6;right:clamp(1.2rem,4vw,3rem);bottom:clamp(2.6rem,8vh,5rem);display:flex;flex-direction:column;gap:.55rem;font-size:.75rem;color:var(--soft)}
-  .chip{border:1px solid var(--hair);background:rgba(14,21,36,.55);backdrop-filter:blur(6px);border-radius:8px;padding:.5rem .85rem;display:flex;gap:.6rem;align-items:center}
-  .chip b{color:var(--ink)}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
-  section.blk{padding:clamp(4.5rem,11vh,8rem) clamp(1.2rem,6vw,4rem)}
-  h2{font-size:clamp(1.9rem,4.2vw,3.1rem);letter-spacing:-.015em;margin:.4rem 0 1rem;font-weight:800}
-  .lede2{color:var(--soft);max-width:56ch;line-height:1.7;margin:0 0 2.4rem}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
-  .card{border:1px solid var(--hair);background:linear-gradient(160deg,var(--panel),#0A101C);border-radius:16px;padding:1.6rem;transition:transform .35s ease,border-color .35s ease}
-  .card:hover{transform:translateY(-6px);border-color:var(--accent)}
-  .card img{width:62%;margin:0 auto 1.1rem;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
-  .card h3{font-size:1.05rem;margin:.1rem 0 .5rem}
-  .card p{color:var(--soft);font-size:.92rem;line-height:1.6;margin:0}
-  .card .p{color:var(--accent);font-weight:700;margin-top:.9rem;display:block}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
-  .split .img{border:1px solid var(--hair);border-radius:20px;padding:2.4rem;background:radial-gradient(80% 80% at 50% 30%, #121B30, var(--bg))}
-  .split .img img{width:70%;margin:auto}
-  .spec{display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.2rem;font-size:.92rem;margin:1.6rem 0}
-  .spec dt{color:var(--soft)}
-  .spec dd{margin:0;font-weight:700}
-  @media(max-width:860px){.split{grid-template-columns:1fr}}
-  .band{border-block:1px solid var(--hair);overflow:hidden;padding:1.15rem 0;background:#0A0F1B}
-  .band .in{display:flex;gap:3rem;width:max-content;animation:mq 26s linear infinite;font-weight:700;letter-spacing:.12em;font-size:.92rem;color:var(--soft);text-transform:uppercase}
-  .band .in b{color:var(--accent)}
-  @keyframes mq{to{transform:translateX(-50%)}}
-  @media (prefers-reduced-motion:reduce){.band .in{animation:none}}
+  .hero .mount{position:absolute;inset:0}
+  .hero .copy{position:relative;z-index:5;padding:0 var(--gutter) clamp(2.8rem,8vh,5rem)}
+  .hero h1{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+    font-size:clamp(2.5rem,6.6vw,4.8rem);line-height:1.03;margin:.5rem 0 1.1rem;text-wrap:balance}
+  .hero h1 span{color:var(--accent-2)}
+  .hero .lede{color:var(--soft);font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.7;max-width:52ch;margin:0 0 1.8rem}
+  .hero .kicker{font:600 .72rem/1 var(--font-text);letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+
+  /* the depth HUD — signature chrome */
+  .hud{position:fixed;right:var(--gutter);bottom:1.2rem;z-index:55;display:flex;gap:.6rem;align-items:center;
+    border:1px solid var(--hair);background:#0E1524b0;backdrop-filter:blur(8px);
+    border-radius:12px;padding:.7rem 1rem;font:600 .74rem/1 var(--font-text);color:var(--soft)}
+  .hud .band{color:var(--accent)}
+  .hud .sep{opacity:.4}
+  .hud .bar{width:120px;height:3px;border-radius:2px;background:#1B2536;overflow:hidden;display:inline-block;vertical-align:middle}
+  .hud .bar i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--accent-2),var(--accent))}
+  @media(max-width:640px){.hud{left:var(--gutter);right:var(--gutter);justify-content:space-between}}
+
+  section.blk{padding:clamp(4.5rem,11vh,8rem) var(--gutter)}
+  h2{font-family:var(--font-display);font-weight:800;letter-spacing:-.015em;
+    font-size:clamp(1.8rem,4vw,3rem);margin:.4rem 0 1rem;text-wrap:balance}
+  .kicker{font:600 .72rem/1 var(--font-text);letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+  .lede2{color:var(--soft);max-width:56ch;line-height:1.7;margin:0 0 2.4rem;font-size:1.02rem}
+
+  /* museum labels — fact not pitch (gallery grammar) */
+  .objects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+  .obj{border:1px solid var(--hair);border-radius:16px;background:linear-gradient(160deg,var(--panel),#0A101C);
+    padding:1.6rem;display:flex;flex-direction:column;text-decoration:none;color:inherit;
+    transition:transform .35s ease,border-color .35s ease}
+  .obj:hover{transform:translateY(-6px);border-color:var(--accent)}
+  .obj img{width:60%;margin:0 auto 1.1rem;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+  .obj .schema{font:600 .64rem/1.4 var(--font-text);letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+  .obj h3{font-size:1.02rem;margin:.45rem 0 .3rem}
+  .obj dl{margin:.8rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.3rem .9rem;
+    font:500 .8rem/1.5 var(--font-text)}
+  .obj dl dt{color:var(--soft)}
+  .obj dl dd{margin:0;color:var(--ink)}
+  .obj .price{margin-top:auto;padding-top:1rem;font:700 .95rem/1 var(--font-text);color:var(--accent)}
+
   .b2b{background:linear-gradient(180deg,var(--bg),#0A101C)}
-  .b2b .grid .card img{width:66%}
-  footer{border-top:1px solid var(--hair);padding:3rem clamp(1.2rem,6vw,4rem) 2.4rem}
-  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;max-width:1200px;margin-inline:auto}
-  footer h4{margin:0 0 .7rem;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
+
+  footer{border-top:1px solid var(--hair);padding:3rem var(--gutter) 5rem}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;max-width:1200px}
+  footer h4{margin:0 0 .7rem;font:600 .72rem/1 var(--font-text);letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
   footer a{display:block;text-decoration:none;color:var(--soft);font-size:.9rem;padding:.22rem 0}
   footer a:hover{color:var(--ink)}
-  footer .note{margin-top:2.4rem;color:#5E6980;font-size:.78rem}
+  footer .note{margin-top:2.4rem;color:#5E6980;font-size:.78rem;max-width:70ch;line-height:1.7}
   @media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+  /* loading veil while the module graph resolves */
+  .veil{position:fixed;inset:0;z-index:90;background:var(--bg);display:grid;place-items:center;
+    transition:opacity .6s ease;font:600 .78rem/1 var(--font-text);letter-spacing:.2em;color:var(--soft)}
+  .veil.off{opacity:0;pointer-events:none}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 
-<nav class="nav">
-  <span class="logo">Wise<i>Q</i></span>
-  <a class="lnk" href="#producten">Producten</a>
-  <a class="lnk" href="#anc">Kids ANC</a>
-  <a class="lnk" href="#onderwijs">Onderwijs</a>
-  <a class="cta" href="#producten">Shop nu</a>
-</nav>
-
-<header class="hero" id="top">
-  <canvas id="stage" aria-hidden="true"></canvas>
-  <div class="veil"></div>
-  <div class="copy">
-    <p class="kicker">Veilige technologie voor kinderen</p>
-    <h1>Veilig luisteren.<br>Concentreren. <span>Bereikbaar.</span></h1>
-    <p class="lede">Kinderkoptelefoons met vaste 85 dB-begrenzing, opladers die alles tegelijk
-       aan kunnen en GPS-smartwatches die ouders rust geven. Voor thuis, onderweg en op school.</p>
-    <div class="btnrow">
-      <a class="btn pri" href="#producten">Bekijk producten</a>
-      <a class="btn sec" href="#onderwijs">Zakelijk / onderwijs</a>
-    </div>
-  </div>
-  <div class="hud">
-    <div class="chip"><span class="dot"></span><b>85 dB</b>&nbsp;volumebegrenzing — vast</div>
-    <div class="chip"><span class="dot"></span><b>35 u</b>&nbsp;speeltijd · ANC actief</div>
-    <div class="chip"><span class="dot"></span><b>230+</b>&nbsp;producten op voorraad</div>
-  </div>
+<header class="site-bar">
+  <a class="mark" href="#top">WISE<i>Q</i></a>
+  <a class="cta" href="#collectie">De collectie</a>
 </header>
 
-<section class="blk" id="producten">
-  <p class="kicker">Producten</p>
-  <h2>Gebouwd voor hoe kinderen <span style="color:var(--accent-2)">écht</span> leven</h2>
-  <p class="lede2">Elk product begint bij dezelfde vraag: wat maakt dit veiliger, steviger of
-     gebruiksvriendelijker voor een kind?</p>
-  <div class="grid">
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="Kids ANC roze"><h3>Kids ANC · Roze</h3><p>Draadloos, actieve geluidsonderdrukking, volume begrensd op 85 dB.</p><span class="p">€ 49,95</span></div>
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_ActieveGeluidsonderdrukkingDraadlozeKoptelefoonVolumeBegrensd85dB35uBluetoothNavy.png" alt="Kids ANC navy"><h3>Kids ANC · Navy</h3><p>Zelfde bescherming, eigen kleur. 35 uur speeltijd per lading.</p><span class="p">€ 49,95</span></div>
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="Smartwatch roze"><h3>Smartwatch · Roze</h3><p>GPS-tracking en bereikbaarheid — ouders weten waar, kinderen weten hoe laat.</p><span class="p">€ 74,95</span></div>
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Wisetab_roze_new.png" alt="WiseTab tablet"><h3>WiseTab · 96 GB</h3><p>Kindertablet die veilig, snel en compleet is — klaar voor school en spel.</p><span class="p">€ 124,95</span></div>
-  </div>
-</section>
+<main id="top">
 
-<div class="band" aria-hidden="true">
-  <div class="in">
-    <span>85 dB vast</span><b>·</b><span>35 uur speeltijd</span><b>·</b><span>ANC</span><b>·</b><span>Hufterproof</span><b>·</b><span>GPS</span><b>·</b><span>Op factuur voor scholen</span><b>·</b>
-    <span>85 dB vast</span><b>·</b><span>35 uur speeltijd</span><b>·</b><span>ANC</span><b>·</b><span>Hufterproof</span><b>·</b><span>GPS</span><b>·</b><span>Op factuur voor scholen</span><b>·</b>
-  </div>
-</div>
-
-<section class="blk" id="anc">
-  <div class="split">
-    <div class="img">
-      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="WiseQ Kids ANC zwart">
+  <section class="hero" id="hero">
+    <div class="mount" id="threeui-mount"></div>
+    <div class="copy">
+      <p class="kicker">De nachtelijke collectie · live WebGL</p>
+      <h1>Producten die <span>rust</span> geven.<br>Op de Voorhoede van kinderveiligheid.</h1>
+      <p class="lede">Kinderkoptelefoons met vaste 85 dB-grens, GPS-horloges die verbinden en
+         opladers die de hele klas aankunnen — hier als een beweeglijke constellatie,
+         gedraaid door de echte <b>threeui</b>-componenten van MengTo.</p>
     </div>
-    <div>
-      <p class="kicker">Het vlaggenschip</p>
-      <h2>Kids ANC. <span style="color:var(--accent)">85 dB, niet onderhandelbaar.</span></h2>
-      <p class="lede2" style="margin-bottom:0">Actieve geluidsonderdrukking voor concentratie in de klas,
-         een volumegrens die niet uit te schakelen is, en een constructie die een schooljaar meegaat.</p>
-      <dl class="spec">
-        <dt>Volumebegrenzing</dt><dd>85 dB — vast</dd>
-        <dt>Ruisonderdrukking</dt><dd>Actief (ANC)</dd>
-        <dt>Speeltijd</dt><dd>35 uur</dd>
-        <dt>Kleuren</dt><dd>Roze · Navy · Zwart</dd>
-        <dt>Prijs</dt><dd style="color:var(--accent)">€ 49,95</dd>
-      </dl>
-      <a class="btn pri" href="https://www.wiseq.nl" target="_blank" rel="noopener">Bestel op wiseq.nl</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="blk b2b" id="onderwijs">
-  <p class="kicker">Scholen &amp; onderwijs</p>
-  <h2>De hele klas <span style="color:var(--accent-2)">geladen</span> tegen de ochtend</h2>
-  <p class="lede2">Op factuur bestellen, staffelkorting voor onderwijs, en opslag die de klas
-     organiseert: van koptelefoonkar tot 32-poorts oplaadkluis.</p>
-  <div class="grid">
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/OplaadkofferBinnenaanzicht.png" alt="16-poorts oplaadkoffer"><h3>16-poorts oplaadkoffer · 500W</h3><p>iPads en tablets allemaal tegelijk laden, transportklaar.</p><span class="p">€ 899,00</span></div>
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Oplaadkluis32-poorts-Tablet-_Laptopkar.png" alt="Oplaadkluis 32 poorts"><h3>32-poorts oplaadkluis · kar</h3><p>Afsluitbaar en verrijdbaar, voor tablets én laptops.</p><span class="p">€ 1.149,00</span></div>
-    <div class="card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Houtenopbergkarvoorkoptelefoons_verrijdbaarmet40ophangpunten.png" alt="Houten opbergkar"><h3>Houten opbergkar · 40 ophang</h3><p>Koptelefoons netjes per leerling, massief hout.</p><span class="p">€ 399,00</span></div>
-  </div>
-</section>
+  <section class="blk" id="collectie">
+    <p class="kicker">De collectie</p>
+    <h2>Objecten, in plaats van reclame.</h2>
+    <p class="lede2">Museumlabels, geen verkooppraat: elk object draagt hetzelfde schema —
+       naam, vorm, grens, prijs. Zo is het een collectie en geen grid.</p>
+    <div class="objects">
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 01 · Koptelefoon</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="Kids ANC zwart">
+        <h3>Kids ANC · Zwart</h3>
+        <dl><dt>Vorm</dt><dd>Over-ear, draadloos</dd><dt>Grens</dt><dd>85 dB, vast</dd><dt>Duur</dt><dd>35 uur</dd></dl>
+        <span class="price">€ 49,95</span>
+      </a>
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 02 · Koptelefoon</schema>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="Kids ANC roze">
+        <h3>Kids ANC · Roze</h3>
+        <dl><dt>Vorm</dt><dd>Over-ear, draadloos</dd><dt>Grens</dt><dd>85 dB, vast</dd><dt>Duur</dt><dd>35 uur</dd></dl>
+        <span class="price">€ 49,95</span>
+      </a>
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 03 · Smartwatch</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="Smartwatch roze">
+        <h3>Smartwatch · Roze</h3>
+        <dl><dt>Vorm</dt><dd>GPS-horloge</dd><dt>Netwerk</dt><dd>4G-verbinding</dd><dt>Doel</dt><dd>Bereikbaarheid</dd></dl>
+        <span class="price">€ 74,95</span>
+      </a>
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 04 · Tablet</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Wisetab_roze_new.png" alt="WiseTab roze">
+        <h3>WiseTab · 96 GB</h3>
+        <dl><dt>Vorm</dt><dd>Kindertablet</dd><dt>Geheugen</dt><dd>96 GB</dd><dt>Doel</dt><dd>Leren en spelen</dd></dl>
+        <span class="price">€ 124,95</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="blk b2b" id="onderwijs">
+    <p class="kicker">Scholen &amp; onderwijs</p>
+    <h2>De hele klas, 's ochtends vol.</h2>
+    <p class="lede2">Op factuur bestellen, staffelkorting voor onderwijs, en opslag die de klas ordent.</p>
+    <div class="objects">
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 05 · Opladen</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/OplaadkofferBinnenaanzicht.png" alt="Oplaadkoffer">
+        <h3>Oplaadkoffer · 16 poorten</h3>
+        <dl><dt>Vermogen</dt><dd>500 W USB-C</dd><dt>Capaciteit</dt><dd>16 tablets</dd></dl>
+        <span class="price">€ 899,00</span>
+      </a>
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 06 · Opladen</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Oplaadkluis32-poorts-Tablet-_Laptopkar.png" alt="Oplaadkluis">
+        <h3>Oplaadkluis · 32 poorten</h3>
+        <dl><dt>Vorm</dt><dd>Kar, afsluitbaar</dd><dt>Capaciteit</dt><dd>Tablets + laptops</dd></dl>
+        <span class="price">€ 1.149,00</span>
+      </a>
+      <a class="obj" href="https://www.wiseq.nl" target="_blank" rel="noopener">
+        <span class="schema">Object 07 · Opberg</span>
+        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Houtenopbergkarvoorkoptelefoons_verrijdbaarmet40ophangpunten.png" alt="Opbergkar">
+        <h3>Opbergkar · 40 ophangpunten</h3>
+        <dl><dt>Materiaal</dt><dd>Massief hout</dd><dt>Vorm</dt><dd>Verrijdbaar</dd></dl>
+        <span class="price">€ 399,00</span>
+      </a>
+    </div>
+  </section>
+
+</main>
 
 <footer>
   <div class="cols">
@@ -168,129 +199,77 @@
       <p style="color:var(--soft);font-size:.92rem;line-height:1.7;max-width:40ch;margin:0">
         Veilige technologie voor kinderen. Geen anonieme webshop, maar hulp wanneer je die nodig hebt.</p>
     </div>
-    <div><h4>Shop</h4><a href="#producten">Kinderkoptelefoons</a><a href="#producten">Smartwatches</a><a href="#producten">WiseTab</a></div>
+    <div><h4>Shop</h4><a href="#collectie">Koptelefoons</a><a href="#collectie">Smartwatches</a><a href="#collectie">WiseTab</a></div>
     <div><h4>Zakelijk</h4><a href="#onderwijs">Onderwijs</a><a href="#onderwijs">Op factuur</a></div>
   </div>
-  <p class="note">Concept V3 "WebGL" — AI Whisperers demo met live productdata van wiseq.nl en three.js (threeui-geïnspireerd). Geen officiële WiseQ-pagina.</p>
+  <p class="note">Concept V3 «Nachtelijke collectie» door AI Whisperers. Hero draait op echte
+     @designcodeio/threeui-componenten (MIT, MengTo) via esm.sh; productdata en beeld: wiseq.nl.
+     Geen officiële WiseQ-pagina.</p>
 </footer>
 
-<script type="importmap">
-{"imports":{"three":"https://unpkg.com/three@0.170.0/build/three.module.js"}}
-</script>
+<!-- signature chrome: the collection depth HUD -->
+<div class="hud" id="hud" aria-hidden="true">
+  <span>DIEPTE</span><span class="bar"><i id="hudbar"></i></span>
+  <span class="sep">|</span>
+  <span>BAND <b class="band" id="hudband">€ 0–50</b></span>
+  <span class="sep">|</span>
+  <span><b id="hudn">0</b>/7 OBJECTEN</span>
+</div>
+<div class="veil" id="veil">COLLECTIE LADEN…</div>
+
 <script type="module">
-import * as THREE from 'three';
+  // ---- mount the REAL threeui component behind the hero ----
+  import React from "react";
+  import { createRoot } from "react-dom/client";
+  import { ConstellationField } from "@designcodeio/threeui";
 
-// --- product constellation: planes orbiting in depth, answering the pointer ---
-const canvas = document.getElementById('stage');
-const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x070A12, 0.055);
-const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
-camera.position.set(0, 0.4, 11);
-
-// lights
-scene.add(new THREE.AmbientLight(0x8FA8D8, 0.55));
-const key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(4, 6, 8); scene.add(key);
-const rim = new THREE.PointLight(0x37E6A4, 18, 40); rim.position.set(-6, -2, -4); scene.add(rim);
-const rim2 = new THREE.PointLight(0x4EA8FF, 14, 40); rim2.position.set(7, 3, -6); scene.add(rim2);
-
-const loader = new THREE.TextureLoader();
-loader.setCrossOrigin('anonymous');
-
-// product sprites — WiseQ CDN images on softly glowing planes
-const items = [
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png', s:2.6},
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png', s:2.1},
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_ActieveGeluidsonderdrukkingDraadlozeKoptelefoonVolumeBegrensd85dB35uBluetoothNavy.png', s:2.1},
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png', s:1.5},
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Zwart_GPS_Kinderhorloge.png', s:1.5},
-  {url:'https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Wisetab_roze_new.png', s:1.7}
-];
-const planes = [];
-const geo = new THREE.PlaneGeometry(1, 1);
-function makePlane(tex, s){
-  const mat = new THREE.MeshBasicMaterial({map:tex, transparent:true, opacity:0, depthWrite:false});
-  const m = new THREE.Mesh(geo, mat);
-  m.scale.setScalar(s);
-  scene.add(m);
-  planes.push(m);
-}
-// CORS-safe texture load with graceful fallback (tinted plane if CDN blocks)
-items.forEach((it, i) => {
-  loader.load(it.url,
-    tex => makePlane(tex, it.s),
-    undefined,
-    () => { // fallback: soft glowing quad so the stage is never empty
-      const mat = new THREE.MeshBasicMaterial({color: i % 2 ? 0x37E6A4 : 0x4EA8FF, transparent:true, opacity:0.25});
-      const m = new THREE.Mesh(geo, mat); m.scale.setScalar(it.s * 0.5); scene.add(m); planes.push(m);
-    });
-});
-
-// orbit parameters per plane
-const orbits = planes => planes.map((m, i) => ({
-  r: 2.2 + (i % 3) * 1.6,
-  y: (i - planes.length / 2) * 1.05,
-  sp: 0.05 + (i % 4) * 0.022,
-  ph: i * 1.7,
-  bob: 0.15 + (i % 3) * 0.08
-}));
-
-// starfield backdrop
-(() => {
-  const N = 420, pos = new Float32Array(N * 3);
-  for (let i = 0; i < N; i++) {
-    pos[i*3]   = (Math.random() - 0.5) * 60;
-    pos[i*3+1] = (Math.random() - 0.5) * 34;
-    pos[i*3+2] = -Math.random() * 40 - 6;
+  const mount = document.getElementById('threeui-mount');
+  const veil = document.getElementById('veil');
+  try {
+    createRoot(mount).render(React.createElement(ConstellationField, {
+      style: { position: 'absolute', inset: 0 }
+    }));
+    setTimeout(() => veil.classList.add('off'), 900);
+  } catch (e) {
+    // graceful: no WebGL / no module graph → paper ground, page still complete
+    mount.remove();
+    veil.classList.add('off');
+    console.warn('threeui mount skipped:', e);
   }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  scene.add(new THREE.Points(g, new THREE.PointsMaterial({color:0x93A0B8, size:0.055, transparent:true, opacity:0.8})));
-})();
 
-// pointer parallax
-const ptr = {x:0, y:0, tx:0, ty:0};
-addEventListener('pointermove', e => {
-  ptr.tx = (e.clientX / innerWidth - 0.5) * 2;
-  ptr.ty = (e.clientY / innerHeight - 0.5) * 2;
-}, {passive:true});
-
-// resize
-function fit(){
-  const w = canvas.clientWidth || innerWidth, h = canvas.clientHeight || innerHeight;
-  renderer.setSize(w, h, false);
-  camera.aspect = w / h; camera.updateProjectionMatrix();
-}
-addEventListener('resize', fit); fit();
-
-// fade-in helper
-let t0 = performance.now();
-const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-function frame(now){
-  requestAnimationFrame(frame);
-  const t = (now - t0) / 1000;
-  ptr.x += (ptr.tx - ptr.x) * 0.045;
-  ptr.y += (ptr.ty - ptr.y) * 0.045;
-  const os = orbits(planes);
-  planes.forEach((m, i) => {
-    const o = os[i];
-    const a = reduced ? o.ph : t * o.sp + o.ph;
-    m.position.set(
-      Math.cos(a) * o.r + ptr.x * 1.4,
-      o.y + Math.sin(t * 0.7 + o.ph) * o.bob - ptr.y * 0.9,
-      Math.sin(a) * o.r * 0.5 - 2
-    );
-    m.lookAt(camera.position);
-    if (m.material.map) m.material.opacity = Math.min(1, m.material.opacity + 0.012);
-  });
-  camera.position.x = ptr.x * 0.55;
-  camera.position.y = 0.4 - ptr.y * 0.35;
-  camera.lookAt(0, 0, -2);
-  renderer.render(scene, camera);
-}
-requestAnimationFrame(frame);
+  // ---- bespoke signature: COLLECTION DEPTH HUD (engine untouched) ----
+  // objects enter the depth plane by price band as you scroll; the HUD reads
+  // the band + how many objects the visitor has "walked past".
+  const bands = [
+    { label: '€ 0–50',    max: 50 },
+    { label: '€ 50–100',  max: 100 },
+    { label: '€ 100–500', max: 500 },
+    { label: '€ 500+',    max: Infinity }
+  ];
+  const objs = [...document.querySelectorAll('.obj')];
+  const bar = document.getElementById('hudbar');
+  const bandEl = document.getElementById('hudband');
+  const nEl = document.getElementById('hudn');
+  let seen = 0;
+  const io = new IntersectionObserver(es => es.forEach(x => {
+    if (x.isIntersecting) { x.target.dataset.seen = '1'; recount(); }
+  }), { threshold: .35 });
+  objs.forEach(o => io.observe(o));
+  function priceOf(el){
+    const t = el.querySelector('.price')?.textContent || '€0';
+    return parseFloat(t.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
+  }
+  function recount(){
+    const vis = objs.filter(o => o.dataset.seen);
+    nEl.textContent = vis.length;
+    const maxP = Math.max(0, ...vis.map(priceOf));
+    const b = bands.find(b => maxP < b.max) || bands[bands.length - 1];
+    bandEl.textContent = b.label;
+  }
+  addEventListener('scroll', () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (Math.min(1, scrollY / Math.max(1, max)) * 100).toFixed(1) + '%';
+  }, { passive: true });
 </script>
 </body>
 </html>
