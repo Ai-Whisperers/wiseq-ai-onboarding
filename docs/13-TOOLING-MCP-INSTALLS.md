@@ -1,14 +1,22 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track D · Document 13* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # Tooling, MCP Setup & Install Plan — Both Operations
 
 *2026-10-22. The concrete layer: which MCP servers, which installs, which custom builds — for the WiseQ engagement and the PY operation. Grounded in the live Hermes catalog (`hermes mcp catalog`), verified MCP servers from research, and the OSS catalogs (docs 08/10 here, doc 08 PY).*
 
-## 0. What's already in the AIW Hermes instance (verified live)
+## 0. 🧭 What's already in the AIW Hermes instance (verified live)
 
 Enabled right now: **github, figma, airtable, cloudflare, context7, datadog, deepwiki, dropbox, fireflies, intercom, klaviyo, linear, notion, postman, semgrep, stripe, supabase, todoist, twelfe-data, vercel, wolfram, brave-search, drawio, exa, filesystem, slack, sqlite** + Bitwarden Secrets (196 secrets applied).
 
 Notable catalog items **available but not enabled** that map directly to our needs: **n8n-official, paypal, square, sentry, mixpanel, amplitude, grafana, cloudinary, canva, gamma**.
 
-## 1. The MCP install list (per operation)
+## 1. 🕰️ The MCP install list (per operation)
 
 ### WiseQ engagement — enable/install:
 
@@ -41,7 +49,7 @@ Notable catalog items **available but not enabled** that map directly to our nee
 | P2 | **Google Business Profile** (custom) | Build | Review replies + weekly post |
 | P3 | **SIFEN/SIAT invoice MCP** (custom) | Build | Emit factura electrónica per sale at SIMPLE regime |
 
-## 2. The install plan (servers & software)
+## 2. 💬 The install plan (servers & software)
 
 ### WiseQ side (mostly API access, light install):
 
@@ -68,7 +76,7 @@ services:
 
 Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for managed Postgres), nightly `restic` backups off-site, uptime monitoring via **Better Stack** (already enabled), cron via Hermes jobs.
 
-## 3. New insights from the MCP research
+## 3. 📦 New insights from the MCP research
 
 1. **Square + PayPal have official hosted MCP servers** (in catalog) — evidence the industry direction is agent-native payments; WiseQ/PY payment stacks (uPay/Bancard) have no MCP yet → our thin wrappers are the pattern, and potentially a first-in-market asset.
 2. **Klaviyo is in the catalog** — if WiseQ prefers SaaS ESP over self-hosted BillionMail, the agent runs it natively day one. Decision point for Rob, not a blocker.
@@ -77,7 +85,7 @@ Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for 
 5. **Firecrawl has an official MCP** — but it's a paid SaaS; Scrapling (89k★, local) covers CDE scraping at 0 marginal cost. Decision: local-first, Firecrawl only if a site defeats Scrapling.
 6. **n8n-official MCP exists in catalog** — the Hermes-decides/n8n-executes split (PY doc 04) gets a native bridge; enable when the first n8n flow ships.
 
-## 4. Consolidated install checklist (ordered)
+## 4. 🧱 Consolidated install checklist (ordered)
 
 **Week 1 (zero-access prep, do now):**
 - [ ] `hermes mcp install n8n-official paypal square` (catalog) — payments/flows ready
@@ -94,7 +102,7 @@ Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for 
 **Month 2+:**
 - [ ] UVdesk + Umami wrappers; Meta Ads MCP live with budget guardrails; SIFEN MCP at SIMPLE-regime time; Klaviyo-vs-BillionMail decision with Rob
 
-## 5. What we deliberately do NOT install
+## 5. 🗺️ What we deliberately do NOT install
 
 - **Odoo/ERPNext** (phase 3+ only — the hipopótamo rule)
 - **Medusa/Saleor** until the shop outgrows Tiendli/Shoperly or Shopify

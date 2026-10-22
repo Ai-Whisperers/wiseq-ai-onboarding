@@ -1,3 +1,11 @@
+<div align="center">
+<img src="../../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="30">
+</div>
+
+<sub>Evidence base · Original research report</sub>
+
+---
+
 # WiseQ — Marketplace Presence & Customer Reputation
 
 **Lane:** Marketplaces & reputation (parent-side recovery — the dispatched subagent died to an instant HTTP 429 before gathering anything; this report was produced by the parent session directly).
@@ -5,13 +13,13 @@
 
 ---
 
-## 1. Executive summary
+## 🎯 1. Executive summary
 
 WiseQ runs a **multi-channel operation**: its own Shopify shop (wiseq.nl), a **bol.com brand storefront** (seller/partner ID 4268085706), and an **Amazon.nl brand store** with ASINs registered since **~2020** — roughly five years before the current Shopify catalog went live (first product created 2025-09-30). Independent reputation is **thin but positive on Trustpilot (4.4/5, 25 reviews)**, while **Scamadviser carries an algorithmic "Very Likely Unsafe" flag (Trust Score 0)** inherited from a Webshopchecker report — a meaningful conversion-killer for a young shop that deserves active remediation. Products also flow into **education retail** (educatheek.nl stocks WISEQ Kids ANC), confirming a wholesale/B2B distribution side beyond consumer marketplaces.
 
 ---
 
-## 2. bol.com presence
+## 🏛️ 2. bol.com presence
 
 ### What is verified
 
@@ -33,7 +41,7 @@ Bol.com actively maintains WiseQ category shelves across at least four product g
 
 ---
 
-## 3. Amazon.nl presence
+## 🌐 3. Amazon.nl presence
 
 ### Brand store
 
@@ -56,7 +64,7 @@ Additional artifact: an Amazon-hosted product manual PDF ("Welkom bij WiseQ! Hoe
 
 ---
 
-## 4. Independent review platforms
+## 📅 4. Independent review platforms
 
 ### Trustpilot — the anchor signal
 
@@ -85,14 +93,14 @@ Additional artifact: an Amazon-hosted product manual PDF ("Welkom bij WiseQ! Hoe
 
 ---
 
-## 5. Wholesale / education channel (bonus finding)
+## 📈 5. Wholesale / education channel (bonus finding)
 
 - **educatheek.nl** (education-focused retailer) stocks the **WISEQ Kids ANC - Active Noise Cancelling - Zwart** as a catalogue item: "Op voorraad", publisher/brand field "WISEQ", education-market copy ("compatibel met Nintendo Switch of Playstation 5"). URL: https://www.educatheek.nl/wiseq-kids-anc-active-noise-cancelling-zwart
 - Confirms the B2B/wholesale motion the About page and "Zakelijke klant"/"Proefexemplaar aanvragen" pages imply — WiseQ supplies other education retailers, not just end consumers.
 
 ---
 
-## 6. Synthesis for the AI/automation engagement
+## 🧭 6. Synthesis for the AI/automation engagement
 
 1. **Marketplace ops are already multi-channel and messy in exactly the way the audio transcript described**: bol (main, unmeasurable from here), Amazon (neglected, 2020-era listings with broken compliance blocks), own shop (Shopify, active). An aggregation/monitoring layer (stock, price, review asymmetries, listing quality) across all three is the natural first automation.
 2. **Reputation tooling gap:** 25 Trustpilot reviews with zero automated invitation flow + a Scamadviser 0 flag = the single highest ROI quick win (post-purchase review invitations via Trustpilot/Kiyoh + Scamadviser profile remediation).

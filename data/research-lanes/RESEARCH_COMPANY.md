@@ -1,3 +1,11 @@
+<div align="center">
+<img src="../../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="30">
+</div>
+
+<sub>Evidence base · Original research report</sub>
+
+---
+
 # WiseQ — Company, Registry & History
 
 **Lane:** Company/registry (parent-side recovery — dispatched subagent died to an instant HTTP 429; this report was produced by the parent session directly).
@@ -5,13 +13,13 @@
 
 ---
 
-## 1. Executive summary
+## 🎯 1. Executive summary
 
 WiseQ is **Wiseq B.V.**, a Dutch private limited company (**Besloten Vennootschap**) founded in **2018**, registered at Wijzend 56, 1613 KP Grootebroek (Noord-Holland, municipality Stede Broec). It is classified under **SBI 46190 — Bemiddeling van gemeenschappelijke goederen** (intermediation/agency trade of general goods), i.e. a **trading/wholesale intermediary, not a manufacturer** — consistent with an import/own-brand operation sourcing electronics and reselling across channels. The company has an unusually long marketplace history for a shop that looks brand-new: **selling on bol.com since June 2018**, domain registered **January 2019**, Amazon.nl ASINs from **~2020**, and a complete rebuild of its own webshop catalog between **2025-09-30 and 2026-10-01**. The brand started as a **hearing-safe audio brand for adults** ("Turn Music into Magic") and pivoted to **kids' technology** as its core positioning.
 
 ---
 
-## 2. Registry facts (verified)
+## 🏛️ 2. Registry facts (verified)
 
 | Field | Value | Source |
 |---|---|---|
@@ -29,7 +37,7 @@ WiseQ is **Wiseq B.V.**, a Dutch private limited company (**Besloten Vennootscha
 
 **Not public / behind paywall:** directors (bestuurders), share capital, employee count, credit score, risk prognosis — all locked features on the free Creditsafe page. *(Gap flag: director/owner names unverified from open web this pass; the paid Handelsregister extract or LinkedIn People page would resolve it.)*
 
-## 3. Domain & infrastructure
+## 🌐 3. Domain & infrastructure
 
 | Field | Value | Source |
 |---|---|---|
@@ -40,7 +48,7 @@ WiseQ is **Wiseq B.V.**, a Dutch private limited company (**Besloten Vennootscha
 | Nameservers | webhostingserver.g1-dns.one / .com | SIDN WHOIS |
 | Web platform | Shopify (cdn.shopify.com assets, /products.json API) | site structure |
 
-## 4. Verified timeline (the brand is ~8 years old, not 1)
+## 📅 4. Verified timeline (the brand is ~8 years old, not 1)
 
 | Date | Event | Source |
 |---|---|---|
@@ -54,7 +62,7 @@ WiseQ is **Wiseq B.V.**, a Dutch private limited company (**Besloten Vennootscha
 
 **Reading:** the audio-safety DNA carried straight into the kids pivot — 85 dB volume limiting and hearing protection are the same value proposition re-aimed at parents. The Shopify rebuild of 2025-26 was a **replatform onto a modern stack**, with bol.com remaining the oldest continuously-operated channel (8+ years, 312 articles, 9.2/10 seller score per bkoppeling snapshot).
 
-## 5. Scale signals
+## 📈 5. Scale signals
 
 - **bol.com (WISEQ NL):** active since June 2018, seller rating **9.2/10 from 42 reviews**, **312 articles** listed (bkoppeling.nl aggregation, retrieved 2026-10-21). Largest channel by listing count.
 - **Own shop:** 230 products live (products.json, 2026-10-21).
@@ -63,11 +71,11 @@ WiseQ is **Wiseq B.V.**, a Dutch private limited company (**Besloten Vennootscha
 - **LinkedIn:** company page exists (linkedin.com/company/wiseq, "WISEQ - Turn Music into Magic") — content behind authwall this pass; headcount unknown.
 - **Physical footprint:** Wijzend 56 is a residential/small-business address on the Wijzend in Grootebroek (drimble.nl postcode 1613KP shows numbered homes) — consistent with a home-office/Small-Office e-commerce operation, not a warehouse. Fulfillment likely 3PL or dropship-style (matches SBI intermediation classification).
 
-## 6. Local ecosystem note
+## 🧭 6. Local ecosystem note
 
 bkoppeling's "other sellers in Grootebroek" list (Smit Brandhoff Tweewielers, SNOWIS.nl, Brenda Kookt, Mels Products, sensisweet…) shows Grootebroek hosts a cluster of small bol.com sellers — the West-Friesland region is a dense home-based e-commerce area. Wiseq B.V. is one of the larger ones by listing count.
 
-## 7. What this means for the engagement
+## 🔗 7. What this means for the engagement
 
 1. **Real, solvent, experienced operator** — 8 years of marketplace selling with a 9.2 bol score. Not a fly-by-night shop (Scamadviser's 0-score flag in the marketplaces report is even more clearly an algorithmic artifact against this history).
 2. **Tiny team** — home-office BV, likely 1-5 people (unverified; LinkedIn would confirm). Every automation hour saved is founder time; the audio transcript's obsession with automation matches the org shape.

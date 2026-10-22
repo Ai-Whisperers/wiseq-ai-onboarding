@@ -1,10 +1,18 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track D · Document 12* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # 50-Hat Analysis — WiseQ Engagement, PY Operation, AIW Meta-Layer
 
 *2026-10-22. 50 fresh hats beyond the 40 in the PY repo (doc 07 there): 15 on the WiseQ engagement, 15 on the PY operation, 20 on the AIW meta-layer — the business-we-are-building-around-both, never analyzed until now. Each hat gives 2-3 concrete items. New regulatory findings integrated: CONATEL homologation (PY RF gear) and the revised EU Product Liability Directive (NL kids' products).*
 
 ---
 
-## Domain A — The WiseQ Engagement (hats 1-15)
+## 🎯 Domain A — The WiseQ Engagement (hats 1-15)
 
 ### 1. Knowledge-transfer engineer
 Rob IS the system today — the 30-page manual is the only doc. (a) Manual → structured runbooks: every process as checklist the agent can execute; (b) record a "day with Rob" screen-share session → transcript → task inventory; (c) bus-factor metric: % of processes documented vs in-head — the engagement's real deliverable is dropping that number.
@@ -51,7 +59,7 @@ Rob's the user AND the owner. (a) Ship one automation he feels weekly (drift rep
 ### 15. Incident-response planner
 (a) WhatsApp/channel outage → fallback order form on the shop; (b) agent gone rogue (wrong price live) → kill switch + 15-min rollback runbook + pricing-change freeze rule; (c) data incident → 72h GDPR notification runbook with pre-drafted templates (avanzialegal-style clock starts immediately).
 
-## Domain B — PY Operation (hats 16-30)
+## 🌴 Domain B — PY Operation (hats 16-30)
 
 ### 16. CONATEL homologation specialist ⚠️ NEW FINDING
 Bluetooth audio = telecom equipment in PY: **CONATEL homologation + physical label required BEFORE import** (Res. 588/2009; 2025 tightening noted by customs brokers). (a) Buying from CDE wholesalers: the WHOLESALER imported, so homologation is their paperwork — verify label presence at onboarding, photograph it; (b) direct 1688 import of Bluetooth items = OUR homologation — cost/lead-time per SKU before the import rule (doc 09 §3) fires; (c) non-RF items (cases, chargers wired, cables) = no CONATEL — import-first candidates.
@@ -98,7 +106,7 @@ Phase 2+ direct imports: (a) formal importer registration (RUC importador) vs us
 ### 30. City-expansion scout
 (a) Encarnación/CdE/Oviedo: same playbook, local messenger + local FB groups (hat 38 in PY doc 07); the scout = demand probe via FB-group activity, 2 weeks, Gs. 0; (b) franchise-the-stack optionality: one operator + our agents per city; (c) expansion gate: main city at ≥150 sales/mo AND ≥12% net margin for 3 consecutive months.
 
-## Domain C — The AIW Meta-Layer (hats 31-50, never analyzed before)
+## 🧠 Domain C — The AIW Meta-Layer (hats 31-50, never analyzed before)
 
 ### 31. Productized-services architect
 Each reusable component → SKU'd service: CDE-price-agent, bundle-spine builder, school-order closer, review engine, compliance tracker. (a) name + one-pager + fixed price each; (b) bundle into "Commerce OS" tiers; (c) the two live ops (WiseQ, PY) become case studies with real numbers.
@@ -162,7 +170,7 @@ Document near-misses: (a) the OSS-catalog build bug (assert-caught); (b) the Fla
 
 ---
 
-## Synthesis: the 12 that graduate to the kanban
+## 🚀 Synthesis: the 12 that graduate to the kanban
 
 | # | Hat | Action | Repo |
 |---|---|---|---|
@@ -179,7 +187,7 @@ Document near-misses: (a) the OSS-catalog build bug (assert-caught); (b) the Fla
 | 11 | 40 | Eval-gate on every agent deploy | AIW |
 | 12 | 45 | Pilot negotiation: scope-add, never discount | AIW |
 
-## Discards (explicit)
+## 🗑️ Discards (explicit)
 
 - **Hiring salespeople** (hat 34): inbound + case studies first; sales hires at client #5, not before.
 - **Building a dashboard SaaS** (hat 41): the metrics live in markdown reports; SaaS-ing them is a different company.

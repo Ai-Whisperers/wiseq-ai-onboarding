@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track D · Document 15* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # DevOps Masterplan — Pipeline, Storage, Data, Observability
 
 *2026-10-22. The "devops masterpiece" plan for both repos: what exists (CI green, nightly crawl live), what's missing, and the phased build order. Every recommendation is grounded in the repos' actual shape (docs+data today, app code phase 1+) and in verified platform behavior.*
 
-## 0. Current state (verified today)
+## 0. 🧭 Current state (verified today)
 
 | Layer | WiseQ repo | PY repo |
 |---|---|---|
@@ -13,13 +21,13 @@
 | Secrets handling | scan in validator | scan in validator |
 | Environments | none | none |
 
-## 1. ⚠️ The two platform traps (grounded)
+## 1. 🕰️ ⚠️ The two platform traps (grounded)
 
 **Trap 1 — GitHub silently kills scheduled workflows after 60 days of repo inactivity.** No notification; the nightly crawl just stops. Mitigation: a keep-alive — any real commit counts, but a dedicated `keepalive` workflow (weekly commit bumping a `.timestamp` or the snapshot flow's own commits keep it alive) is the robust fix. *The snapshot workflow itself commits nightly when prices change — that IS the keep-alive — but only when prices change.* Rule: add an explicit weekly keepalive job with a `workflow_dispatch` fallback, and a Better Stack cron-monitor on the Actions API (alert if no run in 48h).
 
 **Trap 2 — Snapshot bloat in git.** 29 KB/night ≈ 10.6 MB/year raw; with diffs, git history grows ~2×. Five sources → 50+ MB/yr. Mitigations (phased): (a) short-term, keep dated JSONs — small and diffable; (b) at ~6 months or 100 MB repo: move to monthly tarball + `latest.json` pointer, or Git LFS; (c) the real home is the **price-history DB** (below), not git — git carries only `latest.json` once the DB pipeline lands.
 
-## 2. CI/CD upgrades (both repos)
+## 2. 💬 CI/CD upgrades (both repos)
 
 1. **zizmor workflow-security linting** — saskia's own reference standard; SARIF output → GitHub Security tab. One workflow, runs on workflow-file changes.
 2. **gitleaks-action** on every push/PR — deeper than our regex scan (entropy + history), zero config. Note: runner default is Node 24 since June 2026 — pin accordingly.
@@ -28,7 +36,7 @@
 5. **Dependabot** — today only on actions (weekly); when app code lands, extend to pip/npm ecosystem groups.
 6. **Release flow** (phase 1+): tag → changelog gate → pip-audit hard gate (advisory in CI, blocking on release — the saskia split).
 
-## 3. Storage & data architecture
+## 3. 📦 Storage & data architecture
 
 **Principle: git = code + small config; data lake = the VPS/Neon; git carries pointers.**
 
@@ -47,7 +55,7 @@
 
 **R2 for assets:** product images (WiseQ catalog, PY listings) → R2 bucket per op, public URLs, git keeps manifest only.
 
-## 4. Pipeline evolutions
+## 4. 🧱 Pipeline evolutions
 
 **WiseQ repo → deployable deliverables.** Phase 1 makes this repo produce artifacts: the bundle-spine importer (SQL + CSV), the drift-report generator (Python script + scheduled run), the competitor-watch configs (changedetection JSON). CI gains a job per artifact: `make spine` / `make drift-report` — outputs to `dist/` (git-ignored) + attaches to workflow run. Later: Docker image for the wrapper (ghcr.io, versioned, signed with cosign — flagship polish).
 
@@ -61,7 +69,7 @@
 ```
 Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the same rail (Resend email fallback — creds already in BWS).
 
-## 5. Observability & SLOs
+## 5. 🗺️ Observability & SLOs
 
 - **Heartbeats**: every cron/agent run writes a heartbeat row (ts, job, status, duration) — Better Stack heartbeat monitors (already enabled) alert on silence.
 - **Uptime**: shop/landing URLs on Better Stack public status page (the `status` repo pattern) — trust signal for both ops.
@@ -69,7 +77,7 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - **SLO draft**: nightly snapshot pipeline ≥95% success/30d; validator <5 min; drift report delivered by 07:10 ≥98%; WhatsApp agent eval pass-rate ≥90% (when live).
 - **Runbooks**: per workflow — what healthy looks like, what silence means, 3-step restart (50-hats #46).
 
-## 6. The DevOps masterpiece checklist (phased)
+## 6. 🔍 The DevOps masterpiece checklist (phased)
 
 **Phase 0 — now (zero infra):**
 - [ ] zizmor + gitleaks workflows (both repos)
@@ -90,7 +98,7 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - [ ] Multi-env (dev/prod) with GitHub Environments + approvals on prod
 - [ ] Load test the wrapper APIs (routes endpoint smoke — saskia pattern)
 
-## 7. What we deliberately avoid
+## 7. ⚙️ What we deliberately avoid
 
 - **Kubernetes** — two small ops, one VPS + Neon + R2; k8s is resume-driven here.
 - **Terraform** for 3 cloud resources — config-as-code in the compose + Neon dashboards; revisit at 10+ resources.

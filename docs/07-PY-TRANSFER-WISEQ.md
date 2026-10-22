@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track B · Document 07* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # PY → WiseQ: Everything We Built for Paraguay That WiseQ Should Get
 
 *2026-10-22. While building our Paraguay dropshipping operation's research stack, we produced capabilities that solve WiseQ problems directly. This document maps each one — and delivers the artifacts we already prepared from WiseQ's own public data.*
 
-## 1. The headline: we decoded the bundle spine
+## 1. 🧭 The headline: we decoded the bundle spine
 
 WiseQ's public catalog encodes Rob's exact bundle problem in its SKUs. Analysis of the 230-product Shopify export:
 
@@ -17,7 +25,7 @@ WiseQ's public catalog encodes Rob's exact bundle problem in its SKUs. Analysis 
 
 **What this enables on day one of a collaboration:** the EAN spine becomes mechanical. Assign EANs to the 114 components first (one-time), then every bundle's identity = ordered tuple of component EANs. When ChannelDock reports "component 207 out of stock," the agent propagates: 207 → 3 bundles containing it → pause those listings everywhere (shop + bol + Amazon) in minutes, not mornings. This is the exact "bundle goes out of stock, which cables do I still have" problem Rob described — solved at the SKU layer, before any AI.
 
-## 2. The PY research stack, mapped to WiseQ
+## 2. 🕰️ The PY research stack, mapped to WiseQ
 
 | PY capability (py-dropship-ai) | WiseQ application |
 |---|---|
@@ -34,14 +42,14 @@ WiseQ's public catalog encodes Rob's exact bundle problem in its SKUs. Analysis 
 | **Failure-mode finance rules** (kill criteria, CPA ≤ 50% margin, runway separation) | Per-SKU profitability floors from 5X data → auto-pause losers instead of silent margin bleed |
 | **Seasonality calendar** | NL school calendar: back-to-school Aug, Sinterklaas Dec, Christmas — procurement timed to it |
 
-## 3. New insights from the PY work that WiseQ should hear
+## 3. 💬 New insights from the PY work that WiseQ should hear
 
 1. **Bol drift is measurable now**: 312 bol articles vs 230 shop products — at least 82 listings live only on bol (or are stale ghosts). First automation: nightly shop↔bol reconciliation report. Zero risk, immediate clarity.
 2. **The 5X + ChannelDock data stays where it is — we add the missing layer**: a canonical SQLite/Postgres spine joining Shopify SKUs ↔ bol offers ↔ ChannelDock stock ↔ 5X margin. Four systems, one table, one truth. (The PY repo's `data/` layer is the template.)
 4. **Amazon cleanup is a batch job**: 2020-era ASINs (B08G/B08P) with 2.5★ dud listing — a one-week agent project: audit, merge or kill, refresh content, reclaim the 4.4★ store average.
 5. **The agentic edge compounds**: WiseQ's UCP/MCP endpoints are ahead of the market — connecting them to an orchestration layer (Hermes) turns "machine-readable" into "machine-OPERATED": orders in, labels out, stock propagated, exceptions escalated.
 
-## 4. Ready-to-run first week (what we can prepare before any access)
+## 4. 📦 Ready-to-run first week (what we can prepare before any access)
 
 No credentials needed — all preparable now:
 
@@ -54,6 +62,6 @@ No credentials needed — all preparable now:
 
 With read-only access (later): ChannelDock + 5X joins, live stock propagation, margin floors, and the WhatsApp school-order closer.
 
-## 5. Why this pattern works
+## 5. 🧱 Why this pattern works
 
 The PY operation forced us to build retailer-grade automation with zero budget and zero legacy — the same constraints as WiseQ's home-office operation, one person, many channels. Everything was designed agent-first: every component speaks API/CLI, every decision is logged, every data leak (the 0/230 EAN lesson) becomes a structural rule instead of a cleanup project. WiseQ gets the benefit of that discipline without paying for the scar tissue.

@@ -1,44 +1,241 @@
-# WiseQ × AI Whisperers — AI Transformation Onboarding
+<div align="center">
 
-**Public working repo for WiseQ** ([wiseq.nl](https://www.wiseq.nl)) — the Dutch kids-technology brand from Grootebroek — and its AI/automation transformation program with [AI Whisperers](https://github.com/Ai-Whisperers).
+<img src="assets/brand/hero-banner.png" alt="WiseQ × AI Whisperers — AI Transformation Work Proposal" width="100%">
 
-**Purpose:** everything we know about WiseQ, everything we've already researched and built, and the complete blueprint for the AI stack we propose to build together. Built for **Rob Nyari** and the WiseQ team to review.
+</div>
 
-> 🔒 **Data note:** this repo deliberately contains **no personal contact data**. Our lead-generation research produced large B2B contact datasets (school boards, special-education networks, EU education registers). Those stay private and are handed over directly under GDPR-compliant terms — see `data/leadgen-summary.md` for counts, sources, and methodology only.
+<br>
 
-## Quick links
+<div align="center">
 
-| Doc | What's in it |
-|---|---|
-| [Company profile](docs/01-COMPANY-PROFILE.md) | Who WiseQ is — verified registry, timeline, channels, catalog, tech stack |
-| [Meeting notes 2026-10-21](docs/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
-| [AI stack blueprint](docs/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — the full stack, phase by phase |
-| [Automation backlog](docs/05-AUTOMATION-BACKLOG.md) | Every automation opportunity we found, scored by ROI |
-| [What we've done so far](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
-| [PY → WiseQ transfer](docs/07-PY-TRANSFER-WISEQ.md) | Capabilities from our Paraguay build that solve WiseQ problems — incl. the decoded **bundle spine** |
-| [Next steps](docs/06-NEXT-STEPS.md) | What we need from WiseQ to start Phase 0 |
-| [OSS & integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feeds OSS landscape, EAN fix costs (€732), NL trust marks, school collectives |
-| [Competitors & deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever/Puro/Alpine/Heutink), deal pricing benchmarks, new opportunities |
-| [OSS catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
-| [Compliance & regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71/62115/RED (2025 cyber layer), GPSR, Thuiswinkel €465/yr, cert-evidence library plan |
-| [50-hat analysis](docs/12-FIFTY-HATS.md) | 15 WiseQ + 15 PY + **20 AIW meta-layer hats** — liability, bol health, CONATEL, Commerce-OS productization, 24-month arc |
-| [Tooling & MCP installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified Hermes catalog inventory, per-op MCP install lists (Shopify/bol/e-Boekhouden/Trustpilot wrappers), PY docker-compose, week-1 checklist |
-| [Hermes/Jev + AIW reuse](docs/14-HERMES-JEV-AIW-REUSE.md) | **Jev verdict** (keep, route the ops lanes), Hermes optimization checklist, **full AIW asset inventory** (7 org + 81 personal repos), reuse-first stack |
-| [DevOps masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades (zizmor/gitleaks/branch-protection), storage & DB architecture (Neon + DuckDB + R2), SLOs, phased masterpiece checklist |
-| [Dev team hats](docs/16-DEV-TEAM-HATS.md) | **18-role full-team audit** — PM to Support Engineer; each flags/praises/fixes; top-10 ranked improvements |
+[![Documents](https://img.shields.io/badge/documents-17-blue?style=for-the-badge)](#document-map)
+[![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
+[![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
+[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c--the-market--regulation-what-surrounds-the-plan)
+[![Research%20lanes](https://img.shields.io/badge/research%20lanes-5%20independent%20reports-orange?style=for-the-badge)](#evidence-base)
+[![Hat%20passes](https://img.shields.io/badge/hat%20passes-68%20roles%20audited-pink?style=for-the-badge)](#evidence-base)
+[![validate](https://img.shields.io/github/actions/workflow/status/Ai-Whisperers/wiseq-ai-onboarding/validate.yml?branch=main&style=for-the-badge)](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/actions/workflows/validate.yml)
 
-## The one-paragraph pitch
+[WiseQ](https://www.wiseq.nl) — the Dutch kids-technology brand from Grootebroek, Netherlands ·
+prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
-WiseQ already runs a remarkably modern stack (Shopify with a custom B2B layer, ChannelDock + 5X, agentic-commerce endpoints). The gap isn't tools — it's **orchestration**: school orders eat 4-hour mornings, bundle stock is re-tracked by hand in Excel, review volume is thin, and marketing runs below the site's potential. We propose a single 24/7 AI-operations layer (Hermes Agent) that connects the mailbox, bookkeeping, ChannelDock, and the webshop — cutting the school-order process from ~4 hours to minutes, making EAN-based purchasing automatic, and running reputation/content/outreach continuously. Most pieces exist as MCP-connectable services already.
+</div>
 
-## Status
+---
 
-- 2026-10-21: repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
-- 2026-10-22: **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved); artifacts in `data/wiseq-bundle-spine.csv` + `data/wiseq-component-registry.csv`. PY→WiseQ transfer doc added (docs/07).
-- 2026-10-22: Hermes/Jev + AIW reuse inventory — Jev verified live (enabled, zai-lane inert by design, grid documented), fallback-add flagged as top fix; AIW assets mapped: saskia-app (SIFEN backend), gaby-client-engine (outreach), ops-toolkit (VPS), hermes observability lib, telescope-ai (MCP pattern); reuse-first stack defined.
-- 2026-10-22: tooling & MCP plan — live catalog audit (27 enabled / square+paypal+n8n-official available), MCP install lists both ops (P0: Shopify Admin custom app + Evolution API MCP), PY docker-compose defined, 3 thin wrapper builds queued (e-Boekhouden, bol, Trustpilot).
-- 2026-10-22: 50-hat analysis — 3 domains incl. first-ever AIW meta-layer analysis (Commerce-OS productization, case-study economics, dual-jurisdiction privacy); new grounded findings: EU Product Liability Directive (kids products), CONATEL homologation for PY Bluetooth imports; 12 actions graduate to kanban.
-- 2026-10-22: compliance map — EN 71/EN 62115/RED (incl. Aug-2025 cybersecurity act, GPS trackers in scope), GPSR responsible-person check, Thuiswinkel Waarborg costs verified (€75 + €390/yr), cert-evidence library per SKU family. Original 5 research-lane reports added under data/research-lanes/.
-- 2026-10-22: OSS catalog expanded to 31 topics / 100 curated repos by layer — adopted additions: UVdesk 19.6k★ (school-order inbox as tickets), Umami 39.5k★ (cookieless analytics), BillionMail 15.9k★ (self-hosted ESP), QuestPDF 14.2k★ (slips/labels), open-seo-mcp 6.4k★.
-- 2026-10-22: competitors & deals research — iClever = #1 US kids-audio (Euromonitor), Alpine = NL school-oorkap A-brand, Heutink ICT = totaalleverancier incumbent; deal benchmarks (pilot $3-5k / retainer €2-4k / outcome-priced per order); OSS wave 2 confirms gaps = moat; 6 new opportunities incl. bol CPOP track.
-- 2026-10-22: OSS & integrations research — 10 GitHub topics (~115 repos) proving the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (~€732 one-off for 114 components + 25 bundles); bol Retailer API surface mapped; Thuiswinkel Waarborg + Trustpilot trust plan; school inkoopcollectieven identified as B2B channel 2.0.
+## 👋 If you are…
+
+| You are… | Read this first | Then |
+| :--- | :--- | :--- |
+| **Rob Nyari** — E-Commerce CEO, decision-maker | [The one-paragraph pitch](#the-one-paragraph-pitch) → [04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | [06 · Next Steps](docs/06-NEXT-STEPS.md) for the four decisions we need from you |
+| **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/04-AI-STACK-BLUEPRINT.md#cost-model-honest) | [09 · Competitors & Deals](docs/09-COMPETITORS-DEALS.md) for market pricing benchmarks |
+| **An operations / purchase lead** | [05 · Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) — every opportunity, ROI-scored | [07 · PY → WiseQ Transfer](docs/07-PY-TRANSFER-WISEQ.md) for the bundle-spine decode |
+| **A technical evaluator or IT reviewer** | [04 · Architecture](docs/04-AI-STACK-BLUEPRINT.md) + [15 · DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | [13 · Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) for the concrete connector list |
+| **New to this repository** | [Document map](#document-map) — 17 docs, four tracks | Everything else in this table is detail |
+
+---
+
+## 🎯 The one-paragraph pitch
+
+> WiseQ already runs a remarkably modern stack — **Shopify with a custom B2B layer, ChannelDock, 5X, and live agentic-commerce endpoints.** The gap isn't tools; it's **orchestration**. School orders eat four-hour mornings. Bundle stock is re-tracked by hand in Excel. Review volume is thin and marketing runs below the site's potential.
+>
+> We propose **one 24/7 AI-operations layer** — an orchestrated agent runtime that connects the mailbox, bookkeeping, ChannelDock, and the webshop — cutting the school-order process from **~4 hours to minutes**, making EAN-based purchasing automatic, and running reputation, content, and outreach continuously. **Most pieces already exist as connectable services.** Nothing is ripped out and replaced: every phase is additive and measurable.
+
+---
+
+## 📊 The case in one page
+
+| The gap we found | The evidence | What we build | The measurable target |
+| :--- | :--- | :--- | :--- |
+| **School orders eat 4-hour mornings** | Founder-confirmed in working session | School-order pipeline: email → offer → invoice → ChannelDock booking | **4h → <15 min** human touch |
+| **Bundle recombination pollutes purchase data** | A cable sells inside 4 adapter combinations; ChannelDock can't model it | Component↔bundle graph in a canonical EAN registry | Clean, true purchase data |
+| **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry (€732 one-off) | 230/230 registered |
+| **77 bundle-products (33%) have no component map** | Same audit — component→bundle mapping lives in human memory | Decoded **bundle spine**: 114 component SKUs + 25 bundles, 0 unresolved | Fully decomposed |
+| **Purchase data assembled by hand in Excel** | 6-month rolling average per EAN, one costly error/year | Nightly purchase-intelligence job | Daily, automatic, correct |
+| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | 25 → 250+ |
+| **Scamadviser "Trust Score 0" flag** | Algorithmic remediation pending | Trust-profile remediation | Flag cleared |
+
+---
+
+## 🗺️ Document map
+
+Seventeen documents, four tracks. Each is self-contained and independently verifiable.
+
+### Track A — The proposal *(what we recommend)*
+
+| # | Doc | What's in it | Read if |
+| :--- | :--- | :--- | :--- |
+| **04** | [AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — architecture, phase-by-phase plan, honest cost model, guardrails | You want the sell. Start here. |
+| **05** | [Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) | 21 automations scored by impact and effort, 🔥 flags on do-first | You want the option list, ranked |
+| **06** | [Next Steps](docs/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for Rob** | You need to unblock us this week |
+| **14** | [Hermes / Jev + AIW Reuse](docs/14-HERMES-JEV-AIW-REUSE.md) | **Jev verdict**, Hermes optimization, full AIW asset inventory (7 org + 81 personal repos) | You want to know what already exists |
+
+### Track B — The company *(who WiseQ is)*
+
+| # | Doc | What's in it |
+| :--- | :--- | :--- |
+| **01** | [Company Profile](docs/01-COMPANY-PROFILE.md) | Verified registry, timeline, channels, catalog, tech stack |
+| **02** | [What We've Done](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
+| **03** | [Meeting Notes 2026-10-21](docs/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
+| **07** | [PY → WiseQ Transfer](docs/07-PY-TRANSFER-WISEQ.md) | Paraguay build capabilities that solve WiseQ problems — incl. the decoded **bundle spine** |
+
+### Track C — The market & regulation *(what surrounds the plan)*
+
+| # | Doc | What's in it |
+| :--- | :--- | :--- |
+| **08** | [OSS & Integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feed OSS landscape, EAN fix costs (€732), NL trust marks, school collectives |
+| **09** | [Competitors & Deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever / Puro / Alpine / Heutink), deal pricing benchmarks, new opportunities |
+| **10** | [OSS Catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
+| **11** | [Compliance & Regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €465/yr, cert-evidence library plan |
+
+### Track D — Deep analysis *(the stress tests)*
+
+| # | Doc | What's in it |
+| :--- | :--- | :--- |
+| **12** | [50-Hat Analysis](docs/12-FIFTY-HATS.md) | 15 WiseQ + 15 PY + **20 AIW meta-layer hats** — liability, bol health, CONATEL, Commerce-OS productization, 24-month arc |
+| **13** | [Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified catalog inventory, per-op MCP install lists, docker-compose, week-1 checklist |
+| **15** | [DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades, storage & DB architecture, SLOs, phased masterpiece checklist |
+| **16** | [Dev Team Hats](docs/16-DEV-TEAM-HATS.md) | **18-role full-team audit** — PM to Support Engineer; each flags/praises/fixes; top-10 ranked improvements |
+
+---
+
+## ⚙️ Target architecture
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│  THE AI OPERATIONS LAYER — 24/7, reversible, audited                  │
+│  orchestrator · memory · cron · kanban · skills · subagents          │
+└───────────────────────────────────┬───────────────────────────────────┘
+                                    │
+        ┌───────────┬───────────┬───┴─────┬───────────┬───────────┐
+        ▼           ▼           ▼         ▼           ▼           ▼
+   ┌─────────┐ ┌─────────┐ ┌────────┐ ┌────────┐ ┌─────────┐ ┌────────┐
+   │ Mailbox │ │ Book-   │ │Channel │ │ Shopify│ │ bol.com │ │ Web &  │
+   │ IMAP/   │ │ keeping │ │ Dock   │ │ Admin  │ │ + 5X    │ │ market │
+   │ SMTP    │ │ offers  │ │ stock &│ │ orders │ │ seller  │ │ intel  │
+   │ (email) │ │ invoice │ │ pur-   │ │        │ │ APIs    │ │ scrape │
+   └─────────┘ └─────────┘ │ chase  │ └────────┘ └─────────┘ └────────┘
+                          └────────┘
+```
+
+Runs on WiseQ's **existing 24/7 office machine** or a **€20/mo VPS**. Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
+
+Full detail, phase by phase: **[04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md)**
+
+---
+
+## 🗓️ Delivery phases
+
+```
+Phase 0 ────────────► Phase 1 ────────────► Phase 2 ────────────► Phase 3
+Foundation            Kill the 4-hour      Revenue engines        Compounding
+Week 1–2              mornings              Week 7–12              advantages
+                                                                  Q2
+
+Connect, read,        School-order          Reputation engine     Agentic-commerce
+shadow. No writes.     pipeline · Bundle     B2B outreach          operations
+Read-only dashboard   recombination         Content cadence        Supplier
++ EAN registry v1     Purchase reports      Marketplace relaunch   intelligence
++ shadow demo         Mailbox triage        ESP + cart flows      New segments
+                                                                        EU expansion
+```
+
+**Every phase is additive.** Phase 0 writes nothing. Phase 1 adds one pipeline. If a phase underperforms, you stop and keep what works.
+
+---
+
+## 🛡️ Guardrails we commit to
+
+| Guardrail | How it works |
+| :--- | :--- |
+| **Human approval gates** | Invoices, purchase orders, and outbound campaigns require approval for the first 90 days |
+| **Full audit log** | Every agent action records who / what / when / why — their own `agents.md` philosophy, applied internally |
+| **Secrets in a vault** | Never in chat, never in this repository |
+| **GDPR discipline** | B2B role-address outreach under legitimate interest; named-person emails need lawful basis; unsubscribe in every send |
+| **Kill switch** | Every automation is a cron job or webhook that can be paused in one command |
+| **Reversible by design** | Nothing replaces an existing system; every phase can be rolled back |
+
+---
+
+## 🔬 Evidence base
+
+This proposal is not built on assumptions. Every claim traces to a verified artifact in this repository.
+
+| Evidence track | Contents | Where |
+| :--- | :--- | :--- |
+| **Catalog & data-quality audit** | All 230 products, 1,277 images, 228 SKUs audited programmatically | [`data/research-lanes/RESEARCH_CATALOG.md`](data/research-lanes/RESEARCH_CATALOG.md) |
+| **Company, registry & history** | Verified entity, domain history, timeline | [`data/research-lanes/RESEARCH_COMPANY.md`](data/research-lanes/RESEARCH_COMPANY.md) |
+| **Marketplace & reputation** | bol.com, Amazon.nl, Trustpilot, Scamadviser — verified vs. not-found | [`data/research-lanes/RESEARCH_MARKETPLACES.md`](data/research-lanes/RESEARCH_MARKETPLACES.md) |
+| **Marketing, SEO & competition** | 45-page knowledge hub, 12 blog articles, agentic-readiness | [`data/research-lanes/RESEARCH_MARKETING_COMPETITION.md`](data/research-lanes/RESEARCH_MARKETING_COMPETITION.md) |
+| **Consolidated dossier** | The one-page cross-cutting synthesis | [`data/research-lanes/WISEQ-DOSSIER.md`](data/research-lanes/WISEQ-DOSSIER.md) |
+| **B2B lead-gen (NL)** | 8,673 organizations mapped · 857 with verified emails · methodology and counts only | [`data/leadgen-summary.md`](data/leadgen-summary.md) |
+| **Bundle spine** | 114 component SKUs + 25 bundles, referentially validated | [`data/wiseq-bundle-spine.csv`](data/wiseq-bundle-spine.csv) · [`data/wiseq-component-registry.csv`](data/wiseq-component-registry.csv) |
+| **OSS catalog** | 31 topics · 420 repos found · 100 curated by stack layer | [`docs/10-OSS-CATALOG-100.md`](docs/10-OSS-CATALOG-100.md) · raw JSON in [`data/oss/`](data/oss/) |
+
+> 🔒 **Data note — by design, this repository contains no personal contact data.** Our lead-generation research produced large B2B contact datasets (school boards, special-education networks, EU education registers). Those stay private and are handed over directly under GDPR-compliant terms. See [`data/leadgen-summary.md`](data/leadgen-summary.md) for counts, sources, and methodology only.
+
+---
+
+## 📦 What else is in this repository
+
+```
+wiseq-ai-onboarding/
+├── docs/                    16 proposal & analysis documents
+│   ├── 01-COMPANY-PROFILE.md … 16-DEV-TEAM-HATS.md
+├── data/
+│   ├── oss/                 31 raw GitHub-search JSON files (query + results)
+│   ├── research-lanes/      5 original research reports + raw agents.md capture
+│   ├── wiseq-bundle-spine.csv
+│   ├── wiseq-component-registry.csv
+│   └── leadgen-summary.md
+├── assets/brand/            Logo variants, hero banner, OG card
+├── site-demos/              3 scroll-driven site concepts + product imagery
+├── scripts/validate_repo.py Repo-integrity CI (doc links, data schema, spine, secrets)
+└── .github/workflows/       validate · gitleaks · zizmor
+```
+
+**CI runs on every push** and enforces: every `docs/` link in this README resolves · every `data/oss/*.json` parses and carries the required schema · every bundle component resolves to the registry · no secret patterns anywhere. Reproduce locally with:
+
+```bash
+python3 scripts/validate_repo.py
+```
+
+---
+
+## 📌 Status
+
+- **2026-10-21** — repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
+- **2026-10-22** — **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved). PY→WiseQ transfer doc added (docs/07).
+- **2026-10-22** — Hermes/Jev + AIW reuse inventory — Jev verified live, fallback-add flagged as top fix; AIW assets mapped; reuse-first stack defined.
+- **2026-10-22** — tooling & MCP plan — live catalog audit, MCP install lists for both operations, 3 thin wrapper builds queued.
+- **2026-10-22** — 50-hat analysis — 3 domains incl. first-ever AIW meta-layer analysis; 12 actions graduate to the kanban.
+- **2026-10-22** — compliance map — EN 71 / 62115 / RED (incl. Aug-2025 cybersecurity act), GPSR responsible-person check, Thuiswinkel costs verified.
+- **2026-10-22** — OSS catalog expanded to 31 topics / 100 curated repos by layer.
+- **2026-10-22** — competitors & deals research — competitor map, deal pricing benchmarks, 6 new opportunities.
+- **2026-10-22** — OSS & integrations research — the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (~€732).
+
+**Waiting on WiseQ:** the ~30-page company manual, software inventory, sandbox dataset, and read-only access. Full ask-list: **[06 · Next Steps](docs/06-NEXT-STEPS.md)**
+
+---
+
+## 💬 Response channel
+
+This repository is the collaboration surface. **Open an issue or comment on any document** — we monitor it and respond there. Questions, corrections, and "we already solved this differently" are all welcome; the goal is a plan that fits your reality, not ours.
+
+---
+
+## 📎 Provenance
+
+| | |
+| :--- | :--- |
+| **Prepared by** | [AI Whisperers](https://github.com/Ai-Whisperers) — AI systems & automation studio |
+| **Prepared for** | Rob Nyari & the WiseQ team · [wiseq.nl](https://www.wiseq.nl) |
+| **Revision** | 2026-10-22 |
+| **Working session** | 2026-10-21 · Grootebroek, NL ([notes](docs/03-MEETING-NOTES-2026-10-21.md)) |
+| **License** | See repository · client-proposal material, citation with attribution welcome |
+
+---
+
+<div align="center">
+<sub>Built as a public proof-of-work proposal — every claim here is independently verifiable in minutes.</sub>
+</div>

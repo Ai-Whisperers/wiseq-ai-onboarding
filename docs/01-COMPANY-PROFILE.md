@@ -1,8 +1,16 @@
+<div align="center">
+<img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
+</div>
+
+<sub>*Track B · Document 01* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+
+---
+
 # WiseQ — Company Profile
 
 *All facts verified from public sources on 2026-10-21 by AI Whisperers research. Sources cited inline.*
 
-## Identity
+## 🏛️ Identity
 
 | | |
 |---|---|
@@ -16,7 +24,7 @@
 
 Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 
-## The story (verified timeline)
+## 🕰️ The story (verified timeline)
 
 | Year | Event |
 |---|---|
@@ -27,7 +35,7 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 | **Sep 2025** | **Replatform**: 189 of 230 Shopify products bulk-created; kids-tech positioning |
 | 2026 | 45-page SEO knowledge hub, custom B2B wholesale layer, agentic-commerce endpoints live; theme experiments ("WiseQ - B2B meetbaar 17-10") |
 
-## Channels & reputation
+## 💬 Channels & reputation
 
 - **bol.com**: seller since June 2018 — **9.2/10 from 42 reviews, 312 articles** (bkoppeling snapshot 2026-10-21). The oldest continuously-run channel.
 - **Amazon.nl**: WISEQ brand store; Hero listing 4.4★×45 reviews; Unbreakable listing 2.5★×3 (stale titles, missing compliance data).
@@ -36,13 +44,13 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 - **Scamadviser**: algorithmic "Trust Score 0" flag (via Webshopchecker report) — a conversion risk worth remediating.
 - **Wholesale**: educatheek.nl stocks WISEQ Kids ANC.
 
-## Catalog (from Shopify products.json, 2026-10-21)
+## 📦 Catalog (from Shopify products.json, 2026-10-21)
 
 230 products, 100% vendor "WiseQ" (own-brand). Two businesses in one shop:
 - **Kids-tech brand line** (the story): 23 kids headphones across 6 families (Junior €18.95 → Kids ANC €49.95), 4 tablets, 3 smartwatches, 8 hearing protection, B2B gear (laptop carts €550–1,149, storage systems €399)
 - **Charger/cable long tail** (the volume): 76 charging sets + 38 cables + 16 adapters — 50% of SKUs, €7–34 band
 
-## Tech stack (verified from page source + session intel)
+## 🧱 Tech stack (verified from page source + session intel)
 
 - **Shopify** (theme "Wonder", custom working copy versioned per experiment)
 - **Custom B2B layer**: tiered pricing (staffelprijzen), invoice ordering, sample requests, school accounts — custom theme JS
@@ -53,7 +61,7 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 - **AI imagery**: ChatGPT + Gemini generated hero/category images (CDN filenames)
 - **No email ESP, no review app, no GA4/pixels detected** in homepage source
 
-## Market position
+## 🗺️ Market position
 
 - Specialty: kids headphones for home, travel, school — with 85 dB volume limiting, "hufterproof" durability, hearing protection
 - B2B: schools (klassensets, laptop carts, invoice ordering), education retailers, childcare
