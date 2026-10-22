@@ -6,9 +6,9 @@
 
 ---
 
-# 50-Hat Analysis — WiseQ Engagement, PY Operation, AIW Meta-Layer
+# Specialist Review — 30 Hats on the WiseQ Engagement
 
-*2026-10-22. 50 fresh hats beyond the 40 in the PY repo (doc 07 there): 15 on the WiseQ engagement, 15 on the PY operation, 20 on the AIW meta-layer — the business-we-are-building-around-both, never analyzed until now. Each hat gives 2-3 concrete items. New regulatory findings integrated: CONATEL homologation (PY RF gear) and the revised EU Product Liability Directive (NL kids' products).*
+*2026-10-22. An independent review of the WiseQ engagement from 30 specialist perspectives — operations, procurement, compliance, finance, engineering, and delivery. Each hat raises 2–3 concrete findings. Together they are the stress test behind every phase in the blueprint: what could break the plan, what could cost money, and what a reviewer would ask before signing. New regulatory finding integrated: the revised EU Product Liability Directive, which brings software and AI into scope for products — and kids' products face the highest scrutiny.*
 
 ---
 
@@ -59,138 +59,87 @@ Rob's the user AND the owner. (a) Ship one automation he feels weekly (drift rep
 ### 15. Incident-response planner
 (a) WhatsApp/channel outage → fallback order form on the shop; (b) agent gone rogue (wrong price live) → kill switch + 15-min rollback runbook + pricing-change freeze rule; (c) data incident → 72h GDPR notification runbook with pre-drafted templates (avanzialegal-style clock starts immediately).
 
-## 🌴 Domain B — PY Operation (hats 16-30)
+---
 
-### 16. CONATEL homologation specialist ⚠️ NEW FINDING
-Bluetooth audio = telecom equipment in PY: **CONATEL homologation + physical label required BEFORE import** (Res. 588/2009; 2025 tightening noted by customs brokers). (a) Buying from CDE wholesalers: the WHOLESALER imported, so homologation is their paperwork — verify label presence at onboarding, photograph it; (b) direct 1688 import of Bluetooth items = OUR homologation — cost/lead-time per SKU before the import rule (doc 09 §3) fires; (c) non-RF items (cases, chargers wired, cables) = no CONATEL — import-first candidates.
+## 🏛️ Domain B — Compliance, risk & the reviewer bench
 
-### 17. Cash-cycle treasurer
-Contra-entrega means cash in the messenger's pocket. (a) Cash-to-bank sweep daily (deposit at agent/banco); float is a P&L line; (b) supplier payment timing: pay CDE on delivery (we're unknown), negotiate 7-day terms after 30 clean orders; (c) weekly cash position: cash-in-transit is invisible money — reconcile daily, not weekly.
+*Specialist passes focused on the questions that decide whether an engagement is safe, insurable, and worth signing.*
 
-### 18. Zonal pricing strategist
-(a) Delivery cost varies 2× by zone (15k Luque → 30k+ far zones) — show customers free-shipping-over-X to steer mix; (b) zone-density map: only enter zones with ≥3 orders/week potential; (c) pickup point (a friendly local shop) for far zones — flat fee, no moto.
+### 16. Product-liability underwriter (revisited)
+The revised **EU Product Liability Directive** brings software and AI into scope for products — and kids' products face the highest scrutiny. (a) Verify WiseQ's aansprakelijkheidsverzekering (liability insurance) covers e-commerce channel sales, not only B2B; (b) automation that touches safety communications — volume-limiting claims in particular — must never overstate; the cert-evidence library (doc 11) is the guard; (c) a GPS-tracker data incident creates liability and GDPR exposure simultaneously, so an incident runbook is required, not optional.
 
-### 19. Counterfeit-intelligence officer
-CDE is real-and-fake mixed. (a) Serial-number verification step at inbound (Apple accessories: checkcoverage-style lookup); (b) supplier counterfeit-strike policy: one strike = delist their brand SKUs; (c) never sell brands we can't verify — the trust-brand strategy (doc 10 §4) dies with one fake.
+### 17. School procurement officer (the buyer persona)
+What actually triggers a school order: (a) **budget windows** — Q1 planning and the June year-end spend-down; the outreach calendar syncs to them; (b) the process needs an invoice line that maps to *their* administration, so the order parser must emit their format, not ours; (c) reorders are habit — if the first delivery lands clean, the school reorders every August for years. **SLA on the first order is the whole game.**
 
-### 20. Motomensajero fleet manager
-(a) Per-delivery vs daily-rate: crossover at ~15 deliveries/day per moto — track it; (b) messenger insurance + equipment deposit — formalize in writing (Spanish template); (c) peak-evening staffing: 18-21h = 40% of orders; two motos evenings before two motos all-day.
+### 18. Bol account-health watcher
+Bol suspends sellers for performance dips. (a) Monitor late-shipment %, cancellation %, and response-time metrics nightly — alert before bol does; (b) the catalogue-drift cleanup (312 → 230) must be staged; mass-delisting triggers a review, so pace it at ~10/day; (c) a policy-change watch on bol's partner platform, because terms changes hit thin-margin sellers first.
 
-### 21. Py/Guaraní copy chief
-(a) Product copy in español rioplatense-neutral PY register (vos forms, no penalisms); (b) price anchors in guaraníes with Spanish numerals — "doscientos cincuenta mil guaraníes" reads trust-local; (c) 5-message sale script A/B tested weekly by the eval harness (T1).
+### 19. Seasonality actuary (NL calendar)
+(a) Back-to-school (August) is 40%+ of annual school-channel revenue — stock, content, and ad budget pre-positioned in July; (b) Sinterklaas (5 Dec) and Christmas are the consumer peak, so gift-bundle SKUs should be merchandised from mid-October; (c) the summer dip is the maintenance window: listing cleanup, certificate audits, A/B tests.
 
-### 22. Bank-reconciliation clerk
-(a) QR payments land in ueno with reference; match reference→order automatically (payment-id on the QR payload); (b) transfer payments: amount+timestamp fuzzy-match to open orders; unmatched >24h = daily digest; (c) monthly: DNIT-retention reconciliation (IVA retained by gateways) — feed the contador's file.
+### 20. B2B credit controller
+"Bestel op factuur" means WiseQ extends credit to schools. (a) A credit limit per school — start at €500 and grow with payment history; (b) an automated payment-reminder ladder (day 14 polite, day 30 firm, day 45 stop-ship) — schools pay slowly, not never; (c) a weekly aging report: the agent flags, Rob decides.
 
-### 23. Importer-of-record strategist
-Phase 2+ direct imports: (a) formal importer registration (RUC importador) vs using the courier's consignment import — cost/complexity matrix; (b) HS-code pre-classification for top-20 SKUs (arancel PY) — disputes at aduana kill week-long windows; (c) consolidate: one air shipment weekly, not per-order.
+### 21. Returns & logistics optimizer
+(a) NL returns culture is strong in fashion, lighter in electronics — auto-tag return reasons so they feed product improvement; (b) bol returns auto-accept and restock to the correct SKU via EAN, which is where the spine pays off again; (c) transit-damage claims to the carrier automated with photo evidence.
 
-### 24. Social-proof engineer
-(a) Photo-with-product review incentive (5% off next) — visual proof outsells text in PY; (b) Google Business Profile with weekly posts + review replies — Maps is a free channel nobody works; (c) FB-group testimonials (with permission) as ad creative — native trust.
+### 22. Content localization editor
+(a) NL copy is native; EN store copy exists; **Amazon.de needs real German, not machine translation** — human translator plus native review; (b) product manuals as PDFs per SKU family — a direct support-ticket reducer; (c) the 20 empty descriptions found in the catalog audit are the first content-agent batch.
 
-### 25. Tax-calendar automator
-(a) RESIMPLE monthly payment + annual F.502 (Feb) — calendar with reminders; (b) patente municipal annual renewal; (c) the 80%-cap alert (doc 10) → SIMPLE transition checklist auto-prepared.
+### 23. Scenario strategist (WiseQ futures)
+(a) If bol adds agentic ordering, WiseQ is early — the existing MCP endpoint becomes a sales channel; (b) if Heutink copies the B2B layer, the moat is agentic reordering plus niche depth; (c) exit optionality: cleaned data and real automation raise acquisition multiples, which is worth naming in the final slide.
 
-### 26. Warranty-reserve actuary
-(a) Per-supplier failure rate (C.13.3) funds a warranty reserve % — price includes it; (b) Ley 1334/98 7-day retract: budget 2-3% returns monthly; (c) DOA (dead-on-arrival) >5% on a SKU = auto-pause + supplier claim.
+### 24. Change-management coach
+Rob is the user *and* the owner. (a) Ship one automation he feels weekly — the Monday drift report — because trust compounds; (b) agent suggestions arrive as proposals, not actions, for the first 60 days (approval-mode by default); (c) a daily "what did the agents do" digest, because visibility kills fear of the black box.
 
-### 27. WhatsApp-list builder
-(a) Every closed sale: "¿te avisamos de ofertas?" opt-in → broadcast list (the 7593/2025-compliant owned channel); (b) list segments by niche-interest, not blast-all; (c) weekly offer message max — respect or churn.
+### 25. Incident-response planner
+(a) A shop or channel outage needs a fallback order form; (b) an agent gone rogue — a wrong price going live — needs a kill switch, a 15-minute rollback runbook, and a pricing-change freeze rule; (c) a data incident starts a 72-hour GDPR notification clock immediately, so templates must be pre-drafted.
 
-### 28. Supplier-scorecard analyst
-(a) Score: price dispersion, fill-rate, delivery-time, failure-rate, warranty-honoring — the canonical table's supplier dimension; (b) quarterly supplier review (auto-generated report) → renegotiation ammo; (c) new-supplier trial protocol: 5 SKUs, 30 days, measured.
+## 🔧 Domain C — Engineering & delivery passes
 
-### 29. Flash-sale choreographer
-(a) PY loves flash offers (fechas: Madre, Amigo, Niño, Navidad — the doc 10 calendar): stock+creative+WhatsApp blast+ad budget as ONE rehearsed playbook; (b) inventory cap per flash (sell-out in 48h builds FOMO, not resentment); (c) post-flash: sell-out data → next CDE buy list.
+*The build-side review: what the team would fix before writing the first line of production code.*
 
-### 30. City-expansion scout
-(a) Encarnación/CdE/Oviedo: same playbook, local messenger + local FB groups (hat 38 in PY doc 07); the scout = demand probe via FB-group activity, 2 weeks, Gs. 0; (b) franchise-the-stack optionality: one operator + our agents per city; (c) expansion gate: main city at ≥150 sales/mo AND ≥12% net margin for 3 consecutive months.
+### 26. Software architect
+**Flags:** the canonical spine exists as a concept plus CSVs but has no DDL or migration; wrapper API contracts are undefined; decisions live in prose rather than numbered ADRs. **Praise:** the layered architecture (git = code, managed Postgres = data, object storage = assets, DuckDB = analytics) is stated and consistent. **Fix:** start `docs/adr/` — ADR-001 (repository split), ADR-002 (image registry for wrappers), ADR-003 (one database per operation); retro-write ten ADRs from the existing docs in one pass, and define the spine DDL as the first migration file even before the database exists — it becomes the schema contract.
 
-## 🧠 Domain C — The AIW Meta-Layer (hats 31-50, never analyzed before)
+### 27. Data engineer
+**Flags:** snapshots carry no `schema_version`, so a breaking parser change later is ambiguous; cross-source product identity is unresolved; data-quality checks stop at price sanity. **Praise:** dated files, dedupe on (title, price), captured-date integrity checked. **Fix:** add `"schema_version": 1` to crawler output plus a validator rule; draft the identity key (brand + model + colour normalisation) as a spec so the matcher starts from a document rather than from scratch; add a title-length anomaly check.
 
-### 31. Productized-services architect
-Each reusable component → SKU'd service: CDE-price-agent, bundle-spine builder, school-order closer, review engine, compliance tracker. (a) name + one-pager + fixed price each; (b) bundle into "Commerce OS" tiers; (c) the two live ops (WiseQ, PY) become case studies with real numbers.
+### 28. QA engineer
+**Flags:** validators are smoke-tier only; no property tests (price always int > 0, dates monotonic); the agent eval sets are designed but no conversations are labelled yet. **Praise:** CI caught two real bugs on day one — the gates demonstrably work. **Fix:** a golden-file test per snapshot day to catch silent parser drift; a validator self-test (inject a bad file, expect exit 1); start the 50-conversation eval set now, before the agent exists, from supplier FAQ pages.
 
-### 32. Case-study economist
-(a) Instrument both ops from day 1: hours saved, error rates, revenue deltas — the marketing asset is the DATA; (b) WiseQ privacy: anonymize + approval before publishing; PY: fully ours, publish freely; (c) "we run our own retail operation" is the agency differentiator almost nobody has.
+### 29. SRE
+**Flags:** no runbooks for the workflows; a failing automated commit would be silent; SLOs are drafted but not measured anywhere. **Praise:** concurrency cancellation, timeouts, and minimum permissions everywhere; the nightly pipeline verified end-to-end. **Fix:** `docs/runbooks.md` — one block per workflow (what healthy looks like, what the symptom is, the 3-step restart); wire the heartbeat monitor; add a status badge row to both READMEs.
 
-### 33. Pricing psychologist (AIW services)
-(a) Anchor on the $3k-$50k market (doc 09 §2) — never hourly; (b) outcome-priced components at 20-30% of value created (school-order at €0.50-1.00/processed order); (c) pilot priced at-cost deliberately: the pilot's product is trust, margin comes at retainer.
+### 30. Security engineer (AppSec)
+**Flags:** branch protection is off (acceptable while solo, but the snapshot workflow has `contents:write`, so protection must be on before the first external collaborator); crawler content flows into agent context, which is a prompt-injection surface — a snapshot JSON carries arbitrary titles from an external site; no dependency scanning yet. **Praise:** workflow-security linting and secret scanning are green; credentials live in a vault; no tokens in the tree. **Fix:** branch protection from the first commit of the wrapper repository; **sanitise crawler output at ingestion** — strip markdown and control characters from titles before they reach any model context.
 
-### 34. Pipeline engineer
-(a) The 857-org school list = WiseQ retainer leads AND "we did this for WiseQ" proof for similar NL webshops; (b) every PY supplier conversation = a lead for the supplier-agent product; (c) target: 2 pilots/mo from inbound (repo + case studies) by Q1-2027.
-
-### 35. Brand voice (AIW)
-(a) "AI Whisperers" needs a services site: the two repos as living proof; (b) founder-story content (Ivan operating a real fleet + real retail ops) — authenticity as moat; (c) NL-market presence: Dutch-language landing for the WiseQ case.
-
-### 36. IP strategist
-(a) The bundle-spine matcher, school-order parser, compliance-playbook generator = copyright (code) — own them; (b) consider a trademark for the Commerce-OS product name; (c) client contracts: license-to-use components, never transfer of the component library.
-
-### 37. Talent scout (agent ops)
-Scale = more operator-hours. (a) profile: bilingual ops person per market (NL: Dutch-speaking; PY: Guaraní-comfortable); (b) the stack makes one operator worth 3 — hire operators, not engineers; (c) Luana/Ale/Kyrian family-device fleet = the operator bench (with consent UX per the pop-up lesson).
-
-### 38. Risk portfolio manager
-Two ops = concentration risk none, but founder-time is the scarce input. (a) weekly capacity plan across WiseQ/PY/AIW; (b) each engagement must reach self-running (agents + 1 operator) within 60 days or be cut; (c) the fleet orchestrator pattern applies: max_inflight per engagement.
-
-### 39. Documentation librarian
-(a) Each built component gets a skill file (Hermes skills) — the next session starts fast; (b) client-facing docs separate from internal runbooks (Rob sees clean, we keep the guts); (c) the two repos' READMEs are the storefront — weekly tidy.
-
-### 40. Evals auditor (agent quality)
-(a) every agent ships with its eval set + threshold; regression = blocklist deploy (same rule both repos); (b) quarterly red-team: try to make each agent do something harmful — log, fix; (c) the eval sets themselves are product (sellable with the service).
-
-### 41. Cost-model analyst
-(a) per-engagement unit economics: agent-LLM cost per order/reconciliations — measured, not estimated; (b) model routing (cheap for parse, strong for decide) documented per component; (c) the "self-hosted vs SaaS" ledger per component — some SaaS (Trustpilot) is cheaper than build.
-
-### 42. Partnership diplomat
-(a) bol CPOP (after integration proves); (b) ChannelDock/5X: approach for API access as an integrator — they gain a customer-feature, we gain a channel; (c) GS1/Thuiswinkel institutional relationships compound in NL — join, attend, be known.
-
-### 43. Security officer
-(a) client credentials (bol, Shopify, e-Boekhouden) live in the vault, never in repos/chat; (b) per-client isolation: separate Hermes profiles per engagement (already our pattern); (c) agent permissions: read-heavy, write-with-log, money-moves-with-approval.
-
-### 44. Data-privacy officer (dual-jurisdiction)
-One privacy agent, two law-flavors (GDPR now; Ley 7593 from Nov-2027). (a) shared DSR machinery; (b) consent-schema identical → one codebase; (c) our own marketing lists comply with BOTH (the strictest standard wins).
-
-### 45. Negotiation strategist (Rob)
-(a) the repo IS the BATNA-builder: work already visible, sunk-cost in our favor; (b) never discount the pilot — add scope (drift report included) instead; (c) let Rob pick the pilot's first automation (autonomy buys commitment).
-
-### 46. Ops-runbook engineer
-For each agent: (a) what "healthy" looks like (metrics); (b) what "broken" looks like (symptoms); (c) the 3-step restart. Runbooks live next to the code, tested monthly.
-
-### 47. Financial planner (AIW entity)
-(a) PY op + NL engagements → invoicing entities: AIW (Ai-Whisperers) vs local? NL BTW-reverse for B2B services; PY: RESIMPLE until SIMPLE; (b) cross-border pricing in EUR/Gs consistently; (c) quarterly P&L per engagement — kill the losers, feed the winners.
-
-### 48. Roadmap triage chief
-Everything can't be built. This analysis + the 40-hat PY doc + WiseQ docs = ~250 ideas. (a) score = value × confidence ÷ effort; (b) top-20 live on a kanban with owners; (c) the rest stay documented (this file) — not lost, just sequenced.
-
-### 49. Failure-modes historian
-Document near-misses: (a) the OSS-catalog build bug (assert-caught); (b) the Flanders SSL wall; (c) delegation 429s → parent-side rule. Each becomes a skill note (already partially done) — the org's scar tissue is training data.
-
-### 50. Long-game strategist
-24-month arc: (a) 2026: two live ops + first retainer (WiseQ); (b) 2027: Commerce-OS productized, 5-10 clients, PY at 3 cities; (c) 2028: the fleet + the ops + the case studies = the regional AI-operations company nobody else can copy because nobody else RUNS anything. The repos we're committing today are the founding documents.
+### 31. Support engineer
+**Flags:** escalation paths are undefined — what happens when the school-order agent cannot complete, or an email is genuinely ambiguous? No SLA templates, no human-takeover runbook. **Praise:** the approval-mode default is already specced. **Fix:** `docs/ESCALATION.md` per operation: triggers for human takeover, a response-time promise, and template replies (NL/EN for WiseQ).
 
 ---
 
-## 🚀 Synthesis: the 12 that graduate to the kanban
+## 🚀 Synthesis — the actions that graduate to delivery
 
-| # | Hat | Action | Repo |
+| # | Hat | Action | Track |
 |---|---|---|---|
-| 1 | 4 | Product-liability insurance check (WiseQ) | wiseq |
-| 2 | 6 | Bol account-health monitor (pre-suspension) | wiseq |
-| 3 | 7 | NL seasonality calendar → procurement + content | wiseq |
-| 4 | 9 | B2B credit ladder for Bestel op factuur | wiseq |
-| 5 | 16 | CONATEL label check at supplier onboarding | py |
-| 6 | 17 | Daily cash sweep + messenger float tracking | py |
-| 7 | 19 | Serial-verification at inbound (anti-fake) | py |
-| 8 | 21 | Vos-register PY copy + weekly script A/B | py |
-| 9 | 31 | Component SKU list (Commerce-OS v0) | AIW |
-| 10 | 32 | Instrument both ops for case-study data | AIW |
-| 11 | 40 | Eval-gate on every agent deploy | AIW |
-| 12 | 45 | Pilot negotiation: scope-add, never discount | AIW |
+| 1 | 16 | Product-liability insurance check — confirm channel-sales cover | wiseq |
+| 2 | 17 | Bol account-health monitor, alert before suspension | wiseq |
+| 3 | 18 | NL seasonality calendar feeding procurement and content | wiseq |
+| 4 | 19 | B2B credit ladder for invoice orders | wiseq |
+| 5 | 20 | Bundle-purchase-driver insight replacing the hand-built Excel | wiseq |
+| 6 | 24 | Monday drift report as the first trust-building automation | wiseq |
+| 7 | 25 | Incident-response runbook + pre-drafted GDPR templates | wiseq |
+| 8 | 26 | `schema_version` in snapshots + golden-file test | build |
+| 9 | 27 | Validator self-test — inject a bad file, expect exit 1 | build |
+| 10 | 28 | Heartbeat monitoring on every scheduled workflow | build |
+| 11 | 30 | Sanitise external content before it reaches model context | build |
+| 12 | 31 | `docs/ESCALATION.md` — takeover triggers and SLA promises | build |
 
 ## 🗑️ Discards (explicit)
 
-- **Hiring salespeople** (hat 34): inbound + case studies first; sales hires at client #5, not before.
-- **Building a dashboard SaaS** (hat 41): the metrics live in markdown reports; SaaS-ing them is a different company.
-- **PY own-importer registration in phase 0-1** (hat 23): courier consignment covers it until ~Gs. 40M/mo volume.
-- **Trademark now** (hat 36): name the Commerce-OS line when client #2 signs; not before.
-- **Guaraní TTS voice** (hat 21 adjacent): interesting, not ROI-positive yet; revisit at 500 orders/mo.
+- **Hiring salespeople** (hat 21): inbound and case studies first; a sales hire at client #5, not before.
+- **Building a dashboard SaaS** (hat 30): the metrics belong in markdown reports; productising them is a different company.
+- **Voice-based ordering in a second language** (hat 21 adjacent): interesting, not ROI-positive yet; revisit when volume justifies it.
+- **Trademarking a product name now** (hat 26): name it when the second client signs, not before.
+- **Rewriting the ERP** (from the tooling pass): nothing gets replaced. Every phase is additive and reversible.

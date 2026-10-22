@@ -41,17 +41,34 @@ Four open decisions. Each has a recommended default — if we don't hear otherwi
 
 | # | Question | Options | Our recommendation |
 | :--- | :--- | :--- | :--- |
-| 1 | **Where does the agent run?** | (a) existing 24/7 office machine · (b) €20/mo VPS · (c) both | **(c)** — VPS as primary, office machine as worker. Survives a power cut at the office. |
+| 1 | **Where does the agent run?** | **(a)** your own server, we maintain it · **(b)** our server, dedicated · **(c)** our server, shared capacity · **(d)** you open the account, we do the setup | **(b)** — dedicated on our infrastructure, included in the monthly fee, and the easiest to change later. See [the hosting options](#hosting-options) below. |
 | 2 | **Bookkeeping connection style?** | (a) native API if Exact/nl. supports it · (b) browser-automation MCP | **(a) first, (b) as fallback.** API is cleaner; automation is the safety net for vendors without an API. |
 | 3 | **Review platform priority?** | Trustpilot (international) · Kiyoh (NL standard) · both | **Both.** Trustpilot for international traffic, Kiyoh for the NL school/B2B segment. |
 | 4 | **First revenue engine?** | Review invitations (fastest) · B2B outreach (biggest data advantage) | **Reviews first** — fastest measurable win, and it compounds into every later phase. |
 
 ---
 
+## 🏗️ Hosting options
+
+There is no single right answer here, and we would rather you choose than have us pick for you. All four options include remote access for us to install, update, monitor, and fix things — that part is the same in every case.
+
+| Option | Where it runs | Who owns the server | What you pay |
+| :--- | :--- | :--- | :--- |
+| **(a) Yours, managed by us** | A server on your own hosting account, connected to your devices | You own it; we run everything on it | Your hosting cost + a small monthly care plan |
+| **(b) Ours, dedicated** | Our infrastructure, a server set up for WiseQ only | We own and operate it | One monthly fee, everything included |
+| **(c) Ours, shared capacity** | Our infrastructure, running your jobs — and our own work when yours are idle | We own and operate it | **Reduced rate** — see below |
+| **(d) Yours, we set it up** | You open the account; we do all the technical work | You own it after handover | One-off setup fee, then optional care plan |
+
+**Why (c) is cheaper.** The host is already paid for. School orders arrive in morning batches, reports run weekly, and the nightly jobs are short — so between peaks there is real idle capacity. In option (c) that idle time carries our own work instead of sitting empty, and the saving comes back to you as a lower rate. The discount assumes genuinely bursty usage; if you later want something running continuously, we would move you to the standard rate rather than quietly overcharging you.
+
+**Our recommendation is (b).** It is the lowest-friction start, everything is included in one number, and moving to (a) or (c) later is a configuration change rather than a migration.
+
+Whichever you choose: the agents never hold credentials that only they can reach, every action is logged, and you can pause any automation with one command.
+
 ## 📬 Response channel
 
 - **This repository is the response channel.** Open an issue or comment on any document — we monitor it and reply there.
-- Direct contact details for AI Whisperers (operated through Iván Weiss Van Der Pol, AI/systems) are available on request.
+- Direct contact details for AI Whisperers are available on request — we will introduce the people who will actually do the work.
 
 ---
 
