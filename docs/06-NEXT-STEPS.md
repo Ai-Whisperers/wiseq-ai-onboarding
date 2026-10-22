@@ -48,6 +48,8 @@ Four open decisions. Each has a recommended default — if we don't hear otherwi
 
 ---
 
+<a id="hosting-options"></a>
+
 ## 🏗️ Hosting options
 
 There is no single right answer here, and we would rather you choose than have us pick for you. All four options include remote access for us to install, update, monitor, and fix things — that part is the same in every case.

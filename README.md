@@ -11,7 +11,7 @@
 [![Documents](https://img.shields.io/badge/documents-16-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
-[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c--the-market--regulation-what-surrounds-the-plan)
+[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
 [![Research%20lanes](https://img.shields.io/badge/research%20lanes-5%20independent%20reports-orange?style=for-the-badge)](#evidence-base)
 [![Specialist%20passes](https://img.shields.io/badge/specialist%20passes-48%20roles%20reviewed-pink?style=for-the-badge)](#evidence-base)
 [![validate](https://img.shields.io/github/actions/workflow/status/Ai-Whisperers/wiseq-ai-onboarding/validate.yml?branch=main&style=for-the-badge)](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/actions/workflows/validate.yml)
@@ -85,6 +85,8 @@ Sixteen documents, four tracks. Each is self-contained and independently verifia
 | **02** | [What We've Done](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
 | **03** | [Meeting Notes 2026-10-21](docs/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
 | **07** | [Reuse-First](docs/07-PY-TRANSFER-WISEQ.md) | Existing capability mapped to WiseQ problems — incl. the decoded **bundle spine** |
+
+<a id="track-c"></a>
 
 ### Track C — The market & regulation *(what surrounds the plan)*
 
