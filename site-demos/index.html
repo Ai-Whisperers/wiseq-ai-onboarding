@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseQ × AI Whisperers — 3 conceptversies</title>
+<style>
+  :root{--bg:#0B0E15;--panel:#121826;--ink:#EEF1F7;--soft:#98A2B8;--a1:#FF6A3D;--a2:#0B63CE;--a3:#37E6A4;--hair:rgba(238,241,247,.13)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif}
+  .wrap{max-width:1080px;margin-inline:auto;padding:0 clamp(1rem,4vw,2rem)}
+  header{padding:4.5rem 0 2.5rem;text-align:center}
+  .k{font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700}
+  h1{font-size:clamp(2.2rem,5.4vw,3.8rem);margin:.5rem 0 1rem;letter-spacing:-.02em}
+  header p{color:var(--soft);max-width:60ch;margin:0 auto;line-height:1.7}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;padding-bottom:4rem}
+  .card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--hair);
+        border-radius:18px;overflow:hidden;background:var(--panel);transition:transform .35s ease,border-color .35s ease;position:relative}
+  .card:hover{transform:translateY(-7px)}
+  .card.c1:hover{border-color:var(--a1)} .card.c2:hover{border-color:var(--a2)} .card.c3:hover{border-color:var(--a3)}
+  .card .shot{aspect-ratio:16/10;display:grid;place-items:center;position:relative;overflow:hidden}
+  .c1 .shot{background:radial-gradient(120% 120% at 50% 20%,#1B2536,#0E1420)}
+  .c2 .shot{background:radial-gradient(120% 120% at 50% 20%,#F4EFE4,#FAF7F0)}
+  .c3 .shot{background:radial-gradient(120% 120% at 50% 20%,#10192E,#070A12)}
+  .card .shot img{width:56%;filter:drop-shadow(0 22px 34px rgba(0,0,0,.45));transition:transform .5s ease}
+  .card:hover .shot img{transform:scale(1.06) translateY(-4px)}
+  .card .n{position:absolute;top:.9rem;left:1rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;
+        padding:.3rem .6rem;border-radius:999px}
+  .c1 .n{background:var(--a1);color:#1A0E08} .c2 .n{background:var(--a2);color:#fff} .c3 .n{background:var(--a3);color:#04120B}
+  .card .body{padding:1.3rem 1.4rem 1.5rem;border-top:1px solid var(--hair)}
+  .card h2{margin:0 0 .3rem;font-size:1.18rem}
+  .card .tag{font-size:.78rem;color:var(--soft);margin:0 0 .8rem}
+  .c1 .tag b{color:var(--a1)} .c2 .tag b{color:var(--a2)} .c3 .tag b{color:var(--a3)}
+  .card p.desc{font-size:.9rem;color:var(--soft);line-height:1.6;margin:0 0 1rem}
+  .card ul{margin:0 0 1.2rem;padding-left:1.05rem;color:var(--soft);font-size:.85rem;line-height:1.65}
+  .card .go{margin-top:auto;font-weight:700;font-size:.9rem}
+  .c1 .go{color:var(--a1)} .c2 .go{color:var(--a2)} .c3 .go{color:var(--a3)}
+  footer{border-top:1px solid var(--issue)} footer{border-top:1px solid var(--hair);padding:2.2rem 0 3rem;text-align:center;color:var(--soft);font-size:.82rem;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="k" style="color:var(--a3)">WiseQ × AI Whisperers</p>
+  <h1>Drie conceptversies van wiseq.nl</h1>
+  <p>Eén merk, drie richtingen. Elke versie is gebouwd met open-source tooling — de
+     <b>scroll-craft</b> engine (nateherkai) en <b>threeui</b>/three.js (MengTo) — en gebruikt
+     WiseQ's echte productdata, prijzen en beeldmateriaal van wiseq.nl.</p>
+</header>
+
+<div class="cards">
+
+  <a class="card c1" href="v1-cinematic/">
+    <div class="shot"><span class="n">V1</span>
+      <img src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="">
+    </div>
+    <div class="body">
+      <h2>Filmisch — scroll als timeline</h2>
+      <p class="tag">scroll-craft engine · grammatica: filmisch · accent <b>#FF6A3D</b></p>
+      <p class="desc">De vlaggenschip-beleving: een gepinde hero met parallax-lagen, veiligheid
+         die per scroll-stap verschijnt, een laterale kleuren-rail en kinetische typografie.
+         Donker, warm, zelfverzekerd.</p>
+      <ul>
+        <li>Echte scroll-craft engine (MIT), 5 acts</li>
+        <li>6 device-families: pin · parallax · pan · kinetic · reveal</li>
+        <li>Signatuurmove: hero-product op eigen diepteplane</li>
+      </ul>
+      <span class="go">Open versie 1 →</span>
+    </div>
+  </a>
+
+  <a class="card c2" href="v2-editorial/">
+    <div class="shot"><span class="n">V2</span>
+      <img src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="">
+    </div>
+    <div class="body">
+      <h2>Redactioneel — catalogus als blad</h2>
+      <p class="tag">stille reveals · grammatica: editorial · accent <b>#0B63CE</b></p>
+      <p class="desc">De kracht van drukwerk: warm papier, serif-koppen, hairlines en een
+         catalogus-grid met echte prijzen. Statistiek-strip, ANC-dubbelpagina, school-band.
+         Licht, zakelijk, vertrouwd.</p>
+      <ul>
+        <li>Geen engine — pure typografie en ritme</li>
+        <li>230+ producten-gedachte in één grid</li>
+        <li>Print-kwaliteit ordelijkheid (B2B-vriendelijk)</li>
+      </ul>
+      <span class="go">Open versie 2 →</span>
+    </div>
+  </a>
+
+  <a class="card c3" href="v3-webgl/">
+    <div class="shot"><span class="n">V3</span>
+      <img src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="">
+    </div>
+    <div class="body">
+      <h2>WebGL — productconstellatie</h2>
+      <p class="tag">three.js · threeui-geïnspireerd · accent <b>#37E6A4</b></p>
+      <p class="desc">Een echte driedimensionale fase: WiseQ-producten zweven als constellatie in
+         de diepte, reagerend op je muis, met HUD-chips en marquee. De tech-forward kijk
+         op het merk.</p>
+      <ul>
+        <li>three.js (ESM, CDN) — zelfde stack als threeui</li>
+        <li>Pointer-parallax + sterrenveld + fog</li>
+        <li>Graceful fallback als CDN blokkeert</li>
+      </ul>
+      <span class="go">Open versie 3 →</span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  Gebouwd door AI Whisperers als conceptdem o's voor WiseQ. Beeldmateriaal en prijzen: wiseq.nl (live CDN).
+  Engines: scroll-craft (MIT, nateherkai) · threeui/three.js (MIT, MengTo). Geen officiële WiseQ-pagina's.
+</footer>
+</div>
+</body>
+</html>

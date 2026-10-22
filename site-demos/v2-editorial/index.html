@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseQ — Veilige technologie voor kinderen</title>
+<meta name="description" content="WiseQ redactionele conceptsite. Kinderkoptelefoons met 85 dB begrenzing, opladers en smartwatches — voor thuis, onderweg en op school.">
+<style>
+  /* WiseQ V2 — "Redactioneel" · high-key editorial, print catalogue energy.
+     No scroll engine: quiet reveals + one horizontal catalogue rail. */
+  :root{
+    --paper:#FAF7F0;          /* warm paper */
+    --ink:#191510;            /* soft black, never pure */
+    --soft:#5C554A;           /* tinted secondary */
+    --accent:#0B63CE;         /* WiseQ-friendly cobalt */
+    --accent-ink:#FFFFFF;
+    --hair:rgba(25,21,16,.14);
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--paper)}
+  body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  .wrap{max-width:1160px;margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2.4rem)}
+
+  /* nav — thin editorial bar */
+  .nav{position:sticky;top:0;z-index:40;background:var(--paper)F2;background:rgba(250,247,240,.95);
+       backdrop-filter:blur(6px);border-bottom:1px solid var(--hair)}
+  .nav .in{display:flex;align-items:baseline;gap:2rem;padding:.8rem 0}
+  .nav .logo{font-family:Helvetica,Arial,sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:.06em}
+  .nav .logo i{color:var(--accent);font-style:normal}
+  .nav .sec{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+  .nav .cta{margin-left:auto;font-family:Helvetica,Arial,sans-serif;font-size:.8rem;font-weight:700;
+       background:var(--ink);color:var(--paper);padding:.5rem 1rem;border-radius:2px;text-decoration:none}
+  @media(max-width:700px){.nav .sec{display:none}}
+
+  /* hero — split editorial masthead */
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center;
+        padding:clamp(3.5rem,9vh,6rem) 0 clamp(3rem,7vh,5rem)}
+  .kicker{font-family:Helvetica,Arial,sans-serif;font-size:.72rem;letter-spacing:.24em;
+       text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.015em;margin:.6rem 0 1.2rem;font-weight:400}
+  h1 em{font-style:italic}
+  .lede{font-size:1.12rem;line-height:1.7;color:var(--soft);max-width:52ch;margin:0 0 1.8rem}
+  .hero .imgbox{position:relative}
+  .hero .imgbox img{border-radius:6px;box-shadow:0 30px 60px -30px rgba(25,21,16,.35)}
+  .hero .badge{position:absolute;left:-14px;bottom:22px;background:var(--accent);color:var(--accent-ink);
+       font-family:Helvetica,Arial,sans-serif;font-size:.78rem;font-weight:700;padding:.55rem .9rem;border-radius:3px;
+       box-shadow:0 10px 24px -10px rgba(11,99,206,.5)}
+  @media(max-width:860px){.hero{grid-template-columns:1fr}}
+
+  .rule{border:0;border-top:1px solid var(--hair);margin:0}
+
+  /* stats strip */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);
+       border-block:1px solid var(--hair);margin:0}
+  .stats div{background:var(--paper);padding:1.4rem 1rem;text-align:center}
+  .stats b{display:block;font-family:Helvetica,Arial,sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.02em}
+  .stats span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+  @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  /* section headers */
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+       padding:clamp(2.6rem,6vh,4rem) 0 1.6rem}
+  h2{font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:400;letter-spacing:-.01em;margin:0}
+  h2 em{font-style:italic}
+  .sec-head .note{font-size:.85rem;color:var(--soft);font-style:italic}
+
+  /* catalogue — editorial cards with hairlines */
+  .cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.3rem;padding-bottom:1rem}
+  .item{background:var(--card);border:1px solid var(--hair);border-radius:6px;overflow:hidden;
+       text-decoration:none;transition:transform .35s ease,box-shadow .35s ease}
+  .item:hover{transform:translateY(-5px);box-shadow:0 22px 40px -22px rgba(25,21,16,.30)}
+  .item .im{aspect-ratio:5/4;display:grid;place-items:center;padding:1.4rem;background:
+       radial-gradient(circle at 50% 40%,#FFFFFF,#F2EDE2)}
+  .item .im img{width:70%}
+  .item .meta{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;
+       padding: .85rem 1.05rem;border-top:1px solid var(--hair)}
+  .item .meta b{font-family:Helvetica,Arial,sans-serif;font-size:.92rem;font-weight:700;line-height:1.3}
+  .item .meta span{font-family:Helvetica,Arial,sans-serif;color:var(--accent);font-weight:700;font-size:.88rem;white-space:nowrap}
+
+  /* feature spread — the ANC double-page */
+  .spread{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;
+       padding:clamp(3rem,7vh,5rem) 0}
+  .spread .img{position:relative}
+  .spread .img img{border-radius:6px}
+  .spread .img::after{content:"";position:absolute;inset:0;border:1px solid var(--hair);border-radius:6px;
+       translate:10px 10px;pointer-events:none}
+  .spread h3{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:400;margin:.5rem 0 1rem}
+  .spread p{color:var(--soft);line-height:1.75;margin:0 0 1.2rem}
+  .spec{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.1rem;font-family:Helvetica,Arial,sans-serif;
+       font-size:.88rem;margin:1.4rem 0}
+  .spec dt{color:var(--soft)}
+  .spec dd{margin:0;font-weight:700}
+  .btn{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-weight:700;font-size:.88rem;
+       background:var(--ink);color:var(--paper);padding:.7rem 1.3rem;border-radius:2px;text-decoration:none}
+  .btn.alt{background:var(--accent)}
+  @media(max-width:860px){.spread{grid-template-columns:1fr}}
+
+  /* school band — inverted block */
+  .school{background:var(--ink);color:var(--paper);padding:clamp(3.2rem,8vh,5.5rem) 0}
+  .school .kicker{color:#8FC1FF}
+  .school h2{color:var(--paper)}
+  .school p{color:#C9C2B4;max-width:56ch;line-height:1.75}
+  .school .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.3rem;margin-top:2.2rem}
+  .school .pkg{border:1px solid rgba(250,247,240,.18);border-radius:6px;padding:1.5rem;background:#221D15}
+  .school .pkg img{width:58%;margin:0 auto 1rem}
+  .school .pkg h4{font-family:Helvetica,Arial,sans-serif;font-size:1rem;margin:.2rem 0 .3rem}
+  .school .pkg .p{font-family:Helvetica,Arial,sans-serif;color:#8FC1FF;font-weight:700}
+  .school .pkg ul{margin:.7rem 0 0;padding-left:1rem;color:#C9C2B4;font-size:.88rem;line-height:1.65}
+
+  footer{padding:3.2rem 0 2.6rem}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+  footer h4{font-family:Helvetica,Arial,sans-serif;font-size:.75rem;letter-spacing:.2em;
+       text-transform:uppercase;color:var(--soft);margin:0 0 .7rem}
+  footer a{display:block;text-decoration:none;color:var(--soft);font-size:.9rem;padding:.2rem 0}
+  footer a:hover{color:var(--ink)}
+  footer .note{margin-top:2.6rem;font-size:.78rem;color:var(--soft);font-style:italic}
+  @media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+  /* quiet reveals */
+  .rv{opacity:0;translate:0 18px;transition:opacity .7s ease,translate .7s ease}
+  .rv.in{opacity:1;translate:0 0}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;translate:none;transition:none}}
+
+  .more{display:block;text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:.85rem;
+       font-weight:700;letter-spacing:.08em;color:var(--accent);text-decoration:none;padding:1.2rem 0 2.6rem}
+</style>
+</head>
+<body>
+
+<div class="nav"><div class="wrap in">
+  <span class="logo">Wise<i>Q</i></span>
+  <span class="sec">Nr. 01 — Veilige technologie voor kinderen</span>
+  <a class="cta" href="#catalogus">Bekijk de catalogus</a>
+</div></div>
+
+<main class="wrap">
+
+  <!-- masthead -->
+  <section class="hero">
+    <div class="rv in">
+      <p class="kicker">Editie 2026 · Grootebroek, NL</p>
+      <h1>Technologie waar <em>ouders</em> op vertrouwen</h1>
+      <p class="lede">Bij WiseQ vinden ouders producten die kinderen helpen veilig te luisteren,
+        te leren, te spelen en bereikbaar te blijven. Praktisch voor thuis, onderweg en op school.
+        Geen anonieme webshop, maar hulp wanneer je die nodig hebt.</p>
+      <a class="btn" href="#koptelefoons">Onze kinderkoptelefoons</a>
+      &nbsp; <a class="btn alt" href="#onderwijs">Voor scholen</a>
+    </div>
+    <div class="imgbox rv in">
+      <img src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png"
+           alt="WiseQ Kids ANC draadloze kinderkoptelefoon in zwart">
+      <span class="badge">Kids ANC — € 49,95</span>
+    </div>
+  </section>
+</main>
+
+<section class="wrap" aria-label="Kerncijfers">
+  <div class="stats rv">
+    <div><b>85 dB</b><span>volumebegrenzing</span></div>
+    <div><b>35 u</b><span>speeltijd per lading</span></div>
+    <div><b>230+</b><span>producten in voorraad</span></div>
+    <div><b>4-jr</b><span>ervaring met scholen</span></div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- catalogue -->
+  <div class="sec-head" id="catalogus">
+    <h2>De <em>catalogus</em></h2>
+    <span class="note">Een selectie uit 230+ producten — prijzen incl. btw</span>
+  </div>
+  <section class="cat">
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="Kids ANC roze"></div><div class="meta"><b>Kids ANC · Roze</b><span>€ 49,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_ActieveGeluidsonderdrukkingDraadlozeKoptelefoonVolumeBegrensd85dB35uBluetoothNavy.png" alt="Kids ANC navy"></div><div class="meta"><b>Kids ANC · Navy</b><span>€ 49,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="Kids ANC zwart"></div><div class="meta"><b>Kids ANC · Zwart</b><span>€ 49,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="Smartwatch roze"></div><div class="meta"><b>Smartwatch · Roze</b><span>€ 74,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Blauw_GPS_Kinderhorloge.png" alt="Smartwatch blauw"></div><div class="meta"><b>Smartwatch · Blauw</b><span>€ 74,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Wisetab_roze_new.png" alt="WiseTab kindertablet roze"></div><div class="meta"><b>WiseTab · 96 GB</b><span>€ 124,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/1.38w-snellader-usb-c-3-poorten-wiseq.png" alt="38W snellader"></div><div class="meta"><b>38W Snellader · 3 poorten</b><span>€ 14,95</span></div></a>
+    <a class="item rv" href="#koptelefoons"><div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/2_1fdfbd5c-cb45-4f20-8366-3fde38e8c38a.png" alt="MagSafe snellader wit"></div><div class="meta"><b>MagSafe 25W · Wit</b><span>€ 19,95</span></div></a>
+  </section>
+  <a class="more" href="https://www.wiseq.nl" target="_blank" rel="noopener">Bekijk alle 230+ producten op wiseq.nl →</a>
+
+  <!-- ANC feature spread -->
+  <hr class="rule">
+  <section class="spread" id="koptelefoons">
+    <div class="img rv">
+      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="WiseQ Kids ANC in roze">
+    </div>
+    <div class="rv">
+      <p class="kicker">Het product waar we om bekend staan</p>
+      <h3>Kids ANC — draadloos, actieve geluidsonderdrukking, volume begrensd</h3>
+      <p>De koptelefoon die op school zijn geld waard is: actieve ruisonderdrukking voor
+        concentratie, 35 uur speeltijd en een volumebegrenzing die niet uit te schakelen is.
+        Hufterproof gebouwd voor kinderen die producten écht gebruiken.</p>
+      <dl class="spec">
+        <dt>Volumebegrenzing</dt><dd>85 dB, vast</dd>
+        <dt>Actieve ruisonderdrukking</dt><dd>Ja — ANC</dd>
+        <dt>Speeltijd</dt><dd>35 uur</dd>
+        <dt>Verbinding</dt><dd>Bluetooth, draadloos</dd>
+      </dl>
+      <a class="btn alt" href="https://www.wiseq.nl" target="_blank" rel="noopener">Bestel — € 49,95</a>
+    </div>
+  </section>
+</main>
+
+<!-- school band -->
+<section class="school" id="onderwijs">
+  <div class="wrap">
+    <p class="kicker">Voor scholen &amp; onderwijs</p>
+    <h2>Van klassensets tot <em style="font-style:italic">oplaadkasten</em></h2>
+    <p>Wij leveren aan scholen, kinderopvang en instellingen — op factuur, met staffelkorting.
+       Van de houten opbergkar voor 40 koptelefoons tot de 32-poorts oplaadkluis voor tablets en laptops.</p>
+    <div class="row">
+      <div class="pkg rv"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/OplaadkofferBinnenaanzicht.png" alt="Oplaadkoffer 16 poorts"><h4>16-poorts oplaadkoffer · 500W</h4><div class="p">€ 899,00</div><ul><li>iPads en tablets tegelijk laden</li><li>Transportklaar de klas in en uit</li></ul></div>
+      <div class="pkg rv"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Oplaadkluis32-poorts-Tablet-_Laptopkar.png" alt="Oplaadkluis 32 poorts"><h4>32-poorts oplaadkluis · kar</h4><div class="p">€ 1.149,00</div><ul><li>Afsluitbaar en verrijdbaar</li><li>Voor tablets én laptops</li></ul></div>
+      <div class="pkg rv"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Houtenopbergkarvoorkoptelefoons_verrijdbaarmet40ophangpunten.png" alt="Houten opbergkar 40 ophangpunten"><h4>Houten opbergkar · 40 ophang</h4><div class="p">€ 399,00</div><ul><li>Koptelefoons netjes per leerling</li><li>Massief hout, verrijdbaar</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="cols">
+    <div>
+      <h4>WiseQ</h4>
+      <p style="color:var(--soft);font-size:.92rem;line-height:1.7;max-width:40ch">
+        Veilige technologie voor kinderen — luisteren, leren, spelen en bereikbaar blijven.
+        Geen anonieme webshop, maar hulp wanneer je die nodig hebt.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#catalogus">Kinderkoptelefoons</a><a href="#catalogus">Smartwatches</a><a href="#catalogus">Opladers</a><a href="#catalogus">WiseTab</a></div>
+    <div><h4>Zakelijk</h4><a href="#onderwijs">Onderwijs</a><a href="#onderwijs">Op factuur</a><a href="#onderwijs">Staffelkorting</a></div>
+  </div>
+  <p class="note">Concept V2 “Redactioneel” — AI Whisperers demo met live productdata van wiseq.nl. Geen officiële WiseQ-pagina.</p>
+</footer>
+
+<script>
+  // quiet reveals
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }), {threshold:.12});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

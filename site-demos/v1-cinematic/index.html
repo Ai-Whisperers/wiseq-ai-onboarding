@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseQ — Veilige technologie voor kinderen</title>
+<meta name="description" content="WiseQ maakt kinderkoptelefoons, opladers en smartwatches die kinderen veilig helpen luisteren, leren, spelen en bereikbaar blijven. Voor thuis, onderweg en op school.">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  /* WiseQ V1 — "Filmische huisstijl" · scroll-craft engine, six tokens + two fonts */
+  :root{
+    --sc-canvas:#0E1420;        /* deep navy night */
+    --sc-surface:#151D2E;
+    --sc-ink:#F2EFE9;           /* warm paper white */
+    --sc-ink-soft:#A9B0BF;      /* tinted, not grey */
+    --sc-accent:#FF6A3D;        /* WiseQ coral */
+    --sc-accent-ink:#1A0E08;
+    --sc-hairline:rgba(242,239,233,.14);
+    --sc-font-display:"Archivo",system-ui,sans-serif;
+    --sc-font-text:"Archivo",system-ui,sans-serif;
+    --sc-font-mono:ui-monospace,monospace;
+  }
+  html{background:var(--sc-canvas)}
+  body{margin:0;font-family:var(--sc-font-text);color:var(--sc-ink)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  /* ---------- fixed nav ---------- */
+  .nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;gap:2rem;
+       padding:.9rem clamp(1rem,4vw,3rem);background:linear-gradient(#0E1420E6,#0E142200);
+       backdrop-filter:blur(8px)}
+  .nav b{font-size:1.25rem;letter-spacing:.12em}
+  .nav b i{color:var(--sc-accent);font-style:normal}
+  .nav a{font-size:.85rem;text-decoration:none;color:var(--sc-ink-soft)}
+  .nav a:hover{color:var(--sc-ink)}
+  .nav .cta{margin-left:auto;background:var(--sc-accent);color:var(--sc-accent-ink);
+            padding:.55rem 1.1rem;border-radius:999px;font-weight:700;font-size:.85rem}
+  @media(max-width:640px){.nav a{display:none}.nav .cta{display:none}}
+
+  /* generic act chrome */
+  .act{position:relative}
+  .kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sc-accent);font-weight:700}
+  .display{font-family:var(--sc-font-display);font-weight:800;line-height:1.04;letter-spacing:-.015em;
+           font-size:clamp(2.6rem,7.2vw,5.6rem);margin:.5rem 0 1.1rem}
+  .display em{font-style:normal;color:var(--sc-accent)}
+  .lede{font-size:clamp(1.02rem,1.6vw,1.25rem);line-height:1.65;color:var(--sc-ink-soft);max-width:56ch}
+
+  /* ---------- act 1 · parallax hero ---------- */
+  .hero{min-height:100svh;display:grid;place-items:center;overflow:hidden;text-align:center}
+  .hero .halo{position:absolute;width:min(88vw,880px);aspect-ratio:1;border-radius:50%;
+      background:radial-gradient(circle at 50% 42%,#FF6A3D2E 0%,#FF6A3D0F 38%,transparent 70%)}
+  .hero .product{width:min(52vw,430px);filter:drop-shadow(0 44px 70px #000A)}
+  .hero .copy{position:relative;z-index:2;padding:0 1.5rem}
+  .hero .price{display:inline-flex;gap:.9rem;align-items:center;margin-top:1.6rem;
+       border:1px solid var(--sc-hairline);padding:.6rem 1.2rem;border-radius:999px;
+       font-size:.9rem;color:var(--sc-ink-soft)}
+  .hero .price b{color:var(--sc-ink);font-size:1.05rem}
+
+  /* ---------- act 2 · pin: safety story ---------- */
+  .safety{padding:clamp(6rem,14vh,10rem) clamp(1.2rem,6vw,6rem)}
+  .safety .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;
+       background:var(--sc-hairline);border:1px solid var(--sc-hairline);margin-top:3rem}
+  .safety .cell{background:var(--sc-surface);padding:2.1rem 1.7rem}
+  .safety .cell .n{font-family:var(--sc-font-mono);font-size:.75rem;color:var(--sc-accent)}
+  .safety .cell h3{margin:.7rem 0 .5rem;font-size:1.15rem}
+  .safety .cell p{margin:0;color:var(--sc-ink-soft);font-size:.95rem;line-height:1.6}
+
+  /* ---------- act 3 · pan: colour rail ---------- */
+  .rail-wrap{padding:clamp(5rem,12vh,8rem) 0;overflow:hidden}
+  .rail{display:flex;gap:2.2rem;padding:0 clamp(1.2rem,6vw,6rem);width:max-content}
+  .rail figure{margin:0;width:min(74vw,340px);text-align:center}
+  .rail .ph{background:var(--sc-surface);border:1px solid var(--sc-hairline);border-radius:18px;
+       padding:2rem;display:grid;place-items:center}
+  .rail img{width:78%;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+  .rail figure:hover img{transform:translateY(-8px) scale(1.04)}
+  .rail figcaption{margin-top:1rem}
+  .rail .t{font-weight:700}
+  .rail .p{color:var(--sc-ink-soft);font-size:.92rem}
+
+  /* ---------- act 4 · kinetic statement ---------- */
+  .kinetic{padding:clamp(8rem,20vh,13rem) 1.5rem;text-align:center}
+  .kinetic .line{font-family:var(--sc-font-display);font-weight:800;letter-spacing:-.02em;
+      font-size:clamp(2.2rem,8vw,6.4rem);line-height:1.06}
+  .kinetic .line small{display:block;font-size:.36em;font-weight:600;color:var(--sc-ink-soft);
+      letter-spacing:.14em;text-transform:uppercase;margin-top:.9rem}
+
+  /* ---------- act 5 · reveal: collections ---------- */
+  .collections{padding:clamp(5rem,12vh,9rem) clamp(1.2rem,6vw,6rem)}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem;margin-top:2.6rem}
+  .card{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--sc-hairline);
+       background:var(--sc-surface);text-decoration:none}
+  .card .im{aspect-ratio:4/3;display:grid;place-items:center;padding:1.6rem}
+  .card img{width:72%;transition:transform .5s}
+  .card:hover img{transform:scale(1.05)}
+  .card .bar{display:flex;justify-content:space-between;align-items:baseline;padding:1rem 1.2rem;
+       border-top:1px solid var(--sc-hairline)}
+  .card .bar b{font-size:1.02rem}
+  .card .bar span{color:var(--sc-accent);font-size:.85rem;font-weight:700}
+
+  /* ---------- act 6 · B2B education ---------- */
+  .b2b{padding:clamp(6rem,14vh,10rem) clamp(1.2rem,6vw,6rem);background:
+       linear-gradient(180deg,transparent,#0B101ACC 20%,#0B101A)}
+  .b2b .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.6rem;margin-top:2.6rem}
+  .b2b .pkg{border:1px solid var(--sc-hairline);border-radius:18px;background:var(--sc-surface);padding:1.8rem}
+  .b2b .pkg img{width:60%;margin:0 auto 1.2rem}
+  .b2b .pkg h3{font-size:1.05rem;margin:.2rem 0 .6rem;line-height:1.35}
+  .b2b .pkg .p{font-family:var(--sc-font-mono);color:var(--sc-accent);font-size:1.15rem;font-weight:700}
+  .b2b .pkg ul{margin:.9rem 0 0;padding-left:1.1rem;color:var(--sc-ink-soft);font-size:.9rem;line-height:1.7}
+
+  /* ---------- footer ---------- */
+  footer{padding:4rem clamp(1.2rem,6vw,6rem) 3rem;border-top:1px solid var(--sc-hairline)}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+  footer h4{margin:0 0 .8rem;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sc-ink-soft)}
+  footer a{display:block;text-decoration:none;color:var(--sc-ink-soft);font-size:.92rem;padding:.22rem 0}
+  footer a:hover{color:var(--sc-ink)}
+  footer .note{margin-top:3rem;color:var(--sc-ink-soft);font-size:.8rem;line-height:1.7}
+  @media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <b>Wise<i>Q</i></b>
+  <a href="#koptelefoons">Koptelefoons</a>
+  <a href="#veiligheid">Veiligheid</a>
+  <a href="#collecties">Collecties</a>
+  <a href="#onderwijs">Onderwijs</a>
+  <a class="cta" href="#collecties">Bekijk assortiment</a>
+</nav>
+
+<!-- ACT 1 · parallax hero: three planes at different rates -->
+<section class="act hero" data-sc-act="pin" data-sc-span="1.6" id="top">
+  <div class="halo" data-sc-parallax="0.18"></div>
+  <div class="copy" data-sc-parallax="-0.06">
+    <p class="kicker" data-sc-rise>Veilige technologie voor kinderen</p>
+    <h1 class="display">Luister veilig.<br>Speel <em>hufterproof</em>.<br>Blijf bereikbaar.</h1>
+    <p class="lede" style="margin-inline:auto">Bij WiseQ vinden ouders producten die kinderen helpen
+       veilig te luisteren, te leren, te spelen en bereikbaar te blijven. Praktisch voor thuis,
+       onderweg en op school.</p>
+    <div class="price" data-sc-rise><span>Kids ANC — draadloos · 35 u · 85 dB</span><b>€ 49,95</b></div>
+  </div>
+  <img class="product" data-sc-parallax="0.30"
+       src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png"
+       alt="WiseQ Kids ANC draadloze kinderkoptelefoon in zwart">
+</section>
+
+<!-- ACT 2 · pin: the safety argument advances while the frame holds -->
+<section class="act safety" data-sc-act="pin" data-sc-span="2.2" id="veiligheid">
+  <p class="kicker" data-sc-rise>Waarom ouders WiseQ kiezen</p>
+  <h2 class="display" style="font-size:clamp(2rem,4.6vw,3.4rem)">Veiligheid zit in <em>elke</em> beslissing</h2>
+  <div class="grid">
+    <div class="cell" data-sc-cue="0.05 0.5 0.30">
+      <div class="n">01 — gehoor</div><h3>85 dB volumebegrenzing</h3>
+      <p>Elke kinderkoptelefoon begrenst het volume op 85 dB — de grens die hoorspecialisten
+         aanbevelen voor kinderen. Geen instelling, geen discussie: het zit in het product.</p>
+    </div>
+    <div class="cell" data-sc-cue="0.18 0.55 0.30">
+      <div class="n">02 — duur</div><h3>Hufterproof gebouwd</h3>
+      <p>Gemaakt voor kinderen die producten écht gebruiken. Verstelbare hoofdbanden,
+         taaie scharnieren en een microfoon die een schooljaar meegaat.</p>
+    </div>
+    <div class="cell" data-sc-cue="0.32 0.55 0.30">
+      <div class="n">03 — rust</div><h3>35 uur batterij</h3>
+      <p>Active Noise Cancelling voor concentratie, 35 uur speeltijd per lading.
+         Eén keer opladen per schoolweek.</p>
+    </div>
+    <div class="cell" data-sc-cue="0.48 0.55 0.30">
+      <div class="n">04 — service</div><h3>Geen anonieme webshop</h3>
+      <p>Wij gebruiken onze eigen producten elke dag. Geen anonieme webshop, maar hulp
+         wanneer je die nodig hebt — voor ouders én voor scholen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACT 3 · pan: lateral colour rail -->
+<section class="act rail-wrap" data-sc-act="pan" data-sc-pan="34" data-sc-span="2.0" id="koptelefoons">
+  <div style="padding:0 clamp(1.2rem,6vw,6rem);margin-bottom:2.4rem">
+    <p class="kicker">Kinderkoptelefoons</p>
+    <h2 class="display" style="font-size:clamp(2rem,4.6vw,3.4rem)">Drie kleuren. <em>Eén</em> belofte.</h2>
+  </div>
+  <div class="rail">
+    <figure>
+      <div class="ph"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKinderkoptelefoon_RozeDraadlozeKoptelefoonMetNoiseCancellingKinderen_ActieveGeluidsonderdrukking35uBluetoothVolumeBegrensd85dBRoze.png" alt="Kids ANC in roze"></div>
+      <figcaption><div class="t">Kids ANC · Roze</div><div class="p">€ 49,95 — draadloos · ANC · 85 dB</div></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_ActieveGeluidsonderdrukkingDraadlozeKoptelefoonVolumeBegrensd85dB35uBluetoothNavy.png" alt="Kids ANC in navy"></div>
+      <figcaption><div class="t">Kids ANC · Navy</div><div class="p">€ 49,95 — draadloos · ANC · 85 dB</div></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="Kids ANC in zwart"></div>
+      <figcaption><div class="t">Kids ANC · Zwart</div><div class="p">€ 49,95 — draadloos · ANC · 85 dB</div></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="Smartwatch voor kinderen in roze"></div>
+      <figcaption><div class="t">Smartwatch · Roze</div><div class="p">€ 74,95 — GPS · bereikbaar</div></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Zwart_GPS_Kinderhorloge.png" alt="Smartwatch voor kinderen in zwart"></div>
+      <figcaption><div class="t">Smartwatch · Zwart</div><div class="p">€ 74,95 — GPS · bereikbaar</div></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ACT 4 · kinetic: type assembles -->
+<section class="act kinetic" data-sc-act="pin" data-sc-span="1.8">
+  <div class="line" data-sc-kinetic>Gemaakt voor kinderen</div>
+  <div class="line" data-sc-kinetic style="color:var(--sc-accent)">die producten écht gebruiken</div>
+  <div class="line small" data-sc-kinetic><small>Voor thuis · onderweg · school · ontspanning</small></div>
+</section>
+
+<!-- ACT 5 · reveal: collections -->
+<section class="act collections" data-sc-act="flow" id="collecties">
+  <p class="kicker" data-sc-rise>Onze collecties</p>
+  <h2 class="display" style="font-size:clamp(2rem,4.6vw,3.4rem)">Alles voor <em>veilig</em> luisteren, leren en laden</h2>
+  <div class="cols">
+    <a class="card" href="#" data-sc-reveal>
+      <div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQANCKoptelefoonKinderen_DraadlozeKoptelefoonKind_ActiveNoiseCancelling_35uBluetooth_HufterproofmetMicrofoon_Zwart.png" alt="Kinderkoptelefoons"></div>
+      <div class="bar"><b>Kinderkoptelefoons</b><span>vanaf € 49,95</span></div>
+    </a>
+    <a class="card" href="#" data-sc-reveal>
+      <div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/1.38w-snellader-usb-c-3-poorten-wiseq.png" alt="Opladers"></div>
+      <div class="bar"><b>Opladers</b><span>vanaf € 14,95</span></div>
+    </a>
+    <a class="card" href="#" data-sc-reveal>
+      <div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/WiseQ_Roze_GPS_Kinderhorloge.png" alt="Smartwatches"></div>
+      <div class="bar"><b>Smartwatches</b><span>€ 74,95</span></div>
+    </a>
+    <a class="card" href="#" data-sc-reveal>
+      <div class="im"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Wisetab_roze_new.png" alt="WiseTab kindertablet"></div>
+      <div class="bar"><b>WiseTab tablet</b><span>€ 124,95</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ACT 6 · B2B education -->
+<section class="act b2b" data-sc-act="flow" id="onderwijs">
+  <p class="kicker" data-sc-rise>Voor scholen &amp; onderwijs</p>
+  <h2 class="display" style="font-size:clamp(2rem,4.6vw,3.4rem)">De hele klas, <em>zo</em> opgeladen</h2>
+  <p class="lede">Van klassensets koptelefoons tot oplaadkasten voor tablets en laptops —
+     geleverd op factuur, met staffelkorting voor onderwijs.</p>
+  <div class="row">
+    <div class="pkg" data-sc-reveal>
+      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/OplaadkofferBinnenaanzicht.png" alt="16-poorts USB-C oplaadkoffer">
+      <h3>16-poorts USB-C Oplaadkoffer — 500W</h3>
+      <div class="p">€ 899,00</div>
+      <ul><li>Voor iPads en tablets</li><li>Transportklaar, alles tegelijk laden</li></ul>
+    </div>
+    <div class="pkg" data-sc-reveal>
+      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Oplaadkluis32-poorts-Tablet-_Laptopkar.png" alt="Oplaadkluis 32-poorts">
+      <h3>Oplaadkluis 32-poorts — tablet-/laptopkar</h3>
+      <div class="p">€ 1.149,00</div>
+      <ul><li>Afsluitbaar, verrijdbaar</li><li>Voor tablets én laptops</li></ul>
+    </div>
+    <div class="pkg" data-sc-reveal>
+      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0916/3803/8861/files/Houtenopbergkarvoorkoptelefoons_verrijdbaarmet40ophangpunten.png" alt="Houten opbergkar voor koptelefoons">
+      <h3>Houten opbergkar — 40 ophangpunten</h3>
+      <div class="p">€ 399,00</div>
+      <ul><li>Koptelefoons netjes per leerling</li><li>Verrijdbaar, massief hout</li></ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="cols">
+    <div>
+      <h4>WiseQ</h4>
+      <p style="color:var(--sc-ink-soft);font-size:.92rem;line-height:1.7;max-width:38ch;margin:0">
+        Veilige technologie voor kinderen. Geen anonieme webshop, maar hulp wanneer je die nodig hebt.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#koptelefoons">Kinderkoptelefoons</a><a href="#collecties">Opladers</a><a href="#collecties">Smartwatches</a><a href="#collecties">WiseTab</a></div>
+    <div><h4>Zakelijk</h4><a href="#onderwijs">Onderwijs</a><a href="#onderwijs">Op factuur bestellen</a><a href="#onderwijs">Staffelkorting</a></div>
+  </div>
+  <p class="note">Concept-ontwerp V1 “Filmisch” — gebouwd door AI Whisperers met de open-source
+     scroll-craft engine. Demo met live productdata van wiseq.nl; geen officiële WiseQ-pagina.</p>
+</footer>
+
+<script src="scrollcraft.js"></script>
+<script>window.ScrollCraft && window.ScrollCraft.mount(document.body);</script>
+</body>
+</html>
