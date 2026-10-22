@@ -15,6 +15,7 @@
 | [AI stack blueprint](docs/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — the full stack, phase by phase |
 | [Automation backlog](docs/05-AUTOMATION-BACKLOG.md) | Every automation opportunity we found, scored by ROI |
 | [What we've done so far](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
+| [PY → WiseQ transfer](docs/07-PY-TRANSFER-WISEQ.md) | Capabilities from our Paraguay build that solve WiseQ problems — incl. the decoded **bundle spine** |
 | [Next steps](docs/06-NEXT-STEPS.md) | What we need from WiseQ to start Phase 0 |
 
 ## The one-paragraph pitch
@@ -24,3 +25,4 @@ WiseQ already runs a remarkably modern stack (Shopify with a custom B2B layer, C
 ## Status
 
 - 2026-10-21: repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
+- 2026-10-22: **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved); artifacts in `data/wiseq-bundle-spine.csv` + `data/wiseq-component-registry.csv`. PY→WiseQ transfer doc added (docs/07).
