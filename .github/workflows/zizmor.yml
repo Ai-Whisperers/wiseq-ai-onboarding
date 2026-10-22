@@ -1,0 +1,29 @@
+# zizmor: workflow security linting (saskia-app reference standard)
+name: zizmor
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/**']
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/**']
+  schedule:
+    - cron: "23 4 * * 1"  # weekly: catch new advisories in unchanged files
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  zizmor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
+        with:
+          persist-credentials: false
+      - name: Run zizmor
+        run: |
+          pipx install zizmor
+          zizmor --pedantic . 2>&1 | head -60

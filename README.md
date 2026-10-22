@@ -24,6 +24,7 @@
 | [50-hat analysis](docs/12-FIFTY-HATS.md) | 15 WiseQ + 15 PY + **20 AIW meta-layer hats** — liability, bol health, CONATEL, Commerce-OS productization, 24-month arc |
 | [Tooling & MCP installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified Hermes catalog inventory, per-op MCP install lists (Shopify/bol/e-Boekhouden/Trustpilot wrappers), PY docker-compose, week-1 checklist |
 | [Hermes/Jev + AIW reuse](docs/14-HERMES-JEV-AIW-REUSE.md) | **Jev verdict** (keep, route the ops lanes), Hermes optimization checklist, **full AIW asset inventory** (7 org + 81 personal repos), reuse-first stack |
+| [DevOps masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades (zizmor/gitleaks/branch-protection), storage & DB architecture (Neon + DuckDB + R2), SLOs, phased masterpiece checklist |
 
 ## The one-paragraph pitch
 
