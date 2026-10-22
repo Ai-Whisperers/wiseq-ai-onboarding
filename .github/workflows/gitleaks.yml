@@ -1,4 +1,4 @@
-# gitleaks: secret scanning on every push/PR (history + entropy aware)
+# gitleaks via CLI (MIT tool, no license key needed — the v3 ACTION requires one for org repos)
 name: gitleaks
 
 on:
@@ -19,6 +19,11 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e  # v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install gitleaks CLI (pinned 8.x via official binary)
+        run: |
+          VER="v8.24.3"
+          curl -sSL "https://github.com/gitleaks/gitleaks/releases/download/${VER}/gitleaks_${VER#v}_linux_x64.tar.gz" -o /tmp/gl.tgz
+          tar -xzf /tmp/gl.tgz -C /usr/local/bin gitleaks
+          gitleaks version
+      - name: Scan full history
+        run: gitleaks git --redact --verbose --exit-code 1 .
