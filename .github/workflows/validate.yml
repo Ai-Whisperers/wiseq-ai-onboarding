@@ -1,0 +1,52 @@
+# .github/workflows/validate.yml — repo-integrity CI for wiseq-ai-onboarding
+#
+# Pattern basis (from saskia-app's CI suite, 2026-10):
+#   - pinned action SHAs (checkout@v7 pinned; no floating tags)
+#   - concurrency auto-cancel (superseded runs don't burn minutes)
+#   - minimum token permissions (contents: read)
+#   - timeout-minutes on the job
+#   - public repo = free Actions minutes; keep the gate fast (<2 min)
+#
+# What this validates (scripts/validate_repo.py):
+#   1. Every docs/ link in README exists
+#   2. data/oss/*.json parse + schema (query/items/fields)
+#   3. Bundle-spine referential integrity (every bundle's components
+#      exist in the component registry)
+#   4. Secret-pattern scan across all text files
+
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: repo integrity (docs links, data schema, spine integrity, secrets)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
+        with:
+          persist-credentials: false
+
+      - name: Run validator
+        run: python3 scripts/validate_repo.py
+
+      - name: Data freshness (snapshots & catalogs present)
+        run: |
+          test -d data/oss && echo "✓ oss catalog present ($(ls data/oss/*.json | wc -l) files)"
+          test -f data/wiseq-bundle-spine.csv
+          test -f data/wiseq-component-registry.csv
+          test -f data/leadgen-summary.md
+          echo "✓ all key artifacts present"
