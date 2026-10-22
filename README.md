@@ -96,6 +96,7 @@ Seventeen documents, four tracks. Each is self-contained and independently verif
 | **13** | [Tooling & MCP Installs](docs/13-TOOLING-MCP-INSTALLS.md) | Verified catalog inventory, per-op MCP install lists, docker-compose, week-1 checklist |
 | **15** | [DevOps Masterplan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD upgrades, storage & DB architecture, SLOs, phased masterpiece checklist |
 | **16** | [Dev Team Hats](docs/16-DEV-TEAM-HATS.md) | **18-role full-team audit** — PM to Support Engineer; each flags/praises/fixes; top-10 ranked improvements |
+| **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
 
 ---
 
@@ -157,6 +158,27 @@ Read-only dashboard   recombination         Content cadence        Supplier
 
 ---
 
+## 🎨 Built, not described
+
+*[Site Concept Showcase](docs/17-SITE-CONCEPTS.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Proof that this team ships working software, not slideware.
+
+<table>
+<tr>
+<td width="33%"><img src="assets/demos/v1-cinematic.png" alt="Cinematic concept — hero headphone render on black"></td>
+<td width="33%"><img src="assets/demos/v2-editorial.png" alt="Editorial concept — serif masthead in WiseQ orange on warm paper"></td>
+<td width="33%"><img src="assets/demos/v3-webgl.png" alt="Constellation concept — product objects as a museum catalogue with a WebGL component graph"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>01 · Cinematic</b><br>Immersive dark hero<br><a href="site-demos/v1-cinematic/">run it →</a></sub></td>
+<td align="center"><sub><b>02 · Editorial</b><br>Print-inspired whitepaper<br><a href="site-demos/v2-editorial/">run it →</a></sub></td>
+<td align="center"><sub><b>03 · Constellation</b><br>WebGL · bundle spine made visible<br><a href="site-demos/v3-webgl/">run it →</a></sub></td>
+</tr>
+</table>
+
+> **Concept 03 is the commercially interesting one.** WiseQ's audit found 77 combinatorial bundle-products (33% of the catalog) whose component mapping lived only in human memory. That concept makes the bundle graph the *visual language* of the storefront — turning the operational weakness into a brand asset, and reusing the same component registry that would drive purchasing.
+
+---
+
 ## 🔬 Evidence base
 
 This proposal is not built on assumptions. Every claim traces to a verified artifact in this repository.
@@ -180,15 +202,17 @@ This proposal is not built on assumptions. Every claim traces to a verified arti
 
 ```
 wiseq-ai-onboarding/
-├── docs/                    16 proposal & analysis documents
-│   ├── 01-COMPANY-PROFILE.md … 16-DEV-TEAM-HATS.md
+├── docs/                    17 proposal, analysis & showcase documents
+│   ├── 01-COMPANY-PROFILE.md … 17-SITE-CONCEPTS.md
 ├── data/
 │   ├── oss/                 31 raw GitHub-search JSON files (query + results)
 │   ├── research-lanes/      5 original research reports + raw agents.md capture
 │   ├── wiseq-bundle-spine.csv
 │   ├── wiseq-component-registry.csv
 │   └── leadgen-summary.md
-├── assets/brand/            Logo variants, hero banner, OG card
+├── assets/
+│   ├── brand/                Logo variants, hero banner, OG card
+│   └── demos/                Screenshots of the 3 site concepts
 ├── site-demos/              3 scroll-driven site concepts + product imagery
 ├── scripts/validate_repo.py Repo-integrity CI (doc links, data schema, spine, secrets)
 └── .github/workflows/       validate · gitleaks · zizmor
