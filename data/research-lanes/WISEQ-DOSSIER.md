@@ -63,3 +63,15 @@ Raw artifacts: raw-products-parent.json (230 products), raw-agents-md.txt, paren
 - All 4 deliverables written and size-checked on disk (7.7–11.2 KB each).
 - Primary claims cross-verified: registry (Creditsafe + site footer + bkoppeling), domain (SIDN WHOIS socket), catalog (products.json artifact, N=230 programmatically counted), UCP endpoint (HTTP 200 live check), bol since 2018 + 9.2/42 + 312 articles (bkoppeling snapshot), Trustpilot 4.4/25 (live extraction), Scamadviser 0 (live extraction).
 - Single-sourced claims labeled in-lane (e.g., Facebook brand-era reading, logo-wall interpretation).
+
+
+## Follow-up addendums (post-proposal, Oct 23 2026)
+
+After the external audit (Oct 22), four follow-up research lanes were run and documented. Each carries primary sources and flows into `data/CLAIMS-LEDGER.md` (30 rows):
+
+1. **[Addendum 1 — Procurement & APIs](RESEARCH-ADDENDUM-PROCUREMENT-API.md)** — EU tender threshold for schools (no tender below it; single-quote sub-€33k); bol Retailer API v10 endpoint map + demo environment; 5X-vs-Exact Online bookkeeping cost fork; Q4 seasonality clock.
+2. **[Addendum 2 — Thresholds, competitor API, AVG](RESEARCH-ADDENDUM-2-PROCUREMENT-COMPETITOR-AVG.md)** — 2026/27 threshold €216k; the 3-quotes assumption retracted (school boards go single-quote far lower); anti-saucissoneren aggregation rule; Heutink's public API discovered (moat reframed); AVG art. 28 + DORA contract layer mapped.
+3. **[Addendum 3 — Certification, pricing, market](RESEARCH-ADDENDUM-3-CERTS-PRICING-MARKET.md)** — lab-testing cost bands (RED €2–8k etc.) bounding the TCO's known-unknown; Trustpilot's live tariff ($99/mo floor); NL PO market sizing + the Oct-16 Taal-versterkingsagenda tailwind; ChannelDock re-confirmed.
+4. **[Addendum 4 — GS1 tariff, Amazon enforcement, competition](RESEARCH-ADDENDUM-4-GS1-AMAZON-COMPETITIVE.md)** — live GS1 tariff: whole-catalog EAN coverage for €225/yr (1,000-pack), TCO corrected downward; Amazon GPSR automated enforcement 2026 (2020-era ASINs plausibly at risk — week-one audit hook); kids-safe-audio competitive map (BuddyPhones the education-shaped threat; verified limiter performance as differentiator).
+
+**Net effect on the proposal:** TCO down ~€630/yr (doc 04), two new concrete Phase-0 hooks (Amazon compliance audit; EAN micro-engagement at €225/yr), one retracted assumption (3-quotes), one reframed moat (Heutink operates an API — we operate the pipeline), and the school channel now has legal + market + policy grounding.
