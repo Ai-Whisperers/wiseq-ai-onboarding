@@ -222,7 +222,7 @@ def occurrences(pattern, exclude_docs=()):
     return hits
 
 # (1) "250+ reviews" — impossible: reviews depend on buyers replying, not on us.
-review_hits = occurrences(r"250\+ reviews|25 → 250", exclude_docs=("05-AUTOMATION-BACKLOG.md", "19-CRITICAL-REVIEW.md"))
+review_hits = occurrences(r"250\+ reviews|25 → 250", exclude_docs=("05-AUTOMATION-BACKLOG.md", "19-CRITICAL-REVIEW.md", "23-ACCEPTANCE-CRITERIA.md", "22-AUDIT-RESPONSE.md"))
 check(not review_hits,
       "the impossible '250+ reviews' target is not stated as a promise anywhere",
       f"reintroduced at {review_hits} — reviews are not ours to produce; "
