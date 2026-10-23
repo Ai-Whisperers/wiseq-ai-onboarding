@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-24-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-25-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
@@ -67,7 +67,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Twenty-four documents, four tracks. Each is self-contained and independently verifiable.
+Twenty-five documents (00 NL + 01–24) — the complete evidence file: research, proposal, demos, audit response, acceptance gates, and the agent-infrastructure blueprint.
 
 ### Track A — The proposal *(what we recommend)*
 
