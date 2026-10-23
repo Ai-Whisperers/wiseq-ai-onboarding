@@ -22,7 +22,11 @@
 | **SBI** | 46190 — intermediation/agency trade (general goods) |
 | **Leadership** | Rob Nyari (E-Commerce CEO; also co-founder Miners Nederland) |
 
-Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
+Sources (all consulted Oct 21–22, 2026):
+- KvK company register — [kvk.nl](https://www.kvk.nl) · Creditsafe Business Index (business-data report)
+- wiseq.nl site footer + `/agents.md` (public self-description)
+- LinkedIn — company page & founder profile (Rob Nyari)
+- Shopify catalog snapshot — [data/research-lanes/RESEARCH_CATALOG.md](../data/research-lanes/RESEARCH_CATALOG.md)
 
 ## 🕰️ The story (verified timeline)
 

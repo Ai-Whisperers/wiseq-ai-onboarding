@@ -15,7 +15,7 @@ This document is a point-by-point response to the external audit findings dated 
 - Future-state mockup (v4 demo) — **done**
 
 **What remains (no change needed):**
-- **"230/230 EANs"** — the audit's GS1 cost figure (€854–1,403) is outdated; our current calculation is **€733/yr** for 139 GTINs, consistent across all docs.
+- **GS1 cost** — the audit's €854 floor was **correct**; our earlier €733 was an arithmetic slip (12 packs covers only 120 of 139 codes). Fixed to **€854/yr across all docs** — caught by our own CI validator before this response shipped.
 - **"25 reviews to 250+"** — this is labeled a **plausible experiment, not a promise** in doc 04 and d19.
 
 ---
@@ -90,15 +90,15 @@ The validator script now has **explicit disclaimers** about what it does **not**
 
 ## 4. GS1 Cost Discrepancy — Corrected
 
-**Audit finding:** Cost estimate (€854–1,403) vs our repo (€733).
+**Audit finding:** Repo showed €733/yr; audit estimated €854–1,403.
 
-**Our response:** ✅ **Updated all docs with consistent calculation**
+**Our response:** ✅ **The audit was right. We were wrong.**
 
-- ✅ **GS1 calculation**: 139 GTINs × €61/yr = **€733/yr**
-- ✅ **Applied to all TCO options** (doc 04)
-- ✅ **Cites GS1.nl as source** ✅
+- ❌ Our error: 139 GTINs ÷ 10 = 13.9 → **14 packs** needed, not 12. We priced 12 packs (€733), which covers only 120 codes.
+- ✅ Corrected: **14 × €61 = €854/yr** (excl. VAT; €1,033 incl.) — now consistent in docs 04, 08, and here.
+- ✅ Our own CI validator caught the €733 reintroduction before this response went out — the validator's GS1 rule exists precisely for this class of error.
 
-> The audit's older cost estimate has been **superseded** by our current calculation, which is traceable to gs1.nl pricing.
+> Conceded in full. The correct figure is the audit's floor: €854/yr.
 
 ---
 

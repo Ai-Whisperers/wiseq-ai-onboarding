@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-20-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-22-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
@@ -67,7 +67,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Twenty documents, four tracks. Each is self-contained and independently verifiable.
+Twenty-two documents, four tracks. Each is self-contained and independently verifiable.
 
 ### Track A — The proposal *(what we recommend)*
 
@@ -109,6 +109,8 @@ Twenty documents, four tracks. Each is self-contained and independently verifiab
 | **18** | [Working Together — Terms & Ownership](docs/18-TERMS-OWNERSHIP-CONTINUITY.md) | Who owns what, processor-vs-controller, GDPR Art. 28, continuity and exit — before signing, not in week three | You want the boring-but-decisive page |
 | **19** | [Critical Review](docs/19-CRITICAL-REVIEW.md) | The adversarial pass on this proposal: what was wrong, what we fixed, what is still open | You want to see how this was stress-tested |
 | **20** | [Send-to-Rob](docs/20-SEND-TO-ROB.md) | The copy-paste outreach message that turns the demos into a scheduled next step | You're about to send the link |
+| **21** | [Who we are](docs/21-WHO-WE-ARE.md) | People page: names, roles, Dutch-capability evidence | ✅ |
+| **22** | [Audit response](docs/22-AUDIT-RESPONSE.md) | Point-by-point response to the Oct-22 external audit | ✅ |
 
 ---
 
