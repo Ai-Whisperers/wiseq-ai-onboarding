@@ -18,10 +18,12 @@
 | 12 | 25 → 250+ Trustpilot reviews in a quarter | **HYPOTHESIS** (retired as a promise) | Doc 04, re-labeled Oct 23 | No conversion model; platform-policy compliant invitations only (audit §1.3) | Gate 5.4 |
 | 13 | DUO open data yielded 8,673 orgs / 857 verified emails (method only; no raw PII in repo) | **VERIFIED** (method) | `RESEARCH_LEADS-DUO.md`, Oct 21 | Raw data stays out of the public repo by policy | Re-run the documented query |
 | 14 | 116-agent fleet / 79 cron jobs run AIW's own operations | **VERIFIED** (internal) | AIW internal state, Oct 23 | Internal infrastructure; client can't independently inspect — offered as context, not proof | Live demo on request |
-| 15 | 5X (bookkeeping) has a public API | **UNRESOLVED** | Retraction note, Oct 22 | Existence unverified; billing step depends on it (audit §6) | Read-only test in Gate 1.2 |
+| 15 | 5X exposes a readable API | **UNRESOLVED** (nuanced) | Doc 08 vs doc 04, reconciled Oct 23 — see [addendum](research-lanes/RESEARCH-ADDENDUM-PROCUREMENT-API.md) | 5X *consumes* APIs (confirmed: it takes bol credentials); whether it *exposes* one is untested. Cost fork: Exact Online connector exists at €12/mo | Gate 1.2 read-only test; Phase-0 question to Rob |
 | 16 | ChannelDock REST API exists, from €45/mo | **VERIFIED** (existence) | channeldock.com/nl/prijzen, Oct 22 | Plan-tier permissions untested — that's Gate 1.2 | Re-fetch pricing page |
 | 17 | "NL e-commerce tooling thin at the edges, absent in the middle" | **INFERRED** | Doc 08 survey of 100 repos | Qualitative synthesis; not a market census (audit §2) | — (framing, not a count) |
 | 18 | Site demos render clean (0 console errors, hero cutouts fixed) | **VERIFIED** | CI + this session's visual audit, Oct 23 | Visual QA on desktop Chromium; mobile re-check pending | Visit the three demo URLs |
+| 19 | Sub-€221k school purchases require no formal tender | **VERIFIED** | SURF procurement guide + CVDR inkoopbeleid, Oct 23 | EU threshold for leveringen (lagere overheden); schools still follow internal inkoopbeleid (quote-ready PDFs needed) | Sources in the procurement addendum |
+| 20 | Q4 peak window (Sinterklaas/BF/Christmas) is active now | **VERIFIED** | Doc 12 calendar vs today's date; boloo/RTL-Z category data, Oct 23 | First measurable pilot win realistically Q1 2027; peak-timing justifies EAN/bundle micro-engagement only | Doc 12 §36 |
 
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 
