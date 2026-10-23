@@ -78,7 +78,7 @@ fees* before a single price moves. **Flag:** we have never seen WiseQ's actual m
 (a) WiseQ ships NL→BE and holds an Amazon EU seller account; OSS/IOSS thresholds and the
 one-stop-shop position determine whether EU expansion needs VAT registrations per country — that is
 a compliance cost, not a marketing decision; (b) the German/Dutch dual inventory model changes
-when Amazon logistics takes over cross-border fulfilment; (c) the €732 GS1 spend is trivial next
+when Amazon logistics takes over cross-border fulfilment; (c) the €733/yr GS1 spend is trivial next
 to a wrong VAT position. **Fix:** one question in Phase 0 — current VAT registrations and turnover
 per country. We are not qualified to answer this for them; we are qualified to ask it.
 
