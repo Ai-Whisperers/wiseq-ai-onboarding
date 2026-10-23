@@ -1,3 +1,7 @@
 tmp/
 *.local
 .env
+
+# INTERNAL — never publish. Cost audits name our margins, our unbilled labour,
+# our weak spots, and unverified estimates. This is a client-facing repo.
+analysis/
