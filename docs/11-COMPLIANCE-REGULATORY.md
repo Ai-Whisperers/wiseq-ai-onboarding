@@ -28,7 +28,7 @@
 |---|---|---|
 | **Thuiswinkel Waarborg** | **€75 one-time + €390/yr certification + contribution** | 92-96% consumer recognition; the direct counter to the Scamadviser-0 trust suppressor; also requires the disputes-committee (Geschillencommissie) process |
 | **bol CPOP certified partner** | Application-based | Post-integration credibility; bol lists certified integrators/service providers |
-| **GS1 Nederland** | **10-pack = €61 PER YEAR** · EDI licence €0 below €5M turnover | The 0/230 EAN fix. 139 codes (114 components + 25 bundles) = **€854/yr**; all 230 = **€1,403/yr** (see doc 08) |
+| **GS1 Nederland** | 10 EAN-pack ~€61 + annual licence | The 0/230 EAN fix (see doc 08) |
 | **Trustpilot** | Free tier + paid plans | Review engine target (25 reviews → automated D+1 flow) |
 | **KvK / ILT / NVWA** | — | Market-surveillance bodies for toy-safety/e-com compliance; low risk but the cert files above are their ask |
 
@@ -44,19 +44,60 @@
 - **GDPR/AVG** (already law, unlike PY's 7593/2025): shop customers + school-contact outreach both in scope. Our privacy-agent design (consent registry, DSR handling, 72h breach protocol) ships in EU flavor.
 - **RED cybersecurity clause** overlaps: kids' GPS/location data = sensitive-adjacent; evidence of secure handling strengthens both RED and GDPR posture.
 
+## 4b. ⚠ EU AI Act — applies to **us** as deployers (added 2026-10-22, verified)
+
+**This section was missing from the original map. It is the most time-sensitive item in this document.**
+
+| Fact | Status |
+|---|---|
+| **Article 4 — AI literacy obligation** | **Applies since 2 February 2025.** Providers and deployers must ensure sufficient AI literacy of staff. |
+| **National supervision began** | **August 2026** — i.e. this is **already being enforced now**, not a future requirement. |
+
+**Scope for WiseQ:** they are a **deployer** (they use our agent layer internally).
+We — AI Whisperers — are also a **deployer** of the same systems. Both are in scope.
+
+**What Article 4 actually requires (important, because it is cheap):**
+- It prescribes **no specific course, no certificate, and no minimum number of hours.**
+- The obligation is to ensure staff have sufficient AI literacy, taking into account
+  their knowledge, experience, education, training and context.
+- **An organisation's own records suffice** as evidence — no accredited training
+  provider is required.
+
+**Consequence:** this is a **few hours of Phase 0 work, not a budget line.** It becomes
+a deliverable: an AI-literacy register (who uses AI tools, for what, what training
+was given) that satisfies a Dutch supervisor. Turn a compliance exposure into
+evidence of rigour.
+
+**What we deliberately do NOT claim:** high-risk AI Act obligations (and their
+penalty tiers) apply to systems placed on the market as safety components of
+products, and to certain named use cases. WiseQ's internal ops layer triggers
+**none** of that. Do not use high-risk framing to sell fear to the client — it
+would collapse on inspection.
+
+## 4c. 🧾 Cost corrections in this document (2026-10-22)
+
+| Item | Stated here before | **Verified now** |
+|---|---|---|
+| Thuiswinkel Waarborg | "€75 one-time + €390/yr certification + contribution"; "€465 year one" (§5.3) | **€75 once + €390/yr + revenue-tiered contribution €518–€1,294/yr** (thuiswinkel.org, excl. VAT). Year 1 realistically **€983–€1,759** depending on turnover class, plus **€45/yr per extra platform** (bol.com/Amazon). **We have never asked WiseQ their annual online turnover — it sets the tier.** |
+| GS1 10-pack | "€61 + annual licence"; called a one-off in doc 08 | **€61 is PER YEAR**, not one-off. EDI licence is **€0** below €5M turnover. 139 GTINs needed (114 components + 25 bundles) = **€733/yr recurring (€887 w/ VAT)**. |
+| GPSR responsible person | listed only as a "field check" | A third-party EU Responsible Person costs from **~$500/yr**, but **WiseQ B.V. is an NL-established manufacturer and is its own Responsible Person → €0.** Keep AIW explicitly out of the product chain (contract language: software provider, not goods supplier). |
+| EN 71 / RED testing | not costed anywhere | **Still uncosted and still unknown.** Lab testing per SKU family is typically **hundreds to low-thousands of EUR**. **Get real lab quotes before any total is presented to the client.** |
+
 ## 5. 🧱 Actions this adds to the backlog
 
 1. Cert-evidence library per SKU family (EN 71 / 62115 / RED) — agent-maintained, marketing-usable
 2. RED-2025 file audit on the GPS-tracker line (child location data = highest scrutiny)
-3. Thuiswinkel Waarborg application (€983–€1,759 year one, depending on turnover tier) — paired with review engine
-4. Responsible-person field check across Amazon/bol listings (GPSR)
-5. Outreach wave to 3 regional boards (West Friesland backyard first)
+3. Thuiswinkel Waarborg application (**€983–€1,759 year 1 excl. VAT, depending on turnover class** — see §4c; needs their turnover figure) — paired with review engine
+4. Responsible-person field check across Amazon/bol listings (GPSR) — WiseQ is its own RP, so this is a *listing-hygiene* task, not a purchase
+5. **EU AI Act Article 4 AI-literacy register** — applies now, costs hours not euros (§4b)
+6. **EN 71 / EN IEC 62115 / RED lab quotes** — obtain real figures; currently the single largest uncosted item in the whole proposal
+7. Outreach wave to 3 regional boards (West Friesland backyard first)
 
 ---
 
 ## 📌 In short
 
-Compliance here is **cheap if done early and expensive if discovered late**. The corrected numbers: **GS1 is €854/yr recurring for 139 codes** (€1,403/yr to cover all 230), and **Thuiswinkel is €983–€1,759 in year 1** depending on turnover tier, not the €465 previously quoted — WiseQ's own turnover band settles it. The most time-sensitive item is **EU AI Act Article 4**: it has applied since February 2025 and supervision began in **August 2026**, making it *now*, not future. It prescribes no course or certificate — an internal literacy register satisfies it in a few hours.
+Compliance here is **cheap if done early and expensive if discovered late**. The corrections that matter: **GS1 is €733/yr recurring**, and **Thuiswinkel is €983–€1,759 in year 1** depending on turnover tier, not the €465 previously quoted — WiseQ's own turnover band settles it. The most time-sensitive item is **EU AI Act Article 4**: it has applied since February 2025 and supervision began in **August 2026**, making it *now*, not future. It prescribes no course or certificate — an internal literacy register satisfies it in a few hours.
 
 
 ---

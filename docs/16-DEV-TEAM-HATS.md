@@ -6,154 +6,150 @@
 
 ---
 
-# Delivery Review — How We Build
+# The Full Dev Team Hat Pass — Both Projects Audited by Role
 
-*2026-10-22. A full engineering team reviewed this proposal and the repository as they stand today, role by role: what each discipline would flag, what it would keep, and what it would build first. This is how the work gets done — the quality bar is set before Phase 0 starts, not discovered during it.*
+*2026-10-22. A complete software team reviews py-dropship-ai + wiseq-ai-onboarding as they exist NOW (15-16 docs, 5 workflows green, no app code yet). Each role: what they'd flag, what they'd praise, and the fix. Synthesis at the end ranks the top-10 improvements.*
 
 ---
 
 ## 1. 🧭 Product Manager
 
-**Would flag:** Phase 0 has a checklist but no acceptance criteria — how do we know Phase 0 is *done*? And the pilot has no agreed success metric, which is really the same question asked of the future.
-**Would keep:** the ask-list is concrete, and the pitch is one page a director can read in ninety seconds.
-**Would build first:** a `MILESTONES.md` with three milestones maximum, each with a measurable exit test — for example *"pilot: drift report delivered four consecutive Mondays and the EAN fix live."*
+**Flags:** Phase 0 checklists exist but no acceptance criteria ("how do we know Phase 0 is DONE?"); the WiseQ pilot has no agreed success metrics (what makes Rob renew?); PY niche decision has no date-owner.
+**Praise:** The one-paragraph pitches are crisp; the ask-lists are concrete.
+**Fix:** One `MILESTONES.md` per repo — 3 milestones max, each with measurable exit criteria (e.g. "pilot: drift report delivered 4 consecutive Mondays + EAN fix live").
 
 ## 2. 🕰️ Business Analyst
 
-**Would flag:** unit economics are documented but not *parameterised* — margin, ad cost, and courier assumptions are scattered across several documents with no single source.
-**Would keep:** every number carries a source.
-**Would build first:** `data/assumptions.json` — one register with value, source, confidence, and review date.
+**Flags:** Unit economics are documented but not *parameterized* — assumptions (margin %, CPM, courier $/kg) are scattered across docs 02/09/10 with no single source; no sensitivity analysis artifact.
+**Praise:** Every number carries a source.
+**Fix:** `data/assumptions.json` — one register: value, source, confidence, review-date. The simulator (T12) reads from it.
 
 ## 3. 💬 Software Architect
 
-**Would flag:** the canonical spine exists as a concept and a pair of CSVs, but has no schema definition; the connector API contracts are undefined; decisions live in prose rather than numbered records.
-**Would keep:** the layered architecture — code in git, transactional data in Postgres, assets in object storage, analytics in DuckDB — is stated and consistent.
-**Would build first:** numbered architecture records, and the spine schema as the first migration file *before* the database exists. Defining the contract early is what makes it a contract.
+**Flags:** The canonical spine exists as concept + CSVs but no DDL/migration; MCP wrapper API contracts undefined (no OpenAPI/tool schemas yet); decisions live in prose docs, not ADRs — nothing numbered to cite later.
+**Praise:** The layered architecture (git=code, Neon=data, R2=assets, DuckDB=analytics) is stated and consistent.
+**Fix:** Start `docs/adr/` — ADR-001 (two repos), ADR-002 (ghcr for wrappers), ADR-003 (Neon per op)... retro-write 10 ADRs from existing docs in one pass; define spine DDL as the first migration file (even before the DB exists — it becomes the schema contract).
 
 ## 4. 📦 Tech Lead
 
-**Would flag:** no written contribution guide or branch strategy; the wrapper-code ownership decision is still open and the first wrapper is approaching.
-**Would keep:** commit hygiene is good, and every CI check is runnable locally — local/CI parity already in place.
-**Would build first:** a twenty-line contribution guide, and settle where reusable connector wrappers live before the first one lands in a client repository.
+**Flags:** No CONTRIBUTING.md, no CODEOWNERS, no branch strategy doc (direct-push now, PR-flow at first collaborator — currently only stated in a chat-level note); the commerce-os-repo decision (doc 14 §C2) is still open and wrapper #1 is approaching.
+**Praise:** Commit hygiene is good; validators runnable locally = local/CI parity (the saskia rule) already in place.
+**Fix:** Decide commerce-os repo NOW (before wrapper #1 lands in a client repo); 20-line CONTRIBUTING per repo.
 
 ## 5. 🧱 Backend Engineer
 
-**Would flag:** the crawler has no retry or backoff — a single failed fetch skips a category silently; no structured logging; no tests; scripts lack type hints.
-**Would keep:** a stdlib-only dependency posture, polite crawl delays, and graceful per-category continue.
-**Would build first:** crawler v2 — three retries with exponential backoff, a structured run log (`ts, source, count, status`), and one test that asserts the parser handles a known-good snapshot.
+**Flags:** Crawler has no retry/backoff (single fetch fails → category skipped silently), no structured logging, no tests; scripts lack type hints; no dead-letter concept for a category that fails N nights straight.
+**Praise:** stdlib-only dependency posture; polite 1.2s delays; graceful per-category continue.
+**Fix:** v2 crawler: 3-retry with exponential backoff, JSONL run-log (`ts, category, n, status`), one pytest with a fixture HTML asserting the regex parses 113-ish cards (golden-file test against today's snapshot).
 
 ## 6. 🗺️ Frontend Engineer
 
-**Would flag:** no interface code yet (correct for Phase 0), but the reporting surface is undecided — is the Monday report markdown or a page?
-**Would keep:** design tokens already exist for reuse when interface work lands.
-**Would build first:** decide the answer. Reports stay markdown, agent-authored, until there are ten readers. Decide it now rather than at the point it blocks someone.
+**Flags:** Zero FE code (fine — Tiendli phase 0), but the report/dashboard surface is undecided: Monday report as markdown vs web page; the ops TUI widget is specced nowhere.
+**Praise:** The ai-whisperers-packages tokens exist for reuse when FE lands.
+**Fix:** Decide: reports stay markdown (agent-authored) until 10 readers exist; the TUI widget gets a 1-paragraph spec (what 4 numbers, refresh rate) so it can be built in a day.
 
 ## 7. 🔍 UX Designer
 
-**Would flag:** the customer conversation is the real user interface and its scripts are referenced everywhere but never written; the school-order flow has states — new → parsed → quoted → confirmed → shipped — but no state diagram.
-**Would keep:** buyer-persona thinking is already deep. The procurement-officer view is the right lens.
-**Would build first:** write the conversation flows (greeting → qualify → offer → close → confirm) with fallbacks, and a state diagram for the school-order path.
+**Flags:** The WhatsApp conversation is the real product UI and its scripts are referenced everywhere but never written; the Monday report is a product with no template; the WiseQ school-order flow has states (new → parsed → quoted → confirmed → shipped) but no state diagram.
+**Praise:** Customer-persona thinking (procurement officer hat, PY conversational selling) is already deep.
+**Fix:** Write `docs/16-CONVERSATION-FLOWS.md` (PY): greeting → qualify → offer → close → pay → confirm, with fallbacks; WiseQ: order-state diagram (mermaid) in the backlog doc.
 
 ## 8. ⚙️ QA Engineer
 
-**Would flag:** validators are smoke-tier; no property tests (price always a positive integer, dates monotonic); the agent evaluation sets are designed but nothing is labelled yet.
-**Would keep:** CI caught two real bugs on day one — the gates work.
-**Would build first:** a golden-file test per snapshot to catch silent parser drift, a validator self-test that injects a bad file and expects a non-zero exit, and the first 50 labelled conversations *before* the agent exists.
+**Flags:** Validators are smoke-tier; no property tests (price always int>0, dates monotonic); eval sets for agents designed (T1) but zero conversations labeled; no test for the validator itself.
+**Praise:** CI caught two real bugs on day one (bad SHA, _index schema) — the gates work.
+**Fix:** Golden-file test per snapshot day-1 (catch silent parser drift); validator self-test (inject a bad file, expect exit 1); start the 50-conversation WhatsApp eval set now, before the agent exists — from PY seller FAQ pages.
 
 ## 9. 💰 SRE
 
-**Would flag:** no runbooks for the scheduled workflows; an automated-commit failure would be silent; service levels are drafted but not measured anywhere.
-**Would keep:** concurrency cancellation, job timeouts, and minimum permissions throughout; the scheduled pipeline verified end-to-end.
-**Would build first:** `docs/runbooks.md` — one block per workflow covering what healthy looks like, what the symptom is, and the three-step restart. Then wire the heartbeat monitor.
+**Flags:** Keepalive shipped but the Better Stack monitor on "no Actions run in 48h" is planned, not built; no runbooks for the 5 workflows; the commit-bot failing (bad push) would be silent; SLOs drafted but not measured anywhere.
+**Praise:** Concurrency-cancel, timeouts, min-perms everywhere; nightly pipeline verified end-to-end.
+**Fix:** `docs/runbooks.md` — one block per workflow (healthy/symptom/3-step restart); wire the Better Stack heartbeat this week; a `status` badge row in both READMEs.
 
-## 10. 🌱 Security Engineer
+## 10. 🌱 Security Engineer (AppSec)
 
-**Would flag:** branch protection is off, which is fine while solo but not before the first external collaborator — one workflow holds write access and needs protection at the moment collaboration starts. Crawled content flows into agent context, which is a prompt-injection surface: a snapshot carries arbitrary titles from an external site. No dependency scanning yet.
-**Would keep:** workflow-security linting and secret scanning are green; credentials live in a vault; no tokens in the tree.
-**Would build first:** branch protection from the first commit of any new repository, and **sanitise external content at ingestion** — strip markup and control characters from titles before they reach a model context.
+**Flags:** Branch protection off on both repos (accept for solo, but the snapshot workflow has contents:write — a compromised PR could alter it if protection flips on late); crawler content will flow into agent context (prompt-injection surface — snapshot JSON contains arbitrary titles from an external site); no dependency scanning (no deps yet — add pip-audit at first requirements.txt).
+**Praise:** zizmor+gitleaks green; BWS for secrets; no tokens in tree.
+**Fix:** Add `gitleaks.toml` allowlist doc-note (none needed yet); at wrapper-repo creation: branch protection from commit #1; sanitize crawler output at ingestion (strip markdown/control chars from titles before they reach any LLM context).
 
 ## 11. 🛡️ Data Engineer
 
-**Would flag:** snapshots carry no schema version, so a breaking parser change later becomes ambiguous; cross-source product identity is unresolved; quality checks stop at price sanity.
-**Would keep:** dated files, dedupe on title and price, captured-date integrity verified.
-**Would build first:** a `schema_version` field on every snapshot plus a validator rule, a written spec for the product-identity key so the matcher starts from a document, and a title-length anomaly check.
+**Flags:** Snapshot JSONs have no `schema_version` field (breaking parser changes later = ambiguity); cross-source product identity unresolved (the matcher is a planned build, not started); no data-quality checks beyond price sanity (category drift, empty titles).
+**Praise:** Dated files, dedupe on (title, price), captured-date integrity checked.
+**Fix:** Add `"schema_version": 1` to crawler output + validator; draft the identity key (brand+model+color normalization sketch) as a doc so the matcher starts from a spec; add title-length anomaly check.
 
-## 12. 📋 Database Engineer
+## 12. 📋 DBA
 
-**Would flag:** no migration tooling chosen; databases not provisioned; no retention policy; indexing unstated.
-**Would keep:** the "git carries the latest, the database carries the history" split is the right call.
-**Would build first:** numbered migrations in-repo, the price-history table and its composite index written down before implementation, and an explicit retention policy — raw data for a defined window, aggregates kept indefinitely.
+**Flags:** No migration tooling chosen; Neon projects not created; no retention policy (snapshots forever? 24 months?); indexing plan unstated.
+**Praise:** The "git=latest, DB=history" split is the right call.
+**Fix:** At phase-1 kickoff: alembic-style numbered migrations in-repo, `price_history(product_key, source, captured, price)` with composite index stated in the DDL doc now; retention = 24 months raw, aggregates forever.
 
 ## 13. 🎯 ML / Data Science Engineer
 
-**Would flag:** the evaluation harness is the component the whole plan depends on, and it exists today only as a design note; there is no cost telemetry on any lane yet.
-**Would keep:** model routing is documented per task type — cheap models for parsing, strong models for decisions.
-**Would build first:** define the evaluation schema (input, expected outcome, grader) so conversations get labelled from day one, and log a cost line on every agent run, so per-order unit economics are measured rather than estimated.
+**Flags:** The eval harness is the make-or-break component and exists only as a bullet (T1); no cost telemetry on any lane yet; forecasting is rules (fine) but rules need backtesting data — which starts accumulating tonight.
+**Praise:** Model-routing per task documented; Jev audit trail already logging 40k decisions.
+**Fix:** Define the eval-set schema (input, expected, grader) this week so conversations get labeled from day one; add token-cost log line to every agent run (the P&L-line rule needs the line).
 
 ## 14. 📊 Technical Writer
 
-**Would flag:** documentation that summarises a master document can drift from it with nothing to catch it; the vocabulary mixes Dutch, German, and English trade terms without a glossary.
-**Would keep:** documents are source-cited, dated, and versioned in git — better than most companies at any size.
-**Would build first:** a glossary, and "generated from master@revision" headers on derived documents so staleness becomes detectable rather than invisible.
+**Flags:** The master/extraction pattern (PY docs 12/15 duplicating WiseQ masters) = translation-drift risk with no lint; no glossary (jopara, contrapedido, staffelprijzen, RESIMPLE mix freely); no AGENTS.md in either repo — future agent sessions won't inherit conventions automatically.
+**Praise:** Docs are source-cited, dated, and versioned in git — better than most startups.
+**Fix:** AGENTS.md per repo (10 lines: language policy, SSOT rule, validate-before-commit); a `GLOSSARY.md`; extraction docs get "generated-from master@SHA" headers so staleness is detectable.
 
-## 15. 🔬 Delivery / Scrum
+## 15. 🔬 Scrum Master / Delivery
 
-**Would flag:** the analysis across this repository produced on the order of 250 ideas with no board; no work-in-progress limit; no weekly review ritual defined.
-**Would keep:** the phase discipline — research, blueprint, tooling, data — has been unusually sequential and complete.
-**Would build first:** convert the twelve graduating actions into tracked issues with labels, set a WIP limit of three, and make each README's status section the weekly review artefact.
+**Flags:** ~250 ideas across three hat-docs with no board — the 12 kanban graduates (doc 12) aren't in GitHub Issues/Projects; no WIP limit; no weekly review ritual defined.
+**Praise:** The phase discipline (research → blueprint → tooling → data) has been unusually sequential and complete.
+**Fix:** Convert the 12 graduates + top-10 below into GitHub Issues with labels (wiseq/py/aiw) this week; WIP limit 3; the "Status" section of each README becomes the weekly review artifact.
 
 ## 16. 🧪 Release Manager
 
-**Would flag:** no versioning policy for anything yet; change discipline starts when application code lands, but the habit should start with the repository itself.
-**Would keep:** commit-message conventions are already correct, including `[skip ci]` handling.
-**Would build first:** a `v0.1.0` tag at Phase-0 completion as a milestone marker, and a changelog that starts then.
+**Flags:** No versioning policy for anything (docs or future components); changelog discipline starts "when app code lands" but the habit should start with the repos themselves; tag conventions undefined.
+**Praise:** [skip ci] conventions already correct on bot commits.
+**Fix:** v0.1.0 tags on both repos at Phase-0 completion (milestone marker); CHANGELOG.md starts then, not later.
 
 ## 17. 🧩 Performance Engineer
 
-**Would flag:** the crawler is serial — fine at today's volume, and still fine nightly at ten times it, but it becomes a problem when sources multiply.
-**Would keep:** the workload is small enough that this is genuinely not urgent.
-**Would build first:** record one number — wall-clock per crawl — and start the series. Optimise when it crosses thirty minutes, not before.
+**Flags:** Crawler is serial (10 categories × ~2s = fine today, 584 categories × 2s = 20min — still fine nightly, but multi-source ×10 will need async with per-host politeness); nothing measured.
+**Praise:** Workload is small enough that this is genuinely not a problem yet.
+**Fix:** One number in the run-log: wall-clock per crawl — start the series now, optimize when it crosses 30min.
 
 ## 18. 🔗 Support Engineer
 
-**Would flag:** escalation paths are undefined for both operations — what happens when an agent cannot complete, or a school email is genuinely ambiguous? No SLA templates, no human-takeover runbook.
-**Would keep:** approval-mode defaults are already specified.
-**Would build first:** `docs/ESCALATION.md` — the triggers that require a human, the response-time promise, and template replies.
+**Flags:** Escalation paths undefined for both ops: what happens when the WhatsApp agent can't close, or a school email is ambiguous? No SLA templates, no "human takeover" runbook.
+**Praise:** UVdesk-as-inbox and approval-mode defaults already specced.
+**Fix:** `docs/ESCALATION.md` per op: triggers for human takeover, response-time promise, template replies (ES for PY, NL/EN for WiseQ).
 
 ---
 
-## Synthesis — first ten build items
+## Synthesis — top 10 improvements (ranked by risk-removed ÷ effort)
 
-| # | Item | Owner | Effort |
-|---|---|---|---|
-| 1 | Schema version on every snapshot + golden-file test | Data / QA | 30 min |
-| 2 | `MILESTONES.md` with measurable exit criteria | Product | 1 h |
-| 3 | Track the twelve graduating actions as labelled issues | Delivery | 1 h |
-| 4 | Glossary + "generated from master@revision" headers | Writing | 1 h |
-| 5 | Validator self-test — inject a bad file, expect non-zero exit | QA | 30 min |
-| 6 | Sanitise external content before it reaches a model context | Security | 30 min |
-| 7 | Heartbeat monitoring on every scheduled workflow | SRE | 1 h |
-| 8 | `docs/runbooks.md` — healthy / symptom / 3-step restart | SRE | 1.5 h |
-| 9 | Spine schema document + architecture records | Architecture | 2 h |
-| 10 | Evaluation schema + first 50 labelled conversations | ML | 3 h |
+| # | Improvement | Owner role | Repo | Effort |
+|---|---|---|---|---|
+| 1 | `schema_version` in snapshots + golden-file test | DataEng/QA | py | 30m |
+| 2 | MILESTONES.md with exit criteria (both) | PM | both | 1h |
+| 3 | GitHub Issues for the 12+10 backlog | Scrum | both | 1h |
+| 4 | AGENTS.md + glossary + extraction-SSOT headers | TechWriter | both | 1h |
+| 5 | Crawler v2: retry/backoff + JSONL run-log + 1 test | Backend | py | 2h |
+| 6 | Better Stack heartbeat on Actions + runbooks.md | SRE | both | 1.5h |
+| 7 | ADR folder (10 retro ADRs) + spine DDL doc | Architect | wiseq | 2h |
+| 8 | commerce-os repo decision + CONTRIBUTING | TechLead | aiw | 45m |
+| 9 | Eval-set schema + first 50 labeled conversations | ML | py | 3h |
+| 10 | Snapshot-title sanitization before LLM context | Security | py | 30m |
 
-## What the team would deliberately keep
+## What the team would keep (no action)
 
-- **Evidence-first culture.** Every claim has a source; every number has a date. This is the reason the proposal can be checked in minutes instead of trusted.
-- **Gates that catch their own bugs.** The validation suite found two real defects on day one.
-- **Reuse before rebuild.** Existing components are adapted rather than reimplemented — the discipline that makes the phase estimates credible.
-- **Additive by design.** Nothing is replaced; every phase can be stopped without losing what already works.
-- **Clear per-audience language.** Client-facing material in one language, operational material in another, with no ambiguity about which is which.
-
-<div align="center">
-<sub>Review conducted 2026-10-22 · 18 disciplines · every finding above is already reflected in the phase plan or the backlog.</sub>
-</div>
+- Evidence-first culture: every claim has a source; every number a date.
+- CI that caught its own bugs on day one.
+- The reuse-first stack (doc 14) — no rebuild of what AIW owns.
+- Bilingual discipline: Spanish for PY operations, English for the client-facing WiseQ repo.
+- €0 infra, all pipelines verified live, not described.
 
 ---
 
 ## 📌 In short
 
-**18 disciplines** — PM to Support Engineer — each stating what it would flag, what it would keep, and what it would build first. It reads as candid because it is: several passes disagree with the current plan. That disagreement is the value; a build team that only agrees is a build team that has not been asked.
+**18 roles, each giving a verdict** — PM to Support Engineer — with flags, praise and fixes, ranked into a **top 10**. It reads as candid because it is: several hats disagree with the current plan. That disagreement is the value; a build team that only agrees is a build team that has not been asked.
 
 
 ---
@@ -162,7 +158,7 @@
 
 | Next | Why it matters |
 | :--- | :--- |
-| **[Specialist Review](12-FIFTY-HATS.md)** | The specialist review cross-view |
+| **[Fifty Hats](12-FIFTY-HATS.md)** | The 50-hat cross-view |
 | **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | The top-ranked fixes, scheduled |
 | **[Next Steps](06-NEXT-STEPS.md)** | What we need to act on the findings |
 
