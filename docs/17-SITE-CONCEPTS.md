@@ -8,7 +8,16 @@
 
 # Site Concept Showcase — three directions, built not described
 
-*Three scroll-driven design concepts for WiseQ, built during the engagement as working prototypes — not mood boards. Each is a runnable page using WiseQ's real 230-product catalog imagery. Open them in a browser to see the scroll behaviour.*
+*Three scroll-driven design concepts for WiseQ, built during the engagement as working prototypes — not mood boards. Each is a **live page** running WiseQ's real 229-product catalog imagery. Open them directly in a browser — no install, no build step.*
+
+> ### ▶ Open the three concepts
+> | Concept | Live page |
+> | :--- | :--- |
+> | **01 · Cinematic** | [Run it →](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v1-cinematic/index.html) |
+> | **02 · Editorial** | [Run it →](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v2-editorial/index.html) |
+> | **03 · Constellation** *(recommended)* | [Run it →](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v3-webgl/index.html) |
+
+*These are served from the published proposal site — the same pages a client opens in a browser. The source for each is in the repo if you want to read it.*
 
 > **Why these exist.** The proposal in [04 · AI Stack Blueprint](04-AI-STACK-BLUEPRINT.md) is about *operations*. This doc is the visible proof that we ship working software, not slideware. The same team that decoded the bundle spine also wrote the scroll engine.
 
@@ -26,7 +35,8 @@ A full-bleed cinematic hero: a 3D-lit headphone renders over a near-black field 
 | **Tone** | Confident, product-hero, dark |
 | **Scroll depth** | ~23,500 px of scroll narrative |
 | **Best for** | The homepage — the first impression, and the strongest "we get this brand" signal |
-| **Files** | [`site-demos/v1-cinematic/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v1-cinematic) |
+| **Open it** | [▶ Live page](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v1-cinematic/index.html) — served, no build step |
+| **Source** | [`site-demos/v1-cinematic/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v1-cinematic) |
 
 <img src="../assets/demos/v1-cinematic.png" alt="WiseQ cinematic site concept — hero with headphone render on black" width="100%">
 
@@ -44,7 +54,8 @@ An editorial-print aesthetic: a serif masthead in WiseQ orange on warm paper, a 
 | **Tone** | Considered, authoritative, calm |
 | **Scroll depth** | ~26,700 px of scroll narrative |
 | **Best for** | The knowledge hub and SEO landing pages — where WiseQ already has a 45-page asset to extend |
-| **Files** | [`site-demos/v2-editorial/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v2-editorial) |
+| **Open it** | [▶ Live page](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v2-editorial/index.html) — served, no build step |
+| **Source** | [`site-demos/v2-editorial/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v2-editorial) |
 
 <img src="../assets/demos/v2-editorial.png" alt="WiseQ editorial site concept — serif masthead in orange on warm paper" width="100%">
 
@@ -62,7 +73,8 @@ A museum-catalogue interface where each product is an **object on a schema**: fo
 | **Tone** | Precise, technical, quietly premium |
 | **Scroll depth** | ~18,800 px of scroll narrative |
 | **Best for** | The differentiator — it makes WiseQ's *weakness* (77 combinatorial bundles) into its *identity* |
-| **Files** | [`site-demos/v3-webgl/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v3-webgl) |
+| **Open it** | [▶ Live page](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v3-webgl/index.html) — served, no build step |
+| **Source** | [`site-demos/v3-webgl/`](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/tree/main/site-demos/v3-webgl) |
 
 <img src="../assets/demos/v3-webgl.png" alt="WiseQ constellation site concept — product objects as museum catalogue with WebGL component constellation" width="100%">
 
@@ -80,7 +92,7 @@ A museum-catalogue interface where each product is an **object on a schema**: fo
 | **Typography** | Archivo + Geist, with a fluid type scale |
 | **Scroll library** | `scrollcraft.css` / `scrollcraft.js` — one shared scroll-choreography system, vendored per concept so each page runs standalone |
 
-Open any of them locally:
+The pages above are the intended way to view these — they are live and need nothing installed. To read or run the source yourself:
 
 ```bash
 git clone https://github.com/Ai-Whisperers/wiseq-ai-onboarding.git
