@@ -19,7 +19,7 @@ The research would survive scrutiny from Rob's CFO. The *deal* would not.
 >    Phase 1 €8–12k, care plans €175/€250/mo) and priced per hosting option in
 >    [06 · Hosting options](06-NEXT-STEPS.md#hosting-options).
 > 2. **ROI/payback** → [04 · What the time saving is worth](04-AI-STACK-BLUEPRINT.md#-what-the-time-saving-is-worth),
->    with a worked example (167 h / €7,500 per month → payback inside two months).
+>    with a worked example (134 h / ~€6,000 per month → payback in ~2–3 months). ⚠ *Corrected 2026-10-23: the earlier "167 h / €7,500 → inside two months" was wrong — the per-order time premise was unsourced and the range did not clear two months at the top of the investment range. See [04](04-AI-STACK-BLUEPRINT.md#-what-the-time-saving-is-worth).*
 > 3. **README `€20/mo` contradiction** → fixed; CI now fails if it reappears.
 > 4. **Duplicate hats** → doc 12 rewritten to 31 genuinely distinct hats; CI now fails on
 >    duplicate titles or a title/body count mismatch.

@@ -188,12 +188,21 @@ we will re-run it with your purchase manager in Phase 0.*
 | Plus the reported booking time | ~4h/week historic | ~17h/month |
 | **Against** | Pilot €3,500–5,000 + Phase 1 €8,000–12,000 + care plan | |
 
-**Worked example — fill in your own numbers.** If WiseQ handles 12 school orders a week at a
-fully-loaded €45/hour, that is ~**167 hours/month released, ≈ €7,500/month**, against a Phase 0+1
-investment of €11,500–17,000. **The build pays for itself inside two months**, and everything
-after that is the Phase 2 revenue engines on top.
+**Worked example — the arithmetic is illustrative; the premise is ours, not yours.**
+Taking **12 school orders a week** and **€45/hour fully-loaded**, at **2h35m of
+admin time per order** that is ≈ **134 hours/month ≈ €6,000/month**, against a Phase 0+1
+investment of €11,500–17,000 → **payback in roughly 2–3 months.**
 
-**The three numbers we need to firm this up:** orders per week, your fully-loaded hourly cost,
+> ⚠ **Two honest caveats about that example.**
+> 1. **The 2h35m-per-order figure is our assumption, not a measured baseline.** The repo
+>    separately records ~4h/**week** of school-order work, which over 52 orders/month is
+>    ~20 min/order — *not* 2h35m. Those two numbers disagree by a factor of seven. We
+>    flag the conflict rather than pick the flattering one. **Phase 0 measures the real
+>    baseline**, and the payback is recalculated from it before anyone relies on it.
+> 2. **The payback range is 2–3 months, not "inside two months."** At the top of the
+>    investment range it takes 2.3 months. We would rather quote you the slower number.
+>
+> **The three numbers we need to firm this up:** orders per week, your fully-loaded hourly cost,
 and the true average time per order (not the worst case). We are asking because the difference
 between "sometimes 4 hours" and a measured average is the difference between a business case and
 an anecdote.
