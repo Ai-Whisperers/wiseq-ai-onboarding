@@ -180,9 +180,9 @@ Read-only dashboard   recombination         Content cadence        Supplier
 <td width="33%"><img src="assets/demos/v3-webgl.png" alt="Constellation concept — product objects as a museum catalogue with a WebGL component graph"></td>
 </tr>
 <tr>
-<td align="center"><sub><b>01 · Cinematic</b><br>Immersive dark hero<br><a href="site-demos/v1-cinematic/">run it →</a></sub></td>
-<td align="center"><sub><b>02 · Editorial</b><br>Print-inspired whitepaper<br><a href="site-demos/v2-editorial/">run it →</a></sub></td>
-<td align="center"><sub><b>03 · Constellation</b><br>WebGL · bundle spine made visible<br><a href="site-demos/v3-webgl/">run it →</a></sub></td>
+<td align="center"><sub><b>01 · Cinematic</b><br>Immersive dark hero<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v1-cinematic/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
+<td align="center"><sub><b>02 · Editorial</b><br>Print-inspired whitepaper<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v2-editorial/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
+<td align="center"><sub><b>03 · Constellation</b><br>WebGL · bundle spine made visible<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v3-webgl/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
 </tr>
 </table>
 

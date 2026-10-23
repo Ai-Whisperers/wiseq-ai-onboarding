@@ -120,6 +120,25 @@ for md in ROOT.rglob("*.md"):
 check(not broken_anchors, f"all in-page anchors resolve ({len(anchors)} pinned)",
       f"broken anchors: {broken_anchors[:5]}")
 
+print("== 8. site concept links are live, not repo paths")
+# The three demos are published on the Pages site. A link to site-demos/<v>/ inside a
+# markdown doc renders as a 404 in a browser, so gate on the live URL and on no raw
+# repo-path hrefs surviving.
+PAGES = "https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/"
+CONCEPTS = ["v1-cinematic", "v2-editorial", "v3-webgl"]
+d17_low = (ROOT / "docs/17-SITE-CONCEPTS.md").read_text(encoding="utf-8").lower()
+rd_low = (ROOT / "README.md").read_text(encoding="utf-8").lower()
+for v in CONCEPTS:
+    check(f"{PAGES}{v}/index.html" in d17_low,
+          f"doc 17 links the live {v} page",
+          f"doc 17 must link the published {v} URL, not the repo path")
+    check(f"{PAGES}{v}/index.html" in rd_low,
+          f"README links the live {v} page",
+          f"README 'run it' must point at the published {v} URL")
+    check(f'href="site-demos/{v}/"' not in rd_low,
+          f"README has no repo-path href for {v}",
+          f"README href \"site-demos/{v}/\" 404s in a browser — use the Pages URL")
+
 print("== 6. commercial completeness")
 # A proposal that never states its own price cannot be evaluated. Guard the two
 # documents a buyer reads first, plus hat-count drift in the specialist review.
