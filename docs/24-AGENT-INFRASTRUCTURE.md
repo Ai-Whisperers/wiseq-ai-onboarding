@@ -2,157 +2,164 @@
 <img src="../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
 </div>
 
-<sub>*Track D · Document 24* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
+<sub>*Track D · Document 24 (v2 — revised Oct 23: deployment on the client's own server)* · [← Back to the proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding)</sub>
 
 ---
 
-# Agent infrastructure blueprint — the Hermes setup that runs this project
+# Agent infrastructure blueprint v2 — fresh Hermes on the WiseQ server, reusing AIW's proven assets
 
-*Oct 23, 2026. What AIW actually stands up if the engagement starts: the profile architecture, the MCP layer (re-verified this week — several doc-13 assumptions just got cheaper), the skill set, the safety rails, and the day-one to steady-state sequence. Grounded in the live AIW instance (43 MCP servers, 195 skills, profiles ivan+kiki) and this week's platform releases.*
+*Oct 23, 2026. Revised architecture: WiseQ provisions its own server; we install a clean Hermes from scratch and port everything reusable from the AIW operation. This is the strongest possible continuity story — doc 18's "the operation survives AIW" becomes literal: the system runs on their box, their keys, from day one. This document is the complete setup map: install path, the port manifest (what transfers / what adapts / what must never leave AIW), secrets, hardening, and the day-0-to-steady-state sequence.*
 
 ---
 
-## 0. 🧭 What changed since doc 13 (verified Oct 23)
+## 0. 🧭 Why this architecture (and what changed from v1)
 
-| Doc 13 assumption | Reality this week | Consequence |
+| | v1 (AIW VPS, second profile) | **v2 (this doc): client server, fresh install** |
 |---|---|---|
-| "e-Boekhouden MCP (custom, thin) — build ~12 endpoints" | **Exact Online MCP now exists, twice**: [lemon-official/exact-mcp](https://github.com/lemon-official/exact-mcp) (self-hosted, OAuth in-server, Fernet-encrypted tokens, OData-constrained) and [Praat met je Boekhouding — Exact Online](https://www.pulsemcp.com/servers/praatmetjeboekhouding-exact-online) (75 tools, OAuth 2.1, EU-hosted) | If WiseQ runs Exact: **install, not build**. The custom wrapper only remains for 5X or another package |
-| Shopify = custom app + dev-mcp | **[Shop MCP](https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp) live at `mcp.shop.com`** (Oct 13): `search_catalog`/`get_product` keyless, carts + Shop Pay checkout; **[UCP CLI](https://shopify.dev/docs/agents)** (`npm i -g @shopify/ucp-cli`) + Shopify AI toolkit | Catalog intelligence becomes zero-credential day one; the custom Admin app is still needed for *merchant-side* writes (our pipelines), but buyer-side agentic presence is a URL |
-| (not covered) | **[Bolyra Gateway MCP](https://www.pulsemcp.com/servers/bolyra-gateway)**: reverse proxy adding per-tool permission policies, credential verification, signed audit receipts to any MCP server | The write-gating layer for client-facing MCPs can be bought, not built |
-| "bol Retailer MCP — build" | Still true; no official bol MCP found | Stays a thin custom wrapper (endpoints already mapped, addendum 1) |
+| Hardware | AIW's VPS | **WiseQ's server** — sovereignty, no AIW dependency |
+| Hermes | existing instance | **fresh install** — clean version, clean state |
+| Credentials | AIW's BWS vault | **WiseQ's own vault** — they own the keys |
+| Data residency | EU-side by assertion | EU-side **by physics** — AVG art. 28's easiest possible story |
+| Continuity (doc 18) | promised | **structural** — if AIW vanishes, nothing moves |
+| AIW's role | operator | **builder + transition partner** — we set up, harden, document, hand over |
 
-**Net: the integration surface shrank again.** Three of the seven custom builds in doc 13 are now installs or near-installs.
+The trade we accept: we lose the "infrastructure already running" argument and gain the far stronger one — *their operation is theirs from day zero*. Setup effort is a one-time cost this document prices.
 
 ---
 
-## 1. 🏗️ Profile architecture: one Hermes profile per operation
+## 1. 🖥️ Day 0 — the fresh install (verbatim path)
 
-The AIW VPS already runs multi-profile Hermes (ivan, kiki). WiseQ gets its own:
+**Server requirements** (checked against the Hermes install docs): Linux (Ubuntu 24.04 LTS recommended), 2 vCPU / 4 GB RAM floor (comfortable: 4 vCPU / 8 GB — a €15–25/mo Hetzner-class box), 40 GB disk, Docker optional (only if we containerize services later), Tailscale (or WireGuard) for operator access — **never expose the gateway publicly**.
 
+```bash
+# 1. Fresh Hermes (official installer — sets up uv, Python, venv, launcher)
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+
+# 2. First-run: provider keys, model pick, health check
+hermes setup        # wizard
+hermes model        # pick routing
+hermes doctor       # verify
+
+# 3. A dedicated profile keeps the operation isolated from any personal use
+hermes --profile wiseq   # creates ~/.hermes/profiles/wiseq/ (config, skills, state)
+
+# 4. Update cadence (AIW lesson: pin + deliberate upgrades, never auto)
+#    monthly: hermes update → hermes doctor → smoke the cron jobs
 ```
-hermes --profile wiseq        # the engagement's isolated instance
-├── config.yaml               # its own model routing, MCP set, approval modes
-├── .env                      # ONLY credentials (BWS-synced, never git)
-├── skills/                   # the 9 engagement skills (§3)
-├── state.db                  # sessions — GDPR scope: contains customer data
-├── cron/                     # scheduled jobs (school-order sweep, OSS watchdog…)
-└── workspace/                # cloned wiseq-ops repo (the code we write)
-```
 
-**Why a profile and not a container-per-agent:** one profile = one gateway, one credential surface, one place to audit, sessions share the engagement memory; containers multiply surfaces. The fleet pattern (many dispatch workers) is for *our* build capacity, not for *their* operations — exactly how AIW separates ivan (operations) from fleet (dispatch).
-
-**Data residency note (AVG art. 28):** `state.db` holds order/customer data processed for WiseQ → it lives on the EU-side VPS, covered by the verwerkersovereenkomst (addendum 2 §3), deleted/returned at contract end per doc 18. The profile boundary IS the GDPR boundary — one directory to export, one to wipe.
+**Provider/model setup — Rob owns these keys** (doc 18: keys in his custody from day one):
+- Recommended: **OpenRouter** single key → any model, per-model spend caps, one invoice. Alternative: direct provider keys, or Nous Portal OAuth if they prefer subscription pricing.
+- Routing starting point (from AIW's measured usage): a strong general model for orchestration (the doc-04 €40–90/mo band), a cheap/fast model for high-volume cron ticks, vision only where needed (product imagery). `hermes model` sets this; we tune in Phase 0 with real load.
+- Spend telemetry: provider dashboards + a monthly cost report in the Monday digest (the aiw-cost-monitor pattern, ported — see §2).
 
 ---
 
-## 2. 🔌 The MCP layer (per priority, re-verified)
+## 2. 📦 The port manifest — what AIW assets transfer
 
-### P0 — day one (zero or client-light credentials)
+AIW's instance holds **184 skills** and hard-won operational patterns. Three buckets:
 
-| MCP | Install | Why |
+### ✅ Bucket A — portable, port as-is (~30 skills)
+
+| Cluster | Skills | Why for WiseQ |
 |---|---|---|
-| **Shop MCP** (`https://mcp.shop.com`) | URL add | Keyless catalog search/lookup across 1B+ products — competitor price intelligence from day one, no keys |
-| **Shopify dev-mcp** (`npx -y @shopify/dev-mcp@latest`) | npm | Admin GraphQL schema introspection — the build agent writes correct queries first time |
-| **filesystem, sqlite** | already on | The canonical spine (bundle CSVs → SQLite) |
-| **github** | already on | The wiseq-ops repo: PRs, CI, reviews |
-| **brave-search / exa** | already on | Compliance/competitor research lanes |
-| **context7, deepwiki** | already on | Library docs for the wrapper builds |
+| Hermes itself | `hermes-agent` (hub) | The operating manual |
+| Engineering discipline | `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `durable-test-assertions`, `executing-plans`, `finishing-a-development-branch` | The quality bar that made the onboarding repo survive an external audit |
+| GitHub workflow | `github`, `github-auth`, `github-repo-management`, `github-issues` | The ops repo's PR/CI discipline |
+| MCP | `mcp-builder`, `mcp-management` | For the 3 thin wrapper builds (bol, Trustpilot, ChannelDock) |
+| Documents | `productivity`: pdf, docx, xlsx, powerpoint | Client deliverables: quotes, invoices, Monday reports |
+| Research | `research` core, `grounded-citations`, `structured-research-repo`, `web/blocked-page-recovery` | Marketplace/competitor lanes (bol IS bot-walled — this skill is why we know how to get through) |
+| Monitoring | `monitor-cron-safe-silence` | The alert-on-silence discipline |
+| Safety | `prompt-injection-defense` | Inbound email/orders are untrusted input — non-negotiable for an order-taking agent |
+| Writing | `long-markdown-deliverable-authoring`, `multi-hat-persona-analysis` | Documentation that doesn't truncate; review discipline |
+| Onboarding pattern | `named-non-user-onboarding-pack` | When WiseQ staff (not just Rob) start interacting |
 
-### P1 — week 2–3 (needs Rob's access; the Gate-1.2 moment)
+### 🔧 Bucket B — patterns that adapt (we re-implement on their box, ~8)
 
-| MCP | Install | Note |
-|---|---|---|
-| **Shopify Admin custom app** | Rob creates, we scope | products r/w, orders r, inventory r/w, Fulfillment — least privilege |
-| **Exact Online MCP** | self-host `lemon-official/exact-mcp` (or the EU-hosted 75-tool one, client's choice) | **New since doc 13** — kills the bookkeeping build *if* WiseQ runs Exact. OAuth stays inside the server |
-| **bol Retailer wrapper** | **build** (~10 tools: offers list/update-price/update-stock, orders, shipments, commission-read) | Thin; endpoints mapped in addendum 1; async process-status pattern required |
-| **Trustpilot wrapper** | **build** (~4 tools: invitation create/list, reviews read) | Small; API is straightforward REST |
-
-### P2 — when the engines light up
-
-| MCP | For |
+| AIW asset | Becomes |
 |---|---|
-| **Bolyra Gateway proxy** (eval) | Per-tool policies + signed audit receipts in front of the write-capable MCPs — aligns with doc 23 Gate 4; evaluate vs Hermes' own approval modes before building |
-| **ChannelDock wrapper** (build, ~8 tools) | Stock sync + bundle composition (their PIM module does bundles — read their data model first) |
-| **Klaviyo** (catalog: available) | If WiseQ picks SaaS ESP |
-| **PostNL wrapper** (build, ~5 tools) | Label creation + track&trace for the school-pipeline shipping step |
-| **Umami/GA4 read wrapper** | Monday report analytics |
+| The **repo validator** pattern (68 checks, retracted-claim guards) | `wiseq-ops` repo CI: same validator skeleton, WiseQ's claims-ledger rules |
+| **Cron discipline** (heartbeat rows, TTL discipline, Step-Zero job identification) | Their cron fleet from day one — port the rules, not the jobs |
+| **Cost telemetry** (aiw-cost-monitor) | Monthly model-spend report per engine |
+| **Backup + monthly restore-test** (doc 15's rule) | restic → their choice of off-site (R2/Hetzner storage box) |
+| **Gateway auth coupling lesson** (public URL binds ↔ token mode) | Their dashboard: **loopback + Tailscale-only, token auth on** — the AIW war-room incident (an open origin once spawned a paid subagent) is encoded here as a hard rule |
+| **Keep-alive trap** (GitHub kills scheduled workflows after 60d idle) | Their Actions-based jobs get the weekly keepalive |
+| **Version-stamped assets** (`?v=sha` cache-busting) | Any web artifact they serve |
+| **Write-gating / guardrails-as-code** (v1 §4) | Unchanged — approval modes + policy functions |
 
-### Not installed (unchanged from doc 13 §5)
-Odoo/ERPNext, Medusa/Saleor, Firecrawl while Scrapling suffices, any MCP without a scheduled use.
+### ⛔ Bucket C — never leaves AIW (and why)
 
----
+- **All ~45 `aiw-*` skills** — reference AIW-internal infrastructure (war-room, fleet, BWS, org state)
+- **`fleet-*`, `war-room-*`, `saskia-*`, `paraguay-*`, family/personal skills** — other clients' patterns and private context; porting them would leak AIW's and third parties' information
+- **AIW's memory and session data** — obviously; the fresh instance gets a **new, seeded memory**: a WiseQ onboarding file (company facts, catalog truth, operating rules, "who is Rob", escalation preferences) written by us during setup — NOT a copy of anything from AIW's profiles
+- **BWS vault contents** — their secrets go in **their** vault: OS keychain + `.env` (profile-scoped), or a fresh Bitwarden org if they prefer shared access. Zero AIW-held credentials on this box, in either direction
 
-## 3. 🧠 The skill set (what the profile knows)
-
-Nine engagement skills, seeded from AIW's 195 and adapted — each carries its own runbook:
-
-1. **wiseq-operations** — the master protocol: daily order sweep, escalation rules, who-approves-what, the "never surprise Rob" rule
-2. **shopify-admin-ops** — Admin GraphQL patterns, bulk mutations, rate-limit budget, webhook reconciliation (the dropped-webhook lesson from Order MCP docs)
-3. **bol-retailer-ops** — the async process-status discipline, commission-read-before-reprice (addendum 5's live-rate rule), offer-state machine
-4. **school-pipeline** — the flagship: email→offer→invoice flow, staffelprijzen tiers, aggregation/threshold flags (addendum 2's anti-saucissoneren rule), quote-PDF requirements
-5. **oss-vat-watchdog** — the €10k retroactive threshold monitor (addendum 6), quarterly filing calendar
-6. **compliance-triage** — GPSR/EN-71/RED per-SKU checklist (addendums 3–4), Amazon compliance dashboard audit procedure
-7. **reputation-engine** — Trustpilot invitation ethics (never selective), Scamadviser remediation playbook (addendum 5)
-8. **incident-runbooks** — per workflow: healthy looks like / silence means / 3-step restart (doc 15 §5)
-9. **client-communication** — Dutch output conventions, tone, the native-review gate for anything customer-facing
-
-Skills 2–5 are **built during Phase 1 by us, in the wiseq-ops repo** — they are deliverables Rob keeps (doc 18: the repo, skills, and runbooks transfer at handover — the operation is operable without us by design).
+**IP note:** Bucket A skills are AIW-authored procedures. Doc 18's terms grant WiseQ a perpetual license to the skills and runbooks deployed on their operation — they're part of the deliverable, like the code.
 
 ---
 
-## 4. 🛡️ Safety rails (the layer that makes it client-grade)
+## 3. 🔌 The MCP layer (unchanged from v1, re-verified Oct 23)
 
-1. **Approval modes per tool class**: read-only MCPs run free; write-capable MCPs (price updates, stock writes, invitations) run behind Hermes' approval gate — **Phase 1: human approves every write; Phase 2: auto-approve writes that pass guardrail checks, humans approve exceptions** (mirrors doc 23's gates: Gate 4 unlocks financial writes only after reconciliation passes)
-2. **Guardrails as code**: margin floor (never price below X% margin), OSS threshold alert, max-invitations/day, stock-write delta ceiling (>50% change = freeze + ask) — each a small policy function, versioned in the ops repo, tested in CI
-3. **Bolyra or native**: evaluate the gateway proxy for audit receipts (signed per-tool-call receipts = strong doc-23 Gate-4 evidence) against Hermes' own approval log — pick one, not both
-4. **Heartbeats + SLOs** (doc 15 §5): every cron writes a heartbeat; Better Stack alerts on silence — the *monitoring the monitors* layer
-5. **Secrets**: all credentials in BWS, `.env` synced by the profile, zero secrets in the ops repo (CI enforces — same validator pattern as the onboarding repo)
+**P0 day one (zero/light creds):** Shop MCP (`mcp.shop.com` — keyless catalog intelligence), Shopify dev-mcp (npm), filesystem, sqlite, github, brave/exa, context7, deepwiki.
 
----
+**P1 week 2–3 (Gate 1.2, needs Rob's access):** Shopify Admin custom app (least-privilege scopes), **Exact Online MCP** (self-host `lemon-official/exact-mcp` or EU-hosted 75-tool — install, not build, if Exact), bol Retailer wrapper (**build**, ~10 tools, async process-status discipline), Trustpilot wrapper (**build**, ~4 tools).
 
-## 5. 🕰️ The standing schedule (steady state)
+**P2 engines:** ChannelDock wrapper, PostNL wrapper, Klaviyo (if SaaS ESP), Bolyra gateway proxy (eval for signed audit receipts).
 
-```
-06:30  order sweep          — new orders since last run; classify (school/consumer/
-                              bol/Amazon); draft responses; flag exceptions
-07:00  morning digest       — one message to Rob: orders, stock alerts, compliance
-                              flags, anything needing his yes
-hourly OSS watchdog          — cross-border revenue running total vs €10k threshold
-nightly stock reconcile      — Shopify ↔ ChannelDock ↔ bol; drift report
-nightly competitor sweep     — Shop MCP keyless search on key SKUs + price watch
-weekly  monday report        — DuckDB over price history: drift, dispersion, margin
-weekly  compliance scan      — Amazon GPSR dashboard deltas, new ASIN flags
-monthly restore test         — the doc-15 rule: prove the backup restores
-```
-
-Every job: heartbeat + failure alert via the briefing rail. **One daily digest to Rob, not forty messages** — the school-morning problem was message overload; our operations must not recreate it.
+**Credentials placement:** every MCP secret → their vault → profile `.env`. The ops repo never carries secrets (CI-enforced, same validator rule as this repo).
 
 ---
 
-## 6. 📦 What this costs (incremental, over existing AIW infra)
+## 4. 🧠 Skills written FOR WiseQ during Phase 1 (deliverables, doc 18)
+
+Same nine as v1 — `wiseq-operations`, `shopify-admin-ops`, `bol-retailer-ops`, `school-pipeline`, `oss-vat-watchdog`, `compliance-triage`, `reputation-engine`, `incident-runbooks`, `client-communication` — authored in the `wiseq-ops` repo, versioned, tested, and owned by WiseQ. Plus the seeded memory file (§2 Bucket C). These are not ports; they're the engagement's actual product.
+
+---
+
+## 5. 🛡️ Hardening the fresh box (AIW's scars, pre-applied)
+
+1. **Gateway: loopback bind + Tailscale-only remote access + token auth** — the auth-coupling lesson means we never flip the public-URL setting casually; remote operator access rides the tailnet
+2. **Approval modes**: read-only MCPs free; write-capable MCPs behind the approval gate (Phase 1: human approves every write; Phase 2: guardrail-auto-approve)
+3. **Guardrails as code**: margin floors, stock-write delta ceilings, OSS-threshold alert, max invitations/day — policy functions in the ops repo, tested in CI
+4. **Untrusted-input discipline**: inbound order emails and marketplace messages pass through the prompt-injection-defense pattern before any tool call
+5. **Updates**: pinned versions, monthly deliberate upgrade + `hermes doctor` + cron smoke test — no auto-updates on a production box
+6. **Backups**: nightly restic (state.db, config, vault export) → off-site, **monthly restore test with recorded result** — a backup nobody restored is a hope, not a control
+7. **Monitoring the monitors**: every cron writes a heartbeat; alert-on-silence via Better Stack (their free tier) or a simple healthchecks.io; failure alerts land in the daily digest rail
+
+---
+
+## 6. 🕰️ Setup sequence
+
+**Day 0 (we drive, Rob watches):** server provisioned → Hermes installed → profile `wiseq` → provider keys (Rob's) → model routing smoke → Bucket A skills ported → seeded memory written → hardening §5 → `hermes doctor` green.
+
+**Week 1 (zero client access):** ops repo bootstrapped (validator, CI, branch protection) → canonical spine schema in sqlite (bundle CSVs import) → cron skeleton with heartbeats → Shop MCP competitor baseline (keyless) → runbook templates.
+
+**Weeks 2–3 (Gate 1.2 — Rob's access lands):** Shopify custom app, bol creds, Exact/bookkeeping decision → MCPs live read-only → the 3 wrapper builds → first order-sweep dry runs against sandbox data → **Gate 2 tests**.
+
+**Steady state:** 06:30 order sweep, 07:00 single digest to Rob, hourly OSS watchdog, nightly reconcile + competitor sweep, weekly Monday report + compliance scan, monthly restore test.
+
+**Transition exit (per doc 18):** runbooks complete, skills owned, keys in WiseQ custody, AIW access gracefully revoked — the operation runs without us. We remain on the care plan (monitoring, upgrades, new engines) as long as it earns its fee.
+
+---
+
+## 7. 💶 What it costs (their side)
 
 | Item | Cost |
 |---|---|
-| wiseq profile on the existing VPS | €0 (headroom exists) |
-| MCP installs (Shop, dev-mcp, Exact) | €0 |
-| Custom wrappers ×3–4 (bol, Trustpilot, ChannelDock, PostNL) | build time in Phase 1, already priced |
-| Neon Postgres wiseq DB | free tier → ~€19/mo at scale (doc 15) |
-| Better Stack / BWS / R2 | already on AIW accounts |
-| Model spend | the doc-04 €40–90/mo band, measured in Gate 5.3 |
+| Server (2–4 vCPU, 4–8 GB EU) | €15–25/mo (Hetzner-class) |
+| Hermes | €0 (open source) |
+| Bucket A skill license | included in the engagement (doc 18) |
+| Model spend | the doc-04 €40–90/mo band, measured + reported monthly |
+| Neon Postgres (when the DB lands) | free tier → ~€19/mo |
+| Better Stack / backups target | free tier / ~€5/mo storage |
+| **Total steady-state infra** | **~€60–115/mo** — comfortably inside the TCO band already quoted |
 
-No new platform spend until the pilot proves itself — the engagement runs on infrastructure that is already running.
-
----
-
-## 7. 🤝 Handover alignment (doc 18 made concrete)
-
-At contract end, WiseQ receives: the ops repo (code + skills + runbooks), the profile export (sessions, memory, cron definitions), all credentials (rotated to their custody), the databases, and this document's architecture map. **A successor operator — human or agent — can run the profile from the runbooks alone.** That is the test doc 18 promises and this blueprint is designed to pass.
+One-time setup effort (install, port, harden, document, handover) is Phase 1's build work — already inside the €8–12k Phase-1 fee, not extra.
 
 ---
 
 ## 📌 In short
 
-A dedicated Hermes profile on the existing VPS; 6 already-on MCPs + 3 installs + 3 thin builds; nine skills (five of them deliverables); writes gated until Gate 4 passes; one daily digest to Rob; heartbeats on everything; handover by design. The stack shrank again this week — Exact and Shop MCPs turned two builds into installs. What remains custom is precisely the WiseQ-specific value: the school pipeline, the spine, the watchdogs.
+Their server, a fresh Hermes, ~30 ported skills + 8 adapted patterns + 9 new WiseQ-specific skills, their vault, their keys, loopback+tailnet hardening, heartbeats on everything, and a handover that is structural rather than promised. Everything AIW learned the expensive way — gateway auth coupling, open-origin spawns, cron silence, restore tests, retracted-claim guards — arrives pre-encoded. **The client doesn't rent our infrastructure; they inherit our scar tissue.**
 
 ---
 
@@ -160,8 +167,6 @@ A dedicated Hermes profile on the existing VPS; 6 already-on MCPs + 3 installs +
 
 | Next | Why it matters |
 | :--- | :--- |
-| **[Tooling MCP installs](13-TOOLING-MCP-INSTALLS.md)** | The original install plan this updates |
-| **[DevOps masterplan](15-DEVOPS-MASTERPLAN.md)** | Storage, backups, SLOs |
+| **[Terms & continuity](18-TERMS-OWNERSHIP-CONTINUITY.md)** | The handover this architecture makes literal |
 | **[Acceptance criteria](23-ACCEPTANCE-CRITERIA.md)** | The gates that unlock each layer |
-
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+| **[DevOps masterplan](15-DEVOPS-MASTERPLAN.md)** | Storage, backups, SLOs (adapted in §2 Bucket B) |
