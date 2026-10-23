@@ -42,7 +42,7 @@
 | # | Automation | Impact | Effort | Notes |
 | :---: | :--- | :--- | :--- | :--- |
 | 🔥 8 | **Canonical EAN registry** — EAN ↔ SKU ↔ components | **Foundation for #1, #2, #3** | Med | Build this first |
-| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €733/yr recurring, 139 GTINs |
+| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €854/yr recurring, 139 GTINs |
 | 10 | **Weights + `inventory_policy` backfill** (0/230 today) | Correct shipping calculation | Low | |
 | 11 | **Empty-description rewrite** (20 products) + structured copy for all | Conversion | Low | |
 | 12 | **Variant consolidation** (6 colors → 1 product) A/B | Reviews concentrate, feeds cleaner | Med | Needs a test window |
@@ -71,14 +71,15 @@ on purpose, because **we cannot deliver it.**
 
 Three things had to be true for it to be honest, and none of them are:
 
-1. **Reviews are not ours to produce.** We control the *invitation* — and the
-   Trustpilot Invitation API is free and unlimited, so sending every invitation costs
-   €0 and is not capped by any paid tier. But a review only exists if a **buyer chooses
-   to write one.** Review response rates are low and we do not control them. Promising
-   250 reviews/month is promising someone else's behaviour.
-2. **The paid tiers do not buy volume.** Trustpilot's plans (Starter $99, Plus $319,
-   Premium $799 per domain/month, on a **12-month commitment**) cap reviews
-   *collected*, not invitations *sent*. Buying a bigger plan does not manufacture reviews.
+1. **Reviews are not ours to produce — and invitations are capped.** We control *whether a
+   buyer is invited*, not whether they reply. Trustpilot separates two allowances: the
+   **API call allowance** (200k / 1M / unlimited per year, by module tier) and the
+   **monthly invitation allowance** (plan-dependent). Invitations sent through the API
+   **count towards the invitation allowance** — so invitations are bounded by the plan in
+   force, not unlimited. And a review only exists if a **buyer chooses to write one.**
+2. **Paid tiers buy allowance, not reviews.** Plans (Starter $99, Plus $319, Premium $799
+   per domain/month, on a **12-month commitment**) raise the invitation ceiling and what
+   we may display. None of them manufactures a review.
 3. **A bad review costs more than good ones gain.** TrustScore weights recent reviews
    most heavily. On a 25-review base: 20 five-star + 5 four-star = **4.65** (comfortably
    4-star). But 23 five-star + **2 one-star = 4.40** — two angry reviews drop a whole
@@ -121,7 +122,7 @@ become one-star reviews — which is the more valuable thing anyway.
 
 ## 📌 In short
 
-**Nine opportunities, three that matter this quarter.** The order is not arbitrary: item 8 (EAN registry) unblocks items 1–3, so the €733/yr GS1 spend is both the highest-ROI line item *and* the dependency. School-order intake (from ~4 hours to minutes) is the headline; review generation and reputation monitoring run continuously behind it at near-zero marginal cost.
+**Nine opportunities, three that matter this quarter.** The order is not arbitrary: item 8 (EAN registry) unblocks items 1–3, so the €854/yr GS1 spend is both the highest-ROI line item *and* the dependency. School-order intake (from ~4 hours to minutes) is the headline; review generation and reputation monitoring run continuously behind it at near-zero marginal cost.
 
 
 ---
