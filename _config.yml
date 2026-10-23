@@ -1,0 +1,19 @@
+# GitHub Pages is set to "Deploy from a branch" (main, /root), which runs Jekyll.
+# An empty config makes it publish the repository files verbatim instead of
+# rendering a template around them.
+#
+# Do not delete this file while the Pages source is a branch. If the source is ever
+# switched to "GitHub Actions", the workflow assembles _site/ directly and this
+# file becomes inert.
+
+exclude:
+  - .github
+  - data
+  - docs
+  - analysis
+  - scripts
+  - README.md
+  - CHANGELOG.md
+
+keep_files:
+  - .nojekyll
