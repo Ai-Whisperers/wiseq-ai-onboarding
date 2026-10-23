@@ -40,6 +40,15 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Internal-directory guard (analysis/ must never be tracked)
+        run: |
+          if [ -n "$(git ls-files 'analysis/')" ]; then
+            echo "::error::analysis/ contains TRACKED files — internal documents must never enter the public repo. Untrack with: git rm -r --cached analysis/ (files stay on disk via .gitignore)."
+            git ls-files 'analysis/'
+            exit 1
+          fi
+          echo "✓ no tracked files under analysis/"
+
       - name: Run validator
         run: python3 scripts/validate_repo.py
 
