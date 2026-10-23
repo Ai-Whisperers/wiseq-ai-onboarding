@@ -108,6 +108,7 @@ Sixteen documents, four tracks. Each is self-contained and independently verifia
 | **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
 | **18** | [Working Together — Terms & Ownership](docs/18-TERMS-OWNERSHIP-CONTINUITY.md) | Who owns what, processor-vs-controller, GDPR Art. 28, continuity and exit — before signing, not in week three | You want the boring-but-decisive page |
 | **19** | [Critical Review](docs/19-CRITICAL-REVIEW.md) | The adversarial pass on this proposal: what was wrong, what we fixed, what is still open | You want to see how this was stress-tested |
+| **20** | [Send-to-Rob](docs/20-SEND-TO-ROB.md) | The copy-paste outreach message that turns the demos into a scheduled next step | You're about to send the link |
 
 ---
 
