@@ -6,7 +6,7 @@
 
 ---
 
-# Specialist Review — 30 Hats on the WiseQ Engagement
+# Specialist Review — 31 Hats on the WiseQ Engagement
 
 *2026-10-22. An independent review of the WiseQ engagement from 30 specialist perspectives — operations, procurement, compliance, finance, engineering, and delivery. Each hat raises 2–3 concrete findings. Together they are the stress test behind every phase in the blueprint: what could break the plan, what could cost money, and what a reviewer would ask before signing. New regulatory finding integrated: the revised EU Product Liability Directive, which brings software and AI into scope for products — and kids' products face the highest scrutiny.*
 
@@ -61,39 +61,90 @@ Rob's the user AND the owner. (a) Ship one automation he feels weekly (drift rep
 
 ---
 
-## 🏛️ Domain B — Compliance, risk & the reviewer bench
+## 🏛️ Domain B — The commercial, channel & compliance bench
 
-*Specialist passes focused on the questions that decide whether an engagement is safe, insurable, and worth signing.*
+*Ten further passes, each on a question the first fifteen do not answer. These are the ones that
+change a decision, not the ones that confirm one.*
 
-### 16. Product-liability underwriter (revisited)
-The revised **EU Product Liability Directive** brings software and AI into scope for products — and kids' products face the highest scrutiny. (a) Verify WiseQ's aansprakelijkheidsverzekering (liability insurance) covers e-commerce channel sales, not only B2B; (b) automation that touches safety communications — volume-limiting claims in particular — must never overstate; the cert-evidence library (doc 11) is the guard; (c) a GPS-tracker data incident creates liability and GDPR exposure simultaneously, so an incident runbook is required, not optional.
+### 16. Marketplace-fee analyst (bol + Amazon)
+The margin conversation nobody in the repo has had. (a) bol.com charges selling fees per order plus
+advertising costs that are billed separately — the true take-rate on a €19 child headphone can
+exceed 20% once ads are counted; (b) Amazon EU referral fees on the same basket are close to
+WiseQ's own margin at the €18.95–34 band; (c) therefore "price harmonization from one rule sheet"
+(doc 04) is a margin exercise, not a tidiness exercise, and must be modelled per channel *net of
+fees* before a single price moves. **Flag:** we have never seen WiseQ's actual margin per SKU.
 
-### 17. School procurement officer (the buyer persona)
-What actually triggers a school order: (a) **budget windows** — Q1 planning and the June year-end spend-down; the outreach calendar syncs to them; (b) the process needs an invoice line that maps to *their* administration, so the order parser must emit their format, not ours; (c) reorders are habit — if the first delivery lands clean, the school reorders every August for years. **SLA on the first order is the whole game.**
+### 17. NL tax and VAT specialist
+(a) WiseQ ships NL→BE and holds an Amazon EU seller account; OSS/IOSS thresholds and the
+one-stop-shop position determine whether EU expansion needs VAT registrations per country — that is
+a compliance cost, not a marketing decision; (b) the German/Dutch dual inventory model changes
+when Amazon logistics takes over cross-border fulfilment; (c) the €732 GS1 spend is trivial next
+to a wrong VAT position. **Fix:** one question in Phase 0 — current VAT registrations and turnover
+per country. We are not qualified to answer this for them; we are qualified to ask it.
 
-### 18. Bol account-health watcher
-Bol suspends sellers for performance dips. (a) Monitor late-shipment %, cancellation %, and response-time metrics nightly — alert before bol does; (b) the catalogue-drift cleanup (312 → 230) must be staged; mass-delisting triggers a review, so pace it at ~10/day; (c) a policy-change watch on bol's partner platform, because terms changes hit thin-margin sellers first.
+### 18. Returns-abuse and chargeback investigator
+The Trustpilot corpus concentrates two complaints: charger durability and slow support. (a) A
+chargeback pattern on a low-value item is a margin leak that no dashboard currently shows;
+(b) "defective on arrival" claims against bundles where the bundle was split (doc 07) are almost
+certainly a *data* problem masquerading as a quality problem — the component the customer actually
+received may not be the component that sold; (c) the fix is a reason-code discipline on every
+return, fed back into the spine. **Flag:** untested, and it is a cheap test.
 
-### 19. Seasonality actuary (NL calendar)
-(a) Back-to-school (August) is 40%+ of annual school-channel revenue — stock, content, and ad budget pre-positioned in July; (b) Sinterklaas (5 Dec) and Christmas are the consumer peak, so gift-bundle SKUs should be merchandised from mid-October; (c) the summer dip is the maintenance window: listing cleanup, certificate audits, A/B tests.
+### 19. Accessibility auditor (EN 301 549 / European Accessibility Act)
+WiseQ sells to schools and to parents of autistic and ADHD children — the exact population the
+European Accessibility Act (applying from June 2025) is written for. (a) If any part of the B2B
+ordering flow is a PDF invoice attachment rather than an accessible HTML document, that is an
+exposure; (b) the site demos in doc 17 are the right place to prove accessibility rather than
+assert it; (c) "inclusive design" is a genuine differentiator against Heutink (doc 09) and costs
+nothing to demonstrate. **Flag:** we have never audited their accessibility posture.
 
-### 20. B2B credit controller
-"Bestel op factuur" means WiseQ extends credit to schools. (a) A credit limit per school — start at €500 and grow with payment history; (b) an automated payment-reminder ladder (day 14 polite, day 30 firm, day 45 stop-ship) — schools pay slowly, not never; (c) a weekly aging report: the agent flags, Rob decides.
+### 20. Wholesale and purchasing-cooperative specialist
+The *inkoopcollectieven* route (doc 08, doc 11) is named but never scoped. (a) Listing costs a
+one-off and reaches hundreds of schools through a single contract — the highest leverage per euro
+in the entire backlog; (b) but collectives impose their own payment terms, price ceilings, and
+annual re-tender cycles that a €7–34 long-tail catalog may not clear; (c) **we do not know which
+collectives WiseQ is already in.** That is the first question of any Phase-0 commercial call.
 
-### 21. Returns & logistics optimizer
-(a) NL returns culture is strong in fashion, lighter in electronics — auto-tag return reasons so they feed product improvement; (b) bol returns auto-accept and restock to the correct SKU via EAN, which is where the spine pays off again; (c) transit-damage claims to the carrier automated with photo evidence.
+### 21. Customs, EPR and logistics specialist
+(a) Cross-border children's electronics into Germany and France implicates **EPR packaging
+registration** (LUCID in DE) and battery registration — per-country, per-category, non-negotiable,
+and entirely absent from the repo; (b) the current model appears to be Netherlands-stock shipped
+cross-border, which is the *worst* option for EPR and duty; (c) a DACH Amazon push without EPR
+registration is a takedown risk on day one. **Flag:** this is the compliance item most likely to
+cost WiseQ money we have not mentioned.
 
-### 22. Content localization editor
-(a) NL copy is native; EN store copy exists; **Amazon.de needs real German, not machine translation** — human translator plus native review; (b) product manuals as PDFs per SKU family — a direct support-ticket reducer; (c) the 20 empty descriptions found in the catalog audit are the first content-agent batch.
+### 22. School DPO / privacy officer
+Doc 11 says outreach needs "a lawful basis" and doc 18 assumes a processor relationship — but a
+school board is a *public body* under a different regime than an SME. (a) Dutch school boards
+process personal data of children under APV, and contracting with them has its own paperwork;
+(b) harvest-based B2B contact lists (857 orgs, doc 02) need the legitimate-interest assessment
+written down, not asserted; (c) a one-page AV + APV position before the first outreach wave is
+cheap and prevents a complaint. **Flag:** unasked, and it is a question Rob will appreciate us
+raising first.
 
-### 23. Scenario strategist (WiseQ futures)
-(a) If bol adds agentic ordering, WiseQ is early — the existing MCP endpoint becomes a sales channel; (b) if Heutink copies the B2B layer, the moat is agentic reordering plus niche depth; (c) exit optionality: cleaned data and real automation raise acquisition multiples, which is worth naming in the final slide.
+### 23. Peak-season capacity planner
+Back-to-school is a step change, not a ramp (hat 19). (a) If the school-order pipeline goes
+live in June it hits the exact month WiseQ is busiest — sequencing matters more than speed;
+(b) the automation's value is highest in August and near zero in January, so an annual
+commitment should be phase-weighted, not flat; (c) the honest recommendation may be *launch in
+February, not July*, and we should say so before it becomes obvious.
 
-### 24. Change-management coach
-Rob is the user *and* the owner. (a) Ship one automation he feels weekly — the Monday drift report — because trust compounds; (b) agent suggestions arrive as proposals, not actions, for the first 60 days (approval-mode by default); (c) a daily "what did the agents do" digest, because visibility kills fear of the black box.
+### 24. Energy, hardware and TCO challenger
+A 24/7 office machine running agent workloads is a line item nobody costs. (a) Always-on compute
+has a power cost that lands on WiseQ's electricity bill with no attribution; (b) hosting option
+(b) — our dedicated server — moves that cost into the care plan where it is visible; (c) this
+slightly favours the hosting decision we already recommended, which is worth being honest about
+rather than hiding.
 
-### 25. Incident-response planner
-(a) A shop or channel outage needs a fallback order form; (b) an agent gone rogue — a wrong price going live — needs a kill switch, a 15-minute rollback runbook, and a pricing-change freeze rule; (c) a data incident starts a 72-hour GDPR notification clock immediately, so templates must be pre-drafted.
+### 25. Reference-check and proof-of-outcome challenger
+*(This hat replaces the internal-economics pass from earlier drafts. The finding is uncomfortable
+and belongs in the client-facing document.)* (a) The repo demonstrates *artefacts* — a bundle
+spine, an audit, a lead list — but states no **outcome from a previous client engagement**;
+(b) a completed engagement with a named, anonymised result ("cycle time 4h → 12m") would settle
+the credibility question that no amount of research substitutes for; (c) until one exists, the
+honest pitch is "here is what we can build and here is exactly what it costs" — which doc 04's
+new pricing now supports, and which is a legitimate position. **Flag:** still the weakest link in
+the commercial story.
 
 ## 🔧 Domain C — Engineering & delivery passes
 

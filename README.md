@@ -101,11 +101,13 @@ Sixteen documents, four tracks. Each is self-contained and independently verifia
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
-| **12** | [Specialist Review — 30 Hats](docs/12-FIFTY-HATS.md) | 30 independent passes — product liability, bol account health, B2B credit, incident response, plus engineering and delivery review |
+| **12** | [Specialist Review — 31 Hats](docs/12-FIFTY-HATS.md) | 31 independent passes — product liability, bol account health, marketplace fees, VAT/EPR, accessibility, purchasing co-ops, school privacy, plus engineering and delivery review |
 | **13** | [Tooling & Integration Plan](docs/13-TOOLING-MCP-INSTALLS.md) | Connector install list, three thin wrappers to build, week-by-week checklist |
 | **15** | [Delivery Plan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD, storage & database architecture, SLOs, phased build checklist |
 | **16** | [Delivery Review — How We Build](docs/16-DEV-TEAM-HATS.md) | **18 disciplines** — PM to Support Engineer; each states what it would flag, keep, and build first |
 | **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
+| **18** | [Working Together — Terms & Ownership](docs/18-TERMS-OWNERSHIP-CONTINUITY.md) | Who owns what, processor-vs-controller, GDPR Art. 28, continuity and exit — before signing, not in week three | You want the boring-but-decisive page |
+| **19** | [Critical Review](docs/19-CRITICAL-REVIEW.md) | The adversarial pass on this proposal: what was wrong, what we fixed, what is still open | You want to see how this was stress-tested |
 
 ---
 
@@ -128,7 +130,7 @@ Sixteen documents, four tracks. Each is self-contained and independently verifia
                           └────────┘
 ```
 
-Runs on WiseQ's **existing 24/7 office machine** or a **€20/mo VPS**. Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
+Runs wherever you choose — **four hosting options**, from your own server maintained by us to shared capacity at a reduced rate. See [06 · Hosting options](docs/06-NEXT-STEPS.md#hosting-options). Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
 
 Full detail, phase by phase: **[04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md)**
 

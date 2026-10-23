@@ -162,7 +162,7 @@
 
 | Next | Why it matters |
 | :--- | :--- |
-| **[Fifty Hats](12-FIFTY-HATS.md)** | The specialist review cross-view |
+| **[Specialist Review](12-FIFTY-HATS.md)** | The specialist review cross-view |
 | **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | The top-ranked fixes, scheduled |
 | **[Next Steps](06-NEXT-STEPS.md)** | What we need to act on the findings |
 

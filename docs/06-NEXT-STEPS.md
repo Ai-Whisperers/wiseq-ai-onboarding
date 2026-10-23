@@ -19,6 +19,9 @@ Everything here is **bounded, low-risk, and mostly already in your hands.** None
 | 3 | **Sandbox / dummy data** | A copy of a few anonymized school orders + the offer→invoice flow, so the shadow demo mirrors reality | 30 min to export | Shadow demo |
 | 4 | **Read-only API access** *(when ready)* | Shopify (read-only collaborator) · ChannelDock (API token) · bol Seller (sandbox) · mailbox (app-password, read-only first) | Issue 4 tokens | Live read-only |
 | 5 | **30 minutes with the purchase manager** | Walkthrough of the EAN/Excel workflow — so we design the replacement against reality, not assumptions | One meeting | Purchase intelligence |
+| 6 | **Your fully-loaded hourly staff cost, and orders per week** | Turns the 4-hour mornings into money. Without it we can only show you the method, not your payback | Two numbers | ROI case |
+| 7 | **5X export confirmation** | We could not verify a public 5X API from outside their login. Does your plan allow CSV/XML export? If not, profitability data stays manual | One yes/no | 5X connector |
+| 8 | **Which purchasing cooperatives are you already in?** | The *inkoopcollectieven* route (doc 08, doc 11) is the highest-leverage channel per euro — and we do not know your existing position | One list | B2B strategy |
 
 > 🔁 **Items 1–3 need no production access at all.** We can start the stack map and the EAN registry the same day the manual arrives.
 
@@ -56,10 +59,10 @@ There is no single right answer here, and we would rather you choose than have u
 
 | Option | Where it runs | Who owns the server | What you pay |
 | :--- | :--- | :--- | :--- |
-| **(a) Yours, managed by us** | A server on your own hosting account, connected to your devices | You own it; we run everything on it | Your hosting cost + a small monthly care plan |
-| **(b) Ours, dedicated** | Our infrastructure, a server set up for WiseQ only | We own and operate it | One monthly fee, everything included |
-| **(c) Ours, shared capacity** | Our infrastructure, running your jobs — and our own work when yours are idle | We own and operate it | **Reduced rate** — see below |
-| **(d) Yours, we set it up** | You open the account; we do all the technical work | You own it after handover | One-off setup fee, then optional care plan |
+| **(a) Yours, managed by us** | A server on your own hosting account, connected to your devices | You own it; we run everything on it | Your hosting cost (€16–21/mo) **+ care plan from €250/mo** |
+| **(b) Ours, dedicated** *(recommended)* | Our infrastructure, a server set up for WiseQ only | We own and operate it | **Included** in one monthly figure |
+| **(c) Ours, shared capacity** | Our infrastructure, running your jobs — and our own work when yours are idle | We own and operate it | **€175/mo** — reduced, see below |
+| **(d) Yours, we set it up** | You open the account; we do all the technical work | You own it after handover | **One-off setup fee**, then care plan from €250/mo (optional) |
 
 **Why (c) is cheaper.** The host is already paid for. School orders arrive in morning batches, reports run weekly, and the nightly jobs are short — so between peaks there is real idle capacity. In option (c) that idle time carries our own work instead of sitting empty, and the saving comes back to you as a lower rate. The discount assumes genuinely bursty usage; if you later want something running continuously, we would move you to the standard rate rather than quietly overcharging you.
 
