@@ -17,7 +17,7 @@ WiseQ's fight is on **three fronts**, and the research shows each has a differen
 **Front A — kids-tech product brands (unit competition):**
 | Brand | Position | Price point | Threat to WiseQ |
 |---|---|---|---|
-| **iClever** | **#1 kids-headphone brand in US online** (Euromonitor, Nov-2025); sold on Amazon EU | $21.99 wired → ~$50 ANC | The volume leader; undercuts WiseQ on Amazon.nl where their listing quality is weakest |
+| **iClever** | **#1 kids-headphone brand in US online** (Euromonitor, Nov-2025); [iclever.com](https://www.iclever.com) sold on Amazon EU | $21.99 wired → ~$50 ANC | The volume leader; undercuts WiseQ on Amazon.nl where their listing quality is weakest |
 | **Puro Sound Labs** | Premium hearing-safety story (82% noise attenuation), strong US reviews | $50-65 | Owns the "parent-trust" positioning WiseQ also claims |
 | **BuddyPhones** | Established kids brand, mid-price | ~$40-50 | Direct overlap on bol listings |
 | **Alpine** (NL) | **"Grootste producent gehoorbescherming NL"** — Muffy Kids €24,95 B2B-priced at koptelefoon-onderwijs.nl for schools | €25 | The domestic A-brand for the school oorkap segment — WiseQ's 8 hearing-protection SKUs vs their school channel |

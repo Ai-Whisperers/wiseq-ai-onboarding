@@ -18,7 +18,7 @@
 | **EN IEC 62115** | Electric/electronic toys — harmonized with the Toy Safety Directive; covers electrical safety for kids' electronic products | Headphones/tablets/trackers with child positioning fall here |
 | **Radio Equipment Directive (RED) 2014/53/EU** | Bluetooth headphones, GPS watches, wireless chargers — **legally mandatory CE**; since **Aug 2025 includes cybersecurity requirements** (RED Delegated Act 2022/30: secure updates, no vulnerabilities, personal-data protection) | The 2025 RED cybersecurity layer is NEW — products certified before it may need file updates. GPS trackers (child location data!) are squarely in scope |
 | **85 dB volume limiting** | Not a formal EN standard by itself, but the de-facto market norm (every competitor markets "85 dB"); WiseQ already claims it — keep test evidence per SKU family |
-| **GPSR (EU) 2023/988** | General Product Safety Regulation (applies since Dec 2024): EU responsible-person contact on product/listings, traceability, recall readiness | Check: is the responsible-person info on all Amazon/bol listings? |
+| [GPSR (EU) 2023/988](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0988) | General Product Safety Regulation (applies since Dec 2024): EU responsible-person contact on product/listings, traceability, recall readiness | Check: is the responsible-person info on all Amazon/bol listings? |
 
 **Why this matters for the pitch:** certification evidence per SKU family (EN 71 / 62115 / RED files) is ALSO a content asset — "getest volgens EN 62115" on product pages converts parent-trust into listings. An agent maintaining a cert-evidence library per SKU = compliance + marketing in one table.
 
@@ -111,3 +111,7 @@ Compliance here is **cheap if done early and expensive if discovered late**. The
 | **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | Compliance gates built into the phases |
 
 > **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+
+
+---
+**Primary sources:** all five instruments above link to their EUR-Lex consolidated texts. Thuiswinkel Waarborg requirements: [thuiswinkel.org](https://www.thuiswinkel.org). GS1 NL code pricing: [gs1.nl](https://www.gs1.nl). This document is a **preliminary compliance checklist, not legal sign-off** — product-specific applicability is assessed per SKU in Phase 0.

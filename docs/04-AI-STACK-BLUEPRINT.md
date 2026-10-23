@@ -170,6 +170,38 @@ total Phase 0 + 1 figure is the honest comparison point — not the monthly rate
 > assumed. We would rather measure it than guess — and if the measured cost is lower than
 > expected, that is information you should have.
 
+
+<a id="12-month-tco"></a>
+
+## 🧮 12-month total cost of ownership (TCO)
+
+*Every cost in this proposal, in one table, for each hosting option. Year 1 assumes Pilot + Phase 1 + a care plan; Phase 2+ engines are priced per engine and excluded here (take one, review, take the next). Lab testing (EN 71 / 62115 / RED) is **excluded — uncosted until real quotes exist** ([11](11-COMPLIANCE-REGULATORY.md)).*
+
+| Cost line | (b) dedicated *(recommended)* | (a) your server + care plan | (c) shared capacity |
+| :--- | :--- | :--- | :--- |
+| Infrastructure | **€0** — included in option (b) | €198–259 (Hetzner VPS, 8 vCPU/16 GB) | **€0** — included in option (c) |
+| AI providers | €480–1,080 (€40–90/mo, sized in Phase 0) | €480–1,080 | €480–1,080 |
+| **Our fee — Pilot (Phase 0)** | €3,500–5,000 | €3,500–5,000 | €3,500–5,000 |
+| **Our fee — Phase 1** | €8,000–12,000 | €8,000–12,000 | €8,000–12,000 |
+| **Our fee — care plan** | **included** | €3,000 (€250/mo) | €2,100 (€175/mo) |
+| **GS1 codes** (139 GTINs = 14 packs) | €854/yr | €854/yr | €854/yr |
+| **Thuiswinkel Waarborg** | €983–1,759 | €983–1,759 | €983–1,759 |
+| **12-month TCO** | **€19,317 – €20,693** | **€22,515 – €23,952** | **€21,417 – €22,793** |
+
+**How to read this table.** The ranges come from the fee ranges above and the two open
+variables (your turnover class for Thuiswinkel, and your order volume for the AI tier). The
+lowest-total option is also the one we recommend — (b) — which is a coincidence of design,
+not of pricing.
+
+**What is deliberately not in the number:** lab testing (unknown until quoted — could move the
+total materially), Trustpilot's invitation tier (sized in Phase 0, $0–799/mo), and any
+Phase 2 engine. A TCO that hides a known-unknown is a sales document, not a decision tool.
+
+**Payback context.** Against the [time-value arithmetic](#-what-the-time-saving-is-worth) —
+which itself carries honest caveats — the mid TCO of ~€20k pays back in roughly 2–3 months
+*if* the measured baseline lands near the worked example, and materially longer if it lands
+near the conservative reading. Phase 0 exists to replace this guess with your number.
+
 ## 📈 What the time saving is worth
 
 *This is arithmetic on your own numbers, not a promise. Every input below is yours to correct —

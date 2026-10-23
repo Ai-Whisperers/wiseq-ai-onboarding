@@ -240,7 +240,7 @@ check(not inv_hits,
 # doc 08/11/19 quote the old figure inside their correction tables.
 gs1_hits = [h for h in occurrences(r"€733")
             if not any(x in h for x in ("OSS-INTEGRATIONS", "COMPLIANCE-REGULATORY",
-                                        "CRITICAL-REVIEW"))]
+                                        "CRITICAL-REVIEW", "AUDIT-RESPONSE"))]
 check(not gs1_hits,
       "GS1 is quoted at the corrected 14-pack figure, not the short-by-19 one",
       f"€733 reintroduced at {gs1_hits} — 139 codes = 14 packs of 10 = €854/yr; "
