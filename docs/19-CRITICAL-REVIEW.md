@@ -160,10 +160,15 @@ Do not lose these in a rewrite. They are what makes the repo credible.
    hardware, in one table. Currently scattered across four docs.
 
 ## Technical
-6. **ChannelDock API is assumed, not verified.** Doc 04 calls it "REST, documented" — the
-   single most load-bearing claim in Phase 0. If it has no public API, Phase 0 is browser
-   automation and the 2-week estimate is fiction. **Verify before the next meeting.**
-7. **5X API/export** — same. Named as a data source with no confirmation it can export.
+6. ~~**ChannelDock API is assumed, not verified.**~~ **RESOLVED 2026-10-22 — this finding was
+   correct and is now closed.** Doc 04 called it "REST, documented"; verification shows ChannelDock
+   **does** ship a **REST API + webhooks**, plan-gated from **Voorraad (€45/mo)** and excluded from the
+   free tier (which caps at 100 products — WiseQ has 230, so they are almost certainly on a paid plan).
+   Doc 08 previously asserted "no public API docs found in searches", which was a search failure, not a
+   fact; both docs now agree. **Residual question:** *which* plan, and do they hold the €200/mo PIM?
+7. **5X** — **still open.** Its API could not be verified from public sources, so doc 04 carries it
+   as an export-dependent risk and doc 06 asks for export access. Do not claim 5X has an API until
+   someone confirms it with the vendor or from the account.
 8. **Bookkeeping vendor unknown** — the flagship pipeline's billing step depends on a product we
    haven't named. Doc 06 asks for it; nothing works around not knowing.
 9. **No rollback/DR plan.** "Reversal path" per layer exists; no backup, restore, or RTO for
@@ -211,7 +216,7 @@ Do not lose these in a rewrite. They are what makes the repo credible.
    better than pretending.
 
 **A skeptical technical reader** will check: the 230/189 product counts, the 312-vs-230 drift,
-the €732 GS1 arithmetic, and the 4.4/25 Trustpilot figure. I verified the last one live —
+the GS1 arithmetic, and the 4.4/25 Trustpilot figure. I verified the last one live —
 **it is correct.** The others are internally consistent across six documents. That consistency
 is an asset; keep it.
 
@@ -224,7 +229,7 @@ is an asset; keep it.
 2. Add ROI/payback arithmetic. (blocking)
 3. Fix the README `€20/mo` contradiction — it's live and it's ours.
 4. Rotate the exposed credential. (external, urgent — tracked privately)
-5. Verify ChannelDock + 5X API existence.
+5. ~~Verify ChannelDock + 5X API existence.~~ → **ChannelDock done** (finding 6, above). **5X still open** — confirm from the account or the vendor, not from a search.
 
 **Do before sending the repo to Rob**
 6. Fix doc 12's 9 duplicate hats.
