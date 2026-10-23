@@ -53,7 +53,26 @@ What agencies charge for comparable work in 2026:
 
 Six more GitHub topics searched (data in `data/oss/`): order-to-cash (28 repos, top 285★ — reference apps, no production-ready O2C), email automation (**BillionMail 15.9k★** — self-hosted, fixes the no-ESP finding), invoice parsing (0 repos ≥5★ → UBL/e-boekhouden parsing is custom agent work), product matching (0 repos → the bundle-spine matcher stays proprietary), Shopify CLI/theme (healthy), price intelligence (3 thin repos).
 
-**Net insight:** every layer WiseQ needs either (a) doesn't exist as OSS → we build it thin and own it, or (b) exists as official API → we integrate it. Combined with wave 1 (doc 08): **the WiseQ stack has no installable competitor — which is precisely the moat we're selling.**
+**Net insight:** every layer WiseQ needs either (a) doesn't exist as ready-made OSS, so it is
+built per engagement, or (b) is an official API we integrate. That combination is common, and we
+are not going to dress it up as a technical moat — any competent agency can describe the same two
+columns.
+
+**What is actually defensible is narrower and stronger.** Once the EAN spine exists, WiseQ holds
+something a competitor cannot buy:
+
+- **Decomposed, referentially-validated bundle data.** The 114-component / 25-bundle map, built from
+  public data before any engagement. A competitor would have to rebuild it from the same catalog —
+  possible, but that is months of work we have already done and validated.
+- **Order and purchase history against that spine.** Six months of accurate what-are-we-really-selling
+  data (doc 02, the manual Excel) becomes a forecasting asset. That compounds; the connector code
+  does not.
+- **A library of *this* customer's exceptions** — the staffelprijzen rules, the ChannelDock
+  booking quirks, the school's invoice requirements. Unglamorous, and impossible to replicate
+  without their data.
+
+**The honest framing for the pitch:** we are not selling a moat, we are selling the eighteen months
+of unglamorous data work that a competitor would otherwise have to do first.
 
 ## 4. 📦 What WiseQ could do — the consolidated opportunity list
 
