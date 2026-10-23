@@ -128,7 +128,7 @@ Short list, in plain language. Each is a line in a contract, not a negotiation s
 1. Scope per phase, with a named stop/go decision at each boundary
 2. A processing agreement (Art. 28) before any personal data is touched
 3. Ownership: everything we build is yours (per §1)
-4. Exit terms agreed up front (per §4)
+4. Exit terms agreed up front (per §4); liability cap and invoicing mechanics (per §8–9)
 5. Support expectations stated honestly (per §5)
 6. Written record of every price before it becomes an invoice
 7. **If we get something wrong, we tell you** — including in our own documents. This repo
@@ -136,7 +136,34 @@ Short list, in plain language. Each is a line in a contract, not a negotiation s
 
 ---
 
-## 7. 🗂️ Where to find the detail
+## 8. ⚖️ Liability — the position we propose
+
+*Drafted from published NL market terms and the NRF global benchmark; your counsel reviews the final wording before signature.*
+
+| Element | Proposed position |
+| :--- | :--- |
+| **Cap** | Our total liability is limited to the fees invoiced in the **12 months before the claim first arose** |
+| **Exclusions** | Indirect damage is excluded: gevolgschade, gederfde winst, goodwill, bedrijfsstagnatie, dataverlies |
+| **Carve-outs** | Nothing in this cap limits liability for intent or gross negligence (opzet / bewuste roekeloosheid), and nothing caps GDPR liability below the statutory minimum (Art. 82) |
+| **Claim window** | Claims expire 12 months after discovery |
+| **Why so short a list** | The bigger protection is architectural: nothing writes to your systems or touches money before Gate 4 (see `23-ACCEPTANCE-CRITERIA.md`). The cap covers the residual, not the exposure. |
+
+---
+
+## 9. 🧾 Invoicing — how the money mechanically works
+
+| Element | Position |
+| :--- | :--- |
+| **VAT** | Services to a NL bv are **reverse-charged** ("btw verlegd"): we invoice without VAT, citing your btw-identificatienummer; you self-account in your return (cash-flow neutral for you) |
+| **Currency** | EUR |
+| **Terms** | 14 days, NL-standard late-fee clause |
+| **Timing** | First invoice at pilot start, not after it — the fee schedule in `04-AI-STACK-BLUEPRINT.md` sequences pilot payment before the heavy build hours |
+| **Care-plan step-up (agreed now, never sprung)** | Year 1 care plan at the quoted monthly rate. At renewal — or when a third engine (marketplace, integration, or workflow beyond the original scope) goes live, whichever comes first — the rate steps to **€395/month**, the bottom of the NL market band. It is in this contract so it is never a surprise negotiation later. |
+| **Case study & references** | We may ask to publish a case study after Gate 2. It uses only anonymized metrics, and only with your written sign-off per item. Saying no costs you nothing and is never held against the engagement. |
+
+---
+
+## 10. 🗂️ Where to find the detail
 
 | Topic | Document |
 | :--- | :--- |
