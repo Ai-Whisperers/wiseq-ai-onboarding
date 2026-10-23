@@ -139,7 +139,7 @@ conflating them is how proposals end up misunderstood.
 
 | Line | Verified cost | Notes |
 | :--- | :--- | :--- |
-| **GS1 codes** | **€854/yr** (139 codes) | 10-pack = €61 **per year**. Covers the 114 components + 25 bundles (139 codes = 14 packs). ⚠ *Full 230-SKU coverage would be 23 packs = €1,403/yr.* See [08](08-OSS-INTEGRATIONS.md). |
+| **GS1 codes** | **€225/yr** (all SKUs) | Live GS1 NL tariff (until Dec 1 2026): **codepakket 1.000 = €196/yr** covers up to 1,000 GTINs — all 139 needed codes (114 components + 25 bundles), indeed the whole 230-SKU catalog, with headroom. + GS1 Contribution €29/yr (turnover <€1M band; scales with revenue). Earlier repo figures (stacked 10-packs) were both wrong — the 1,000-pack is cheaper. Full correction history in addendum 4. See [08](08-OSS-INTEGRATIONS.md) and [addendum 4](../data/research-lanes/RESEARCH-ADDENDUM-4-GS1-AMAZON-COMPETITIVE.md). |
 | **Thuiswinkel Waarborg** | **€983–1,759 year 1** | €75 once + €390/yr + revenue-tiered contribution (€518–1,294/yr) + €45/yr per extra platform. **Depends on your turnover — we have asked, not yet known.** |
 | **Review platform** | **$0–799/mo** | Trustpilot's tiers cap the monthly *invitation allowance*; a review still only happens if a buyer writes one. Sized in Phase 0. |
 | **Lab testing (EN 71 / 62115 / RED)** | **Unknown — get quotes** | ⚠ **The largest uncosted item in this proposal.** Typically hundreds to low-thousands per SKU family. We will not quote a total without real lab figures. |
@@ -184,9 +184,9 @@ total Phase 0 + 1 figure is the honest comparison point — not the monthly rate
 | **Our fee — Pilot (Phase 0)** | €3,500–5,000 | €3,500–5,000 | €3,500–5,000 |
 | **Our fee — Phase 1** | €8,000–12,000 | €8,000–12,000 | €8,000–12,000 |
 | **Our fee — care plan** | **included** | €3,000 (€250/mo) | €2,100 (€175/mo) |
-| **GS1 codes** (139 GTINs = 14 packs) | €854/yr | €854/yr | €854/yr |
+| **GS1 codes** (1,000-pack covers all SKUs + contribution) | €225/yr | €225/yr | €225/yr |
 | **Thuiswinkel Waarborg** | €983–1,759 | €983–1,759 | €983–1,759 |
-| **12-month TCO** | **€19,317 – €20,693** | **€22,515 – €23,952** | **€21,417 – €22,793** |
+| **12-month TCO** | **€18,688 – €20,064** | **€21,886 – €23,323** | **€20,788 – €22,164** |
 
 **How to read this table.** The ranges come from the fee ranges above and the two open
 variables (your turnover class for Thuiswinkel, and your order volume for the AI tier). The
