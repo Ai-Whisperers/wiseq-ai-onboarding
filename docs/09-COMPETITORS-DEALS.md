@@ -70,7 +70,7 @@ New opportunities this research adds to the backlog:
 3. **Outcome-priced ops**: school-order processing priced per order — the 4-hour mornings become a P&L line Rob can turn on/off.
 4. **BillionMail self-hosted ESP**: €0/mo alternative to Klaviyo/Omnisend for the newsletter + review-ask flows (both currently absent).
 5. **iClever counter-positioning on Amazon.nl**: their US strength = their EU complacency; refreshed listings (title/bullets/A+ content) + review velocity can win the .nl search shelf.
-6. **Heutink counter-strategy**: don't out-catalog — out-deliver: 24h class-set delivery, invoice terms, agentic reordering (UCP endpoint lets school procurement agents reorder automatically — Heutink can't).
+6. **Heutink counter-strategy**: don't out-catalog — out-deliver: 24h class-set delivery, invoice terms, and an *operated* agentic ordering layer. Correction (Oct 23): Heutink publishes a public API ([developers.punt-uit.nl](https://developers.punt-uit.nl) — products, shipments, webhooks), so the building blocks for agentic reordering exist on their side too. The differentiator is not machine-readability — it is who *operates* the pipeline end-to-end. WiseQ + AIW would; a 115-year-old distributor's API left for schools to assemble would not.
 
 ## 5. 🧱 Deal-prep artifacts ready to send
 
