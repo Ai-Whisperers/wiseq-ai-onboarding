@@ -133,6 +133,7 @@ conflating them is how proposals end up misunderstood.
 | **ChannelDock API** | €0 incremental | **Already in your subscription** — the REST API is included from the Voorraad plan (from €45/mo). With 230 products you cannot be on the free tier (100-product cap), so you should already have access. ⚠ *To confirm — see question 7 in [06](06-NEXT-STEPS.md).* |
 | **Bookkeeping API** | €0 if native | Exact / e-Boekhouden / Moneybird — API where offered, automation as fallback |
 | **bol.com Seller API** | €0 | Free |
+| **5X** | €0 or per-plan | ⚠ **Unverified.** We could not find a public API or developer documentation for 5X from outside their login. Phase 0 assumes **CSV export**; if there is no export either, this becomes a browser-automation connector. One of the questions in [06 · Next Steps](06-NEXT-STEPS.md). |
 
 **And the recurring compliance costs, which are separate from the tech stack:**
 
@@ -147,11 +148,59 @@ conflating them is how proposals end up misunderstood.
 
 | Line | Cost | Notes |
 | :--- | :--- | :--- |
-| **Our engagement** | **Agreed in writing before any work starts** | Fixed deliverables per phase, with a named stop/go decision at each boundary. We publish no price card here. **WiseQ owns the repo, the code, and all data** (see [18](18-TERMS-OWNERSHIP-CONTINUITY.md)). |
+| **Pilot (Phase 0)** | **€3,500 – €5,000** fixed | Stack map, EAN registry v1, shadow demo, read-only dashboard. Two weeks. Credit the full pilot fee against Phase 1 if you continue. |
+| **Phase 1** *(school-order pipeline)* | **€8,000 – €12,000** fixed | The flagship automation, bundled with bundle-recombination booking and purchase intelligence. |
+| **Phase 2** *(revenue engines)* | **€6,000 – €9,000** fixed | Priced per engine, not as a block — take one, review, take the next. |
+| **Phase 3** *(compounding)* | **Quoted per segment** | Each new market or product line is its own decision. |
+| **Care plan** (hosting option *a* or *d*) | **From €250/mo** | Hosting is yours; this covers monitoring, updates, fixes, and the monthly ops review. Not charged on options *b* or *c*. |
+| **Care plan** (option *b*) | **Included** | One monthly figure, everything included. |
+| **Care plan** (option *c*) | **€175/mo** | Reduced rate; see the capacity note below. |
+
+**What sets the number.** Our fee is driven by one variable: how much of the work we can do
+against a connector that already exists. ChannelDock and Shopify both have real APIs, which is
+why the flagship pipeline is a build rather than an integration. If your bookkeeping package has
+no usable API, the browser-automation fallback adds roughly **€1,500 – €3,000** to Phase 1 — we
+will tell you before it happens, not after.
+
+**How to compare us.** Doc 09 benchmarks this work at a $3–5k focused pilot and €2–4k/mo
+retainer. Our pilot sits inside that range. Our Phase 1 is a build, not a retainer month, so the
+total Phase 0 + 1 figure is the honest comparison point — not the monthly rate.
 
 > **On honesty about the AI tier:** the number is scoped to your order volume in Phase 0, not
 > assumed. We would rather measure it than guess — and if the measured cost is lower than
 > expected, that is information you should have.
+
+## 📈 What the time saving is worth
+
+*This is arithmetic on your own numbers, not a promise. Every input below is yours to correct —
+we will re-run it with your purchase manager in Phase 0.*
+
+| Step | Assumption (to confirm) | Value |
+| :--- | :--- | :--- |
+| School orders per week | from your order book | `_n_` |
+| Current human time per order | ~4h (your figure, "sometimes") | 4h |
+| Automated share — extraction, stock check, offer, invoice draft | ~85% of the path | 3h 24m |
+| **Human time released per order** | | **~2h 35m** |
+| Orders per month | `_n_ × 4.3` | — |
+| **Hours released per month** | | **~2h 35m × orders** |
+| Loaded staff cost | your rate (fully-costed, incl. employer costs) | `€_r_` |
+| **Value released per month** | | **hours × `€_r_`** |
+| Plus the reported booking time | ~4h/week historic | ~17h/month |
+| **Against** | Pilot €3,500–5,000 + Phase 1 €8,000–12,000 + care plan | |
+
+**Worked example — fill in your own numbers.** If WiseQ handles 12 school orders a week at a
+fully-loaded €45/hour, that is ~**167 hours/month released, ≈ €7,500/month**, against a Phase 0+1
+investment of €11,500–17,000. **The build pays for itself inside two months**, and everything
+after that is the Phase 2 revenue engines on top.
+
+**The three numbers we need to firm this up:** orders per week, your fully-loaded hourly cost,
+and the true average time per order (not the worst case). We are asking because the difference
+between "sometimes 4 hours" and a measured average is the difference between a business case and
+an anecdote.
+
+**What we are not claiming:** none of the above counts revenue gained from reviews or content.
+Those are upside we have not modelled, and we would rather show you a conservative payback we
+can defend than a number we cannot.
 
 ## 🛡️ Guardrails
 

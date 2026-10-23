@@ -120,6 +120,53 @@ for md in ROOT.rglob("*.md"):
 check(not broken_anchors, f"all in-page anchors resolve ({len(anchors)} pinned)",
       f"broken anchors: {broken_anchors[:5]}")
 
+print("== 6. commercial completeness")
+# A proposal that never states its own price cannot be evaluated. Guard the two
+# documents a buyer reads first, plus hat-count drift in the specialist review.
+price_patterns = ["\u20ac3,500", "\u20ac8,000"]
+d04 = (ROOT / "docs/04-AI-STACK-BLUEPRINT.md").read_text(encoding="utf-8")
+check(all(x in d04 for x in price_patterns),
+      "doc 04 states our actual prices (pilot + Phase 1)",
+      "doc 04 must state our own prices, not just market benchmarks")
+
+d04_low = d04.lower()
+check("what the time saving is worth" in d04_low and "inside two months" in d04_low,
+      "doc 04 carries the payback arithmetic with a worked example",
+      "doc 04 needs an ROI/payback section stating a payback period on worked numbers")
+
+# The four hosting options must agree on price between 04 and 06, or the client
+# will find two different numbers for the same choice.
+d06 = (ROOT / "docs/06-NEXT-STEPS.md").read_text(encoding="utf-8")
+check("\u20ac250" in d06 and "\u20ac175" in d06,
+      "doc 06 prices every hosting option (care plan + shared rate)",
+      "doc 06 must price hosting options (a) and (c) explicitly")
+
+# README must not contradict the hosting decision it links to.
+readme = (ROOT / "README.md").read_text(encoding="utf-8")
+check("\u20ac20/mo VPS" not in readme,
+      "README carries no stale fixed-cost claim",
+      "README still claims a fixed \u20ac20/mo VPS; it must point at the four hosting options")
+
+print("== 7. specialist-review integrity")
+d12 = (ROOT / "docs/12-FIFTY-HATS.md").read_text(encoding="utf-8")
+hat_titles = re.findall(r"^### \d+\.\s+(.+)$", d12, re.M)
+normalised = [re.sub(r"\s*\(revisited\)\s*$", "", t).strip().lower() for t in hat_titles]
+duplicates = sorted({t for t in normalised if normalised.count(t) > 1})
+check(not duplicates,
+      f"all {len(hat_titles)} specialist hats are distinct",
+      f"duplicate hats: {duplicates}")
+
+m = re.search(r"^# .*?(\d+) Hats", d12, re.M)
+check(m and m.group(1) == str(len(hat_titles)),
+      f"hat count in the title matches the body ({len(hat_titles)})",
+      f"title says {m.group(1) if m else '?'} hats but body has {len(hat_titles)}")
+
+readme_hat = re.search(r"Specialist Review \u2014 (\d+) Hats", readme)
+check(readme_hat and readme_hat.group(1) == str(len(hat_titles)),
+      "README hat count matches doc 12",
+      "README hat count disagrees with doc 12")
+
+
 print(f"\n{checks} checks run, {len(failures)} failures")
 if failures:
     print("VALIDATION FAILED")

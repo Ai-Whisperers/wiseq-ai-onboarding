@@ -112,6 +112,27 @@ one-star reviews — which is the more valuable thing anyway.
 
 ---
 
+## 💶 What this costs, and what it saves
+
+*The full price table is in [04 · Cost model](04-AI-STACK-BLUEPRINT.md#-cost-model--split-into-your-running-costs-and-our-fee). The short version:*
+
+| Item | Price |
+| :--- | :--- |
+| Pilot (Phase 0, two weeks) | **€3,500 – €5,000** fixed |
+| Phase 1 — school-order pipeline + bundle booking + purchase intelligence | **€8,000 – €12,000** fixed |
+| Phase 2 — revenue engines | **€6,000 – €9,000** fixed, priced per engine |
+| Care plan | **from €250/mo** on your own server (a)/(d) · **included** on (b) · **€175/mo** on (c) |
+
+**Payback in one line:** items #1, #2 and #3 together remove the 4-hour mornings and the manual
+purchase Excel. On a worked example of 12 school orders a week at a fully-loaded €45/hour, that is
+roughly **167 hours and €7,500 released per month** against a €11,500–17,000 Phase 0+1 build —
+**payback inside two months.** The arithmetic is laid out in
+[04 · What the time saving is worth](04-AI-STACK-BLUEPRINT.md#-what-the-time-saving-is-worth), with
+every input marked as *your number to correct*.
+
+**What we are not counting:** revenue from reviews (#14) or content (#19). That is upside, not
+business case.
+
 ## 📊 The shape of it
 
 | Bucket | Count | Build profile |
