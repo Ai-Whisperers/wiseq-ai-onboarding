@@ -10,7 +10,7 @@
 | 4 | bol listing count 312 vs 230 own-shop SKUs | **STALE** | `RESEARCH_MARKETPLACES.md`, Oct 21 | bol seller page was bot-walled on re-check Oct 23; treat as unverified until browser pull | Browser pull of bol seller page; log in ledger |
 | 5 | Trustpilot: 25 reviews, 4.4/5, "not recently invited" warning shown | **STALE→REFRESHED** | Trustpilot profile, Oct 21 → re-pulled Oct 23 | Fresh pull Oct 23 shows organic reviews continuing (latest Sep 2026, uninvited); total count needs the on-page counter (not in markdown extract) — re-verify | `web_extract` on `nl.trustpilot.com/review/wiseq.nl` |
 | 6 | Scamadviser TrustScore 0 flag on the domain | **STALE** | `RESEARCH_MARKETPLACES.md`, Oct 21 | Third-party risk score; conversion impact unmeasured (audit §2 row 4) | Scamadviser lookup |
-| 7 | GS1 cost for 139 GTINs = €854/yr (14 packs × €61) | **VERIFIED** (arithmetic) | gs1.nl pricing via `docs/08` §GS1, Oct 23 | Assumes all 139 need own GTINs (they do, selling on bol+Amazon); excludes VAT | 139/10 → 14 packs × €61 |
+| 7 | GS1 cost for full catalog = €225/yr (1,000-pack €196 + contribution €29), excl. VAT | **VERIFIED** (live tariff) | [gs1.nl tariffs](https://www.gs1.nl/producten-services/digital-identity/huidige-tarieven/), pulled Oct 23 | Valid until Dec 1 2026 (+3.5% after); assumes sub-€1M turnover band; Phase-0: does WiseQ already hold a GLN? | Addendum 4 §1 |
 | 8 | Thuiswinkel Waarborg cost €983–1,759/yr | **INFERRED** | thuiswinkel.org fee schedule via doc 04 TCO, Oct 22 | Turnover-class dependent; exact class needs WiseQ's figures | thuiswinkel.org current tariff |
 | 9 | School-order mornings take ~4 hours (founder, one session) | **HYPOTHESIS** (baseline) | Working session Oct 21, doc 03 | Single-observation estimate; touch vs elapsed not separated (audit §1.1) | Gate 0.3: ≥10 timed orders |
 | 10 | Pipeline target: <15 min human involvement per morning | **HYPOTHESIS** | Doc 04 proposal | Target, not a measurement; depends on 9 | Gate 5.1 |
@@ -31,6 +31,10 @@
 | 25 | Trustpilot Starter $99/mo (100 invites), Plus $319, Premium $799; 12-mo commitment | **VERIFIED** | [business.trustpilot.com/pricing](https://business.trustpilot.com/pricing), Oct 23 | Per-domain; retired "250+ reviews" needs $799 tier + exceptional conversion — confirms retirement | Addendum 3 §2 |
 | 26 | NL PO: 1.46M leerlingen (2025, first rise since 2010); €12.1B budget; Taal-versterkingsagenda Oct 16 2026 | **VERIFIED** | [OCW in Cijfers/DUO](https://www.ocwincijfers.nl/sectoren/primair-onderwijs/leerlingen/aantallen-ontwikkeling-aantal-leerlingen), PO-Raad, Oct 23 | Agenda creates attention, not product funding; positioning only | Addendum 3 §3 |
 | 27 | ChannelDock pricing: free ≤500 orders/mo, Voorraad €45/mo, PIM €200/mo | **VERIFIED** | [channeldock.com/nl/prijzen](https://channeldock.com/nl/prijzen), live Oct 23 | Matches doc 08 — no drift | Addendum 3 ledger |
+
+| 28 | Amazon GPSR enforcement automated through 2026; compliance data required at ASIN creation since Q2 2026 | **VERIFIED** | SellerGuardrails/Ariadne/Eldris guides, Oct 23 | WiseQ is EU-based (own responsible person) — exposure is documentation, not RP fees; 2020-era ASINs plausibly at risk | [Addendum 4 §2](research-lanes/RESEARCH-ADDENDUM-4-GS1-AMAZON-COMPETITIVE.md) |
+| 29 | Kids-safe-audio market ~$1.8B (28% EU); leaders Puro ~18%, JLab ~15%, BuddyPhones ~12% | **INFERRED** (commercial reports) | MarketIntelo/DataIntelo, Oct 23 | Directional only; BuddyPhones = education-shaped threat; verified per-SKU limiter performance is the differentiator (NIH PMC6928536) | Addendum 4 §3 |
+| 30 | Toy Safety Regulation 2025/2509 in force Jan 2026, applies Aug 2030 (digital product passports) | **VERIFIED** | EUR-Lex 2025/2509, Oct 23 | Horizon argument for the care plan, not an urgent cost | Addendum 4 §2 |
 
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 
