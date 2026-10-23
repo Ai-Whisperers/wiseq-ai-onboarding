@@ -73,7 +73,7 @@ Sources: Creditsafe Business Index, wiseq.nl footer/agents.md, LinkedIn.
 
 ## 📌 In short
 
-WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs, Grootebroek) that already owns more modern infrastructure than most of its Dutch competitors — Shopify with a custom B2B layer, ChannelDock for fulfilment, agentic-commerce endpoints. The verified gaps are narrow and specific: **zero EAN codes across 230 SKUs**, and process work happening in Excel and the inbox. That combination is why we are proposing an *orchestration layer*, not a replatform.
+WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs, Grootebroek) that already owns more modern infrastructure than most of its Dutch competitors — Shopify with a custom B2B layer, ChannelDock for fulfilment, agentic-commerce endpoints. The verified gaps are narrow and specific: **zero EAN codes on 230 SKUs**, and process work happening in Excel and the inbox. That combination is why we are proposing an *orchestration layer*, not a replatform.
 
 
 ---
@@ -82,7 +82,7 @@ WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs
 
 | Next | Why it matters |
 | :--- | :--- |
-| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Where the current stack meets the open-source layer |
+| **[Oss Integrations](08-OSS-INTEGRATIONS.md)** | Where the current tech stack meets the open-source layer |
 | **[Competitors Deals](09-COMPETITORS-DEALS.md)** | Who else serves Dutch schools, and at what price |
 | **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | What we propose to build on top of this |
 

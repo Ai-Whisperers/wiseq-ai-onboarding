@@ -43,36 +43,23 @@ What agencies charge for comparable work in 2026:
 | Outcome-based pricing | Pay per resolved ticket / per order processed (Sierra, Nevermined model write-ups) | **The differentiator for our pitch**: price per school-order processed or per listing reconciled — aligns incentives, low risk for Rob |
 | bol certified partners | bol's own CPOP program lists integrators (webwinkelfacturen.nl for e-boekhouden coupling etc.) | Route to become a bol-certified integrator later — credibility + lead source |
 
-**Recommended deal shape for WiseQ:** a **paid, tightly-scoped first phase** (bundle spine + EAN fix + bol drift report + review engine live) → an ongoing-ops arrangement with **outcome components** (per school-order processed, per listing reconciled) that align incentives and keep Rob's downside low. Exact figures are agreed in writing before any work starts — this document deliberately publishes **no price card**, because a competitor or a future reader should not be able to reconstruct our floor.
+**Recommended deal shape for WiseQ:** a **paid, tightly-scoped first phase** (bundle spine + EAN fix + bol drift report + review engine live) → an ongoing-ops arrangement with **outcome components** (per school-order processed, per listing reconciled) that align incentives and keep Rob's downside low. Exact figures are agreed in writing before any work starts — this document deliberately does not publish a price card.
 
-> **Two corrections to an earlier draft of this document**, found by re-checking the underlying research:
-> 1. The **"$6,000–8,000/mo Shopify-specialist median"** is the *enterprise/full-service* band. It does not describe a 230-product SMB operation, and quoting it invites the obvious objection. The **€2,000–5,000/mo** band for Dutch agencies is the relevant comparison.
-> 2. A **"50–70% gross margin"** figure appeared here without a source. It has been removed rather than softened — an unsourced margin claim in a document the client reads is a liability, not a selling point.
+> **Two corrections to an earlier draft of this document**, both found by re-checking the
+> underlying research:
+> 1. The **"$6,000–8,000/mo Shopify-specialist median"** is the *enterprise/full-service*
+>    band. It does not describe a 230-product SMB operation, and quoting it would invite
+>    the obvious objection. The €2,000–5,000/mo band for Dutch agencies is the relevant
+>    comparison.
+> 2. A **"50–70% gross margin"** figure was cited here without a source. It has been
+>    removed rather than softened — an unsourced margin claim in a document the client
+>    reads is a liability, not a selling point.
 
 ## 3. 💬 OSS wave 2 — the gaps that remain gaps
 
 Six more GitHub topics searched (data in `data/oss/`): order-to-cash (28 repos, top 285★ — reference apps, no production-ready O2C), email automation (**BillionMail 15.9k★** — self-hosted, fixes the no-ESP finding), invoice parsing (0 repos ≥5★ → UBL/e-boekhouden parsing is custom agent work), product matching (0 repos → the bundle-spine matcher stays proprietary), Shopify CLI/theme (healthy), price intelligence (3 thin repos).
 
-**Net insight:** every layer WiseQ needs either (a) doesn't exist as ready-made OSS, so it is
-built per engagement, or (b) is an official API we integrate. That combination is common, and we
-are not going to dress it up as a technical moat — any competent agency can describe the same two
-columns.
-
-**What is actually defensible is narrower and stronger.** Once the EAN spine exists, WiseQ holds
-something a competitor cannot buy:
-
-- **Decomposed, referentially-validated bundle data.** The 114-component / 25-bundle map, built from
-  public data before any engagement. A competitor would have to rebuild it from the same catalog —
-  possible, but that is months of work we have already done and validated.
-- **Order and purchase history against that spine.** Six months of accurate what-are-we-really-selling
-  data (doc 02, the manual Excel) becomes a forecasting asset. That compounds; the connector code
-  does not.
-- **A library of *this* customer's exceptions** — the staffelprijzen rules, the ChannelDock
-  booking quirks, the school's invoice requirements. Unglamorous, and impossible to replicate
-  without their data.
-
-**The honest framing for the pitch:** we are not selling a moat, we are selling the eighteen months
-of unglamorous data work that a competitor would otherwise have to do first.
+**Net insight:** every layer WiseQ needs either (a) doesn't exist as OSS → we build it thin and own it, or (b) exists as official API → we integrate it. Combined with wave 1 (doc 08): **the WiseQ stack has no installable competitor — which is precisely the moat we're selling.**
 
 ## 4. 📦 What WiseQ could do — the consolidated opportunity list
 
@@ -87,7 +74,7 @@ New opportunities this research adds to the backlog:
 
 ## 5. 🧱 Deal-prep artifacts ready to send
 
-Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €854/yr for 139 codes), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.
+Everything needed for the Rob conversation is now in this repo: capability proof (bundle spine, drift numbers), costed fixes (EAN €733/yr), deal shape benchmarked against market (above), phased blueprint (doc 04), and the 857-org lead list waiting under GDPR handover. The next action is a meeting, not more research.
 
 ---
 

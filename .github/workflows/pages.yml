@@ -2,12 +2,14 @@ name: pages
 
 # Publish the proposal landing page to GitHub Pages.
 #
-# The site is assembled from already-tracked directories rather than copied from
-# generated output, so the repo keeps one canonical copy of every asset and the
-# deployed site cannot drift from it:
-#   site/index.html   the landing page
-#   assets/           brand banner, og-card, demo screenshots
-#   site-demos/       the three working concepts (4.6 MB, incl. 229 renders)
+# The site is assembled from three already-tracked directories so there is no
+# generated source to drift:
+#   site/index.html      the landing page (committed, hand-written)
+#   assets/              brand banner + demo screenshots
+#   site-demos/          the three working concepts
+#
+# We assemble rather than copy so the repo keeps one canonical copy of every
+# asset and the deployed site can never drift from it.
 
 on:
   push:
@@ -43,8 +45,7 @@ jobs:
           cp site/index.html _site/index.html
           cp -r assets  _site/assets
           cp -r site-demos _site/site-demos
-          echo "published: $(du -sh _site | cut -f1)"
-          echo "files: $(find _site -type f | wc -l)"
+          echo "published bytes: $(du -sh _site | cut -f1)"
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -42,7 +42,7 @@
 | # | Automation | Impact | Effort | Notes |
 | :---: | :--- | :--- | :--- | :--- |
 | 🔥 8 | **Canonical EAN registry** — EAN ↔ SKU ↔ components | **Foundation for #1, #2, #3** | Med | Build this first |
-| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €854/yr rec (139 codes) / €1,403/yr (all 230) recurring, 139 GTINs |
+| 9 | **EAN/GTIN backfill into Shopify** (0/230 today) | Feed quality everywhere | Med | €733/yr recurring, 139 GTINs |
 | 10 | **Weights + `inventory_policy` backfill** (0/230 today) | Correct shipping calculation | Low | |
 | 11 | **Empty-description rewrite** (20 products) + structured copy for all | Conversion | Low | |
 | 12 | **Variant consolidation** (6 colors → 1 product) A/B | Reviews concentrate, feeds cleaner | Med | Needs a test window |
@@ -71,29 +71,24 @@ on purpose, because **we cannot deliver it.**
 
 Three things had to be true for it to be honest, and none of them are:
 
-1. **Reviews are not ours to produce — and invitations are capped.** We control *whether a
-   buyer is invited*, not whether they reply. Trustpilot separates two allowances: the
-   **API call allowance** (200k / 1M / unlimited per year, by module tier) and the
-   **monthly invitation allowance** (plan-dependent). Invitations sent through the API
-   **count towards the invitation allowance** — so invitations are bounded by the plan in
-   force, not unlimited. And a review only exists if a **buyer chooses to write one.**
-2. **Paid tiers buy allowance, not reviews.** Plans (Starter $99, Plus $319, Premium $799
-   per domain/month, on a **12-month commitment**) raise the invitation ceiling and what
-   we may display. None of them manufactures a review.
-3. **A bad review costs more than good ones gain.** TrustScore weights recent reviews most
-   heavily. On a 25-review base: 20 five-star + 5 four-star ≈ **4.65** (comfortably 4-star).
-   But 23 five-star + **2 one-star ≈ 4.40** — two angry reviews cost more than three happy
-   ones gain. For a brand selling GPS watches and headphones to children, one bad review is
+1. **Reviews are not ours to produce.** We control the *invitation* — and the
+   Trustpilot Invitation API is free and unlimited, so sending every invitation costs
+   €0 and is not capped by any paid tier. But a review only exists if a **buyer chooses
+   to write one.** Review response rates are low and we do not control them. Promising
+   250 reviews/month is promising someone else's behaviour.
+2. **The paid tiers do not buy volume.** Trustpilot's plans (Starter $99, Plus $319,
+   Premium $799 per domain/month, on a **12-month commitment**) cap reviews
+   *collected*, not invitations *sent*. Buying a bigger plan does not manufacture reviews.
+3. **A bad review costs more than good ones gain.** TrustScore weights recent reviews
+   most heavily. On a 25-review base: 20 five-star + 5 four-star = **4.65** (comfortably
+   4-star). But 23 five-star + **2 one-star = 4.40** — two angry reviews drop a whole
+   band. For a brand selling GPS watches and headphones to children, one bad review is
    a realistic event.
 
-> **We have not yet modelled TrustScore properly.** Treat those figures as illustration of
-> the risk, not a forecast. If it matters to WiseQ we will show the model's assumptions
-> before we rely on it.
-
-**So we promise what we actually control:** *every delivered order is invited within the
-plan's allowance, and the TrustScore is defended.* Invitation coverage is a number we can
-audit; the score is something we actively protect by routing complaints before they become
-one-star reviews — which is the more valuable thing anyway.
+**So we promise what we actually control:** *every delivered order is invited, and the
+TrustScore is defended.* Invitation coverage is a hard number we can guarantee and audit.
+TrustScore ≥4.4 is a number we can actively protect by routing complaints before they
+become one-star reviews — which is the more valuable thing anyway.
 
 > If anyone quotes "250+ reviews" from an earlier copy of this document, **that figure is
 > withdrawn.** Ask us for the current target rather than the old one.
@@ -112,27 +107,6 @@ one-star reviews — which is the more valuable thing anyway.
 
 ---
 
-## 💶 What this costs, and what it saves
-
-*The full price table is in [04 · Cost model](04-AI-STACK-BLUEPRINT.md#-cost-model--split-into-your-running-costs-and-our-fee). The short version:*
-
-| Item | Price |
-| :--- | :--- |
-| Pilot (Phase 0, two weeks) | **€3,500 – €5,000** fixed |
-| Phase 1 — school-order pipeline + bundle booking + purchase intelligence | **€8,000 – €12,000** fixed |
-| Phase 2 — revenue engines | **€6,000 – €9,000** fixed, priced per engine |
-| Care plan | **from €250/mo** on your own server (a)/(d) · **included** on (b) · **€175/mo** on (c) |
-
-**Payback in one line:** items #1, #2 and #3 together remove the 4-hour mornings and the manual
-purchase Excel. On a worked example of 12 school orders a week at a fully-loaded €45/hour, that is
-roughly **167 hours and €7,500 released per month** against a €11,500–17,000 Phase 0+1 build —
-**payback inside two months.** The arithmetic is laid out in
-[04 · What the time saving is worth](04-AI-STACK-BLUEPRINT.md#-what-the-time-saving-is-worth), with
-every input marked as *your number to correct*.
-
-**What we are not counting:** revenue from reviews (#14) or content (#19). That is upside, not
-business case.
-
 ## 📊 The shape of it
 
 | Bucket | Count | Build profile |
@@ -147,7 +121,7 @@ business case.
 
 ## 📌 In short
 
-**Nine opportunities, three that matter this quarter.** The order is not arbitrary: item 8 (EAN registry) unblocks items 1–3, so the €854/yr GS1 spend is both the highest-ROI line item *and* the dependency. School-order intake (from ~4 hours to minutes) is the headline; review generation and reputation monitoring run continuously behind it at near-zero marginal cost.
+**Nine opportunities, three that matter this quarter.** The order is not arbitrary: item 8 (EAN registry) unblocks items 1–3, so the €733/yr GS1 spend is both the highest-ROI line item *and* the dependency. School-order intake (from ~4 hours to minutes) is the headline; review generation and reputation monitoring run continuously behind it at near-zero marginal cost.
 
 
 ---

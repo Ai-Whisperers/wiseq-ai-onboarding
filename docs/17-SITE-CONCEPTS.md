@@ -98,6 +98,18 @@ open index.html            # or: python3 -m http.server 8000
 
 ---
 
+## Continue reading
+
+| Next | Why it matters |
+| :--- | :--- |
+| **[Ai Stack Blueprint](04-AI-STACK-BLUEPRINT.md)** | The stack these concepts plug into |
+| **[Automation Backlog](05-AUTOMATION-BACKLOG.md)** | Why the storefront is a backlog item |
+| **[Company Profile](01-COMPANY-PROFILE.md)** | The catalog and brand these were built from |
+
+> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+
+---
+
 ## 📌 In short
 
 Three complete, scroll-driven storefronts — **production-quality HTML/CSS/JS against WiseQ's real 229-product catalog**, no framework and no build step. They exist as evidence of craft, not as a redesign proposal: **nothing here is deployed and nothing here overrides the live site.** Concept 03 makes the 77-bundle combinatorial problem into the brand's visual language — the constellation *is* the bundle graph.
