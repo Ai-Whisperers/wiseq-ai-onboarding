@@ -43,6 +43,8 @@
 | 36 | PostNL 2026: brievenbuspakje €4.55, pakket ≤10kg €6.95–7.45, BE buspakje €9.50–10.00 (excl. VAT, online frankering) | **VERIFIED** | [Official tariff booklet Jul-2026](https://www.postnl.nl/api/assets/blt43aa441bfc1e29f2/blt5e65605bca8690e0/tarievenboekje-12-juli-2026.pdf) | Volume tiers lower; fulfilment from €1.40/order if ever outsourced | Addendum 6 §2 |
 | 37 | OSS €10k/yr threshold retroactive for the calendar year once crossed; bol.be revenue counts; quarterly NL filing | **VERIFIED** | vanpasse.nl, bolmoneybird.nl, winkelfactuur.nl, Oct 23 | Phase-0 must-check: WiseQ's non-NL EU B2C revenue; OSS-watchdog agent spec'd for Phase 1 | Addendum 6 §3 |
 | 38 | bol→bookkeeping connectors from €9.95/mo with per-line country VAT | **VERIFIED** | [koppel-je-boekhouding.nl](https://koppel-je-boekhouding.nl/bol-com-koppelen-aan-boekhouding) | Depends on WiseQ's package (Phase-0 question) | Addendum 6 §3 |
+| 39 | Exact Online MCP exists (self-hosted lemon-official/exact-mcp + EU-hosted 75-tool official) — bookkeeping becomes install-not-build if WiseQ runs Exact | **VERIFIED** | GitHub + PulseMCP, Oct 23 | Choice: self-host (token control) vs EU-hosted (less ops); OAuth scoped per doc-13 least-privilege rule | Doc 24 §0 |
+| 40 | Shopify Shop MCP live at mcp.shop.com (Oct 13, 2026): keyless catalog search, UCP carts/checkout; UCP CLI + AI toolkit released | **VERIFIED** | [Shopify changelog](https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp), Oct 23 | Buyer-side agentic presence = URL add; merchant-side writes still need the custom Admin app | Doc 24 §0 |
 
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 
