@@ -193,7 +193,7 @@ variables (your turnover class for Thuiswinkel, and your order volume for the AI
 lowest-total option is also the one we recommend — (b) — which is a coincidence of design,
 not of pricing.
 
-**What is deliberately not in the number:** lab testing (unknown until quoted — could move the
+**What is deliberately not in the number:** lab testing (now bounded: RED €2–8k/product standard, €8–18k notified-body, SAR €4–10k/config — [addendum 3](../data/research-lanes/RESEARCH-ADDENDUM-3-CERTS-PRICING-MARKET.md); a triage exercise, not catalog-wide testing), Trustpilot (real tariff: $99/mo for 100 invitations ≈ €1,100/yr if the review engine runs — [addendum 3](../data/research-lanes/RESEARCH-ADDENDUM-3-CERTS-PRICING-MARKET.md)), and any Phase 2 engine.
 total materially), Trustpilot's invitation tier (sized in Phase 0, $0–799/mo), and any
 Phase 2 engine. A TCO that hides a known-unknown is a sales document, not a decision tool.
 
