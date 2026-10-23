@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-22-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-23-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
@@ -67,7 +67,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Twenty-two documents, four tracks. Each is self-contained and independently verifiable.
+Twenty-three documents, four tracks. Each is self-contained and independently verifiable.
 
 ### Track A — The proposal *(what we recommend)*
 
@@ -111,6 +111,7 @@ Twenty-two documents, four tracks. Each is self-contained and independently veri
 | **20** | [Send-to-Rob](docs/20-SEND-TO-ROB.md) | The copy-paste outreach message that turns the demos into a scheduled next step | You're about to send the link |
 | **21** | [Who we are](docs/21-WHO-WE-ARE.md) | People page: names, roles, Dutch-capability evidence | ✅ |
 | **22** | [Audit response](docs/22-AUDIT-RESPONSE.md) | Point-by-point response to the Oct-22 external audit | ✅ |
+| **23** | [Acceptance criteria](docs/23-ACCEPTANCE-CRITERIA.md) | Stage gates that define “done” — agreed before the pilot | ✅ |
 
 ---
 
@@ -278,3 +279,5 @@ This repository is the collaboration surface. **Open an issue or comment on any 
 <div align="center">
 <sub>Built as a public proof-of-work proposal — every claim here is independently verifiable in minutes.</sub>
 </div>
+
+> **Evidence discipline:** every material claim is tracked in [data/CLAIMS-LEDGER.md](data/CLAIMS-LEDGER.md) with source, date, status (verified / inferred / hypothesis / stale), and reproduction path — implemented as the external audit requested (Oct 2026).
