@@ -29,7 +29,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 | You are… | Read this first | Then |
 | :--- | :--- | :--- |
-| **Rob Nyari** — E-Commerce CEO, decision-maker | [for-rob pack](docs/for-rob/README.md) → [04 · Blueprint](docs/a-proposal/04-AI-STACK-BLUEPRINT.md) | [06 · Next Steps](docs/a-proposal/06-NEXT-STEPS.md) for the four decisions |
+| **Rob Nyari** — E-Commerce CEO, decision-maker | [for-rob pack](docs/for-rob/README.md) → [The case in one breath](docs/for-rob/THE-CASE-IN-ONE-BREATH.md) | [04 · Blueprint](docs/a-proposal/04-AI-STACK-BLUEPRINT.md) → [06 · Next Steps](docs/a-proposal/06-NEXT-STEPS.md) |
 | **AIW co-founder (Kiki)** | [for-kiki pack](docs/for-kiki/README.md) | [Terms](docs/f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md) · [Evidence](docs/f-governance/27-EVIDENCE-INDEX.md) |
 | **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/a-proposal/04-AI-STACK-BLUEPRINT.md#cost-model-honest) | [09 · Competitors & Deals](docs/c-market/09-COMPETITORS-DEALS.md) |
 | **An operations / purchase lead** | [for-ops pack](docs/for-ops/README.md) → [05 · Backlog](docs/a-proposal/05-AUTOMATION-BACKLOG.md) | [25 · Catalog scorecard](docs/b-company/25-CATALOG-SCORECARD.md) |

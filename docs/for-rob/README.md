@@ -10,7 +10,7 @@ Short path for the WiseQ decision-maker. Full detail lives in the track folders;
 
 | # | Open | Why |
 | ---: | :--- | :--- |
-| 1 | [One-paragraph pitch](../../README.md#the-one-paragraph-pitch) | The case in one breath |
+| 1 | [The case in one breath](THE-CASE-IN-ONE-BREATH.md) | Pitch + gaps table |
 | 2 | [AI Stack Blueprint](../a-proposal/04-AI-STACK-BLUEPRINT.md) | Architecture, phases, **honest cost / TCO** |
 | 3 | [Next Steps](../a-proposal/06-NEXT-STEPS.md) | What to send us + **your four decisions** + hosting options |
 | 4 | [Meeting notes 2026-10-21](../b-company/03-MEETING-NOTES-2026-10-21.md) | What we already agreed in Grootebroek |
