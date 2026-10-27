@@ -1,0 +1,42 @@
+{
+  "source_file": "Mastersheet.xlsx (WiseQ, local; not committed \u2014 contains contacts, codes, COGS)",
+  "ingested": "2026-10-27",
+  "sheets": [
+    "Kaartnummers",
+    "Title update",
+    "Zoekwoordanalyses",
+    "Kortingscodes",
+    "Zoekvolume Google",
+    "Schoolbestellingen",
+    "Opvolging reviews Bol",
+    "Prijsverhogingen",
+    "Verzendtarieven & Verzendstrate",
+    "Verzendregels Channeldock",
+    "BOL LVB BE",
+    "Interne referenties",
+    "Sales klanten",
+    "Wederverkopers",
+    "Inkoopprijzen retail + scholen",
+    "Taken en verantwoordelijkheden",
+    "Contact matrix",
+    "Slecht lopende artikelen",
+    "Branded Shelves",
+    "Bestelformulier dozen",
+    "Testimonials"
+  ],
+  "exported_public": [
+    "verzendtarieven.csv",
+    "verzendregels-templates.csv",
+    "bestelformulier-dozen.csv",
+    "zoekvolume-google-filtered.csv",
+    "zoekwoordanalyses-sample.csv"
+  ],
+  "not_exported_reason": {
+    "Kaartnummers": "gift-card codes",
+    "Kortingscodes": "promo secrets",
+    "Contact matrix": "PII / credentials pointers",
+    "Inkoopprijzen retail + scholen": "COGS / margins",
+    "Sales klanten": "customer PII",
+    "Opvolging reviews Bol": "may contain customer names"
+  }
+}

@@ -16,7 +16,8 @@ Client-facing narrative lives in [`docs/`](../docs/README.md). This folder holds
 | [`wiseq-component-registry.csv`](wiseq-component-registry.csv) | 114 component SKUs | CI spine integrity |
 | [`research-lanes/`](research-lanes/) | Lane reports + dossier + addenda 2–7 | Evidence base |
 | [`oss/`](oss/) | Per-topic GitHub search JSON (31 topics) | [Doc 10](../docs/c-market/10-OSS-CATALOG-100.md) |
-| [`client/`](client/) | **Client SoT** — operating manual + extract | [Doc 28](../docs/b-company/28-CLIENT-OPERATING-MANUAL.md) |
+| [`client/`](client/) | **Client SoT** — operating manual + Mastersheet extracts | [Doc 28](../docs/b-company/28-CLIENT-OPERATING-MANUAL.md) |
+| [`client/mastersheet/`](client/mastersheet/) | Shipping tariffs, rule templates, packaging URLs, keywords (CSV) | [Mastersheet extract](client/MASTERSHEET-EXTRACT.md) |
 | [`stack-map.md`](stack-map.md) | Phase-0 connector map (draft from manual) | [Doc 06](../docs/a-proposal/06-NEXT-STEPS.md) |
 
 ## Research lanes

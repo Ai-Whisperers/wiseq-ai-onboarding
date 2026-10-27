@@ -12,7 +12,7 @@
 | **MyParcel** | B2B DHL labels | API if available | Account | School pipeline |
 | **PostNL** | Brievenbus / partijenpost | Existing wrapper eval | — | Invoice dispute is human phone call |
 | **Dymo / labels** | EAN stickers | Local print — out of agent scope | — | Warehouse laptop |
-| **Excel Mastersheet** | Levertijden, Kaartnummers, … | Read export / Drive | Share copy | Critical for price/levertijd audit |
+| **Excel Mastersheet** | Shipping tariffs, ChannelDock rule templates, SEO keywords, packaging SKUs, price brakes, … | Read export of safe tabs (done) | Controlled share of private tabs | Public extract: [`client/MASTERSHEET-EXTRACT.md`](client/MASTERSHEET-EXTRACT.md) · CSVs in [`client/mastersheet/`](client/mastersheet/) |
 | **Google Drive** | CE / DoC library | Drive read MCP | Folder share | Don't regenerate certs |
 | **Shopify** | Own shop (manual light) | Admin API | Collaborator | Confirm Phase-0 priority vs bol |
 | **Mailbox** | CS + sales | IMAP read-only first | App password | Provider still unnamed |

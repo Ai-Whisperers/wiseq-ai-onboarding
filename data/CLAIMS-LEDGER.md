@@ -60,6 +60,10 @@
 | 53 | Brand colours: light `#26b5b7`, dark `#1648ad` | **VERIFIED** (client manual) | Same | Storefront concepts can lock tokens | Extract §7 |
 | 54 | School pipeline: catalog/sample → e-Boekhouden offer → invoice → MyParcel/DHL | **VERIFIED** (client manual) | Same | Flagship Phase-1 path matches their templates | Extract §5 |
 
+| 55 | WiseQ maintains an ops Mastersheet with shipping tariffs (LVB/VVB/QLS/PostNL NL+BE), ChannelDock shipping-rule templates, packaging SKUs, SEO keywords | **VERIFIED** (client file) | Mastersheet.xlsx ingested 2026-10-27 (exports in data/client/mastersheet/) | Full xlsx not in public repo (PII/secrets/COGS) | MASTERSHEET-EXTRACT |
+| 56 | New SKUs must clone ChannelDock shipping rules from template EANs by product class (light/heavy cable, adapter weight, MagSafe, headphones, …) | **VERIFIED** (Mastersheet + manual) | erzendregels-templates.csv | Qty×country breaks live on templates inside ChannelDock | Extract §2 |
+| 57 | BE LVB shift from 2–3 day to next-day claimed +178% sales on sheet; school Europlus parcel €10.54 | **INFERRED** (client sheet note) / **VERIFIED** (tariff cell) | erzendtarieven.csv | Conversion % is client observation, not independently measured | Extract §1 |
+
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 
 **Re-check policy:** rows marked STALE are re-verified before being quoted to the client (audit §4 "historical snapshots as current"). Next scheduled re-check: bol seller count + Trustpilot totals, on first client contact or Nov 21, whichever first.

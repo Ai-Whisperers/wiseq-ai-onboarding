@@ -17,6 +17,7 @@ Practical path: what hurts today, what the spine already proves, what Phase 0 ne
 | 5 | [Unit economics](../c-market/26-UNIT-ECONOMICS.md) | Fees that hit every order (Bancontact, PostNL, OSS VAT) |
 | 6 | [Next Steps](../a-proposal/06-NEXT-STEPS.md) | 30-min purchase walkthrough + ChannelDock/PIM questions |
 | 7 | [Tooling / MCP installs](../d-delivery/13-TOOLING-MCP-INSTALLS.md) | Connector list |
+| 8 | [Mastersheet extract](../../data/client/MASTERSHEET-EXTRACT.md) | Shipping tariffs, ChannelDock rule templates, box order links |
 
 ## Spine artifacts (CI-validated)
 

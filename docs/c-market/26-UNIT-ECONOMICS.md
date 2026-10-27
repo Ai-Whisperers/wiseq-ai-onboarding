@@ -20,14 +20,20 @@
 
 **Phase-0 ask:** current Shopify PSP + payment-method mix from real orders.
 
-## Shipping — PostNL 2026 (online frankering, excl. VAT)
+## Shipping — use WiseQ’s own tariff table
 
-| Product | Price |
-| :--- | :--- |
-| Brievenbuspakje+ ≤2 kg | **€4.55** |
-| Pakket ≤10 kg → huisadres | **€7.45** |
-| Pakket ≤10 kg → PostNL-punt | €6.95 |
-| Buspakje BE (w/ track) | €9.50–10.00 |
+Generic PostNL consumer bands are secondary. **Source of truth:** client Mastersheet → [`verzendtarieven.csv`](../../data/client/mastersheet/verzendtarieven.csv) / [extract](../../data/client/MASTERSHEET-EXTRACT.md).
+
+| Mode (examples) | NL € | BE € |
+| :--- | ---: | ---: |
+| LVB 3XS chargers | 2.78 | 5.11 |
+| LVB S headphones (Unbreakable/Hero/…) | 6.27 | 6.27 |
+| VVB brievenbus chargers | 3.77 | 6.33 |
+| QLS parcel headphones | 4.61 | 4.75 |
+| QLS Europlus **school** | 10.54 | 10.54 |
+| PostNL partijenpost &lt;50g | 1.85 | 4.42 |
+
+**Decision rule Rob described:** compare shipping cost vs delivery promise (before **15:00** next-day own stock vs before **00:00** LVB next-day). BE LVB noted on sheet as large conversion lift (~178%).
 
 ## Cross-border VAT — OSS €10k trap
 

@@ -49,12 +49,22 @@ Doc 06 asked for the ~30-page company manual before the stack map. **Received.**
 
 See [Next Steps](../a-proposal/06-NEXT-STEPS.md) — items 2–8 (plan tier, tokens, sandbox orders, turnover, etc.). Manual closed item 1 and largely item 2’s bookkeeping question.
 
+## Mastersheet (second SoT drop — 2026-10-27)
+
+Rob also shared the ops **Mastersheet** (shipping tariffs vs delivery promise, ChannelDock shipping-rule templates for new SKUs, packaging order links, SEO keywords). Full workbook stays private; public extract + CSVs:
+
+- [`MASTERSHEET-EXTRACT.md`](../../data/client/MASTERSHEET-EXTRACT.md)
+- [`mastersheet/*.csv`](../../data/client/mastersheet/)
+
+**Design takeaway:** new products must clone the correct ChannelDock shipping profile (template EAN by class) so NL/BE × qty breaks get the right label — otherwise ungefrankeerde zendingen. Tariff table is the real unit-economics carrier input (incl. school Europlus €10.54 and BE LVB +178% note).
+
 ## Source files
 
 | File | Role |
 | :--- | :--- |
 | [`Handleiding_opzet.txt`](../../data/client/Handleiding_opzet.txt) | Client raw (promo code / phone redacted for public repo) |
 | [`OPERATING-MANUAL-EXTRACT.md`](../../data/client/OPERATING-MANUAL-EXTRACT.md) | Structured SoT for builders |
+| [`MASTERSHEET-EXTRACT.md`](../../data/client/MASTERSHEET-EXTRACT.md) | Shipping / keywords / packaging SoT |
 | [`stack-map.md`](../../data/stack-map.md) | Phase-0 connector map draft |
 
 ---
