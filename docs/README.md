@@ -32,6 +32,7 @@ Evidence attic: [`../data/README.md`](../data/README.md) · Lab: [`../lab/`](../
 | [`70-showcase/`](70-showcase/README.md) | Site concepts, send-to-Rob, who we are |
 | [`archive/`](archive/README.md) | Superseded dated reviews (do not cite as current) |
 | [`_internal/`](_internal/README.md) | AIW restructure plans |
+| [`adr/`](adr/README.md) | Architecture decisions (Desktop-first, e-Boekhouden) |
 
 ---
 

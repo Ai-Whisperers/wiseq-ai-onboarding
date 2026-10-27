@@ -21,4 +21,6 @@ Phase-0 audits, lab notes, prep, handoff. Lab code: [`../../lab/`](../../lab/).
 | 16 | [Handoff + roadmap](16-handoff.md) |
 | 17 | [Evidence index](17-evidence-index.md) |
 
+Offline checklists: [`checklists/`](checklists/README.md) · ADRs: [`../adr/`](../adr/README.md)
+
 [← Docs map](../README.md)

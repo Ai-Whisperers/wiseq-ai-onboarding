@@ -3,14 +3,20 @@
     "id": "happy-offer-request",
     "message_id": "mail_school_001",
     "expect_status": "ok",
-    "must_have_keys": ["offer", "invoice", "shipment"],
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
     "notes": "Full pipeline with approval"
   },
   {
     "id": "catalog-sample-escalation",
     "message_id": "mail_school_002",
     "expect_status": "escalated",
-    "must_have_keys": ["reason"],
+    "must_have_keys": [
+      "reason"
+    ],
     "notes": "Do not invent product lines"
   },
   {
@@ -18,7 +24,342 @@
     "message_id": "mail_school_001",
     "approve": false,
     "expect_status": "awaiting_approval",
-    "must_have_keys": ["invoice"],
+    "must_have_keys": [
+      "invoice"
+    ],
     "notes": "Commit blocked without APPROVE"
+  },
+  {
+    "id": "esc-mail_school_002",
+    "message_id": "mail_school_002",
+    "expect_status": "escalated",
+    "must_have_keys": [
+      "reason"
+    ],
+    "notes": "catalog/sample"
+  },
+  {
+    "id": "ok-mail_school_003",
+    "message_id": "mail_school_003",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_004",
+    "message_id": "mail_school_004",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_005",
+    "message_id": "mail_school_005",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_006",
+    "message_id": "mail_school_006",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_007",
+    "message_id": "mail_school_007",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_008",
+    "message_id": "mail_school_008",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_009",
+    "message_id": "mail_school_009",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_010",
+    "message_id": "mail_school_010",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "esc-mail_school_011",
+    "message_id": "mail_school_011",
+    "expect_status": "escalated",
+    "must_have_keys": [
+      "reason"
+    ],
+    "notes": "catalog/sample"
+  },
+  {
+    "id": "esc-mail_school_012",
+    "message_id": "mail_school_012",
+    "expect_status": "escalated",
+    "must_have_keys": [
+      "reason"
+    ],
+    "notes": "catalog/sample"
+  },
+  {
+    "id": "esc-mail_school_013",
+    "message_id": "mail_school_013",
+    "expect_status": "escalated",
+    "must_have_keys": [
+      "reason"
+    ],
+    "notes": "catalog/sample"
+  },
+  {
+    "id": "ok-mail_school_014",
+    "message_id": "mail_school_014",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_015",
+    "message_id": "mail_school_015",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_016",
+    "message_id": "mail_school_016",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_017",
+    "message_id": "mail_school_017",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_018",
+    "message_id": "mail_school_018",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_019",
+    "message_id": "mail_school_019",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_020",
+    "message_id": "mail_school_020",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_021",
+    "message_id": "mail_school_021",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_022",
+    "message_id": "mail_school_022",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_023",
+    "message_id": "mail_school_023",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_024",
+    "message_id": "mail_school_024",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_025",
+    "message_id": "mail_school_025",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_026",
+    "message_id": "mail_school_026",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_027",
+    "message_id": "mail_school_027",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_028",
+    "message_id": "mail_school_028",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_029",
+    "message_id": "mail_school_029",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_030",
+    "message_id": "mail_school_030",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_031",
+    "message_id": "mail_school_031",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
+  },
+  {
+    "id": "ok-mail_school_032",
+    "message_id": "mail_school_032",
+    "expect_status": "ok",
+    "must_have_keys": [
+      "offer",
+      "invoice",
+      "shipment"
+    ],
+    "notes": "happy path"
   }
 ]

@@ -19,11 +19,12 @@ Reset fixtures (deterministic): delete `eval/out/` if present; fixtures under `f
 | `contracts/` | Provider Protocols |
 | `adapters/fixture/` | Deterministic mocks (`simulated=true`) |
 | `adapters/oss/` | Placeholders for local OSS apps |
-| `adapters/vendor/` | Placeholders for approved vendor sandboxes |
-| `fixtures/` | Synthetic catalog, mailbox, tariffs, accounts |
+| `adapters/vendor/` | Read stubs (fail-closed until Wave 1 keys) |
+| `fixtures/` | Synthetic catalog, **32** school mails, tariffs, accounts |
 | `scenarios/` | Experiment A/B/C runners |
-| `tests/` | Golden pytest suite |
-| `hermes/` | Desktop skills + memory seed |
+| `tests/` | Golden pytest suite (incl. eval + vendor stubs) |
+| `hermes/` | Desktop skills + [DEMO-SCRIPT](hermes/DEMO-SCRIPT.md) |
+| `scripts/gen_school_goldens.py` | Regenerate mailbox goldens |
 
 ## Hermes Desktop
 
@@ -32,7 +33,7 @@ hermes --profile wiseq-lab doctor
 hermes desktop --cwd <absolute-path-to>/lab
 ```
 
-YOLO **off**. See [`docs/50-evidence/06-hermes-desktop.md`](../docs/50-evidence/06-hermes-desktop.md).
+YOLO **off**. Demo: [`hermes/DEMO-SCRIPT.md`](hermes/DEMO-SCRIPT.md) · Notes: [`docs/50-evidence/06-hermes-desktop.md`](../docs/50-evidence/06-hermes-desktop.md).
 
 ## Experiments
 

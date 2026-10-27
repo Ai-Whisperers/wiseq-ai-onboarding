@@ -29,10 +29,10 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 | You are… | Read this first | Then |
 | :--- | :--- | :--- |
-| **Rob Nyari** — E-Commerce CEO, decision-maker | [for-rob pack](docs/start/rob/README.md) → [The case in one breath](docs/start/rob/the-case.md) | [04 · Blueprint](docs/20-offer/01-blueprint.md) → [06 · Next Steps](docs/20-offer/03-next-steps.md) |
-| **AIW co-founder (Kiki)** | [for-kiki pack](docs/start/kiki/README.md) | [Terms](docs/60-governance/01-terms.md) · [Evidence](docs/50-evidence/17-evidence-index.md) |
+| **Rob Nyari** — E-Commerce CEO, decision-maker | [Rob pack](docs/start/rob/README.md) → [The case in one breath](docs/start/rob/the-case.md) | [Blueprint](docs/20-offer/01-blueprint.md) → [Next steps](docs/20-offer/03-next-steps.md) |
+| **AIW co-founder (Kiki)** | [Kiki pack](docs/start/kiki/README.md) | [Terms](docs/60-governance/01-terms.md) · [Evidence](docs/50-evidence/17-evidence-index.md) |
 | **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/20-offer/01-blueprint.md#cost-model-honest) | [09 · Competitors & Deals](docs/30-market/02-competitors-deals.md) |
-| **An operations / purchase lead** | [for-ops pack](docs/start/ops/README.md) → [05 · Backlog](docs/20-offer/02-automation-backlog.md) | [25 · Catalog scorecard](docs/10-client/05-catalog-scorecard.md) |
+| **An operations / purchase lead** | [Ops pack](docs/start/ops/README.md) → [Backlog](docs/20-offer/02-automation-backlog.md) | [Catalog scorecard](docs/10-client/05-catalog-scorecard.md) |
 | **A technical evaluator or IT reviewer** | [04 · Architecture](docs/20-offer/01-blueprint.md) + [15 · Delivery](docs/40-build/04-devops.md) | [13 · Tooling](docs/40-build/02-tooling-mcp.md) |
 | **New to this repository** | [Docs folder map](docs/README.md) | [Document map](#document-map) below |
 

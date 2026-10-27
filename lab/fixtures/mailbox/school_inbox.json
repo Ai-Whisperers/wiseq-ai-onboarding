@@ -11,7 +11,8 @@
       "sku_hint": "unbreakable",
       "qty": 30,
       "needs_catalog": false,
-      "needs_sample": false
+      "needs_sample": false,
+      "reseller": null
     }
   },
   {
@@ -26,7 +27,490 @@
       "sku_hint": null,
       "qty": null,
       "needs_catalog": true,
-      "needs_sample": true
+      "needs_sample": true,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_003",
+    "folder": "inbox",
+    "from": "inkoop@de-regenboog.demo.nl",
+    "subject": "Offerte 12x junior",
+    "body": "Offerte svp voor 12 stuks (junior). School: De Regenboog.",
+    "school_order_id": "SO-2026-003",
+    "parsed": {
+      "school": "De Regenboog",
+      "sku_hint": "junior",
+      "qty": 12,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_004",
+    "folder": "inbox",
+    "from": "inkoop@obs-de-brug.demo.nl",
+    "subject": "Offerte 25x kids-anc",
+    "body": "Offerte svp voor 25 stuks (kids-anc). School: OBS De Brug.",
+    "school_order_id": "SO-2026-004",
+    "parsed": {
+      "school": "OBS De Brug",
+      "sku_hint": "kids-anc",
+      "qty": 25,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_005",
+    "folder": "inbox",
+    "from": "inkoop@stichting-leerrijk.demo.nl",
+    "subject": "Offerte 40x unbreakable",
+    "body": "Offerte svp voor 40 stuks (unbreakable). School: Stichting Leerrijk.",
+    "school_order_id": "SO-2026-005",
+    "parsed": {
+      "school": "Stichting Leerrijk",
+      "sku_hint": "unbreakable",
+      "qty": 40,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": "EDG"
+    }
+  },
+  {
+    "id": "mail_school_006",
+    "folder": "inbox",
+    "from": "inkoop@college-noord.demo.nl",
+    "subject": "Offerte 2x tablet-cart",
+    "body": "Offerte svp voor 2 stuks (tablet-cart). School: College Noord.",
+    "school_order_id": "SO-2026-006",
+    "parsed": {
+      "school": "College Noord",
+      "sku_hint": "tablet-cart",
+      "qty": 2,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_007",
+    "folder": "inbox",
+    "from": "inkoop@basisschool-zon.demo.nl",
+    "subject": "Offerte 60x hearing-protect",
+    "body": "Offerte svp voor 60 stuks (hearing-protect). School: Basisschool Zon.",
+    "school_order_id": "SO-2026-007",
+    "parsed": {
+      "school": "Basisschool Zon",
+      "sku_hint": "hearing-protect",
+      "qty": 60,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_008",
+    "folder": "inbox",
+    "from": "inkoop@ikc-haven.demo.nl",
+    "subject": "Offerte 15x unbreakable",
+    "body": "Offerte svp voor 15 stuks (unbreakable). School: IKC Haven.",
+    "school_order_id": "SO-2026-008",
+    "parsed": {
+      "school": "IKC Haven",
+      "sku_hint": "unbreakable",
+      "qty": 15,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": "ITS"
+    }
+  },
+  {
+    "id": "mail_school_009",
+    "folder": "inbox",
+    "from": "inkoop@montessori-delft.demo.nl",
+    "subject": "Offerte 8x junior",
+    "body": "Offerte svp voor 8 stuks (junior). School: Montessori Delft.",
+    "school_order_id": "SO-2026-009",
+    "parsed": {
+      "school": "Montessori Delft",
+      "sku_hint": "junior",
+      "qty": 8,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_010",
+    "folder": "inbox",
+    "from": "inkoop@vo-campus.demo.nl",
+    "subject": "Offerte 50x kids-anc",
+    "body": "Offerte svp voor 50 stuks (kids-anc). School: VO Campus.",
+    "school_order_id": "SO-2026-010",
+    "parsed": {
+      "school": "VO Campus",
+      "sku_hint": "kids-anc",
+      "qty": 50,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": "Onderwijsmagazijn"
+    }
+  },
+  {
+    "id": "mail_school_011",
+    "folder": "inbox",
+    "from": "info@sample.demo.nl",
+    "subject": "Aanvraag sample",
+    "body": "Graag sample informatie.",
+    "school_order_id": "SO-2026-011",
+    "parsed": {
+      "school": "Proefschool West",
+      "sku_hint": null,
+      "qty": null,
+      "needs_catalog": false,
+      "needs_sample": true,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_012",
+    "folder": "inbox",
+    "from": "info@catalog.demo.nl",
+    "subject": "Aanvraag catalog",
+    "body": "Graag catalog informatie.",
+    "school_order_id": "SO-2026-012",
+    "parsed": {
+      "school": "Catalogusgroep Oost",
+      "sku_hint": null,
+      "qty": null,
+      "needs_catalog": true,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_013",
+    "folder": "inbox",
+    "from": "info@both.demo.nl",
+    "subject": "Aanvraag both",
+    "body": "Graag both informatie.",
+    "school_order_id": "SO-2026-013",
+    "parsed": {
+      "school": "Beide Aanvraag",
+      "sku_hint": null,
+      "qty": null,
+      "needs_catalog": true,
+      "needs_sample": true,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_014",
+    "folder": "inbox",
+    "from": "bulk1@demo-school.nl",
+    "subject": "1x Unbreakable",
+    "body": "1 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-014",
+    "parsed": {
+      "school": "Demo Bulk 1",
+      "sku_hint": "unbreakable",
+      "qty": 1,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_015",
+    "folder": "inbox",
+    "from": "bulk5@demo-school.nl",
+    "subject": "5x Unbreakable",
+    "body": "5 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-015",
+    "parsed": {
+      "school": "Demo Bulk 5",
+      "sku_hint": "unbreakable",
+      "qty": 5,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_016",
+    "folder": "inbox",
+    "from": "bulk10@demo-school.nl",
+    "subject": "10x Unbreakable",
+    "body": "10 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-016",
+    "parsed": {
+      "school": "Demo Bulk 10",
+      "sku_hint": "unbreakable",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_017",
+    "folder": "inbox",
+    "from": "bulk20@demo-school.nl",
+    "subject": "20x Unbreakable",
+    "body": "20 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-017",
+    "parsed": {
+      "school": "Demo Bulk 20",
+      "sku_hint": "unbreakable",
+      "qty": 20,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_018",
+    "folder": "inbox",
+    "from": "bulk35@demo-school.nl",
+    "subject": "35x Unbreakable",
+    "body": "35 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-018",
+    "parsed": {
+      "school": "Demo Bulk 35",
+      "sku_hint": "unbreakable",
+      "qty": 35,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_019",
+    "folder": "inbox",
+    "from": "bulk45@demo-school.nl",
+    "subject": "45x Unbreakable",
+    "body": "45 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-019",
+    "parsed": {
+      "school": "Demo Bulk 45",
+      "sku_hint": "unbreakable",
+      "qty": 45,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_020",
+    "folder": "inbox",
+    "from": "bulk55@demo-school.nl",
+    "subject": "55x Unbreakable",
+    "body": "55 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-020",
+    "parsed": {
+      "school": "Demo Bulk 55",
+      "sku_hint": "unbreakable",
+      "qty": 55,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_021",
+    "folder": "inbox",
+    "from": "bulk100@demo-school.nl",
+    "subject": "100x Unbreakable",
+    "body": "100 stuks Unbreakable svp.",
+    "school_order_id": "SO-2026-021",
+    "parsed": {
+      "school": "Demo Bulk 100",
+      "sku_hint": "unbreakable",
+      "qty": 100,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_022",
+    "folder": "inbox",
+    "from": "twijfel@demo.nl",
+    "subject": "Misschien Unbreakable?",
+    "body": "We overwegen Unbreakable maar weten het aantal nog niet.",
+    "school_order_id": "SO-2026-022",
+    "parsed": {
+      "school": "Twijfel School",
+      "sku_hint": "unbreakable",
+      "qty": null,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null,
+      "ambiguous": true
+    }
+  },
+  {
+    "id": "mail_school_023",
+    "folder": "inbox",
+    "from": "bestuur@stichting-demo.nl",
+    "subject": "Vervolg bestelling na sample",
+    "body": "Sample was goed — offerte voor 24x Kids ANC.",
+    "school_order_id": "SO-2026-023",
+    "parsed": {
+      "school": "Stichting Demo",
+      "sku_hint": "kids-anc",
+      "qty": 24,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null,
+      "follow_up": true
+    }
+  },
+  {
+    "id": "mail_school_024",
+    "folder": "inbox",
+    "from": "school24@demo.nl",
+    "subject": "Offerte junior set 24",
+    "body": "10x junior voor school 24",
+    "school_order_id": "SO-2026-024",
+    "parsed": {
+      "school": "Demo 24",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_025",
+    "folder": "inbox",
+    "from": "school25@demo.nl",
+    "subject": "Offerte junior set 25",
+    "body": "10x junior voor school 25",
+    "school_order_id": "SO-2026-025",
+    "parsed": {
+      "school": "Demo 25",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_026",
+    "folder": "inbox",
+    "from": "school26@demo.nl",
+    "subject": "Offerte junior set 26",
+    "body": "10x junior voor school 26",
+    "school_order_id": "SO-2026-026",
+    "parsed": {
+      "school": "Demo 26",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_027",
+    "folder": "inbox",
+    "from": "school27@demo.nl",
+    "subject": "Offerte junior set 27",
+    "body": "10x junior voor school 27",
+    "school_order_id": "SO-2026-027",
+    "parsed": {
+      "school": "Demo 27",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_028",
+    "folder": "inbox",
+    "from": "school28@demo.nl",
+    "subject": "Offerte junior set 28",
+    "body": "10x junior voor school 28",
+    "school_order_id": "SO-2026-028",
+    "parsed": {
+      "school": "Demo 28",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_029",
+    "folder": "inbox",
+    "from": "school29@demo.nl",
+    "subject": "Offerte junior set 29",
+    "body": "10x junior voor school 29",
+    "school_order_id": "SO-2026-029",
+    "parsed": {
+      "school": "Demo 29",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_030",
+    "folder": "inbox",
+    "from": "school30@demo.nl",
+    "subject": "Offerte junior set 30",
+    "body": "10x junior voor school 30",
+    "school_order_id": "SO-2026-030",
+    "parsed": {
+      "school": "Demo 30",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_031",
+    "folder": "inbox",
+    "from": "school31@demo.nl",
+    "subject": "Offerte junior set 31",
+    "body": "10x junior voor school 31",
+    "school_order_id": "SO-2026-031",
+    "parsed": {
+      "school": "Demo 31",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
+    }
+  },
+  {
+    "id": "mail_school_032",
+    "folder": "inbox",
+    "from": "school32@demo.nl",
+    "subject": "Offerte junior set 32",
+    "body": "10x junior voor school 32",
+    "school_order_id": "SO-2026-032",
+    "parsed": {
+      "school": "Demo 32",
+      "sku_hint": "junior",
+      "qty": 10,
+      "needs_catalog": false,
+      "needs_sample": false,
+      "reseller": null
     }
   }
 ]
