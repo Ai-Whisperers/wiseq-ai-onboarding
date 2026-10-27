@@ -1,6 +1,19 @@
 # Claim ledger — WiseQ onboarding repo
 
-*Generated 2026-10-23. One row per material claim. This is the evidence-model upgrade the external audit asked for (audit §8.2): every material claim carries its source, observation date, scope, reproduction path, and honest status. Statuses: **VERIFIED** (reproducible from an inspectable artifact), **INFERRED** (plausible reading of evidence, not independently established), **HYPOTHESIS** (testable proposal — no evidence yet), **STALE** (snapshot older than 30 days; re-verify before quoting).*
+*Generated 2026-10-23; evidence model extended 2026-10-27 (critical audit §2). One row per material claim.*
+
+**Legacy status column** (claims 1–47): **VERIFIED** · **INFERRED** · **HYPOTHESIS** · **STALE** · **UNRESOLVED**.
+
+**Four-dimension model** (preferred for client-SoT claims 48+; see [doc 29](../docs/60-governance/03-critical-audit-2026-10-27.md)):
+
+| Dimension | Values |
+| :--- | :--- |
+| Source provenance | `client-provided` · `vendor-docs` · `independently-measured` · `aiw-internal` |
+| Technical verification | `untested` · `sandbox-tested` · `production-tested` |
+| Business validation | `assumed` · `client-confirmed` · `quantitatively-validated` |
+| Implementation | `not-started` · `draft` · `tested` · `deployed` |
+
+Client text in the ledger ≠ independently verified ≠ safe to automate.
 
 | # | Claim | Status | Source & date | Scope / limits | Reproduce |
 |---|---|---|---|---|---|
@@ -43,7 +56,7 @@
 | 36 | PostNL 2026: brievenbuspakje €4.55, pakket ≤10kg €6.95–7.45, BE buspakje €9.50–10.00 (excl. VAT, online frankering) | **VERIFIED** | [Official tariff booklet Jul-2026](https://www.postnl.nl/api/assets/blt43aa441bfc1e29f2/blt5e65605bca8690e0/tarievenboekje-12-juli-2026.pdf) | Volume tiers lower; fulfilment from €1.40/order if ever outsourced | Addendum 6 §2 |
 | 37 | OSS €10k/yr threshold retroactive for the calendar year once crossed; bol.be revenue counts; quarterly NL filing | **VERIFIED** | vanpasse.nl, bolmoneybird.nl, winkelfactuur.nl, Oct 23 | Phase-0 must-check: WiseQ's non-NL EU B2C revenue; OSS-watchdog agent spec'd for Phase 1 | Addendum 6 §3 |
 | 38 | bol→bookkeeping connectors from €9.95/mo with per-line country VAT | **VERIFIED** | [koppel-je-boekhouding.nl](https://koppel-je-boekhouding.nl/bol-com-koppelen-aan-boekhouding) | Depends on WiseQ's package (Phase-0 question) | Addendum 6 §3 |
-| 39 | Exact Online MCP exists (self-hosted lemon-official/exact-mcp + EU-hosted 75-tool official) — bookkeeping becomes install-not-build if WiseQ runs Exact | **VERIFIED** | GitHub + PulseMCP, Oct 23 | Choice: self-host (token control) vs EU-hosted (less ops); OAuth scoped per doc-13 least-privilege rule | Doc 24 §0 |
+| 39 | Exact Online MCP exists (self-hosted lemon-official/exact-mcp + EU-hosted 75-tool official) | **VERIFIED** (vendor) / **NOT APPLICABLE** to WiseQ | GitHub + PulseMCP, Oct 23; superseded for this client by claim 48 | WiseQ bookkeeping = **e-Boekhouden** — Exact MCP path is generic market note only | Doc 24 §0 (rewritten) · claim 48 |
 | 40 | Shopify Shop MCP live at mcp.shop.com (Oct 13, 2026): keyless catalog search, UCP carts/checkout; UCP CLI + AI toolkit released | **VERIFIED** | [Shopify changelog](https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp), Oct 23 | Buyer-side agentic presence = URL add; merchant-side writes still need the custom Admin app | Doc 24 §0 |
 | 41 | AIW→WiseQ invoicing = reverse charge; invoice carries "btw verlegd" + WiseQ btw-ID; no NL VAT registration for AIW | **VERIFIED** | [Belastingdienst](https://belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/diensten/btw_verleggen), Oct 23 | Phase-0 ask: Rob's btw-identificatienummer; EUR invoicing; AIW-side PY treatment flagged for accountant | Addendum 7 §1 |
 | 42 | Shopify Basic (100 pts/sec GraphQL Admin) ample for 230 SKUs; custom apps on all plans; bulk ops bypass limits | **VERIFIED** | [Shopify rate-limit docs](https://shopify.dev/docs/apps/build/apis/graphql/graphql-admin/rate-limits), Oct 23 | No plan upgrade needed for docs 04/24; use bulkOperationRunQuery for catalog syncs | Addendum 7 §2 |
@@ -52,17 +65,19 @@
 | 45 | ChannelDock = 10-person bootstrapped Amsterdam SaaS (2020, unfunded) — concentration risk | **VERIFIED** | [Tracxn](https://platform.tracxn.com/a/d/company/5fc7e22037f0d01ad776d640/channeldock), Oct 23 | Canonical-spine-is-ours already mitigates; ChannelEngine = escape hatch; note added to doc 04 architecture | Addendum 7 §5 |
 | 46 | GS1 tariffs rise 3.5% Dec 1 2026 (inflatiecorrectie): codepakket 1.000 €196→~€203; WiseQ total €225→~€233/yr | **VERIFIED** | [gs1.nl huidige-tarieven](https://www.gs1.nl/producten-services/digital-identity/huidige-tarieven/), pulled Oct 23 | If pilot starts after Dec 1, quote €233; TCO delta trivial (+€8) | Addendum 4 + freshness pass |
 | 47 | Trustpilot still 13 reviews / 4.5 / all "Review zonder uitnodiging" (organic-only finding holds) | **VERIFIED (re-pulled Oct 23)** | [nl.trustpilot.com/review/wiseq.nl](https://nl.trustpilot.com/review/wiseq.nl), Oct 23 | Invitation experiment unchanged; bol count still STALE (browser down) | Freshness pass |
-| 48 | Bookkeeping package = **e-Boekhouden** (offers → invoices → relations for schools) | **VERIFIED** (client manual) | `data/client/Handleiding_opzet.txt`, ingested Oct 27 | Exact Online was the wrong default assumption | Extract §2 · doc 28 |
-| 49 | Three bol seller accounts: WiseQ NL, WiseQ Electronics, WiseQ België (holding; phasing out) | **VERIFIED** (client manual) | Same | Multi-account connectors required; België exit is a migration | Extract §1 |
-| 50 | ChannelDock supports native product bundles; 300-series must book as bundles on inbound | **VERIFIED** (client manual) | Same | Aligns with spine thesis; PIM may be optional | Extract §4 · Q8 in doc 06 |
-| 51 | FiveX used for EAN/stock/sales reports, LVB replenishment, review export, auto +10% price at ≤10 stock | **VERIFIED** (client manual) | Same | Export path confirmed; public API still unresolved | Extract §2 |
-| 52 | Ops priority scoreboard = bol seller/product reviews (target ≥9), not Trustpilot-first | **VERIFIED** (client manual) | Same | Doc 06 decision #4 updated | Extract §6 |
-| 53 | Brand colours: light `#26b5b7`, dark `#1648ad` | **VERIFIED** (client manual) | Same | Storefront concepts can lock tokens | Extract §7 |
-| 54 | School pipeline: catalog/sample → e-Boekhouden offer → invoice → MyParcel/DHL | **VERIFIED** (client manual) | Same | Flagship Phase-1 path matches their templates | Extract §5 |
-
-| 55 | WiseQ maintains an ops Mastersheet with shipping tariffs (LVB/VVB/QLS/PostNL NL+BE), ChannelDock shipping-rule templates, packaging SKUs, SEO keywords | **VERIFIED** (client file) | Mastersheet.xlsx ingested 2026-10-27 (exports in data/client/mastersheet/) | Full xlsx not in public repo (PII/secrets/COGS) | MASTERSHEET-EXTRACT |
-| 56 | New SKUs must clone ChannelDock shipping rules from template EANs by product class (light/heavy cable, adapter weight, MagSafe, headphones, …) | **VERIFIED** (Mastersheet + manual) | erzendregels-templates.csv | Qty×country breaks live on templates inside ChannelDock | Extract §2 |
-| 57 | BE LVB shift from 2–3 day to next-day claimed +178% sales on sheet; school Europlus parcel €10.54 | **INFERRED** (client sheet note) / **VERIFIED** (tariff cell) | erzendtarieven.csv | Conversion % is client observation, not independently measured | Extract §1 |
+| 48 | Bookkeeping package = **e-Boekhouden** (offers → invoices → relations for schools) | **client-provided** · tech `untested` · biz `client-confirmed` · impl `not-started` | `data/client/` extract, Oct 27 | Workflow intent only — API/fields/lifecycle untested. Exact Online was wrong default | Extract §2 · doc 28 · doc 29 |
+| 49 | Three bol seller accounts: WiseQ NL, WiseQ Electronics, WiseQ België (holding; phasing out) | **client-provided** · tech `untested` · biz `client-confirmed` · impl `not-started` | Same | Multi-account connectors; België = migration, not done | Extract §1 |
+| 50 | ChannelDock supports native product bundles; 300-series must book as bundles on inbound | **client-provided** · tech `untested` · biz `client-confirmed` · impl `not-started` | Same | Manual UI workflow ≠ proven API write path | Extract §4 |
+| 51 | FiveX used for EAN/stock/sales reports, LVB replenishment, review export, auto +10% price at ≤10 stock | **client-provided** · tech `untested` · biz `client-confirmed` · impl `not-started` | Same | Export path described; API + price-rule semantics untested — **no auto price writes** | Extract §2 · doc 29 |
+| 52 | Ops priority scoreboard = bol seller/product reviews (target ≥9), not Trustpilot-first | **client-provided** · tech n/a · biz `client-confirmed` · impl `draft` | Same | Score ≥9 = objective, not proof tactics are allowed | Extract §6 · review policy |
+| 53 | Brand colours: light `#26b5b7`, dark `#1648ad` | **client-provided** · tech n/a · biz `client-confirmed` · impl `draft` | Same | Storefront tokens | Extract §7 |
+| 54 | School pipeline: catalog/sample → e-Boekhouden offer → invoice → MyParcel/DHL | **client-provided** · tech `untested` · biz `client-confirmed` · impl `not-started` | Same | Shadow demo + human gates before any write | Extract §5 |
+| 55 | WiseQ maintains an ops Mastersheet with shipping tariffs, CD shipping-rule templates, packaging SKUs, SEO keywords | **client-provided** · tech `untested` · biz `client-confirmed` · impl `draft` | Mastersheet exports 2026-10-27 | Full xlsx never public | MASTERSHEET-EXTRACT |
+| 56 | New SKUs must clone ChannelDock shipping rules from template EANs by product class | **client-provided** · tech `untested` · biz `client-confirmed` · impl `draft` | `verzendregels-templates.csv` | Several rows `NEEDS_CONFIRMATION` / empty — refuse auto-clone | Extract §2 · CI schema check |
+| 57 | BE LVB next-day uplift: sheet **+178%** vs manual **+~80%**; school Europlus €10.54 | **client-provided** · tech n/a · biz `assumed` (**CONFLICT**) · impl n/a · Europlus tariff `client-confirmed` | `verzendtarieven.csv` + manual | **Do not use either % in ROI forecasts** until Rob defines metric/period/controls | Doc 29 · MASTERSHEET-EXTRACT |
+| 58 | Synthetic lab runs school/catalog/shipping scenarios without production credentials | **aiw-internal** · tech `sandbox-tested` · biz n/a · impl `tested` | `lab/` pytest 2026-10-27 (9 passed) | Simulated only — not production proof | lab/README · audits/EXPERIMENT-REGISTER |
+| 59 | Hermes Desktop is primary Rob UI for Milestone 1; always-on cron needs companion later | **vendor-docs** + **aiw-internal** · tech `sandbox-tested` (CLI doctor) · biz `assumed` · impl `draft` | Hermes v0.22.5 local · Desktop docs | Gateway stopped ⇒ schedules do not run | audits/HERMES-DESKTOP-CAPABILITY-NOTES |
+| 60 | Milestone 1 keep/extend: ChannelDock+e-Boekhouden keep; Mastersheet improve; Exact reject | **aiw-internal** · tech `sandbox-tested` · biz `assumed` · impl `draft` | Exp A–C register | Pending Rob demo | SOFTWARE-KEEP-EXTEND-REPLACE-DECISIONS |
 
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 

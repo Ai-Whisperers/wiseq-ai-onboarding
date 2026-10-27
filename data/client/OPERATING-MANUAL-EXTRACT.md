@@ -120,10 +120,20 @@ Catalog/sample request → info mail + catalog
 
 These are **client policies as written**. Automations must not silently expand them:
 
-- Bol review deletion / follow-up cadences — human-gated; AVG/platform-policy review before any agent sends.
+### Review contact (strengthened — Oct 27 audit)
+
+- Separate **customer-service resolution** from attempts to **influence a review**.
+- **Do not automate** requests to remove or change negative bol feedback without written confirmation the exact template complies with current marketplace rules.
+- Non-response ≠ consent to keep contacting; documented contact limits, suppression list, lawful basis, retention, and audit trail required before any send path exists.
+- Phase 0–1: **draft recommendations only**; human sends. Seller score ≥9 is a business objective, not evidence that every tactic is permissible.
+- AVG/platform-policy counsel review before any agent send.
+
+### Other high-impact actions
+
 - CE sticker “peel from another cable” workaround — **do not automate**; route CE requests to Drive cert library + human.
 - Promo codes / gift-card portals — never store in public repo or agent chat logs.
 - Strike wipe / full-assortment VVB switch — high-impact; approval gate + Rob escalation at ≥3 strikes.
+- FiveX-style auto +10% at ≤10 stock — **detect + recommend only** until stock signal, floors/ceilings, stale-data, and rollback are tested; do not duplicate writes.
 
 ---
 

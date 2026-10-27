@@ -1,0 +1,14 @@
+# Progress log
+
+| Date | Milestone | Notes |
+| :--- | :--- | :--- |
+| 2026-10-27 | Audit remediation committed | Branch `feature/wiseq-test-lab-assistant`; doc 29 + claim dimensions + template gates |
+| 2026-10-27 | Hermes Desktop notes | Local Hermes v0.22.5 verified via `hermes doctor`; Desktop launcher present |
+| 2026-10-27 | Phase 0 audit pack v1 | Workflow, SoR, bad practices, opportunity map, approval/escalation |
+| 2026-10-27 | Lab foundation + Exp A/B/C | Fixture adapters, golden tests, Hermes skills pack |
+| 2026-10-27 | Experiment register v1 | Keep/extend/replace scorecards for A–C |
+| 2026-10-27 | Rob read-only access guide | `docs/start/rob/read-only-access.md` — wave 1 keys + vendor links |
+| 2026-10-27 | Internal reuse research | Org repos + best practices → `INTERNAL-REUSE-AND-BEST-PRACTICES.md` |
+| 2026-10-27 | Eval stub + inventory merge | `lab/eval/` audit log; mailbox eval_cases; gaps from reuse inventory folded into research doc |
+| 2026-10-27 | Client complete dossier + prep catalog | Doc 30, PREPARATION-CATALOG, OPEN-ASKS-CHECKLIST; pitch/THE-CASE/root README post-manual corrections |
+| 2026-10-27 | Docs decade restructure | `start/` + `10-client`…`70-showcase` + `archive/` + `_internal/`; Approach A letter tracks retired; validate_repo PASS |

@@ -1,0 +1,26 @@
+{
+  "wiseq_nl": {
+    "label": "WiseQ NL",
+    "migration_state": "active",
+    "skus": [
+      {"sku": "101", "online": true, "promise": "before_15_nextday"},
+      {"sku": "234+121", "online": true, "promise": "before_15_nextday"},
+      {"sku": "999-gap", "online": false, "promise": null}
+    ]
+  },
+  "wiseq_electronics": {
+    "label": "WiseQ Electronics",
+    "migration_state": "active",
+    "skus": [
+      {"sku": "101", "online": true, "promise": "2_3_days"},
+      {"sku": "234+121", "online": true, "promise": "2_3_days"}
+    ]
+  },
+  "wiseq_belgie": {
+    "label": "WiseQ België",
+    "migration_state": "phasing_out",
+    "skus": [
+      {"sku": "101", "online": true, "promise": "holding"}
+    ]
+  }
+}

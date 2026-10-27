@@ -1,0 +1,47 @@
+{
+  "QLS_EUROPLUS:NL:school_parcel": {
+    "eur": 10.54,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "QLS_EUROPLUS:BE:school_parcel": {
+    "eur": 10.54,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "LVB:NL:chargers_3xs": {
+    "eur": 2.78,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "LVB:BE:chargers_3xs": {
+    "eur": 5.11,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "LVB:NL:headphones_s": {
+    "eur": 6.27,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "LVB:BE:headphones_s": {
+    "eur": 6.27,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "VVB:NL:chargers_brievenbus": {
+    "eur": 3.77,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "VVB:BE:chargers_brievenbus": {
+    "eur": 6.33,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "POSTNL:NL:light_cable": {
+    "eur": 1.85,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "POSTNL:BE:light_cable": {
+    "eur": 4.42,
+    "source_effective": "client-mastersheet-2026-10-27"
+  },
+  "NOTE:BE:lvb_uplift": {
+    "eur": 0,
+    "kind": "UNVALIDATED_CLIENT_NOTE",
+    "note": "Client reports conflicting +80% (manual) vs +178% (sheet) — not a tariff; do not forecast"
+  }
+}

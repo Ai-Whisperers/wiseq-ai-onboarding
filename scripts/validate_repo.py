@@ -42,12 +42,26 @@ def check(cond: bool, good: str, bad: str) -> None:
     ok(good) if cond else fail(bad)
 
 
+# Stable paths after 2026-10-27 decade restructure (legacy find_doc keys preserved for CI).
+DOC_BY_LEGACY_NUM = {
+    "04": ROOT / "docs/20-offer/01-blueprint.md",
+    "06": ROOT / "docs/20-offer/03-next-steps.md",
+    "12": ROOT / "docs/60-governance/04-specialist-31-hats.md",
+    "17": ROOT / "docs/70-showcase/01-site-concepts.md",
+}
+
+
 def find_doc(num_prefix: str) -> Path:
-    """Resolve docs/**/<NN>-*.md after Approach A folder move."""
+    """Resolve a canonical doc by legacy number alias or unique NN- prefix."""
+    if num_prefix in DOC_BY_LEGACY_NUM:
+        p = DOC_BY_LEGACY_NUM[num_prefix]
+        if not p.is_file():
+            raise FileNotFoundError(f"legacy doc {num_prefix} missing at {p}")
+        return p
     matches = [
         p
         for p in (ROOT / "docs").rglob(f"{num_prefix}-*.md")
-        if "superpowers" not in p.parts
+        if "_internal" not in p.parts and "superpowers" not in p.parts
     ]
     if len(matches) != 1:
         raise FileNotFoundError(f"expected one doc for {num_prefix}-*, found {matches}")
@@ -58,7 +72,7 @@ def client_markdown_files() -> list[Path]:
     docs = [
         p
         for p in (ROOT / "docs").rglob("*.md")
-        if "superpowers" not in p.parts
+        if "_internal" not in p.parts and "superpowers" not in p.parts
     ]
     return docs + [ROOT / "README.md"]
 
@@ -221,10 +235,10 @@ check(m and m.group(1) == str(len(hat_titles)),
       f"hat count in the title matches the body ({len(hat_titles)})",
       f"title says {m.group(1) if m else '?'} hats but body has {len(hat_titles)}")
 
-readme_hat = re.search(r"Specialist Review — (\d+) Hats", readme)
-check(readme_hat and readme_hat.group(1) == str(len(hat_titles)),
-      "README hat count matches doc 12",
-      "README hat count disagrees with doc 12")
+readme_hat = re.search(r"\b(31)\s*[Hh]ats\b", readme)
+check(readme_hat and int(readme_hat.group(1)) == len(hat_titles),
+      "README hat count matches specialist review",
+      "README hat count disagrees with specialist review")
 
 # == 8. retracted-claim guards ================================================
 # Each of these was a published claim that turned out to be false or arithmetically
@@ -248,7 +262,15 @@ def occurrences(pattern, exclude_docs=()):
     return hits
 
 # (1) "250+ reviews" — impossible: reviews depend on buyers replying, not on us.
-review_hits = occurrences(r"250\+ reviews|25 → 250", exclude_docs=("05-AUTOMATION-BACKLOG.md", "19-CRITICAL-REVIEW.md", "23-ACCEPTANCE-CRITERIA.md", "22-AUDIT-RESPONSE.md"))
+review_hits = occurrences(
+    r"250\+ reviews|25 → 250",
+    exclude_docs=(
+        "02-automation-backlog.md",
+        "2026-10-critical-review.md",
+        "02-acceptance-criteria.md",
+        "2026-10-external-audit-response.md",
+    ),
+)
 check(not review_hits,
       "the impossible '250+ reviews' target is not stated as a promise anywhere",
       f"reintroduced at {review_hits} — reviews are not ours to produce; "
@@ -264,9 +286,19 @@ check(not inv_hits,
 
 # (3) GS1 10-pack arithmetic: 139 codes needs 14 packs, not 12 (12 covers 120).
 # doc 08/11/19 quote the old figure inside their correction tables.
-gs1_hits = [h for h in occurrences(r"€733")
-            if not any(x in h for x in ("OSS-INTEGRATIONS", "COMPLIANCE-REGULATORY",
-                                        "CRITICAL-REVIEW", "AUDIT-RESPONSE"))]
+gs1_hits = [
+    h
+    for h in occurrences(r"€733")
+    if not any(
+        x in h
+        for x in (
+            "01-oss-integrations",
+            "04-compliance",
+            "2026-10-critical-review",
+            "2026-10-external-audit-response",
+        )
+    )
+]
 check(not gs1_hits,
       "GS1 is quoted at the corrected 14-pack figure, not the short-by-19 one",
       f"€733 reintroduced at {gs1_hits} — 139 codes = 14 packs of 10 = €854/yr; "
@@ -274,9 +306,11 @@ check(not gs1_hits,
 
 # (4) ChannelDock/5X DO have APIs. "No public API found" was a search failure
 #     that was escalated into a critical risk and nearly killed the deal.
-# doc 08 and doc 19 legitimately quote the phrase inside their retraction notes.
-api_hits = occurrences(r"no public API docs found in searches",
-                       exclude_docs=("08-OSS-INTEGRATIONS.md", "19-CRITICAL-REVIEW.md"))
+# oss-integrations and archived critical review legitimately quote the phrase.
+api_hits = occurrences(
+    r"no public API docs found in searches",
+    exclude_docs=("01-oss-integrations.md", "2026-10-critical-review.md"),
+)
 check(not api_hits,
       "the inherited 'no public API' negative finding is not restated as fact",
       f"reintroduced at {api_hits} — ChannelDock ships a REST API (from Voorraad, "
@@ -296,6 +330,44 @@ check("analysis/" in gitignore,
       "analysis/ is not gitignored — it holds our margins, unbilled labour and "
       "unverified costs, and must never reach the public client repo")
 
+# (7) ChannelDock shipping-rule templates: schema + contradictory mappings.
+templates = ROOT / "data" / "client" / "mastersheet" / "verzendregels-templates.csv"
+if templates.is_file():
+    trows = list(csv.DictReader(templates.open(encoding="utf-8")))
+    required_cols = {"category", "clone_note", "template_ean", "notes",
+                     "validation_status", "source_effective"}
+    check(required_cols <= set(trows[0].keys()) if trows else False,
+          "verzendregels-templates.csv has validation_status + source_effective",
+          f"missing columns {required_cols - set(trows[0].keys() if trows else set())}")
+    allowed = {"OK", "NEEDS_CONFIRMATION", "CASE_BY_CASE"}
+    bad_status = [r["category"] for r in trows
+                  if (r.get("validation_status") or "").strip() not in allowed]
+    check(not bad_status,
+          "every shipping-rule template has a known validation_status",
+          f"unknown status on: {bad_status}")
+    # Rows marked OK must have a 13-digit template_ean that appears in clone_note
+    # when the note cites an EAN (catches the 2× Adapter style mismatch).
+    ean_re = re.compile(r"\b(\d{13})\b")
+    mismatches = []
+    for r in trows:
+        if (r.get("validation_status") or "").strip() != "OK":
+            continue
+        te = (r.get("template_ean") or "").strip()
+        if not te:
+            mismatches.append(f"{r.get('category')}: OK but empty template_ean")
+            continue
+        noted = ean_re.findall(r.get("clone_note") or "")
+        if noted and te not in noted:
+            mismatches.append(
+                f"{r.get('category')}: template_ean {te} not in clone_note EANs {noted}")
+    check(not mismatches,
+          "OK shipping-rule templates have consistent clone_note ↔ template_ean",
+          "; ".join(mismatches))
+    needs = [r["category"] for r in trows
+             if (r.get("validation_status") or "").strip() == "NEEDS_CONFIRMATION"]
+    check(bool(needs),
+          f"known-bad template rows remain flagged NEEDS_CONFIRMATION ({needs})",
+          "expected at least the 2× Adapter / headphone-case flags — restore them")
 
 print(f"\n{checks} checks run, {len(failures)} failures")
 if failures:

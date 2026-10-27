@@ -1,6 +1,14 @@
 tmp/
 *.local
 .env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+lab/.venv/
+lab/eval/out/*
+!lab/eval/out/.gitkeep
+
 
 # INTERNAL — never publish. Cost audits name our margins, our unbilled labour,
 # our weak spots, and unverified estimates. This is a client-facing repo.

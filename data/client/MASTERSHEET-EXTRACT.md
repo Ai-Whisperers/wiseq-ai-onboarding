@@ -54,9 +54,11 @@ Decision frame from the sheet + manual:
 | PostNL | 100–200g | Heavy combos | — | 5.01 | |
 | PostNL | 200–350g | Heavy combos | — | 6.21 | |
 
-**Client ROI notes on sheet:** BE LVB (2–3 days → next day) claimed **+178% sales**; under €16 BE LVB pick&pack pricing differs from above €16 (sheet: €4.45 vs €3.63 example).
+**Client ROI notes on sheet (unvalidated):** BE LVB (2–3 days → next day) claimed **+178% sales** (one cell also mangled as `€178%`). Operating manual separately claims **~+80%**. **Conflict — neither figure enters forecasts** until Rob defines metric, baseline, period, product set, and controls. Under €16 BE LVB pick&pack differs from above €16 (sheet: €4.45 vs €3.63) — link to the correct band before using in calc.
 
-**Agent design:** nightly/weekly job = for each SKU × channel, compare *(carrier cost + storage + fee)* vs *(promised delivery band)* and flag misaligned ChannelDock rules or LVB candidates — exactly the “shippingprice vs deliverytime” check Rob described.
+**Tariff caveats:** some numerical columns embed notes; blank cells exist. Unit-econ models must use typed nullable numbers + separate note fields, with `source_effective` dates — this CSV is input for building the model, not a finished cheapest-method engine.
+
+**Agent design:** nightly/weekly job = for each SKU × channel, compare *(carrier cost + storage + fee)* vs *(promised delivery band)* and flag misaligned ChannelDock rules or LVB candidates — recommendations only until templates validate.
 
 ---
 
@@ -72,8 +74,9 @@ Sheet note: *“deze tabel is gekoppeld aan handleiding”* — clone shipping r
 | 3× cable | 8720618849465 | |
 | Adapters &lt;50g | 8720165910113 (≈101) | |
 | Adapters &gt;50g | 8720618246110 (≈106) | Also refs 88,89,92,94,114,116 |
+| **2× Adapter** | ⚠ `NEEDS_CONFIRMATION` | Clone note cites **8720254493947** (≈310) but `template_ean` is **8720618246110** (adapters &gt;50g) + regel 170 — confirm before any auto-clone |
 | Charge combo | 8720254493947 (≈310) | |
-| Headphone case | 8720618849304 (N.Case) | HERZIEN — rule ids listed |
+| Headphone case | *(blank template_ean)* | `NEEDS_CONFIRMATION` — HERZIEN; rule ids listed only |
 | Headphones | 8720618849083 (Unbreakable) | |
 | MagSafe | 8720254493619 (≈231) | |
 | MagSafe combo | 8720618246677 (≈331) | |
