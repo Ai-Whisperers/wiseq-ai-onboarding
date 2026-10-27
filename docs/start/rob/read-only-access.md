@@ -12,14 +12,22 @@ We already run a full **synthetic lab** without your live systems. The next usef
 
 **We are not asking for write rights.** No price changes, invoices, shipments, or emails sent by us until you explicitly approve a later gate.
 
-## How to send credentials safely
+## How to send credentials (agreed channel)
+
+**Send to Ivan on WhatsApp** using the fill-in block:  
+→ [whatsapp-cred-template.md](whatsapp-cred-template.md)  
+(phone link: https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/whatsapp-cred-template.md)
+
+Ivan will vault them immediately and confirm. Prefer Bitwarden Send if you already use it; WhatsApp → Ivan is OK for this Phase 0 handoff.
 
 | Do | Don’t |
 | :--- | :--- |
-| Use a **password manager share** (Bitwarden Send, 1Password share link) or encrypted note to Ivan | Paste secrets into GitHub issues, Slack screenshots, or this public repo |
-| Name each key `AIW-readonly-YYYY-MM` so you can revoke it later | Reuse an existing FiveX/ChannelDock “full” integration key |
+| WhatsApp **Ivan** (or Bitwarden Send to Ivan) | Paste secrets into GitHub issues, group chats, or this public repo |
+| Use the [WhatsApp template](whatsapp-cred-template.md) labels so nothing is ambiguous | Send one undifferentiated blob of passwords |
+| Name each key `AIW-readonly-YYYY-MM` so you can revoke it later | Reuse an existing FiveX/ChannelDock “full” write integration key |
 | Prefer **separate keys per system** | One shared “god” password for everything |
 | Tell us the **plan tier** (e.g. ChannelDock Voorraad) when you send the key | Assume we can guess entitlements from the key alone |
+| Delete the WhatsApp messages after Ivan says “vaulted” (optional but good) | Leave production write passwords in chat history |
 
 If you prefer, create the keys and stay on a short call while we do a one-time “can we list products?” check — then you keep the secret and we only store what you approve in a vault.
 
@@ -154,28 +162,30 @@ If school DHL labels go through MyParcel: create an API key in the MyParcel acco
 
 ## Checklist you can paste back
 
+**Preferred:** use the full [WhatsApp template](whatsapp-cred-template.md).
+
+Short form:
+
 ```text
 [ ] ChannelDock plan: ________  PIM: yes/no
-[ ] ChannelDock API key+secret created (AIW-readonly-…) — shared via ________
-[ ] bol NL client id+secret — shared via ________
-[ ] bol Electronics client id+secret — shared via ________
+[ ] ChannelDock API key+secret (AIW-readonly-…) — WhatsApp to Ivan
+[ ] bol NL client id+secret — WhatsApp to Ivan
+[ ] bol Electronics client id+secret — WhatsApp to Ivan
 [ ] bol België: still needed? yes/no
-[ ] e-Boekhouden REST token — shared via ________
+[ ] e-Boekhouden REST token — WhatsApp to Ivan
 [ ] Mailbox provider: ________  read method: ________
 [ ] Shopify: collaborator / custom app / skip for now
-[ ] FiveX: sample CSVs attached / API later
-[ ] MyParcel: skip / key shared
+[ ] FiveX: sample CSVs later / API later
 [ ] Raw Handleiding may stay public in GitHub? yes/no
-[ ] Annual online turnover band (for Thuiswinkel): ________
 ```
 
 ---
 
 ## What we do after you send wave 1
 
-1. Store secrets in a vault (never this public repo).  
+1. Ivan vaults secrets (never this public repo) — see AIW receive checklist.  
 2. Run **read-only** smoke tests; fill [`data/stack-map.md`](../../../data/stack-map.md) capability matrix.  
 3. Show you a digest: assortment gaps, ungefrankeerd queue sample, school-offer shape — still **no writes**.  
 4. Only then discuss any draft/write permission.
 
-Related: [Next Steps](../../20-offer/03-next-steps.md) · [Hermes Desktop notes](../../50-evidence/06-hermes-desktop.md) · [Lab](../../../lab/README.md) · [Approval rules](../../50-evidence/07-approval-escalation.md)
+Related: [WhatsApp template](whatsapp-cred-template.md) · [Open asks](open-asks.md) · [Next Steps](../../20-offer/03-next-steps.md) · [Lab](../../../lab/README.md)

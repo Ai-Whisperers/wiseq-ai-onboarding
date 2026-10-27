@@ -19,7 +19,7 @@
 | ☐ | **e-Boekhouden** REST token (read) | Offer / invoice / relation shapes for school path |
 | ☐ | Mailbox provider name + read method | Draft triage only — no auto-send |
 
-Send secrets via **Bitwarden Send** (or similar). Do **not** paste into GitHub issues or chat history that lands in a public repo.
+**Send Wave 1 secrets to Ivan on WhatsApp** using [whatsapp-cred-template.md](whatsapp-cred-template.md) (or Bitwarden Send). Do **not** paste into GitHub issues or the public repo.
 
 ## Wave 2 — calibration & depth
 

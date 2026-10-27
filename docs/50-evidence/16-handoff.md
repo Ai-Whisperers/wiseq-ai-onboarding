@@ -27,10 +27,11 @@
 
 ## Do next (human / after keys)
 
-1. Paste [send-message-keys](../start/rob/send-message-keys.md) to Rob  
-2. Run [DEMO-SCRIPT](../../lab/hermes/DEMO-SCRIPT.md) when scheduled  
-3. After Wave 1 keys: fill [stack-map](../../data/stack-map.md); replace vendor stubs with read clients  
-4. CI: ensure `validate.yml` lab pytest step is on `main` (needs `workflow` scope if push blocked)  
+1. WhatsApp Rob: [send-message-keys](../start/rob/send-message-keys.md) (points him at [cred template](../start/rob/whatsapp-cred-template.md))  
+2. When keys arrive: follow [IVAN-RECEIVE-WHATSAPP](../start/rob/IVAN-RECEIVE-WHATSAPP.md) → vault → smoke  
+3. Run [DEMO-SCRIPT](../../lab/hermes/DEMO-SCRIPT.md) when scheduled  
+4. Fill [stack-map](../../data/stack-map.md); replace vendor stubs with read clients  
+5. CI lab pytest: [CI-WORKFLOW-FOLLOWUP](../_internal/CI-WORKFLOW-FOLLOWUP.md) when token has `workflow` scope  
 
 ## Do not
 

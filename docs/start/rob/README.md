@@ -14,8 +14,10 @@ Short path for the WiseQ decision-maker.
 | 2 | [Blueprint](../../20-offer/01-blueprint.md) | Architecture, phases, **honest cost / TCO** |
 | 3 | [Next steps](../../20-offer/03-next-steps.md) | Asks + **four decisions** + hosting |
 | 3b | [Read-only access guide](read-only-access.md) | How to create **read-only** API keys — no writes |
-| 3c | [Open asks checklist](open-asks.md) | Tick-boxes for Wave 1–2 |
-| 3d | [Send message — keys](send-message-keys.md) | Copy-paste WhatsApp/email |
+| 3c | [WhatsApp cred template](whatsapp-cred-template.md) | **Fill-in block Rob pastes to Ivan** |
+| 3d | [Send message — keys](send-message-keys.md) | What we send Rob first (NL/EN) |
+| 3e | [Open asks checklist](open-asks.md) | Full Wave 1–2 tick list |
+| 3f | [Ivan receive (AIW)](IVAN-RECEIVE-WHATSAPP.md) | Vault + smoke checklist when WhatsApp lands |
 | 4 | [Meeting notes 2026-10-21](../../10-client/04-meeting-2026-10-21.md) | Grootebroek session |
 | 5 | [Terms & ownership](../../60-governance/01-terms.md) | Who owns what, GDPR, exit |
 | 6 | [Site concepts](../../70-showcase/01-site-concepts.md) | Three live demos |

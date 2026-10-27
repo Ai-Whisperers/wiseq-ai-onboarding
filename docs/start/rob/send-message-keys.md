@@ -2,34 +2,42 @@
 <img src="../../../assets/brand/lockup-ink.png" alt="WiseQ × AI Whisperers" height="34">
 </div>
 
-<sub>*For Rob · Copy-paste* · [← Pack](README.md)</sub>
+<sub>*For Rob · Copy-paste WhatsApp* · [← Pack](README.md)</sub>
 
 ---
 
-# Message to Rob — read-only keys + next demo
+# Message to Rob — read-only keys via WhatsApp → Ivan
 
-*Paste into WhatsApp / email. Links assume the public GitHub repo.*
+*Paste into WhatsApp to Rob. He replies **to Ivan** with the fill-in template.*
 
 ---
 
 Hi Rob —
 
-Two short asks so we can move from the synthetic lab to **read-only** digests on your real systems (still no writes, no auto-emails, no price changes).
+Volgende stap: **alleen-lezen** toegang (geen schrijfrechten, geen auto-mails, geen prijsänderungen). Stuur de keys **via WhatsApp naar Ivan**.
 
-**1. Read-only keys (Wave 1)**  
-How-to per system (with vendor links):  
-https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/read-only-access.md  
+**1. Hoe je de keys maakt** (per systeem, met links):  
+https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/read-only-access.md
 
-Tick-list:  
-https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/open-asks.md  
+**2. Plak dit template terug naar Ivan** (invullen wat je hebt):  
+https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/whatsapp-cred-template.md
 
-Please send secrets via **Bitwarden Send** (or similar) — not GitHub/chat paste. Name keys `AIW-readonly-YYYY-MM` so you can revoke them.
+Wave 1 = ChannelDock (plan + API key/secret) · bol per actief account (NL / Electronics / België indien live) · e-Boekhouden REST token · mailbox provider + read methode.
 
-Wave 1 = ChannelDock read API + plan name · bol retailer creds per active account · e-Boekhouden REST read · mailbox provider + read method.
+Noem keys `AIW-readonly-2026-10` zodat je ze later kunt intrekken. Ivan vault ze meteen — niet in GitHub zetten.
 
-**2. Optional 20-min Desktop demo**  
-We can show the school-order / shipping / ops digests on simulated data first (Hermes on the PC you already leave on). Say when you’re free.
-
-Also still useful when you have a minute: 5–10 anonymized school order packs (mail → offer → invoice), and whether the raw Handleiding should stay private (we recommend yes — public extract is enough).
+**3. Optioneel:** 20 min demo op de PC die al 24/7 aanstaat (school/shipping digests op testdata). Zeg wanneer je kunt.
 
 — AI Whisperers
+
+---
+
+## English variant (if preferred)
+
+Hi Rob — next step is **read-only** keys only (no writes). Please WhatsApp them **to Ivan**.
+
+How-to: https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/read-only-access.md  
+
+Paste-back template: https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/start/rob/whatsapp-cred-template.md  
+
+Label keys `AIW-readonly-2026-10`. Ivan vaults immediately; nothing goes in GitHub.
