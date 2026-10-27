@@ -7,5 +7,6 @@
 | 03 | [Meeting Notes](03-MEETING-NOTES-2026-10-21.md) | Working session intel |
 | 07 | [Reuse-First](07-PY-TRANSFER-WISEQ.md) | Bundle spine + capability map |
 | 25 | [Catalog scorecard](25-CATALOG-SCORECARD.md) | EAN / data-quality one-pager |
+| 28 | [Client operating manual](28-CLIENT-OPERATING-MANUAL.md) | Manual ingested — stack corrections |
 
 [← Docs map](../README.md) · [for-ops](../for-ops/README.md)

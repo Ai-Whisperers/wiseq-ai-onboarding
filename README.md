@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-28-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-29-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-31%20topics%20·%20curated%20menu-blueviolet?style=for-the-badge)](#track-c)
@@ -68,7 +68,7 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md) — proposal, company, market, delivery, showcase, governance, reviews — plus shallow role packs for Rob, Kiki, and ops.
+Twenty-nine documents (00 NL + 01–28) in [Approach A folders](docs/README.md) — proposal, company, market, delivery, showcase, governance, reviews — plus shallow role packs for Rob, Kiki, and ops. Client operating manual lives under [`data/client/`](data/client/OPERATING-MANUAL-EXTRACT.md).
 
 **Role packs:** [for-rob](docs/for-rob/README.md) · [for-kiki](docs/for-kiki/README.md) · [for-ops](docs/for-ops/README.md) · [NL](docs/00-nl/00-NL-SAMENVATTING.md) · [full docs map](docs/README.md) · [data attic](data/README.md)
 
@@ -89,6 +89,7 @@ Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md)
 | **03** | [Meeting Notes 2026-10-21](docs/b-company/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
 | **07** | [Reuse-First](docs/b-company/07-PY-TRANSFER-WISEQ.md) | Existing capability mapped to WiseQ problems — incl. the decoded **bundle spine** |
 | **25** | [Catalog scorecard](docs/b-company/25-CATALOG-SCORECARD.md) | One-page EAN / bundle / data-quality snapshot |
+| **28** | [Client operating manual](docs/b-company/28-CLIENT-OPERATING-MANUAL.md) | WiseQ handleiding ingested — stack corrections (e-Boekhouden, 3 bol accounts, …) |
 
 <a id="track-c"></a>
 
@@ -255,6 +256,7 @@ python3 scripts/validate_repo.py
 
 ## 📌 Status
 
+- **2026-10-27** — **client operating manual ingested** (`data/client/`) → doc 28, stack-map draft, claims 48–54 (e-Boekhouden, 3 bol accounts, ChannelDock bundles, FiveX exports).
 - **2026-10-27** — docs Approach A reorg (role packs + track folders); claim sync (GS1 €225, Trustpilot 13/4.5); new docs 25–27 + `data/README.md`.
 - **2026-10-21** — repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
 - **2026-10-22** — **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved). Reuse-first mapping added (docs/07).

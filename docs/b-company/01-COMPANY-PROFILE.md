@@ -58,12 +58,16 @@ Sources (all consulted Oct 21–22, 2026):
 
 - **Shopify** (theme "Wonder", custom working copy versioned per experiment)
 - **Custom B2B layer**: tiered pricing (staffelprijzen), invoice ordering, sample requests, school accounts — custom theme JS
-- **ChannelDock** — inventory/multi-channel stock truth (per founder: stock tracking + purchase logic)
-- **5X** — profitability, segments, advertising on bol.com (per founder)
-- **Bookkeeping software** (unnamed — offers/invoices/relations)
+- **ChannelDock** — inventory/multi-channel stock truth, **native bundles**, shipping rules, returns, inbound (per operating manual 2026-10-27)
+- **FiveX / 5X** — product reports (EAN, stock, sales), LVB replenishment, review export, auto price brake at low stock (manual)
+- **e-Boekhouden** — school offers → invoices → relations (manual; replaces earlier “unnamed” bookkeeping)
+- **bol.com** — three seller accounts: WiseQ NL, WiseQ Electronics, WiseQ België (holding; phasing out)
+- **Carriers / labels** — QLS, PostNL, MyParcel/DHL (B2B), Dymo EAN stickers
+- **Excel Mastersheet** — levertijden / price / gift-card tabs (manual)
 - **Agentic commerce**: agents.md (curated, with anti-hallucination spec corrections), sitemap_agentic_discovery.xml, **live UCP discovery endpoint + MCP shopping server** (Shopify-native UCP, actively customized)
 - **AI imagery**: ChatGPT + Gemini generated hero/category images (CDN filenames)
 - **No email ESP, no review app, no GA4/pixels detected** in homepage source
+- **Brand colours (manual):** light `#26b5b7` · dark `#1648ad`
 
 ## 🗺️ Market position
 

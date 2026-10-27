@@ -52,6 +52,13 @@
 | 45 | ChannelDock = 10-person bootstrapped Amsterdam SaaS (2020, unfunded) — concentration risk | **VERIFIED** | [Tracxn](https://platform.tracxn.com/a/d/company/5fc7e22037f0d01ad776d640/channeldock), Oct 23 | Canonical-spine-is-ours already mitigates; ChannelEngine = escape hatch; note added to doc 04 architecture | Addendum 7 §5 |
 | 46 | GS1 tariffs rise 3.5% Dec 1 2026 (inflatiecorrectie): codepakket 1.000 €196→~€203; WiseQ total €225→~€233/yr | **VERIFIED** | [gs1.nl huidige-tarieven](https://www.gs1.nl/producten-services/digital-identity/huidige-tarieven/), pulled Oct 23 | If pilot starts after Dec 1, quote €233; TCO delta trivial (+€8) | Addendum 4 + freshness pass |
 | 47 | Trustpilot still 13 reviews / 4.5 / all "Review zonder uitnodiging" (organic-only finding holds) | **VERIFIED (re-pulled Oct 23)** | [nl.trustpilot.com/review/wiseq.nl](https://nl.trustpilot.com/review/wiseq.nl), Oct 23 | Invitation experiment unchanged; bol count still STALE (browser down) | Freshness pass |
+| 48 | Bookkeeping package = **e-Boekhouden** (offers → invoices → relations for schools) | **VERIFIED** (client manual) | `data/client/Handleiding_opzet.txt`, ingested Oct 27 | Exact Online was the wrong default assumption | Extract §2 · doc 28 |
+| 49 | Three bol seller accounts: WiseQ NL, WiseQ Electronics, WiseQ België (holding; phasing out) | **VERIFIED** (client manual) | Same | Multi-account connectors required; België exit is a migration | Extract §1 |
+| 50 | ChannelDock supports native product bundles; 300-series must book as bundles on inbound | **VERIFIED** (client manual) | Same | Aligns with spine thesis; PIM may be optional | Extract §4 · Q8 in doc 06 |
+| 51 | FiveX used for EAN/stock/sales reports, LVB replenishment, review export, auto +10% price at ≤10 stock | **VERIFIED** (client manual) | Same | Export path confirmed; public API still unresolved | Extract §2 |
+| 52 | Ops priority scoreboard = bol seller/product reviews (target ≥9), not Trustpilot-first | **VERIFIED** (client manual) | Same | Doc 06 decision #4 updated | Extract §6 |
+| 53 | Brand colours: light `#26b5b7`, dark `#1648ad` | **VERIFIED** (client manual) | Same | Storefront concepts can lock tokens | Extract §7 |
+| 54 | School pipeline: catalog/sample → e-Boekhouden offer → invoice → MyParcel/DHL | **VERIFIED** (client manual) | Same | Flagship Phase-1 path matches their templates | Extract §5 |
 
 *Ledger maintained alongside the repo. When a claim's status changes, the row changes with a dated note — history preserved in git.*
 

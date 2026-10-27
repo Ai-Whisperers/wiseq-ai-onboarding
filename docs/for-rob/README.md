@@ -35,6 +35,7 @@ Short path for the WiseQ decision-maker. Full detail lives in the track folders;
 | Payment / shipping / OSS VAT | [26 · Unit economics](../c-market/26-UNIT-ECONOMICS.md) |
 | “Where does this number come from?” | [27 · Evidence index](../f-governance/27-EVIDENCE-INDEX.md) |
 | Dutch summary | [00 · NL samenvatting](../00-nl/00-NL-SAMENVATTING.md) |
+| Your ops manual → our reading | [28 · Client operating manual](../b-company/28-CLIENT-OPERATING-MANUAL.md) |
 
 **Nothing here needs production access.** Phase 0 starts with the company manual, software inventory, and a few anonymized school orders — see [Next Steps](../a-proposal/06-NEXT-STEPS.md).
 

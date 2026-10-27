@@ -14,14 +14,14 @@ Everything here is **bounded, low-risk, and mostly already in your hands.** None
 
 | # | What we need | Why | Effort on your side | Blocks |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | **The ~30-page company manual** | Lets us map every tool to its MCP/API availability precisely — no guessing | Send a file | Stack map |
-| 2 | **Software inventory** | Which bookkeeping package (Exact? nl.? other?), ChannelDock plan + API access, 5X export access, mailbox provider | A list | Connectors |
+| 1 | **The ~30-page company manual** | Lets us map every tool to its MCP/API availability precisely — no guessing | ✅ **Received 2026-10-27** — [doc 28](../b-company/28-CLIENT-OPERATING-MANUAL.md) · [`data/client/`](../../data/client/OPERATING-MANUAL-EXTRACT.md) | Stack map draft live |
+| 2 | **Software inventory** | ChannelDock plan + API access, mailbox provider, confirm FiveX export; **bookkeeping = e-Boekhouden** (from manual) | Confirm remaining gaps | Connectors |
 | 3 | **Sandbox / dummy data** | A copy of a few anonymized school orders + the offer→invoice flow, so the shadow demo mirrors reality | 30 min to export | Shadow demo |
 | 4 | **Read-only API access** *(when ready)* | Shopify (read-only collaborator) · ChannelDock (API token) · bol Seller (sandbox) · mailbox (app-password, read-only first) | Issue 4 tokens | Live read-only |
 | 5 | **30 minutes with the purchase manager** | Walkthrough of the EAN/Excel workflow — so we design the replacement against reality, not assumptions | One meeting | Purchase intelligence |
 | 6 | **Your annual online turnover (or a rough band)** | **Sets your Thuiswinkel contribution tier — the difference between €518 and €1,294/yr.** We've never asked, and it changes the number we quote. | One number | Trust-mark costing |
 | 7 | **Which ChannelDock plan are you on?** (Gratis / Voorraad / Volledig WMS) **And do you have the PIM module?** | **Correcting an earlier note in our own docs:** ChannelDock *does* have a REST API + webhooks, included from Voorraad (€45/mo) upward and excluded from the free tier. Since you have 230 products and the free tier caps at 100, you should already be on a paid plan — we need to confirm, because it decides what we can automate. | Two answers | Connector build |
-| 8 | **Do you already use ChannelDock PIM's "Bundels samenstellen"?** | If PIM (€200/mo) already composes bundles, part of what we planned to build is a configuration task, not a build. We'd rather tell you that up front than quote you for it. | One answer | Bundle-scope |
+| 8 | **Do you already use ChannelDock PIM's "Bundels samenstellen"?** | Manual already shows **native ChannelDock bundles** (stock→0 → mark bundle → add mothers). PIM (€200/mo) may be redundant — confirm what you pay for vs what you already use. | One answer | Bundle-scope |
 
 ### 🎨 If you want a real storefront (not our 30-minute samples)
 
@@ -31,7 +31,7 @@ design. Building something you would actually ship needs five things we don't ha
 
 | # | What | Why it changes the design |
 | :--- | :--- | :--- |
-| 1 | **Brand assets** — logo files, typefaces, photography, exact colour values | Right now we inferred the brand. Guessing a brand is how you get a site that looks almost-right, which is worse than one that looks clearly different. |
+| 1 | **Brand assets** — logo files, typefaces, photography (exact colours now known: `#26b5b7` / `#1648ad` from manual) | Colours locked; still need logo files, typefaces, photography for a shippable site. |
 | 2 | **Who it's for** — schools (B2B), parents, gift buyers, neurodivergent households? | Each segment needs its own front door. One site trying to serve all four serves none. |
 | 3 | **Which products carry the business** | Which ~20 of the 230 decide the entire homepage. Everything else is browse. |
 | 4 | **Language & voice** — NL, EN, both? How do you talk about hearing safety and children's location data? | Some of this is compliance content that has to be present, not marketing copy we invent. |
@@ -49,7 +49,8 @@ it's a scoped piece of work with its own price, not something bundled in.
 
 | Deliverable | What it proves | Status |
 | :--- | :--- | :--- |
-| `data/stack-map.md` | Every tool from your manual, mapped to connector availability | ⬜ Not started |
+| `data/stack-map.md` | Every tool from your manual, mapped to connector availability | 🟡 **Draft started** (manual ingested) — needs plan tier + tokens |
+| [Doc 28 · Client manual](../b-company/28-CLIENT-OPERATING-MANUAL.md) | Manual translated into proposal corrections | ✅ Done |
 | **EAN registry v1** | The canonical EAN ↔ SKU ↔ component spine, seeded from ChannelDock + Shopify exports — **no live access needed to start** | ⬜ Not started |
 | **Shadow school-order demo** | The pipeline running on dummy data — the "visually, ah, nice" moment promised in the meeting | ⬜ Not started |
 | **Read-only dashboard prototype** | Orders, stock, reviews, channel drift — visible without touching production | ⬜ Not started |
@@ -65,7 +66,7 @@ Four open decisions. Each has a recommended default — if we don't hear otherwi
 | 1 | **Where does the agent run?** | **(a)** your own server, we maintain it · **(b)** our server, dedicated · **(c)** our server, shared capacity · **(d)** you open the account, we do the setup | **(b)** — dedicated on our infrastructure, included in the monthly fee, and the easiest to change later. See [the hosting options](#hosting-options) below. |
 | 2 | **Bookkeeping connection style?** | (a) native API if Exact/nl. supports it · (b) browser-automation MCP | **(a) first, (b) as fallback.** API is cleaner; automation is the safety net for vendors without an API. |
 | 3 | **Review platform priority?** | Trustpilot (international) · Kiyoh (NL standard) · both | **Both.** Trustpilot for international traffic, Kiyoh for the NL school/B2B segment. |
-| 4 | **First revenue engine?** | Review invitations (fastest) · B2B outreach (biggest data advantage) | **Reviews first** — fastest measurable win, and it compounds into every later phase. |
+| 4 | **First revenue engine?** | Review invitations (fastest) · B2B outreach (biggest data advantage) | **Reviews first — bol.com primary, Trustpilot/Kiyoh secondary** (manual’s daily ops already run bol review triage; Trustpilot alone would miss their scoreboard). |
 
 ---
 

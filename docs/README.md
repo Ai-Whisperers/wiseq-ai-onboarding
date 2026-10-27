@@ -50,6 +50,7 @@ Evidence attic (CSVs, research, claims): [`../data/README.md`](../data/README.md
 | 03 | [Meeting Notes 2026-10-21](b-company/03-MEETING-NOTES-2026-10-21.md) |
 | 07 | [Reuse-First / bundle spine](b-company/07-PY-TRANSFER-WISEQ.md) |
 | 25 | [Catalog scorecard](b-company/25-CATALOG-SCORECARD.md) |
+| 28 | [Client operating manual](b-company/28-CLIENT-OPERATING-MANUAL.md) |
 
 ### [`c-market/`](c-market/README.md) — Market & regulation
 | # | Doc |
