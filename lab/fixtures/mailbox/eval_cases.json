@@ -1,0 +1,24 @@
+[
+  {
+    "id": "happy-offer-request",
+    "message_id": "mail_school_001",
+    "expect_status": "ok",
+    "must_have_keys": ["offer", "invoice", "shipment"],
+    "notes": "Full pipeline with approval"
+  },
+  {
+    "id": "catalog-sample-escalation",
+    "message_id": "mail_school_002",
+    "expect_status": "escalated",
+    "must_have_keys": ["reason"],
+    "notes": "Do not invent product lines"
+  },
+  {
+    "id": "awaiting-approval",
+    "message_id": "mail_school_001",
+    "approve": false,
+    "expect_status": "awaiting_approval",
+    "must_have_keys": ["invoice"],
+    "notes": "Commit blocked without APPROVE"
+  }
+]

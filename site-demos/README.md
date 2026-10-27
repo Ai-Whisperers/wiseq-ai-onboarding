@@ -1,6 +1,6 @@
 # Site demos — WiseQ concepts
 
-Three scroll-driven storefront concepts built against WiseQ’s real catalog. Narrative: [docs/e-showcase/17-SITE-CONCEPTS.md](../docs/e-showcase/17-SITE-CONCEPTS.md).
+Three scroll-driven storefront concepts built against WiseQ’s real catalog. Narrative: [docs/70-showcase/01-site-concepts.md](../docs/70-showcase/01-site-concepts.md).
 
 ## Live (GitHub Pages)
 
@@ -16,4 +16,4 @@ Local folders: `v1-cinematic/` · `v2-editorial/` · `v3-webgl/` · `v4-future-s
 
 These are craft samples, not a redesign proposal — nothing deploys to wiseq.nl.
 
-[← Root README](../README.md) · [for-rob pack](../docs/for-rob/README.md)
+[← Root README](../README.md) · [for-rob pack](../docs/start/rob/README.md)

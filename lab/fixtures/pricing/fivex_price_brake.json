@@ -1,0 +1,9 @@
+{
+  "rule": "plus_10_pct_when_stock_le_10",
+  "cases": [
+    {"sku": "101", "account": "wiseq_nl", "stock": 10, "price": 19.99, "expected_action": "recommend_plus_10"},
+    {"sku": "102", "account": "wiseq_nl", "stock": 11, "price": 19.99, "expected_action": "none"},
+    {"sku": "fast-mover", "account": "wiseq_electronics", "stock": 8, "daily_sales": 10, "price": 29.99, "expected_action": "recommend_plus_10_with_warning"}
+  ],
+  "policy": "detect_and_recommend_only — no auto writes in lab"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mail_school_001",
+    "folder": "inbox",
+    "from": "inkoop@demo-basisschool.nl",
+    "subject": "Offerteaanvraag WiseQ Unbreakable headphones (klas 5)",
+    "body": "Goedemorgen,\n\nWij ontvangen graag een offerte voor 30x Unbreakable koptelefoons inclusief 2 jaar garantie en verzending naar Grootebroek.\n\nMet vriendelijke groet,\nInkoop Demo Basisschool",
+    "school_order_id": "SO-2026-001",
+    "parsed": {
+      "school": "Demo Basisschool",
+      "sku_hint": "unbreakable",
+      "qty": 30,
+      "needs_catalog": false,
+      "needs_sample": false
+    }
+  },
+  {
+    "id": "mail_school_002",
+    "folder": "inbox",
+    "from": "dir@demo-stichting.nl",
+    "subject": "Catalogus + proefexemplaar",
+    "body": "Kunnen jullie een catalogus en een proefexemplaar sturen?",
+    "school_order_id": "SO-2026-002",
+    "parsed": {
+      "school": "Demo Stichting",
+      "sku_hint": null,
+      "qty": null,
+      "needs_catalog": true,
+      "needs_sample": true
+    }
+  }
+]

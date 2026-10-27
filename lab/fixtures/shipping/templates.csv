@@ -1,0 +1,16 @@
+category,clone_note,template_ean,notes,validation_status,source_effective
+Lichte kabels,Vergelijkbaar met 207 is EAN: 8720254493077,8720254493077,,OK,client-mastersheet-2026-10-27
+Zware kabels,Vergelijkbaar met 215 is EAN: 8720618246615,8720618246615,,OK,client-mastersheet-2026-10-27
+2x kabel ,Vergelijkbaar met 2x 208 is EAN: 8720618849403,8720618849403,Is niet volledig bij dubbele kabelbestelling naar BE = verzendregel 108,OK,client-mastersheet-2026-10-27
+3x kabel,Vergelijkbaar met 3x 208 is EAN: 8720618849465,8720618849465,,OK,client-mastersheet-2026-10-27
+Adapters < 50gr,Vergelijkbaar met 101 is EAN: 8720165910113,8720165910113,,OK,client-mastersheet-2026-10-27
+Adapters > 50gr,Vergelijkbaar met 106 is EAN: 8720618246110,8720618246110,"88, 89, 92, 94, 114, 116",OK,client-mastersheet-2026-10-27
+2x Adapter ?,Vergelijkbaar met 310 is EAN: 8720254493947,8720618246110,Clone note cites 8720254493947 (≈310) but template_ean is adapters>50g EAN — possible mapping error; also refs regel 170,NEEDS_CONFIRMATION,client-mastersheet-2026-10-27
+Oplaadcombinatie,Vergelijkbaar met 310 is EAN: 8720254493947,8720254493947,,OK,client-mastersheet-2026-10-27
+Koptelefooncase,Vergelijkbaar met N.case is EAN: 8720618849304,,"26, 33, 156, 181, 182,203,204 — template_ean blank; HERZIEN",NEEDS_CONFIRMATION,client-mastersheet-2026-10-27
+USB HUBS,Verschilt per type,,,CASE_BY_CASE,client-mastersheet-2026-10-27
+Koptelefoons,Vergelijkbaar met unbreakable: 8720618849083 ,8720618849083,,OK,client-mastersheet-2026-10-27
+MagSafe,Vergelijkbaar met 231 is EAN: 8720254493619,8720254493619,,OK,client-mastersheet-2026-10-27
+MagSafe Combinatie,Vergelijkbaar met 331 is EAN: 8720618246677,8720618246677,,OK,client-mastersheet-2026-10-27
+Smartwatch,,,,CASE_BY_CASE,client-mastersheet-2026-10-27
+Tag,,,,CASE_BY_CASE,client-mastersheet-2026-10-27

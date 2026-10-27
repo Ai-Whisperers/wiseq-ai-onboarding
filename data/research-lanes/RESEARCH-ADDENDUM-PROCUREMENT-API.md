@@ -20,7 +20,7 @@
 
 **Finding:** the [bol Retailer API v10](https://api.bol.com/retailer/public/redoc/v10/retailer.html) exposes exactly the endpoints the school-order and repricing agents need: offers (CRUD + price/stock update), orders (list/get/cancel), shipments (create/list), invoices (upload), shipping labels, plus product-rank insights. OAuth2 via a bol retailer account. Two operationally important details from the [functional docs](https://api.bol.com/retailer/public//Retailer-API/index.html):
 
-- **A demo environment mirrors all endpoints** (except PDF responses) — Gate 1.2 of the [acceptance criteria](../../docs/f-governance/23-ACCEPTANCE-CRITERIA.md) can be exercised *before* touching live data, the moment we have any retailer account access.
+- **A demo environment mirrors all endpoints** (except PDF responses) — Gate 1.2 of the [acceptance criteria](../../docs/60-governance/02-acceptance-criteria.md) can be exercised *before* touching live data, the moment we have any retailer account access.
 - **Processing is asynchronous** (process-status polling after every write) — the agent design must treat writes as confirm-later, which fits our existing guardrail pattern (never assume success).
 
 **Ledger effect:** claim "bol integration = 2–3 week custom client" (doc 08) stays, now with endpoint-level confirmation.
@@ -29,7 +29,7 @@
 
 ## 3. Bookkeeping: the 5X inconsistency resolved, and a cheaper path exists
 
-**Internal inconsistency found:** [doc 08](../../docs/c-market/08-OSS-INTEGRATIONS.md) states 5X *has* a first-party "API Links" section; [doc 04](../../docs/a-proposal/04-AI-STACK-BLUEPRINT.md) flags 5X's API as **unverified**. Both are half-right, and the distinction matters:
+**Internal inconsistency found:** [doc 08](../../docs/30-market/01-oss-integrations.md) states 5X *has* a first-party "API Links" section; [doc 04](../../docs/20-offer/01-blueprint.md) flags 5X's API as **unverified**. Both are half-right, and the distinction matters:
 
 - 5X **consumes** APIs (it accepts bol.com Client ID/Secret and pulls orders/ads/finance into itself — a client, not a server).
 - Whether 5X **exposes** an API we can read from is **still unresolved**. Ledger row 15 stays open until Gate 1.2 tests it.
