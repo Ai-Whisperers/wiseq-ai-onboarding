@@ -130,4 +130,4 @@ Everything on this list is **bounded, low-risk, and mostly already in WiseQ's ha
 | **[Competitors Deals](../c-market/09-COMPETITORS-DEALS.md)** | Deal shape, benchmarked |
 | **[Devops Masterplan](../d-delivery/15-DEVOPS-MASTERPLAN.md)** | The production-readiness checklist |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

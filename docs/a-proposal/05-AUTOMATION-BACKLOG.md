@@ -135,4 +135,4 @@ become one-star reviews — which is the more valuable thing anyway.
 | **[Py Transfer Wiseq](../b-company/07-PY-TRANSFER-WISEQ.md)** | Proven components we can port from the Paraguay build |
 | **[Next Steps](06-NEXT-STEPS.md)** | The questions that unblock the highest-ROI items |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

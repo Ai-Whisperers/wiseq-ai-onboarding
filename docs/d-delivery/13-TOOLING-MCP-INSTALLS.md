@@ -127,4 +127,4 @@ A **verified** inventory against the live Hermes catalog, with per-operation ins
 | **[Devops Masterplan](15-DEVOPS-MASTERPLAN.md)** | Hosting and storage for these services |
 | **[Next Steps](../a-proposal/06-NEXT-STEPS.md)** | The week-1 checklist |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

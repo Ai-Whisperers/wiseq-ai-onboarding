@@ -77,4 +77,4 @@ Everything in this repo was produced **before** we were engaged and **without a 
 | **[Oss Integrations](../c-market/08-OSS-INTEGRATIONS.md)** | The OSS landscape scan in detail |
 | **[Oss Catalog 100](../c-market/10-OSS-CATALOG-100.md)** | 100 curated repos, ready to reuse |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

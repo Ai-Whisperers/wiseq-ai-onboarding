@@ -272,4 +272,4 @@ One 24/7 AI-operations layer, built on open-source [Hermes Agent](https://github
 | **[Tooling Mcp Installs](../d-delivery/13-TOOLING-MCP-INSTALLS.md)** | The concrete connectors, per operation |
 | **[Site Concepts](../e-showcase/17-SITE-CONCEPTS.md)** | Three working site concepts built against the real catalog |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

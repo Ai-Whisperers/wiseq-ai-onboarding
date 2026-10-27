@@ -73,4 +73,4 @@ One accountable founder-engineer, a real running agent fleet, named specialists 
 | **[12-month TCO](../a-proposal/04-AI-STACK-BLUEPRINT.md#-12-month-total-cost-of-ownership-tco)** | Every cost, every option, one table |
 | **[Terms & Continuity](../f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md)** | What happens if we stop — answered before you ask |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

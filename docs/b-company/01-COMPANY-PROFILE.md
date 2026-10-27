@@ -90,4 +90,4 @@ WiseQ is a **small, well-run Dutch specialist retailer** (founded 2018, 230 SKUs
 | **[Competitors Deals](../c-market/09-COMPETITORS-DEALS.md)** | Who else serves Dutch schools, and at what price |
 | **[Ai Stack Blueprint](../a-proposal/04-AI-STACK-BLUEPRINT.md)** | What we propose to build on top of this |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

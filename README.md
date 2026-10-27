@@ -11,9 +11,9 @@
 [![Documents](https://img.shields.io/badge/documents-28-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
-[![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
-[![Research%20lanes](https://img.shields.io/badge/research%20lanes-5%20independent%20reports-orange?style=for-the-badge)](#evidence-base)
-[![Specialist%20passes](https://img.shields.io/badge/specialist%20passes-48%20roles%20reviewed-pink?style=for-the-badge)](#evidence-base)
+[![OSS%20catalog](https://img.shields.io/badge/OSS-31%20topics%20·%20curated%20menu-blueviolet?style=for-the-badge)](#track-c)
+[![Research](https://img.shields.io/badge/research-5%20lanes%20+%207%20addenda-orange?style=for-the-badge)](#evidence-base)
+[![Specialist%20passes](https://img.shields.io/badge/specialist%20passes-31%20+%2018%20hats-pink?style=for-the-badge)](#evidence-base)
 [![validate](https://img.shields.io/github/actions/workflow/status/Ai-Whisperers/wiseq-ai-onboarding/validate.yml?branch=main&style=for-the-badge)](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/actions/workflows/validate.yml)
 
 [WiseQ](https://www.wiseq.nl) — the Dutch kids-technology brand from Grootebroek, Netherlands ·
@@ -70,7 +70,9 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md) — proposal, company, market, delivery, showcase, governance, reviews — plus shallow role packs for Rob, Kiki, and ops.
 
-### Track A — The proposal *(what we recommend)* · `docs/a-proposal/`
+**Role packs:** [for-rob](docs/for-rob/README.md) · [for-kiki](docs/for-kiki/README.md) · [for-ops](docs/for-ops/README.md) · [NL](docs/00-nl/00-NL-SAMENVATTING.md) · [full docs map](docs/README.md) · [data attic](data/README.md)
+
+### Track A — The proposal *(what we recommend)* · [`docs/a-proposal/`](docs/a-proposal/README.md)
 
 | # | Doc | What's in it | Read if |
 | :--- | :--- | :--- | :--- |
@@ -78,7 +80,7 @@ Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md)
 | **05** | [Automation Backlog](docs/a-proposal/05-AUTOMATION-BACKLOG.md) | 21 automations scored by impact and effort, 🔥 flags on do-first | You want the option list, ranked |
 | **06** | [Next Steps](docs/a-proposal/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for WiseQ**, and the four hosting options | You need to unblock us this week |
 
-### Track B — The company *(who WiseQ is)* · `docs/b-company/`
+### Track B — The company *(who WiseQ is)* · [`docs/b-company/`](docs/b-company/README.md)
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
@@ -90,7 +92,7 @@ Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md)
 
 <a id="track-c"></a>
 
-### Track C — The market & regulation *(what surrounds the plan)* · `docs/c-market/`
+### Track C — The market & regulation *(what surrounds the plan)* · [`docs/c-market/`](docs/c-market/README.md)
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
@@ -100,24 +102,24 @@ Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md)
 | **11** | [Compliance & Regulatory](docs/c-market/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €983–1,759/yr, cert-evidence library plan |
 | **26** | [Unit economics](docs/c-market/26-UNIT-ECONOMICS.md) | PSP / PostNL / OSS VAT — Bancontact trap + €10k threshold |
 
-### Tracks D–G — delivery · showcase · governance · reviews
+### Tracks D–G — [`d-delivery`](docs/d-delivery/README.md) · [`e-showcase`](docs/e-showcase/README.md) · [`f-governance`](docs/f-governance/README.md) · [`g-reviews`](docs/g-reviews/README.md)
 
 | # | Doc | Folder | What's in it |
 | :--- | :--- | :--- | :--- |
-| **12** | [Specialist Review — 31 Hats](docs/g-reviews/12-FIFTY-HATS.md) | `g-reviews/` | 31 independent specialist passes |
-| **13** | [Tooling & Integration Plan](docs/d-delivery/13-TOOLING-MCP-INSTALLS.md) | `d-delivery/` | Connector install list + thin wrappers |
-| **14** | [Hermes / AIW reuse](docs/d-delivery/14-HERMES-JEV-AIW-REUSE.md) | `d-delivery/` | What ports from AIW |
-| **15** | [Delivery Plan](docs/d-delivery/15-DEVOPS-MASTERPLAN.md) | `d-delivery/` | CI/CD, storage, SLOs |
-| **16** | [Delivery Review](docs/d-delivery/16-DEV-TEAM-HATS.md) | `d-delivery/` | 18 build-discipline passes |
-| **17** | [Site Concept Showcase](docs/e-showcase/17-SITE-CONCEPTS.md) | `e-showcase/` | Three live scroll-driven concepts |
-| **18** | [Terms & Ownership](docs/f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md) | `f-governance/` | Ownership, GDPR, liability, exit |
-| **19** | [Critical Review](docs/f-governance/19-CRITICAL-REVIEW.md) | `f-governance/` | Adversarial pass |
-| **20** | [Send-to-Rob](docs/e-showcase/20-SEND-TO-ROB.md) | `e-showcase/` | Outreach copy + demo links |
-| **21** | [Who we are](docs/e-showcase/21-WHO-WE-ARE.md) | `e-showcase/` | People + Dutch capability |
-| **22** | [Audit response](docs/f-governance/22-AUDIT-RESPONSE.md) | `f-governance/` | Oct-22 external audit reply |
-| **23** | [Acceptance criteria](docs/f-governance/23-ACCEPTANCE-CRITERIA.md) | `f-governance/` | Stage gates before pilot |
-| **24** | [Agent infrastructure](docs/d-delivery/24-AGENT-INFRASTRUCTURE.md) | `d-delivery/` | Hermes on WiseQ’s server |
-| **27** | [Evidence index](docs/f-governance/27-EVIDENCE-INDEX.md) | `f-governance/` | Claim → artifact map |
+| **12** | [Specialist Review — 31 Hats](docs/g-reviews/12-FIFTY-HATS.md) | [`g-reviews/`](docs/g-reviews/README.md) | 31 independent specialist passes |
+| **13** | [Tooling & Integration Plan](docs/d-delivery/13-TOOLING-MCP-INSTALLS.md) | [`d-delivery/`](docs/d-delivery/README.md) | Connector install list + thin wrappers |
+| **14** | [Hermes / AIW reuse](docs/d-delivery/14-HERMES-JEV-AIW-REUSE.md) | [`d-delivery/`](docs/d-delivery/README.md) | What ports from AIW |
+| **15** | [Delivery Plan](docs/d-delivery/15-DEVOPS-MASTERPLAN.md) | [`d-delivery/`](docs/d-delivery/README.md) | CI/CD, storage, SLOs |
+| **16** | [Delivery Review](docs/d-delivery/16-DEV-TEAM-HATS.md) | [`d-delivery/`](docs/d-delivery/README.md) | 18 build-discipline passes |
+| **17** | [Site Concept Showcase](docs/e-showcase/17-SITE-CONCEPTS.md) | [`e-showcase/`](docs/e-showcase/README.md) | Three live scroll-driven concepts |
+| **18** | [Terms & Ownership](docs/f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md) | [`f-governance/`](docs/f-governance/README.md) | Ownership, GDPR, liability, exit |
+| **19** | [Critical Review](docs/f-governance/19-CRITICAL-REVIEW.md) | [`f-governance/`](docs/f-governance/README.md) | Adversarial pass |
+| **20** | [Send-to-Rob](docs/e-showcase/20-SEND-TO-ROB.md) | [`e-showcase/`](docs/e-showcase/README.md) | Outreach copy + demo links |
+| **21** | [Who we are](docs/e-showcase/21-WHO-WE-ARE.md) | [`e-showcase/`](docs/e-showcase/README.md) | People + Dutch capability |
+| **22** | [Audit response](docs/f-governance/22-AUDIT-RESPONSE.md) | [`f-governance/`](docs/f-governance/README.md) | Oct-22 external audit reply |
+| **23** | [Acceptance criteria](docs/f-governance/23-ACCEPTANCE-CRITERIA.md) | [`f-governance/`](docs/f-governance/README.md) | Stage gates before pilot |
+| **24** | [Agent infrastructure](docs/d-delivery/24-AGENT-INFRASTRUCTURE.md) | [`d-delivery/`](docs/d-delivery/README.md) | Hermes on WiseQ’s server |
+| **27** | [Evidence index](docs/f-governance/27-EVIDENCE-INDEX.md) | [`f-governance/`](docs/f-governance/README.md) | Claim → artifact map |
 
 ---
 
@@ -228,17 +230,17 @@ This proposal is not built on assumptions. Every claim traces to a verified arti
 
 ```
 wiseq-ai-onboarding/
-├── docs/                    Approach A: role packs + track folders (00–27)
-│   ├── for-rob/ for-kiki/ for-ops/
+├── docs/                    Approach A — see docs/README.md
+│   ├── for-rob/ for-kiki/ for-ops/   role packs
 │   ├── a-proposal/ b-company/ c-market/
 │   ├── d-delivery/ e-showcase/ f-governance/ g-reviews/
-│   └── 00-nl/
+│   └── 00-nl/                       NL samenvatting
 ├── data/                    Evidence attic — see data/README.md
 │   ├── CLAIMS-LEDGER.md · leadgen-summary.md · spine CSVs
 │   ├── research-lanes/      5 lanes + dossier + 7 addenda
 │   └── oss/                 31 topic JSON files (6 stubs)
 ├── assets/brand/            Logo variants, hero, OG
-├── site-demos/              3 scroll-driven concepts
+├── site-demos/              Live concepts — see site-demos/README.md
 ├── scripts/validate_repo.py CI integrity gate
 └── .github/workflows/       validate · gitleaks · zizmor
 ```
@@ -279,7 +281,7 @@ This repository is the collaboration surface. **Open an issue or comment on any 
 | :--- | :--- |
 | **Prepared by** | [AI Whisperers](https://github.com/Ai-Whisperers) — AI systems & automation studio |
 | **Prepared for** | Rob Nyari & the WiseQ team · [wiseq.nl](https://www.wiseq.nl) |
-| **Revision** | 2026-10-22 |
+| **Revision** | 2026-10-27 |
 | **Working session** | 2026-10-21 · Grootebroek, NL ([notes](docs/b-company/03-MEETING-NOTES-2026-10-21.md)) |
 | **License** | See repository · client-proposal material, citation with attribution welcome |
 

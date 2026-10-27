@@ -79,4 +79,4 @@ The NL e-commerce tooling layer is **thin at the edges and absent in the middle*
 | **[Ai Stack Blueprint](../a-proposal/04-AI-STACK-BLUEPRINT.md)** | Which integrations the blueprint depends on |
 | **[Compliance Regulatory](11-COMPLIANCE-REGULATORY.md)** | The compliance constraints on each choice |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

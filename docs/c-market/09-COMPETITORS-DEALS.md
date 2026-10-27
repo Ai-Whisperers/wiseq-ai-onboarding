@@ -93,4 +93,4 @@ Four real competitors serve Dutch schools — iClever, Puro, Alpine, Heutink —
 | **[Next Steps](../a-proposal/06-NEXT-STEPS.md)** | Turning the benchmark into a meeting |
 | **[Automation Backlog](../a-proposal/05-AUTOMATION-BACKLOG.md)** | What we can out-build the incumbents on |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

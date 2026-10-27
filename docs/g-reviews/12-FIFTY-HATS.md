@@ -212,4 +212,4 @@ the commercial story.
 | **[Ai Stack Blueprint](../a-proposal/04-AI-STACK-BLUEPRINT.md)** | What the review changes about the plan |
 | **[Next Steps](../a-proposal/06-NEXT-STEPS.md)** | The decisions the review actually moves |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

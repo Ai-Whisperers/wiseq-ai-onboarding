@@ -80,4 +80,4 @@ The demos are done, live, and verified. The message above is copy-paste ready. T
 | **[Next Steps](../a-proposal/06-NEXT-STEPS.md)** | The three files, the four decisions, and the Phase-0 commitments |
 | **[Terms, Ownership & Continuity](../f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md)** | What ownership and exit look like — for the conversation after this one |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

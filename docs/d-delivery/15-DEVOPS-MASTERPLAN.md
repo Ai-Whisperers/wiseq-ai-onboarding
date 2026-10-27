@@ -128,4 +128,4 @@ Production-readiness, decided in advance: CI hardening (zizmor, gitleaks, branch
 | **[Dev Team Hats](16-DEV-TEAM-HATS.md)** | The build team's ranked improvements |
 | **[Ai Stack Blueprint](../a-proposal/04-AI-STACK-BLUEPRINT.md)** | The stack this plan hardens |
 
-> **Not sure where to start?** The [README](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map) routes by role — decision-maker, technical, or finance.
+> **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).
