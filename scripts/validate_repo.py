@@ -42,6 +42,27 @@ def check(cond: bool, good: str, bad: str) -> None:
     ok(good) if cond else fail(bad)
 
 
+def find_doc(num_prefix: str) -> Path:
+    """Resolve docs/**/<NN>-*.md after Approach A folder move."""
+    matches = [
+        p
+        for p in (ROOT / "docs").rglob(f"{num_prefix}-*.md")
+        if "superpowers" not in p.parts
+    ]
+    if len(matches) != 1:
+        raise FileNotFoundError(f"expected one doc for {num_prefix}-*, found {matches}")
+    return matches[0]
+
+
+def client_markdown_files() -> list[Path]:
+    docs = [
+        p
+        for p in (ROOT / "docs").rglob("*.md")
+        if "superpowers" not in p.parts
+    ]
+    return docs + [ROOT / "README.md"]
+
+
 print("== 1. README doc links")
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 doc_links = re.findall(r"\]\((docs/[^)#]+)", readme)
@@ -126,7 +147,7 @@ print("== 8. site concept links are live, not repo paths")
 # repo-path hrefs surviving.
 PAGES = "https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/"
 CONCEPTS = ["v1-cinematic", "v2-editorial", "v3-webgl"]
-d17_low = (ROOT / "docs/17-SITE-CONCEPTS.md").read_text(encoding="utf-8").lower()
+d17_low = find_doc("17").read_text(encoding="utf-8").lower()
 rd_low = (ROOT / "README.md").read_text(encoding="utf-8").lower()
 for v in CONCEPTS:
     check(f"{PAGES}{v}/index.html" in d17_low,
@@ -143,7 +164,7 @@ print("== 6. commercial completeness")
 # A proposal that never states its own price cannot be evaluated. Guard the two
 # documents a buyer reads first, plus hat-count drift in the specialist review.
 price_patterns = ["\u20ac3,500", "\u20ac8,000"]
-d04 = (ROOT / "docs/04-AI-STACK-BLUEPRINT.md").read_text(encoding="utf-8")
+d04 = find_doc("04").read_text(encoding="utf-8")
 check(all(x in d04 for x in price_patterns),
       "doc 04 states our actual prices (pilot + Phase 1)",
       "doc 04 must state our own prices, not just market benchmarks")
@@ -170,7 +191,7 @@ check(not _payback_assertions,
 
 # The four hosting options must agree on price between 04 and 06, or the client
 # will find two different numbers for the same choice.
-d06 = (ROOT / "docs/06-NEXT-STEPS.md").read_text(encoding="utf-8")
+d06 = find_doc("06").read_text(encoding="utf-8")
 check("\u20ac250" in d06 and "\u20ac175" in d06,
       "doc 06 prices every hosting option (care plan + shared rate)",
       "doc 06 must price hosting options (a) and (c) explicitly")
@@ -181,8 +202,13 @@ check("\u20ac20/mo VPS" not in readme,
       "README carries no stale fixed-cost claim",
       "README still claims a fixed \u20ac20/mo VPS; it must point at the four hosting options")
 
+# Live GS1 figure after addendum 4 (1,000-pack), not the stacked 10-pack floor.
+check("\u20ac225" in d04,
+      "doc 04 states GS1 at \u20ac225/yr (1,000-pack)",
+      "doc 04 must state GS1 \u20ac225/yr after the 1,000-pack correction")
+
 print("== 7. specialist-review integrity")
-d12 = (ROOT / "docs/12-FIFTY-HATS.md").read_text(encoding="utf-8")
+d12 = find_doc("12").read_text(encoding="utf-8")
 hat_titles = re.findall(r"^### \d+\.\s+(.+)$", d12, re.M)
 normalised = [re.sub(r"\s*\(revisited\)\s*$", "", t).strip().lower() for t in hat_titles]
 duplicates = sorted({t for t in normalised if normalised.count(t) > 1})
@@ -206,7 +232,7 @@ check(readme_hat and readme_hat.group(1) == str(len(hat_titles)),
 # at least once, so each gets a machine check. See analysis/RETRACTION-*.md (internal).
 print("== 8. retracted-claim guards")
 
-CLIENT_MD = [p for p in (ROOT / "docs").glob("*.md")] + [ROOT / "README.md"]
+CLIENT_MD = client_markdown_files()
 client_text = {p: p.read_text(encoding="utf-8") for p in CLIENT_MD}
 
 def occurrences(pattern, exclude_docs=()):

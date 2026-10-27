@@ -21,7 +21,7 @@ Pulled live Oct 23, 2026 from [gs1.nl digital-identity tariffs](https://www.gs1.
 2. Post-audit correction: "14 × 10-packs = €854/yr" — **right frequency, wrong packaging**: stacking fourteen 10-packs (€61… now €64 each) is *more expensive* than buying one 1,000-pack.
 3. **Correct answer: one codepakket 1.000 = €196/yr + €29 contribution = €225/yr excl. VAT** — covering not just the 139 needed GTINs (114 components + 25 bundles) but the **entire 230-SKU catalog with 4× headroom.**
 
-The TCO table in [doc 04](../../docs/04-AI-STACK-BLUEPRINT.md) drops by **€629/yr** in every option band (from €19,317–20,693 to **€18,688–20,064** for the recommended option).
+The TCO table in [doc 04](../../docs/a-proposal/04-AI-STACK-BLUEPRINT.md) drops by **€629/yr** in every option band (from €19,317–20,693 to **€18,688–20,064** for the recommended option).
 
 **Micro-engagement economics, restated:** "Full EAN coverage for the whole catalog" now costs WiseQ **€225/yr in licenses + our one-time fee for the data work** — the strongest possible no-brainer offer inside the pre-pilot window. And note the clock: the +3.5% tariff bump lands **Dec 1, 2026** — registering before then is trivially cheaper (a few euros; the real reason to move is Q4 listing quality, not the tariff).
 

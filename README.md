@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-25-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-28-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-100%20curated%20repos-blueviolet?style=for-the-badge)](#track-c)
@@ -29,11 +29,12 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 | You are… | Read this first | Then |
 | :--- | :--- | :--- |
-| **Rob Nyari** — E-Commerce CEO, decision-maker | [The one-paragraph pitch](#the-one-paragraph-pitch) → [04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | [06 · Next Steps](docs/06-NEXT-STEPS.md) for the four decisions we need from you |
-| **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/04-AI-STACK-BLUEPRINT.md#cost-model-honest) | [09 · Competitors & Deals](docs/09-COMPETITORS-DEALS.md) for market pricing benchmarks |
-| **An operations / purchase lead** | [05 · Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) — every opportunity, ROI-scored | [07 · Reuse-First](docs/07-PY-TRANSFER-WISEQ.md) for the bundle-spine decode |
-| **A technical evaluator or IT reviewer** | [04 · Architecture](docs/04-AI-STACK-BLUEPRINT.md) + [15 · Delivery Plan](docs/15-DEVOPS-MASTERPLAN.md) | [13 · Tooling & Integration Plan](docs/13-TOOLING-MCP-INSTALLS.md) for the concrete connector list |
-| **New to this repository** | [Document map](#document-map) — 16 docs, four tracks | Everything else in this table is detail |
+| **Rob Nyari** — E-Commerce CEO, decision-maker | [for-rob pack](docs/for-rob/README.md) → [04 · Blueprint](docs/a-proposal/04-AI-STACK-BLUEPRINT.md) | [06 · Next Steps](docs/a-proposal/06-NEXT-STEPS.md) for the four decisions |
+| **AIW co-founder (Kiki)** | [for-kiki pack](docs/for-kiki/README.md) | [Terms](docs/f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md) · [Evidence](docs/f-governance/27-EVIDENCE-INDEX.md) |
+| **A founder or director** deciding whether to commission this | [The case in one page](#the-case-in-one-page) → [Cost model](docs/a-proposal/04-AI-STACK-BLUEPRINT.md#cost-model-honest) | [09 · Competitors & Deals](docs/c-market/09-COMPETITORS-DEALS.md) |
+| **An operations / purchase lead** | [for-ops pack](docs/for-ops/README.md) → [05 · Backlog](docs/a-proposal/05-AUTOMATION-BACKLOG.md) | [25 · Catalog scorecard](docs/b-company/25-CATALOG-SCORECARD.md) |
+| **A technical evaluator or IT reviewer** | [04 · Architecture](docs/a-proposal/04-AI-STACK-BLUEPRINT.md) + [15 · Delivery](docs/d-delivery/15-DEVOPS-MASTERPLAN.md) | [13 · Tooling](docs/d-delivery/13-TOOLING-MCP-INSTALLS.md) |
+| **New to this repository** | [Docs folder map](docs/README.md) | [Document map](#document-map) below |
 
 ---
 
@@ -55,10 +56,10 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 | :--- | :--- | :--- | :--- |
 | **School orders eat 4-hour mornings** | Founder-confirmed in working session | School-order pipeline: email → offer → invoice → ChannelDock booking | **4h → <15 min** human touch |
 | **Bundle recombination pollutes purchase data** | A cable sells inside 4 adapter combinations; ChannelDock can't model it | Component↔bundle graph in a canonical EAN registry | Clean, true purchase data |
-| **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry — **€854/yr** for the 139 inventory-critical codes (114 components + 25 bundles), **€1,403/yr** for all 230 | 230/230 registered |
+| **0 of 230 SKUs carry an EAN barcode** | Programmatic Shopify audit | EAN/GTIN backfill + GS1 registry — **€225/yr** for the whole catalog (1,000-pack + contribution; covers 139 critical codes and all 230) | 230/230 registered |
 | **77 bundle-products (33%) have no component map** | Same audit — component→bundle mapping lives in human memory | Decoded **bundle spine**: 114 component SKUs + 25 bundles, 0 unresolved | Fully decomposed |
 | **Purchase data assembled by hand in Excel** | 6-month rolling average per EAN, one costly error/year | Nightly purchase-intelligence job | Daily, automatic, correct |
-| **25 reviews, no automated invitations** | Trustpilot 4.4/5 but only 25 reviews | Post-delivery review engine | Every order invited; TrustScore defended |
+| **13 reviews, no automated invitations** | Trustpilot 4.5/5 but only 13 reviews (Oct 23; all organic) | Post-delivery review engine | Every order invited; TrustScore defended |
 | **Scamadviser "Trust Score 0" flag** | Algorithmic remediation pending | Trust-profile remediation | Flag cleared |
 
 ---
@@ -67,52 +68,56 @@ prepared by [AI Whisperers](https://github.com/Ai-Whisperers)
 
 ## 🗺️ Document map
 
-Twenty-five documents (00 NL + 01–24) — the complete evidence file: research, proposal, demos, audit response, acceptance gates, and the agent-infrastructure blueprint.
+Twenty-eight documents (00 NL + 01–27) in [Approach A folders](docs/README.md) — proposal, company, market, delivery, showcase, governance, reviews — plus shallow role packs for Rob, Kiki, and ops.
 
-### Track A — The proposal *(what we recommend)*
+### Track A — The proposal *(what we recommend)* · `docs/a-proposal/`
 
 | # | Doc | What's in it | Read if |
 | :--- | :--- | :--- | :--- |
-| **04** | [AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — architecture, phase-by-phase plan, honest cost model, guardrails | You want the sell. Start here. |
-| **05** | [Automation Backlog](docs/05-AUTOMATION-BACKLOG.md) | 21 automations scored by impact and effort, 🔥 flags on do-first | You want the option list, ranked |
-| **06** | [Next Steps](docs/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for WiseQ**, and the four hosting options | You need to unblock us this week |
+| **04** | [AI Stack Blueprint](docs/a-proposal/04-AI-STACK-BLUEPRINT.md) | **The main proposal** — architecture, phase-by-phase plan, honest cost model, guardrails | You want the sell. Start here. |
+| **05** | [Automation Backlog](docs/a-proposal/05-AUTOMATION-BACKLOG.md) | 21 automations scored by impact and effort, 🔥 flags on do-first | You want the option list, ranked |
+| **06** | [Next Steps](docs/a-proposal/06-NEXT-STEPS.md) | The ask-list, our Phase-0 commitments, **four decisions for WiseQ**, and the four hosting options | You need to unblock us this week |
 
-### Track B — The company *(who WiseQ is)*
+### Track B — The company *(who WiseQ is)* · `docs/b-company/`
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
-| **01** | [Company Profile](docs/01-COMPANY-PROFILE.md) | Verified registry, timeline, channels, catalog, tech stack |
-| **02** | [What We've Done](docs/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
-| **03** | [Meeting Notes 2026-10-21](docs/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
-| **07** | [Reuse-First](docs/07-PY-TRANSFER-WISEQ.md) | Existing capability mapped to WiseQ problems — incl. the decoded **bundle spine** |
+| **01** | [Company Profile](docs/b-company/01-COMPANY-PROFILE.md) | Verified registry, timeline, channels, catalog, tech stack |
+| **02** | [What We've Done](docs/b-company/02-WHAT-WE-DID.md) | Research dossier, market scan, lead-gen — with artifacts |
+| **03** | [Meeting Notes 2026-10-21](docs/b-company/03-MEETING-NOTES-2026-10-21.md) | Business intel from our first working session |
+| **07** | [Reuse-First](docs/b-company/07-PY-TRANSFER-WISEQ.md) | Existing capability mapped to WiseQ problems — incl. the decoded **bundle spine** |
+| **25** | [Catalog scorecard](docs/b-company/25-CATALOG-SCORECARD.md) | One-page EAN / bundle / data-quality snapshot |
 
 <a id="track-c"></a>
 
-### Track C — The market & regulation *(what surrounds the plan)*
+### Track C — The market & regulation *(what surrounds the plan)* · `docs/c-market/`
 
 | # | Doc | What's in it |
 | :--- | :--- | :--- |
-| **08** | [OSS & Integrations](docs/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feed OSS landscape, EAN fix costs (€854/yr for 139 codes; €1,403/yr for all 230), NL trust marks, school collectives |
-| **09** | [Competitors & Deals](docs/09-COMPETITORS-DEALS.md) | Real competitor map (iClever / Puro / Alpine / Heutink), deal pricing benchmarks, new opportunities |
-| **10** | [OSS Catalog — 100 repos](docs/10-OSS-CATALOG-100.md) | 31 topics · 420 found · **100 curated** by stack layer, adopted additions (UVdesk, Umami, BillionMail, QuestPDF) |
-| **11** | [Compliance & Regulatory](docs/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €983–1,759/yr, cert-evidence library plan |
+| **08** | [OSS & Integrations](docs/c-market/08-OSS-INTEGRATIONS.md) | Bol/Shopify/GS1/feed OSS landscape, EAN fix costs (€225/yr for the whole catalog via GS1 1,000-pack), NL trust marks, school collectives |
+| **09** | [Competitors & Deals](docs/c-market/09-COMPETITORS-DEALS.md) | Real competitor map (iClever / Puro / Alpine / Heutink), deal pricing benchmarks, new opportunities |
+| **10** | [OSS Catalog — 100 repos](docs/c-market/10-OSS-CATALOG-100.md) | 31 topics · ~100 listed by layer (6 topic JSON stubs still empty — see [data/README](data/README.md)) |
+| **11** | [Compliance & Regulatory](docs/c-market/11-COMPLIANCE-REGULATORY.md) | EN 71 / 62115 / RED (2025 cyber layer), GPSR, Thuiswinkel €983–1,759/yr, cert-evidence library plan |
+| **26** | [Unit economics](docs/c-market/26-UNIT-ECONOMICS.md) | PSP / PostNL / OSS VAT — Bancontact trap + €10k threshold |
 
-### Track D — Deep analysis *(the stress tests)*
+### Tracks D–G — delivery · showcase · governance · reviews
 
-| # | Doc | What's in it |
-| :--- | :--- | :--- |
-| **12** | [Specialist Review — 31 Hats](docs/12-FIFTY-HATS.md) | 31 independent passes — product liability, bol account health, marketplace fees, VAT/EPR, accessibility, purchasing co-ops, school privacy, plus engineering and delivery review |
-| **13** | [Tooling & Integration Plan](docs/13-TOOLING-MCP-INSTALLS.md) | Connector install list, three thin wrappers to build, week-by-week checklist |
-| **15** | [Delivery Plan](docs/15-DEVOPS-MASTERPLAN.md) | CI/CD, storage & database architecture, SLOs, phased build checklist |
-| **16** | [Delivery Review — How We Build](docs/16-DEV-TEAM-HATS.md) | **18 disciplines** — PM to Support Engineer; each states what it would flag, keep, and build first |
-| **17** | [Site Concept Showcase](docs/17-SITE-CONCEPTS.md) | **Three built scroll-driven concepts** against WiseQ's real 229-product catalog — cinematic, editorial, and a WebGL constellation that visualises the bundle spine |
-| **18** | [Working Together — Terms & Ownership](docs/18-TERMS-OWNERSHIP-CONTINUITY.md) | Who owns what, processor-vs-controller, GDPR Art. 28, continuity and exit — before signing, not in week three | You want the boring-but-decisive page |
-| **19** | [Critical Review](docs/19-CRITICAL-REVIEW.md) | The adversarial pass on this proposal: what was wrong, what we fixed, what is still open | You want to see how this was stress-tested |
-| **20** | [Send-to-Rob](docs/20-SEND-TO-ROB.md) | The copy-paste outreach message that turns the demos into a scheduled next step | You're about to send the link |
-| **21** | [Who we are](docs/21-WHO-WE-ARE.md) | People page: names, roles, Dutch-capability evidence | ✅ |
-| **22** | [Audit response](docs/22-AUDIT-RESPONSE.md) | Point-by-point response to the Oct-22 external audit | ✅ |
-| **23** | [Acceptance criteria](docs/23-ACCEPTANCE-CRITERIA.md) | Stage gates that define “done” — agreed before the pilot | ✅ |
-| **24** | [Agent infrastructure](docs/24-AGENT-INFRASTRUCTURE.md) | The Hermes setup that runs the project — profile, MCPs, skills, rails | ✅ |
+| # | Doc | Folder | What's in it |
+| :--- | :--- | :--- | :--- |
+| **12** | [Specialist Review — 31 Hats](docs/g-reviews/12-FIFTY-HATS.md) | `g-reviews/` | 31 independent specialist passes |
+| **13** | [Tooling & Integration Plan](docs/d-delivery/13-TOOLING-MCP-INSTALLS.md) | `d-delivery/` | Connector install list + thin wrappers |
+| **14** | [Hermes / AIW reuse](docs/d-delivery/14-HERMES-JEV-AIW-REUSE.md) | `d-delivery/` | What ports from AIW |
+| **15** | [Delivery Plan](docs/d-delivery/15-DEVOPS-MASTERPLAN.md) | `d-delivery/` | CI/CD, storage, SLOs |
+| **16** | [Delivery Review](docs/d-delivery/16-DEV-TEAM-HATS.md) | `d-delivery/` | 18 build-discipline passes |
+| **17** | [Site Concept Showcase](docs/e-showcase/17-SITE-CONCEPTS.md) | `e-showcase/` | Three live scroll-driven concepts |
+| **18** | [Terms & Ownership](docs/f-governance/18-TERMS-OWNERSHIP-CONTINUITY.md) | `f-governance/` | Ownership, GDPR, liability, exit |
+| **19** | [Critical Review](docs/f-governance/19-CRITICAL-REVIEW.md) | `f-governance/` | Adversarial pass |
+| **20** | [Send-to-Rob](docs/e-showcase/20-SEND-TO-ROB.md) | `e-showcase/` | Outreach copy + demo links |
+| **21** | [Who we are](docs/e-showcase/21-WHO-WE-ARE.md) | `e-showcase/` | People + Dutch capability |
+| **22** | [Audit response](docs/f-governance/22-AUDIT-RESPONSE.md) | `f-governance/` | Oct-22 external audit reply |
+| **23** | [Acceptance criteria](docs/f-governance/23-ACCEPTANCE-CRITERIA.md) | `f-governance/` | Stage gates before pilot |
+| **24** | [Agent infrastructure](docs/d-delivery/24-AGENT-INFRASTRUCTURE.md) | `d-delivery/` | Hermes on WiseQ’s server |
+| **27** | [Evidence index](docs/f-governance/27-EVIDENCE-INDEX.md) | `f-governance/` | Claim → artifact map |
 
 ---
 
@@ -135,9 +140,9 @@ Twenty-five documents (00 NL + 01–24) — the complete evidence file: research
                           └────────┘
 ```
 
-Runs wherever you choose — **four hosting options**, from your own server maintained by us to shared capacity at a reduced rate. See [06 · Hosting options](docs/06-NEXT-STEPS.md#hosting-options). Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
+Runs wherever you choose — **four hosting options**, from your own server maintained by us to shared capacity at a reduced rate. See [06 · Hosting options](docs/a-proposal/06-NEXT-STEPS.md#hosting-options). Credentials live in a vault — never in chat, never in this repo. Every automated action is logged to an audit trail, and **money-touching steps keep human approval** until trust is earned.
 
-Full detail, phase by phase: **[04 · AI Stack Blueprint](docs/04-AI-STACK-BLUEPRINT.md)**
+Full detail, phase by phase: **[04 · AI Stack Blueprint](docs/a-proposal/04-AI-STACK-BLUEPRINT.md)**
 
 ---
 
@@ -176,7 +181,7 @@ Read-only dashboard   recombination         Content cadence        Supplier
 
 ## 🎨 Built, not described
 
-*[Site Concept Showcase](docs/17-SITE-CONCEPTS.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Proof that this team ships working software, not slideware.
+*[Site Concept Showcase](docs/e-showcase/17-SITE-CONCEPTS.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Proof that this team ships working software, not slideware.
 
 <table>
 <tr>
@@ -210,7 +215,10 @@ This proposal is not built on assumptions. Every claim traces to a verified arti
 | **Consolidated dossier** | The one-page cross-cutting synthesis | [`data/research-lanes/WISEQ-DOSSIER.md`](data/research-lanes/WISEQ-DOSSIER.md) |
 | **B2B lead-gen (NL)** | 8,673 organizations mapped · 857 with verified emails · methodology and counts only | [`data/leadgen-summary.md`](data/leadgen-summary.md) |
 | **Bundle spine** | 114 component SKUs + 25 bundles, referentially validated | [`data/wiseq-bundle-spine.csv`](data/wiseq-bundle-spine.csv) · [`data/wiseq-component-registry.csv`](data/wiseq-component-registry.csv) |
-| **OSS catalog** | 31 topics · 420 repos found · 100 curated by stack layer | [`docs/10-OSS-CATALOG-100.md`](docs/10-OSS-CATALOG-100.md) · raw JSON in [`data/oss/`](data/oss/) |
+| **OSS catalog** | 31 topics · curated menu by layer (6 JSON stubs empty) | [`docs/c-market/10-OSS-CATALOG-100.md`](docs/c-market/10-OSS-CATALOG-100.md) · [`data/oss/`](data/oss/) |
+| **Oct-23 addenda (2–7)** | GS1 €225, certs, UCP, unit economics, engagement mechanics | [`data/README.md`](data/README.md) |
+| **Claims ledger** | 47 material claims with status / source / reproduce path | [`data/CLAIMS-LEDGER.md`](data/CLAIMS-LEDGER.md) · [doc 27](docs/f-governance/27-EVIDENCE-INDEX.md) |
+| **Data index** | How the attic is organized | [`data/README.md`](data/README.md) |
 
 > 🔒 **Data note — by design, this repository contains no personal contact data.** Our lead-generation research produced large B2B contact datasets (school boards, special-education networks, EU education registers). Those stay private and are handed over directly under GDPR-compliant terms. See [`data/leadgen-summary.md`](data/leadgen-summary.md) for counts, sources, and methodology only.
 
@@ -220,19 +228,18 @@ This proposal is not built on assumptions. Every claim traces to a verified arti
 
 ```
 wiseq-ai-onboarding/
-├── docs/                    16 proposal, analysis & showcase documents
-│   ├── 01-COMPANY-PROFILE.md … 17-SITE-CONCEPTS.md
-├── data/
-│   ├── oss/                 31 raw GitHub-search JSON files (query + results)
-│   ├── research-lanes/      5 original research reports + raw agents.md capture
-│   ├── wiseq-bundle-spine.csv
-│   ├── wiseq-component-registry.csv
-│   └── leadgen-summary.md
-├── assets/
-│   ├── brand/                Logo variants, hero banner, OG card
-│   └── demos/                Screenshots of the 3 site concepts
-├── site-demos/              3 scroll-driven site concepts + product imagery
-├── scripts/validate_repo.py Repo-integrity CI (doc links, data schema, spine, secrets)
+├── docs/                    Approach A: role packs + track folders (00–27)
+│   ├── for-rob/ for-kiki/ for-ops/
+│   ├── a-proposal/ b-company/ c-market/
+│   ├── d-delivery/ e-showcase/ f-governance/ g-reviews/
+│   └── 00-nl/
+├── data/                    Evidence attic — see data/README.md
+│   ├── CLAIMS-LEDGER.md · leadgen-summary.md · spine CSVs
+│   ├── research-lanes/      5 lanes + dossier + 7 addenda
+│   └── oss/                 31 topic JSON files (6 stubs)
+├── assets/brand/            Logo variants, hero, OG
+├── site-demos/              3 scroll-driven concepts
+├── scripts/validate_repo.py CI integrity gate
 └── .github/workflows/       validate · gitleaks · zizmor
 ```
 
@@ -246,6 +253,7 @@ python3 scripts/validate_repo.py
 
 ## 📌 Status
 
+- **2026-10-27** — docs Approach A reorg (role packs + track folders); claim sync (GS1 €225, Trustpilot 13/4.5); new docs 25–27 + `data/README.md`.
 - **2026-10-21** — repo created. Research phase complete (company, catalog, marketplaces, marketing, EU market, B2B lead-gen). Awaiting WiseQ's company manual + stack inventory to start Phase 0.
 - **2026-10-22** — **bundle spine decoded** from public catalog data — 114 component SKUs + 25 composite bundles fully decomposed (0 unresolved). Reuse-first mapping added (docs/07).
 - **2026-10-22** — tooling & integration plan — connector install list, three thin wrappers queued, week-by-week checklist.
@@ -253,9 +261,9 @@ python3 scripts/validate_repo.py
 - **2026-10-22** — compliance map — EN 71 / 62115 / RED (incl. Aug-2025 cybersecurity act), GPSR responsible-person check, Thuiswinkel costs verified.
 - **2026-10-22** — OSS catalog expanded to 31 topics / 100 curated repos by layer.
 - **2026-10-22** — competitors & deals research — competitor map, deal pricing benchmarks, 6 new opportunities.
-- **2026-10-22** — OSS & integrations research — the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (€854/yr recurring for 139 codes, not one-off).
+- **2026-10-22** — OSS & integrations research — the NL e-com tooling layer is thin (orchestration IS the moat); GS1 EAN fix quantified (€225/yr via 1,000-pack; earlier €854 stacking figure retracted).
 
-**Waiting on WiseQ:** the ~30-page company manual, software inventory, sandbox dataset, and read-only access. Full ask-list: **[06 · Next Steps](docs/06-NEXT-STEPS.md)**
+**Waiting on WiseQ:** the ~30-page company manual, software inventory, sandbox dataset, and read-only access. Full ask-list: **[06 · Next Steps](docs/a-proposal/06-NEXT-STEPS.md)**
 
 ---
 
@@ -272,7 +280,7 @@ This repository is the collaboration surface. **Open an issue or comment on any 
 | **Prepared by** | [AI Whisperers](https://github.com/Ai-Whisperers) — AI systems & automation studio |
 | **Prepared for** | Rob Nyari & the WiseQ team · [wiseq.nl](https://www.wiseq.nl) |
 | **Revision** | 2026-10-22 |
-| **Working session** | 2026-10-21 · Grootebroek, NL ([notes](docs/03-MEETING-NOTES-2026-10-21.md)) |
+| **Working session** | 2026-10-21 · Grootebroek, NL ([notes](docs/b-company/03-MEETING-NOTES-2026-10-21.md)) |
 | **License** | See repository · client-proposal material, citation with attribution welcome |
 
 ---
