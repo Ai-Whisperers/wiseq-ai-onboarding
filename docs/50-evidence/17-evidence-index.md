@@ -37,6 +37,9 @@
 | 2× Adapter shipping template | NEEDS_CONFIRMATION | [`verzendregels-templates.csv`](../../data/client/mastersheet/verzendregels-templates.csv) |
 | Lab scenarios A–C pass offline | sandbox-tested | [`lab/`](../../lab/README.md) · [experiment register](../50-evidence/09-experiment-register.md) |
 | Hermes Desktop Milestone 1 | vendor-docs + local doctor | [capability notes](../50-evidence/06-hermes-desktop.md) |
+| Revenue ~€1.5M / yr | client-stated (2026-10-28) | [Meeting 07](../10-client/07-meeting-2026-10-28.md) — confirm online vs total |
+| Rob fee floor ≥€2k | client-stated (signal only) | [Meeting 07](../10-client/07-meeting-2026-10-28.md) — not our SOW price |
+| Manual + Mastersheet received | client-provided | [Submissions status](18-rob-submissions-status.md) |
 
 ## Addenda map (Oct 23 depth)
 
@@ -49,4 +52,5 @@ Full list in [`data/README.md`](../../data/README.md). Client summaries: [unit e
 | [Audit response](../archive/2026-10-external-audit-response.md) | What we fixed after Oct-22 external review |
 | [Critical audit response](../60-governance/03-critical-audit-2026-10-27.md) | Manual/Mastersheet evidence + safety response |
 | [Acceptance criteria](../60-governance/02-acceptance-criteria.md) | Gates that turn hypotheses into measurements |
+| [Rob submissions status](18-rob-submissions-status.md) | Two files + meetings vs open asks |
 | [Critical review](../archive/2026-10-critical-review.md) | Adversarial pass on this proposal |

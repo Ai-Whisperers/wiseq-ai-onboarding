@@ -30,16 +30,19 @@
 | ☐ | Confirm Mastersheet **2× Adapter** shipping template (or correct EAN) | Marked NEEDS_CONFIRMATION |
 | ☐ | Define how **BE LVB uplift** was measured (~80% vs +178%) — or leave out of forecasts | Not ROI input until defined |
 | ☐ | Shopify Admin collaborator **or** “skip Phase-0 Shopify” | Own-shop spine |
-| ☐ | Approximate **annual online turnover band** (Thuiswinkel) | Quote / compliance context |
+| ☐ | Confirm **€1.5M** = annual *online* turnover (Thuiswinkel) | Stated verbally 2026-10-28 — confirm online vs total |
 | ☐ | OK to keep raw Handleiding **private** (recommend yes) vs publish extract-only | Privacy |
 | ☐ | WiseQ België bol account — migration date / still live? | Account matrix |
 
 ## Already received ✅
 
-- Werkwijze Operationele Handleiding (Oct 27)  
-- Mastersheet (partial public extract)  
+- Werkwijze Operationele Handleiding (Oct 27) — file 1  
+- Mastersheet (partial public extract) (Oct 27) — file 2  
 - Working-session pain narrative (Oct 21)  
+- Follow-up meeting transcript + notes (Oct 28) — revenue ~€1.5M, growth pillars, ≥€2k fee signal  
+
+**Status map:** [18 · Rob submissions vs repo](../../50-evidence/18-rob-submissions-status.md)
 
 ---
 
-<sub>AI Whisperers · 2026-10-27</sub>
+<sub>AI Whisperers · 2026-10-28</sub>
