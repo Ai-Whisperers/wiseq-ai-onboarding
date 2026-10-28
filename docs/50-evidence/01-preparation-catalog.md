@@ -1,6 +1,6 @@
 # Preparation catalog — what we should and could prepare
 
-*Docs-only planning map. Distinguishes **already done**, **prepare offline (no Rob keys)**, **needs Rob input/keys**, and **do not prepare yet**. Aligns with dossier [doc 30](../10-client/01-complete-dossier.md), lab Milestone 1, and [read-only guide](../start/rob/read-only-access.md).*
+*Docs-only planning map. Distinguishes **already done**, **prepare offline (no Rob keys)**, **needs Rob input/keys**, and **do not prepare yet**. Aligns with dossier [doc 30](../10-client/01-complete-dossier.md), lab Milestone 1, and [read-only guide](../start/rob/read-only-access.md). For the Hermes show-when-data-lands plan see [19 · Demo readiness](19-hermes-demo-readiness.md).*
 
 ## Legend
 
