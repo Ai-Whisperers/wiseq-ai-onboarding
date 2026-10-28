@@ -29,7 +29,7 @@ Evidence attic: [`../data/README.md`](../data/README.md) · Lab: [`../lab/`](../
 | [`40-build/`](40-build/README.md) | Agent infra, tooling, AIW reuse, DevOps |
 | [`50-evidence/`](50-evidence/README.md) | Audits, lab notes, prep catalog, handoff |
 | [`60-governance/`](60-governance/README.md) | Terms, gates, critical audit, 31 hats |
-| [`70-showcase/`](70-showcase/README.md) | Site concepts, send-to-Rob, who we are |
+| [`70-showcase/`](70-showcase/README.md) | Send-to-Rob, who we are |
 | [`archive/`](archive/README.md) | Superseded dated reviews (do not cite as current) |
 | [`_internal/`](_internal/README.md) | AIW restructure plans |
 | [`adr/`](adr/README.md) | Architecture decisions (Desktop-first, e-Boekhouden) |

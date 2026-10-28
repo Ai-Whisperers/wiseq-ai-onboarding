@@ -234,6 +234,6 @@ The repo now reflects **honest uncertainty**. It is a **proposal to measure**, n
 
 - [Audit source](https://chatgpt.com) · Oct 22, 2026
 - [Updated proposal](https://github.com/Ai-Whisperers/wiseq-ai-onboarding) · Oct 23, 2026 (commit 2ca3b53)
-- [V4 mockup](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v4-future-state/) · Live
+- ~~V4 mockup~~ — storefront showcase demos were later removed from this repository
 
 > The next step is **Phase 0** — measurement, not assumption.

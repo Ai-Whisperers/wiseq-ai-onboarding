@@ -23,11 +23,10 @@ Everything here is **bounded, low-risk, and mostly already in your hands.** None
 | 7 | **Which ChannelDock plan are you on?** (Gratis / Voorraad / Volledig WMS) **And do you have the PIM module?** | **Correcting an earlier note in our own docs:** ChannelDock *does* have a REST API + webhooks, included from Voorraad (€45/mo) upward and excluded from the free tier. Since you have 230 products and the free tier caps at 100, you should already be on a paid plan — we need to confirm, because it decides what we can automate. | Two answers | Connector build |
 | 8 | **Do you already use ChannelDock PIM's "Bundels samenstellen"?** | Manual already shows **native ChannelDock bundles** (stock→0 → mark bundle → add mothers). PIM (€200/mo) may be redundant — confirm what you pay for vs what you already use. | One answer | Bundle-scope |
 
-### 🎨 If you want a real storefront (not our 30-minute samples)
+### 🎨 If you want a real storefront later
 
-The three site concepts in [doc 17](../70-showcase/01-site-concepts.md) were each built in about half
-an hour as a **speed sample** — they show the quality floor and the pace, not a finished
-design. Building something you would actually ship needs five things we don't have:
+A shippable WiseQ storefront is **out of scope for Phase 0–1** (operations first).
+If you later want a redesign, building something you would actually ship needs five things we don't have:
 
 | # | What | Why it changes the design |
 | :--- | :--- | :--- |

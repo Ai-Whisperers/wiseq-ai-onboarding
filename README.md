@@ -102,14 +102,14 @@ Decade folders under [`docs/`](docs/README.md) (audience packs in `start/`). Cli
 | **04** | [Compliance](docs/30-market/04-compliance.md) | EN 71 / GPSR / Thuiswinkel |
 | **05** | [Unit economics](docs/30-market/05-unit-economics.md) | PSP / PostNL / OSS VAT |
 
-### Build · evidence · governance · showcase
+### Build · evidence · governance · outreach
 
 | Folder | Highlights |
 | :--- | :--- |
 | [`40-build/`](docs/40-build/README.md) | [Agent infra](docs/40-build/01-agent-infrastructure.md) · tooling · AIW reuse · DevOps |
 | [`50-evidence/`](docs/50-evidence/README.md) | Prep catalog · audits · [handoff](docs/50-evidence/16-handoff.md) · [evidence index](docs/50-evidence/17-evidence-index.md) |
 | [`60-governance/`](docs/60-governance/README.md) | [Terms](docs/60-governance/01-terms.md) · gates · [Oct-27 audit](docs/60-governance/03-critical-audit-2026-10-27.md) · [31 hats](docs/60-governance/04-specialist-31-hats.md) |
-| [`70-showcase/`](docs/70-showcase/README.md) | Site concepts · send-to-Rob · who we are |
+| [`70-showcase/`](docs/70-showcase/README.md) | Send-to-Rob · who we are |
 | [`archive/`](docs/archive/README.md) | Superseded reviews (not current SoT) |
 
 ---
@@ -172,27 +172,6 @@ Read-only dashboard   recombination         Content cadence        Supplier
 
 ---
 
-## 🎨 Built, not described
-
-*[Site Concept Showcase](docs/70-showcase/01-site-concepts.md)* — three scroll-driven site concepts we built against WiseQ's **real 229-product catalog**. Proof that this team ships working software, not slideware.
-
-<table>
-<tr>
-<td width="33%"><img src="assets/demos/v1-cinematic.png" alt="Cinematic concept — hero headphone render on black"></td>
-<td width="33%"><img src="assets/demos/v2-editorial.png" alt="Editorial concept — serif masthead in WiseQ orange on warm paper"></td>
-<td width="33%"><img src="assets/demos/v3-webgl.png" alt="Constellation concept — product objects as a museum catalogue with a WebGL component graph"></td>
-</tr>
-<tr>
-<td align="center"><sub><b>01 · Cinematic</b><br>Immersive dark hero<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v1-cinematic/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
-<td align="center"><sub><b>02 · Editorial</b><br>Print-inspired whitepaper<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v2-editorial/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
-<td align="center"><sub><b>03 · Constellation</b><br>WebGL · bundle spine made visible<br><a href="https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v3-webgl/index.html" target="_blank" rel="noopener">run it →</a></sub></td>
-</tr>
-</table>
-
-> **Concept 03 is the commercially interesting one.** WiseQ's audit found 77 combinatorial bundle-products (33% of the catalog) whose component mapping lived only in human memory. That concept makes the bundle graph the *visual language* of the storefront — turning the operational weakness into a brand asset, and reusing the same component registry that would drive purchasing.
-
----
-
 <a id="evidence-base"></a>
 
 ## 🔬 Evidence base
@@ -231,7 +210,7 @@ wiseq-ai-onboarding/
 │   ├── research-lanes/      5 lanes + dossier + 7 addenda
 │   └── oss/                 31 topic JSON files (6 stubs)
 ├── assets/brand/            Logo variants, hero, OG
-├── site-demos/              Live concepts — see site-demos/README.md
+├── lab/                     Fixture adapters + school-order scenarios
 ├── scripts/validate_repo.py CI integrity gate
 └── .github/workflows/       validate · gitleaks · zizmor
 ```

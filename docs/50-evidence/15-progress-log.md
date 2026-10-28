@@ -13,3 +13,4 @@
 | 2026-10-27 | Client complete dossier + prep catalog | Doc 30, PREPARATION-CATALOG, OPEN-ASKS-CHECKLIST; pitch/THE-CASE/root README post-manual corrections |
 | 2026-10-27 | Docs decade restructure | `start/` + `10-client`…`70-showcase` + `archive/` + `_internal/`; Approach A letter tracks retired; validate_repo PASS |
 | 2026-10-27 | Offline prep pack | ADRs 001–002; checklists; 32 school goldens; vendor stubs; Hermes skill stubs; demo script; Rob keys send message |
+| 2026-10-28 | Removed storefront showcase | Deleted `site-demos/`, `assets/demos/`, doc `70-showcase/01-site-concepts`; Pages hub + README scrubbed of demo links |

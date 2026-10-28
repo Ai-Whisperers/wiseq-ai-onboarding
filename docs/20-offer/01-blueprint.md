@@ -270,6 +270,6 @@ One 24/7 AI-operations layer, built on open-source [Hermes Agent](https://github
 | **[Automation Backlog](02-automation-backlog.md)** | The scored backlog this blueprint is built from |
 | **[Devops Masterplan](../40-build/04-devops.md)** | CI/CD, storage and SLOs behind the stack |
 | **[Tooling Mcp Installs](../40-build/02-tooling-mcp.md)** | The concrete connectors, per operation |
-| **[Site Concepts](../70-showcase/01-site-concepts.md)** | Three working site concepts built against the real catalog |
+| **[Who we are](../70-showcase/03-who-we-are.md)** | People, roles, Dutch-language honesty |
 
 > **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).

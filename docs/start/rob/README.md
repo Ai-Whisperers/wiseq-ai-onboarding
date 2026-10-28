@@ -20,17 +20,8 @@ Short path for the WiseQ decision-maker.
 | 3f | [Ivan receive (AIW)](IVAN-RECEIVE-WHATSAPP.md) | Vault + smoke checklist when WhatsApp lands |
 | 4 | [Meeting notes 2026-10-21](../../10-client/04-meeting-2026-10-21.md) | Grootebroek session |
 | 5 | [Terms & ownership](../../60-governance/01-terms.md) | Who owns what, GDPR, exit |
-| 6 | [Site concepts](../../70-showcase/01-site-concepts.md) | Three live demos |
+| 6 | [Who we are](../../70-showcase/03-who-we-are.md) | People + Dutch-language honesty |
 | 7 | [Send-to-Rob](../../70-showcase/02-send-to-rob.md) | Copy-paste outreach |
-
-## Live demos (phone-friendly)
-
-| Concept | Link |
-| :--- | :--- |
-| Hub | [site-demos](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/) |
-| Cinematic | [v1](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v1-cinematic/index.html) |
-| Editorial | [v2](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v2-editorial/index.html) |
-| Constellation | [v3](https://ai-whisperers.github.io/wiseq-ai-onboarding/site-demos/v3-webgl/index.html) |
 
 ## If you want one more page
 

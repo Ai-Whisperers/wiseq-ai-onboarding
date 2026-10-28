@@ -18,7 +18,7 @@
 
 **Role on this engagement:** architect of the operations layer, owner of the blueprint (doc 04), and your primary technical contact.
 
-- Runs AI Whisperers — a builder of AI-operations systems for specialist SMEs. Built the research dossier, decoded the bundle spine, and wrote the scroll engine behind the [site concepts](01-site-concepts.md) himself.
+- Runs AI Whisperers — a builder of AI-operations systems for specialist SMEs. Built the research dossier, decoded the bundle spine, and authored the operations blueprint in this repository.
 - **Previously shipped:** a production commerce backend for a bakery business (AI product imagery, automated price tracking and forecasting, a messaging-based ordering loop, QR-code payments parsed into XML invoices and inventory), and a dental-practice client engine (1,090 leads processed, a 400-file clinical encyclopedia). Those are the "restaurant and dental practice" references — different domains, same patterns: **extract → structure → decide → act, with human gates on money**.
 - **How he works:** measurable phases, reversible steps, costs visible. The [guardrails](../20-offer/01-blueprint.md#-guardrails) section is his operating philosophy, not marketing copy.
 - Works in English and Spanish natively; works in Dutch with tooling support — see the language note below.
@@ -43,7 +43,7 @@ An NL founder-led SME is right to ask. Here is the honest position:
 | Layer | Status | What it means day-to-day |
 | :--- | :--- | :--- |
 | **Written Dutch — reading** | ✅ Full | Every public source in this repo — wiseq.nl, KvK, channeldock.com, Thuiswinkel terms, bol policies — was read in the original Dutch. Nothing relied on translation. |
-| **Written Dutch — producing** | ✅ With review | We draft NL copy with AI assistance and **native review before anything customer-facing ships**. The [site concepts](01-site-concepts.md) were written in Dutch from the start. |
+| **Written Dutch — producing** | ✅ With review | We draft NL copy with AI assistance and **native review before anything customer-facing ships**. The [NL samenvatting](../start/nl/samenvatting.md) was written in Dutch from the start. |
 | **Spoken Dutch — meetings** | ⚠ Limited | Working sessions run in English (as ours did). We can bring a native-speaker colleague to milestone meetings if you prefer Dutch. |
 | **All customer-facing output** | ✅ Native-gated | Review invitations, school offers, product copy — nothing goes out in Dutch without native review. That is a guardrail, not an aspiration. |
 
