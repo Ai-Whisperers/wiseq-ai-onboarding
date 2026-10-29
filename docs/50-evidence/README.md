@@ -20,6 +20,8 @@ Phase-0 audits, lab notes, prep, handoff. Lab code: [`../../lab/`](../../lab/).
 | 15 | [Progress log](15-progress-log.md) |
 | 16 | [Handoff + roadmap](16-handoff.md) |
 | 17 | [Evidence index](17-evidence-index.md) |
+| 18 | [Rob submissions status](18-rob-submissions-status.md) |
+| 19 | [Hermes demo readiness](19-hermes-demo-readiness.md) |
 
 Offline checklists: [`checklists/`](checklists/README.md) · ADRs: [`../adr/`](../adr/README.md)
 

@@ -13,3 +13,5 @@
 | 2026-10-27 | Client complete dossier + prep catalog | Doc 30, PREPARATION-CATALOG, OPEN-ASKS-CHECKLIST; pitch/THE-CASE/root README post-manual corrections |
 | 2026-10-27 | Docs decade restructure | `start/` + `10-client`…`70-showcase` + `archive/` + `_internal/`; Approach A letter tracks retired; validate_repo PASS |
 | 2026-10-27 | Offline prep pack | ADRs 001–002; checklists; 32 school goldens; vendor stubs; Hermes skill stubs; demo script; Rob keys send message |
+| 2026-10-28 | Rob follow-up transcript + status | Raw TurboScribe in `data/client/meetings/`; notes doc 07; evidence 18 (two files received, Wave-1 still blocked); ~€1.5M revenue stated |
+| 2026-10-28 | Hermes demo readiness map | Evidence 19 — offline demo vs plug-in when Wave-1 data arrives; prep backlog ordered by demo impact |

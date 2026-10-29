@@ -129,11 +129,13 @@ See also [Preparation catalog](../50-evidence/01-preparation-catalog.md) and [Re
 5. FiveX export samples / API  
 6. Anonymized school offer→invoice examples  
 7. Timed baseline (≥10 school orders)  
-8. Annual online turnover band (Thuiswinkel)  
+8. Annual online turnover band (Thuiswinkel) — **verbal ~€1.5M on 2026-10-28; confirm online vs total**  
 9. Shopify Phase-0 scope  
 10. Raw Handleiding public-OK?  
 11. Confirm 2× Adapter template + BE uplift definition  
 12. België account migration timeline  
+13. Bol listing-quality export (~300 SKUs) mentioned 2026-10-28  
+14. Commercial scope: ops Phase 0–1 vs Rob’s “full growth package” (≥€2k base-fee signal)
 
 ## 10. Source index
 
@@ -141,14 +143,16 @@ See also [Preparation catalog](../50-evidence/01-preparation-catalog.md) and [Re
 | :--- | :--- |
 | [01 Company profile](02-company-profile.md) | Public registry + channels |
 | [03 Meeting notes](04-meeting-2026-10-21.md) | Founder pain (addendum below in that file) |
+| [07 Meeting 2026-10-28](07-meeting-2026-10-28.md) | Revenue band, growth pillars, fee signal |
 | [28 Manual summary](03-operating-manual.md) | Proposal-facing corrections |
 | [Extract](../../data/client/OPERATING-MANUAL-EXTRACT.md) | Builder SoT |
 | [Mastersheet extract](../../data/client/MASTERSHEET-EXTRACT.md) | Tariffs / templates |
 | [25 Catalog scorecard](05-catalog-scorecard.md) | EAN / spine |
+| [18 Submissions status](../50-evidence/18-rob-submissions-status.md) | Files vs open asks |
 | [Workflow audit](../50-evidence/02-workflow-audit.md) | Process inventory |
 | [SoR map](../50-evidence/03-data-flow-sor.md) | Data ownership |
 | [Preparation catalog](../50-evidence/01-preparation-catalog.md) | What we prepare offline vs need from Rob |
 
 ---
 
-<sub>AI Whisperers · 2026-10-27 · living doc — update when Rob answers open asks</sub>
+<sub>AI Whisperers · 2026-10-28 · living doc — update when Rob answers open asks</sub>
