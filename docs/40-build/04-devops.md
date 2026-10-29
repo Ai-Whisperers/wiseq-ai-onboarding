@@ -29,12 +29,12 @@
 
 ## 2. 💬 CI/CD upgrades (both repos)
 
-1. **zizmor workflow-security linting** — saskia's own reference standard; SARIF output → GitHub Security tab. One workflow, runs on workflow-file changes.
+1. **zizmor workflow-security linting** — our house reference standard; SARIF output → GitHub Security tab. One workflow, runs on workflow-file changes.
 2. **gitleaks-action** on every push/PR — deeper than our regex scan (entropy + history), zero config. Note: runner default is Node 24 since June 2026 — pin accordingly.
 3. **PR-gating via branch protection** (when collaborators/Rob engage): require `validate`, allow force-push none, require linear history. Direct-push stays for solo phase; protection flips on at first external collaborator.
-4. **CI badge + `make audit` local parity** — saskia pattern: every CI check runnable locally with one command (`python scripts/validate_repo.py` already is; document it).
+4. **CI badge + `make audit` local parity** — house pattern: every CI check runnable locally with one command (`python scripts/validate_repo.py` already is; document it).
 5. **Dependabot** — today only on actions (weekly); when app code lands, extend to pip/npm ecosystem groups.
-6. **Release flow** (phase 1+): tag → changelog gate → pip-audit hard gate (advisory in CI, blocking on release — the saskia split).
+6. **Release flow** (phase 1+): tag → changelog gate → pip-audit hard gate (advisory in CI, blocking on release — our split).
 
 ## 3. 📦 Storage & data architecture
 
@@ -45,7 +45,7 @@
 | OSS catalogs (static research) | git JSON | git — fine (one-off) |
 | CDE snapshots (append-daily) | git JSON dated | **price-history DB** (DuckDB/SQLite on VPS, nightly ETL from `latest.json`) + git keeps only `latest.json` |
 | Bundle spine / registry (reference) | git CSV | git CSV (SSOT) + DB mirror at deploy |
-| Lead-gen contacts (GDPR) | private workspace | **never git** — encrypted store (BWS-adjacent) + access log |
+| Lead-gen contacts (GDPR) | private workspace | **never git** — encrypted store + access log |
 | Images/assets | none yet | Cloudflare R2 (already have creds) — git-free |
 | Backups | none | restic nightly → R2, 30-day retention, **with a scheduled monthly restore test** |
 
@@ -54,7 +54,7 @@
 > records the result. It is part of the deliverable, not an optional extra — if we cannot
 > prove a restore works, we do not claim you can recover.
 
-**The DB plan (phase 1):** one Postgres (Neon free tier — MCP already enabled) per operation: `wiseq` (products/offers/prices/orders-cache/reviews) and `pydrop` (catalog/prices/suppliers/orders/cash). SQLite for local dev, Postgres in prod — same schema, migrations via a `migrations/` dir + `alembic`-style numbering, tested in CI (migration up/down smoke — saskia lesson). Nightly ETL: snapshots → `prices` table; the git repo then carries only the doc + schema, not the history.
+**The DB plan (phase 1):** one Postgres (Neon free tier — MCP already enabled) for the engagement: `wiseq` (products/offers/prices/orders-cache/reviews). SQLite for local dev, Postgres in prod — same schema, migrations via a `migrations/` dir + `alembic`-style numbering, tested in CI (migration up/down smoke — our house lesson). Nightly ETL: snapshots → `prices` table; the git repo then carries only the doc + schema, not the history.
 
 **DuckDB analytics layer:** the Monday reports (drift, dispersion, margin) query DuckDB over the exported parquet/CSV — zero new infra, agent-friendly (SQL the agent can run), and it keeps Postgres transactional-only.
 
@@ -72,7 +72,7 @@
 06:15  diff & alerts (>5% moves)           → Telegram/WhatsApp digest
 07:00  monday: drift/dispersion report     → repo data/reports/ + message
 ```
-Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the same rail (Resend email fallback — creds already in BWS).
+Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the same rail (Resend email fallback — creds already in our secret store).
 
 ## 5. 🗺️ Observability & SLOs
 
@@ -102,7 +102,7 @@ Alerting rail: Telegram bot (existing briefing pattern) + failure alerts via the
 - [ ] DuckDB analytics + Monday report automation
 - [ ] cosign signing + provenance attestations on images
 - [ ] Multi-env (dev/prod) with GitHub Environments + approvals on prod
-- [ ] Load test the wrapper APIs (routes endpoint smoke — saskia pattern)
+- [ ] Load test the wrapper APIs (routes endpoint smoke — house pattern)
 
 ## 7. ⚙️ What we deliberately avoid
 

@@ -8,7 +8,7 @@
 
 # The Full Dev Team Hat Pass — Both Projects Audited by Role
 
-*2026-10-22. A complete software team reviews py-dropship-ai + wiseq-ai-onboarding as they exist NOW (15-16 docs, 5 workflows green, no app code yet). Each role: what they'd flag, what they'd praise, and the fix. Synthesis at the end ranks the top-10 improvements.*
+*2026-10-22. A complete software team reviews this repo as it exists NOW (15-16 docs, 5 workflows green, no app code yet). Each role: what they'd flag, what they'd praise, and the fix. Synthesis at the end ranks the top-10 improvements.*
 
 ---
 
@@ -33,7 +33,7 @@
 ## 4. 📦 Tech Lead
 
 **Flags:** No CONTRIBUTING.md, no CODEOWNERS, no branch strategy doc (direct-push now, PR-flow at first collaborator — currently only stated in a chat-level note); the commerce-os-repo decision (doc 14 §C2) is still open and wrapper #1 is approaching.
-**Praise:** Commit hygiene is good; validators runnable locally = local/CI parity (the saskia rule) already in place.
+**Praise:** Commit hygiene is good; validators runnable locally = local/CI parity (our house rule) already in place.
 **Fix:** Decide commerce-os repo NOW (before wrapper #1 lands in a client repo); 20-line CONTRIBUTING per repo.
 
 ## 5. 🧱 Backend Engineer
@@ -69,7 +69,7 @@
 ## 10. 🌱 Security Engineer (AppSec)
 
 **Flags:** Branch protection off on both repos (accept for solo, but the snapshot workflow has contents:write — a compromised PR could alter it if protection flips on late); crawler content will flow into agent context (prompt-injection surface — snapshot JSON contains arbitrary titles from an external site); no dependency scanning (no deps yet — add pip-audit at first requirements.txt).
-**Praise:** zizmor+gitleaks green; BWS for secrets; no tokens in tree.
+**Praise:** zizmor+gitleaks green; dedicated vault for secrets; no tokens in tree.
 **Fix:** Add `gitleaks.toml` allowlist doc-note (none needed yet); at wrapper-repo creation: branch protection from commit #1; sanitize crawler output at ingestion (strip markdown/control chars from titles before they reach any LLM context).
 
 ## 11. 🛡️ Data Engineer

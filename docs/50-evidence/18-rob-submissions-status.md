@@ -14,7 +14,7 @@
 
 | # | What Rob sent | In repo as | Status |
 | ---: | :--- | :--- | :--- |
-| **1** | **Werkwijze / Operationele Handleiding** (~30p ops manual) | Raw: [`data/client/Handleiding_opzet.txt`](../../data/client/Handleiding_opzet.txt) · Extract: [`OPERATING-MANUAL-EXTRACT.md`](../../data/client/OPERATING-MANUAL-EXTRACT.md) · Summary: [doc 03](../10-client/03-operating-manual.md) | **Received 2026-10-27.** Raw still under publication gate (cite extracts publicly). |
+| **1** | **Werkwijze / Operationele Handleiding** (~30p ops manual) | Extract: [`OPERATING-MANUAL-EXTRACT.md`](../../data/client/OPERATING-MANUAL-EXTRACT.md) · Summary: [doc 03](../10-client/03-operating-manual.md) · Raw: private AIW handover folder (not published) | **Received 2026-10-27.** Raw untracked from the public tree pending Rob's publication approval (cite extracts publicly). |
 | **2** | **Mastersheet.xlsx** (ops workbook) | Public CSVs: [`data/client/mastersheet/`](../../data/client/mastersheet/) · Extract: [`MASTERSHEET-EXTRACT.md`](../../data/client/MASTERSHEET-EXTRACT.md) | **Received 2026-10-27.** Full xlsx **not** committed (COGS / PII / promo codes). |
 
 Those two files closed the original “send the manual + software inventory” ask for **ops design**. They did **not** include API tokens or school-order samples.
@@ -46,7 +46,7 @@ Those two files closed the original “send the manual + software inventory” a
 | Date | Artifact | Net-new for us |
 | :--- | :--- | :--- |
 | **2026-10-21** | [Meeting notes](../10-client/04-meeting-2026-10-21.md) | 4h school mornings; bundle recombination pain; EAN as key; agreed to share manual |
-| **2026-10-28** | [Notes](../10-client/07-meeting-2026-10-28.md) + [raw transcript](../../data/client/meetings/2026-10-28-transcript-turboscribe.txt) | **~€1.5M revenue**; profit band; webshop ~€8k/mo; 7k school emails; ~300 bol listings quality debt; Rob’s **≥€2k base-fee** signal; wants ops **+** growth package |
+| **2026-10-28** | [Notes](../10-client/07-meeting-2026-10-28.md) (raw transcript held privately, not published) | **~€1.5M revenue**; profit band; webshop ~€8k/mo; 7k school emails; ~300 bol listings quality debt; Rob’s **≥€2k base-fee** signal; wants ops **+** growth package |
 
 ## 3. Scorecard — ask list vs reality
 

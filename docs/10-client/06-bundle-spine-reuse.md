@@ -6,9 +6,9 @@
 
 ---
 
-# PY → WiseQ: Everything We Built for Paraguay That WiseQ Should Get
+# The bundle spine, and what a retailer-grade catalog spine buys WiseQ
 
-*2026-10-22. While building our Paraguay dropshipping operation's research stack, we produced capabilities that solve WiseQ problems directly. This document maps each one — and delivers the artifacts we already prepared from WiseQ's own public data.*
+*2026-10-22. While building our own commerce research stack, we produced capabilities that solve WiseQ problems directly. This document maps each one — and delivers the artifacts we already prepared from WiseQ's own public data. We describe our work by capability rather than by the client it was originally built for: what matters here is that the pattern is proven in production, not whose shop it ran in.*
 
 ## 1. 🧭 The headline: we decoded the bundle spine
 
@@ -25,27 +25,27 @@ WiseQ's public catalog encodes Rob's exact bundle problem in its SKUs. Analysis 
 
 **What this enables on day one of a collaboration:** the EAN spine becomes mechanical. Assign EANs to the 114 components first (one-time), then every bundle's identity = ordered tuple of component EANs. When ChannelDock reports "component 207 out of stock," the agent propagates: 207 → 3 bundles containing it → pause those listings everywhere (shop + bol + Amazon) in minutes, not mornings. This is the exact "bundle goes out of stock, which cables do I still have" problem Rob described — solved at the SKU layer, before any AI.
 
-## 2. 🕰️ The PY research stack, mapped to WiseQ
+## 2. 🕰️ The research stack, mapped to WiseQ
 
-| PY capability (py-dropship-ai) | WiseQ application |
+| Capability (already built and proven) | WiseQ application |
 |---|---|
 | **Agente CDE** — nightly hierarchical scraping (open sites first, stealth for bot-walled) + price-dispersion index | WiseQ's competitors (BuddyPhones, Puro, educatheek wholesale) scraped nightly → price-position dashboard per SKU; alert when a competitor undercuts a WiseQ listing |
 | **Supplier price/stock monitoring** with changedetection.io pattern (35k★, no parser needed) | Watch ChannelDock feed + bol offer pages for stock events; watch supplier (China) price shifts on reorder SKUs |
-| **Canonical product table + EAN discipline** (the anti-0/230 rule) | Already WiseQ's biggest gap — the bundle spine above is the concrete fix |
+| **Canonical product table + EAN discipline** (the rule that prevents a 0-in-230 outcome) | Already WiseQ's biggest gap — the bundle spine above is the concrete fix |
 | **Evals for the WhatsApp/sales agent** (100 labeled conversations, regression-tested) | Same discipline for WiseQ's school-order inbox: a labeled set of real school emails/orders → the order-parsing agent is tested, not vibes-checked |
 | **Observability (every agent decision logged with cost)** | Cost-per-order-processed visible; the "4-hour mornings" get a number attached before/after |
 | **Dynamic pricing with margin floor** | bol repricing within floor/ceiling rules — vs. 312-article bol drift (shop 230 vs bol 312: 82 listings need audit) |
 | **RAG policy engine** | School-order terms (Bestel op factuur, staffelprijzen tiers, proefexemplaar rules) answered consistently by an agent, not from Rob's head |
-| **Review engine (post-sale D+1 ask)** | Trustpilot 4.5 but only 13 reviews (Oct 23), zero automated invitations — the engine we designed for PY plugs straight in |
+| **Review engine (post-sale D+1 ask)** | Trustpilot 4.5 but only 13 reviews (Oct 23), zero automated invitations — the engine we already built plugs straight in |
 | **MCP-server exposure of catalog** | WiseQ already runs UCP + MCP shopping server (we verified it live) — our stack speaks that protocol natively; agents can place/know orders machine-to-machine |
 | **Privacy agent (consent registry, DSR handling)** | GDPR is already law for WiseQ (NL) — same agent, EU flavor |
 | **Failure-mode finance rules** (kill criteria, CPA ≤ 50% margin, runway separation) | Per-SKU profitability floors from 5X data → auto-pause losers instead of silent margin bleed |
 | **Seasonality calendar** | NL school calendar: back-to-school Aug, Sinterklaas Dec, Christmas — procurement timed to it |
 
-## 3. 💬 New insights from the PY work that WiseQ should hear
+## 3. 💬 New insights from that work that WiseQ should hear
 
 1. **Bol drift is measurable now**: 312 bol articles vs 230 shop products — at least 82 listings live only on bol (or are stale ghosts). First automation: nightly shop↔bol reconciliation report. Zero risk, immediate clarity.
-2. **The 5X + ChannelDock data stays where it is — we add the missing layer**: a canonical SQLite/Postgres spine joining Shopify SKUs ↔ bol offers ↔ ChannelDock stock ↔ 5X margin. Four systems, one table, one truth. (The PY repo's `data/` layer is the template.)
+2. **The 5X + ChannelDock data stays where it is — we add the missing layer**: a canonical SQLite/Postgres spine joining Shopify SKUs ↔ bol offers ↔ ChannelDock stock ↔ 5X margin. Four systems, one table, one truth. (Our `data/` layer is the template.)
 4. **Amazon cleanup is a batch job**: 2020-era ASINs (B08G/B08P) with 2.5★ dud listing — a one-week agent project: audit, merge or kill, refresh content, reclaim the 4.4★ store average.
 5. **The agentic edge compounds**: WiseQ's UCP/MCP endpoints are ahead of the market — connecting them to an orchestration layer (Hermes) turns "machine-readable" into "machine-OPERATED": orders in, labels out, stock propagated, exceptions escalated.
 
@@ -64,13 +64,13 @@ With read-only access (later): ChannelDock + 5X joins, live stock propagation, m
 
 ## 5. 🧱 Why this pattern works
 
-The PY operation forced us to build retailer-grade automation with zero budget and zero legacy — the same constraints as WiseQ's home-office operation, one person, many channels. Everything was designed agent-first: every component speaks API/CLI, every decision is logged, every data leak (the 0/230 EAN lesson) becomes a structural rule instead of a cleanup project. WiseQ gets the benefit of that discipline without paying for the scar tissue.
+Building retailer-grade automation with zero budget and zero legacy is what forced us to design these systems this way — the same constraints as WiseQ's home-office operation, one person, many channels. Everything was designed agent-first: every component speaks API/CLI, every decision is logged, every data leak (the 0/230 EAN lesson) becomes a structural rule instead of a cleanup project. WiseQ gets the benefit of that discipline without paying for the scar tissue.
 
 ---
 
 ## 📌 In short
 
-We built these systems for a harder problem — a multi-branch retail operation in Paraguay with the same school-order and stock-truth table shape. **The bundle spine is the headline: 25 bundles decoded into 114 components**, which is precisely the mapping WiseQ does by hand today. Transfer is a capability, not a codebase dump; what moves is the pattern plus the connectors.
+We built these systems for a harder problem — a multi-branch retail operation with the same school-order and stock-truth table shape. **The bundle spine is the headline: 25 bundles decoded into 114 components**, which is precisely the mapping WiseQ does by hand today. Transfer is a capability, not a codebase dump; what moves is the pattern plus the connectors.
 
 
 ---

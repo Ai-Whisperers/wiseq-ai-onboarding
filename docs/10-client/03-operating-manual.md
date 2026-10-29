@@ -64,7 +64,7 @@ Rob also shared the ops **Mastersheet** (shipping tariffs vs delivery promise, C
 
 | File | Role |
 | :--- | :--- |
-| [`Handleiding_opzet.txt`](../../data/client/Handleiding_opzet.txt) | Client raw — **publication pending Rob approval** ([gate](../../data/client/README.md)); prefer the extract |
+| `Handleiding_opzet.txt` | Client raw — **not published** (private AIW handover folder; [gate](../../data/client/README.md)); cite the extract |
 | [Doc 29 · Critical audit response](../60-governance/03-critical-audit-2026-10-27.md) | Evidence/safety response to Oct-27 audit of this ingestion |
 | [`OPERATING-MANUAL-EXTRACT.md`](../../data/client/OPERATING-MANUAL-EXTRACT.md) | Structured SoT for builders |
 | [`MASTERSHEET-EXTRACT.md`](../../data/client/MASTERSHEET-EXTRACT.md) | Shipping / keywords / packaging SoT |

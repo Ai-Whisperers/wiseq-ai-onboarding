@@ -13,3 +13,11 @@ lab/eval/out/*
 # INTERNAL — never publish. Cost audits name our margins, our unbilled labour,
 # our weak spots, and unverified estimates. This is a client-facing repo.
 analysis/
+
+# CLIENT RAW SOURCE — never publish. Rob Nyari's own operations manual and the
+# 2026-10-28 meeting transcript are held in the private AIW handover folder
+# (700 perms). Both are still pending Rob's explicit publication approval, so
+# they stay out of the public tree. The sanitised extracts under
+# data/client/*.md and data/client/mastersheet/ are the citable versions.
+data/client/Handleiding_opzet.txt
+data/client/meetings/*.txt

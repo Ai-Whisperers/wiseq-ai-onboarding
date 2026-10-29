@@ -7,11 +7,11 @@
 | [`OPERATING-MANUAL-EXTRACT.md`](OPERATING-MANUAL-EXTRACT.md) | ✅ | Sanitized structured extract — preferred citation |
 | [`MASTERSHEET-EXTRACT.md`](MASTERSHEET-EXTRACT.md) | ✅ | Shipping / templates / packaging / keywords |
 | [`mastersheet/*.csv`](mastersheet/) | ✅ | Public-safe exports only |
-| [`Handleiding_opzet.txt`](Handleiding_opzet.txt) | ⚠ **Pending Rob approval** | Raw ops manual; promo code + phone redacted; still contains internal procedures, review tactics, named examples. **If Rob withholds publication approval, remove from public tree and keep private.** |
+| `Handleiding_opzet.txt` (raw ops manual) | ❌ **Not in the public tree** | Held in the private AIW handover folder. Promo's + phone redacted, but it still contains internal procedures, review tactics and named examples, and Rob's publication approval has not been collected. |
 | Full `Mastersheet.xlsx` | ❌ Never | COGS, contacts, gift cards, promo codes |
-| [`meetings/`](meetings/) | ⚠ Prefer notes | Raw TurboScribe transcripts; cite [structured notes](../../docs/10-client/07-meeting-2026-10-28.md) |
+| `meetings/*.txt` (raw transcripts) | ❌ **Not in the public tree** | Held in the private AIW handover folder. Cite the [structured notes](../../docs/10-client/07-meeting-2026-10-28.md) instead. |
 
-Until Rob confirms the raw manual may stay public, cite the **extracts**, not the raw dump, in client-facing proposals.
+**Cite the extracts, not the raw dumps.** The raw manual and the raw transcripts are untracked in this repo by design — a CI guard fails the build if either is ever tracked again. If a future reader needs the raw source, it is released to the private handover folder, never committed here.
 
 ## Related
 

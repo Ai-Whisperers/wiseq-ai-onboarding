@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Documents](https://img.shields.io/badge/documents-29-blue?style=for-the-badge)](#document-map)
+[![Documents](https://img.shields.io/badge/documents-72-blue?style=for-the-badge)](#document-map)
 [![SKUs%20audited](https://img.shields.io/badge/SKUs%20audited-230-blue?style=for-the-badge)](#the-case-in-one-page)
 [![Bundle%20spine](https://img.shields.io/badge/bundle%20spine-114%20SKUs%20%2B%2025%20bundles-success?style=for-the-badge)](#the-case-in-one-page)
 [![OSS%20catalog](https://img.shields.io/badge/OSS-31%20topics%20·%20curated%20menu-blueviolet?style=for-the-badge)](docs/30-market/README.md)
@@ -108,7 +108,7 @@ Decade folders under [`docs/`](docs/README.md) (audience packs in `start/`). Cli
 | :--- | :--- |
 | [`40-build/`](docs/40-build/README.md) | [Agent infra](docs/40-build/01-agent-infrastructure.md) · tooling · AIW reuse · DevOps |
 | [`50-evidence/`](docs/50-evidence/README.md) | Prep catalog · audits · [handoff](docs/50-evidence/16-handoff.md) · [evidence index](docs/50-evidence/17-evidence-index.md) |
-| [`60-governance/`](docs/60-governance/README.md) | [Terms](docs/60-governance/01-terms.md) · gates · [Oct-27 audit](docs/60-governance/03-critical-audit-2026-10-27.md) · [31 hats](docs/60-governance/04-specialist-31-hats.md) |
+| [`60-governance/`](docs/60-governance/README.md) | [Terms](docs/60-governance/01-terms.md) · gates · [Oct-27 audit](docs/60-governance/03-critical-audit-2026-10-27.md) · [31 hats](docs/60-governance/04-specialist-31-hats.md) · [data privacy](docs/60-governance/05-data-privacy.md) |
 | [`70-showcase/`](docs/70-showcase/README.md) | Send-to-Rob · who we are |
 | [`archive/`](docs/archive/README.md) | Superseded reviews (not current SoT) |
 

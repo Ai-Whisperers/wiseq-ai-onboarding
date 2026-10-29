@@ -1,6 +1,6 @@
 # WiseQ operating manual — structured extract
 
-*Source: [`Handleiding_opzet.txt`](Handleiding_opzet.txt) (client-provided, ingested 2026-10-27). This file is the **machine-usable source of truth** distilled from the manual. Prefer this over re-reading the raw dump for stack/automation design.*
+*Source: the client's Werkwijze Operationele Handleiding (client-provided, ingested 2026-10-27; raw file held in the private AIW handover folder, not in this public tree). This file is the **machine-usable source of truth** distilled from the manual. Prefer this over re-reading the raw dump for stack/automation design.*
 
 **Status:** Phase-0 item #1 (company manual) — **received**.
 
@@ -168,4 +168,4 @@ These are **client policies as written**. Automations must not silently expand t
 
 ---
 
-*Extract author: AI Whisperers · 2026-10-27 · raw: [`Handleiding_opzet.txt`](Handleiding_opzet.txt)*
+*Extract author: AI Whisperers · 2026-10-27 · raw source: private AIW handover folder (not published here)*

@@ -11,7 +11,7 @@ From the [Belastingdienst's own page for foreign entrepreneurs](https://belastin
 - AIW invoices **without VAT**, states **"btw verlegd / VAT reverse-charged"** and **WiseQ's btw-identificatienummer**
 - WiseQ self-accounts the VAT in its NL return (and deducts it — cash-flow neutral for them)
 - AIW makes **no NL VAT filing** for this; the non-EU case is covered by the same reverse-charge mechanism ([Belastingdienst English page](https://belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/eu-rights-and-rules-in-the-netherlands/eu-businesses/reverse-charging-vat-when-doing-business-abroad/reverse-charging-vat-when-doing-business-abroad))
-- For AIW's own side: Paraguay-sourced service income is taxed per PY rules (AIW's accountant confirms treatment — flagged, not guessed)
+- For AIW's own side: cross-border service income is taxed per the rules of the jurisdiction of origin (our accountant confirms treatment — flagged, not guessed)
 
 **Action:** doc 18 gets an invoicing annex: invoice fields (both KvK + btw-numbers, "btw verlegd", IBAN), currency (EUR recommended — no FX friction for Rob), payment terms (14 days, late-fee clause per NL norm). **Phase-0 ask from Rob: the btw-identificatienummer + preferred invoice email.**
 

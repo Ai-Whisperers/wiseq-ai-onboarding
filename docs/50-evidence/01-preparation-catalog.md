@@ -110,7 +110,7 @@
 | Purchase-intel prototype on FiveX export | CSV |
 | Thin bol / e-Boekhouden MCP (telescope pattern) | commerce-os decision |
 | Langfuse / cron-health | Companion profile later |
-| B2B outreach pack (gaby patterns) | AVG templates + 857-org rules |
+| B2B outreach pack (outreach-engine patterns) | AVG templates + 857-org rules |
 
 ---
 

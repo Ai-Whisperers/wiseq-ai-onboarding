@@ -1,6 +1,6 @@
 # .github/workflows/validate.yml — repo-integrity CI for wiseq-ai-onboarding
 #
-# Pattern basis (from saskia-app's CI suite, 2026-10):
+# Pattern basis (from our own CI suite, 2026-10):
 #   - pinned action SHAs (checkout@v7 pinned; no floating tags)
 #   - concurrency auto-cancel (superseded runs don't burn minutes)
 #   - minimum token permissions (contents: read)
@@ -49,8 +49,23 @@ jobs:
           fi
           echo "✓ no tracked files under analysis/"
 
+      - name: Client-raw guard (raw manual + transcripts must never be tracked)
+        run: |
+          tracked="$(git ls-files 'data/client/Handleiding_opzet.txt' 'data/client/meetings/*.txt')"
+          if [ -n "$tracked" ]; then
+            echo "::error::client raw source files are TRACKED — the operations manual and meeting transcripts are pending Rob's publication approval and live in the private AIW handover folder. Untrack with: git rm --cached <file> (files stay on disk via .gitignore)."
+            echo "$tracked"
+            exit 1
+          fi
+          echo "✓ no tracked client raw source under data/client/"
+
       - name: Run validator
         run: python3 scripts/validate_repo.py
+
+      - name: Lab pytest (synthetic scenarios A–C)
+        run: |
+          python3 -m pip install -q pytest
+          cd lab && PYTHONPATH=. python3 -m pytest -q
 
       - name: Data freshness (snapshots & catalogs present)
         run: |
@@ -58,4 +73,5 @@ jobs:
           test -f data/wiseq-bundle-spine.csv
           test -f data/wiseq-component-registry.csv
           test -f data/leadgen-summary.md
+          test -d lab && test -d docs/50-evidence
           echo "✓ all key artifacts present"

@@ -8,7 +8,7 @@
 
 # Who you would actually be working with
 
-*The question behind this page is fair: "Who exactly is doing this? You did this for a restaurant and a dental practice — why you?" Here is the honest answer, with names, roles, and what each person's day actually looks like. This page exists because a proposal without people is a document; a proposal with people is a relationship.*
+*The question behind this page is fair: "Who exactly is doing this? You did this for other businesses — why you?" Here is the honest answer, with names, roles, and what each person's day actually looks like. This page exists because a proposal without people is a document; a proposal with people is a relationship.*
 
 ---
 
@@ -19,7 +19,7 @@
 **Role on this engagement:** architect of the operations layer, owner of the blueprint (doc 04), and your primary technical contact.
 
 - Runs AI Whisperers — a builder of AI-operations systems for specialist SMEs. Built the research dossier, decoded the bundle spine, and authored the operations blueprint in this repository.
-- **Previously shipped:** a production commerce backend for a bakery business (AI product imagery, automated price tracking and forecasting, a messaging-based ordering loop, QR-code payments parsed into XML invoices and inventory), and a dental-practice client engine (1,090 leads processed, a 400-file clinical encyclopedia). Those are the "restaurant and dental practice" references — different domains, same patterns: **extract → structure → decide → act, with human gates on money**.
+- **Previously shipped:** a production commerce backend for a food-and-beverage retailer (AI product imagery, automated price tracking and forecasting, a messaging-based ordering loop, QR-code payments parsed into XML invoices and inventory), and a client-acquisition engine for a healthcare practice (1,090 leads processed, a 400-file knowledge encyclopedia). Different domains, same patterns: **extract → structure → decide → act, with human gates on money**.
 - **How he works:** measurable phases, reversible steps, costs visible. The [guardrails](../20-offer/01-blueprint.md#-guardrails) section is his operating philosophy, not marketing copy.
 - Works in English and Spanish natively; works in Dutch with tooling support — see the language note below.
 

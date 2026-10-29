@@ -57,14 +57,14 @@ Notable catalog items **available but not enabled** that map directly to our nee
 2. **bol Seller Dashboard → API credentials** (Rob): the Retailer API client we build reads offers/orders, writes price/stock
 3. **e-Boekhouden API key** (Rob): read invoices, write sales entries
 4. **Trustpilot business API** (Rob): invitation endpoint only
-5. **Our infra**: the AIW VPS already runs Hermes — a second profile (`hermes --profile wiseq`) isolates the engagement; BWS vault stores all credentials (never in repos — hard rule)
+5. **Our infra**: the AIW VPS already runs Hermes — a second profile (`hermes --profile wiseq`) isolates the engagement; a dedicated secret store holds all credentials (never in repos — hard rule)
 
-### PY side (real installs — one VPS, docker-compose):
+### Our side (real installs — one VPS, docker-compose):
 
 ```yaml
-# docker-compose.pydrop.yml (the phase-0 stack)
+# docker-compose.engagement.yml (the phase-0 stack)
 services:
-  hermes:            # orchestrator (profile: pydrop)
+  hermes:            # orchestrator (profile: wiseq)
   evolution-api:     # WhatsApp gateway (container, 9.9k★)
   changedetection:   # price/stock watches (35k★)
   inventree:         # stock registry (7.7k★) — phase 1
@@ -78,19 +78,19 @@ Plus host-level: **SQLite → Postgres at scale** (Neon MCP already enabled for 
 
 ## 3. 📦 New insights from the MCP research
 
-1. **Square + PayPal have official hosted MCP servers** (in catalog) — evidence the industry direction is agent-native payments; WiseQ/PY payment stacks (uPay/Bancard) have no MCP yet → our thin wrappers are the pattern, and potentially a first-in-market asset.
+1. **Square + PayPal have official hosted MCP servers** (in catalog) — evidence the industry direction is agent-native payments; WiseQ's payment stacks (uPay/Bancard) have no MCP yet → our thin wrappers are the pattern, and potentially a first-in-market asset.
 2. **Klaviyo is in the catalog** — if WiseQ prefers SaaS ESP over self-hosted BillionMail, the agent runs it natively day one. Decision point for Rob, not a blocker.
 3. **The Shopify MCP guide's key line** (gamut.so): "if you're a merchant, you mostly don't build this — your store already participates" — i.e., Shopify is preparing agent-native commerce; WiseQ's UCP/MCP endpoints put them AHEAD of the default Shopify store. Our stack amplifies that lead.
 4. **WhatsApp is going agent-native** (Bluetucks/Wati analyses): Evolution API + MCP is the bridge today; WhatsApp's official Business API pricing (per-conversation) still favors our gateway approach for phase 0-1 volume.
 5. **Firecrawl has an official MCP** — but it's a paid SaaS; Scrapling (89k★, local) covers CDE scraping at 0 marginal cost. Decision: local-first, Firecrawl only if a site defeats Scrapling.
-6. **n8n-official MCP exists in catalog** — the Hermes-decides/n8n-executes split (PY doc 04) gets a native bridge; enable when the first n8n flow ships.
+6. **n8n-official MCP exists in catalog** — the Hermes-decides/n8n-executes split gets a native bridge; enable when the first n8n flow ships.
 
 ## 4. 🧱 Consolidated install checklist (ordered)
 
 **Week 1 (zero-access prep, do now):**
 - [ ] `hermes mcp install n8n-official paypal square` (catalog) — payments/flows ready
-- [ ] PY VPS: provision + docker-compose up (hermes, evolution, changedetection, caddy)
-- [ ] Evolution API: number provisioning + warmup schedule (anti-ban protocol, PY doc 07 H.40.1)
+- [ ] Engagement VPS: provision + docker-compose up (hermes, evolution, changedetection, caddy)
+- [ ] Evolution API: number provisioning + warmup schedule (anti-ban protocol, our ops doc H.40.1)
 - [ ] changedetection.io: seed Fastrax + Shopping China + Tupi category URLs
 - [ ] Shopify dev-mcp (docs context) + build the canonical-spine schema in sqlite
 

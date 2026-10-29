@@ -1,6 +1,6 @@
 # Internal reuse + external best practices — WiseQ implementation map
 
-*Research pass 2026-10-27. Sources: live `Ai-Whisperers` org API, [doc 14](../40-build/03-aiw-reuse.md), [doc 07](../10-client/06-bundle-spine-reuse.md), [doc 13](../40-build/02-tooling-mcp.md), lab state, industry patterns (mcp-eval / golden-set pytest, Langfuse OSS, adapter contracts). Cross-checked against internal reuse-inventory extraction (agent transcript, not published).*
+*Research pass 2026-10-27. Sources: our live infrastructure inventory, [doc 14](../40-build/03-aiw-reuse.md), [doc 07](../10-client/06-bundle-spine-reuse.md), [doc 13](../40-build/02-tooling-mcp.md), lab state, industry patterns (mcp-eval / golden-set pytest, Langfuse OSS, adapter contracts). The inventory is described by capability, not by repository or client name — see the naming rule in doc 14.*
 
 **Principle:** reuse AIW production patterns; do not copy client-specific or Bucket-C personal skills. Prefer keep/extend WiseQ SaaS unless lab proves otherwise.
 
@@ -31,37 +31,37 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 
 ### Port / adapt soon (high leverage)
 
-| Repo | Why it matters | WiseQ action |
+| Capability | Why it matters | WiseQ action |
 | :--- | :--- | :--- |
-| [`telescope-ai`](https://github.com/Ai-Whisperers/telescope-ai) | Proven **thin MCP server** pattern | Template for `bol-mcp`, `eboekhouden-mcp`, later ChannelDock |
-| [`saskia-app`](https://github.com/Ai-Whisperers/saskia-app) | FastAPI+SQLite, pre-commit, Vale, AGENTS.md, Makefile, smoke, CI discipline | Copy **repo hygiene**: `AGENTS.md`, Makefile targets, pre-commit, CHANGELOG — not the restaurant domain |
-| [`gaby-client-engine`](https://github.com/Ai-Whisperers/gaby-client-engine) | Outreach / cadence / lead scoring | Phase 2 B2B on 857-org list — cadence design only |
-| [`status`](https://github.com/Ai-Whisperers/status) | Public sanitized run ledger | Optional trust page for B2B later |
-| [`aiw-expenses`](https://github.com/Ai-Whisperers/aiw-expenses) | Audit-trail ledger discipline | Pattern for agent action log + cost lines |
-| [`py-dropship-ai`](https://github.com/Ai-Whisperers/py-dropship-ai) | Doc 07 transfer map | Bundle spine (done), eval harness shape, competitor watch, margin floors |
-| [`infrastructure`](https://github.com/Ai-Whisperers/infrastructure) | Hermes/MCP/cron docs (archived topics) | Read for Desktop+gateway ops runbooks; do not paste secrets |
-| [`hermes-corpus`](https://github.com/Ai-Whisperers/hermes-corpus) | Agent defs / skills / research | Mine **generic** skills (research, prompt-injection); never `aiw-*` / family |
-| [`templates-standard`](https://github.com/Ai-Whisperers/templates-standard) | Py/TS boilerplates | Scaffold `wiseq-ops` or MCP packages |
-| [`aiw-strategic-research`](https://github.com/Ai-Whisperers/aiw-strategic-research) | 14-domain research corpus | Spot-check Hermes client setup chapters when designing Desktop profile |
-| [`meeting-transcriptions`](https://github.com/Ai-Whisperers/meeting-transcriptions) | Decisions extraction pipeline | Optional: Rob meeting → decisions log for audits |
-| [`vps-stacks-config`](https://github.com/Ai-Whisperers/vps-stacks-config) | Stacks mirror, secrets redacted | Pattern for companion VPS compose later |
+| **Proven thin MCP server** | A working **thin MCP server** pattern | Template for `bol-mcp`, `eboekhouden-mcp`, later ChannelDock |
+| **Production backend skeleton** | FastAPI+SQLite, pre-commit, Vale, AGENTS.md, Makefile, smoke, CI discipline | Copy **repo hygiene**: `AGENTS.md`, Makefile targets, pre-commit, CHANGELOG — not the source domain |
+| **Outreach / cadence / lead-scoring engine** | Lead intake → scoring → outreach cadence | Phase 2 B2B on 857-org list — cadence design only |
+| **Public sanitized run ledger** | Status + run history, auto-generated | Optional trust page for B2B later |
+| **Audit-trail ledger discipline** | Immutable action log + cost lines | Pattern for agent action log + cost lines |
+| **Commerce research stack** | The source of the doc 07 transfer map | Bundle spine (done), eval harness shape, competitor watch, margin floors |
+| **Ops documentation set** | Hermes/MCP/cron runbooks (archived topics) | Read for Desktop+gateway ops runbooks; do not paste secrets |
+| **Agent-definition corpus** | Agent defs / generic skills / research | Mine **generic** skills (research, prompt-injection); never engagement-specific or personal ones |
+| **Py/TS boilerplate templates** | Standard project scaffolding | Scaffold `wiseq-ops` or MCP packages |
+| **Multi-domain research corpus** | 14-domain research corpus | Spot-check Hermes client setup chapters when designing Desktop profile |
+| **Decisions-extraction pipeline** | Meeting → structured decisions log | Optional: Rob meeting → decisions log for audits |
+| **Stack configuration mirror** | Stacks mirror, secrets redacted | Pattern for companion VPS compose later |
 
-### Mentioned in doc 14 but not all in org list / personal
+### Mentioned in doc 14 but not in the capability list above
 
-| Asset | Action |
+| Capability | Action |
 | :--- | :--- |
-| `ai-whisperers-hermes-agent` (personal) | **Find & wire** cron-health + alert-router before any always-on cron |
-| `ai-whisperers-ops-toolkit` (personal) | Companion VPS bootstrap when hosting leaves Desktop-only |
-| `ai-whisperers-packages` / site templates | Only if building real storefront (out of M1) |
-| Fleet / war-room | Pattern for multi-agent dispatch — **do not** port war-room tokens to client |
+| **Hermes observability library** | **Find & wire** cron-health + alert-router before any always-on cron |
+| **Ops bootstrap toolkit** | Companion VPS bootstrap when hosting leaves Desktop-only |
+| **Shared design-token package** / site templates | Only if building real storefront (out of M1) |
+| **Multi-agent dispatch fleet** | Pattern for multi-agent dispatch — **do not** port internal auth tokens to the client |
 
 ### Ignore / do not leak into WiseQ
 
-| Repo / class | Reason |
+| Class | Reason |
 | :--- | :--- |
-| `aiw-org`, fleet war-room, `state-versioned` | Internal PII/cost; Bucket C |
-| Personal/family, Paraguay-only product sites | Wrong domain |
-| `sazon-*` domain modules | Wrong product; hygiene only |
+| Internal org state, orchestration dashboards, versioned state stores | Internal PII/cost |
+| Personal, family, and non-Dutch product sites | Wrong domain |
+| Domain modules from other product lines | Wrong product; hygiene only |
 | Growth coaching / wizard / occult | Irrelevant |
 
 ---
@@ -81,7 +81,7 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 | **UVdesk / BillionMail / Umami** | Investigate if mailbox/ESP/analytics gaps appear in lab |
 | **Bitwarden / 1Password Send** | Credential intake (already in Rob guide) |
 | **ADR (Architecture Decision Records)** | Short `docs/adr/` for Desktop-first, e-Boekhouden, no Exact |
-| **pre-commit + ruff/black + gitleaks** | Match saskia-app professionalism |
+| **pre-commit + ruff/black + gitleaks** | Match our house engineering standard |
 | **SemVer + CHANGELOG** | For `lab/` and future MCP packages |
 
 **Do not adopt:** random “AI ecommerce OS” repos that replace ChannelDock without measured gap; Exact Online MCP; review-manipulation tools.
@@ -92,7 +92,7 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 
 | Gap | Impact | Fix |
 | :--- | :--- | :--- |
-| No `AGENTS.md` / CONTRIBUTING at root | New sessions re-derive norms | Add from saskia pattern + HANDOFF |
+| No `AGENTS.md` / CONTRIBUTING at root | New sessions re-derive norms | Add from our house pattern + HANDOFF |
 | No Makefile | Ritual commands tribal | `make lab-test validate` |
 | No school-order golden JSON set | Parser will be vibe-tested | `lab/fixtures/mailbox/eval_cases.json` |
 | No action/audit SQLite | Can’t prove what agent did | `lab/eval/audit.db` schema |
@@ -109,7 +109,7 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 
 ### P0 — this week (professionalize lab)
 
-1. **`AGENTS.md` + root Makefile** — validate, lab-test, list scenarios (saskia-app hygiene).  
+1. **`AGENTS.md` + root Makefile** — validate, lab-test, list scenarios (our house hygiene standard).  
 2. **School-order eval golden set** (30–50 cases in `lab/eval/` + mailbox fixtures).  
 3. **Audit log** — every fixture commit → `lab/eval/audit.jsonl` / sqlite.  
 4. **ADR-001 Desktop-first / ADR-002 e-Boekhouden**.  
@@ -118,10 +118,10 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 
 ### P1 — after Rob wave 1 keys
 
-6. **`telescope-ai`-style MCP stubs** for bol read + e-Boekhouden list (separate package or `lab/adapters/vendor/`).  
+6. **Thin-MCP-style stubs** for bol read + e-Boekhouden list (separate package or `lab/adapters/vendor/`).  
 7. **MCP contract tests** (tool list + schemas) in CI — no live network.  
 8. **Capability matrix fill** from smoke reads.  
-9. **Secrets**: BWS or Bitwarden org for WiseQ — never repo.  
+9. **Secrets**: a dedicated vault (Bitwarden/1Password org) for WiseQ — never repo.  
 10. **Monday shop↔bol drift report** from public sources first (doc 07).
 
 ### P2 — productize
@@ -129,7 +129,7 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 11. Spin **`wiseq-ops`** (or private sibling) for connectors; keep onboarding as evidence attic.  
 12. **Langfuse OSS** traces on Hermes profile.  
 13. **cron-health** from hermes-agent before always-on VPS.  
-14. **gaby-engine** cadence for B2B only after AVG templates.  
+14. **Outreach-engine** cadence for B2B only after AVG templates.  
 15. **QuestPDF** offer draft render from school pipeline output.
 
 ### Explicitly defer
@@ -137,13 +137,13 @@ Scored: **Port now** · **Adapt pattern** · **Later** · **Ignore for WiseQ**.
 - Replace ChannelDock / FiveX / e-Boekhouden  
 - n8n until 3+ Hermes skills are daily-used  
 - Full storefront (`site-template`)  
-- War-room / fleet UI  
+- Internal orchestration dashboards  
 
 ---
 
 ## 6. Decision: one MCP monorepo?
 
-**Recommendation:** create private `Ai-Whisperers/commerce-os` (or `mcp-commerce`) **before** the second WiseQ MCP lands. WiseQ onboarding stays public evidence; wrappers stay private, licensed to WiseQ per doc 18. Prevents copy-paste of bol MCP into PY and WiseQ separately.
+**Recommendation:** create a private `commerce-os` MCP package **before** the second WiseQ MCP lands. The onboarding repo stays public evidence; the wrappers stay private, licensed to WiseQ per doc 18. Prevents copy-paste of the bol MCP into separate engagements.
 
 ---
 

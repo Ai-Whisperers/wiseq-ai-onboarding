@@ -34,7 +34,7 @@ hermes desktop --cwd <path-to>/wiseq-ai-onboarding/lab
 |---|---|---|
 | Hardware | AIW's VPS | **WiseQ's server** — sovereignty, no AIW dependency |
 | Hermes | existing instance | **fresh install** — clean version, clean state |
-| Credentials | AIW's BWS vault | **WiseQ's own vault** — they own the keys |
+| Credentials | Our shared secret store | **WiseQ's own vault** — they own the keys |
 | Data residency | EU-side by assertion | EU-side **by physics** — AVG art. 28's easiest possible story |
 | Continuity (doc 18) | promised | **structural** — if AIW vanishes, nothing moves |
 | AIW's role | operator | **builder + transition partner** — we set up, harden, document, hand over |
@@ -97,17 +97,17 @@ AIW's instance holds **184 skills** and hard-won operational patterns. Three buc
 | **Cron discipline** (heartbeat rows, TTL discipline, Step-Zero job identification) | Their cron fleet from day one — port the rules, not the jobs |
 | **Cost telemetry** (aiw-cost-monitor) | Monthly model-spend report per engine |
 | **Backup + monthly restore-test** (doc 15's rule) | restic → their choice of off-site (R2/Hetzner storage box) |
-| **Gateway auth coupling lesson** (public URL binds ↔ token mode) | Their dashboard: **loopback + Tailscale-only, token auth on** — the AIW war-room incident (an open origin once spawned a paid subagent) is encoded here as a hard rule |
+| **Gateway auth coupling lesson** (public URL binds ↔ token mode) | Their dashboard: **loopback + Tailscale-only, token auth on** — a past open-origin incident on our own infrastructure is encoded here as a hard rule |
 | **Keep-alive trap** (GitHub kills scheduled workflows after 60d idle) | Their Actions-based jobs get the weekly keepalive |
 | **Version-stamped assets** (`?v=sha` cache-busting) | Any web artifact they serve |
 | **Write-gating / guardrails-as-code** (v1 §4) | Unchanged — approval modes + policy functions |
 
 ### ⛔ Bucket C — never leaves AIW (and why)
 
-- **All ~45 `aiw-*` skills** — reference AIW-internal infrastructure (war-room, fleet, BWS, org state)
-- **`fleet-*`, `war-room-*`, `saskia-*`, `paraguay-*`, family/personal skills** — other clients' patterns and private context; porting them would leak AIW's and third parties' information
+- **All ~45 internal `aiw-*` skills** — reference our internal infrastructure (orchestration, fleet, credential store, org state)
+- **Internal fleet, orchestration, and per-domain skills** — other engagements' patterns and private context; porting them would leak our own and third parties' information
 - **AIW's memory and session data** — obviously; the fresh instance gets a **new, seeded memory**: a WiseQ onboarding file (company facts, catalog truth, operating rules, "who is Rob", escalation preferences) written by us during setup — NOT a copy of anything from AIW's profiles
-- **BWS vault contents** — their secrets go in **their** vault: OS keychain + `.env` (profile-scoped), or a fresh Bitwarden org if they prefer shared access. Zero AIW-held credentials on this box, in either direction
+- **Shared-vault contents** — their secrets go in **their** vault: OS keychain + `.env` (profile-scoped), or a fresh Bitwarden org if they prefer shared access. Zero AIW-held credentials on this box, in either direction
 
 **IP note:** Bucket A skills are AIW-authored procedures. Doc 18's terms grant WiseQ a perpetual license to the skills and runbooks deployed on their operation — they're part of the deliverable, like the code.
 

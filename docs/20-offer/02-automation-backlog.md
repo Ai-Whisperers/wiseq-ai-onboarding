@@ -132,7 +132,7 @@ become one-star reviews — which is the more valuable thing anyway.
 | Next | Why it matters |
 | :--- | :--- |
 | **[Ai Stack Blueprint](01-blueprint.md)** | The stack that delivers this backlog |
-| **[Py Transfer Wiseq](../10-client/06-bundle-spine-reuse.md)** | Proven components we can port from the Paraguay build |
+| **[Bundle spine & reuse](../10-client/06-bundle-spine-reuse.md)** | Proven components we can port from our existing build |
 | **[Next Steps](03-next-steps.md)** | The questions that unblock the highest-ROI items |
 
 > **Not sure where to start?** [Role packs](https://github.com/Ai-Whisperers/wiseq-ai-onboarding/blob/main/docs/README.md) (Rob / Kiki / ops) or the [document map](https://github.com/Ai-Whisperers/wiseq-ai-onboarding#document-map).
