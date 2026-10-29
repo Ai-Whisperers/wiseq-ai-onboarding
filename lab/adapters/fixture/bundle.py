@@ -4,15 +4,15 @@ import csv
 
 from contracts.providers import SimulatedResult
 
-from ._paths import LAB_ROOT
+from ._paths import REGISTRY_CSV, SPINE_CSV
 
 
 class FixtureInventory:
     """Loads the repo bundle spine as synthetic inventory truth for the lab."""
 
     def __init__(self) -> None:
-        spine = LAB_ROOT.parent / "data" / "wiseq-bundle-spine.csv"
-        reg = LAB_ROOT.parent / "data" / "wiseq-component-registry.csv"
+        spine = SPINE_CSV
+        reg = REGISTRY_CSV
         self._components = {
             r["component_sku"].strip(): r
             for r in csv.DictReader(reg.open(encoding="utf-8"))

@@ -1,0 +1,29 @@
+# WiseQ test lab — zero-install demo.
+#
+#   docker compose run --rm demo        # run the three synthetic scenarios
+#   docker compose run --rm demo test   # run the golden pytest suite
+#
+# No volumes, no ports, no credentials, no network access required at runtime.
+
+services:
+  demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wiseq-lab:latest
+    working_dir: /app
+    environment:
+      PYTHONPATH: /app
+      # Explicitly declare that this is a demo. Any adapter that tries to
+      # reach a live vendor should refuse rather than silently succeed.
+      WISEQ_LAB_MODE: "demo"
+      WISEQ_ALLOW_LIVE: "false"
+      # The filesystem is read-only; the audit log goes to the tmpfs below.
+      WISEQ_EVAL_OUT: "/tmp/eval-out"
+    # No credentials are ever mounted. Read-only keys arrive later, privately,
+    # into a separate profile — never into this image.
+    read_only: true
+    tmpfs:
+      - /tmp
+    network_mode: none
+    command: ["python", "wiseq_demo.py"]

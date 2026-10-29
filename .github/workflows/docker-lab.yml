@@ -1,0 +1,85 @@
+# .github/workflows/docker-lab.yml — build and verify the zero-install demo image.
+#
+# The lab is the thing we promise Rob he can run on his own machine with one
+# command. That promise is only credible if CI actually builds the image and
+# runs the suite inside it. This job is that proof.
+#
+# It runs on push/PR touching lab/ so we never ship a broken demo image.
+
+name: docker-lab
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lab/**'
+      - '.github/workflows/docker-lab.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'lab/**'
+      - '.github/workflows/docker-lab.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: docker-lab-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build demo image + run suite in container
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
+        with:
+          persist-credentials: false
+
+      - name: Vendored spine fixtures must match the repo source of truth
+        run: python lab/scripts/sync_spine_fixtures.py --check
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069  # v4.4.1
+
+      - name: Build the lab image
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc  # v7.4.0
+        with:
+          context: ./lab
+          file: ./lab/Dockerfile
+          tags: wiseq-lab:latest
+          load: true
+          push: false
+
+      - name: Run the golden suite inside the container
+        run: docker compose -f lab/docker-compose.yml run --rm demo pytest -q -p no:cacheprovider
+
+      - name: Run the demo scenarios inside the container
+        run: |
+          docker compose -f lab/docker-compose.yml run --rm demo > demo-output.txt
+          cat demo-output.txt
+          grep -q "All scenarios ran on synthetic fixtures" demo-output.txt \
+            || { echo "::error::demo output missing its safety footer"; exit 1; }
+          grep -q '"status": "ok"' demo-output.txt \
+            || { echo "::error::school-order scenario did not complete"; exit 1; }
+
+      - name: Verify the image carries no credentials
+        run: |
+          if docker run --rm --entrypoint sh wiseq-lab:latest -c \
+            'grep -rIlE "(ghp_|gho_|ghs_|sk-[A-Za-z0-9]{16}|BEGIN [A-Z ]*PRIVATE KEY|password *=|api[_-]?key *=)" /app --exclude-dir=.venv' ; then
+            echo "::error::possible credential material found in the image"
+            exit 1
+          fi
+          echo "✓ no credential patterns in the image"
+
+      - name: Verify the container has no network access and no writes
+        run: |
+          # network_mode: none + read_only are enforced by compose; assert the
+          # demo still runs cleanly under those constraints.
+          docker compose -f lab/docker-compose.yml run --rm demo \
+            python wiseq_demo.py school \
+            | grep -q '"simulated": true' \
+            || { echo "::error::scenario output missing the simulated marker"; exit 1; }
+          echo "✓ demo runs with network_mode:none and read_only:true"

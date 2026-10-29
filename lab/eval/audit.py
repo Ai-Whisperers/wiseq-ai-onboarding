@@ -1,11 +1,15 @@
 from __future__ import annotations
 
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-_OUT = Path(__file__).resolve().parent / "out"
+# The audit log is a local file, never secrets. Its location is overridable
+# because the Docker image runs with a read-only filesystem — WISEQ_EVAL_OUT
+# points it at the writable tmpfs there.
+_OUT = Path(os.environ.get("WISEQ_EVAL_OUT") or (Path(__file__).resolve().parent / "out"))
 _LOG = _OUT / "audit.jsonl"
 
 
