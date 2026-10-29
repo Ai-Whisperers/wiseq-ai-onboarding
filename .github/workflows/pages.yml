@@ -2,11 +2,10 @@ name: pages
 
 # Publish the proposal landing page to GitHub Pages.
 #
-# The site is assembled from three already-tracked directories so there is no
+# The site is assembled from already-tracked paths so there is no
 # generated source to drift:
 #   site/index.html      the landing page (committed, hand-written)
-#   assets/              brand banner + demo screenshots
-#   site-demos/          the three working concepts
+#   assets/              brand banner + lockups
 #
 # We assemble rather than copy so the repo keeps one canonical copy of every
 # asset and the deployed site can never drift from it.
@@ -17,7 +16,6 @@ on:
     paths:
       - site/**
       - assets/**
-      - site-demos/**
       - .github/workflows/pages.yml
   workflow_dispatch:
 
@@ -44,7 +42,6 @@ jobs:
           mkdir -p _site
           cp site/index.html _site/index.html
           cp -r assets  _site/assets
-          cp -r site-demos _site/site-demos
           echo "published bytes: $(du -sh _site | cut -f1)"
 
       - uses: actions/configure-pages@v5

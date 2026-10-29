@@ -58,13 +58,13 @@ Built a full lead-gen pipeline on official DUO open data:
 
 First working session with WiseQ leadership — documented in [Meeting Notes](../10-client/04-meeting-2026-10-21.md). Produced the [AI-stack blueprint](../20-offer/01-blueprint.md) and [automation backlog](../20-offer/02-automation-backlog.md) from it.
 A second session (2026-10-22) added the [OSS & integrations scan](../30-market/01-oss-integrations.md), the [100-repo catalog](../30-market/03-oss-catalog.md),
-the [compliance and cost baseline](../30-market/04-compliance.md), and three [built site concepts](../70-showcase/01-site-concepts.md).
+the [compliance and cost baseline](../30-market/04-compliance.md). (Early site-concept demos were later removed from the repo.)
 
 ---
 
 ## 📌 In short
 
-Everything in this repo was produced **before** we were engaged and **without a production change to WiseQ's systems**. Company research, a market scan, a lead-gen pipeline, two working sessions, an OSS landscape, a verified cost baseline, and three built site concepts. The point is not volume — it is that the questions in [doc 06](../20-offer/03-next-steps.md) are the *only* ones left, because we already answered the rest.
+Everything in this repo was produced **before** we were engaged and **without a production change to WiseQ's systems**. Company research, a market scan, a lead-gen pipeline, two working sessions, an OSS landscape, and a verified cost baseline. The point is not volume — it is that the questions in [doc 06](../20-offer/03-next-steps.md) are the *only* ones left, because we already answered the rest.
 
 
 ---

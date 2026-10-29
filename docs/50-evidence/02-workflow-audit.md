@@ -75,7 +75,7 @@ Evidence status: **C** = client-provided · **P** = public research · **H** = h
 | SEO keywords | Mastersheet samples public |
 | Review invitations | Bol-first; Trustpilot secondary; no 250+ promise |
 | B2B lead-gen | Method in repo; no PII |
-| Site demos | Static showcase only |
+| Site demos | Removed from repo (ops proposal focus) |
 
 ## System inventory (summary)
 
